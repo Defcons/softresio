@@ -136,9 +136,9 @@
     {
       "id": 55484,
       "name": "Ethereal Boots of Ascendancy",
-      "slot": "Unknown",
+      "slot": "Boots",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Rogue","Shaman","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ethereal Boots of Ascendancy</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Rogue, Shaman, Mage<br/>Requires Level 60</span></div>",
       "icon": "inv_boots_cloth_01.png"
@@ -146,9 +146,9 @@
     {
       "id": 55483,
       "name": "Ethereal Boots of Conquest",
-      "slot": "Unknown",
+      "slot": "Boots",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Priest","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ethereal Boots of Conquest</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Priest, Warlock, Druid<br/>Requires Level 60</span></div>",
       "icon": "inv_boots_cloth_01.png"
@@ -196,9 +196,9 @@
     {
       "id": 55490,
       "name": "Brutal Leggings of Ascendancy",
-      "slot": "Unknown",
+      "slot": "Legs",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Rogue","Shaman","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Brutal Leggings of Ascendancy</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Rogue, Shaman, Mage<br/>Requires Level 60</span></div>",
       "icon": "inv_pants_plate_11.png"
@@ -206,9 +206,9 @@
     {
       "id": 55489,
       "name": "Brutal Leggings of Conquest",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Priest","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Brutal Leggings of Conquest</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Priest, Warlock, Druid<br/>Requires Level 60</span></div>",
       "icon": "inv_pants_plate_11.png"
@@ -651,9 +651,9 @@
     {
       "id": 55486,
       "name": "Shifting Mantle of Ascendancy",
-      "slot": "Unknown",
+      "slot": "Shoulder",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Rogue","Shaman","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Shifting Mantle of Ascendancy</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Rogue, Shaman, Mage<br/>Requires Level 60</span></div>",
       "icon": "inv_shoulder_17.png"
@@ -661,9 +661,9 @@
     {
       "id": 55485,
       "name": "Shifting Mantle of Conquest",
-      "slot": "Unknown",
+      "slot": "Shoulder",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Priest","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Shifting Mantle of Conquest</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Priest, Warlock, Druid<br/>Requires Level 60</span></div>",
       "icon": "inv_shoulder_17.png"
@@ -1039,7 +1039,7 @@
     {
       "id": 41485,
       "name": "Pristine Ley Crystal",
-      "slot": "Unknown",
+      "slot": "UnknownC",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1049,7 +1049,7 @@
     {
       "id": 55482,
       "name": "Ephemeral Pendant",
-      "slot": "Unknown",
+      "slot": "Neck",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1059,9 +1059,9 @@
     {
       "id": 55487,
       "name": "Fractured Crown of Conquest",
-      "slot": "Unknown",
+      "slot": "Head",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Priest","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Fractured Crown of Conquest</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Priest, Warlock, Druid<br/>Requires Level 60</span></div>",
       "icon": "inv_helmet_57.png"
@@ -1069,9 +1069,9 @@
     {
       "id": 55488,
       "name": "Fractured Crown of Ascendancy",
-      "slot": "Unknown",
+      "slot": "Head",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Rogue","Shaman","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Fractured Crown of Ascendancy</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Rogue, Shaman, Mage<br/>Requires Level 60</span></div>",
       "icon": "inv_helmet_57.png"
