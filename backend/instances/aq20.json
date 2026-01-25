@@ -66,7 +66,7 @@
     {
       "id": 20885,
       "name": "Qiraji Martial Drape",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -76,7 +76,7 @@
     {
       "id": 20889,
       "name": "Qiraji Regal Drape",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -86,7 +86,7 @@
     {
       "id": 20888,
       "name": "Qiraji Ceremonial Ring",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -96,7 +96,7 @@
     {
       "id": 20884,
       "name": "Qiraji Magisterial Ring",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -336,7 +336,7 @@
     {
       "id": 20890,
       "name": "Qiraji Ornate Hilt",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -346,7 +346,7 @@
     {
       "id": 20886,
       "name": "Qiraji Spiked Hilt",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -606,7 +606,7 @@
     {
       "id": 21459,
       "name": "Crossbow of Imminent Doom",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -636,7 +636,7 @@
     {
       "id": 21220,
       "name": "Head of Ossirian the Unscarred",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -650,7 +650,7 @@
       "type": "Mail",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Coif of Elemental Fury</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Mail</span></div></div><span>323 Armor<br/>+17 Stamina<br/>+18 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 20.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Coif of Elemental Fury</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Mail</span></div></div><span>323 Armor<br/>+17 Stamina<br/>+18 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 20.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_helmet_24.png"
     },
     {
@@ -660,7 +660,7 @@
       "type": "Plate",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Helm of the Holy Avenger</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Plate</span></div></div><span>574 Armor<br/>+17 Stamina<br/>+18 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 20.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Helm of the Holy Avenger</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Plate</span></div></div><span>574 Armor<br/>+17 Stamina<br/>+18 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 20.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_helmet_03.png"
     },
     {
@@ -670,63 +670,63 @@
       "type": "Plate",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Polished Obsidian Pauldrons</b><span>Binds when equipped</span><div><div><span>Shoulder</span></div><div><span>Plate</span></div></div><span>530 Armor<br/>+16 Strength<br/>+17 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +7.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Polished Obsidian Pauldrons</b><span>Binds when equipped</span><div><div><span>Shoulder</span></div><div><span>Plate</span></div></div><span>530 Armor<br/>+16 Strength<br/>+17 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +7.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_shoulder_26.png"
     },
     {
       "id": 20873,
       "name": "Alabaster Idol",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Alabaster Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Mage, Druid<br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Alabaster Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Mage, Druid<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_qirajidol_alabaster.png"
     },
     {
       "id": 20869,
       "name": "Amber Idol",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Amber Idol</b><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Warlock<br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Amber Idol</b><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Warlock<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_qirajidol_amber.png"
     },
     {
       "id": 20866,
       "name": "Azure Idol",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Azure Idol</b><div><div></div><div></div></div><span>Classes: Hunter, Rogue, Mage<br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Azure Idol</b><div><div></div><div></div></div><span>Classes: Hunter, Rogue, Mage<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_qirajidol_azure.png"
     },
     {
       "id": 20870,
       "name": "Jasper Idol",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Jasper Idol</b><div><div></div><div></div></div><span>Classes: Priest, Warlock, Druid<br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Jasper Idol</b><div><div></div><div></div></div><span>Classes: Priest, Warlock, Druid<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_qirajidol_jasper.png"
     },
     {
       "id": 20868,
       "name": "Lambent Idol",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Lambent Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Hunter, Priest<br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Lambent Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Hunter, Priest<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_qirajidol_lambent.png"
     },
     {
       "id": 20871,
       "name": "Obsidian Idol",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -736,17 +736,17 @@
     {
       "id": 20867,
       "name": "Onyx Idol",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Onyx Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Rogue, Warlock<br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Onyx Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Rogue, Warlock<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_qirajidol_onyx.png"
     },
     {
       "id": 20872,
       "name": "Vermillion Idol",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -756,21 +756,21 @@
     {
       "id": 21801,
       "name": "Antenna of Invigoration",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Antenna of Invigoration</b><span>Binds when equipped</span><div><div><span>Ranged</span></div><div><span>Wand</span></div></div><div><div>80 - 149 Nature Damage</div><div>Speed 1.60</div></div><span>(71.6 damage per second)<br/>+4 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Restores 3 mana per 5 sec.</span><br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 13.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Antenna of Invigoration</b><span>Binds when equipped</span><div><div><span>Ranged</span></div><div><span>Wand</span></div></div><div><div>80 - 149 Nature Damage</div><div>Speed 1.60</div></div><span>(71.6 damage per second)<br/>+4 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Restores 3 mana per 5 sec.</span><br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 13.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_wand_04.png"
     },
     {
       "id": 21800,
       "name": "Silithid Husked Launcher",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Silithid Husked Launcher</b><span>Binds when equipped</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>68 - 128 Damage</div><div>Speed 2.80</div></div><span>(35.0 damage per second)<br/>+4 Agility<br/>+10 Stamina<br/>Requires Level 60<br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Silithid Husked Launcher</b><span>Binds when equipped</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>68 - 128 Damage</div><div>Speed 2.80</div></div><span>(35.0 damage per second)<br/>+4 Agility<br/>+10 Stamina<br/>Requires Level 60<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_weapon_rifle_10.png"
     },
     {
@@ -780,7 +780,7 @@
       "type": "Dagger",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">The Lost Kris of Zedd</b><span>Binds when equipped</span><div><div><span>Main Hand</span></div><div><span>Dagger</span></div></div><div><div>41 - 83 Damage</div><div>Speed 1.50</div></div><span>(41.5 damage per second)<br/>+6 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 14.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">The Lost Kris of Zedd</b><span>Binds when equipped</span><div><div><span>Main Hand</span></div><div><span>Dagger</span></div></div><div><div>41 - 83 Damage</div><div>Speed 1.50</div></div><span>(41.5 damage per second)<br/>+6 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 14.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_sword_32.png"
     },
     {
@@ -810,7 +810,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Codex of Renew X</b><div><div><span>Book</span></div><div></div></div><span>Classes: Priest<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Renew (Rank 10).</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Codex of Renew X</b><div><div><span>Book</span></div><div></div></div><span>Classes: Priest<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Renew (Rank 10).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_book_09.png"
     },
     {
@@ -840,7 +840,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Arcane Missiles VIII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Arcane Missiles (Rank 8).</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Arcane Missiles VIII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Arcane Missiles (Rank 8).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_book_07.png"
     },
     {
@@ -950,7 +950,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Guide: Multi-Shot V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Hunter<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Multi-Shot (Rank 5).</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Guide: Multi-Shot V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Hunter<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Multi-Shot (Rank 5).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_book_02.png"
     },
     {
@@ -1020,7 +1020,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Libram: Holy Light IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Holy Light (Rank 9).</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Libram: Holy Light IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Holy Light (Rank 9).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_book_08.png"
     },
     {
@@ -1040,7 +1040,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Revenge VI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warrior<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Revenge (Rank 6).</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Revenge VI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warrior<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Revenge (Rank 6).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_book_03.png"
     },
     {
@@ -1050,7 +1050,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Heroic Strike IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warrior<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Heroic Strike (Rank 9).</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Heroic Strike IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warrior<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Heroic Strike (Rank 9).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_book_03.png"
     },
     {

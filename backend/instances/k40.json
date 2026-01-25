@@ -6,11 +6,11 @@
     {
       "id": 16747,
       "name": "Broken Lock",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 1,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q0\">Broken Lock</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q0\">Broken Lock</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_gizmo_03.png"
     },
     {
@@ -257,7 +257,7 @@
       "id": 55131,
       "name": "Shieldrender Talisman",
       "slot": "Trinket",
-      "type": "Shield",
+      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Shieldrender Talisman</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Your melee attacks have a 7% chance to cause your physical attacks to ignore all armor for the next 3 sec.</span><br/><span class=\"q2\">Equip: +84 Attack Power.</span></span></div>",

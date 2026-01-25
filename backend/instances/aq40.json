@@ -667,7 +667,7 @@
       "id": 21625,
       "name": "Scarab Brooch",
       "slot": "Trinket",
-      "type": "Shield",
+      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Scarab Brooch</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Use: Your magical heals provide the target with a shield that absorbs damage equal to 15% of the amount healed for 30 sec.</span></span></div>",

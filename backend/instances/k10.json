@@ -835,7 +835,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Medivh's Merlot</b><div><div></div><div></div></div><span>Requires Level 45<br/><span class=\"q2\">Use: Increases Stamina by 25 for 15 min and gets you drunk to boot!</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Medivh's Merlot</b><div><div></div><div></div></div><span>Requires Level 45<br/><span class=\"q2\">Use: Increases Stamina by 25 for 15 min and gets you drunk to boot!</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_drink_waterskin_05.png"
     },
     {
@@ -845,7 +845,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Medivh's Merlot Blue</b><div><div></div><div></div></div><span>Requires Level 45<br/><span class=\"q2\">Use: Increases Intellect by 15 for 15 min and gets you drunk to boot!</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Medivh's Merlot Blue</b><div><div></div><div></div></div><span>Requires Level 45<br/><span class=\"q2\">Use: Increases Intellect by 15 for 15 min and gets you drunk to boot!</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_drink_waterskin_01.png"
     },
     {
@@ -902,7 +902,7 @@
       "id": 58401,
       "name": "Schematic: Giga-Charged Arcane Reflector",
       "slot": "Profession",
-      "type": "null",
+      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Schematic: Giga-Charged Arcane Reflector</b><span>Binds when picked up</span><div><div><span>Engineering</span></div><div></div></div><span>Requires Engineering (290)<br/><span class=\"q2\">Use: Teaches you how to make a Giga-Charged Arcane Reflector.</span></span></div>",

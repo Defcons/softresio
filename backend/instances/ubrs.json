@@ -10,7 +10,7 @@
       "type": "Mail",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Gauntlets of Elements</b><span>Binds when equipped</span><div><div><span>Hands</span></div><div><span>Mail</span></div></div><span>218 Armor<br/>+9 Strength<br/>+4 Stamina<br/>+10 Intellect<br/>+16 Spirit<br/>Requires Level 54<br/><br/><span class=\"q\">The Elements (0/8)</span><br/><span class=\"q0\">  Cord of Elements</span><br/><span class=\"q0\">  Boots of Elements</span><br/><span class=\"q0\">  Bindings of Elements</span><br/><span class=\"q0\">  Coif of Elements</span><br/><span class=\"q0\">  Gauntlets of Elements</span><br/><span class=\"q0\">  Kilt of Elements</span><br/><span class=\"q0\">  Pauldrons of Elements</span><br/><span class=\"q0\">  Vest of Elements</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: Increases damage and healing done by magical spells and effects by up to 23.</span><br/><span class=\"q0\">(6) Set: Chance on spell cast to increase your damage and healing by up to 95 for 10 sec.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Gauntlets of Elements</b><span>Binds when equipped</span><div><div><span>Hands</span></div><div><span>Mail</span></div></div><span>218 Armor<br/>+9 Strength<br/>+4 Stamina<br/>+10 Intellect<br/>+16 Spirit<br/>Requires Level 54<br/><br/><span class=\"q\">The Elements (0/8)</span><br/><span class=\"q0\">  Cord of Elements</span><br/><span class=\"q0\">  Boots of Elements</span><br/><span class=\"q0\">  Bindings of Elements</span><br/><span class=\"q0\">  Coif of Elements</span><br/><span class=\"q0\">  Gauntlets of Elements</span><br/><span class=\"q0\">  Kilt of Elements</span><br/><span class=\"q0\">  Pauldrons of Elements</span><br/><span class=\"q0\">  Vest of Elements</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: Increases damage and healing done by magical spells and effects by up to 23.</span><br/><span class=\"q0\">(6) Set: Chance on spell cast to increase your damage and healing by up to 95 for 10 sec.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></span></div>",
       "icon": "inv_gauntlets_11.png"
     },
     {
@@ -56,11 +56,11 @@
     {
       "id": 23320,
       "name": "Tablet of Flame Shock VI",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tablet of Flame Shock VI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Flame Shock (Rank 6).</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tablet of Flame Shock VI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Flame Shock (Rank 6).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_stonetablet_11.png"
     },
     {
@@ -130,7 +130,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Hyper-Radiant Flame Reflector</b><span>Binds when equipped</span><div><div><span>Trinket</span></div><div></div></div><span>+18 Fire Resistance<br/>Requires Level 53<br/>Requires Engineering (290)<br/><span class=\"q2\">Use: Reflects Fire spells back at their caster for 5 sec.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Hyper-Radiant Flame Reflector</b><span>Binds when equipped</span><div><div><span>Trinket</span></div><div></div></div><span>+18 Fire Resistance<br/>Requires Level 53<br/>Requires Engineering (290)<br/><span class=\"q2\">Use: Reflects Fire spells back at their caster for 5 sec.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_enggizmos_04.png"
     },
     {
@@ -166,7 +166,7 @@
     {
       "id": 12605,
       "name": "Serpentine Skuller",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 3,
@@ -230,7 +230,7 @@
       "type": "Sword",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Arcanite Champion</b><span>Binds when equipped</span><div><div><span>Two-hand</span></div><div><span>Sword</span></div></div><div><div>151 - 227 Damage</div><div>Speed 3.50</div></div><span>(54.0 damage per second)<br/>Requires Level 58<br/><span class=\"q2\">Chance on hit: Heal self for 270 to 450 and Increases Strength by 120 for 30 sec.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Arcanite Champion</b><span>Binds when equipped</span><div><div><span>Two-hand</span></div><div><span>Sword</span></div></div><div><div>151 - 227 Damage</div><div>Speed 3.50</div></div><span>(54.0 damage per second)<br/>Requires Level 58<br/><span class=\"q2\">Chance on hit: Heal self for 270 to 450 and Increases Strength by 120 for 30 sec.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_sword_39.png"
     },
     {
@@ -250,7 +250,7 @@
       "type": "Mace",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Masterwork Stormhammer</b><span>Binds when equipped</span><div><div><span>Main Hand</span></div><div><span>Mace</span></div></div><div><div>58 - 108 Damage</div><div>Speed 2.00</div></div><span>(41.5 damage per second)<br/>Requires Level 57<br/><span class=\"q2\">Chance on hit: Blasts up to 3 targets for 105 to 145 Nature damage.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Masterwork Stormhammer</b><span>Binds when equipped</span><div><div><span>Main Hand</span></div><div><span>Mace</span></div></div><div><div>58 - 108 Damage</div><div>Speed 2.00</div></div><span>(41.5 damage per second)<br/>Requires Level 57<br/><span class=\"q2\">Chance on hit: Blasts up to 3 targets for 105 to 145 Nature damage.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_hammer_04.png"
     },
     {
@@ -270,7 +270,7 @@
       "type": "Mail",
       "classes": [],
       "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Invulnerable Mail</b><span>Binds when equipped</span><div><div><span>Chest</span></div><div><span>Mail</span></div></div><span>504 Armor<br/>+10 Stamina<br/>Requires Level 58<br/><span class=\"q2\">Equip: When struck in combat has a 3% chance to reduce damage taken by physical attacks by 75% for 3 sec. This effect can only occur once every 30 sec.</span><br/><span class=\"q2\">Equip: Increased Defense +13.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Invulnerable Mail</b><span>Binds when equipped</span><div><div><span>Chest</span></div><div><span>Mail</span></div></div><span>504 Armor<br/>+10 Stamina<br/>Requires Level 58<br/><span class=\"q2\">Equip: When struck in combat has a 3% chance to reduce damage taken by physical attacks by 75% for 3 sec. This effect can only occur once every 30 sec.</span><br/><span class=\"q2\">Equip: Increased Defense +13.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_chest_chain_07.png"
     },
     {
@@ -280,7 +280,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bottom Half of Advanced Armorsmithing: Volume I</b><span>Unique</span><div><div></div><div></div></div><span>Requires Level 50<br/><span class=\"q2\">Use: Combines the Top and Bottom Half of Advanced Armorsmithing: Volume I.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bottom Half of Advanced Armorsmithing: Volume I</b><span>Unique</span><div><div></div><div></div></div><span>Requires Level 50<br/><span class=\"q2\">Use: Combines the Top and Bottom Half of Advanced Armorsmithing: Volume I.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_note_06.png"
     },
     {
@@ -300,14 +300,14 @@
       "type": "Plate",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Enchanted Thorium Breastplate</b><span>Binds when equipped</span><div><div><span>Chest</span></div><div><span>Plate</span></div></div><span>657 Armor<br/>+12 Strength<br/>+26 Stamina<br/>Requires Level 58<br/><span class=\"q2\">Equip: Increased Defense +9.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Enchanted Thorium Breastplate</b><span>Binds when equipped</span><div><div><span>Chest</span></div><div><span>Plate</span></div></div><span>657 Armor<br/>+12 Strength<br/>+26 Stamina<br/>Requires Level 58<br/><span class=\"q2\">Equip: Increased Defense +9.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_chest_plate10.png"
     },
     {
       "id": 12806,
       "name": "Unforged Rune Covered Breastplate",
-      "slot": "Unknown",
-      "type": "Plate",
+      "slot": "Quest Item",
+      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Unforged Rune Covered Breastplate</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span><span class=\"q\">\"Covered in Demonic runes.\"</span></span></div>",
@@ -330,7 +330,7 @@
       "type": "Plate",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Demon Forged Breastplate</b><span>Binds when equipped</span><div><div><span>Chest</span></div><div><span>Plate</span></div></div><span>597 Armor<br/>+12 Stamina<br/>Requires Level 52<br/><span class=\"q2\">Equip: When struck has a 3% chance of stealing 120 life from the attacker over 4 sec.\\n</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Demon Forged Breastplate</b><span>Binds when equipped</span><div><div><span>Chest</span></div><div><span>Plate</span></div></div><span>597 Armor<br/>+12 Stamina<br/>Requires Level 52<br/><span class=\"q2\">Equip: When struck has a 3% chance of stealing 120 life from the attacker over 4 sec.\\n</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_chest_plate06.png"
     },
     {
@@ -466,7 +466,7 @@
     {
       "id": 12871,
       "name": "Chromatic Carapace",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -536,11 +536,11 @@
     {
       "id": 12731,
       "name": "Pristine Hide of the Beast",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Pristine Hide of the Beast</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Pristine Hide of the Beast</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_monsterscales_15.png"
     },
     {
@@ -651,7 +651,7 @@
     {
       "id": 24101,
       "name": "Book of Ferocious Bite VI",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -661,7 +661,7 @@
     {
       "id": 19227,
       "name": "Ace of Beasts",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -860,7 +860,7 @@
       "type": "Mail",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Red Dragonscale Breastplate</b><span>Binds when equipped</span><div><div><span>Chest</span></div><div><span>Mail</span></div></div><span>360 Armor<br/>+10 Stamina<br/>+12 Fire Resistance<br/>Requires Level 56<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 66.</span><br/><br/><span class=\"q\">Red Dragon Mail (0/4)</span><br/><span class=\"q0\">  Red Dragonscale Leggings</span><br/><span class=\"q0\">  Red Dragonscale Shoulders</span><br/><span class=\"q0\">  Red Dragonscale Boots</span><br/><span class=\"q0\">  Red Dragonscale Breastplate</span><br/><span class=\"q0\">(2) Set: +12 Fire Resistance.</span><br/><span class=\"q0\">(3) Set: Increases healing done by spells and effects by up to 26.</span><br/><span class=\"q0\">(4) Set: Your direct healing spells have a chance to heal your target for 240 over 12 sec.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Red Dragonscale Breastplate</b><span>Binds when equipped</span><div><div><span>Chest</span></div><div><span>Mail</span></div></div><span>360 Armor<br/>+10 Stamina<br/>+12 Fire Resistance<br/>Requires Level 56<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 66.</span><br/><br/><span class=\"q\">Red Dragon Mail (0/4)</span><br/><span class=\"q0\">  Red Dragonscale Leggings</span><br/><span class=\"q0\">  Red Dragonscale Shoulders</span><br/><span class=\"q0\">  Red Dragonscale Boots</span><br/><span class=\"q0\">  Red Dragonscale Breastplate</span><br/><span class=\"q0\">(2) Set: +12 Fire Resistance.</span><br/><span class=\"q0\">(3) Set: Increases healing done by spells and effects by up to 26.</span><br/><span class=\"q0\">(4) Set: Your direct healing spells have a chance to heal your target for 240 over 12 sec.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></span></div>",
       "icon": "inv_chest_chain_07.png"
     },
     {
@@ -976,11 +976,11 @@
     {
       "id": 24102,
       "name": "Manual of Eviscerate IX",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Eviscerate IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Rogue<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Eviscerate (Rank 9).</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Eviscerate IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Rogue<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Eviscerate (Rank 9).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_book_14.png"
     },
     {
@@ -990,7 +990,7 @@
       "type": "Mail",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Wind Dancer Boots</b><span>Binds when equipped</span><div><div><span>Feet</span></div><div><span>Mail</span></div></div><span>247 Armor<br/>+16 Agility<br/>+9 Stamina<br/>Requires Level 56<br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Wind Dancer Boots</b><span>Binds when equipped</span><div><div><span>Feet</span></div><div><span>Mail</span></div></div><span>247 Armor<br/>+16 Agility<br/>+9 Stamina<br/>Requires Level 56<br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_boots_01.png"
     },
     {
@@ -1000,7 +1000,7 @@
       "type": "Cloth",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Devout Belt</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Cloth</span></div></div><span>46 Armor<br/>+4 Stamina<br/>+20 Intellect<br/>+9 Spirit<br/>Requires Level 53<br/><br/><span class=\"q\">Vestments of the Devout (0/8)</span><br/><span class=\"q0\">  Devout Belt</span><br/><span class=\"q0\">  Devout Sandals</span><br/><span class=\"q0\">  Devout Bracers</span><br/><span class=\"q0\">  Devout Crown</span><br/><span class=\"q0\">  Devout Gloves</span><br/><span class=\"q0\">  Devout Mantle</span><br/><span class=\"q0\">  Devout Skirt</span><br/><span class=\"q0\">  Devout Robe</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: Increases damage and healing done by magical spells and effects by up to 23.</span><br/><span class=\"q0\">(6) Set: When struck in combat has a chance of shielding the wearer in a protective shield which will absorb 350 damage.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Devout Belt</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Cloth</span></div></div><span>46 Armor<br/>+4 Stamina<br/>+20 Intellect<br/>+9 Spirit<br/>Requires Level 53<br/><br/><span class=\"q\">Vestments of the Devout (0/8)</span><br/><span class=\"q0\">  Devout Belt</span><br/><span class=\"q0\">  Devout Sandals</span><br/><span class=\"q0\">  Devout Bracers</span><br/><span class=\"q0\">  Devout Crown</span><br/><span class=\"q0\">  Devout Gloves</span><br/><span class=\"q0\">  Devout Mantle</span><br/><span class=\"q0\">  Devout Skirt</span><br/><span class=\"q0\">  Devout Robe</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: Increases damage and healing done by magical spells and effects by up to 23.</span><br/><span class=\"q0\">(6) Set: When struck in combat has a chance of shielding the wearer in a protective shield which will absorb 350 damage.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></span></div>",
       "icon": "inv_belt_10.png"
     },
     {
@@ -1020,7 +1020,7 @@
       "type": "Cloth",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Dreadmist Bracers</b><span>Binds when equipped</span><div><div><span>Wrist</span></div><div><span>Cloth</span></div></div><span>35 Armor<br/>+10 Stamina<br/>+10 Intellect<br/>+7 Spirit<br/>Requires Level 52<br/><br/><span class=\"q\">Dreadmist Raiment (0/8)</span><br/><span class=\"q0\">  Dreadmist Belt</span><br/><span class=\"q0\">  Dreadmist Bracers</span><br/><span class=\"q0\">  Dreadmist Leggings</span><br/><span class=\"q0\">  Dreadmist Mantle</span><br/><span class=\"q0\">  Dreadmist Robe</span><br/><span class=\"q0\">  Dreadmist Sandals</span><br/><span class=\"q0\">  Dreadmist Mask</span><br/><span class=\"q0\">  Dreadmist Wraps</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: Increases damage and healing done by magical spells and effects by up to 23.</span><br/><span class=\"q0\">(6) Set: When struck in combat has a chance of causing the attacker to flee in terror for 2 seconds. </span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Dreadmist Bracers</b><span>Binds when equipped</span><div><div><span>Wrist</span></div><div><span>Cloth</span></div></div><span>35 Armor<br/>+10 Stamina<br/>+10 Intellect<br/>+7 Spirit<br/>Requires Level 52<br/><br/><span class=\"q\">Dreadmist Raiment (0/8)</span><br/><span class=\"q0\">  Dreadmist Belt</span><br/><span class=\"q0\">  Dreadmist Bracers</span><br/><span class=\"q0\">  Dreadmist Leggings</span><br/><span class=\"q0\">  Dreadmist Mantle</span><br/><span class=\"q0\">  Dreadmist Robe</span><br/><span class=\"q0\">  Dreadmist Sandals</span><br/><span class=\"q0\">  Dreadmist Mask</span><br/><span class=\"q0\">  Dreadmist Wraps</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: Increases damage and healing done by magical spells and effects by up to 23.</span><br/><span class=\"q0\">(6) Set: When struck in combat has a chance of causing the attacker to flee in terror for 2 seconds. </span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></span></div>",
       "icon": "inv_bracer_13.png"
     },
     {
@@ -1030,7 +1030,7 @@
       "type": "Leather",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadowcraft Belt</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Leather</span></div></div><span>93 Armor<br/>+9 Strength<br/>+14 Agility<br/>+10 Stamina<br/>+9 Spirit<br/>Requires Level 53<br/><br/><span class=\"q\">Shadowcraft Armor (0/8)</span><br/><span class=\"q0\">  Shadowcraft Belt</span><br/><span class=\"q0\">  Shadowcraft Boots</span><br/><span class=\"q0\">  Shadowcraft Bracers</span><br/><span class=\"q0\">  Shadowcraft Tunic</span><br/><span class=\"q0\">  Shadowcraft Spaulders</span><br/><span class=\"q0\">  Shadowcraft Pants</span><br/><span class=\"q0\">  Shadowcraft Gloves</span><br/><span class=\"q0\">  Shadowcraft Cap</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: +40 Attack Power.</span><br/><span class=\"q0\">(6) Set: Chance on melee attack to restore 35 energy.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadowcraft Belt</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Leather</span></div></div><span>93 Armor<br/>+9 Strength<br/>+14 Agility<br/>+10 Stamina<br/>+9 Spirit<br/>Requires Level 53<br/><br/><span class=\"q\">Shadowcraft Armor (0/8)</span><br/><span class=\"q0\">  Shadowcraft Belt</span><br/><span class=\"q0\">  Shadowcraft Boots</span><br/><span class=\"q0\">  Shadowcraft Bracers</span><br/><span class=\"q0\">  Shadowcraft Tunic</span><br/><span class=\"q0\">  Shadowcraft Spaulders</span><br/><span class=\"q0\">  Shadowcraft Pants</span><br/><span class=\"q0\">  Shadowcraft Gloves</span><br/><span class=\"q0\">  Shadowcraft Cap</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: +40 Attack Power.</span><br/><span class=\"q0\">(6) Set: Chance on melee attack to restore 35 energy.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></span></div>",
       "icon": "inv_belt_03.png"
     },
     {
@@ -1040,7 +1040,7 @@
       "type": "Mail",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Beaststalker's Bindings</b><span>Binds when equipped</span><div><div><span>Wrist</span></div><div><span>Mail</span></div></div><span>148 Armor<br/>+15 Agility<br/>+7 Stamina<br/>Requires Level 52<br/><br/><span class=\"q\">Beaststalker Armor (0/8)</span><br/><span class=\"q0\">  Beaststalker's Belt</span><br/><span class=\"q0\">  Beaststalker's Boots</span><br/><span class=\"q0\">  Beaststalker's Bindings</span><br/><span class=\"q0\">  Beaststalker's Cap</span><br/><span class=\"q0\">  Beaststalker's Tunic</span><br/><span class=\"q0\">  Beaststalker's Pants</span><br/><span class=\"q0\">  Beaststalker's Mantle</span><br/><span class=\"q0\">  Beaststalker's Gloves</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: +40 Attack Power.</span><br/><span class=\"q0\">(6) Set: Your normal melee and ranged attacks have a 4% chance of restoring 200 mana.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Beaststalker's Bindings</b><span>Binds when equipped</span><div><div><span>Wrist</span></div><div><span>Mail</span></div></div><span>148 Armor<br/>+15 Agility<br/>+7 Stamina<br/>Requires Level 52<br/><br/><span class=\"q\">Beaststalker Armor (0/8)</span><br/><span class=\"q0\">  Beaststalker's Belt</span><br/><span class=\"q0\">  Beaststalker's Boots</span><br/><span class=\"q0\">  Beaststalker's Bindings</span><br/><span class=\"q0\">  Beaststalker's Cap</span><br/><span class=\"q0\">  Beaststalker's Tunic</span><br/><span class=\"q0\">  Beaststalker's Pants</span><br/><span class=\"q0\">  Beaststalker's Mantle</span><br/><span class=\"q0\">  Beaststalker's Gloves</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: +40 Attack Power.</span><br/><span class=\"q0\">(6) Set: Your normal melee and ranged attacks have a 4% chance of restoring 200 mana.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></span></div>",
       "icon": "inv_bracer_17.png"
     },
     {
@@ -1050,7 +1050,7 @@
       "type": "Mail",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Beaststalker's Belt</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Mail</span></div></div><span>193 Armor<br/>+9 Strength<br/>+10 Agility<br/>+6 Stamina<br/>+9 Intellect<br/>+11 Spirit<br/>Requires Level 53<br/><br/><span class=\"q\">Beaststalker Armor (0/8)</span><br/><span class=\"q0\">  Beaststalker's Belt</span><br/><span class=\"q0\">  Beaststalker's Boots</span><br/><span class=\"q0\">  Beaststalker's Bindings</span><br/><span class=\"q0\">  Beaststalker's Cap</span><br/><span class=\"q0\">  Beaststalker's Tunic</span><br/><span class=\"q0\">  Beaststalker's Pants</span><br/><span class=\"q0\">  Beaststalker's Mantle</span><br/><span class=\"q0\">  Beaststalker's Gloves</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: +40 Attack Power.</span><br/><span class=\"q0\">(6) Set: Your normal melee and ranged attacks have a 4% chance of restoring 200 mana.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Beaststalker's Belt</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Mail</span></div></div><span>193 Armor<br/>+9 Strength<br/>+10 Agility<br/>+6 Stamina<br/>+9 Intellect<br/>+11 Spirit<br/>Requires Level 53<br/><br/><span class=\"q\">Beaststalker Armor (0/8)</span><br/><span class=\"q0\">  Beaststalker's Belt</span><br/><span class=\"q0\">  Beaststalker's Boots</span><br/><span class=\"q0\">  Beaststalker's Bindings</span><br/><span class=\"q0\">  Beaststalker's Cap</span><br/><span class=\"q0\">  Beaststalker's Tunic</span><br/><span class=\"q0\">  Beaststalker's Pants</span><br/><span class=\"q0\">  Beaststalker's Mantle</span><br/><span class=\"q0\">  Beaststalker's Gloves</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: +40 Attack Power.</span><br/><span class=\"q0\">(6) Set: Your normal melee and ranged attacks have a 4% chance of restoring 200 mana.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></span></div>",
       "icon": "inv_belt_28.png"
     },
     {
@@ -1060,7 +1060,7 @@
       "type": "Mail",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Cord of Elements</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Mail</span></div></div><span>193 Armor<br/>+9 Strength<br/>+6 Stamina<br/>+17 Intellect<br/>+7 Spirit<br/>Requires Level 53<br/><br/><span class=\"q\">The Elements (0/8)</span><br/><span class=\"q0\">  Cord of Elements</span><br/><span class=\"q0\">  Boots of Elements</span><br/><span class=\"q0\">  Bindings of Elements</span><br/><span class=\"q0\">  Coif of Elements</span><br/><span class=\"q0\">  Gauntlets of Elements</span><br/><span class=\"q0\">  Kilt of Elements</span><br/><span class=\"q0\">  Pauldrons of Elements</span><br/><span class=\"q0\">  Vest of Elements</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: Increases damage and healing done by magical spells and effects by up to 23.</span><br/><span class=\"q0\">(6) Set: Chance on spell cast to increase your damage and healing by up to 95 for 10 sec.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Cord of Elements</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Mail</span></div></div><span>193 Armor<br/>+9 Strength<br/>+6 Stamina<br/>+17 Intellect<br/>+7 Spirit<br/>Requires Level 53<br/><br/><span class=\"q\">The Elements (0/8)</span><br/><span class=\"q0\">  Cord of Elements</span><br/><span class=\"q0\">  Boots of Elements</span><br/><span class=\"q0\">  Bindings of Elements</span><br/><span class=\"q0\">  Coif of Elements</span><br/><span class=\"q0\">  Gauntlets of Elements</span><br/><span class=\"q0\">  Kilt of Elements</span><br/><span class=\"q0\">  Pauldrons of Elements</span><br/><span class=\"q0\">  Vest of Elements</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: Increases damage and healing done by magical spells and effects by up to 23.</span><br/><span class=\"q0\">(6) Set: Chance on spell cast to increase your damage and healing by up to 95 for 10 sec.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></span></div>",
       "icon": "inv_belt_16.png"
     },
     {
@@ -1070,7 +1070,7 @@
       "type": "Plate",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bracers of Valor</b><span>Binds when equipped</span><div><div><span>Wrist</span></div><div><span>Plate</span></div></div><span>261 Armor<br/>+7 Strength<br/>+3 Agility<br/>+14 Stamina<br/>+2 Spirit<br/>Requires Level 52<br/><br/><span class=\"q\">Battlegear of Valor (0/8)</span><br/><span class=\"q0\">  Belt of Valor</span><br/><span class=\"q0\">  Boots of Valor</span><br/><span class=\"q0\">  Bracers of Valor</span><br/><span class=\"q0\">  Breastplate of Valor</span><br/><span class=\"q0\">  Gauntlets of Valor</span><br/><span class=\"q0\">  Helm of Valor</span><br/><span class=\"q0\">  Legplates of Valor</span><br/><span class=\"q0\">  Spaulders of Valor</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: +40 Attack Power.</span><br/><span class=\"q0\">(6) Set: Chance on melee attack to heal you for 88 to 132 and increase your rage by 10.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bracers of Valor</b><span>Binds when equipped</span><div><div><span>Wrist</span></div><div><span>Plate</span></div></div><span>261 Armor<br/>+7 Strength<br/>+3 Agility<br/>+14 Stamina<br/>+2 Spirit<br/>Requires Level 52<br/><br/><span class=\"q\">Battlegear of Valor (0/8)</span><br/><span class=\"q0\">  Belt of Valor</span><br/><span class=\"q0\">  Boots of Valor</span><br/><span class=\"q0\">  Bracers of Valor</span><br/><span class=\"q0\">  Breastplate of Valor</span><br/><span class=\"q0\">  Gauntlets of Valor</span><br/><span class=\"q0\">  Helm of Valor</span><br/><span class=\"q0\">  Legplates of Valor</span><br/><span class=\"q0\">  Spaulders of Valor</span><br/><span class=\"q0\">(2) Set: +200 Armor.</span><br/><span class=\"q0\">(4) Set: +40 Attack Power.</span><br/><span class=\"q0\">(6) Set: Chance on melee attack to heal you for 88 to 132 and increase your rage by 10.</span><br/><span class=\"q0\">(8) Set: +8 All Resistances.</span><br/><span class=\"q0\">|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></span></div>",
       "icon": "inv_bracer_18.png"
     },
     {
@@ -1086,7 +1086,7 @@
     {
       "id": 51217,
       "name": "Fashion Coin",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 2,

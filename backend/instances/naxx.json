@@ -7,7 +7,7 @@
       "id": 22726,
       "name": "Splinter of Atiesh",
       "slot": "Quest Item",
-      "type": "Staff",
+      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -124,7 +124,7 @@
       "id": 22981,
       "name": "Gluth's Missing Collar",
       "slot": "Neck",
-      "type": "Shield",
+      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Gluth's Missing Collar</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Neck</span></div><div></div></div><span>+24 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 3%.</span><br/><span class=\"q2\">Equip: Increases the block value of your shield by 15.</span></span></div>",
@@ -1018,7 +1018,7 @@
       "id": 23040,
       "name": "Glyph of Deflection",
       "slot": "Trinket",
-      "type": "Shield",
+      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Glyph of Deflection</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 3%.</span><br/><span class=\"q2\">Equip: Increases the block value of your shield by 23.</span><br/><span class=\"q2\">Use: Increases the block value of your shield by 235 for 20 sec.</span></span></div>",
@@ -1097,7 +1097,7 @@
     {
       "id": 23549,
       "name": "Fortitude of the Scourge",
-      "slot": "Enchant",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1107,7 +1107,7 @@
     {
       "id": 23548,
       "name": "Might of the Scourge",
-      "slot": "Enchant",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1117,7 +1117,7 @@
     {
       "id": 23545,
       "name": "Power of the Scourge",
-      "slot": "Enchant",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1127,7 +1127,7 @@
     {
       "id": 23547,
       "name": "Resilience of the Scourge",
-      "slot": "Enchant",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1258,7 +1258,7 @@
       "id": 22733,
       "name": "Staff Head of Atiesh",
       "slot": "Quest Item",
-      "type": "Staff",
+      "type": null,
       "classes": [],
       "quality": 5,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q5\">Staff Head of Atiesh</b><span>Unique</span><div><div></div><div></div></div><span>Quest Item</span></div>",
@@ -1447,7 +1447,7 @@
       "type": null,
       "classes": [],
       "quality": 1,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Word of Thawing</b><div><div></div><div></div></div><span><span class=\"q2\">Use: Use on a Frozen Rune to melt it free.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Word of Thawing</b><div><div></div><div></div></div><span><span class=\"q2\">Use: Use on a Frozen Rune to melt it free.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_scroll_02.png"
     },
     {

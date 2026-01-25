@@ -218,7 +218,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Scale of Onyxia</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Scale of Onyxia</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_monsterscales_24.png"
     },
     {
@@ -234,7 +234,7 @@
     {
       "id": 21110,
       "name": "Draconic for Dummies",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 1,
@@ -248,7 +248,7 @@
       "type": null,
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_bag_10.png"
     },
     {
@@ -258,7 +258,7 @@
       "type": null,
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Formula: Enchant Chest - Greater Stats</b><div><div></div><div></div></div><span>Requires Enchanting (300)<br/><span class=\"q2\">Use: Teaches you how to permanently enchant a piece of chest armor to give +4 to each of the five attributes.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Formula: Enchant Chest - Greater Stats</b><div><div></div><div></div></div><span>Requires Enchanting (300)<br/><span class=\"q2\">Use: Teaches you how to permanently enchant a piece of chest armor to give +4 to each of the five attributes.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_note_01.png"
     },
     {

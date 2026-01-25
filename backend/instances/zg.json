@@ -604,7 +604,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Polymorph: Turtle</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Polymorph: Turtle.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Polymorph: Turtle</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Polymorph: Turtle.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_book_07.png"
     },
     {
@@ -721,7 +721,7 @@
       "id": 19912,
       "name": "Overlord's Onyx Band",
       "slot": "Finger",
-      "type": "Shield",
+      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Overlord's Onyx Band</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+11 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 2%.</span><br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/><br/><span class=\"q\">Overlord's Resolution (0/2)</span><br/><span class=\"q0\">  Overlord's Crimson Band</span><br/><span class=\"q0\">  Overlord's Onyx Band</span><br/><span class=\"q0\">(2) Set: Increases your chance to dodge an attack by 1%.</span></span></div>",
@@ -811,7 +811,7 @@
       "id": 19888,
       "name": "Overlord's Embrace",
       "slot": "Back",
-      "type": "Shield",
+      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Overlord's Embrace</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>140 Armor<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +7.</span><br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 1%.</span></span></div>",
@@ -1020,17 +1020,17 @@
     {
       "id": 19975,
       "name": "Zulian Mudskunk",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 1,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Zulian Mudskunk</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Zulian Mudskunk</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_fish_05.png"
     },
     {
       "id": 19727,
       "name": "Blood Scythe",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1044,7 +1044,7 @@
       "type": "Plate",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Gurubashi Helm</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Plate</span></div></div><span>549 Armor<br/>+22 Strength<br/>+21 Agility<br/>+13 Stamina<br/>Requires Level 60<br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Gurubashi Helm</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Plate</span></div></div><span>549 Armor<br/>+22 Strength<br/>+21 Agility<br/>+13 Stamina<br/>Requires Level 60<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_helmet_25.png"
     },
     {
@@ -1054,7 +1054,7 @@
       "type": "Leather",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadow Panther Hide Gloves</b><span>Binds when equipped</span><div><div><span>Hands</span></div><div><span>Leather</span></div></div><span>173 Armor<br/>+15 Strength<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadow Panther Hide Gloves</b><span>Binds when equipped</span><div><div><span>Hands</span></div><div><span>Leather</span></div></div><span>173 Armor<br/>+15 Strength<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_gauntlets_25.png"
     },
     {
@@ -1064,7 +1064,7 @@
       "type": "Leather",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadow Panther Hide Belt</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Leather</span></div></div><span>102 Armor<br/>+8 Strength<br/>+16 Agility<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadow Panther Hide Belt</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Leather</span></div></div><span>102 Armor<br/>+8 Strength<br/>+16 Agility<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_belt_26.png"
     },
     {
@@ -1074,7 +1074,7 @@
       "type": "Axe",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Hacker</b><span>Binds when equipped</span><div><div><span>One-hand</span></div><div><span>Axe</span></div></div><div><div>71 - 134 Damage</div><div>Speed 2.40</div></div><span>(42.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Axes +2.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Hacker</b><span>Binds when equipped</span><div><div><span>One-hand</span></div><div><span>Axe</span></div></div><div><div>71 - 134 Damage</div><div>Speed 2.40</div></div><span>(42.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Axes +2.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_axe_08.png"
     },
     {
@@ -1094,23 +1094,23 @@
       "type": "Staff",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Ceremonial Staff</b><span>Binds when equipped</span><span>Unique</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>112 - 172 Damage</div><div>Speed 2.60</div></div><span>(54.6 damage per second)<br/>+13 Stamina<br/>+16 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 32.</span><br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Ceremonial Staff</b><span>Binds when equipped</span><span>Unique</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>112 - 172 Damage</div><div>Speed 2.60</div></div><span>(54.6 damage per second)<br/>+13 Stamina<br/>+16 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 32.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_staff_34.png"
     },
     {
       "id": 19726,
       "name": "Bloodvine",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Bloodvine</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Bloodvine</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_herb_09.png"
     },
     {
       "id": 19774,
       "name": "Souldarite",
-      "slot": "Unknown",
+      "slot": "Miscellaneous",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1124,7 +1124,7 @@
       "type": "Leather",
       "classes": [],
       "quality": 1,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Primal Bat Leather</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Primal Bat Leather</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_pelt_01.png"
     },
     {
@@ -1134,7 +1134,7 @@
       "type": "Leather",
       "classes": [],
       "quality": 1,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Primal Tiger Leather</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Primal Tiger Leather</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_pelt_04.png"
     },
     {
@@ -1344,7 +1344,7 @@
       "type": null,
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_bag_10.png"
     },
     {

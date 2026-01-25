@@ -825,7 +825,7 @@
       "id": 19431,
       "name": "Styleen's Impeding Scarab",
       "slot": "Trinket",
-      "type": "Shield",
+      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Styleen's Impeding Scarab</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 5%.</span><br/><span class=\"q2\">Equip: Increases the block value of your shield by 24.</span><br/><span class=\"q2\">Equip: Increased Defense +13.</span></span></div>",
@@ -1496,7 +1496,7 @@
       "type": null,
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_bag_10.png"
     },
     {

@@ -20,7 +20,7 @@
       "type": null,
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Small Dream Shard</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Small Dream Shard</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_stone_03.png"
     },
     {
@@ -30,7 +30,7 @@
       "type": null,
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Fading Dream Fragment</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Fading Dream Fragment</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_stone_05.png"
     },
     {
@@ -40,7 +40,7 @@
       "type": null,
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Dreamscale</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Dreamscale</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_monsterscales_11.png"
     },
     {
@@ -490,7 +490,7 @@
       "type": null,
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
       "icon": "inv_misc_bag_10.png"
     },
     {
