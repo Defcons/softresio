@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import type { GetInstancesResponse, Instance, Item } from "../types/types.ts"
-import { Group, Input, Paper, Select, Stack, Title } from "@mantine/core"
+import { Box, Group, Input, Paper, Select, Stack, Title } from "@mantine/core"
 import { IconSearch } from "@tabler/icons-react"
 import { itemFilters } from "./item-filters.ts"
 import { ItemNameAndIcon } from "./item.tsx"
@@ -11,16 +11,19 @@ import { type RowComponentProps } from "react-window"
 const ItemNameAndIconByIndex = ({
   index,
   items,
+  style,
 }: RowComponentProps<{
   items: Item[]
 }>) => {
   return (
-    <ItemNameAndIcon
-      item={items[index]}
-      highlight={false}
-      onClick={() => null}
-      onLongClick={() => null}
-    />
+    <Box style={style}>
+      <ItemNameAndIcon
+        item={items[index]}
+        highlight={false}
+        onClick={() => null}
+        onLongClick={() => null}
+      />
+    </Box>
   )
 }
 
@@ -80,79 +83,73 @@ export const LootBrowser = () => {
 
   return (
     <>
-      <Paper shadow="sm" p="sm">
-        <Stack gap="md">
-          <Title order={2}>Loot browser</Title>
-          <Select
-            withAsterisk={instanceId == undefined}
-            searchable
-            placeholder="Select instance"
-            data={instances?.map((e) => {
-              return { value: e.id.toString(), label: e.name }
-            })}
-            value={(instanceId || "").toString()}
-            onChange={(v) => {
-              const instanceId = Number(v)
-              setInstanceId(instanceId)
-              setItems(
-                instances.filter((instance) => instance.id == instanceId)[0]
-                  .items,
-              )
+      <Paper shadow="sm" p="sm" h="80dvh">
+        <Stack h="100%">
+          <Stack gap="md">
+            <Title order={2}>Loot browser</Title>
+            <Select
+              withAsterisk={instanceId == undefined}
+              searchable
+              placeholder="Select instance"
+              data={instances?.map((e) => {
+                return { value: e.id.toString(), label: e.name }
+              })}
+              value={(instanceId || "").toString()}
+              onChange={(v) => {
+                const instanceId = Number(v)
+                setInstanceId(instanceId)
+                setItems(
+                  instances.filter((instance) => instance.id == instanceId)[0]
+                    .items,
+                )
+              }}
+            />
+          </Stack>
+          <Group justify="space-between" wrap="nowrap">
+            <Input
+              w="100%"
+              value={search}
+              onChange={(event) => setSearch(event.currentTarget.value)}
+              leftSection={<IconSearch size={16} />}
+              rightSectionPointerEvents="auto"
+              placeholder="Search.."
+            />
+          </Group>
+          <Group grow>
+            <Select
+              placeholder="Slot"
+              searchable
+              clearable
+              value={slotFilter}
+              onChange={(value) => {
+                setSlotFilter(value)
+                if (
+                  value && typeFilter &&
+                  !itemFilters[value].includes(value)
+                ) setTypeFilter(null)
+              }}
+              data={Object.keys(itemFilters)}
+            />
+            <Select
+              placeholder="Type"
+              disabled={!slotFilter || itemFilters[slotFilter].length == 0}
+              searchable
+              clearable
+              value={typeFilter}
+              onChange={(value) => setTypeFilter(value || undefined)}
+              data={slotFilter ? itemFilters[slotFilter] : []}
+            />
+          </Group>
+          <List
+            rowComponent={ItemNameAndIconByIndex}
+            rowCount={filteredItems.length}
+            rowHeight={40}
+            rowProps={{
+              items: filteredItems,
             }}
           />
         </Stack>
       </Paper>
-      {instanceId != undefined
-        ? (
-          <Paper shadow="sm" p="sm">
-            <Stack h="100%" gap="md">
-              <Group justify="space-between" wrap="nowrap">
-                <Input
-                  w="100%"
-                  value={search}
-                  onChange={(event) => setSearch(event.currentTarget.value)}
-                  leftSection={<IconSearch size={16} />}
-                  rightSectionPointerEvents="auto"
-                  placeholder="Search.."
-                />
-              </Group>
-              <Group grow>
-                <Select
-                  placeholder="Slot"
-                  searchable
-                  clearable
-                  value={slotFilter}
-                  onChange={(value) => {
-                    setSlotFilter(value)
-                    if (
-                      value && typeFilter &&
-                      !itemFilters[value].includes(value)
-                    ) setTypeFilter(null)
-                  }}
-                  data={Object.keys(itemFilters)}
-                />
-                <Select
-                  placeholder="Type"
-                  disabled={!slotFilter || itemFilters[slotFilter].length == 0}
-                  searchable
-                  clearable
-                  value={typeFilter}
-                  onChange={(value) => setTypeFilter(value || undefined)}
-                  data={slotFilter ? itemFilters[slotFilter] : []}
-                />
-              </Group>
-              <List
-                rowComponent={ItemNameAndIconByIndex}
-                rowCount={filteredItems.length}
-                rowHeight={40}
-                rowProps={{
-                  items: filteredItems,
-                }}
-              />
-            </Stack>
-          </Paper>
-        )
-        : null}
     </>
   )
 }

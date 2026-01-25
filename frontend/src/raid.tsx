@@ -20,8 +20,8 @@ import {
 } from "@mantine/core"
 import { CreateSr } from "./create-sr.tsx"
 import { SrList } from "./sr-list.tsx"
-import { rollForExport } from "./rollfor-export"
-import { CopyRaidLink } from "./copy-raid-link"
+import { CopyRaidLink } from "./copy-raid-link.tsx"
+import { rollForExport } from "./rollfor-export.ts"
 import useWebSocket from "react-use-websocket"
 
 export const RaidUpdater = (

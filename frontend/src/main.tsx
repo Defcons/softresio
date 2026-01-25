@@ -7,7 +7,16 @@ import { MyRaids } from "./my-raids.tsx"
 import { LootBrowser } from "./loot-browser.tsx"
 import "@mantine/core/styles.css"
 import "@mantine/dates/styles.css"
-import { Box, createTheme, Grid, MantineProvider } from "@mantine/core"
+import { IconBrandGithub } from "@tabler/icons-react"
+import {
+  Anchor,
+  createTheme,
+  Divider,
+  Grid,
+  Group,
+  MantineProvider,
+  Stack,
+} from "@mantine/core"
 import { Menu } from "./menu.tsx"
 import { BrowserRouter, Route, Routes } from "react-router"
 
@@ -19,20 +28,34 @@ function App() {
   return (
     <MantineProvider defaultColorScheme="dark" theme={theme}>
       <BrowserRouter>
-        <Box h="100dvh">
-          <Menu />
-          <Grid gutter={0} justify="center">
-            <Grid.Col span={{ base: 11, md: 4, xl: 4 }}>
-              <Routes>
-                <Route path="/" element={<CreateRaid />} />
-                <Route path="/create" element={<CreateRaid />} />
-                <Route path="/:raid_id" element={<Raid />} />;
-                <Route path="/raids" element={<MyRaids />} />;
-                <Route path="/loot" element={<LootBrowser />} />;
-              </Routes>
-            </Grid.Col>
-          </Grid>
-        </Box>
+        <Stack h="100dvh" justify="space-between">
+          <Stack>
+            <Menu />
+            <Grid gutter={0} justify="center">
+              <Grid.Col span={{ base: 11, md: 4, xl: 4 }}>
+                <Routes>
+                  <Route path="/" element={<CreateRaid />} />
+                  <Route path="/create" element={<CreateRaid />} />
+                  <Route path="/:raid_id" element={<Raid />} />;
+                  <Route path="/raids" element={<MyRaids />} />;
+                  <Route path="/loot" element={<LootBrowser />} />;
+                </Routes>
+              </Grid.Col>
+            </Grid>
+          </Stack>
+          <Stack>
+            <Divider />
+            <Group justify="center" m="lg" mt={0}>
+              <IconBrandGithub />
+              <Anchor
+                href="https://github.com/kofoednielsen/softresio"
+                c="lightgray"
+              >
+                kofoednielsen/softresio
+              </Anchor>
+            </Group>
+          </Stack>
+        </Stack>
       </BrowserRouter>
     </MantineProvider>
   )

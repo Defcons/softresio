@@ -5,6 +5,7 @@ import type { Attendee, Item, User } from "../types/types.ts"
 import { type RowComponentProps } from "react-window"
 import {
   Badge,
+  Box,
   Checkbox,
   CloseButton,
   Group,
@@ -115,6 +116,7 @@ export const SelectableItem = ({
   user,
   attendees,
   deleteMode,
+  style,
 }: {
   onItemClick: (itemId: number) => void
   onItemLongClick: (itemId: number) => void
@@ -130,28 +132,30 @@ export const SelectableItem = ({
     (selectedItemIds || []).includes(item.id)
 
   return (
-    <ItemNameAndIcon
-      item={item}
-      showTooltipItemId={showTooltipItemId}
-      highlight={highlight}
-      onClick={() => onItemClick(item.id)}
-      onLongClick={() => onItemLongClick(item.id)}
-      rightSection={
-        <Group wrap="nowrap">
-          <ReservedByOthers
-            itemId={item.id}
-            user={user}
-            attendees={attendees}
-          />
-          {deleteMode ? <CloseButton /> : (
-            <Checkbox
-              checked={selectedItemIds?.includes(item.id)}
-              size="md"
+    <Box style={style}>
+      <ItemNameAndIcon
+        item={item}
+        showTooltipItemId={showTooltipItemId}
+        highlight={highlight}
+        onClick={() => onItemClick(item.id)}
+        onLongClick={() => onItemLongClick(item.id)}
+        rightSection={
+          <Group wrap="nowrap">
+            <ReservedByOthers
+              itemId={item.id}
+              user={user}
+              attendees={attendees}
             />
-          )}
-        </Group>
-      }
-    />
+            {deleteMode ? <CloseButton /> : (
+              <Checkbox
+                checked={selectedItemIds?.includes(item.id)}
+                size="md"
+              />
+            )}
+          </Group>
+        }
+      />
+    </Box>
   )
 }
 
