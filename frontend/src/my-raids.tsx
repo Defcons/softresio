@@ -87,15 +87,17 @@ export const MyRaids = () => {
     <Paper shadow="sm" p="sm">
       <Table>
         <Table.Thead>
-          <Table.Th>
-            Instance
-          </Table.Th>
-          <Table.Th>
-            Time
-          </Table.Th>
-          <Table.Th w={110}>
-            Share link
-          </Table.Th>
+          <Table.Tr>
+            <Table.Th>
+              Instance
+            </Table.Th>
+            <Table.Th>
+              Time
+            </Table.Th>
+            <Table.Th w={110}>
+              Share link
+            </Table.Th>
+          </Table.Tr>
         </Table.Thead>
         <Table.Tbody>
           {raidLinks}
