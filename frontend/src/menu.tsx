@@ -29,6 +29,11 @@ export function Menu() {
                   My raids
                 </Button>
               </NavLink>
+              <NavLink to="/loot">
+                <Button variant="default">
+                  Loot browser
+                </Button>
+              </NavLink>
               <NavLink to="/create">
                 <Button>
                   Create raid
@@ -59,6 +64,11 @@ export function Menu() {
             <NavLink to="/raids">
               <Button fullWidth variant="default" onClick={toggleDrawer}>
                 My raids
+              </Button>
+            </NavLink>
+            <NavLink to="/loot">
+              <Button fullWidth variant="default" onClick={toggleDrawer}>
+                Loot browser
               </Button>
             </NavLink>
             <NavLink to="/create">
