@@ -6,10 +6,21 @@ import type {
   Sheet,
   User,
 } from "../types/types.ts"
+import { IconCopy } from "@tabler/icons-react"
 import { useParams } from "react-router"
-import { Paper, Skeleton, Stack, Title } from "@mantine/core"
+import {
+  Button,
+  CopyButton,
+  Group,
+  Paper,
+  Skeleton,
+  Stack,
+  Title,
+  Tooltip,
+} from "@mantine/core"
 import { CreateSr } from "./create-sr.tsx"
 import { SrList } from "./sr-list.tsx"
+import { rollForExport } from "./rollfor-export"
 import useWebSocket from "react-use-websocket"
 
 export const RaidUpdater = (
@@ -32,8 +43,10 @@ export const Raid = () => {
   const [user, setUser] = useState<User>()
   const [instance, setInstance] = useState<Instance>()
   const [instances, setInstances] = useState<Instance[]>()
+  const [exportedLatestVersion, setExportedLatestVersion] = useState(false)
 
   const loadRaid = (sheet?: Sheet) => {
+    setExportedLatestVersion(false)
     if (sheet) {
       return setSheet(sheet)
     }
@@ -80,7 +93,29 @@ export const Raid = () => {
     return (
       <Stack>
         <Paper shadow="sm" p="sm">
-          <Title>{instance.name}</Title>
+          <Group justify="space-between">
+            <Title>{instance.name}</Title>
+            <CopyButton value={rollForExport(sheet)} timeout={2000}>
+              {({ copied, copy }) => (
+                <Tooltip
+                  label={copied ? "Copied!" : "Copy RollFor export"}
+                  withArrow
+                  position="top"
+                >
+                  <Button
+                    onClick={() => {
+                      setExportedLatestVersion(true)
+                      copy()
+                    }}
+                    variant={exportedLatestVersion ? "default" : ""}
+                    leftSection={<IconCopy size={16} />}
+                  >
+                    RollFor
+                  </Button>
+                </Tooltip>
+              )}
+            </CopyButton>
+          </Group>
         </Paper>
         <CreateSr
           loadRaid={loadRaid}
