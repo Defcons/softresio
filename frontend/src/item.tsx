@@ -1,3 +1,4 @@
+import type { ReactElement } from "react"
 import { useHover } from "@mantine/hooks"
 import { LongPressCallbackReason, useLongPress } from "use-long-press"
 import type { Attendee, Item, User } from "../types/types.ts"
@@ -12,30 +13,79 @@ import {
   Tooltip,
 } from "@mantine/core"
 
-export const ItemNameAndIcon = ({ item }: { item: Item }) => (
-  <Group wrap="nowrap">
-    <Image
-      onClick={(e) => {
-        e.stopPropagation()
-        globalThis.open(
-          `https://database.turtlecraft.gg/?item=${item.id}`,
-        )
-      }}
-      style={{
-        filter: "drop-shadow(0px 0px 2px)",
-        border: "1px solid rgba(255,255,255,0.3)",
-      }}
-      className={`q${item.quality}`}
-      radius="sm"
-      h={24}
-      w={24}
-      src={`https://database.turtlecraft.gg/images/icons/medium/${item.icon}`}
-    />
-    <Title className={`q${item.quality}`} order={6} lineClamp={1}>
-      {item.name}
-    </Title>
-  </Group>
-)
+export const ItemNameAndIcon = (
+  { item, showTooltipItemId, highlight, onClick, onLongClick, rightSection }: {
+    item: Item
+    showTooltipItemId?: number
+    highlight: boolean
+    onClick: () => void
+    onLongClick: () => void
+    rightSection?: ReactElement
+  },
+) => {
+  const { hovered, ref } = useHover()
+  const isTouchScreen = globalThis.matchMedia("(pointer: coarse)").matches
+  const handlers = useLongPress(() => onLongClick(), {
+    onCancel: (_, meta) => {
+      if (meta.reason == LongPressCallbackReason.CancelledByRelease) {
+        setTimeout(() => onClick(), 50)
+      }
+    },
+  })
+
+  return (
+    <Tooltip
+      m={0}
+      p={0}
+      key={item.id}
+      opened={showTooltipItemId == item.id || (!isTouchScreen && hovered)}
+      label={
+        <div
+          className="tt-wrap"
+          dangerouslySetInnerHTML={{ __html: item.tooltip }}
+        />
+      }
+    >
+      <Group
+        {...handlers()}
+        ref={ref}
+        justify="space-between"
+        wrap="nowrap"
+        className={`item-list-element ${
+          highlight || (hovered && !isTouchScreen)
+            ? "item-list-element-highlight"
+            : ""
+        }`}
+        p={8}
+        key={item.id}
+      >
+        <Group wrap="nowrap">
+          <Image
+            onClick={(e) => {
+              e.stopPropagation()
+              globalThis.open(
+                `https://database.turtlecraft.gg/?item=${item.id}`,
+              )
+            }}
+            style={{
+              filter: "drop-shadow(0px 0px 2px)",
+              border: "1px solid rgba(255,255,255,0.3)",
+            }}
+            className={`q${item.quality}`}
+            radius="sm"
+            h={24}
+            w={24}
+            src={`https://database.turtlecraft.gg/images/icons/medium/${item.icon}`}
+          />
+          <Title className={`q${item.quality}`} order={6} lineClamp={1}>
+            {item.name}
+          </Title>
+        </Group>
+        {rightSection}
+      </Group>
+    </Tooltip>
+  )
+}
 
 const ReservedByOthers = (
   { itemId, user, attendees }: {
@@ -65,7 +115,6 @@ export const SelectableItem = ({
   user,
   attendees,
   deleteMode,
-  style,
 }: {
   onItemClick: (itemId: number) => void
   onItemLongClick: (itemId: number) => void
@@ -77,45 +126,17 @@ export const SelectableItem = ({
   deleteMode?: boolean
   style?: React.CSSProperties
 }) => {
-  const { hovered, ref } = useHover()
-  const handlers = useLongPress(() => onItemLongClick(item.id), {
-    onCancel: (_, meta) => {
-      if (meta.reason == LongPressCallbackReason.CancelledByRelease) {
-        setTimeout(() => onItemClick(item.id), 50)
-      }
-    },
-  })
-
-  const isTouchScreen = globalThis.matchMedia("(pointer: coarse)").matches
-
-  const highlight = !isTouchScreen && hovered || showTooltipItemId == item.id ||
-    selectedItemIds?.includes(item.id)
+  const highlight = showTooltipItemId == item.id ||
+    (selectedItemIds || []).includes(item.id)
 
   return (
-    <Tooltip
-      p={0}
-      key={item.id}
-      opened={showTooltipItemId == item.id || (!isTouchScreen && hovered)}
-      label={
-        <div
-          className="tt-wrap"
-          dangerouslySetInnerHTML={{ __html: item.tooltip }}
-        />
-      }
-    >
-      <Group
-        {...handlers()}
-        ref={ref}
-        style={style}
-        justify="space-between"
-        wrap="nowrap"
-        className={`item-list-element ${
-          highlight ? "item-list-element-highlight" : ""
-        }`}
-        p={8}
-        key={item.id}
-      >
-        <ItemNameAndIcon item={item} />
+    <ItemNameAndIcon
+      item={item}
+      showTooltipItemId={showTooltipItemId}
+      highlight={highlight}
+      onClick={() => onItemClick(item.id)}
+      onLongClick={() => onItemLongClick(item.id)}
+      rightSection={
         <Group wrap="nowrap">
           <ReservedByOthers
             itemId={item.id}
@@ -129,8 +150,8 @@ export const SelectableItem = ({
             />
           )}
         </Group>
-      </Group>
-    </Tooltip>
+      }
+    />
   )
 }
 
