@@ -1,4 +1,5 @@
 import {
+  Badge,
   Box,
   Burger,
   Button,
@@ -7,6 +8,7 @@ import {
   Image,
   ScrollArea,
   Stack,
+  Tooltip,
 } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
 import logo from "./assets/logo-orange.png"
@@ -23,6 +25,9 @@ export function Menu() {
         <Group justify="space-between" h="100%">
           <Group>
             <Image src={logo} h={40} w="auto" />
+            <Tooltip label="Do not expect data persistance or features to work">
+              <Badge color="red" radius="xs">Early Beta</Badge>
+            </Tooltip>
             <Group visibleFrom="sm">
               <NavLink to="/raids">
                 <Button variant="default">
