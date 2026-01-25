@@ -34,15 +34,12 @@ export function Menu() {
                   Loot browser
                 </Button>
               </NavLink>
+              <NavLink to="/create">
+                <Button>
+                  Create raid
+                </Button>
+              </NavLink>
             </Group>
-          </Group>
-
-          <Group visibleFrom="sm">
-            <NavLink to="/create">
-              <Button>
-                Create raid
-              </Button>
-            </NavLink>
           </Group>
           <Burger
             size="sm"
