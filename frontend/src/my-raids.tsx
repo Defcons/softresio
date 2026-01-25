@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { formatDistanceToNow } from "date-fns"
-import { Anchor, Button, CopyButton, Paper, Table, Text } from "@mantine/core"
+import { Anchor, Paper, Table, Text } from "@mantine/core"
 import { useNavigate } from "react-router"
 import type {
   GetInstancesResponse,
@@ -8,6 +8,8 @@ import type {
   Instance,
   Raid,
 } from "../types/types.ts"
+import { CopyRaidLink } from "./copy-raid-link"
+
 export const MyRaids = () => {
   const [raidList, setRaidList] = useState<Raid[]>()
   const [instances, setInstances] = useState<Instance[]>()
@@ -65,19 +67,7 @@ export const MyRaids = () => {
           {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
         </Table.Td>
         <Table.Td>
-          <CopyButton
-            value={`${window.location.protocol}//${window.location.hostname}${
-              window.location.hostname == "localhost"
-                ? `:${window.location.port}`
-                : ""
-            }/${raid.sheet.raidId}`}
-          >
-            {({ copied, copy }) => (
-              <Button variant={copied ? "default" : ""} onClick={copy} w="100%">
-                {copied ? "yoink" : raid.sheet.raidId}
-              </Button>
-            )}
-          </CopyButton>
+          <CopyRaidLink raidId={raid.sheet.raidId} />
         </Table.Td>
       </Table.Tr>
     )
