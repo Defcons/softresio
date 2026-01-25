@@ -6,7 +6,7 @@
     {
       "id": 61652,
       "name": "Claw of Erennius",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -16,7 +16,7 @@
     {
       "id": 61198,
       "name": "Small Dream Shard",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -26,7 +26,7 @@
     {
       "id": 61197,
       "name": "Fading Dream Fragment",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -36,7 +36,7 @@
     {
       "id": 20381,
       "name": "Dreamscale",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -186,8 +186,8 @@
     {
       "id": 61455,
       "name": "Idol of the Emerald Rot",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Idol",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Idol of the Emerald Rot</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Idol</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Your finishing moves have a 20% chance per combo point to deal 150 to 190 Nature damage.</span></span></div>",
@@ -196,8 +196,8 @@
     {
       "id": 61203,
       "name": "Libram of the Dreamguard",
-      "slot": "Unknown",
-      "type": "Shield",
+      "slot": "Relic",
+      "type": "Libram",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Libram of the Dreamguard</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Libram</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases the number of charges of your Holy Shield by 1.</span></span></div>",
@@ -206,8 +206,8 @@
     {
       "id": 61204,
       "name": "Totem of the Stonebreaker",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Totem",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Totem of the Stonebreaker</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Totem</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Your Shock spells have a 35% chance to grant 130 attack power for 10 sec.</span></span></div>",
@@ -216,7 +216,7 @@
     {
       "id": 61215,
       "name": "Head of Solnius",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -226,7 +226,7 @@
     {
       "id": 61196,
       "name": "Bag of Vast Consciousness",
-      "slot": "Unknown",
+      "slot": "Bag",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -276,9 +276,9 @@
     {
       "id": 61444,
       "name": "Smoldering Dream Essence",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
-      "classes": [],
+      "classes": ["Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Smoldering Dream Essence</b><span>Binds when picked up</span><div><div></div><div></div></div><span>This Item Begins a Quest<br/>Classes: Druid<br/>Requires Level 60</span></div>",
       "icon": "inv_stone_05.png"
@@ -286,7 +286,7 @@
     {
       "id": 51361,
       "name": "Glyph of the Dreamkin",
-      "slot": "Unknown",
+      "slot": "Consumable",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -456,7 +456,7 @@
     {
       "id": 54001,
       "name": "Dream Frog",
-      "slot": "Unknown",
+      "slot": "Companion",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -486,7 +486,7 @@
     {
       "id": 17965,
       "name": "Yellow Sack of Gems",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -496,7 +496,7 @@
     {
       "id": 30018,
       "name": "Emerald Drake",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 4,

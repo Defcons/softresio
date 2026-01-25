@@ -168,7 +168,7 @@
     {
       "id": 17077,
       "name": "Crimson Shocker",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -188,7 +188,7 @@
     {
       "id": 16665,
       "name": "Tome of Tranquilizing Shot",
-      "slot": "Unknown",
+      "slot": "Consumable",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -636,7 +636,7 @@
     {
       "id": 18564,
       "name": "Bindings of the Windseeker (Right Half)",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 5,
@@ -818,7 +818,7 @@
     {
       "id": 18563,
       "name": "Bindings of the Windseeker (Left Half)",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 5,
@@ -946,7 +946,7 @@
     {
       "id": 17203,
       "name": "Sulfuron Ingot",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -956,8 +956,8 @@
     {
       "id": 17072,
       "name": "Blastershot Launcher",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Gun",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Blastershot Launcher</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>73 - 136 Damage</div><div>Speed 2.60</div></div><span>(40.2 damage per second)<br/>+6 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span></span></div>",
@@ -1144,7 +1144,7 @@
     {
       "id": 18703,
       "name": "Ancient Petrified Leaf",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1274,7 +1274,7 @@
     {
       "id": 17204,
       "name": "Eye of Sulfuras",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 5,
@@ -1284,7 +1284,7 @@
     {
       "id": 19017,
       "name": "Essence of the Firelord",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 5,
@@ -1820,7 +1820,7 @@
     {
       "id": 92080,
       "name": "Molten Corehound",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1890,8 +1890,8 @@
     {
       "id": 58239,
       "name": "Overheated Skyrazors",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Thrown",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Overheated Skyrazors</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Thrown</span></div><div><span>Thrown</span></div></div><div><div>45 - 76 Damage</div><div>Speed 1.60</div></div><span>(37.8 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/><span class=\"q2\">Equip: Increases your attack and casting speed by 1%.</span></span></div>",
@@ -1930,7 +1930,7 @@
     {
       "id": 58213,
       "name": "Smoldaris' Fractured Eye",
-      "slot": "Unknown",
+      "slot": "Held In Off-hand",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1960,7 +1960,7 @@
     {
       "id": 58205,
       "name": "Primal Flameslinger",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -1970,8 +1970,8 @@
     {
       "id": 58240,
       "name": "Libram of Final Judgement",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Libram",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Libram of Final Judgement</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Libram</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Your Judgements deal an additional 200 to 220 Holy damage to enemies below 35% health.</span></span></div>",
@@ -2000,7 +2000,7 @@
     {
       "id": 58246,
       "name": "Tablet of Molten Blast VI",
-      "slot": "Unknown",
+      "slot": "Consumable",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -2010,8 +2010,8 @@
     {
       "id": 58206,
       "name": "Idol of the Forgotten Wilds",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Libram",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Idol of the Forgotten Wilds</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Idol</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: The initial healing from Regrowth has a 15% chance to sprout a plant that heals wounded allies for 12 sec.</span></span></div>",
@@ -2040,8 +2040,8 @@
     {
       "id": 58241,
       "name": "Totem of Eruption",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Totem",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Totem of Eruption</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Totem</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage done by Molten Blast by up to 35. Improved Molten Blast deals damage for an additional 20% of the refreshed duration.</span><br/><span class=\"q\">\"Living flame from the heart of the Firelord's domain surges through this totem.\"</span></span></div>",
