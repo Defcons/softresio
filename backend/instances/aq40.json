@@ -136,7 +136,7 @@
     {
       "id": 21237,
       "name": "Imperial Qiraji Regalia",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -146,7 +146,7 @@
     {
       "id": 21232,
       "name": "Imperial Qiraji Armaments",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -256,7 +256,7 @@
     {
       "id": 21603,
       "name": "Wand of Qiraji Nobility",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -596,8 +596,8 @@
     {
       "id": 22402,
       "name": "Libram of Grace",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Libram",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Libram of Grace</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Libram</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Reduces the mana cost of your Cleanse spell by 25.</span></span></div>",
@@ -606,8 +606,8 @@
     {
       "id": 22396,
       "name": "Totem of Life",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Totem",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Totem of Life</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Totem</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by Lesser Healing Wave by 40.</span></span></div>",
@@ -676,8 +676,8 @@
     {
       "id": 22399,
       "name": "Idol of Health",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Idol",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Idol of Health</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Idol</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Reduces the casting time of your Healing Touch spell by 0.15 sec.</span></span></div>",
@@ -686,9 +686,9 @@
     {
       "id": 20928,
       "name": "Qiraji Bindings of Command",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Hunter","Rogue","Priest"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Qiraji Bindings of Command</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Hunter, Rogue, Priest</span></div>",
       "icon": "inv_qiraj_bindingscommand.png"
@@ -696,9 +696,9 @@
     {
       "id": 20932,
       "name": "Qiraji Bindings of Dominance",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Shaman","Mage","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Qiraji Bindings of Dominance</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Shaman, Mage, Warlock, Druid</span></div>",
       "icon": "inv_qiraj_bindingsdominance.png"
@@ -766,9 +766,9 @@
     {
       "id": 20930,
       "name": "Vek'lor's Diadem",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Rogue","Shaman","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Vek'lor's Diadem</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Rogue, Shaman, Druid</span></div>",
       "icon": "inv_bracer_18.png"
@@ -846,9 +846,9 @@
     {
       "id": 20926,
       "name": "Vek'nilash's Circlet",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Priest","Mage","Warlock"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Vek'nilash's Circlet</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Priest, Mage, Warlock</span></div>",
       "icon": "inv_bracer_18.png"
@@ -986,8 +986,8 @@
     {
       "id": 23557,
       "name": "Larvae of the Great Worm",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Gun",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Larvae of the Great Worm</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>103 - 192 Damage</div><div>Speed 3.00</div></div><span>(49.2 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: +18 Attack Power.</span></span></div>",
@@ -1016,9 +1016,9 @@
     {
       "id": 20927,
       "name": "Ouro's Intact Hide",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Rogue","Priest","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ouro's Intact Hide</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue, Priest, Mage</span></div>",
       "icon": "inv_qiraj_ourohide.png"
@@ -1026,9 +1026,9 @@
     {
       "id": 20931,
       "name": "Skin of the Great Sandworm",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Shaman","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Skin of the Great Sandworm</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Warlock, Druid</span></div>",
       "icon": "inv_qiraj_skinsandworm.png"
@@ -1176,8 +1176,8 @@
     {
       "id": 20929,
       "name": "Carapace of the Old God",
-      "slot": "Unknown",
-      "type": "Plate",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Warrior",
         "Paladin",
@@ -1192,9 +1192,9 @@
     {
       "id": 20933,
       "name": "Husk of the Old God",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Priest","Mage","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Husk of the Old God</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock, Druid</span></div>",
       "icon": "inv_qiraj_huskoldgod.png"
@@ -1202,7 +1202,7 @@
     {
       "id": 21221,
       "name": "Eye of C'Thun",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1212,7 +1212,7 @@
     {
       "id": 22734,
       "name": "Base of Atiesh",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 5,
@@ -1306,7 +1306,7 @@
     {
       "id": 21218,
       "name": "Blue Qiraji Resonating Crystal",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1316,7 +1316,7 @@
     {
       "id": 21324,
       "name": "Yellow Qiraji Resonating Crystal",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1326,7 +1326,7 @@
     {
       "id": 21323,
       "name": "Green Qiraji Resonating Crystal",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1336,7 +1336,7 @@
     {
       "id": 21321,
       "name": "Red Qiraji Resonating Crystal",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1466,7 +1466,7 @@
     {
       "id": 36550,
       "name": "Spotted Qiraji Battle Tank",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 4,

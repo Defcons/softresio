@@ -786,7 +786,7 @@
     {
       "id": 21284,
       "name": "Codex of Greater Heal V",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -796,7 +796,7 @@
     {
       "id": 21287,
       "name": "Codex of Prayer of Healing V",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -806,7 +806,7 @@
     {
       "id": 21285,
       "name": "Codex of Renew X",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -816,7 +816,7 @@
     {
       "id": 21279,
       "name": "Tome of Fireball XII",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -826,7 +826,7 @@
     {
       "id": 21214,
       "name": "Tome of Frostbolt XI",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -836,7 +836,7 @@
     {
       "id": 21280,
       "name": "Tome of Arcane Missiles VIII",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -846,7 +846,7 @@
     {
       "id": 21281,
       "name": "Grimoire of Shadow Bolt X",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -856,7 +856,7 @@
     {
       "id": 21283,
       "name": "Grimoire of Corruption VII",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -866,7 +866,7 @@
     {
       "id": 21282,
       "name": "Grimoire of Immolate VIII",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -876,7 +876,7 @@
     {
       "id": 21300,
       "name": "Handbook of Backstab IX",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -886,7 +886,7 @@
     {
       "id": 21303,
       "name": "Handbook of Feint V",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -896,7 +896,7 @@
     {
       "id": 21302,
       "name": "Handbook of Deadly Poison V",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -906,7 +906,7 @@
     {
       "id": 21294,
       "name": "Book of Healing Touch XI",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -916,7 +916,7 @@
     {
       "id": 21296,
       "name": "Book of Rejuvenation XI",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -926,7 +926,7 @@
     {
       "id": 21295,
       "name": "Book of Starfire VII",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -936,7 +936,7 @@
     {
       "id": 21306,
       "name": "Guide: Serpent Sting IX",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -946,7 +946,7 @@
     {
       "id": 21304,
       "name": "Guide: Multi-Shot V",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -956,7 +956,7 @@
     {
       "id": 21307,
       "name": "Guide: Aspect of the Hawk VII",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -966,7 +966,7 @@
     {
       "id": 21291,
       "name": "Tablet of Healing Wave X",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -976,7 +976,7 @@
     {
       "id": 21292,
       "name": "Tablet of Strength of Earth Totem V",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -986,7 +986,7 @@
     {
       "id": 21293,
       "name": "Tablet of Grace of Air Totem III",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1006,7 +1006,7 @@
     {
       "id": 21289,
       "name": "Libram: Blessing of Might VII",
-      "slot": "Profession",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1016,7 +1016,7 @@
     {
       "id": 21290,
       "name": "Libram: Holy Light IX",
-      "slot": "Profession",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1026,7 +1026,7 @@
     {
       "id": 21298,
       "name": "Manual of Battle Shout VII",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1036,7 +1036,7 @@
     {
       "id": 21299,
       "name": "Manual of Revenge VI",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1046,7 +1046,7 @@
     {
       "id": 21297,
       "name": "Manual of Heroic Strike IX",
-      "slot": "Unknown",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1126,7 +1126,7 @@
     {
       "id": 83005,
       "name": "Perfect Obsidian Shard",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,

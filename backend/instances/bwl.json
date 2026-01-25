@@ -386,7 +386,7 @@
     {
       "id": 20383,
       "name": "Head of the Broodlord Lashlayer",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -744,8 +744,8 @@
     {
       "id": 19368,
       "name": "Dragonbreath Hand Cannon",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Gun",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Dragonbreath Hand Cannon</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>99 - 173 Damage</div><div>Speed 3.10</div></div><span>(43.9 damage per second)<br/>+14 Agility<br/>+7 Stamina<br/>Requires Level 60</span></div>",
@@ -794,7 +794,7 @@
     {
       "id": 19367,
       "name": "Dragon's Touch",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -1032,7 +1032,7 @@
     {
       "id": 19361,
       "name": "Ashjre'thul, Crossbow of Smiting",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1180,7 +1180,7 @@
     {
       "id": 19003,
       "name": "Head of Nefarian (Alliance)",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1360,7 +1360,7 @@
     {
       "id": 19435,
       "name": "Essence Gatherer",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -1472,7 +1472,7 @@
     {
       "id": 19002,
       "name": "Head of Nefarian (Horde)",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1482,7 +1482,7 @@
     {
       "id": 21138,
       "name": "Red Scepter Shard",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 1,
@@ -1492,7 +1492,7 @@
     {
       "id": 17965,
       "name": "Yellow Sack of Gems",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1502,7 +1502,7 @@
     {
       "id": 36551,
       "name": "Black Drake",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 4,

@@ -306,7 +306,7 @@
     {
       "id": 61292,
       "name": "Totem of Crackling Thunder",
-      "slot": "Unknown",
+      "slot": "Relic",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -416,8 +416,8 @@
     {
       "id": 61293,
       "name": "Idol of the Moonfang",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Idol",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Idol of the Moonfang</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Idol</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Moonfire, Savage Bite and Shred restore 50 mana and 125 health. This effect is doubled on a critical strike.</span></span></div>",
@@ -426,8 +426,8 @@
     {
       "id": 61248,
       "name": "Beasthunter's Blunderbuss",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Gun",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Beasthunter's Blunderbuss</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>72 - 138 Damage</div><div>Speed 2.80</div></div><span>(37.5 damage per second)<br/>+5 Agility<br/>Requires Level 60<br/><span class=\"q2\">Equip: +39 Attack Power when fighting Beasts.</span><br/><span class=\"q\">\"The initials G.G. are etched on the stock.\"</span></span></div>",
@@ -536,8 +536,8 @@
     {
       "id": 61443,
       "name": "Libram of the Faithful",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Libram",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Libram of the Faithful</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Libram</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Your Consecration reduces damage taken by 2% for party members that are inside it.</span></span></div>",
@@ -601,7 +601,7 @@
     {
       "id": 61286,
       "name": "Bloodfang Effigy",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 3,
@@ -661,7 +661,7 @@
     {
       "id": 61674,
       "name": "Overcharged Ley Energy",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -721,7 +721,7 @@
     {
       "id": 51326,
       "name": "Scribbled Cooking Notes",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -821,7 +821,7 @@
     {
       "id": 51217,
       "name": "Fashion Coin",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -831,7 +831,7 @@
     {
       "id": 61174,
       "name": "Medivh's Merlot",
-      "slot": "Unknown",
+      "slot": "Consumable",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -841,7 +841,7 @@
     {
       "id": 61175,
       "name": "Medivh's Merlot Blue",
-      "slot": "Unknown",
+      "slot": "Consumable",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -851,7 +851,7 @@
     {
       "id": 55552,
       "name": "Guide: Aspect of the Wolf VII",
-      "slot": "Unknown",
+      "slot": "Consumable",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -881,7 +881,7 @@
     {
       "id": 37011,
       "name": "Araxxna's Hatchling",
-      "slot": "Unknown",
+      "slot": "Companion",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -891,7 +891,7 @@
     {
       "id": 37006,
       "name": "Skitterweb Hatchling",
-      "slot": "Unknown",
+      "slot": "Companion",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -902,7 +902,7 @@
       "id": 58401,
       "name": "Schematic: Giga-Charged Arcane Reflector",
       "slot": "Profession",
-      "type": null,
+      "type": "null",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Schematic: Giga-Charged Arcane Reflector</b><span>Binds when picked up</span><div><div><span>Engineering</span></div><div></div></div><span>Requires Engineering (290)<br/><span class=\"q2\">Use: Teaches you how to make a Giga-Charged Arcane Reflector.</span></span></div>",

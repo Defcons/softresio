@@ -114,7 +114,7 @@
     {
       "id": 18423,
       "name": "Head of Onyxia (Alliance)",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -124,7 +124,7 @@
     {
       "id": 18705,
       "name": "Mature Black Dragon Sinew",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -204,7 +204,7 @@
     {
       "id": 17966,
       "name": "Onyxia Hide Backpack",
-      "slot": "Unknown",
+      "slot": "Bag",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -214,7 +214,7 @@
     {
       "id": 15410,
       "name": "Scale of Onyxia",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -224,7 +224,7 @@
     {
       "id": 18422,
       "name": "Head of Onyxia (Horde)",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -244,7 +244,7 @@
     {
       "id": 17965,
       "name": "Yellow Sack of Gems",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -264,7 +264,7 @@
     {
       "id": 30017,
       "name": "Onyxian Drake",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 4,

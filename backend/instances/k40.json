@@ -136,9 +136,9 @@
     {
       "id": 55484,
       "name": "Ethereal Boots of Ascendancy",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Rogue","Shaman","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ethereal Boots of Ascendancy</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Rogue, Shaman, Mage<br/>Requires Level 60</span></div>",
       "icon": "inv_boots_cloth_01.png"
@@ -146,9 +146,9 @@
     {
       "id": 55483,
       "name": "Ethereal Boots of Conquest",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Priest","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ethereal Boots of Conquest</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Priest, Warlock, Druid<br/>Requires Level 60</span></div>",
       "icon": "inv_boots_cloth_01.png"
@@ -196,9 +196,9 @@
     {
       "id": 55490,
       "name": "Brutal Leggings of Ascendancy",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Rogue","Shaman","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Brutal Leggings of Ascendancy</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Rogue, Shaman, Mage<br/>Requires Level 60</span></div>",
       "icon": "inv_pants_plate_11.png"
@@ -206,9 +206,9 @@
     {
       "id": 55489,
       "name": "Brutal Leggings of Conquest",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Priest","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Brutal Leggings of Conquest</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Priest, Warlock, Druid<br/>Requires Level 60</span></div>",
       "icon": "inv_pants_plate_11.png"
@@ -541,8 +541,8 @@
     {
       "id": 55510,
       "name": "Fragments of Aldrach",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Thrown",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Fragments of Aldrach</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Thrown</span></div><div><span>Thrown</span></div></div><div><div>124 - 187 Damage</div><div>Speed 1.90</div></div><span>(81.8 damage per second)<br/>+19 Agility<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span></span></div>",
@@ -651,9 +651,9 @@
     {
       "id": 55486,
       "name": "Shifting Mantle of Ascendancy",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Rogue","Shaman","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Shifting Mantle of Ascendancy</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Rogue, Shaman, Mage<br/>Requires Level 60</span></div>",
       "icon": "inv_shoulder_17.png"
@@ -661,9 +661,9 @@
     {
       "id": 55485,
       "name": "Shifting Mantle of Conquest",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Priest","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Shifting Mantle of Conquest</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Priest, Warlock, Druid<br/>Requires Level 60</span></div>",
       "icon": "inv_shoulder_17.png"
@@ -671,8 +671,8 @@
     {
       "id": 55114,
       "name": "Totem of Broken Earth",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Totem",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Totem of Broken Earth</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Totem</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases the damage done by your Earth Shock by 100 and causes your Earth Shock to reduce the target's attack speed by 15% for 8 sec.</span></span></div>",
@@ -731,8 +731,8 @@
     {
       "id": 55110,
       "name": "Libram of the Eternal Tower",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Libram",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Libram of the Eternal Tower</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Libram</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Reduces the cooldown of your Holy Strike and Crusader Strike by 0.5 sec.</span></span></div>",
@@ -811,8 +811,8 @@
     {
       "id": 55096,
       "name": "Phase-shifting Crossbow",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Crossbow",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Phase-shifting Crossbow</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Ranged</span></div><div><span>Crossbow</span></div></div><div><div>111 - 203 Damage</div><div>Speed 2.80</div></div><span>(56.1 damage per second)<br/>+9 Strength<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
@@ -929,7 +929,7 @@
     {
       "id": 55134,
       "name": "Rod of Permafrost",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -969,8 +969,8 @@
     {
       "id": 55082,
       "name": "Idol of Laceration",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Idol",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Idol of Laceration</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Idol</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Your finishing moves have a 20% chance per combo point to cause your next Shred to refund 15 Energy.</span></span></div>",
@@ -979,7 +979,7 @@
     {
       "id": 20739,
       "name": "Mechanical Horse",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -989,7 +989,7 @@
     {
       "id": 41373,
       "name": "Draconic Focus",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -999,7 +999,7 @@
     {
       "id": 41403,
       "name": "Enchanted Amethyst",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1009,7 +1009,7 @@
     {
       "id": 41412,
       "name": "Cosmic Residue",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1019,7 +1019,7 @@
     {
       "id": 41414,
       "name": "Anima of the Guardian",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1029,7 +1029,7 @@
     {
       "id": 41447,
       "name": "Soul of the Dreadlord",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 5,
@@ -1039,7 +1039,7 @@
     {
       "id": 41485,
       "name": "Pristine Ley Crystal",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1049,7 +1049,7 @@
     {
       "id": 55482,
       "name": "Ephemeral Pendant",
-      "slot": "Unknown",
+      "slot": "Neck",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1059,9 +1059,9 @@
     {
       "id": 55487,
       "name": "Fractured Crown of Conquest",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Priest","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Fractured Crown of Conquest</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Priest, Warlock, Druid<br/>Requires Level 60</span></div>",
       "icon": "inv_helmet_57.png"
@@ -1069,9 +1069,9 @@
     {
       "id": 55488,
       "name": "Fractured Crown of Ascendancy",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Rogue","Shaman","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Fractured Crown of Ascendancy</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Rogue, Shaman, Mage<br/>Requires Level 60</span></div>",
       "icon": "inv_helmet_57.png"
@@ -1079,9 +1079,9 @@
     {
       "id": 55491,
       "name": "Nathrezim Armor of Treachery",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Priest","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Nathrezim Armor of Treachery</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Priest, Warlock, Druid<br/>Requires Level 60</span></div>",
       "icon": "inv_chest_cloth_45.png"
@@ -1089,9 +1089,9 @@
     {
       "id": 55492,
       "name": "Nathrezim Armor of Deceit",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Rogue","Shaman","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Nathrezim Armor of Deceit</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Rogue, Shaman, Mage<br/>Requires Level 60</span></div>",
       "icon": "inv_chest_cloth_45.png"
@@ -1099,7 +1099,7 @@
     {
       "id": 55511,
       "name": "Hellflame",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -1109,7 +1109,7 @@
     {
       "id": 55579,
       "name": "Heart of Mephistroth",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1119,7 +1119,7 @@
     {
       "id": 92082,
       "name": "Felforged Dreadhound",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 4,

@@ -6,9 +6,9 @@
     {
       "id": 19721,
       "name": "Primal Hakkari Shawl",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Shawl</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Mage<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
       "icon": "inv_shoulder_19.png"
@@ -16,9 +16,9 @@
     {
       "id": 19724,
       "name": "Primal Hakkari Aegis",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Hunter","Rogue","Priest"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Aegis</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Hunter, Rogue, Priest<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
       "icon": "inv_chest_chain_12.png"
@@ -26,8 +26,8 @@
     {
       "id": 19723,
       "name": "Primal Hakkari Kossack",
-      "slot": "Unknown",
-      "type": "Plate",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Warrior",
         "Mage",
@@ -40,9 +40,9 @@
     {
       "id": 19722,
       "name": "Primal Hakkari Tabard",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Shaman","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Tabard</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Shaman, Druid<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
       "icon": "inv_banner_01.png"
@@ -50,9 +50,9 @@
     {
       "id": 19717,
       "name": "Primal Hakkari Armsplint",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warlock","Rogue","Shaman"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Armsplint</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue, Shaman<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
       "icon": "inv_bracer_18.png"
@@ -60,9 +60,9 @@
     {
       "id": 19716,
       "name": "Primal Hakkari Bindings",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Mage"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Bindings</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Mage<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
       "icon": "inv_bracer_05.png"
@@ -70,9 +70,9 @@
     {
       "id": 19718,
       "name": "Primal Hakkari Stanchion",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Priest","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Stanchion</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Warlock, Druid<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
       "icon": "inv_bracer_14.png"
@@ -80,9 +80,9 @@
     {
       "id": 19719,
       "name": "Primal Hakkari Girdle",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Rogue","Shaman"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Girdle</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue, Shaman<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
       "icon": "inv_belt_12.png"
@@ -90,9 +90,9 @@
     {
       "id": 19720,
       "name": "Primal Hakkari Sash",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Priest","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Sash</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Warlock, Druid<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
       "icon": "inv_belt_07.png"
@@ -240,7 +240,7 @@
     {
       "id": 19927,
       "name": "Mar'li's Touch",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -300,7 +300,7 @@
     {
       "id": 22637,
       "name": "Primal Hakkari Idol",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -310,7 +310,7 @@
     {
       "id": 19872,
       "name": "Armored Razzashi Raptor",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -340,8 +340,8 @@
     {
       "id": 19866,
       "name": "Warblade of the Hakkari (OH)",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Off Hand",
+      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Warblade of the Hakkari</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Off Hand</span></div><div><span>Sword</span></div></div><div><div>57 - 106 Damage</div><div>Speed 1.70</div></div><span>(47.9 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +40 Attack Power.</span><br/><br/><span class=\"q\">The Twin Blades of Hakkari (0/2)</span><br/><span class=\"q0\">  Warblade of the Hakkari</span><br/><span class=\"q0\">  Warblade of the Hakkari</span><br/><span class=\"q0\">(2) Set: Increased Swords +6.</span><br/><span class=\"q\">\"The seething flames of hatred.\"</span></span></div>",
@@ -460,7 +460,7 @@
     {
       "id": 19939,
       "name": "Gri'lek's Blood",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -470,7 +470,7 @@
     {
       "id": 19967,
       "name": "Thoughtblighter",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 3,
@@ -490,7 +490,7 @@
     {
       "id": 19942,
       "name": "Hazza'rah's Dream Thread",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -520,7 +520,7 @@
     {
       "id": 19940,
       "name": "Renataki's Tooth",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -550,7 +550,7 @@
     {
       "id": 19941,
       "name": "Wushoolay's Mane",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -600,7 +600,7 @@
     {
       "id": 22739,
       "name": "Tome of Polymorph: Turtle",
-      "slot": "Unknown",
+      "slot": "Consumable",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -610,7 +610,7 @@
     {
       "id": 19902,
       "name": "Swift Zulian Tiger",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -740,7 +740,7 @@
     {
       "id": 19914,
       "name": "Panther Hide Sack",
-      "slot": "Unknown",
+      "slot": "Bag",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -930,7 +930,7 @@
     {
       "id": 19861,
       "name": "Touch of Chaos",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -940,8 +940,8 @@
     {
       "id": 19853,
       "name": "Gurubashi Dwarf Destroyer",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Gun",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Gurubashi Dwarf Destroyer</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>76 - 142 Damage</div><div>Speed 2.80</div></div><span>(38.9 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +30 Attack Power.</span></span></div>",
@@ -970,8 +970,8 @@
     {
       "id": 19865,
       "name": "Warblade of the Hakkari (MH)",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Main Hand",
+      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Warblade of the Hakkari</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Main Hand</span></div><div><span>Sword</span></div></div><div><div>59 - 110 Damage</div><div>Speed 1.70</div></div><span>(49.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +28 Attack Power.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><br/><span class=\"q\">The Twin Blades of Hakkari (0/2)</span><br/><span class=\"q0\">  Warblade of the Hakkari</span><br/><span class=\"q0\">  Warblade of the Hakkari</span><br/><span class=\"q0\">(2) Set: Increased Swords +6.</span><br/><span class=\"q\">\"Forged in...\"</span></span></div>",
@@ -1010,7 +1010,7 @@
     {
       "id": 19802,
       "name": "Heart of Hakkar",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1120,7 +1120,7 @@
     {
       "id": 19767,
       "name": "Primal Bat Leather",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": "Leather",
       "classes": [],
       "quality": 1,
@@ -1130,7 +1130,7 @@
     {
       "id": 19768,
       "name": "Primal Tiger Leather",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": "Leather",
       "classes": [],
       "quality": 1,
@@ -1140,7 +1140,7 @@
     {
       "id": 19820,
       "name": "Punctured Voodoo Doll (Priest)",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1150,7 +1150,7 @@
     {
       "id": 19818,
       "name": "Punctured Voodoo Doll (Mage)",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1160,7 +1160,7 @@
     {
       "id": 19819,
       "name": "Punctured Voodoo Doll (Warlock)",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1170,7 +1170,7 @@
     {
       "id": 19814,
       "name": "Punctured Voodoo Doll (Rogue)",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1180,7 +1180,7 @@
     {
       "id": 19821,
       "name": "Punctured Voodoo Doll (Druid)",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1190,7 +1190,7 @@
     {
       "id": 19816,
       "name": "Punctured Voodoo Doll (Hunter)",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1200,7 +1200,7 @@
     {
       "id": 19817,
       "name": "Punctured Voodoo Doll (Shaman)",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1210,7 +1210,7 @@
     {
       "id": 19815,
       "name": "Punctured Voodoo Doll (Paladin)",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1220,7 +1220,7 @@
     {
       "id": 19813,
       "name": "Punctured Voodoo Doll (Warrior)",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1330,7 +1330,7 @@
     {
       "id": 56084,
       "name": "Middle Piece of an Ancient Idol",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1340,7 +1340,7 @@
     {
       "id": 17965,
       "name": "Yellow Sack of Gems",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1350,7 +1350,7 @@
     {
       "id": 37010,
       "name": "Razzashi Hatchling",
-      "slot": "Unknown",
+      "slot": "Companion",
       "type": null,
       "classes": [],
       "quality": 2,

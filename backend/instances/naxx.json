@@ -6,7 +6,7 @@
     {
       "id": 22726,
       "name": "Splinter of Atiesh",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": "Staff",
       "classes": [
         "Priest",
@@ -21,8 +21,8 @@
     {
       "id": 22368,
       "name": "Desecrated Shoulderpads",
-      "slot": "Unknown",
-      "type": "Cloth",
+      "slot": "Token",
+      "type":  null,
       "classes": [
         "Priest",
         "Mage",
@@ -35,8 +35,8 @@
     {
       "id": 22361,
       "name": "Desecrated Spaulders",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type":  null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -50,8 +50,8 @@
     {
       "id": 22354,
       "name": "Desecrated Pauldrons",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type":  null,
       "classes": [
         "Warrior",
         "Rogue"
@@ -83,8 +83,8 @@
     {
       "id": 22810,
       "name": "Toxin Injector",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Gun",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Toxin Injector</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>68 - 135 Damage</div><div>Speed 2.00</div></div><span>(50.7 damage per second)<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: +28 Attack Power.</span></span></div>",
@@ -163,8 +163,8 @@
     {
       "id": 22369,
       "name": "Desecrated Bindings",
-      "slot": "Unknown",
-      "type": "Cloth",
+      "slot": "Token",
+      "type":  null,
       "classes": [
         "Priest",
         "Mage",
@@ -177,8 +177,8 @@
     {
       "id": 22370,
       "name": "Desecrated Belt",
-      "slot": "Unknown",
-      "type": "Cloth",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -191,8 +191,8 @@
     {
       "id": 22372,
       "name": "Desecrated Sandals",
-      "slot": "Unknown",
-      "type": "Cloth",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -205,8 +205,8 @@
     {
       "id": 22362,
       "name": "Desecrated Wristguards",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -220,8 +220,8 @@
     {
       "id": 22363,
       "name": "Desecrated Girdle",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -235,8 +235,8 @@
     {
       "id": 22365,
       "name": "Desecrated Boots",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -250,8 +250,8 @@
     {
       "id": 22355,
       "name": "Desecrated Bracers",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
@@ -263,8 +263,8 @@
     {
       "id": 22356,
       "name": "Desecrated Waistguard",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
@@ -276,8 +276,8 @@
     {
       "id": 22358,
       "name": "Desecrated Sabatons",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
@@ -289,8 +289,8 @@
     {
       "id": 22367,
       "name": "Desecrated Circlet",
-      "slot": "Unknown",
-      "type": "Cloth",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -303,8 +303,8 @@
     {
       "id": 22360,
       "name": "Desecrated Headpiece",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -318,8 +318,8 @@
     {
       "id": 22353,
       "name": "Desecrated Helmet",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
@@ -481,8 +481,8 @@
     {
       "id": 22371,
       "name": "Desecrated Gloves",
-      "slot": "Unknown",
-      "type": "Cloth",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -495,8 +495,8 @@
     {
       "id": 22364,
       "name": "Desecrated Handguards",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -510,8 +510,8 @@
     {
       "id": 22357,
       "name": "Desecrated Gauntlets",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
@@ -613,8 +613,8 @@
     {
       "id": 23006,
       "name": "Libram of Light",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Libram",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Libram of Light</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Libram</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by Flash of Light by 41.</span></span></div>",
@@ -623,8 +623,8 @@
     {
       "id": 23005,
       "name": "Totem of Flowing Water",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Totem",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Totem of Flowing Water</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Totem</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Your Water Totems grant party members within 30 yards of you a unique effect depending on the totem.</span></span></div>",
@@ -693,8 +693,8 @@
     {
       "id": 22366,
       "name": "Desecrated Leggings",
-      "slot": "Unknown",
-      "type": "Cloth",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -707,8 +707,8 @@
     {
       "id": 22359,
       "name": "Desecrated Legguards",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -722,8 +722,8 @@
     {
       "id": 22352,
       "name": "Desecrated Legplates",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
@@ -815,8 +815,8 @@
     {
       "id": 23004,
       "name": "Idol of Longevity",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Relic",
+      "type": "Idol",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Idol of Longevity</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Idol</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Gain 25 mana each time you cast Healing Touch.</span></span></div>",
@@ -825,7 +825,7 @@
     {
       "id": 23009,
       "name": "Wand of the Whispering Dead",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -895,8 +895,8 @@
     {
       "id": 22351,
       "name": "Desecrated Robe",
-      "slot": "Unknown",
-      "type": "Cloth",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -909,8 +909,8 @@
     {
       "id": 22350,
       "name": "Desecrated Tunic",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -924,8 +924,8 @@
     {
       "id": 22349,
       "name": "Desecrated Breastplate",
-      "slot": "Unknown",
-      "type": "Leather",
+      "slot": "Token",
+      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
@@ -1097,7 +1097,7 @@
     {
       "id": 23549,
       "name": "Fortitude of the Scourge",
-      "slot": "Unknown",
+      "slot": "Enchant",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1107,7 +1107,7 @@
     {
       "id": 23548,
       "name": "Might of the Scourge",
-      "slot": "Unknown",
+      "slot": "Enchant",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1117,7 +1117,7 @@
     {
       "id": 23545,
       "name": "Power of the Scourge",
-      "slot": "Unknown",
+      "slot": "Enchant",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1127,7 +1127,7 @@
     {
       "id": 23547,
       "name": "Resilience of the Scourge",
-      "slot": "Unknown",
+      "slot": "Enchant",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1157,8 +1157,8 @@
     {
       "id": 22812,
       "name": "Nerubian Slavemaker",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Crossbow",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Nerubian Slavemaker</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Crossbow</span></div></div><div><div>128 - 238 Damage</div><div>Speed 3.20</div></div><span>(57.2 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +24 Attack Power.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span></span></div>",
@@ -1167,7 +1167,7 @@
     {
       "id": 22821,
       "name": "Doomfinger",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -1247,7 +1247,7 @@
     {
       "id": 22520,
       "name": "The Phylactery of Kel'Thuzad",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1255,99 +1255,9 @@
       "icon": "inv_misc_urn_01.png"
     },
     {
-      "id": 23061,
-      "name": "Ring of Faith (Desecrated Loop)",
-      "slot": "Unknown",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ring of Faith</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+16 Intellect<br/>+16 Spirit<br/>Classes: Priest<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 55.</span><br/><br/><span class=\"q\">Vestments of Faith (0/9)</span><br/><span class=\"q0\">  Belt of Faith</span><br/><span class=\"q0\">  Bindings of Faith</span><br/><span class=\"q0\">  Circlet of Faith</span><br/><span class=\"q0\">  Gloves of Faith</span><br/><span class=\"q0\">  Leggings of Faith</span><br/><span class=\"q0\">  Robe of Faith</span><br/><span class=\"q0\">  Sandals of Faith</span><br/><span class=\"q0\">  Mantle of Faith</span><br/><span class=\"q0\">  Ring of Faith</span><br/><span class=\"q0\">(2) Set: Reduces the mana cost of your Renew spell by 12%.</span><br/><span class=\"q0\">(4) Set: On Greater Heal critical hits, your target will gain Armor of Faith, absorbing up to 500 damage.</span><br/><span class=\"q0\">(6) Set: Reduces the threat from your healing spells.</span><br/><span class=\"q0\">(8) Set: Each spell you cast has a chance to trigger an Epiphany, increasing your mana regeneration by 24 for 30 sec.</span></span></div>",
-      "icon": "inv_jewelry_ring_51naxxramas.png"
-    },
-    {
-      "id": 23062,
-      "name": "Frostfire Ring (Desecrated Loop)",
-      "slot": "Unknown",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Frostfire Ring</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+10 Stamina<br/>+10 Intellect<br/>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 30.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><br/><span class=\"q\">Frostfire Regalia (0/9)</span><br/><span class=\"q0\">  Frostfire Belt</span><br/><span class=\"q0\">  Frostfire Bindings</span><br/><span class=\"q0\">  Frostfire Circlet</span><br/><span class=\"q0\">  Frostfire Gloves</span><br/><span class=\"q0\">  Frostfire Leggings</span><br/><span class=\"q0\">  Frostfire Robe</span><br/><span class=\"q0\">  Frostfire Sandals</span><br/><span class=\"q0\">  Frostfire Shoulderpads</span><br/><span class=\"q0\">  Frostfire Ring</span><br/><span class=\"q0\">(2) Set: Reduces cooldown on your Evocation by 1 minute.</span><br/><span class=\"q0\">(4) Set: Gives your Mage Armor a chance when struck by a harmful spell to increase resistance against that school of magic by 35 for 30 sec.</span><br/><span class=\"q0\">(6) Set: Your damage spells have a chance to cause your target to take up to 200 increased damage from subsequent spells.</span><br/><span class=\"q0\">(8) Set: Your damage spells have a chance to displace you, causing the next spell cast to generate no threat.</span></span></div>",
-      "icon": "inv_jewelry_ring_51naxxramas.png"
-    },
-    {
-      "id": 23063,
-      "name": "Plagueheart Ring (Desecrated Loop)",
-      "slot": "Unknown",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Plagueheart Ring</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+24 Stamina<br/>Classes: Warlock<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 29.</span><br/><br/><span class=\"q\">Plagueheart Raiment (0/9)</span><br/><span class=\"q0\">  Plagueheart Belt</span><br/><span class=\"q0\">  Plagueheart Bracers</span><br/><span class=\"q0\">  Plagueheart Circlet</span><br/><span class=\"q0\">  Plagueheart Gloves</span><br/><span class=\"q0\">  Plagueheart Pants</span><br/><span class=\"q0\">  Plagueheart Robe</span><br/><span class=\"q0\">  Plagueheart Sandals</span><br/><span class=\"q0\">  Plagueheart Shoulderpads</span><br/><span class=\"q0\">  Plagueheart Ring</span><br/><span class=\"q0\">(2) Set: Grants your Shadow Bolts a chance to heal you for 270 to 330.</span><br/><span class=\"q0\">(4) Set: Increases damage caused by your Corruption by 12%.</span><br/><span class=\"q0\">(6) Set: Your spell critical hits generate 25% less threat.  In addition, Corruption, Immolate, Curse of Agony, and Siphon Life generate 25% less threat.</span><br/><span class=\"q0\">(8) Set: Reduces health cost of your Life Tap by 12%.</span></span></div>",
-      "icon": "inv_jewelry_ring_51naxxramas.png"
-    },
-    {
-      "id": 23060,
-      "name": "Bonescythe Ring (Desecrated Ring)",
-      "slot": "Unknown",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Bonescythe Ring</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+20 Strength<br/>+20 Agility<br/>+10 Stamina<br/>Classes: Rogue<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><br/><span class=\"q\">Bonescythe Armor (0/9)</span><br/><span class=\"q0\">  Bonescythe Bracers</span><br/><span class=\"q0\">  Bonescythe Breastplate</span><br/><span class=\"q0\">  Bonescythe Gauntlets</span><br/><span class=\"q0\">  Bonescythe Helmet</span><br/><span class=\"q0\">  Bonescythe Legplates</span><br/><span class=\"q0\">  Bonescythe Pauldrons</span><br/><span class=\"q0\">  Bonescythe Sabatons</span><br/><span class=\"q0\">  Bonescythe Waistguard</span><br/><span class=\"q0\">  Bonescythe Ring</span><br/><span class=\"q0\">(2) Set: Your normal melee swings have a chance to Invigorate you, healing you for 90 to 110.</span><br/><span class=\"q0\">(4) Set: Critical strikes from your Backstab, Sinister Strike, Noxious Assault, and Hemorrhage restore 5 Energy.</span><br/><span class=\"q0\">(6) Set: Reduces the threat generated by your Backstab, Sinister Strike, Noxious Assault, Hemorrhage, and Eviscerate abilities.</span><br/><span class=\"q0\">(8) Set: Your Eviscerate has a 5% chance per combo point to reveal a flaw in your opponent's armor, granting a 100% critical hit chance for your next Backstab, Sinister Strike, Noxious Assault, or Hemorrhage.</span></span></div>",
-      "icon": "inv_jewelry_ring_51naxxramas.png"
-    },
-    {
-      "id": 23064,
-      "name": "Ring of The Dreamwalker (Desecrated Signet)",
-      "slot": "Unknown",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ring of The Dreamwalker</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+16 Stamina<br/>+16 Intellect<br/>+16 Spirit<br/>Classes: Druid<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 46.</span><br/><br/><span class=\"q\">Dreamwalker Raiment (0/9)</span><br/><span class=\"q0\">  Dreamwalker Boots</span><br/><span class=\"q0\">  Dreamwalker Belt</span><br/><span class=\"q0\">  Dreamwalker Handguards</span><br/><span class=\"q0\">  Dreamwalker Headpiece</span><br/><span class=\"q0\">  Dreamwalker Legguards</span><br/><span class=\"q0\">  Dreamwalker Spaulders</span><br/><span class=\"q0\">  Dreamwalker Tunic</span><br/><span class=\"q0\">  Dreamwalker Bracers</span><br/><span class=\"q0\">  Ring of The Dreamwalker</span><br/><span class=\"q0\">(2) Set: Your Rejuvenation ticks have a chance to restore 60 mana, 8 energy, or 2 rage to your target.</span><br/><span class=\"q0\">(4) Set: Reduces the mana cost of your Healing Touch, Regrowth, Rejuvenation,  and Tranquility spells by 3%.</span><br/><span class=\"q0\">(6) Set: Your initial cast and Regrowth ticks will increase the maximum health of your target by up to 50, stacking up to 7 times.</span><br/><span class=\"q0\">(8) Set: On Healing Touch critical hits, you regain 30% of the mana cost of the spell.</span></span></div>",
-      "icon": "inv_jewelry_ring_51naxxramas.png"
-    },
-    {
-      "id": 23067,
-      "name": "Ring of the Cryptstalker (Desecrated Signet)",
-      "slot": "Unknown",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ring of the Cryptstalker</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+30 Agility<br/>Classes: Hunter<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><br/><span class=\"q\">Cryptstalker Armor (0/9)</span><br/><span class=\"q0\">  Cryptstalker Boots</span><br/><span class=\"q0\">  Cryptstalker Girdle</span><br/><span class=\"q0\">  Cryptstalker Handguards</span><br/><span class=\"q0\">  Cryptstalker Headpiece</span><br/><span class=\"q0\">  Cryptstalker Legguards</span><br/><span class=\"q0\">  Cryptstalker Spaulders</span><br/><span class=\"q0\">  Cryptstalker Tunic</span><br/><span class=\"q0\">  Cryptstalker Wristguards</span><br/><span class=\"q0\">  Ring of the Cryptstalker</span><br/><span class=\"q0\">(2) Set: Increases the duration of your Rapid Fire by 4 secs.</span><br/><span class=\"q0\">(4) Set: Increases Attack Power by 50 for both you and your pet.</span><br/><span class=\"q0\">(6) Set: Your ranged and melee critical hits cause an Adrenaline Rush, granting you 50 mana.</span><br/><span class=\"q0\">(8) Set: Reduces the mana cost of your Raptor Strike, Mongoose Bite, Carve, Multi-Shot, Aimed Shot and Steady Shot by 20.</span></span></div>",
-      "icon": "inv_jewelry_ring_51naxxramas.png"
-    },
-    {
-      "id": 23065,
-      "name": "Ring of the Earthshatterer (Desecrated Signet)",
-      "slot": "Unknown",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ring of the Earthshatterer</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+13 Stamina<br/>+13 Intellect<br/>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 51.</span><br/><span class=\"q2\">Equip: Restores 5 mana per 5 sec.</span><br/><br/><span class=\"q\">The Earthshatterer (0/9)</span><br/><span class=\"q0\">  Earthshatter Boots</span><br/><span class=\"q0\">  Earthshatter Belt</span><br/><span class=\"q0\">  Earthshatter Handguards</span><br/><span class=\"q0\">  Earthshatter Headpiece</span><br/><span class=\"q0\">  Earthshatter Legguards</span><br/><span class=\"q0\">  Earthshatter Spaulders</span><br/><span class=\"q0\">  Earthshatter Tunic</span><br/><span class=\"q0\">  Earthshatter Wristguards</span><br/><span class=\"q0\">  Ring of the Earthshatterer</span><br/><span class=\"q0\">(2) Set: Reduces the mana cost of your totem spells by 12%.</span><br/><span class=\"q0\">(4) Set: Increases the mana gained from your Mana Spring totems by 25%.</span><br/><span class=\"q0\">(6) Set: Your Healing Wave and Lesser Healing Wave spells have a chance to imbue your target with Totemic Power.</span><br/><span class=\"q0\">(8) Set: Your Water Shield spell also grants you 15 mana per 5 sec. while active.</span></span></div>",
-      "icon": "inv_jewelry_ring_51naxxramas.png"
-    },
-    {
-      "id": 23066,
-      "name": "Ring of Redemption (Desecrated Signet)",
-      "slot": "Unknown",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ring of Redemption</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+16 Stamina<br/>+16 Intellect<br/>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 37.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><br/><span class=\"q\">Redemption Armor (0/9)</span><br/><span class=\"q0\">  Redemption Boots</span><br/><span class=\"q0\">  Redemption Belt</span><br/><span class=\"q0\">  Redemption Gloves</span><br/><span class=\"q0\">  Redemption Helm</span><br/><span class=\"q0\">  Redemption Pants</span><br/><span class=\"q0\">  Redemption Spaulders</span><br/><span class=\"q0\">  Redemption Tunic</span><br/><span class=\"q0\">  Redemption Bracers</span><br/><span class=\"q0\">  Ring of Redemption</span><br/><span class=\"q0\">(2) Set: Increases the amount healed by your Judgement of Light by 20 and Flash of Light by 60.</span><br/><span class=\"q0\">(4) Set: Reduces cooldown on your Lay on Hands by 12 min.</span><br/><span class=\"q0\">(6) Set: Your Flash of Light, Holy Light and Holy Shock spells have a chance to imbue your target with Holy Power.</span><br/><span class=\"q0\">(8) Set: Your Cleanse spell also heals the target for 200.</span></span></div>",
-      "icon": "inv_jewelry_ring_51naxxramas.png"
-    },
-    {
-      "id": 23059,
-      "name": "Ring of the Dreadnaught (Desecrated Ring)",
-      "slot": "Unknown",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ring of the Dreadnaught</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+27 Stamina<br/>Classes: Warrior<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/><span class=\"q2\">Equip: Increased Defense +10.</span><br/><br/><span class=\"q\">Dreadnaught's Battlegear (0/9)</span><br/><span class=\"q0\">  Dreadnaught Bracers</span><br/><span class=\"q0\">  Dreadnaught Breastplate</span><br/><span class=\"q0\">  Dreadnaught Gauntlets</span><br/><span class=\"q0\">  Dreadnaught Waistguard</span><br/><span class=\"q0\">  Dreadnaught Helmet</span><br/><span class=\"q0\">  Dreadnaught Legplates</span><br/><span class=\"q0\">  Dreadnaught Pauldrons</span><br/><span class=\"q0\">  Dreadnaught Sabatons</span><br/><span class=\"q0\">  Ring of the Dreadnaught</span><br/><span class=\"q0\">(2) Set: Increases the damage done by your Revenge ability by 75.</span><br/><span class=\"q0\">(4) Set: Improves your chance to hit with Taunt and Challenging Shout by 5%.</span><br/><span class=\"q0\">(6) Set: Improves your chance to hit with Sunder Armor, Heroic Strike, Revenge, and Shield Slam by 5%.</span><br/><span class=\"q0\">(8) Set: When your health drops below 20%, for the next 5 seconds healing spells cast on you help you to Cheat Death, increasing healing done by up to 160.</span></span></div>",
-      "icon": "inv_jewelry_ring_51naxxramas.png"
-    },
-    {
       "id": 22733,
       "name": "Staff Head of Atiesh",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": "Staff",
       "classes": [],
       "quality": 5,
@@ -1493,7 +1403,7 @@
     {
       "id": 22376,
       "name": "Wartorn Cloth Scrap",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": "Cloth",
       "classes": [],
       "quality": 3,
@@ -1503,7 +1413,7 @@
     {
       "id": 22373,
       "name": "Wartorn Leather Scrap",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": "Leather",
       "classes": [],
       "quality": 3,
@@ -1513,8 +1423,8 @@
     {
       "id": 22374,
       "name": "Wartorn Chain Scrap",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Materials",
+      "type": "Mail",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Wartorn Chain Scrap</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cff98b0e018|r|cff98b0e0s|r |cffc8602c88|r|cffc8602cc|r</span></div>",
@@ -1523,7 +1433,7 @@
     {
       "id": 22375,
       "name": "Wartorn Plate Scrap",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": "Plate",
       "classes": [],
       "quality": 3,
@@ -1533,7 +1443,7 @@
     {
       "id": 23055,
       "name": "Word of Thawing",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 1,
@@ -1543,7 +1453,7 @@
     {
       "id": 22682,
       "name": "Frozen Rune",
-      "slot": "Unknown",
+      "slot": "Consumable",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -1573,7 +1483,7 @@
     {
       "id": 22820,
       "name": "Wand of Fates",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 4,
@@ -1603,7 +1513,7 @@
     {
       "id": 81283,
       "name": "Mr. Bigglesworth",
-      "slot": "Unknown",
+      "slot": "Companion",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -1613,9 +1523,9 @@
     {
       "id": 55583,
       "name": "Desecrated Signet",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Rogue"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Signet</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Druid<br/>Requires Level 60</span></div>",
       "icon": "inv_jewelry_ring_16.png"
@@ -1623,9 +1533,9 @@
     {
       "id": 55582,
       "name": "Desecrated Loop",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Priest","Mage","Warlock"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Loop</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock<br/>Requires Level 60</span></div>",
       "icon": "inv_jewelry_ring_27.png"
@@ -1633,9 +1543,9 @@
     {
       "id": 55581,
       "name": "Desecrated Ring",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Shaman","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Ring</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue<br/>Requires Level 60</span></div>",
       "icon": "inv_jewelry_ring_15.png"
@@ -1643,7 +1553,7 @@
     {
       "id": 36666,
       "name": "Plagued Riding Spider",
-      "slot": "Unknown",
+      "slot": "Mount",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1653,7 +1563,7 @@
     {
       "id": 37012,
       "name": "Maexxna's Hatchling",
-      "slot": "Unknown",
+      "slot": "Companion",
       "type": null,
       "classes": [],
       "quality": 2,
