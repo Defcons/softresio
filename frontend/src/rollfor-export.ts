@@ -9,7 +9,7 @@ export const rollForExport = (sheet: Sheet) => (globalThis.btoa(JSON.stringify({
     name: attendee.character.name,
     items: attendee.softReserves.map((sr) => ({
       id: sr.itemId,
-      sr_plus: sr.srPlus,
+      sr_plus: sr.srPlus || undefined,
     })),
   })),
 })))
