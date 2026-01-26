@@ -29,6 +29,7 @@ export const SrList = (
   const [itemFilter, setItemFilter] = useState<string>()
   const [sortBy, setSortBy] = useState<"name" | "item" | "class">("class")
   const [sortDesc, setSortDesc] = useState<boolean>(false)
+  const [showTooltipItemId, setShowTooltipItemId] = useState<number>()
 
   const filter = (
     { attendee, softReserve }: ListElement,
@@ -86,21 +87,31 @@ export const SrList = (
         <ItemNameAndIcon
           item={items.filter((item) => item.id == e.softReserve.itemId)[0]}
           highlight={false}
+          showTooltipItemId={showTooltipItemId}
           onClick={() =>
             setItemFilter(
               items.filter((item) => item.id == e.softReserve.itemId)[0].name,
             )}
-          onLongClick={() => null}
+          onLongClick={() =>
+            showTooltipItemId == e.softReserve.itemId
+              ? setShowTooltipItemId(undefined)
+              : setShowTooltipItemId(e.softReserve.itemId)}
         />
       </Table.Td>
     </Table.Tr>
   ))
   return (
-    <Table horizontalSpacing={3}>
+    <Table
+      horizontalSpacing={5}
+      verticalSpacing={0}
+      striped
+      withRowBorders={false}
+    >
       <Table.Thead>
         <Table.Tr>
           <Table.Th w={40}>
             <Select
+              pb="sm"
               data={Object.keys(classes)}
               onChange={(value) => setClassFilter(value as Class || undefined)}
               value={classFilter}
@@ -115,6 +126,7 @@ export const SrList = (
           <Table.Th w={120}>
             <Group wrap="nowrap" gap={0}>
               <TextInput
+                pb="sm"
                 placeholder="Name"
                 onChange={(event) =>
                   setNameFilter(event.currentTarget.value || undefined)}
@@ -135,8 +147,9 @@ export const SrList = (
             </Group>
           </Table.Th>
           <Table.Th>
-            <Group wrap="nowrap" gap={0}>
+            <Group wrap="nowrap" gap={3}>
               <TextInput
+                pb="sm"
                 placeholder="Item"
                 onChange={(event) =>
                   setItemFilter(event.currentTarget.value || undefined)}
@@ -156,12 +169,15 @@ export const SrList = (
                 }
               />
               <ActionIcon
+                pb="sm"
                 variant="subtle"
                 color="lightgrey"
                 onClick={() => {
                   setClassFilter(undefined)
                   setNameFilter(undefined)
                   setItemFilter(undefined)
+                  setSortBy("class")
+                  setSortDesc(false)
                 }}
               >
                 <IconX />

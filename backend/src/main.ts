@@ -12,6 +12,7 @@ import type {
   GetMyRaidsResponse,
   GetRaidResponse,
   Instance,
+  LockRaidResponse,
   Raid,
   Sheet,
   SoftReserve,
@@ -190,8 +191,9 @@ app.post("/api/sr/create", async (c) => {
 
 app.post("/api/raid/create", async (c) => {
   const user = await getOrCreateUser(c)
-  const { instanceId, srCount, useSrPlus, time, adminPassword } = await c.req
-    .json() as CreateRaidRequest
+  const { instanceId, srCount, useSrPlus, time, adminPassword, description } =
+    await c.req
+      .json() as CreateRaidRequest
   const raidId = generateRaidId()
   const raid: Raid = {
     sheet: {
@@ -200,6 +202,8 @@ app.post("/api/raid/create", async (c) => {
       time,
       useSrPlus,
       srCount,
+      description,
+      locked: false,
       activityLog: [],
       attendees: [],
       admins: [
@@ -218,6 +222,38 @@ app.post("/api/raid/create", async (c) => {
   }
 
   return c.json(response)
+})
+
+app.post("/api/raid/lock/:raidId", async (c) => {
+  const user = await getOrCreateUser(c)
+  const raidId = c.req.param("raidId")
+  const raid = await beginWithTimeout(async (tx) => {
+    const [raid] = await tx<
+      Raid[]
+    >`select raid -> 'sheet' as sheet from raids where raid @> ${{
+      sheet: { raidId },
+    } as never} for update;`
+    if (!raid) return
+
+    if (raid.sheet.admins.some((u) => u.userId == user.userId)) {
+      raid.sheet.locked = !raid.sheet.locked
+    }
+
+    await tx`update raids set ${sql({ raid: raid } as never)} where raid @> ${{
+      sheet: { raidId },
+    } as never}`
+    return raid
+  })
+  if (raid) {
+    const response: LockRaidResponse = { user, data: raid.sheet }
+    return c.json(response)
+  } else {
+    const response: CreateSrResponse = {
+      user,
+      error: "An error occured while locking raid",
+    }
+    return c.json(response)
+  }
 })
 
 app.get("/api/raid/:raidId", async (c) => {

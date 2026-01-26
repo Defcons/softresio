@@ -17,15 +17,17 @@ export const ItemPicker = ({
   selectedClass,
   user,
   attendees,
+  selectMode,
 }: {
-  selectedItemIds: number[]
-  setSelectedItemIds: (itemIds: number[]) => void
+  selectedItemIds?: number[]
+  setSelectedItemIds?: (itemIds: number[]) => void
   items: Item[]
   open: boolean
   setOpen: (open: boolean) => void
-  selectedClass: Class | null
-  user: User
-  attendees: Attendee[]
+  selectedClass?: Class | null
+  user?: User
+  attendees?: Attendee[]
+  selectMode?: boolean
 }) => {
   const [showTooltipItemId, setShowTooltipItemId] = useState<number>()
   const [slotFilter, setSlotFilter] = useState<string | null>()
@@ -40,6 +42,9 @@ export const ItemPicker = ({
       : setShowTooltipItemId(itemId)
 
   const onItemClick = (itemId: number) => {
+    if (!setSelectedItemIds || !selectedItemIds) {
+      return setShowTooltipItemId(undefined)
+    }
     if (!showTooltipItemId || showTooltipItemId == itemId) {
       if (selectedItemIds.includes(itemId)) {
         setSelectedItemIds(selectedItemIds.filter((i) => i !== itemId))
@@ -77,7 +82,7 @@ export const ItemPicker = ({
         }
       }),
     )
-  }, [debouncedSearch, slotFilter, typeFilter, selectedClass])
+  }, [items, debouncedSearch, slotFilter, typeFilter, selectedClass])
 
   return (
     <Modal
@@ -90,8 +95,9 @@ export const ItemPicker = ({
       styles={{
         body: { height: "90dvh" },
       }}
+      padding="sm"
     >
-      <Stack h="100%" gap="md">
+      <Stack h="100%">
         <Group justify="space-between" wrap="nowrap">
           <Input
             w="100%"
@@ -127,10 +133,14 @@ export const ItemPicker = ({
               setSlotFilter(value)
               if (
                 value && typeFilter &&
-                !itemFilters[value].includes(value)
+                !itemFilters[value].filter((slotOption) =>
+                  items.some((i) => i.slot == slotOption)
+                ).includes(typeFilter)
               ) setTypeFilter(null)
             }}
-            data={Object.keys(itemFilters)}
+            data={Object.keys(itemFilters).filter((slotOption) =>
+              items.some((i) => i.slot == slotOption)
+            )}
           />
           <Select
             placeholder="Type"
@@ -140,13 +150,17 @@ export const ItemPicker = ({
             clearable
             value={typeFilter}
             onChange={(value) => setTypeFilter(value || undefined)}
-            data={slotFilter ? itemFilters[slotFilter] : []}
+            data={slotFilter
+              ? itemFilters[slotFilter].filter((typeOption) =>
+                items.some((i) => i.slot == slotFilter && i.type == typeOption)
+              )
+              : []}
           />
         </Group>
         <List
           rowComponent={ReactWindowSelectableItem}
           rowCount={filteredItems.length}
-          rowHeight={40}
+          rowHeight={41}
           rowProps={{
             items: filteredItems,
             attendees: attendees,
@@ -155,6 +169,7 @@ export const ItemPicker = ({
             showTooltipItemId,
             onItemLongClick,
             user,
+            selectMode,
           }}
         />
       </Stack>

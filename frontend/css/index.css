@@ -6,9 +6,20 @@ body {
   user-select: none;
   -webkit-user-select: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: var(--mantine-radius-default);
 }
 
 .item-list-element-highlight {
+  background-color: var(--mantine-color-default-hover);
+}
+
+.raid-list-element {
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  border-radius: var(--mantine-radius-default);
+}
+
+.raid-list-element:hover {
   background-color: var(--mantine-color-default-hover);
 }

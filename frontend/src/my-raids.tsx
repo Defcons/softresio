@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react"
 import { formatDistanceToNow } from "date-fns"
-import { Anchor, Paper, Table, Text } from "@mantine/core"
+import { Box, Group, Paper, Skeleton, Stack, Text, Title } from "@mantine/core"
 import { useNavigate } from "react-router"
 import type {
   GetInstancesResponse,
   GetMyRaidsResponse,
   Instance,
   Raid,
+  User,
 } from "../types/types.ts"
-import { CopyClipboardButton, raidIdToUrl } from "./copy-clipboard-button.tsx"
+import { IconShieldFilled, IconUserFilled } from "@tabler/icons-react"
 
 export const MyRaids = () => {
   const [raidList, setRaidList] = useState<Raid[]>()
   const [instances, setInstances] = useState<Instance[]>()
+  const [user, setUser] = useState<User>()
 
   const navigate = useNavigate()
 
@@ -25,6 +27,7 @@ export const MyRaids = () => {
           alert(j.error)
         } else if (j.data) {
           setRaidList(j.data)
+          setUser(j.user)
         }
       },
     )
@@ -38,6 +41,7 @@ export const MyRaids = () => {
           alert(j.error)
         } else if (j.data) {
           setInstances(j.data)
+          setUser(j.user)
         }
       })
   }, [])
@@ -48,56 +52,38 @@ export const MyRaids = () => {
     return matches[0].name
   }
 
-  const raidLinks = raidList?.map((raid) => {
-    if (!instances || !raidList) {
-      return <></>
-    }
-    const instanceName = idToInstance(raid.sheet.instanceId)
-    return (
-      <Table.Tr>
-        <Table.Td>
-          <Anchor
+  return (
+    <Stack>
+      {!instances || !raidList || !user
+        ? Array.from({ length: 10 }).map((_, i) => <Skeleton h={48} key={i} />)
+        : raidList.map((raid) => (
+          <Box
             onClick={() => navigate(`/${raid.sheet.raidId}`)}
             key={raid.sheet.raidId}
           >
-            <Text>{instanceName}</Text>
-          </Anchor>
-        </Table.Td>
-        <Table.Td>
-          {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
-        </Table.Td>
-        <Table.Td>
-          <CopyClipboardButton
-            w="100%"
-            tooltip="Copy link to raid"
-            label={raid.sheet.raidId}
-            toClipboard={raidIdToUrl(raid.sheet.raidId)}
-          />
-        </Table.Td>
-      </Table.Tr>
-    )
-  })
-
-  return (
-    <Paper shadow="sm" p="sm">
-      <Table>
-        <Table.Thead>
-          <Table.Tr>
-            <Table.Th>
-              Instance
-            </Table.Th>
-            <Table.Th>
-              Time
-            </Table.Th>
-            <Table.Th w={110}>
-              Share link
-            </Table.Th>
-          </Table.Tr>
-        </Table.Thead>
-        <Table.Tbody>
-          {raidLinks}
-        </Table.Tbody>
-      </Table>
-    </Paper>
+            <Paper shadow="sm" p="sm" className="raid-list-element">
+              <Group wrap="nowrap" justify="space-between">
+                <Group gap="xs">
+                  <Title variant="default" c="orange" lineClamp={1} order={5}>
+                    {idToInstance(raid.sheet.instanceId)}
+                  </Title>
+                </Group>
+                <Group wrap="nowrap" gap="xs">
+                  <Text lineClamp={1}>
+                    {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
+                  </Text>
+                  {raid.sheet.admins.some((e) => e.userId == user.userId)
+                    ? <IconShieldFilled size={20} />
+                    : null}
+                  <Group gap={3} miw={45}>
+                    <IconUserFilled size={20} />
+                    <Title order={6}>{raid.sheet.attendees.length}</Title>
+                  </Group>
+                </Group>
+              </Group>
+            </Paper>
+          </Box>
+        ))}
+    </Stack>
   )
 }

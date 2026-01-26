@@ -7,12 +7,23 @@ import type {
   User,
 } from "../types/types.ts"
 import { useParams } from "react-router"
-import { Group, Paper, Skeleton, Stack, Title } from "@mantine/core"
+import {
+  Badge,
+  Button,
+  Group,
+  Paper,
+  Skeleton,
+  Stack,
+  Text,
+  Title,
+} from "@mantine/core"
 import { CopyClipboardButton, raidIdToUrl } from "./copy-clipboard-button.tsx"
 import { CreateSr } from "./create-sr.tsx"
 import { SrList } from "./sr-list.tsx"
 import { rollForExport } from "./rollfor-export.ts"
 import useWebSocket from "react-use-websocket"
+import { IconLogs } from "@tabler/icons-react"
+import { IconShieldFilled } from "@tabler/icons-react"
 
 export const RaidUpdater = (
   { loadRaid, raidId }: { loadRaid: (sheet: Sheet) => void; raidId: string },
@@ -41,13 +52,27 @@ export const Raid = () => {
     if (sheet) {
       return setSheet(sheet)
     }
-    fetch(`/api/raid/${params.raid_id}`).then((r) => r.json()).then(
+    fetch(`/api/raid/${params.raidId}`).then((r) => r.json()).then(
       (j: GetRaidResponse) => {
         if (j.error) {
           alert(j.error)
         } else if (j.data) {
           setUser(j.user)
           setSheet(j.data)
+        }
+      },
+    )
+  }
+
+  const lockRaid = () => {
+    fetch(`/api/raid/lock/${params.raidId}`, { method: "POST" }).then((r) =>
+      r.json()
+    ).then(
+      (j: GetRaidResponse) => {
+        if (j.error) {
+          alert(j.error)
+        } else if (j.data) {
+          loadRaid(j.data)
         }
       },
     )
@@ -80,30 +105,45 @@ export const Raid = () => {
     }
   }, [sheet, instances])
 
-  const raidId = globalThis.location.pathname.slice(1)
+  const isAdmin = sheet?.admins.some((u) => u.userId == user?.userId) || false
 
   if (sheet && instance && user) {
     return (
       <Stack>
         <Paper shadow="sm" p="sm">
-          <Group justify="space-between">
-            <Group wrap="nowrap">
-              <Title>{instance.name}</Title>
-              <CopyClipboardButton
-                toClipboard={raidIdToUrl(raidId)}
-                label={raidId}
-                tooltip="Copy link to raid"
-                orange={false}
-              />
+          <Stack>
+            <Group justify="space-between">
+              <Group>
+                <Stack>
+                  <Title lineClamp={1} order={3}>{instance.name}</Title>
+                </Stack>
+              </Group>
+              {sheet.locked ? <Badge color="red">Locked</Badge> : null}
             </Group>
-            <CopyClipboardButton
-              toClipboard={rollForExport(sheet)}
-              label="RollFor"
-              tooltip="Copy RollFor export"
-              onClick={() => setExportedLatestVersion(true)}
-              orange={!exportedLatestVersion}
-            />
-          </Group>
+            {sheet.description ? <Text>{sheet.description}</Text> : null}
+          </Stack>
+        </Paper>
+        <Paper shadow="sm" p="sm" display={isAdmin ? "block" : "none"}>
+          <Stack gap={0}>
+            <Group justify="space-between">
+              <Group>
+                <CopyClipboardButton
+                  toClipboard={raidIdToUrl(params.raidId || "")}
+                  label={params.raidId || ""}
+                  tooltip="Copy link to raid"
+                  orange={false}
+                />
+                <Button
+                  onClick={lockRaid}
+                  variant={sheet.locked ? "default" : ""}
+                  color="red"
+                >
+                  {sheet.locked ? "Unlock" : "Lock"}
+                </Button>
+              </Group>
+              <IconShieldFilled size={20} />
+            </Group>
+          </Stack>
         </Paper>
         <CreateSr
           loadRaid={loadRaid}
@@ -112,6 +152,22 @@ export const Raid = () => {
           user={user}
         />
         <Paper shadow="sm" mb="md">
+          <Group p="sm" justify="space-between">
+            <Button
+              disabled
+              variant="default"
+              leftSection={<IconLogs size={16} />}
+            >
+              Log
+            </Button>
+            <CopyClipboardButton
+              toClipboard={rollForExport(sheet)}
+              label="RollFor"
+              tooltip="Copy RollFor export"
+              onClick={() => setExportedLatestVersion(true)}
+              orange={!exportedLatestVersion}
+            />
+          </Group>
           {sheet.attendees.length > 0
             ? <SrList attendees={sheet.attendees} items={instance.items} />
             : null}

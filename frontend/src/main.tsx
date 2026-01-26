@@ -7,7 +7,10 @@ import { MyRaids } from "./my-raids.tsx"
 import { LootBrowser } from "./loot-browser.tsx"
 import "@mantine/core/styles.css"
 import "@mantine/dates/styles.css"
-import { IconBrandDiscord, IconBrandGithub } from "@tabler/icons-react"
+import {
+  IconBrandDiscordFilled,
+  IconBrandGithubFilled,
+} from "@tabler/icons-react"
 import {
   Anchor,
   createTheme,
@@ -36,7 +39,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<CreateRaid />} />
                   <Route path="/create" element={<CreateRaid />} />
-                  <Route path="/:raid_id" element={<Raid />} />;
+                  <Route path="/:raidId" element={<Raid />} />;
                   <Route path="/raids" element={<MyRaids />} />;
                   <Route path="/loot" element={<LootBrowser />} />;
                 </Routes>
@@ -45,11 +48,10 @@ function App() {
           </Stack>
           <Stack>
             <Divider />
-            <Stack justify="center" gap="xs" ml="lg" mb="sm">
+            <Stack gap="xs" ml="lg" mb="sm">
               <Group>
-                <IconBrandGithub />
+                <IconBrandGithubFilled size={20} />
                 <Anchor
-                  size="lg"
                   href="https://github.com/kofoednielsen/softresio"
                   underline="never"
                   c="lightgray"
@@ -58,9 +60,8 @@ function App() {
                 </Anchor>
               </Group>
               <Group>
-                <IconBrandDiscord />
+                <IconBrandDiscordFilled size={20} />
                 <Anchor
-                  size="lg"
                   href="https://discord.gg/DbfRrGGQ7J"
                   underline="never"
                   c="lightgray"

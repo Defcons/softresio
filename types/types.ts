@@ -49,7 +49,7 @@ export interface Activity {
     | "SRUpdated"
     | "RaidCreated"
     | "RaidUpdated"
-  softReserve: SoftReserve
+  attendee: Attendee
 }
 
 export interface Sheet {
@@ -62,6 +62,8 @@ export interface Sheet {
   password: Password
   activityLog: Activity[]
   srCount: number
+  description: string
+  locked: boolean
 }
 
 export interface Raid {
@@ -94,6 +96,8 @@ export type GetRaidResponse = GenericResponse<Sheet>
 export type GetMyRaidsResponse = GenericResponse<Raid[]>
 
 export type GetCharactersResponse = GenericResponse<Character[]>
+
+export type LockRaidResponse = GenericResponse<Sheet>
 
 export interface CreateSrRequest {
   raidId: string

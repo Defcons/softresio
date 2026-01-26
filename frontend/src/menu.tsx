@@ -13,9 +13,48 @@ import {
 import { useDisclosure } from "@mantine/hooks"
 import logo from "./assets/logo-orange.png"
 import classes from "../css/menu.module.css"
-import { NavLink } from "react-router"
+import { NavLink, useNavigate } from "react-router"
 
-export function Menu() {
+const MenuButtons = (
+  { mobile, closeDrawer }: { mobile?: boolean; closeDrawer?: () => void },
+) => {
+  const navigate = useNavigate()
+  return (
+    <>
+      <Button
+        variant="default"
+        fullWidth={mobile}
+        onClick={() => {
+          navigate("raids")
+          closeDrawer?.()
+        }}
+      >
+        My Raids
+      </Button>
+      <Button
+        variant="default"
+        fullWidth={mobile}
+        onClick={() => {
+          navigate("loot")
+          closeDrawer?.()
+        }}
+      >
+        Loot Browser
+      </Button>
+      <Button
+        fullWidth={mobile}
+        onClick={() => {
+          navigate("create")
+          closeDrawer?.()
+        }}
+      >
+        Create raid
+      </Button>
+    </>
+  )
+}
+
+export const Menu = () => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false)
 
@@ -31,21 +70,7 @@ export function Menu() {
               <Badge color="red" radius="xs">Early Beta</Badge>
             </Tooltip>
             <Group visibleFrom="sm">
-              <NavLink to="/raids">
-                <Button variant="default">
-                  My raids
-                </Button>
-              </NavLink>
-              <NavLink to="/loot">
-                <Button variant="default">
-                  Loot browser
-                </Button>
-              </NavLink>
-              <NavLink to="/create">
-                <Button>
-                  Create raid
-                </Button>
-              </NavLink>
+              <MenuButtons />
             </Group>
           </Group>
           <Burger
@@ -67,21 +92,7 @@ export function Menu() {
       >
         <ScrollArea h="calc(100vh - 80px" mx="-md">
           <Stack justify="center" pb="xl" px="md">
-            <NavLink to="/raids">
-              <Button fullWidth variant="default" onClick={toggleDrawer}>
-                My raids
-              </Button>
-            </NavLink>
-            <NavLink to="/loot">
-              <Button fullWidth variant="default" onClick={toggleDrawer}>
-                Loot browser
-              </Button>
-            </NavLink>
-            <NavLink to="/create">
-              <Button fullWidth onClick={toggleDrawer}>
-                Create raid
-              </Button>
-            </NavLink>
+            <MenuButtons mobile closeDrawer={closeDrawer} />
           </Stack>
         </ScrollArea>
       </Drawer>

@@ -37,25 +37,25 @@
   font-size: 0.9rem;
 }
 .q5 {
-  color: #ff8000;
+  color: #ff8000 !important;
 }
 .q4 {
-  color: #c47af5;
+  color: #c47af5 !important;
 }
 .q3 {
-  color: #389cff;
+  color: #389cff !important;
 }
 .q2 {
-  color: #1eff00;
+  color: #1eff00 !important;
 }
 .q1 {
-  color: #f0f0f0;
+  color: #f0f0f0 !important;
 }
 .q0 {
-  color: #b0b0b0;
+  color: #b0b0b0 !important;
 }
 .tt-wrap .q {
-  color: #ffd100;
+  color: #ffd100 !important;
 }
 .tt-wrap > table {
   background: rgba(0, 0, 0, 0.9);

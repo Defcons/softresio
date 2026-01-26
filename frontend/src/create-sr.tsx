@@ -200,11 +200,10 @@ export const CreateSr = (
               {selectedItemIds.map((itemId) => (
                 <SelectableItem
                   item={items.filter((i) => i.id == itemId)[0]}
-                  onItemClick={() =>
+                  onClick={() =>
                     setSelectedItemIds(
                       selectedItemIds.filter((i) => i != itemId),
                     )}
-                  onItemLongClick={() => {}}
                   deleteMode
                   user={user}
                   attendees={sheet.attendees}
@@ -215,8 +214,8 @@ export const CreateSr = (
               })
                 .map(() => (
                   <Button
-                    w="100%"
-                    h={44}
+                    fullWidth
+                    h={36}
                     onClick={() => setItemPickerOpen(true)}
                     variant="default"
                   >
@@ -234,11 +233,12 @@ export const CreateSr = (
           </Paper>
         </Stack>
         <Button
-          disabled={!selectedClass || !selectedSpec || !characterName ||
+          disabled={sheet.locked || !selectedClass || !selectedSpec ||
+            !characterName ||
             selectedItemIds.length != sheet.srCount || !srChanged()}
           onClick={submitSr}
         >
-          Submit
+          {sheet.locked ? "Raid is locked" : "Submit"}
         </Button>
       </Stack>
       <ItemPicker
@@ -250,6 +250,7 @@ export const CreateSr = (
         selectedClass={selectedClass || null}
         user={user}
         attendees={sheet.attendees}
+        selectMode={true}
       />
     </Paper>
   )

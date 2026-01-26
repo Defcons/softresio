@@ -8,6 +8,7 @@ import {
   Box,
   Checkbox,
   CloseButton,
+  Flex,
   Group,
   Image,
   Title,
@@ -19,20 +20,22 @@ export const ItemNameAndIcon = (
     item: Item
     showTooltipItemId?: number
     highlight: boolean
-    onClick: () => void
-    onLongClick: () => void
+    onClick?: () => void
+    onLongClick?: () => void
     rightSection?: ReactElement
   },
 ) => {
   const { hovered, ref } = useHover()
   const isTouchScreen = globalThis.matchMedia("(pointer: coarse)").matches
-  const handlers = useLongPress(() => onLongClick(), {
+  const handlers = useLongPress(() => onLongClick?.(), {
     onCancel: (_, meta) => {
       if (meta.reason == LongPressCallbackReason.CancelledByRelease) {
-        setTimeout(() => onClick(), 50)
+        setTimeout(() => onClick?.(), 50)
       }
     },
   })
+
+  const padding = 6
 
   return (
     <Tooltip
@@ -47,8 +50,7 @@ export const ItemNameAndIcon = (
         />
       }
     >
-      <Group
-        {...handlers()}
+      <Flex
         ref={ref}
         justify="space-between"
         wrap="nowrap"
@@ -57,17 +59,17 @@ export const ItemNameAndIcon = (
             ? "item-list-element-highlight"
             : ""
         }`}
-        p={8}
         key={item.id}
       >
-        <Group wrap="nowrap">
+        <Box
+          p={padding}
+          onClick={() => {
+            globalThis.open(
+              `https://database.turtlecraft.gg/?item=${item.id}`,
+            )
+          }}
+        >
           <Image
-            onClick={(e) => {
-              e.stopPropagation()
-              globalThis.open(
-                `https://database.turtlecraft.gg/?item=${item.id}`,
-              )
-            }}
             style={{
               filter: "drop-shadow(0px 0px 2px)",
               border: "1px solid rgba(255,255,255,0.3)",
@@ -78,12 +80,26 @@ export const ItemNameAndIcon = (
             w={24}
             src={`https://database.turtlecraft.gg/images/icons/medium/${item.icon}`}
           />
-          <Title className={`q${item.quality}`} order={6} lineClamp={1}>
+        </Box>
+        <Box flex={1} py={padding}>
+          <Title
+            order={6}
+            flex={1}
+            {...handlers()}
+            className={`q${item.quality}`}
+            lineClamp={1}
+          >
             {item.name}
           </Title>
-        </Group>
-        {rightSection}
-      </Group>
+        </Box>
+        <Flex
+          {...handlers()}
+          px={padding}
+          pr={padding}
+        >
+          {rightSection}
+        </Flex>
+      </Flex>
     </Tooltip>
   )
 }
@@ -109,23 +125,25 @@ const ReservedByOthers = (
 
 export const SelectableItem = ({
   item,
-  onItemClick,
-  onItemLongClick,
+  onClick,
+  onLongClick,
   selectedItemIds,
   showTooltipItemId,
   user,
   attendees,
   deleteMode,
+  selectMode,
   style,
 }: {
-  onItemClick: (itemId: number) => void
-  onItemLongClick: (itemId: number) => void
+  onClick?: () => void
+  onLongClick?: () => void
   selectedItemIds?: number[]
   showTooltipItemId?: number
   item: Item
-  user: User
-  attendees: Attendee[]
+  user?: User
+  attendees?: Attendee[]
   deleteMode?: boolean
+  selectMode?: boolean
   style?: React.CSSProperties
 }) => {
   const highlight = showTooltipItemId == item.id ||
@@ -137,21 +155,28 @@ export const SelectableItem = ({
         item={item}
         showTooltipItemId={showTooltipItemId}
         highlight={highlight}
-        onClick={() => onItemClick(item.id)}
-        onLongClick={() => onItemLongClick(item.id)}
+        onClick={onClick}
+        onLongClick={onLongClick}
         rightSection={
           <Group wrap="nowrap">
-            <ReservedByOthers
-              itemId={item.id}
-              user={user}
-              attendees={attendees}
-            />
-            {deleteMode ? <CloseButton /> : (
-              <Checkbox
-                checked={selectedItemIds?.includes(item.id)}
-                size="md"
-              />
-            )}
+            {attendees && user
+              ? (
+                <ReservedByOthers
+                  itemId={item.id}
+                  user={user}
+                  attendees={attendees}
+                />
+              )
+              : null}
+            {deleteMode ? <CloseButton /> : null}
+            {selectMode
+              ? (
+                <Checkbox
+                  checked={selectedItemIds?.includes(item.id)}
+                  size="md"
+                />
+              )
+              : null}
           </Group>
         }
       />
@@ -168,27 +193,30 @@ export const ReactWindowSelectableItem = ({
   user,
   style,
   deleteMode = false,
+  selectMode = false,
   items,
   attendees,
 }: RowComponentProps<{
   onItemClick: (item_id: number) => void
   onItemLongClick: (item_id: number) => void
-  selectedItemIds: number[]
-  user: User
+  selectedItemIds?: number[]
+  user?: User
   showTooltipItemId?: number
   deleteMode?: boolean
+  selectMode?: boolean
   items: Item[]
-  attendees: Attendee[]
+  attendees?: Attendee[]
 }>) => {
   return (
     <SelectableItem
       item={items[index]}
       selectedItemIds={selectedItemIds}
-      onItemClick={onItemClick}
-      onItemLongClick={onItemLongClick}
+      onClick={() => onItemClick(items[index].id)}
+      onLongClick={() => onItemLongClick(items[index].id)}
       showTooltipItemId={showTooltipItemId}
       user={user}
       deleteMode={deleteMode}
+      selectMode={selectMode}
       style={style}
       attendees={attendees}
     />
