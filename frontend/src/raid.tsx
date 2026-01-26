@@ -129,7 +129,7 @@ export const Raid = () => {
               <Group>
                 <CopyClipboardButton
                   toClipboard={raidIdToUrl(params.raidId || "")}
-                  label={params.raidId || ""}
+                  label={"Share"}
                   tooltip="Copy link to raid"
                   orange={false}
                 />

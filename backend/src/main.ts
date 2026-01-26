@@ -167,6 +167,7 @@ app.post("/api/sr/create", async (c) => {
       sheet: { raidId },
     } as never} for update;`
     if (!raid) return
+    if (raid.sheet.locked) return raid
     raid.sheet.attendees = raid.sheet.attendees.filter((attendee) =>
       attendee.character.name !== character.name &&
       attendee.user.userId !== user.userId
