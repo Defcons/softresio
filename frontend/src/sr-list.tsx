@@ -29,7 +29,6 @@ export const SrList = (
   const [itemFilter, setItemFilter] = useState<string>()
   const [sortBy, setSortBy] = useState<"name" | "item" | "class">("class")
   const [sortDesc, setSortDesc] = useState<boolean>(false)
-  const [showTooltipItemId, setShowTooltipItemId] = useState<number>()
 
   const filter = (
     { attendee, softReserve }: ListElement,
@@ -87,15 +86,10 @@ export const SrList = (
         <ItemNameAndIcon
           item={items.filter((item) => item.id == e.softReserve.itemId)[0]}
           highlight={false}
-          showTooltipItemId={showTooltipItemId}
           onClick={() =>
             setItemFilter(
               items.filter((item) => item.id == e.softReserve.itemId)[0].name,
             )}
-          onLongClick={() =>
-            showTooltipItemId == e.softReserve.itemId
-              ? setShowTooltipItemId(undefined)
-              : setShowTooltipItemId(e.softReserve.itemId)}
         />
       </Table.Td>
     </Table.Tr>
