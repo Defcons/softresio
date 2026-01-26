@@ -14,7 +14,6 @@ import type {
   Instance,
   LockRaidResponse,
   Raid,
-  Sheet,
   SoftReserve,
   User,
 } from "../types/types.ts"
@@ -120,24 +119,20 @@ const generateRaidId = (): string => {
 const getOrCreateUser = async (c: Context): Promise<User> => {
   // Try to get user from cookie
   const token = getCookie(c, "auth")
-  if (token) {
-    const decoded = await jwt.verify(
-      token,
-      JWT_SECRET,
-      "HS256",
-    ) as unknown as User
-    if (decoded && decoded.userId) {
-      return decoded
-    }
-  }
-  // Create new user
-  const user = { userId: randomUUID(), issuer: DOMAIN }
-  const new_token = await jwt.sign(user, JWT_SECRET, "HS256")
+  const decoded = token && await jwt.verify(
+    token,
+    JWT_SECRET,
+    "HS256",
+  ) as unknown as User
+  // Create new user cookie or refresh exisiting cookie
+  const user = decoded || { userId: randomUUID(), issuer: DOMAIN }
+  const new_token = await jwt.sign(user as never, JWT_SECRET, "HS256")
   setCookie(c, "auth", new_token, {
     secure: true,
     domain: DOMAIN,
     httpOnly: true,
     sameSite: "Strict",
+    expires: new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 400), // 400 days expiration
   })
   return user
 }
