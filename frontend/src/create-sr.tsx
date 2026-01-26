@@ -213,14 +213,14 @@ export const CreateSr = (
               {Array.from({
                 length: sheet.srCount - selectedItemIds.length,
               })
-                .map(() => (
+                .map((_, i) => (
                   <Button
                     fullWidth
                     h={36}
                     onClick={() => setItemPickerOpen(true)}
                     variant="default"
                   >
-                    Select item
+                    Select item {i + 1}.
                   </Button>
                 ))}
               <Text

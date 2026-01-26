@@ -23,7 +23,7 @@ import { SrList } from "./sr-list.tsx"
 import { rollForExport } from "./rollfor-export.ts"
 import useWebSocket from "react-use-websocket"
 import { IconLogs } from "@tabler/icons-react"
-import { IconShieldFilled } from "@tabler/icons-react"
+import { IconLock, IconLockOpen2, IconShieldFilled } from "@tabler/icons-react"
 
 export const RaidUpdater = (
   { loadRaid, raidId }: { loadRaid: (sheet: Sheet) => void; raidId: string },
@@ -137,6 +137,7 @@ export const Raid = () => {
                   onClick={lockRaid}
                   variant={sheet.locked ? "default" : ""}
                   color="red"
+                  leftSection={sheet.locked ? <IconLockOpen2 /> : <IconLock />}
                 >
                   {sheet.locked ? "Unlock" : "Lock"}
                 </Button>
