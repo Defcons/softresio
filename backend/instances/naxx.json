@@ -1097,7 +1097,7 @@
     {
       "id": 23549,
       "name": "Fortitude of the Scourge",
-      "slot": "Miscellaneous",
+      "slot": "Enchants",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1107,7 +1107,7 @@
     {
       "id": 23548,
       "name": "Might of the Scourge",
-      "slot": "Miscellaneous",
+      "slot": "Enchants",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1117,7 +1117,7 @@
     {
       "id": 23545,
       "name": "Power of the Scourge",
-      "slot": "Miscellaneous",
+      "slot": "Enchants",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -1127,7 +1127,7 @@
     {
       "id": 23547,
       "name": "Resilience of the Scourge",
-      "slot": "Miscellaneous",
+      "slot": "Enchants",
       "type": null,
       "classes": [],
       "quality": 4,
