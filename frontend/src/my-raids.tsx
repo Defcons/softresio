@@ -8,7 +8,7 @@ import type {
   Instance,
   Raid,
 } from "../types/types.ts"
-import { CopyRaidLink } from "./copy-raid-link"
+import { CopyClipboardButton, raidIdToUrl } from "./copy-clipboard-button.tsx"
 
 export const MyRaids = () => {
   const [raidList, setRaidList] = useState<Raid[]>()
@@ -67,7 +67,12 @@ export const MyRaids = () => {
           {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
         </Table.Td>
         <Table.Td>
-          <CopyRaidLink raidId={raid.sheet.raidId} />
+          <CopyClipboardButton
+            w="100%"
+            tooltip="Copy link to raid"
+            label={raid.sheet.raidId}
+            toClipboard={raidIdToUrl(raid.sheet.raidId)}
+          />
         </Table.Td>
       </Table.Tr>
     )

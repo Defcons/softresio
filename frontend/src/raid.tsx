@@ -6,21 +6,11 @@ import type {
   Sheet,
   User,
 } from "../types/types.ts"
-import { IconCopy } from "@tabler/icons-react"
 import { useParams } from "react-router"
-import {
-  Button,
-  CopyButton,
-  Group,
-  Paper,
-  Skeleton,
-  Stack,
-  Title,
-  Tooltip,
-} from "@mantine/core"
+import { Group, Paper, Skeleton, Stack, Title } from "@mantine/core"
+import { CopyClipboardButton, raidIdToUrl } from "./copy-clipboard-button.tsx"
 import { CreateSr } from "./create-sr.tsx"
 import { SrList } from "./sr-list.tsx"
-import { CopyRaidLink } from "./copy-raid-link.tsx"
 import { rollForExport } from "./rollfor-export.ts"
 import useWebSocket from "react-use-websocket"
 
@@ -90,35 +80,29 @@ export const Raid = () => {
     }
   }, [sheet, instances])
 
+  const raidId = globalThis.location.pathname.slice(1)
+
   if (sheet && instance && user) {
     return (
       <Stack>
         <Paper shadow="sm" p="sm">
           <Group justify="space-between">
-            <Title>{instance.name}</Title>
             <Group wrap="nowrap">
-              <CopyButton value={rollForExport(sheet)} timeout={2000}>
-                {({ copied, copy }) => (
-                  <Tooltip
-                    label={copied ? "Copied!" : "Copy RollFor export"}
-                    withArrow
-                    position="top"
-                  >
-                    <Button
-                      onClick={() => {
-                        setExportedLatestVersion(true)
-                        copy()
-                      }}
-                      variant={exportedLatestVersion ? "default" : ""}
-                      leftSection={<IconCopy size={16} />}
-                    >
-                      RollFor
-                    </Button>
-                  </Tooltip>
-                )}
-              </CopyButton>
-              <CopyRaidLink raidId={window.location.pathname.slice(1)} />
+              <Title>{instance.name}</Title>
+              <CopyClipboardButton
+                toClipboard={raidIdToUrl(raidId)}
+                label={raidId}
+                tooltip="Copy link to raid"
+                orange={false}
+              />
             </Group>
+            <CopyClipboardButton
+              toClipboard={rollForExport(sheet)}
+              label="RollFor"
+              tooltip="Copy RollFor export"
+              onClick={() => setExportedLatestVersion(true)}
+              orange={!exportedLatestVersion}
+            />
           </Group>
         </Paper>
         <CreateSr
