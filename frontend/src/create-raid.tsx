@@ -13,7 +13,7 @@ import {
   Textarea,
 } from "@mantine/core"
 import { DateTimePicker } from "@mantine/dates"
-
+import { instanceOrder } from "./instances.ts"
 import type {
   CreateRaidRequest,
   CreateRaidResponse,
@@ -71,7 +71,11 @@ export function CreateRaid() {
         if (j.error) {
           alert(j.error)
         } else if (j.data) {
-          setInstances(j.data)
+          setInstances(
+            j.data.sort((a, b) =>
+              instanceOrder.indexOf(a.name) - instanceOrder.indexOf(b.name)
+            ),
+          )
         }
       })
   }, [])

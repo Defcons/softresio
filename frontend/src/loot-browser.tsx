@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import type { GetInstancesResponse, Instance } from "../types/types.ts"
 import { Button, Paper, Select, Stack, Title } from "@mantine/core"
 import { ItemPicker } from "./item-picker.tsx"
+import { instanceOrder } from "./instances.ts"
 
 export const LootBrowser = () => {
   const [instances, setInstances] = useState<Instance[]>([])
@@ -16,7 +17,11 @@ export const LootBrowser = () => {
         if (j.error) {
           alert(j.error)
         } else if (j.data) {
-          setInstances(j.data)
+          setInstances(
+            j.data.sort((a, b) =>
+              instanceOrder.indexOf(a.name) - instanceOrder.indexOf(b.name)
+            ),
+          )
         }
       })
   }, [])
