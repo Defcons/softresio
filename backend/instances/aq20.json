@@ -66,9 +66,9 @@
     {
       "id": 20885,
       "name": "Qiraji Martial Drape",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Rogue","Priest","Mage"],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Qiraji Martial Drape</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue, Priest, Mage</span></div>",
       "icon": "inv_qiraj_drapemartial.png"
@@ -76,9 +76,9 @@
     {
       "id": 20889,
       "name": "Qiraji Regal Drape",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Paladin","Hunter","Shaman","Warlock","Druid"],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Qiraji Regal Drape</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Warlock, Druid</span></div>",
       "icon": "inv_bracer_18.png"
@@ -86,9 +86,9 @@
     {
       "id": 20888,
       "name": "Qiraji Ceremonial Ring",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Hunter","Rogue","Priest","Warlock"],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Qiraji Ceremonial Ring</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Hunter, Rogue, Priest, Warlock</span></div>",
       "icon": "inv_qiraj_ringceremonial.png"
@@ -96,9 +96,9 @@
     {
       "id": 20884,
       "name": "Qiraji Magisterial Ring",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Paladin","Shaman","Mage","Druid"],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Qiraji Magisterial Ring</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Paladin, Shaman, Mage, Druid</span></div>",
       "icon": "inv_qiraj_ringmagisterial.png"
@@ -336,9 +336,9 @@
     {
       "id": 20890,
       "name": "Qiraji Ornate Hilt",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Priest","Mage","Warlock","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Qiraji Ornate Hilt</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock, Druid</span></div>",
       "icon": "inv_qiraj_hiltornate.png"
@@ -346,9 +346,9 @@
     {
       "id": 20886,
       "name": "Qiraji Spiked Hilt",
-      "slot": "Unknown",
+      "slot": "Token",
       "type": null,
-      "classes": [],
+      "classes": ["Warrior","Paladin","Hunter","Rogue","Druid"],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Qiraji Spiked Hilt</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Paladin, Hunter, Rogue, Shaman</span></div>",
       "icon": "inv_qiraj_hiltspiked.png"
@@ -606,8 +606,8 @@
     {
       "id": 21459,
       "name": "Crossbow of Imminent Doom",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Crossbow",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Crossbow of Imminent Doom</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Crossbow</span></div></div><div><div>103 - 155 Damage</div><div>Speed 3.10</div></div><span>(41.6 damage per second)<br/>+5 Strength<br/>+7 Agility<br/>+5 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
@@ -636,7 +636,7 @@
     {
       "id": 21220,
       "name": "Head of Ossirian the Unscarred",
-      "slot": "Unknown",
+      "slot": "Quest Item",
       "type": null,
       "classes": [],
       "quality": 4,
@@ -676,7 +676,7 @@
     {
       "id": 20873,
       "name": "Alabaster Idol",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -686,7 +686,7 @@
     {
       "id": 20869,
       "name": "Amber Idol",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -696,7 +696,7 @@
     {
       "id": 20866,
       "name": "Azure Idol",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -706,7 +706,7 @@
     {
       "id": 20870,
       "name": "Jasper Idol",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -716,7 +716,7 @@
     {
       "id": 20868,
       "name": "Lambent Idol",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -726,7 +726,7 @@
     {
       "id": 20871,
       "name": "Obsidian Idol",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -736,7 +736,7 @@
     {
       "id": 20867,
       "name": "Onyx Idol",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -746,7 +746,7 @@
     {
       "id": 20872,
       "name": "Vermillion Idol",
-      "slot": "Unknown",
+      "slot": "Materials",
       "type": null,
       "classes": [],
       "quality": 3,
@@ -756,7 +756,7 @@
     {
       "id": 21801,
       "name": "Antenna of Invigoration",
-      "slot": "Unknown",
+      "slot": "Ranged",
       "type": "Wand",
       "classes": [],
       "quality": 3,
@@ -766,8 +766,8 @@
     {
       "id": 21800,
       "name": "Silithid Husked Launcher",
-      "slot": "Unknown",
-      "type": null,
+      "slot": "Ranged",
+      "type": "Gun",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Silithid Husked Launcher</b><span>Binds when equipped</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>68 - 128 Damage</div><div>Speed 2.80</div></div><span>(35.0 damage per second)<br/>+4 Agility<br/>+10 Stamina<br/>Requires Level 60<br/>|cFFFFFFFFValue:|r |cffff2020Unknown|r</span></div>",

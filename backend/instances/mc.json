@@ -188,7 +188,7 @@
     {
       "id": 16665,
       "name": "Tome of Tranquilizing Shot",
-      "slot": "Consumable",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 2,
@@ -2000,7 +2000,7 @@
     {
       "id": 58246,
       "name": "Tablet of Molten Blast VI",
-      "slot": "Consumable",
+      "slot": "Books",
       "type": null,
       "classes": [],
       "quality": 3,
