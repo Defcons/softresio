@@ -7,7 +7,7 @@ import { MyRaids } from "./my-raids.tsx"
 import { LootBrowser } from "./loot-browser.tsx"
 import "@mantine/core/styles.css"
 import "@mantine/dates/styles.css"
-import { IconBrandGithub } from "@tabler/icons-react"
+import { IconBrandDiscord, IconBrandGithub } from "@tabler/icons-react"
 import {
   Anchor,
   createTheme,
@@ -45,15 +45,30 @@ function App() {
           </Stack>
           <Stack>
             <Divider />
-            <Group justify="center" m="lg" mt={0}>
-              <IconBrandGithub />
-              <Anchor
-                href="https://github.com/kofoednielsen/softresio"
-                c="lightgray"
-              >
-                kofoednielsen/softresio
-              </Anchor>
-            </Group>
+            <Stack justify="center" gap="xs" ml="lg" mb="sm">
+              <Group>
+                <IconBrandGithub />
+                <Anchor
+                  size="lg"
+                  href="https://github.com/kofoednielsen/softresio"
+                  underline="never"
+                  c="lightgray"
+                >
+                  This project is open-source
+                </Anchor>
+              </Group>
+              <Group>
+                <IconBrandDiscord />
+                <Anchor
+                  size="lg"
+                  href="https://discord.gg/DbfRrGGQ7J"
+                  underline="never"
+                  c="lightgray"
+                >
+                  Give feedback on Discord
+                </Anchor>
+              </Group>
+            </Stack>
           </Stack>
         </Stack>
       </BrowserRouter>
