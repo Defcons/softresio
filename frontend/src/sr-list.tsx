@@ -159,9 +159,9 @@ export const SrList = (
                 variant="subtle"
                 color="lightgrey"
                 onClick={() => {
-                  setClassFilter()
-                  setNameFilter()
-                  setItemFilter()
+                  setClassFilter(undefined)
+                  setNameFilter(undefined)
+                  setItemFilter(undefined)
                 }}
               >
                 <IconX />
