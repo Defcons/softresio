@@ -135,11 +135,11 @@ export const Raid = () => {
                 />
                 <Button
                   onClick={lockRaid}
-                  variant={sheet.locked ? "default" : ""}
+                  variant={sheet.locked ? "" : "default"}
                   color="red"
-                  leftSection={sheet.locked ? <IconLockOpen2 /> : <IconLock />}
+                  leftSection={sheet.locked ? <IconLock /> : <IconLockOpen2 />}
                 >
-                  {sheet.locked ? "Unlock" : "Lock"}
+                  {sheet.locked ? "Locked" : "Unlocked"}
                 </Button>
               </Group>
               <IconShieldFilled size={20} />
