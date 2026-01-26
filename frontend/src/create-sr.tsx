@@ -200,10 +200,11 @@ export const CreateSr = (
               {selectedItemIds.map((itemId) => (
                 <SelectableItem
                   item={items.filter((i) => i.id == itemId)[0]}
-                  onClick={() =>
+                  onRightSectionClick={() =>
                     setSelectedItemIds(
                       selectedItemIds.filter((i) => i != itemId),
                     )}
+                  onClick={() => setItemPickerOpen(true)}
                   deleteMode
                   user={user}
                   attendees={sheet.attendees}

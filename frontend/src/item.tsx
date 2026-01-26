@@ -16,13 +16,22 @@ import {
 } from "@mantine/core"
 
 export const ItemNameAndIcon = (
-  { item, showTooltipItemId, highlight, onClick, onLongClick, rightSection }: {
+  {
+    item,
+    showTooltipItemId,
+    highlight,
+    onClick,
+    onLongClick,
+    rightSection,
+    onRightSectionClick,
+  }: {
     item: Item
     showTooltipItemId?: number
     highlight: boolean
     onClick?: () => void
     onLongClick?: () => void
     rightSection?: ReactElement
+    onRightSectionClick?: () => void
   },
 ) => {
   const { hovered, ref } = useHover()
@@ -81,11 +90,10 @@ export const ItemNameAndIcon = (
             src={`https://database.turtlecraft.gg/images/icons/medium/${item.icon}`}
           />
         </Box>
-        <Box flex={1} py={padding}>
+        <Box flex={1} p={padding} {...handlers()}>
           <Title
             order={6}
             flex={1}
-            {...handlers()}
             className={`q${item.quality}`}
             lineClamp={1}
           >
@@ -93,7 +101,7 @@ export const ItemNameAndIcon = (
           </Title>
         </Box>
         <Flex
-          {...handlers()}
+          onClick={onRightSectionClick}
           px={padding}
           pr={padding}
         >
@@ -127,6 +135,7 @@ export const SelectableItem = ({
   item,
   onClick,
   onLongClick,
+  onRightSectionClick,
   selectedItemIds,
   showTooltipItemId,
   user,
@@ -137,6 +146,7 @@ export const SelectableItem = ({
 }: {
   onClick?: () => void
   onLongClick?: () => void
+  onRightSectionClick?: () => void
   selectedItemIds?: number[]
   showTooltipItemId?: number
   item: Item
@@ -157,6 +167,7 @@ export const SelectableItem = ({
         highlight={highlight}
         onClick={onClick}
         onLongClick={onLongClick}
+        onRightSectionClick={onRightSectionClick}
         rightSection={
           <Group wrap="nowrap">
             {attendees && user
@@ -213,6 +224,7 @@ export const ReactWindowSelectableItem = ({
       selectedItemIds={selectedItemIds}
       onClick={() => onItemClick(items[index].id)}
       onLongClick={() => onItemLongClick(items[index].id)}
+      onRightSectionClick={() => onItemClick(items[index].id)}
       showTooltipItemId={showTooltipItemId}
       user={user}
       deleteMode={deleteMode}
