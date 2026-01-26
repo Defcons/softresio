@@ -56,6 +56,16 @@ export const ItemPicker = ({
   }
 
   useEffect(() => {
+    // Clear filter in item browser if new raid doesnt have that category
+    if (!items.some((i) => i.slot == slotFilter)) {
+      setSlotFilter(null)
+    }
+    if (!items.some((i) => i.slot == slotFilter && i.type == typeFilter)) {
+      setTypeFilter(null)
+    }
+  }, [slotFilter, typeFilter, items])
+
+  useEffect(() => {
     setFilteredItems(
       items.filter((item) => {
         const stringQuery = debouncedSearch?.toLowerCase() || ""
@@ -133,9 +143,11 @@ export const ItemPicker = ({
               setSlotFilter(value)
               if (
                 value && typeFilter &&
-                !itemFilters[value].filter((slotOption) =>
-                  items.some((i) => i.slot == slotOption)
-                ).includes(typeFilter)
+                !itemFilters[value].some((typeOption) =>
+                  items.some((i) =>
+                    i.slot == slotFilter && i.type == typeOption
+                  )
+                )
               ) setTypeFilter(null)
             }}
             data={Object.keys(itemFilters).filter((slotOption) =>
