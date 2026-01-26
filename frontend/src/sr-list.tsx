@@ -86,7 +86,10 @@ export const SrList = (
         <ItemNameAndIcon
           item={items.filter((item) => item.id == e.softReserve.itemId)[0]}
           highlight={false}
-          onClick={() => null}
+          onClick={() =>
+            setItemFilter(
+              items.filter((item) => item.id == e.softReserve.itemId)[0].name,
+            )}
           onLongClick={() => null}
         />
       </Table.Td>
