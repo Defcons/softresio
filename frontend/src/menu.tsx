@@ -24,7 +24,9 @@ export function Menu() {
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <Group>
-            <Image src={logo} h={40} w="auto" />
+            <NavLink to="/">
+              <Image src={logo} h={40} w="auto" />
+            </NavLink>
             <Tooltip label="Do not expect data persistance or features to work">
               <Badge color="red" radius="xs">Early Beta</Badge>
             </Tooltip>
