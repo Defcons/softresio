@@ -15,6 +15,7 @@ import {
   IconArrowsSort,
   IconSortAscendingLetters,
   IconSortDescendingLetters,
+  IconX,
 } from "@tabler/icons-react"
 import { classes, renderClass } from "./class.tsx"
 
@@ -92,7 +93,7 @@ export const SrList = (
     </Table.Tr>
   ))
   return (
-    <Table>
+    <Table horizontalSpacing={3}>
       <Table.Thead>
         <Table.Tr>
           <Table.Th w={40}>
@@ -131,24 +132,38 @@ export const SrList = (
             </Group>
           </Table.Th>
           <Table.Th>
-            <TextInput
-              placeholder="Item"
-              onChange={(event) =>
-                setItemFilter(event.currentTarget.value || undefined)}
-              value={itemFilter || ""}
-              rightSection={
-                <SortButton
-                  active={sortBy == "item"}
-                  activate={() => setSortBy("item")}
-                  asc={!sortDesc}
-                  sortDesc={() => setSortDesc(true)}
-                  reset={() => {
-                    setSortBy("class")
-                    setSortDesc(false)
-                  }}
-                />
-              }
-            />
+            <Group wrap="nowrap" gap={0}>
+              <TextInput
+                placeholder="Item"
+                onChange={(event) =>
+                  setItemFilter(event.currentTarget.value || undefined)}
+                value={itemFilter || ""}
+                w="100%"
+                rightSection={
+                  <SortButton
+                    active={sortBy == "item"}
+                    activate={() => setSortBy("item")}
+                    asc={!sortDesc}
+                    sortDesc={() => setSortDesc(true)}
+                    reset={() => {
+                      setSortBy("class")
+                      setSortDesc(false)
+                    }}
+                  />
+                }
+              />
+              <ActionIcon
+                variant="subtle"
+                color="lightgrey"
+                onClick={() => {
+                  setClassFilter()
+                  setNameFilter()
+                  setItemFilter()
+                }}
+              >
+                <IconX />
+              </ActionIcon>
+            </Group>
           </Table.Th>
         </Table.Tr>
       </Table.Thead>
