@@ -4,7 +4,6 @@ import {
   Button,
   Group,
   Paper,
-  PasswordInput,
   SegmentedControl,
   Select,
   Stack,
@@ -28,7 +27,6 @@ export function CreateRaid() {
 
   const [instanceId, setInstanceId] = useState<number>()
   const [description, setDescription] = useState("")
-  const [adminPassword, setAdminPassword] = useState("")
   const [useSrPlus, setUseSrPlus] = useState(false)
   const [srCount, setSrCount] = useState<number | undefined>()
   const [time, setTime] = useState<Date>(
@@ -39,15 +37,14 @@ export function CreateRaid() {
 
   function createRaid() {
     if (
-      instanceId == undefined || adminPassword == undefined ||
-      srCount == undefined
+      instanceId == undefined || srCount == undefined
     ) {
       alert("Missing information")
       return
     }
     const request: CreateRaidRequest = {
+      adminPassword: "", // Maybe we completely remove this later
       instanceId,
-      adminPassword,
       useSrPlus,
       description,
       time: time.toISOString(),
@@ -99,6 +96,8 @@ export function CreateRaid() {
           <Textarea
             label="Description"
             value={description}
+            autosize
+            minRows={3}
             onChange={(event) => setDescription(event.currentTarget.value)}
           />
 
@@ -144,18 +143,10 @@ export function CreateRaid() {
             style={{ display: "none" }}
             value="softres.io"
           />
-          <PasswordInput
-            label="Admin password"
-            type=""
-            value={adminPassword}
-            withAsterisk={adminPassword == ""}
-            onChange={(event) => setAdminPassword(event.currentTarget.value)}
-            description="Anyone with the admin password can become admin of the raid"
-          />
           <Button
             mt="sm"
             onClick={createRaid}
-            disabled={!instanceId || !adminPassword || !srCount}
+            disabled={!instanceId || !srCount}
           >
             Create Raid
           </Button>

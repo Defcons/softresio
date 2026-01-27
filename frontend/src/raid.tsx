@@ -124,7 +124,13 @@ export const Raid = () => {
               </Group>
               {sheet.locked ? <Badge color="red">Locked</Badge> : null}
             </Group>
-            {sheet.description ? <Text>{sheet.description}</Text> : null}
+            {sheet.description
+              ? (
+                <Text span style={{ whiteSpace: "pre-line" }}>
+                  {sheet.description}
+                </Text>
+              )
+              : null}
           </Stack>
         </Paper>
         <Paper shadow="sm" p="sm" display={isAdmin ? "block" : "none"}>
