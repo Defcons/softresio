@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import type { GetInstancesResponse, Instance } from "../types/types.ts"
-import { Button, Paper, Select, Stack, Title } from "@mantine/core"
+import { Paper, Select, Stack, Title } from "@mantine/core"
 import { ItemPicker } from "./item-picker.tsx"
 import { instanceOrder, renderInstance } from "./instances.tsx"
 
@@ -44,9 +44,6 @@ export const LootBrowser = () => {
             setItemBrowserOpen(true)
           }}
         />
-        <Button onClick={() => setItemBrowserOpen(true)} disabled={!instanceId}>
-          Browse
-        </Button>
       </Stack>
       <ItemPicker
         items={instances.filter((instance) => instance.id == instanceId)[0]
