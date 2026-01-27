@@ -185,6 +185,7 @@ export const CreateSr = (
           attendees={sheet.attendees}
           itemLimit={sheet.srCount}
           hardReserves={sheet.hardReserves}
+          allowDuplicates={true}
         />
         <Button
           disabled={sheet.locked || !selectedClass || !selectedSpec ||

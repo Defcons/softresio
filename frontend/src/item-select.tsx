@@ -53,10 +53,15 @@ export const ItemSelect = (
           {value.map((itemId) => (
             <SelectableItem
               item={items.filter((i) => i.id == itemId)[0]}
-              onRightSectionClick={() =>
-                onChange(
-                  value.filter((i) => i != itemId),
-                )}
+              onRightSectionClick={() => {
+                const idx = value.indexOf(itemId)
+                if (idx !== -1) {
+                  onChange([
+                    ...value.slice(0, idx),
+                    ...value.slice(idx + 1),
+                  ])
+                }
+              }}
               onClick={() => setItemPickerOpen(true)}
               onDuplicateClick={() => onChange([...value, itemId])}
               deleteMode
