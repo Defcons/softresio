@@ -142,8 +142,7 @@ export function CreateRaid() {
           <Switch
             disabled
             value={useSrPlus ? 1 : 0}
-            onChange={(event) =>
-              setUseSrPlus(event.currentTarget.value ? true : false)}
+            onChange={(event) => setUseSrPlus(event.currentTarget.checked)}
             label="Use SR+"
           />
           <Switch
@@ -156,7 +155,7 @@ export function CreateRaid() {
           />
           <Collapse in={useHr && !!instanceId}>
             <ItemSelect
-              label={"Hard reserves"}
+              label={"Select the item's you want to hard-reserve"}
               value={hrItemIds}
               onChange={setHrItemIds}
               items={instances?.find((instance) => instance.id == instanceId)

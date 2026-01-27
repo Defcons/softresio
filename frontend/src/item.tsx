@@ -14,6 +14,7 @@ import {
   Title,
   Tooltip,
 } from "@mantine/core"
+import { IconCopyPlus } from "@tabler/icons-react"
 
 export const ItemNameAndIcon = (
   {
@@ -23,7 +24,9 @@ export const ItemNameAndIcon = (
     onClick,
     onLongClick,
     rightSection,
+    middleRightSection,
     onRightSectionClick,
+    onMiddleRightSectionClick,
   }: {
     item: Item
     showTooltipItemId?: number
@@ -31,7 +34,9 @@ export const ItemNameAndIcon = (
     onClick?: () => void
     onLongClick?: () => void
     rightSection?: ReactElement
+    middleRightSection?: ReactElement
     onRightSectionClick?: () => void
+    onMiddleRightSectionClick?: () => void
   },
 ) => {
   const { hovered, ref } = useHover()
@@ -101,9 +106,17 @@ export const ItemNameAndIcon = (
           </Title>
         </Box>
         <Flex
-          onClick={onRightSectionClick}
+          onClick={onMiddleRightSectionClick}
           px={padding}
           pr={padding}
+          align="center"
+        >
+          {middleRightSection}
+        </Flex>
+        <Flex
+          onClick={onRightSectionClick}
+          px={padding}
+          align="center"
         >
           {rightSection}
         </Flex>
@@ -136,11 +149,13 @@ export const SelectableItem = ({
   onClick,
   onLongClick,
   onRightSectionClick,
+  onDuplicateClick,
   selectedItemIds,
   showTooltipItemId,
   user,
   attendees,
   deleteMode,
+  duplicateMode = false,
   selectMode,
   style,
   hardReserves = [],
@@ -148,12 +163,14 @@ export const SelectableItem = ({
   onClick?: () => void
   onLongClick?: () => void
   onRightSectionClick?: () => void
+  onDuplicateClick?: () => void
   selectedItemIds?: number[]
   showTooltipItemId?: number
   item: Item
   user?: User
   attendees?: Attendee[]
   deleteMode?: boolean
+  duplicateMode?: boolean
   selectMode?: boolean
   style?: React.CSSProperties
   hardReserves?: number[]
@@ -169,7 +186,11 @@ export const SelectableItem = ({
         highlight={highlight}
         onClick={onClick}
         onLongClick={onLongClick}
+        onMiddleRightSectionClick={onDuplicateClick}
         onRightSectionClick={onRightSectionClick}
+        middleRightSection={duplicateMode
+          ? <CloseButton icon={<IconCopyPlus size={18} />} />
+          : undefined}
         rightSection={
           <Group wrap="nowrap">
             {attendees && user

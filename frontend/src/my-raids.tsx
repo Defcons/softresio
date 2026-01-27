@@ -126,9 +126,9 @@ export const MyRaids = () => {
   const upcomingRaids = []
   const pastRaids = []
 
-  const today = (new Date()).getDate()
+  const now = (new Date()).getTime()
   for (const raid of raidList) {
-    if (new Date(Date.parse(raid.sheet.time)).getDate() >= today) {
+    if (new Date(raid.sheet.time).getTime() >= now) {
       upcomingRaids.push(raid)
     } else {
       pastRaids.push(raid)

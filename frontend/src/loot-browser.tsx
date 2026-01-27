@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import type { GetInstancesResponse, Instance } from "../types/types.ts"
-import { Paper, Select, Stack, Title } from "@mantine/core"
+import { Paper, Select, Stack } from "@mantine/core"
 import { ItemPicker } from "./item-picker.tsx"
 import { instanceOrder, renderInstance } from "./instances.tsx"
 
@@ -29,7 +29,6 @@ export const LootBrowser = () => {
   return (
     <Paper shadow="sm" p="sm">
       <Stack gap="md">
-        <Title order={3}>Loot browser</Title>
         <Select
           withAsterisk={instanceId == undefined}
           searchable
