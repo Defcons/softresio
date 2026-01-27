@@ -148,8 +148,10 @@ export function CreateRaid() {
           />
           <Switch
             value={useHr ? 1 : 0}
-            onChange={(event) =>
-              setUseHr(event.currentTarget.value ? true : false)}
+            onChange={(event) => {
+              setUseHr(event.target.checked)
+              if (!event.target.checked) setHrItemIds([])
+            }}
             label="Use hard reserves"
           />
           <Collapse in={useHr && !!instanceId}>
