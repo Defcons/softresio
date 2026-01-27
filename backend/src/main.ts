@@ -320,7 +320,9 @@ app.get("/api/characters", async (c) => {
   const raids = await getRecentRaids(user, 20)
   const distinctCharacters: Character[] = []
   const characters = raids.flatMap((raid) =>
-    raid.sheet.attendees.map((attendee) => attendee.character)
+    raid.sheet.attendees.filter((attendee) =>
+      attendee.user.userId == user.userId
+    ).map((attendee) => attendee.character)
   )
   for (const char of characters) {
     if (
