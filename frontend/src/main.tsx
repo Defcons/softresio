@@ -50,21 +50,21 @@ function App() {
             <Divider />
             <Group gap="sm" mb="md" justify="center">
               <Group mx="lg">
-                <IconBrandGithubFilled size={20} />
+                <IconBrandGithubFilled size={20} color="grey" />
                 <Anchor
                   href="https://github.com/kofoednielsen/softresio"
                   underline="never"
-                  c="lightgray"
+                  c="grey"
                 >
                   This project is open-source
                 </Anchor>
               </Group>
               <Group mx="lg">
-                <IconBrandDiscordFilled size={20} />
+                <IconBrandDiscordFilled size={20} color="grey" />
                 <Anchor
                   href="https://discord.gg/DbfRrGGQ7J"
                   underline="never"
-                  c="lightgray"
+                  c="grey"
                 >
                   Give feedback on Discord
                 </Anchor>
