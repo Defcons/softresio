@@ -12,4 +12,7 @@ export const rollForExport = (sheet: Sheet) => (globalThis.btoa(JSON.stringify({
       sr_plus: sr.srPlus || undefined,
     })),
   })),
+  hardreserves: sheet.hardReserves.map((id) => ({
+    id,
+  })),
 })))
