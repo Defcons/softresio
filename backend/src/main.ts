@@ -349,6 +349,7 @@ app.get("/api/raids", async (c) => {
 
 // Serve the frontend
 app.use("/assets/*", serveStatic({ root: "./static" }))
+app.use("/favicon.ico", serveStatic({ path: "./static/favicon.ico" }))
 app.use("*", serveStatic({ path: "./static/index.html" }))
 
 export default { fetch: app.fetch }

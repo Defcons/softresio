@@ -26,5 +26,7 @@ COPY backend/src/ ./src/
 COPY backend/types/ ./types/
 COPY backend/instances/ ./instances/
 COPY --from=frontend /app/dist ./static/
+COPY frontend/src/assets/favicon.ico ./static/
+
 
 CMD ["deno", "serve", "--allow-all", "--parallel", "src/main.ts"]

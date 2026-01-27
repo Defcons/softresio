@@ -5,12 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: [ "v17xjx.tunnel.pyjam.as" ],
     proxy: {
       "/api": {
         target: "http://backend:8000",
         ws: true
       },
+      "/favicon.ico": {
+        target: "http://backend:8000"
+      }
     },
   },
 })
