@@ -152,7 +152,7 @@ export function CreateRaid() {
               setUseHr(event.currentTarget.value ? true : false)}
             label="Use hard reserves"
           />
-          <Collapse in={useHr}>
+          <Collapse in={useHr && !!instanceId}>
             <ItemSelect
               label={"Hard reserves"}
               value={hrItemIds}
