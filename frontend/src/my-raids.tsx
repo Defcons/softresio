@@ -119,5 +119,55 @@ export const MyRaids = () => {
     )
   }
 
-  return <MyRaidItem user={user} instances={instances} raids={raidList} />
+  raidList.sort((raid1, raid2) =>
+    Date.parse(raid2.sheet.time) - Date.parse(raid1.sheet.time)
+  )
+
+  const todayRaids = []
+  const upcomingRaids = []
+  const pastRaids = []
+
+  const today = (new Date()).getDate()
+  for (const raid of raidList) {
+    if (new Date(Date.parse(raid.sheet.time)).getDate() === today) {
+      todayRaids.push(raid)
+    } else if (new Date(Date.parse(raid.sheet.time)).getDate() > today) {
+      upcomingRaids.push(raid)
+    } else {
+      pastRaids.push(raid)
+    }
+  }
+
+  return (
+    <Stack>
+      {todayRaids.length != 0
+        ? (
+          <>
+            <Title>Today</Title>
+            <MyRaidItem user={user} instances={instances} raids={todayRaids} />
+          </>
+        )
+        : null}
+      {upcomingRaids.length != 0
+        ? (
+          <>
+            <Title>Upcoming</Title>
+            <MyRaidItem
+              user={user}
+              instances={instances}
+              raids={upcomingRaids}
+            />
+          </>
+        )
+        : null}
+      {pastRaids.length != 0
+        ? (
+          <>
+            <Title>Past</Title>
+            <MyRaidItem user={user} instances={instances} raids={pastRaids} />
+          </>
+        )
+        : null}
+    </Stack>
+  )
 }
