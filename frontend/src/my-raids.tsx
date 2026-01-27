@@ -46,44 +46,61 @@ export const MyRaids = () => {
       })
   }, [])
 
-  function idToInstance(id: number): string {
-    if (!instances) return ""
-    const matches = instances.filter((instance) => instance.id == id)
-    return matches[0].name
+  if (!instances || !raidList || !user) {
+    return (
+      <Stack>
+        {Array.from({ length: 3 }).map((_, i) => <Skeleton h={48} key={i} />)}
+      </Stack>
+    )
   }
+
+  const idToInstance = (id: number): Instance =>
+    instances.filter((instance) => instance.id == id)[0]
 
   return (
     <Stack>
-      {!instances || !raidList || !user
-        ? Array.from({ length: 10 }).map((_, i) => <Skeleton h={48} key={i} />)
-        : raidList.map((raid) => (
-          <Box
-            onClick={() => navigate(`/${raid.sheet.raidId}`)}
-            key={raid.sheet.raidId}
-          >
-            <Paper shadow="sm" p="sm" className="raid-list-element">
-              <Group wrap="nowrap" justify="space-between">
-                <Group gap="xs">
-                  <Title variant="default" c="orange" lineClamp={1} order={5}>
-                    {idToInstance(raid.sheet.instanceId)}
-                  </Title>
-                </Group>
-                <Group wrap="nowrap" gap="xs">
-                  <Text lineClamp={1}>
-                    {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
-                  </Text>
-                  {raid.sheet.admins.some((e) => e.userId == user.userId)
-                    ? <IconShieldFilled size={20} />
-                    : null}
-                  <Group gap={3} miw={45}>
-                    <IconUserFilled size={20} />
-                    <Title order={6}>{raid.sheet.attendees.length}</Title>
-                  </Group>
+      {raidList.map((raid) => (
+        <Box
+          onClick={() => navigate(`/${raid.sheet.raidId}`)}
+          key={raid.sheet.raidId}
+        >
+          <Paper shadow="sm" p="sm" className="raid-list-element">
+            <Group wrap="nowrap" justify="space-between">
+              <Group gap="xs">
+                <Title
+                  w={30}
+                  variant="default"
+                  c="orange"
+                  lineClamp={1}
+                  order={5}
+                >
+                  {idToInstance(raid.sheet.instanceId).shortname.toUpperCase()}
+                </Title>
+                <Title
+                  variant="default"
+                  lineClamp={1}
+                  order={5}
+                  visibleFrom="sm"
+                >
+                  {idToInstance(raid.sheet.instanceId).name}
+                </Title>
+              </Group>
+              <Group wrap="nowrap" gap="xs">
+                <Text lineClamp={1}>
+                  {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
+                </Text>
+                {raid.sheet.admins.some((e) => e.userId == user.userId)
+                  ? <IconShieldFilled size={20} />
+                  : null}
+                <Group gap={3} miw={45}>
+                  <IconUserFilled size={20} />
+                  <Title order={6}>{raid.sheet.attendees.length}</Title>
                 </Group>
               </Group>
-            </Paper>
-          </Box>
-        ))}
+            </Group>
+          </Paper>
+        </Box>
+      ))}
     </Stack>
   )
 }

@@ -1,4 +1,5 @@
 import { Button, CopyButton, Tooltip } from "@mantine/core"
+import type { ReactElement } from "react"
 import { IconCopy } from "@tabler/icons-react"
 
 export const raidIdToUrl = (raidId: string): string => {
@@ -9,13 +10,14 @@ export const raidIdToUrl = (raidId: string): string => {
 }
 
 export const CopyClipboardButton = (
-  { w, label, tooltip, orange, onClick, toClipboard }: {
+  { w, label, tooltip, orange, onClick, toClipboard, icon }: {
     w?: string
     label: string
     tooltip: string
     orange?: boolean
     toClipboard: string
     onClick?: () => void
+    icon?: ReactElement
   },
 ) => (
   <CopyButton timeout={1000} value={toClipboard}>
@@ -32,7 +34,7 @@ export const CopyClipboardButton = (
           }}
           variant={orange ? "" : "default"}
           w={w}
-          leftSection={<IconCopy size={16} />}
+          leftSection={icon || <IconCopy size={16} />}
         >
           {label}
         </Button>

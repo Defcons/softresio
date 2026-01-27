@@ -13,7 +13,7 @@ import {
   Textarea,
 } from "@mantine/core"
 import { DateTimePicker } from "@mantine/dates"
-import { instanceOrder } from "./instances.ts"
+import { instanceOrder, renderInstance } from "./instances.tsx"
 import type {
   CreateRaidRequest,
   CreateRaidResponse,
@@ -93,6 +93,7 @@ export function CreateRaid() {
               return { value: e.id.toString(), label: e.name }
             })}
             value={(instanceId || "").toString()}
+            renderOption={renderInstance(instances || [])}
             onChange={(v) => setInstanceId(Number(v))}
           />
           <Textarea

@@ -48,8 +48,8 @@ function App() {
           </Stack>
           <Stack>
             <Divider />
-            <Stack gap="xs" ml="lg" mb="sm">
-              <Group>
+            <Group gap="sm" mb="md" justify="center">
+              <Group mx="lg">
                 <IconBrandGithubFilled size={20} />
                 <Anchor
                   href="https://github.com/kofoednielsen/softresio"
@@ -59,7 +59,7 @@ function App() {
                   This project is open-source
                 </Anchor>
               </Group>
-              <Group>
+              <Group mx="lg">
                 <IconBrandDiscordFilled size={20} />
                 <Anchor
                   href="https://discord.gg/DbfRrGGQ7J"
@@ -69,7 +69,7 @@ function App() {
                   Give feedback on Discord
                 </Anchor>
               </Group>
-            </Stack>
+            </Group>
           </Stack>
         </Stack>
       </BrowserRouter>

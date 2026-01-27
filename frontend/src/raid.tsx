@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import type {
+  Attendee,
   GetInstancesResponse,
   GetRaidResponse,
   Instance,
@@ -22,8 +23,9 @@ import { CreateSr } from "./create-sr.tsx"
 import { SrList } from "./sr-list.tsx"
 import { rollForExport } from "./rollfor-export.ts"
 import useWebSocket from "react-use-websocket"
-import { IconLogs } from "@tabler/icons-react"
+import { IconCopy, IconLogs, IconRefreshAlert } from "@tabler/icons-react"
 import { IconLock, IconLockOpen2, IconShieldFilled } from "@tabler/icons-react"
+import { deepEqual } from "fast-equals"
 
 export const RaidUpdater = (
   { loadRaid, raidId }: { loadRaid: (sheet: Sheet) => void; raidId: string },
@@ -45,10 +47,11 @@ export const Raid = () => {
   const [user, setUser] = useState<User>()
   const [instance, setInstance] = useState<Instance>()
   const [instances, setInstances] = useState<Instance[]>()
-  const [exportedLatestVersion, setExportedLatestVersion] = useState(false)
+  const [attendeesWhenExportedLast, setAttendeesWhenExportedLast] = useState<
+    Attendee[]
+  >()
 
   const loadRaid = (sheet?: Sheet) => {
-    setExportedLatestVersion(false)
     if (sheet) {
       return setSheet(sheet)
     }
@@ -114,9 +117,10 @@ export const Raid = () => {
           <Stack>
             <Group justify="space-between">
               <Group>
-                <Stack>
-                  <Title lineClamp={1} order={3}>{instance.name}</Title>
-                </Stack>
+                <Title c="orange" lineClamp={1} order={2}>
+                  {instance.shortname.toUpperCase()}
+                </Title>
+                <Title lineClamp={1} order={3}>{instance.name}</Title>
               </Group>
               {sheet.locked ? <Badge color="red">Locked</Badge> : null}
             </Group>
@@ -165,8 +169,13 @@ export const Raid = () => {
               toClipboard={rollForExport(sheet)}
               label="RollFor"
               tooltip="Copy RollFor export"
-              onClick={() => setExportedLatestVersion(true)}
-              orange={!exportedLatestVersion}
+              onClick={() => setAttendeesWhenExportedLast(sheet.attendees)}
+              icon={attendeesWhenExportedLast &&
+                  !deepEqual(attendeesWhenExportedLast, sheet.attendees)
+                ? <IconRefreshAlert size={16} />
+                : <IconCopy size={16} />}
+              orange={attendeesWhenExportedLast &&
+                !deepEqual(attendeesWhenExportedLast, sheet.attendees)}
             />
           </Group>
           {sheet.attendees.length > 0

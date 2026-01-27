@@ -14,6 +14,7 @@
     "npm:eslint-plugin-react-hooks@^7.0.1": "7.0.1_eslint@9.39.2_zod@4.3.5",
     "npm:eslint-plugin-react-refresh@~0.4.24": "0.4.26_eslint@9.39.2",
     "npm:eslint@^9.39.1": "9.39.2",
+    "npm:fast-equals@6": "6.0.0",
     "npm:globals@^16.5.0": "16.5.0",
     "npm:react-dom@^19.2.0": "19.2.3_react@19.2.3",
     "npm:react-router@^7.12.0": "7.12.0_react@19.2.3_react-dom@19.2.3__react@19.2.3",
@@ -1026,6 +1027,9 @@
     "fast-deep-equal@3.1.3": {
       "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q=="
     },
+    "fast-equals@6.0.0": {
+      "integrity": "sha512-PFhhIGgdM79r5Uztdj9Zb6Tt1zKafqVfdMGwVca1z5z6fbX7DmsySSuJd8HiP6I1j505DCS83cLxo5rmSNeVEA=="
+    },
     "fast-json-stable-stringify@2.1.0": {
       "integrity": "sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw=="
     },
@@ -1601,6 +1605,7 @@
         "npm:eslint-plugin-react-hooks@^7.0.1",
         "npm:eslint-plugin-react-refresh@~0.4.24",
         "npm:eslint@^9.39.1",
+        "npm:fast-equals@6",
         "npm:globals@^16.5.0",
         "npm:react-dom@^19.2.0",
         "npm:react-router@^7.12.0",

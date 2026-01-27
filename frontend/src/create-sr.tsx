@@ -220,7 +220,7 @@ export const CreateSr = (
                     onClick={() => setItemPickerOpen(true)}
                     variant="default"
                   >
-                    Select item {i + 1}.
+                    Select item {selectedItemIds.length + i + 1}.
                   </Button>
                 ))}
               <Text
