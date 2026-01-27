@@ -68,7 +68,7 @@ export const MyRaids = () => {
             <Group wrap="nowrap" justify="space-between">
               <Group gap="xs">
                 <Title
-                  w={30}
+                  w={45}
                   variant="default"
                   c="orange"
                   lineClamp={1}
@@ -89,9 +89,16 @@ export const MyRaids = () => {
                 <Text lineClamp={1}>
                   {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
                 </Text>
-                {raid.sheet.admins.some((e) => e.userId == user.userId)
-                  ? <IconShieldFilled size={20} />
-                  : null}
+                <Group
+                  style={{
+                    visibility:
+                      raid.sheet.admins.some((e) => e.userId == user.userId)
+                        ? "visible"
+                        : "hidden",
+                  }}
+                >
+                  <IconShieldFilled size={20} />
+                </Group>
                 <Group gap={3} miw={45}>
                   <IconUserFilled size={20} />
                   <Title order={6}>{raid.sheet.attendees.length}</Title>
