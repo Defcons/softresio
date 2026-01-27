@@ -164,7 +164,8 @@ export function CreateRaid() {
           <Button
             mt="sm"
             onClick={createRaid}
-            disabled={!instanceId || !srCount}
+            disabled={!instanceId || !srCount ||
+              (useHr && hrItemIds.length == 0)}
           >
             Create Raid
           </Button>
