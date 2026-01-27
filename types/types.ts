@@ -65,6 +65,7 @@ export interface Sheet {
   description: string
   locked: boolean
   hardReserves: number[]
+  allowDuplicateSr: boolean
 }
 
 export interface Raid {
@@ -85,6 +86,7 @@ export interface CreateRaidRequest {
   time: string //rfc 3339
   srCount: number
   hardReserves: number[]
+  allowDuplicateSr: boolean
 }
 
 export type GetInstancesResponse = GenericResponse<Instance[]>

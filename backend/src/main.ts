@@ -195,6 +195,7 @@ app.post("/api/raid/create", async (c) => {
     adminPassword,
     description,
     hardReserves,
+    allowDuplicateSr,
   } = await c.req
     .json() as CreateRaidRequest
   const raidId = generateRaidId()
@@ -217,6 +218,7 @@ app.post("/api/raid/create", async (c) => {
         salt: "coming soon",
       },
       hardReserves,
+      allowDuplicateSr,
     },
   }
   await sql`insert into raids ${sql({ raid: raid } as never)};`

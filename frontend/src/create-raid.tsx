@@ -31,6 +31,7 @@ export function CreateRaid() {
   const [instanceId, setInstanceId] = useState<number>()
   const [description, setDescription] = useState("")
   const [useSrPlus, setUseSrPlus] = useState(false)
+  const [allowDuplicateSr, setAllowDuplicateSr] = useState(false)
   const [useHr, setUseHr] = useState(false)
   const [srCount, setSrCount] = useState<number | undefined>()
   const [time, setTime] = useState<Date>(
@@ -54,6 +55,7 @@ export function CreateRaid() {
       time: time.toISOString(),
       srCount,
       hardReserves: hrItemIds,
+      allowDuplicateSr,
     }
     fetch("/api/raid/create", { method: "POST", body: JSON.stringify(request) })
       .then((r) => r.json())
@@ -131,6 +133,14 @@ export function CreateRaid() {
               onChange={(value: string) => setSrCount(Number(value))}
             />
           </Stack>
+          <Collapse in={(srCount || 0) > 1}>
+            <Switch
+              value={allowDuplicateSr ? 1 : 0}
+              onChange={(event) =>
+                setAllowDuplicateSr(event.currentTarget.checked)}
+              label="Allow duplicate SRs"
+            />
+          </Collapse>
           <DateTimePicker
             value={time}
             onChange={(value) => {
