@@ -187,9 +187,16 @@ app.post("/api/sr/create", async (c) => {
 
 app.post("/api/raid/create", async (c) => {
   const user = await getOrCreateUser(c)
-  const { instanceId, srCount, useSrPlus, time, adminPassword, description } =
-    await c.req
-      .json() as CreateRaidRequest
+  const {
+    instanceId,
+    srCount,
+    useSrPlus,
+    time,
+    adminPassword,
+    description,
+    hardReserves,
+  } = await c.req
+    .json() as CreateRaidRequest
   const raidId = generateRaidId()
   const raid: Raid = {
     sheet: {
@@ -209,6 +216,7 @@ app.post("/api/raid/create", async (c) => {
         hash: "coming soon",
         salt: "coming soon",
       },
+      hardReserves,
     },
   }
   await sql`insert into raids ${sql({ raid: raid } as never)};`

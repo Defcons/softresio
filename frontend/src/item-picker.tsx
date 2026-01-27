@@ -18,6 +18,7 @@ export const ItemPicker = ({
   user,
   attendees,
   selectMode,
+  hardReserves = [],
 }: {
   selectedItemIds?: number[]
   setSelectedItemIds?: (itemIds: number[]) => void
@@ -28,6 +29,7 @@ export const ItemPicker = ({
   user?: User
   attendees?: Attendee[]
   selectMode?: boolean
+  hardReserves?: number[]
 }) => {
   const [showTooltipItemId, setShowTooltipItemId] = useState<number>()
   const [slotFilter, setSlotFilter] = useState<string | null>()
@@ -45,7 +47,10 @@ export const ItemPicker = ({
     if (!setSelectedItemIds || !selectedItemIds) {
       return setShowTooltipItemId(undefined)
     }
-    if (!showTooltipItemId || showTooltipItemId == itemId) {
+    if (
+      (!hardReserves.includes(itemId)) &&
+      (!showTooltipItemId || showTooltipItemId == itemId)
+    ) {
       if (selectedItemIds.includes(itemId)) {
         setSelectedItemIds(selectedItemIds.filter((i) => i !== itemId))
       } else {
@@ -182,6 +187,7 @@ export const ItemPicker = ({
             onItemLongClick,
             user,
             selectMode,
+            hardReserves,
           }}
         />
       </Stack>

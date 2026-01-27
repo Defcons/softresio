@@ -18,12 +18,10 @@ import {
   Paper,
   Select,
   Stack,
-  Text,
 } from "@mantine/core"
 import { classes } from "./class.tsx"
 import "../css/tooltip.css"
-import { ItemPicker } from "./item-picker.tsx"
-import { SelectableItem } from "./item.tsx"
+import { ItemSelect } from "./item-select.tsx"
 import {
   ClassIcon,
   renderClass,
@@ -39,7 +37,6 @@ export const CreateSr = (
     user: User
   },
 ) => {
-  const [itemPickerOpen, setItemPickerOpen] = useState(false)
   const [selectedClass, setSelectedClass] = useState<Class | null>()
   const [selectedSpec, setSelectedSpec] = useState<string | null>()
   const [characterName, setCharacterName] = useState("")
@@ -178,61 +175,17 @@ export const CreateSr = (
             label="Specialization"
           />
         </Group>
-        <Stack gap={0}>
-          <Group mb={3} p={0} gap={3}>
-            <Text size="sm">
-              Items
-            </Text>
-            <Text
-              size="sm"
-              c="var(--mantine-color-error)"
-              hidden={selectedItemIds.length == sheet.srCount}
-            >
-              *
-            </Text>
-          </Group>
-          <Paper
-            p="sm"
-            shadow="sm"
-            style={{ backgroundColor: "var(--mantine-color-dark-8" }}
-          >
-            <Stack gap="sm" justify="bottom">
-              {selectedItemIds.map((itemId) => (
-                <SelectableItem
-                  item={items.filter((i) => i.id == itemId)[0]}
-                  onRightSectionClick={() =>
-                    setSelectedItemIds(
-                      selectedItemIds.filter((i) => i != itemId),
-                    )}
-                  onClick={() => setItemPickerOpen(true)}
-                  deleteMode
-                  user={user}
-                  attendees={sheet.attendees}
-                />
-              ))}
-              {Array.from({
-                length: sheet.srCount - selectedItemIds.length,
-              })
-                .map((_, i) => (
-                  <Button
-                    fullWidth
-                    h={36}
-                    onClick={() => setItemPickerOpen(true)}
-                    variant="default"
-                  >
-                    Select item {selectedItemIds.length + i + 1}.
-                  </Button>
-                ))}
-              <Text
-                size="sm"
-                c="var(--mantine-color-error)"
-                hidden={selectedItemIds.length <= sheet.srCount}
-              >
-                You must SR exactly {sheet.srCount} item(s)
-              </Text>
-            </Stack>
-          </Paper>
-        </Stack>
+        <ItemSelect
+          label="Items"
+          value={selectedItemIds}
+          onChange={setSelectedItemIds}
+          items={items}
+          selectedClass={selectedClass}
+          user={user}
+          attendees={sheet.attendees}
+          itemLimit={sheet.srCount}
+          hardReserves={sheet.hardReserves}
+        />
         <Button
           disabled={sheet.locked || !selectedClass || !selectedSpec ||
             !characterName ||
@@ -242,17 +195,6 @@ export const CreateSr = (
           {sheet.locked ? "Raid is locked" : "Submit"}
         </Button>
       </Stack>
-      <ItemPicker
-        selectedItemIds={selectedItemIds}
-        setSelectedItemIds={setSelectedItemIds}
-        items={items}
-        open={itemPickerOpen}
-        setOpen={setItemPickerOpen}
-        selectedClass={selectedClass || null}
-        user={user}
-        attendees={sheet.attendees}
-        selectMode={true}
-      />
     </Paper>
   )
 }

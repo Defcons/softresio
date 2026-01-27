@@ -143,6 +143,7 @@ export const SelectableItem = ({
   deleteMode,
   selectMode,
   style,
+  hardReserves = [],
 }: {
   onClick?: () => void
   onLongClick?: () => void
@@ -155,6 +156,7 @@ export const SelectableItem = ({
   deleteMode?: boolean
   selectMode?: boolean
   style?: React.CSSProperties
+  hardReserves?: number[]
 }) => {
   const highlight = showTooltipItemId == item.id ||
     (selectedItemIds || []).includes(item.id)
@@ -179,8 +181,11 @@ export const SelectableItem = ({
                 />
               )
               : null}
+            {hardReserves.includes(item.id)
+              ? <Badge color="red">HR</Badge>
+              : null}
             {deleteMode ? <CloseButton /> : null}
-            {selectMode
+            {(selectMode && !hardReserves.includes(item.id))
               ? (
                 <Checkbox
                   checked={selectedItemIds?.includes(item.id)}
@@ -207,6 +212,7 @@ export const ReactWindowSelectableItem = ({
   selectMode = false,
   items,
   attendees,
+  hardReserves = [],
 }: RowComponentProps<{
   onItemClick: (item_id: number) => void
   onItemLongClick: (item_id: number) => void
@@ -217,6 +223,7 @@ export const ReactWindowSelectableItem = ({
   selectMode?: boolean
   items: Item[]
   attendees?: Attendee[]
+  hardReserves?: number[]
 }>) => {
   return (
     <SelectableItem
@@ -231,6 +238,7 @@ export const ReactWindowSelectableItem = ({
       selectMode={selectMode}
       style={style}
       attendees={attendees}
+      hardReserves={hardReserves}
     />
   )
 }

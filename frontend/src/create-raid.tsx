@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useNavigate } from "react-router"
 import {
   Button,
+  Collapse,
   Group,
   Paper,
   SegmentedControl,
@@ -13,6 +14,7 @@ import {
 } from "@mantine/core"
 import { DateTimePicker } from "@mantine/dates"
 import { instanceOrder, renderInstance } from "./instances.tsx"
+import { ItemSelect } from "./item-select.tsx"
 import type {
   CreateRaidRequest,
   CreateRaidResponse,
@@ -24,10 +26,12 @@ export function CreateRaid() {
   const navigate = useNavigate()
 
   const [instances, setInstances] = useState<Instance[]>()
+  const [hrItemIds, setHrItemIds] = useState<number[]>([])
 
   const [instanceId, setInstanceId] = useState<number>()
   const [description, setDescription] = useState("")
   const [useSrPlus, setUseSrPlus] = useState(false)
+  const [useHr, setUseHr] = useState(false)
   const [srCount, setSrCount] = useState<number | undefined>()
   const [time, setTime] = useState<Date>(
     new Date(
@@ -49,6 +53,7 @@ export function CreateRaid() {
       description,
       time: time.toISOString(),
       srCount,
+      hardReserves: hrItemIds,
     }
     fetch("/api/raid/create", { method: "POST", body: JSON.stringify(request) })
       .then((r) => r.json())
@@ -91,7 +96,10 @@ export function CreateRaid() {
             })}
             value={(instanceId || "").toString()}
             renderOption={renderInstance(instances || [])}
-            onChange={(v) => setInstanceId(Number(v))}
+            onChange={(v) => {
+              setInstanceId(Number(v))
+              setHrItemIds([])
+            }}
           />
           <Textarea
             label="Description"
@@ -138,11 +146,21 @@ export function CreateRaid() {
               setUseSrPlus(event.currentTarget.value ? true : false)}
             label="Use SR+"
           />
-          <input
-            id="username"
-            style={{ display: "none" }}
-            value="softres.io"
+          <Switch
+            value={useHr ? 1 : 0}
+            onChange={(event) =>
+              setUseHr(event.currentTarget.value ? true : false)}
+            label="Use hard reserves"
           />
+          <Collapse in={useHr}>
+            <ItemSelect
+              label={"Hard reserves"}
+              value={hrItemIds}
+              onChange={setHrItemIds}
+              items={instances?.find((instance) => instance.id == instanceId)
+                ?.items || []}
+            />
+          </Collapse>
           <Button
             mt="sm"
             onClick={createRaid}
