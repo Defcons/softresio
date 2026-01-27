@@ -37,7 +37,7 @@ function App() {
             <Grid gutter={0} justify="center">
               <Grid.Col span={{ base: 11, md: 4, xl: 4 }}>
                 <Routes>
-                  <Route path="/" element={<CreateRaid />} />
+                  <Route path="/" element={<MyRaids />} />
                   <Route path="/create" element={<CreateRaid />} />
                   <Route path="/:raidId" element={<Raid />} />;
                   <Route path="/raids" element={<MyRaids />} />;
