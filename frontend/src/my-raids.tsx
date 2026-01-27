@@ -11,55 +11,21 @@ import type {
 } from "../types/types.ts"
 import { IconShieldFilled, IconUserFilled } from "@tabler/icons-react"
 
-export const MyRaids = () => {
-  const [raidList, setRaidList] = useState<Raid[]>()
-  const [instances, setInstances] = useState<Instance[]>()
-  const [user, setUser] = useState<User>()
-
+const MyRaidItem = (
+  { user, instances, raids }: {
+    user: User
+    instances: Instance[]
+    raids: Raid[]
+  },
+) => {
   const navigate = useNavigate()
-
-  useEffect(() => {
-    fetch(`/api/raids`).then((r) => {
-      return r.json()
-    }).then(
-      (j: GetMyRaidsResponse) => {
-        if (j.error) {
-          alert(j.error)
-        } else if (j.data) {
-          setRaidList(j.data)
-          setUser(j.user)
-        }
-      },
-    )
-  }, [])
-
-  useEffect(() => {
-    fetch("/api/instances")
-      .then((r) => r.json())
-      .then((j: GetInstancesResponse) => {
-        if (j.error) {
-          alert(j.error)
-        } else if (j.data) {
-          setInstances(j.data)
-          setUser(j.user)
-        }
-      })
-  }, [])
-
-  if (!instances || !raidList || !user) {
-    return (
-      <Stack>
-        {Array.from({ length: 3 }).map((_, i) => <Skeleton h={48} key={i} />)}
-      </Stack>
-    )
-  }
 
   const idToInstance = (id: number): Instance =>
     instances.filter((instance) => instance.id == id)[0]
 
   return (
     <Stack>
-      {raidList.map((raid) => (
+      {raids.map((raid) => (
         <Box
           onClick={() => navigate(`/${raid.sheet.raidId}`)}
           key={raid.sheet.raidId}
@@ -110,4 +76,48 @@ export const MyRaids = () => {
       ))}
     </Stack>
   )
+}
+
+export const MyRaids = () => {
+  const [raidList, setRaidList] = useState<Raid[]>()
+  const [instances, setInstances] = useState<Instance[]>()
+  const [user, setUser] = useState<User>()
+
+  useEffect(() => {
+    fetch(`/api/raids`).then((r) => {
+      return r.json()
+    }).then(
+      (j: GetMyRaidsResponse) => {
+        if (j.error) {
+          alert(j.error)
+        } else if (j.data) {
+          setRaidList(j.data)
+          setUser(j.user)
+        }
+      },
+    )
+  }, [])
+
+  useEffect(() => {
+    fetch("/api/instances")
+      .then((r) => r.json())
+      .then((j: GetInstancesResponse) => {
+        if (j.error) {
+          alert(j.error)
+        } else if (j.data) {
+          setInstances(j.data)
+          setUser(j.user)
+        }
+      })
+  }, [])
+
+  if (!instances || !raidList || !user) {
+    return (
+      <Stack>
+        {Array.from({ length: 3 }).map((_, i) => <Skeleton h={48} key={i} />)}
+      </Stack>
+    )
+  }
+
+  return <MyRaidItem user={user} instances={instances} raids={raidList} />
 }
