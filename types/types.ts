@@ -66,6 +66,7 @@ export interface Sheet {
   locked: boolean
   hardReserves: number[]
   allowDuplicateSr: boolean
+  owner: User
 }
 
 export interface Raid {

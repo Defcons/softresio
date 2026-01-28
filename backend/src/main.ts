@@ -192,7 +192,6 @@ app.post("/api/raid/create", async (c) => {
     srCount,
     useSrPlus,
     time,
-    adminPassword,
     description,
     hardReserves,
     allowDuplicateSr,
@@ -213,6 +212,7 @@ app.post("/api/raid/create", async (c) => {
       admins: [
         user,
       ],
+      owner: user,
       password: {
         hash: "coming soon",
         salt: "coming soon",
