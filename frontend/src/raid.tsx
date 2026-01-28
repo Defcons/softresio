@@ -240,10 +240,9 @@ export const Raid = (
           {sheet.attendees.length > 0
             ? (
               <SrList
-                user={user}
-                attendees={sheet.attendees}
+                sheet={sheet}
                 items={instance.items}
-                admins={sheet.admins}
+                user={user}
               />
             )
             : null}

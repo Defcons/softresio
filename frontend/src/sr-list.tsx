@@ -14,6 +14,7 @@ import type {
   Attendee,
   Class,
   Item,
+  Sheet,
   SoftReserve,
   User,
 } from "../types/types.ts"
@@ -32,16 +33,48 @@ import { IconShieldFilled, IconTrash } from "@tabler/icons-react"
 type ListElement = { attendee: Attendee; softReserve: SoftReserve }
 
 export const SrListElement = (
-  { visible, item, attendee, admins, user }: {
+  { visible, item, attendee, admins, user, owner }: {
     visible: boolean
     item: Item
     attendee: Attendee
     admins: User[]
+    owner: User
     user: User
   },
 ) => {
   const { ref, hovered } = useHover()
   const [menuOpen, setMenuOpen] = useState(false)
+
+  const promoteRemoveAdmin = () => {
+    if (!admins.find((a) => a.userId == user.userId)) {
+      return null
+    }
+    if (!admins.find((a) => a.userId == attendee.user.userId)) {
+      return (
+        <Menu.Item
+          leftSection={<IconShieldFilled size={14} />}
+        >
+          Promote to Admin
+        </Menu.Item>
+      )
+    } else {
+      return (
+        <Tooltip
+          label={owner.userId == attendee.user.userId
+            ? "You cannot remove owner as Admin"
+            : ""}
+        >
+          <Menu.Item
+            disabled={owner.userId == attendee.user.userId}
+            leftSection={<IconShieldFilled size={14} />}
+          >
+            Remove as Admin
+          </Menu.Item>
+        </Tooltip>
+      )
+    }
+  }
+
   return (
     <Menu
       opened={menuOpen}
@@ -89,19 +122,12 @@ export const SrListElement = (
         </Table.Tr>
       </Menu.Target>
       <Menu.Dropdown>
-        {!admins.find((a) => a.userId == attendee.user.userId) &&
-            admins.find((a) => a.userId == user.userId)
-          ? (
-            <Menu.Item
-              leftSection={<IconShieldFilled size={14} />}
-            >
-              Promote to Admin
-            </Menu.Item>
-          )
-          : null}
+        {promoteRemoveAdmin()}
         <Menu.Item
-          disabled={!!admins.find((a) => a.userId == user.userId) ||
-            attendee.user.userId == user.userId}
+          disabled={attendee.user.userId == user.userId ||
+              admins.find((a) => a.userId == user.userId)
+            ? false
+            : true}
           color="red"
           leftSection={<IconTrash size={14} />}
         >
@@ -113,10 +139,9 @@ export const SrListElement = (
 }
 
 export const SrList = (
-  { attendees, items, admins, user }: {
-    attendees: Attendee[]
+  { sheet, items, user }: {
+    sheet: Sheet
     items: Item[]
-    admins: User[]
     user: User
   },
 ) => {
@@ -156,7 +181,7 @@ export const SrList = (
     return valueA.localeCompare(valueB) * (sortDesc ? -1 : 1)
   }
 
-  const elements = attendees.flatMap((attendee) =>
+  const elements = sheet.attendees.flatMap((attendee) =>
     attendee.softReserves.map((softReserve, index) => ({
       softReserve,
       attendee,
@@ -259,13 +284,14 @@ export const SrList = (
       <Table.Tbody>
         {elements.map((e) => (
           <SrListElement
-            key={e.attendee.character.name + e.softReserve.itemId + e.index}
+            key={`${e.attendee.character.name}|${e.softReserve.itemId}|${e.index}`}
             visible={filter(e)}
             attendee={e.attendee}
             item={items.find((i) => i.id == e.softReserve.itemId) ||
               nothingItem}
             user={user}
-            admins={admins}
+            admins={sheet.admins}
+            owner={sheet.owner}
           />
         ))}
       </Table.Tbody>

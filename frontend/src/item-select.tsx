@@ -56,7 +56,7 @@ export const ItemSelect = (
         <Stack gap="sm" justify="bottom">
           {value.map((itemId, index) => (
             <SelectableItem
-              key={itemId + index}
+              key={`${itemId}|${index}`}
               item={items.find((i) => i.id == itemId) || nothingItem}
               onRightSectionClick={() => {
                 const idx = value.indexOf(itemId)

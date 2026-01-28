@@ -67,9 +67,7 @@ export const ItemNameAndIcon = (
         justify="space-between"
         wrap="nowrap"
         className={`list-element ${
-          highlight || (hovered && !isTouchScreen)
-            ? "list-element-highlight"
-            : ""
+          highlight || (hovered && !isTouchScreen) ? "list-element-hover" : ""
         }`}
       >
         <Box
