@@ -159,7 +159,7 @@ export const MyRaids = () => {
           <>
             <Group justify="space-between">
               <Title order={4}>Upcoming</Title>
-              {pastRaids.length == 0 ? createRaidButton : null}
+              {createRaidButton}
             </Group>
             <MyRaidItem
               user={user}
