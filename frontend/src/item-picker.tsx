@@ -19,6 +19,7 @@ export const ItemPicker = ({
   attendees,
   selectMode,
   hardReserves = [],
+  sameItemLimit = 0,
 }: {
   selectedItemIds?: number[]
   setSelectedItemIds?: (itemIds: number[]) => void
@@ -30,6 +31,7 @@ export const ItemPicker = ({
   attendees?: Attendee[]
   selectMode?: boolean
   hardReserves?: number[]
+  sameItemLimit?: number
 }) => {
   const [showTooltipItemId, setShowTooltipItemId] = useState<number>()
   const [slotFilter, setSlotFilter] = useState<string | null>()
@@ -43,7 +45,7 @@ export const ItemPicker = ({
       ? setShowTooltipItemId(undefined)
       : setShowTooltipItemId(itemId)
 
-  const onItemClick = (itemId: number) => {
+  const onItemClick = (itemId: number, rightSection: boolean) => {
     if (!setSelectedItemIds || !selectedItemIds) {
       return setShowTooltipItemId(undefined)
     }
@@ -51,10 +53,13 @@ export const ItemPicker = ({
       (!hardReserves.includes(itemId)) &&
       (!showTooltipItemId || showTooltipItemId == itemId)
     ) {
-      if (selectedItemIds.includes(itemId)) {
-        setSelectedItemIds(selectedItemIds.filter((i) => i !== itemId))
-      } else {
+      const contextualItemLimit = rightSection ? 1 : sameItemLimit
+      if (
+        selectedItemIds.filter((i) => i == itemId).length < contextualItemLimit
+      ) {
         setSelectedItemIds([...selectedItemIds, itemId])
+      } else {
+        setSelectedItemIds(selectedItemIds.filter((i) => i !== itemId))
       }
     }
     setShowTooltipItemId(undefined)
@@ -181,13 +186,15 @@ export const ItemPicker = ({
           rowProps={{
             items: filteredItems,
             attendees: attendees,
-            onItemClick,
+            onClick: (itemId) => onItemClick(itemId, false),
+            onRightSectionClick: (itemId) => onItemClick(itemId, true),
             selectedItemIds,
             showTooltipItemId,
-            onItemLongClick,
+            onLongClick: onItemLongClick,
             user,
             selectMode,
             hardReserves,
+            sameItemLimit,
           }}
         />
       </Stack>

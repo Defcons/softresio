@@ -4,6 +4,7 @@ import { LongPressCallbackReason, useLongPress } from "use-long-press"
 import type { Attendee, Item, User } from "../types/types.ts"
 import { type RowComponentProps } from "react-window"
 import {
+  ActionIcon,
   Badge,
   Box,
   Checkbox,
@@ -14,7 +15,6 @@ import {
   Title,
   Tooltip,
 } from "@mantine/core"
-import { IconCopyPlus } from "@tabler/icons-react"
 
 export const ItemNameAndIcon = (
   {
@@ -24,9 +24,7 @@ export const ItemNameAndIcon = (
     onClick,
     onLongClick,
     rightSection,
-    middleRightSection,
     onRightSectionClick,
-    onMiddleRightSectionClick,
   }: {
     item: Item
     showTooltipItemId?: number
@@ -34,7 +32,6 @@ export const ItemNameAndIcon = (
     onClick?: () => void
     onLongClick?: () => void
     rightSection?: ReactElement
-    middleRightSection?: ReactElement
     onRightSectionClick?: () => void
     onMiddleRightSectionClick?: () => void
   },
@@ -106,14 +103,6 @@ export const ItemNameAndIcon = (
           </Title>
         </Box>
         <Flex
-          onClick={onMiddleRightSectionClick}
-          px={padding}
-          pr={padding}
-          align="center"
-        >
-          {middleRightSection}
-        </Flex>
-        <Flex
           onClick={onRightSectionClick}
           px={padding}
           align="center"
@@ -149,13 +138,12 @@ export const SelectableItem = ({
   onClick,
   onLongClick,
   onRightSectionClick,
-  onDuplicateClick,
   selectedItemIds,
   showTooltipItemId,
   user,
   attendees,
   deleteMode,
-  duplicateMode = false,
+  sameItemLimit = 0,
   selectMode,
   style,
   hardReserves = [],
@@ -163,20 +151,20 @@ export const SelectableItem = ({
   onClick?: () => void
   onLongClick?: () => void
   onRightSectionClick?: () => void
-  onDuplicateClick?: () => void
   selectedItemIds?: number[]
   showTooltipItemId?: number
   item: Item
   user?: User
   attendees?: Attendee[]
   deleteMode?: boolean
-  duplicateMode?: boolean
   selectMode?: boolean
   style?: React.CSSProperties
   hardReserves?: number[]
+  sameItemLimit?: number
 }) => {
   const highlight = showTooltipItemId == item.id ||
     (selectedItemIds || []).includes(item.id)
+  const itemCount = selectedItemIds?.filter((id) => item.id == id).length || 0
 
   return (
     <Box style={style}>
@@ -186,11 +174,7 @@ export const SelectableItem = ({
         highlight={highlight}
         onClick={onClick}
         onLongClick={onLongClick}
-        onMiddleRightSectionClick={onDuplicateClick}
         onRightSectionClick={onRightSectionClick}
-        middleRightSection={duplicateMode
-          ? <CloseButton icon={<IconCopyPlus size={18} />} />
-          : undefined}
         rightSection={
           <Group wrap="nowrap">
             {attendees && user
@@ -206,7 +190,16 @@ export const SelectableItem = ({
               ? <Badge color="red">HR</Badge>
               : null}
             {deleteMode ? <CloseButton /> : null}
-            {(selectMode && !hardReserves.includes(item.id))
+            {(selectMode && !hardReserves.includes(item.id) &&
+                sameItemLimit > 1 && itemCount > 0)
+              ? (
+                <ActionIcon size={25}>
+                  <Title order={6}>{itemCount}</Title>
+                </ActionIcon>
+              )
+              : null}
+            {(selectMode && !hardReserves.includes(item.id) &&
+                (sameItemLimit === 1 || itemCount == 0))
               ? (
                 <Checkbox
                   checked={selectedItemIds?.includes(item.id)}
@@ -224,8 +217,9 @@ export const SelectableItem = ({
 export const ReactWindowSelectableItem = ({
   index,
   selectedItemIds,
-  onItemClick,
-  onItemLongClick,
+  onClick,
+  onLongClick,
+  onRightSectionClick,
   showTooltipItemId,
   user,
   style,
@@ -234,9 +228,11 @@ export const ReactWindowSelectableItem = ({
   items,
   attendees,
   hardReserves = [],
+  sameItemLimit,
 }: RowComponentProps<{
-  onItemClick: (item_id: number) => void
-  onItemLongClick: (item_id: number) => void
+  onClick: (item_id: number) => void
+  onLongClick: (item_id: number) => void
+  onRightSectionClick: (item_id: number) => void
   selectedItemIds?: number[]
   user?: User
   showTooltipItemId?: number
@@ -245,14 +241,15 @@ export const ReactWindowSelectableItem = ({
   items: Item[]
   attendees?: Attendee[]
   hardReserves?: number[]
+  sameItemLimit: number
 }>) => {
   return (
     <SelectableItem
       item={items[index]}
       selectedItemIds={selectedItemIds}
-      onClick={() => onItemClick(items[index].id)}
-      onLongClick={() => onItemLongClick(items[index].id)}
-      onRightSectionClick={() => onItemClick(items[index].id)}
+      onClick={() => onClick(items[index].id)}
+      onLongClick={() => onLongClick(items[index].id)}
+      onRightSectionClick={() => onRightSectionClick(items[index].id)}
       showTooltipItemId={showTooltipItemId}
       user={user}
       deleteMode={deleteMode}
@@ -260,6 +257,7 @@ export const ReactWindowSelectableItem = ({
       style={style}
       attendees={attendees}
       hardReserves={hardReserves}
+      sameItemLimit={sameItemLimit}
     />
   )
 }

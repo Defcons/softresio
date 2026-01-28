@@ -168,6 +168,7 @@ export function CreateRaid() {
               label={"Select the item's you want to hard-reserve"}
               value={hrItemIds}
               onChange={setHrItemIds}
+              sameItemLimit={1}
               items={instances?.find((instance) => instance.id == instanceId)
                 ?.items || []}
             />

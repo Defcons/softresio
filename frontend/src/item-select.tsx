@@ -15,7 +15,7 @@ export const ItemSelect = (
     attendees,
     itemLimit,
     hardReserves = [],
-    allowDuplicates = false,
+    sameItemLimit,
   }: {
     value: number[]
     label: string
@@ -26,7 +26,7 @@ export const ItemSelect = (
     attendees?: Attendee[]
     itemLimit?: number
     hardReserves?: number[]
-    allowDuplicates?: boolean
+    sameItemLimit: number
   },
 ) => {
   const [itemPickerOpen, setItemPickerOpen] = useState<boolean>(false)
@@ -63,9 +63,7 @@ export const ItemSelect = (
                 }
               }}
               onClick={() => setItemPickerOpen(true)}
-              onDuplicateClick={() => onChange([...value, itemId])}
               deleteMode
-              duplicateMode={allowDuplicates}
               user={user}
               attendees={attendees}
             />
@@ -103,8 +101,9 @@ export const ItemSelect = (
         selectedClass={selectedClass || null}
         user={user}
         attendees={attendees}
-        selectMode={true}
+        selectMode
         hardReserves={hardReserves}
+        sameItemLimit={sameItemLimit}
       />
     </Stack>
   )
