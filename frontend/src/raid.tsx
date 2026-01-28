@@ -8,10 +8,21 @@ import type {
   User,
 } from "../types/types.ts"
 import { useParams } from "react-router"
+import naxx from "./assets/naxx.png"
+import kara40 from "./assets/kara40.png"
+import bwl from "./assets/bwl.png"
+import mc from "./assets/mc.png"
+import ony from "./assets/ony.png"
+import zg from "./assets/zg.png"
+import kara10 from "./assets/kara10.png"
+import aq40 from "./assets/aq40.png"
+import aq20 from "./assets/aq20.png"
+import es from "./assets/es.png"
 import {
   Badge,
   Button,
   Group,
+  Image,
   Paper,
   Skeleton,
   Stack,
@@ -26,6 +37,33 @@ import useWebSocket from "react-use-websocket"
 import { IconCopy, IconLogs, IconRefreshAlert } from "@tabler/icons-react"
 import { IconLock, IconLockOpen2, IconShieldFilled } from "@tabler/icons-react"
 import { deepEqual } from "fast-equals"
+
+const raidImage = (key: string) => {
+  switch (key) {
+    case "BWL":
+      return bwl
+    case "K40":
+      return kara40
+    case "AQ40":
+      return aq40
+    case "AQ20":
+      return aq20
+    case "ES":
+      return es
+    case "MC":
+      return mc
+    case "NAXX":
+      return naxx
+    case "ONY":
+      return ony
+    case "ZG":
+      return zg
+    case "K10":
+      return kara10
+    default:
+      return undefined
+  }
+}
 
 export const RaidUpdater = (
   { loadRaid, raidId }: { loadRaid: (sheet: Sheet) => void; raidId: string },
@@ -123,6 +161,18 @@ export const Raid = (
                   {instance.shortname.toUpperCase()}
                 </Title>
                 <Title lineClamp={1} order={3}>{instance.name}</Title>
+                <Image
+                  src={raidImage(instance.shortname.toUpperCase())}
+                  visibleFrom="md"
+                  style={{
+                    position: "absolute",
+                    top: "15%",
+                    right: "10%",
+                    zIndex: -1,
+                    opacity: 0.1,
+                    width: "30%",
+                  }}
+                />
               </Group>
               {sheet.locked ? <Badge color="red">Locked</Badge> : null}
             </Group>
