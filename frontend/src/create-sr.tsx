@@ -18,6 +18,7 @@ import {
   Paper,
   Select,
   Stack,
+  Text,
 } from "@mantine/core"
 import { classes } from "./class.tsx"
 import "../css/tooltip.css"
@@ -29,6 +30,7 @@ import {
   renderSpec,
 } from "./class.tsx"
 import { deepEqual } from "fast-equals"
+import { modals } from "@mantine/modals"
 
 export const CreateSr = (
   { items, sheet, loadRaid, user }: {
@@ -129,6 +131,23 @@ export const CreateSr = (
       )
     }
   }, [])
+  const openConfirmSrsModal = () =>
+    modals.openConfirmModal({
+      title: "Are you sure?",
+      centered: true,
+      children: (
+        <Text size="sm">
+          You are allowed to reserve {sheet.srCount}{" "}
+          item{sheet.srCount == 1 ? "" : "s"}, but you{" "}
+          {selectedItemIds.length == 0
+            ? "haven't reserved any."
+            : `have only reserved ${selectedItemIds.length}.`}
+        </Text>
+      ),
+      labels: { confirm: "Confirm", cancel: "Cancel" },
+      onCancel: () => console.log("Cancel"),
+      onConfirm: submitSr,
+    })
 
   return (
     <Paper shadow="sm" p="sm">
@@ -204,7 +223,9 @@ export const CreateSr = (
             !characterName ||
             (selectedItemIds && (selectedItemIds.length > sheet.srCount)) ||
             !srChanged()}
-          onClick={submitSr}
+          onClick={(selectedItemIds.length < sheet.srCount)
+            ? openConfirmSrsModal
+            : submitSr}
         >
           {sheet.locked ? "Raid is locked" : "Submit"}
         </Button>

@@ -7,6 +7,7 @@ import { MyRaids } from "./my-raids.tsx"
 import { LootBrowser } from "./loot-browser.tsx"
 import "@mantine/core/styles.css"
 import "@mantine/dates/styles.css"
+import { ModalsProvider } from "@mantine/modals"
 import {
   IconBrandDiscordFilled,
   IconBrandGithubFilled,
@@ -30,49 +31,51 @@ const theme = createTheme({
 function App() {
   return (
     <MantineProvider defaultColorScheme="dark" theme={theme}>
-      <BrowserRouter>
-        <Stack h="100dvh" justify="space-between">
-          <Stack>
-            <Menu />
-            <Grid gutter={0} justify="center">
-              <Grid.Col span={{ base: 11, md: 4, xl: 4 }}>
-                <Routes>
-                  <Route path="/" element={<MyRaids />} />
-                  <Route path="/create" element={<CreateRaid />} />
-                  <Route path="/:raidId" element={<Raid />} />;
-                  <Route path="/raids" element={<MyRaids />} />;
-                  <Route path="/loot" element={<LootBrowser />} />;
-                </Routes>
-              </Grid.Col>
-            </Grid>
-          </Stack>
-          <Stack>
-            <Divider />
-            <Group gap="sm" mb="md" justify="center">
-              <Group mx="lg">
-                <IconBrandGithubFilled size={20} color="grey" />
-                <Anchor
-                  href="https://github.com/kofoednielsen/softresio"
-                  underline="never"
-                  c="grey"
-                >
-                  This project is open-source
-                </Anchor>
+      <ModalsProvider>
+        <BrowserRouter>
+          <Stack h="100dvh" justify="space-between">
+            <Stack>
+              <Menu />
+              <Grid gutter={0} justify="center">
+                <Grid.Col span={{ base: 11, md: 4, xl: 4 }}>
+                  <Routes>
+                    <Route path="/" element={<MyRaids />} />
+                    <Route path="/create" element={<CreateRaid />} />
+                    <Route path="/:raidId" element={<Raid />} />;
+                    <Route path="/raids" element={<MyRaids />} />;
+                    <Route path="/loot" element={<LootBrowser />} />;
+                  </Routes>
+                </Grid.Col>
+              </Grid>
+            </Stack>
+            <Stack>
+              <Divider />
+              <Group gap="sm" mb="md" justify="center">
+                <Group mx="lg">
+                  <IconBrandGithubFilled size={20} color="grey" />
+                  <Anchor
+                    href="https://github.com/kofoednielsen/softresio"
+                    underline="never"
+                    c="grey"
+                  >
+                    This project is open-source
+                  </Anchor>
+                </Group>
+                <Group mx="lg">
+                  <IconBrandDiscordFilled size={20} color="grey" />
+                  <Anchor
+                    href="https://discord.gg/DbfRrGGQ7J"
+                    underline="never"
+                    c="grey"
+                  >
+                    Give feedback on Discord
+                  </Anchor>
+                </Group>
               </Group>
-              <Group mx="lg">
-                <IconBrandDiscordFilled size={20} color="grey" />
-                <Anchor
-                  href="https://discord.gg/DbfRrGGQ7J"
-                  underline="never"
-                  c="grey"
-                >
-                  Give feedback on Discord
-                </Anchor>
-              </Group>
-            </Group>
+            </Stack>
           </Stack>
-        </Stack>
-      </BrowserRouter>
+        </BrowserRouter>
+      </ModalsProvider>
     </MantineProvider>
   )
 }
