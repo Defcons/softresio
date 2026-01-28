@@ -21,6 +21,7 @@ import {
   MantineProvider,
   Stack,
 } from "@mantine/core"
+import { useHover } from "@mantine/hooks"
 import { Menu } from "./menu.tsx"
 import { BrowserRouter, Route, Routes } from "react-router"
 
@@ -29,6 +30,8 @@ const theme = createTheme({
 })
 
 function App() {
+  const { hovered: githubHovered, ref: githubRef } = useHover()
+  const { hovered: discordHovered, ref: discordRef } = useHover()
   return (
     <MantineProvider defaultColorScheme="dark" theme={theme}>
       <ModalsProvider>
@@ -51,22 +54,28 @@ function App() {
             <Stack>
               <Divider />
               <Group gap="sm" mb="md" justify="center">
-                <Group mx="lg">
-                  <IconBrandGithubFilled size={20} color="grey" />
+                <Group mx="lg" ref={githubRef}>
+                  <IconBrandGithubFilled
+                    size={20}
+                    color={githubHovered ? "#e8590c" : "grey"}
+                  />
                   <Anchor
                     href="https://github.com/kofoednielsen/softresio"
                     underline="never"
-                    c="grey"
+                    c={githubHovered ? "lightgray" : "grey"}
                   >
                     This project is open-source
                   </Anchor>
                 </Group>
-                <Group mx="lg">
-                  <IconBrandDiscordFilled size={20} color="grey" />
+                <Group mx="lg" ref={discordRef}>
+                  <IconBrandDiscordFilled
+                    size={20}
+                    color={discordHovered ? "#e8590c" : "grey"}
+                  />
                   <Anchor
                     href="https://discord.gg/DbfRrGGQ7J"
                     underline="never"
-                    c="grey"
+                    c={discordHovered ? "lightgray" : "grey"}
                   >
                     Give feedback on Discord
                   </Anchor>
