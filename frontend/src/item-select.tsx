@@ -89,7 +89,7 @@ export const ItemSelect = (
             c="var(--mantine-color-error)"
             hidden={value.length <= (itemLimit || Infinity)}
           >
-            You must SR exactly {itemLimit} item(s)
+            You can SR at most {itemLimit} item{itemLimit == 1 ? "" : "s"}.
           </Text>
         </Stack>
       </Paper>
