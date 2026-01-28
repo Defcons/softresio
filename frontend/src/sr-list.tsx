@@ -61,12 +61,16 @@ export const SrList = (
   }
 
   const elements = attendees.flatMap((attendee) =>
-    attendee.softReserves.map((softReserve) => ({ softReserve, attendee }))
+    attendee.softReserves.map((softReserve, index) => ({
+      softReserve,
+      attendee,
+      index,
+    }))
   ).sort(sort).sort((a, b) => (Number(filter(a)) * -1 + Number(filter(b))))
 
   const rows = elements.map((e) => (
     <Table.Tr
-      key={e.attendee.character.name + e.softReserve.itemId}
+      key={e.attendee.character.name + e.softReserve.itemId + e.index}
       style={{ visibility: filter(e) ? "visible" : "hidden" }}
     >
       <Table.Td>
