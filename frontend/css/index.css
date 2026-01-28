@@ -2,24 +2,16 @@ body {
   background-color: var(--mantine-color-dark-8) !important;
 }
 
-.item-list-element {
+.list-element {
   user-select: none;
   -webkit-user-select: none;
   cursor: pointer;
   border-radius: var(--mantine-radius-default);
 }
 
-.item-list-element-highlight {
-  background-color: var(--mantine-color-default-hover);
-}
-
-.raid-list-element {
+.list-element-hover {
   user-select: none;
   -webkit-user-select: none;
   cursor: pointer;
-  border-radius: var(--mantine-radius-default);
-}
-
-.raid-list-element:hover {
-  background-color: var(--mantine-color-default-hover);
+  background-color: var(--mantine-color-default-hover) !important;
 }

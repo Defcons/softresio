@@ -215,7 +215,7 @@ export const Raid = (
           user={user}
           itemPickerOpen={itemPickerOpen}
         />
-        <Paper shadow="sm" mb="md">
+        <Paper shadow="sm" mb="md" style={{ overflow: "hidden" }}>
           <Group p="sm" justify="space-between">
             <Button
               disabled
@@ -238,7 +238,14 @@ export const Raid = (
             />
           </Group>
           {sheet.attendees.length > 0
-            ? <SrList attendees={sheet.attendees} items={instance.items} />
+            ? (
+              <SrList
+                user={user}
+                attendees={sheet.attendees}
+                items={instance.items}
+                admins={sheet.admins}
+              />
+            )
             : null}
         </Paper>
         <RaidUpdater raidId={sheet.raidId} loadRaid={loadRaid} />

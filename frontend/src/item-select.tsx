@@ -54,8 +54,9 @@ export const ItemSelect = (
         style={{ backgroundColor: "var(--mantine-color-dark-8" }}
       >
         <Stack gap="sm" justify="bottom">
-          {value.map((itemId) => (
+          {value.map((itemId, index) => (
             <SelectableItem
+              key={itemId + index}
               item={items.find((i) => i.id == itemId) || nothingItem}
               onRightSectionClick={() => {
                 const idx = value.indexOf(itemId)
@@ -77,6 +78,7 @@ export const ItemSelect = (
           })
             .map((_, i) => (
               <Button
+                key={i}
                 fullWidth
                 h={36}
                 onClick={() => navigate("items")}

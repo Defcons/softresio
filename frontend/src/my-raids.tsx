@@ -39,7 +39,7 @@ const MyRaidItem = (
           onClick={() => navigate(`/${raid.sheet.raidId}`)}
           key={raid.sheet.raidId}
         >
-          <Paper shadow="sm" p="sm" className="raid-list-element">
+          <Paper shadow="sm" p="sm" className="list-element">
             <Group wrap="nowrap" justify="space-between">
               <Group gap="xs">
                 <Title

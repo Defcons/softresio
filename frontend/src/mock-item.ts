@@ -1,7 +1,7 @@
 import type { Item } from "../types/types.ts"
 export const nothingItem: Item = {
   id: 0,
-  tooltip: "This item has no tooltip",
+  tooltip: "",
   icon: "",
   name: "No item reserved",
   slot: "",

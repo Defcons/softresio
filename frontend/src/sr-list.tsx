@@ -2,13 +2,21 @@ import { useState } from "react"
 import {
   ActionIcon,
   Group,
+  Menu,
   Select,
   Table,
   TextInput,
   Title,
   Tooltip,
 } from "@mantine/core"
-import type { Attendee, Class, Item, SoftReserve } from "../types/types.ts"
+import { useHover } from "@mantine/hooks"
+import type {
+  Attendee,
+  Class,
+  Item,
+  SoftReserve,
+  User,
+} from "../types/types.ts"
 import { ItemNameAndIcon } from "./item.tsx"
 import { ClassIcon } from "./class.tsx"
 import {
@@ -19,16 +27,103 @@ import {
 } from "@tabler/icons-react"
 import { classes, renderClass } from "./class.tsx"
 import { nothingItem } from "./mock-item.ts"
+import { IconShieldFilled, IconTrash } from "@tabler/icons-react"
 
 type ListElement = { attendee: Attendee; softReserve: SoftReserve }
 
+export const SrListElement = (
+  { visible, item, attendee, admins, user }: {
+    visible: boolean
+    item: Item
+    attendee: Attendee
+    admins: User[]
+    user: User
+  },
+) => {
+  const { ref, hovered } = useHover()
+  const [menuOpen, setMenuOpen] = useState(false)
+  return (
+    <Menu
+      opened={menuOpen}
+      onChange={setMenuOpen}
+      position="bottom-start"
+    >
+      <Menu.Target>
+        <Table.Tr
+          ref={ref}
+          className={hovered || menuOpen
+            ? "list-element-hover"
+            : "list-element"}
+          style={{ visibility: visible ? "visible" : "hidden" }}
+        >
+          <Table.Td>
+            <Tooltip
+              label={`${attendee.character.spec} ${attendee.character.class}`}
+            >
+              <Group gap={2} wrap="nowrap">
+                <ClassIcon xclass={attendee.character.class} />
+                <ClassIcon
+                  xclass={attendee.character.class}
+                  spec={attendee.character.spec}
+                />
+              </Group>
+            </Tooltip>
+          </Table.Td>
+          <Table.Td>
+            <Group gap={4}>
+              <Title order={6} lineClamp={1}>
+                {attendee.character.name}
+              </Title>
+              {admins.find((a) => a.userId == attendee.user.userId)
+                ? <IconShieldFilled size={16} />
+                : null}
+            </Group>
+          </Table.Td>
+          <Table.Td>
+            <ItemNameAndIcon
+              item={item}
+              highlight={false}
+              allowImageClick={false}
+            />
+          </Table.Td>
+        </Table.Tr>
+      </Menu.Target>
+      <Menu.Dropdown>
+        {!admins.find((a) => a.userId == attendee.user.userId) &&
+            admins.find((a) => a.userId == user.userId)
+          ? (
+            <Menu.Item
+              leftSection={<IconShieldFilled size={14} />}
+            >
+              Promote to Admin
+            </Menu.Item>
+          )
+          : null}
+        <Menu.Item
+          disabled={!!admins.find((a) => a.userId == user.userId) ||
+            attendee.user.userId == user.userId}
+          color="red"
+          leftSection={<IconTrash size={14} />}
+        >
+          Delete SR
+        </Menu.Item>
+      </Menu.Dropdown>
+    </Menu>
+  )
+}
+
 export const SrList = (
-  { attendees, items }: { attendees: Attendee[]; items: Item[] },
+  { attendees, items, admins, user }: {
+    attendees: Attendee[]
+    items: Item[]
+    admins: User[]
+    user: User
+  },
 ) => {
   const [classFilter, setClassFilter] = useState<Class>()
   const [nameFilter, setNameFilter] = useState<string>()
   const [itemFilter, setItemFilter] = useState<string>()
-  const [sortBy, setSortBy] = useState<"name" | "item" | "class">("class")
+  const [sortBy, setSortBy] = useState<"name" | "item" | "class">()
   const [sortDesc, setSortDesc] = useState<boolean>(false)
 
   const filter = (
@@ -46,9 +141,6 @@ export const SrList = (
     if (sortBy == "name") {
       valueA = a.attendee.character.name
       valueB = b.attendee.character.name
-    } else if (sortBy == "class") {
-      valueA = a.attendee.character.class
-      valueB = b.attendee.character.class
     } else if (sortBy == "item") {
       valueA = (items.find((item) =>
         item.id == a.softReserve.itemId
@@ -56,6 +148,10 @@ export const SrList = (
       valueB = (items.find((item) =>
         item.id == b.softReserve.itemId
       ) || nothingItem).name
+    } else {
+      // defaults to sort by "class"
+      valueA = a.attendee.character.class
+      valueB = b.attendee.character.class
     }
     return valueA.localeCompare(valueB) * (sortDesc ? -1 : 1)
   }
@@ -68,43 +164,6 @@ export const SrList = (
     }))
   ).sort(sort).sort((a, b) => (Number(filter(a)) * -1 + Number(filter(b))))
 
-  const rows = elements.map((e) => (
-    <Table.Tr
-      key={e.attendee.character.name + e.softReserve.itemId + e.index}
-      style={{ visibility: filter(e) ? "visible" : "hidden" }}
-    >
-      <Table.Td>
-        <Tooltip
-          label={`${e.attendee.character.spec} ${e.attendee.character.class}`}
-        >
-          <Group gap={2} wrap="nowrap">
-            <ClassIcon xclass={e.attendee.character.class} />
-            <ClassIcon
-              xclass={e.attendee.character.class}
-              spec={e.attendee.character.spec}
-            />
-          </Group>
-        </Tooltip>
-      </Table.Td>
-      <Table.Td>
-        <Title order={6} lineClamp={1}>
-          {e.attendee.character.name}
-        </Title>
-      </Table.Td>
-      <Table.Td>
-        <ItemNameAndIcon
-          item={items.find((item) => item.id == e.softReserve.itemId) ||
-            nothingItem}
-          highlight={false}
-          onClick={() =>
-            setItemFilter(
-              (items.find((item) => item.id == e.softReserve.itemId) ||
-                nothingItem).name,
-            )}
-        />
-      </Table.Td>
-    </Table.Tr>
-  ))
   return (
     <Table
       horizontalSpacing={5}
@@ -114,7 +173,7 @@ export const SrList = (
     >
       <Table.Thead>
         <Table.Tr>
-          <Table.Th w={40}>
+          <Table.Th maw={35}>
             <Select
               pb="sm"
               data={Object.keys(classes)}
@@ -143,7 +202,7 @@ export const SrList = (
                     asc={!sortDesc}
                     sortDesc={() => setSortDesc(true)}
                     reset={() => {
-                      setSortBy("class")
+                      setSortBy(undefined)
                       setSortDesc(false)
                     }}
                   />
@@ -167,21 +226,27 @@ export const SrList = (
                     asc={!sortDesc}
                     sortDesc={() => setSortDesc(true)}
                     reset={() => {
-                      setSortBy("class")
+                      setSortBy(undefined)
                       setSortDesc(false)
                     }}
                   />
                 }
               />
               <ActionIcon
-                pb="sm"
-                variant="subtle"
-                color="lightgrey"
+                mb="sm"
+                variant={classFilter || nameFilter || itemFilter || sortDesc ||
+                    sortBy
+                  ? ""
+                  : "subtle"}
+                color={classFilter || nameFilter || itemFilter || sortDesc ||
+                    sortBy
+                  ? ""
+                  : "lightgrey"}
                 onClick={() => {
                   setClassFilter(undefined)
                   setNameFilter(undefined)
                   setItemFilter(undefined)
-                  setSortBy("class")
+                  setSortBy(undefined)
                   setSortDesc(false)
                 }}
               >
@@ -191,7 +256,19 @@ export const SrList = (
           </Table.Th>
         </Table.Tr>
       </Table.Thead>
-      <Table.Tbody>{rows}</Table.Tbody>
+      <Table.Tbody>
+        {elements.map((e) => (
+          <SrListElement
+            key={e.attendee.character.name + e.softReserve.itemId + e.index}
+            visible={filter(e)}
+            attendee={e.attendee}
+            item={items.find((i) => i.id == e.softReserve.itemId) ||
+              nothingItem}
+            user={user}
+            admins={admins}
+          />
+        ))}
+      </Table.Tbody>
     </Table>
   )
 }

@@ -25,10 +25,12 @@ export const ItemNameAndIcon = (
     onLongClick,
     rightSection,
     onRightSectionClick,
+    allowImageClick = true,
   }: {
     item: Item
     showTooltipItemId?: number
     highlight: boolean
+    allowImageClick?: boolean
     onClick?: () => void
     onLongClick?: () => void
     rightSection?: ReactElement
@@ -52,7 +54,6 @@ export const ItemNameAndIcon = (
     <Tooltip
       m={0}
       p={0}
-      key={item.id}
       opened={showTooltipItemId == item.id || (!isTouchScreen && hovered)}
       label={
         <div
@@ -65,19 +66,20 @@ export const ItemNameAndIcon = (
         ref={ref}
         justify="space-between"
         wrap="nowrap"
-        className={`item-list-element ${
+        className={`list-element ${
           highlight || (hovered && !isTouchScreen)
-            ? "item-list-element-highlight"
+            ? "list-element-highlight"
             : ""
         }`}
-        key={item.id}
       >
         <Box
           p={padding}
           onClick={() => {
-            globalThis.open(
-              `https://database.turtlecraft.gg/?item=${item.id}`,
-            )
+            if (allowImageClick) {
+              globalThis.open(
+                `https://database.turtlecraft.gg/?item=${item.id}`,
+              )
+            }
           }}
         >
           {(item.id == 0)
