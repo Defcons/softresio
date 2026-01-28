@@ -1,4 +1,4 @@
-import type { SelectProps } from "@mantine/core"
+import type { ComboboxItem, OptionsFilter, SelectProps } from "@mantine/core"
 import { Title } from "@mantine/core"
 import type { Instance } from "../types/types.ts"
 
@@ -29,3 +29,14 @@ export const renderInstance: (
     </>
   )
 }
+
+export const instanceFilter: (instances: Instance[]) => OptionsFilter =
+  (instances) => ({ options, search }) => {
+    return (options as ComboboxItem[]).filter((option) => {
+      const instance = instances.find((instance) =>
+        instance.id == Number(option.value)
+      )
+      return instance?.name.toLowerCase().startsWith(search.toLowerCase()) ||
+        instance?.shortname.toLowerCase().startsWith(search.toLowerCase())
+    })
+  }

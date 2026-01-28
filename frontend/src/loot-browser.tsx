@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import type { GetInstancesResponse, Instance } from "../types/types.ts"
 import { Paper, Select, Stack } from "@mantine/core"
 import { ItemPicker } from "./item-picker.tsx"
-import { instanceOrder, renderInstance } from "./instances.tsx"
+import { instanceFilter, instanceOrder, renderInstance } from "./instances.tsx"
 
 export const LootBrowser = () => {
   const [instances, setInstances] = useState<Instance[]>([])
@@ -38,6 +38,7 @@ export const LootBrowser = () => {
           })}
           value={(instanceId || "").toString()}
           renderOption={renderInstance(instances)}
+          filter={instanceFilter(instances)}
           onChange={(v) => {
             setInstanceId(Number(v))
             setItemBrowserOpen(true)
