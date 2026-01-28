@@ -1,5 +1,13 @@
 import { useEffect, useState } from "react"
-import { CloseButton, Group, Input, Modal, Select, Stack } from "@mantine/core"
+import {
+  Box,
+  CloseButton,
+  Flex,
+  Group,
+  Input,
+  Modal,
+  Select,
+} from "@mantine/core"
 import { IconSearch } from "@tabler/icons-react"
 import { itemFilters } from "./item-filters.ts"
 import type { Attendee, Class, Item, User } from "../types/types.ts"
@@ -117,7 +125,7 @@ export const ItemPicker = ({
       }}
       padding="sm"
     >
-      <Stack h="100%">
+      <Flex h="100%" direction="column" gap="sm">
         <Group justify="space-between" wrap="nowrap">
           <Input
             w="100%"
@@ -197,7 +205,9 @@ export const ItemPicker = ({
             sameItemLimit,
           }}
         />
-      </Stack>
+        <Box onClick={() => setShowTooltipItemId(undefined)} flex={1}>
+        </Box>
+      </Flex>
     </Modal>
   )
 }
