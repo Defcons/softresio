@@ -66,7 +66,7 @@ export const CreateSr = (
     const request: CreateSrRequest = {
       raidId: sheet.raidId,
       character,
-      selectedItemIds,
+      selectedItemIds: (selectedItemIds.length == 0) ? [0] : selectedItemIds,
     }
     fetch("/api/sr/create", { method: "POST", body: JSON.stringify(request) })
       .then((r) => r.json())
@@ -122,7 +122,11 @@ export const CreateSr = (
       setSelectedClass(attendeeMe.character.class)
       setSelectedSpec(attendeeMe.character.spec)
       setCharacterName(attendeeMe.character.name)
-      setSelectedItemIds(attendeeMe.softReserves.map((sr) => sr.itemId))
+      setSelectedItemIds(
+        attendeeMe.softReserves.filter((sr) => sr.itemId != 0).map((sr) =>
+          sr.itemId
+        ),
+      )
     }
   }, [])
 
@@ -198,7 +202,8 @@ export const CreateSr = (
         <Button
           disabled={sheet.locked || !selectedClass || !selectedSpec ||
             !characterName ||
-            selectedItemIds.length != sheet.srCount || !srChanged()}
+            (selectedItemIds && (selectedItemIds.length > sheet.srCount)) ||
+            !srChanged()}
           onClick={submitSr}
         >
           {sheet.locked ? "Raid is locked" : "Submit"}

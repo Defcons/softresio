@@ -4,6 +4,7 @@ import { Button, Group, Paper, Stack, Text } from "@mantine/core"
 import "../css/tooltip.css"
 import { ItemPicker } from "./item-picker.tsx"
 import { SelectableItem } from "./item.tsx"
+import { nothingItem } from "./mock-item.ts"
 export const ItemSelect = (
   {
     value,
@@ -52,7 +53,7 @@ export const ItemSelect = (
         <Stack gap="sm" justify="bottom">
           {value.map((itemId) => (
             <SelectableItem
-              item={items.filter((i) => i.id == itemId)[0]}
+              item={items.find((i) => i.id == itemId) || nothingItem}
               onRightSectionClick={() => {
                 const idx = value.indexOf(itemId)
                 if (idx !== -1) {

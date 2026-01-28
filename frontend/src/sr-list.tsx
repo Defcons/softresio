@@ -18,6 +18,7 @@ import {
   IconX,
 } from "@tabler/icons-react"
 import { classes, renderClass } from "./class.tsx"
+import { nothingItem } from "./mock-item.ts"
 
 type ListElement = { attendee: Attendee; softReserve: SoftReserve }
 
@@ -35,7 +36,7 @@ export const SrList = (
   ) => ((!classFilter || attendee.character.class == classFilter) &&
     (!nameFilter || attendee.character.name.startsWith(nameFilter)) &&
     (!itemFilter ||
-      items.filter((item) => item.id == softReserve.itemId)[0]?.name
+      (items.find((item) => item.id == softReserve.itemId) || nothingItem).name
         .toLowerCase()
         .includes(itemFilter.toLowerCase())))
 
@@ -49,8 +50,12 @@ export const SrList = (
       valueA = a.attendee.character.class
       valueB = b.attendee.character.class
     } else if (sortBy == "item") {
-      valueA = items.filter((item) => item.id == a.softReserve.itemId)[0]?.name
-      valueB = items.filter((item) => item.id == b.softReserve.itemId)[0]?.name
+      valueA = (items.find((item) =>
+        item.id == a.softReserve.itemId
+      ) || nothingItem).name
+      valueB = (items.find((item) =>
+        item.id == b.softReserve.itemId
+      ) || nothingItem).name
     }
     return valueA.localeCompare(valueB) * (sortDesc ? -1 : 1)
   }
@@ -84,11 +89,13 @@ export const SrList = (
       </Table.Td>
       <Table.Td>
         <ItemNameAndIcon
-          item={items.filter((item) => item.id == e.softReserve.itemId)[0]}
+          item={items.find((item) => item.id == e.softReserve.itemId) ||
+            nothingItem}
           highlight={false}
           onClick={() =>
             setItemFilter(
-              items.filter((item) => item.id == e.softReserve.itemId)[0].name,
+              (items.find((item) => item.id == e.softReserve.itemId) ||
+                nothingItem).name,
             )}
         />
       </Table.Td>

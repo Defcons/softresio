@@ -80,20 +80,29 @@ export const ItemNameAndIcon = (
             )
           }}
         >
-          <Image
-            style={{
-              filter: "drop-shadow(0px 0px 2px)",
-              border: "1px solid rgba(255,255,255,0.3)",
-            }}
-            className={`q${item.quality}`}
-            radius="sm"
-            h={24}
-            w={24}
-            src={`https://database.turtlecraft.gg/images/icons/medium/${item.icon}`}
-          />
+          {(item.id == 0)
+            ? (
+              <Box h={24} w={24}>
+              </Box>
+            )
+            : (
+              <Image
+                style={{
+                  filter: "drop-shadow(0px 0px 2px)",
+                  border: "1px solid rgba(255,255,255,0.3)",
+                }}
+                className={`q${item.quality}`}
+                radius="sm"
+                h={24}
+                w={24}
+                src={`https://database.turtlecraft.gg/images/icons/medium/${item.icon}`}
+              />
+            )}
         </Box>
         <Box flex={1} p={padding} {...handlers()}>
           <Title
+            fs={(item.id == 0) ? "italic" : undefined}
+            fw={(item.id == 0) ? 200 : undefined}
             order={6}
             flex={1}
             className={`q${item.quality}`}
