@@ -91,9 +91,9 @@ export const CreateSr = (
       class: attendeeMe.character.class,
       spec: attendeeMe.character.spec,
       name: attendeeMe.character.name,
-      softReserves: attendeeMe.softReserves.map((softReserve) =>
-        softReserve.itemId
-      ).sort(),
+      softReserves: attendeeMe.softReserves.filter((sr) => sr.itemId != 0).map((
+        softReserve,
+      ) => softReserve.itemId).sort(),
     }
     const b = {
       class: selectedClass,
