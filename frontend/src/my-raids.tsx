@@ -1,6 +1,15 @@
 import { useEffect, useState } from "react"
 import { formatDistanceToNow } from "date-fns"
-import { Box, Group, Paper, Skeleton, Stack, Text, Title } from "@mantine/core"
+import {
+  Box,
+  Button,
+  Group,
+  Paper,
+  Skeleton,
+  Stack,
+  Text,
+  Title,
+} from "@mantine/core"
 import { useNavigate } from "react-router"
 import type {
   GetInstancesResponse,
@@ -82,6 +91,7 @@ export const MyRaids = () => {
   const [raidList, setRaidList] = useState<Raid[]>()
   const [instances, setInstances] = useState<Instance[]>()
   const [user, setUser] = useState<User>()
+  const navigate = useNavigate()
 
   useEffect(() => {
     fetch(`/api/raids`).then((r) => {
@@ -135,12 +145,22 @@ export const MyRaids = () => {
     }
   }
 
+  const createRaidButton = (
+    <Button onClick={() => navigate("/create")}>Create Raid</Button>
+  )
+
   return (
     <Stack>
+      {upcomingRaids.length == 0 && pastRaids.length == 0
+        ? createRaidButton
+        : null}
       {upcomingRaids.length != 0
         ? (
           <>
-            <Title order={4}>Upcoming</Title>
+            <Group justify="space-between">
+              <Title order={4}>Upcoming</Title>
+              {pastRaids.length == 0 ? createRaidButton : null}
+            </Group>
             <MyRaidItem
               user={user}
               instances={instances}
@@ -152,7 +172,10 @@ export const MyRaids = () => {
       {pastRaids.length != 0
         ? (
           <>
-            <Title order={4}>Past</Title>
+            <Group justify="space-between">
+              <Title order={4}>Past</Title>
+              {upcomingRaids.length == 0 ? createRaidButton : null}
+            </Group>
             <MyRaidItem user={user} instances={instances} raids={pastRaids} />
           </>
         )
