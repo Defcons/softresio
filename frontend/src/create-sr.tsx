@@ -28,6 +28,7 @@ import {
   renderClassSpec,
   renderSpec,
 } from "./class.tsx"
+import { deepEqual } from "fast-equals"
 
 export const CreateSr = (
   { items, sheet, loadRaid, user }: {
@@ -83,17 +84,24 @@ export const CreateSr = (
       attendee.user.userId === user.userId
     )[0]
 
-  const itemIdsEqual = (a: number[], b: number[]) =>
-    a.length === b.length && a.every((itemId) => new Set(b).has(itemId))
   const srChanged = () => {
     const attendeeMe = findAttendeeMe()
-    return (!attendeeMe || (attendeeMe.character.name !== characterName ||
-      attendeeMe.character.class !== selectedClass ||
-      attendeeMe.character.spec !== selectedSpec ||
-      !itemIdsEqual(
-        attendeeMe.softReserves.map((item) => item.itemId),
-        selectedItemIds,
-      )))
+    if (!attendeeMe) return true
+    const a = {
+      class: attendeeMe.character.class,
+      spec: attendeeMe.character.spec,
+      name: attendeeMe.character.name,
+      softReserves: attendeeMe.softReserves.map((softReserve) =>
+        softReserve.itemId
+      ).sort(),
+    }
+    const b = {
+      class: selectedClass,
+      spec: selectedSpec,
+      name: characterName,
+      softReserves: selectedItemIds.sort(),
+    }
+    return !deepEqual(a, b)
   }
 
   useEffect(() => {
