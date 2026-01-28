@@ -41,7 +41,9 @@ export const RaidUpdater = (
   return null
 }
 
-export const Raid = () => {
+export const Raid = (
+  { itemPickerOpen = false }: { itemPickerOpen?: boolean },
+) => {
   const params = useParams()
   const [sheet, setSheet] = useState<Sheet>()
   const [user, setUser] = useState<User>()
@@ -161,6 +163,7 @@ export const Raid = () => {
           items={instance.items}
           sheet={sheet}
           user={user}
+          itemPickerOpen={itemPickerOpen}
         />
         <Paper shadow="sm" mb="md">
           <Group p="sm" justify="space-between">

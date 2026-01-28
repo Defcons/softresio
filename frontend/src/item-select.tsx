@@ -1,10 +1,11 @@
-import { useState } from "react"
 import type { Attendee, Class, Item, User } from "../types/types.ts"
 import { Button, Group, Paper, Stack, Text } from "@mantine/core"
 import "../css/tooltip.css"
 import { ItemPicker } from "./item-picker.tsx"
 import { SelectableItem } from "./item.tsx"
 import { nothingItem } from "./mock-item.ts"
+import { useNavigate } from "react-router"
+
 export const ItemSelect = (
   {
     value,
@@ -17,6 +18,7 @@ export const ItemSelect = (
     itemLimit,
     hardReserves = [],
     sameItemLimit,
+    itemPickerOpen,
   }: {
     value: number[]
     label: string
@@ -28,9 +30,10 @@ export const ItemSelect = (
     itemLimit?: number
     hardReserves?: number[]
     sameItemLimit: number
+    itemPickerOpen: boolean
   },
 ) => {
-  const [itemPickerOpen, setItemPickerOpen] = useState<boolean>(false)
+  const navigate = useNavigate()
   return (
     <Stack gap={0}>
       <Group mb={3} p={0} gap={3}>
@@ -63,7 +66,7 @@ export const ItemSelect = (
                   ])
                 }
               }}
-              onClick={() => setItemPickerOpen(true)}
+              onClick={() => navigate("items")}
               deleteMode
               user={user}
               attendees={attendees}
@@ -76,7 +79,7 @@ export const ItemSelect = (
               <Button
                 fullWidth
                 h={36}
-                onClick={() => setItemPickerOpen(true)}
+                onClick={() => navigate("items")}
                 variant="default"
               >
                 {itemLimit
@@ -97,14 +100,13 @@ export const ItemSelect = (
         selectedItemIds={value}
         setSelectedItemIds={onChange}
         items={items}
-        open={itemPickerOpen}
-        setOpen={setItemPickerOpen}
         selectedClass={selectedClass || null}
         user={user}
         attendees={attendees}
         selectMode
         hardReserves={hardReserves}
         sameItemLimit={sameItemLimit}
+        itemPickerOpen={itemPickerOpen}
       />
     </Stack>
   )

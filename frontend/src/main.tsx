@@ -44,9 +44,21 @@ function App() {
                   <Routes>
                     <Route path="/" element={<MyRaids />} />
                     <Route path="/create" element={<CreateRaid />} />
-                    <Route path="/:raidId" element={<Raid />} />;
-                    <Route path="/raids" element={<MyRaids />} />;
-                    <Route path="/loot" element={<LootBrowser />} />;
+                    <Route
+                      path="/create/items"
+                      element={<CreateRaid itemPickerOpen />}
+                    />
+                    <Route path="/:raidId" element={<Raid />} />
+                    <Route
+                      path="/:raidId/items"
+                      element={<Raid itemPickerOpen />}
+                    />
+                    <Route path="/raids" element={<MyRaids />} />
+                    <Route path="/loot" element={<LootBrowser />} />
+                    <Route
+                      path="/loot/items"
+                      element={<LootBrowser itemPickerOpen />}
+                    />
                   </Routes>
                 </Grid.Col>
               </Grid>

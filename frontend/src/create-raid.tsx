@@ -22,7 +22,9 @@ import type {
   Instance,
 } from "../types/types.ts"
 
-export function CreateRaid() {
+export const CreateRaid = (
+  { itemPickerOpen = false }: { itemPickerOpen?: boolean },
+) => {
   const navigate = useNavigate()
 
   const [instances, setInstances] = useState<Instance[]>()
@@ -172,6 +174,7 @@ export function CreateRaid() {
               sameItemLimit={1}
               items={instances?.find((instance) => instance.id == instanceId)
                 ?.items || []}
+              itemPickerOpen={itemPickerOpen}
             />
           </Collapse>
           <Button

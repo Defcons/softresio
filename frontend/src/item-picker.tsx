@@ -13,6 +13,7 @@ import { itemFilters } from "./item-filters.ts"
 import type { Attendee, Class, Item, User } from "../types/types.ts"
 import { useDebounce } from "use-debounce"
 import { List } from "react-window"
+import { useNavigate } from "react-router"
 
 import { ReactWindowSelectableItem } from "./item.tsx"
 
@@ -20,26 +21,24 @@ export const ItemPicker = ({
   selectedItemIds,
   setSelectedItemIds,
   items,
-  open,
-  setOpen,
   selectedClass,
   user,
   attendees,
   selectMode,
   hardReserves = [],
   sameItemLimit = 0,
+  itemPickerOpen,
 }: {
   selectedItemIds?: number[]
   setSelectedItemIds?: (itemIds: number[]) => void
   items: Item[]
-  open: boolean
-  setOpen: (open: boolean) => void
   selectedClass?: Class | null
   user?: User
   attendees?: Attendee[]
   selectMode?: boolean
   hardReserves?: number[]
   sameItemLimit?: number
+  itemPickerOpen: boolean
 }) => {
   const [showTooltipItemId, setShowTooltipItemId] = useState<number>()
   const [slotFilter, setSlotFilter] = useState<string | null>()
@@ -47,6 +46,7 @@ export const ItemPicker = ({
   const [search, setSearch] = useState("")
   const [debouncedSearch] = useDebounce(search, 100)
   const [filteredItems, setFilteredItems] = useState(items)
+  const navigate = useNavigate()
 
   const onItemLongClick = (itemId: number) =>
     showTooltipItemId === itemId
@@ -114,10 +114,10 @@ export const ItemPicker = ({
 
   return (
     <Modal
-      opened={open}
+      opened={itemPickerOpen}
       onClose={() => {
         setShowTooltipItemId(undefined)
-        setOpen(false)
+        navigate(-1)
       }}
       withCloseButton={false}
       styles={{
@@ -146,7 +146,7 @@ export const ItemPicker = ({
           <CloseButton
             onClick={() => {
               setShowTooltipItemId(undefined)
-              setOpen(false)
+              navigate(-1)
             }}
           />
         </Group>

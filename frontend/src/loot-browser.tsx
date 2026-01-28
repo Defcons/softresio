@@ -3,12 +3,15 @@ import type { GetInstancesResponse, Instance } from "../types/types.ts"
 import { Paper, Select, Stack } from "@mantine/core"
 import { ItemPicker } from "./item-picker.tsx"
 import { instanceFilter, instanceOrder, renderInstance } from "./instances.tsx"
+import { useNavigate } from "react-router"
 
-export const LootBrowser = () => {
+export const LootBrowser = (
+  { itemPickerOpen = false }: { itemPickerOpen?: boolean },
+) => {
   const [instances, setInstances] = useState<Instance[]>([])
   const [instanceId, setInstanceId] = useState<number>()
 
-  const [itemBrowserOpen, setItemBrowserOpen] = useState<boolean>(false)
+  const navigate = useNavigate()
 
   useEffect(() => {
     fetch("/api/instances")
@@ -41,15 +44,14 @@ export const LootBrowser = () => {
           filter={instanceFilter(instances)}
           onChange={(v) => {
             setInstanceId(Number(v))
-            setItemBrowserOpen(true)
+            navigate("items")
           }}
         />
       </Stack>
       <ItemPicker
         items={instances.filter((instance) => instance.id == instanceId)[0]
           ?.items || []}
-        open={itemBrowserOpen}
-        setOpen={setItemBrowserOpen}
+        itemPickerOpen={itemPickerOpen}
       />
     </Paper>
   )

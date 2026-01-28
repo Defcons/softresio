@@ -33,11 +33,12 @@ import { deepEqual } from "fast-equals"
 import { modals } from "@mantine/modals"
 
 export const CreateSr = (
-  { items, sheet, loadRaid, user }: {
+  { items, sheet, loadRaid, user, itemPickerOpen }: {
     items: Item[]
     sheet: Sheet
     loadRaid: (sheet?: Sheet) => void
     user: User
+    itemPickerOpen: boolean
   },
 ) => {
   const [selectedClass, setSelectedClass] = useState<Class | null>()
@@ -217,6 +218,7 @@ export const CreateSr = (
           itemLimit={sheet.srCount}
           hardReserves={sheet.hardReserves}
           sameItemLimit={sheet.allowDuplicateSr ? sheet.srCount : 1}
+          itemPickerOpen={itemPickerOpen}
         />
         <Button
           disabled={sheet.locked || !selectedClass || !selectedSpec ||
