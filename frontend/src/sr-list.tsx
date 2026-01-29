@@ -5,6 +5,7 @@ import {
   Menu,
   Select,
   Table,
+  Text,
   TextInput,
   Title,
   Tooltip,
@@ -29,6 +30,7 @@ import {
 import { classes, renderClass } from "./class.tsx"
 import { nothingItem } from "./mock-item.ts"
 import { IconShieldFilled, IconTrash } from "@tabler/icons-react"
+import { modals } from "@mantine/modals"
 
 type ListElement = { attendee: Attendee; softReserve: SoftReserve }
 
@@ -47,6 +49,50 @@ export const SrListElement = (
   const { ref, hovered } = useHover()
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const openConfirmDeleteSrModal = () =>
+    modals.openConfirmModal({
+      title: "Are you sure?",
+      centered: true,
+      children: (
+        <Text size="sm">
+          Do you want to remove{" "}
+          <b className={`q${item.quality}`}>[{item.name}]</b> from{" "}
+          <b>{attendee.character.name}</b>'s SRs?
+        </Text>
+      ),
+      labels: { confirm: "Confirm", cancel: "Cancel" },
+      onCancel: () => console.log("Cancel"),
+      onConfirm: deleteSr,
+    })
+
+  const openConfirmPromoteAdmin = () =>
+    modals.openConfirmModal({
+      title: "Are you sure?",
+      centered: true,
+      children: (
+        <Text size="sm">
+          Do you want to promote {attendee.character.name} to administrator?
+        </Text>
+      ),
+      labels: { confirm: "Confirm", cancel: "Cancel" },
+      onCancel: () => console.log("Cancel"),
+      onConfirm: () => editAdmin(attendee.user, false),
+    })
+
+  const openConfirmDemoteAdmin = () =>
+    modals.openConfirmModal({
+      title: "Are you sure?",
+      centered: true,
+      children: (
+        <Text size="sm">
+          Do you want to remove admin privileges from {attendee.character.name}?
+        </Text>
+      ),
+      labels: { confirm: "Confirm", cancel: "Cancel" },
+      onCancel: () => console.log("Cancel"),
+      onConfirm: () => editAdmin(attendee.user, true),
+    })
+
   const promoteRemoveAdmin = () => {
     if (!admins.find((a) => a.userId == user.userId)) {
       return null
@@ -55,7 +101,7 @@ export const SrListElement = (
       return (
         <Menu.Item
           leftSection={<IconShieldFilled size={14} />}
-          onClick={() => editAdmin(attendee.user, false)}
+          onClick={openConfirmPromoteAdmin}
         >
           Promote to Admin
         </Menu.Item>
@@ -69,7 +115,7 @@ export const SrListElement = (
           disabled={owner.userId != attendee.user.userId}
         >
           <Menu.Item
-            onClick={() => editAdmin(attendee.user, true)}
+            onClick={openConfirmDemoteAdmin}
             disabled={owner.userId == attendee.user.userId}
             leftSection={<IconShieldFilled size={14} />}
           >
@@ -136,7 +182,7 @@ export const SrListElement = (
       <Menu.Dropdown>
         {promoteRemoveAdmin()}
         <Menu.Item
-          onClick={deleteSr}
+          onClick={openConfirmDeleteSrModal}
           disabled={attendee.user.userId == user.userId ||
               admins.find((a) => a.userId == user.userId)
             ? false
