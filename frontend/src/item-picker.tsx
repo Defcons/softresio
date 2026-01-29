@@ -9,7 +9,6 @@ import {
   Select,
 } from "@mantine/core"
 import { IconSearch } from "@tabler/icons-react"
-import { itemFilters } from "./item-filters.ts"
 import type { Attendee, Class, Item, User } from "../shared/types.ts"
 import { useDebounce } from "use-debounce"
 import { List } from "react-window"
@@ -41,12 +40,31 @@ export const ItemPicker = ({
   itemPickerOpen: boolean
 }) => {
   const [showTooltipItemId, setShowTooltipItemId] = useState<number>()
-  const [slotFilter, setSlotFilter] = useState<string | null>()
-  const [typeFilter, setTypeFilter] = useState<string | null>()
+  const [slotFilter, setSlotFilter] = useState<string>()
+  const [typeFilter, setTypeFilter] = useState<string>()
   const [search, setSearch] = useState("")
   const [debouncedSearch] = useDebounce(search, 100)
   const [filteredItems, setFilteredItems] = useState(items)
   const navigate = useNavigate()
+
+  const slotsForType = (
+    type?: string,
+  ) => [
+    ...new Set(
+      items.filter((i) => type ? i.types.includes(type) : true).flatMap((i) =>
+        i.slots
+      ),
+    ),
+  ]
+  const typesForSlot = (
+    slot?: string,
+  ) => [
+    ...new Set(
+      items.filter((i) => slot ? i.slots.includes(slot) : true).flatMap((i) =>
+        i.types
+      ),
+    ),
+  ]
 
   const onItemLongClick = (itemId: number) =>
     showTooltipItemId === itemId
@@ -74,16 +92,6 @@ export const ItemPicker = ({
   }
 
   useEffect(() => {
-    // Clear filter in item browser if new raid doesnt have that category
-    if (!items.some((i) => i.slot == slotFilter)) {
-      setSlotFilter(null)
-    }
-    if (!items.some((i) => i.slot == slotFilter && i.type == typeFilter)) {
-      setTypeFilter(null)
-    }
-  }, [slotFilter, typeFilter, items])
-
-  useEffect(() => {
     setFilteredItems(
       items.filter((item) => {
         const stringQuery = debouncedSearch?.toLowerCase() || ""
@@ -98,11 +106,12 @@ export const ItemPicker = ({
           console.log(item.name)
           return false
         } else if (
-          slotFilter && slotFilter != "Class" && item.slot != slotFilter
+          slotFilter && slotFilter != "Class" &&
+          !item.slots.includes(slotFilter)
         ) {
           return false
         } else if (
-          typeFilter && item.type != typeFilter
+          typeFilter && !item.types.includes(typeFilter)
         ) {
           return false
         } else {
@@ -155,36 +164,23 @@ export const ItemPicker = ({
             placeholder="Slot"
             searchable
             clearable
+            disabled={slotsForType(typeFilter).length == 0}
             onFocus={() => setShowTooltipItemId(undefined)}
-            value={slotFilter}
+            value={slotFilter || null}
             onChange={(value) => {
-              setSlotFilter(value)
-              if (
-                value && typeFilter &&
-                !itemFilters[value].some((typeOption) =>
-                  items.some((i) =>
-                    i.slot == slotFilter && i.type == typeOption
-                  )
-                )
-              ) setTypeFilter(null)
+              setSlotFilter(value || undefined)
             }}
-            data={Object.keys(itemFilters).filter((slotOption) =>
-              items.some((i) => i.slot == slotOption)
-            )}
+            data={slotsForType(typeFilter)}
           />
           <Select
             placeholder="Type"
-            disabled={!slotFilter || itemFilters[slotFilter].length == 0}
+            disabled={typesForSlot(slotFilter).length == 0}
             onFocus={() => setShowTooltipItemId(undefined)}
             searchable
             clearable
-            value={typeFilter}
+            value={typeFilter || null}
             onChange={(value) => setTypeFilter(value || undefined)}
-            data={slotFilter
-              ? itemFilters[slotFilter].filter((typeOption) =>
-                items.some((i) => i.slot == slotFilter && i.type == typeOption)
-              )
-              : []}
+            data={typesForSlot(slotFilter)}
           />
         </Group>
         <List

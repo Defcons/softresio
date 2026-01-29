@@ -6,8 +6,6 @@
     {
       "id": 22726,
       "name": "Splinter of Atiesh",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -16,13 +14,65 @@
       ],
       "quality": 5,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q5\">Splinter of Atiesh</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock, Druid<br/>Requires Level 60<br/><span class=\"q2\">Use: Combines 40 Splinters of Atiesh to form the Frame of Atiesh.</span><br/><span class=\"q\">\"A splinter of Atiesh, Greatstaff of the Guardian.\"</span></span></div>",
-      "icon": "inv_qiraj_jewelblessed.png"
+      "icon": "inv_qiraj_jewelblessed.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 30.0
+        },
+        {
+          "bossId": 1,
+          "chance": 30.0
+        },
+        {
+          "bossId": 2,
+          "chance": 30.0
+        },
+        {
+          "bossId": 3,
+          "chance": 30.0
+        },
+        {
+          "bossId": 4,
+          "chance": 30.0
+        },
+        {
+          "bossId": 5,
+          "chance": 30.0
+        },
+        {
+          "bossId": 6,
+          "chance": 30.0
+        },
+        {
+          "bossId": 7,
+          "chance": 30.0
+        },
+        {
+          "bossId": 8,
+          "chance": 30.0
+        },
+        {
+          "bossId": 9,
+          "chance": 30.0
+        },
+        {
+          "bossId": 10,
+          "chance": 30.0
+        },
+        {
+          "bossId": 11,
+          "chance": 30.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 22368,
       "name": "Desecrated Shoulderpads",
-      "slot": "Token",
-      "type":  null,
       "classes": [
         "Priest",
         "Mage",
@@ -30,13 +80,29 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Shoulderpads</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Cloth Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_clothshoulder.png"
+      "icon": "inv_misc_desecrated_clothshoulder.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 33.33
+        },
+        {
+          "bossId": 6,
+          "chance": 33.33
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22361,
       "name": "Desecrated Spaulders",
-      "slot": "Token",
-      "type":  null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -45,126 +111,254 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Spaulders</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Druid<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Chain, Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_mailshoulder.png"
+      "icon": "inv_misc_desecrated_mailshoulder.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 33.33
+        },
+        {
+          "bossId": 6,
+          "chance": 33.33
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22354,
       "name": "Desecrated Pauldrons",
-      "slot": "Token",
-      "type":  null,
       "classes": [
         "Warrior",
         "Rogue"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Pauldrons</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_plateshoulder.png"
+      "icon": "inv_misc_desecrated_plateshoulder.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 33.33
+        },
+        {
+          "bossId": 6,
+          "chance": 33.33
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22968,
       "name": "Glacial Mantle",
-      "slot": "Shoulder",
-      "type": "Cloth",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Glacial Mantle</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Cloth</span></div></div><span>94 Armor<br/>+18 Stamina<br/>+33 Frost Resistance<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 16.</span></span></div>",
-      "icon": "inv_shoulder_14.png"
+      "icon": "inv_shoulder_14.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 22967,
       "name": "Icy Scale Spaulders",
-      "slot": "Shoulder",
-      "type": "Mail",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Icy Scale Spaulders</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Mail</span></div></div><span>393 Armor<br/>+25 Stamina<br/>+33 Frost Resistance</span></div>",
-      "icon": "inv_shoulder_14.png"
+      "icon": "inv_shoulder_14.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 22810,
       "name": "Toxin Injector",
-      "slot": "Ranged",
-      "type": "Gun",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Toxin Injector</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>68 - 135 Damage</div><div>Speed 2.00</div></div><span>(50.7 damage per second)<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: +28 Attack Power.</span></span></div>",
-      "icon": "inv_weapon_rifle_13.png"
+      "icon": "inv_weapon_rifle_13.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Gun"
+      ]
     },
     {
       "id": 22803,
       "name": "Midnight Haze",
-      "slot": "One-Hand",
-      "type": "Dagger",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Midnight Haze</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Dagger</span></div></div><div><div>51 - 97 Damage</div><div>Speed 1.80</div></div><span>(41.1 damage per second)<br/>+20 Stamina<br/>+12 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 95.</span></span></div>",
-      "icon": "inv_knife_1h_stratholme_d_02.png"
+      "icon": "inv_knife_1h_stratholme_d_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Dagger"
+      ]
     },
     {
       "id": 22988,
       "name": "The End of Dreams",
-      "slot": "One-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">The End of Dreams</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Mace</span></div></div><div><div>44 - 120 Damage</div><div>Speed 1.90</div></div><span>(43.2 damage per second)<br/>+13 Stamina<br/>+13 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 95.</span><br/><span class=\"q2\">Equip: +322 Attack Power in Cat, Bear, Dire Bear, and Moonkin forms only.</span><br/><span class=\"q2\">Equip: Restores 5 mana per 5 sec.</span></span></div>",
-      "icon": "inv_mace_1h_stratholme_d_02.png"
+      "icon": "inv_mace_1h_stratholme_d_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 22983,
       "name": "Rime Covered Mantle",
-      "slot": "Shoulder",
-      "type": "Cloth",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Rime Covered Mantle</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Cloth</span></div></div><span>94 Armor<br/>+12 Stamina<br/>+12 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 39.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
-      "icon": "inv_shoulder_05.png"
+      "icon": "inv_shoulder_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 22981,
       "name": "Gluth's Missing Collar",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Gluth's Missing Collar</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Neck</span></div><div></div></div><span>+24 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 3%.</span><br/><span class=\"q2\">Equip: Increases the block value of your shield by 15.</span></span></div>",
-      "icon": "inv_jewelry_necklace_27naxxramas.png"
+      "icon": "inv_jewelry_necklace_27naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 22994,
       "name": "Digested Hand of Power",
-      "slot": "Held In Off-hand",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Digested Hand of Power</b><span>Binds when picked up</span><div><div><span>Held In Off-Hand</span></div><div></div></div><span>+6 Stamina<br/>+8 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Restores 12 mana per 5 sec.</span></span></div>",
-      "icon": "inv_offhand_stratholme_a_02.png"
+      "icon": "inv_offhand_stratholme_a_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Held In Off-hand"
+      ],
+      "types": []
     },
     {
       "id": 23075,
       "name": "Death's Bargain",
-      "slot": "Off Hand",
-      "type": "Shield",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Death's Bargain</b><span>Binds when picked up</span><div><div><span>Off Hand</span></div><div><span>Shield</span></div></div><span>3106 Armor<br/>59 Block<br/>+12 Stamina<br/>+12 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 29.</span><br/><span class=\"q2\">Equip: Restores 4 mana per 5 sec.</span></span></div>",
-      "icon": "inv_armor_shield_naxxramas_d_01.png"
+      "icon": "inv_armor_shield_naxxramas_d_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
     },
     {
       "id": 22813,
       "name": "Claymore of Unholy Might",
-      "slot": "Two-Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Claymore of Unholy Might</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Sword</span></div></div><div><div>242 - 366 Damage</div><div>Speed 3.60</div></div><span>(84.4 damage per second)<br/>+20 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: +98 Attack Power.</span><br/><span class=\"q2\">Equip: Increased Two-handed Swords +7.</span></span></div>",
-      "icon": "inv_sword_46.png"
+      "icon": "inv_sword_46.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 22369,
       "name": "Desecrated Bindings",
-      "slot": "Token",
-      "type":  null,
       "classes": [
         "Priest",
         "Mage",
@@ -172,13 +366,29 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Bindings</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Cloth Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_clothbracer.png"
+      "icon": "inv_misc_desecrated_clothbracer.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 3,
+          "chance": 33.33
+        },
+        {
+          "bossId": 5,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22370,
       "name": "Desecrated Belt",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -186,13 +396,29 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Belt</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Cloth Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_clothbelt.png"
+      "icon": "inv_misc_desecrated_clothbelt.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 2,
+          "chance": 33.33
+        },
+        {
+          "bossId": 4,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22372,
       "name": "Desecrated Sandals",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -200,13 +426,29 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Sandals</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Cloth Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_clothboots.png"
+      "icon": "inv_misc_desecrated_clothboots.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 7,
+          "chance": 33.33
+        },
+        {
+          "bossId": 8,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22362,
       "name": "Desecrated Wristguards",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -215,13 +457,29 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Wristguards</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Druid<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Chain, Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_mailbracer.png"
+      "icon": "inv_misc_desecrated_mailbracer.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 3,
+          "chance": 33.33
+        },
+        {
+          "bossId": 5,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22363,
       "name": "Desecrated Girdle",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -230,13 +488,29 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Girdle</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Druid<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Chain, Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_mailbelt.png"
+      "icon": "inv_misc_desecrated_mailbelt.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 2,
+          "chance": 33.33
+        },
+        {
+          "bossId": 4,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22365,
       "name": "Desecrated Boots",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -245,52 +519,116 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Boots</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Druid<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Chain, Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_mailboots.png"
+      "icon": "inv_misc_desecrated_mailboots.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 7,
+          "chance": 33.33
+        },
+        {
+          "bossId": 8,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22355,
       "name": "Desecrated Bracers",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Bracers</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_platebracer.png"
+      "icon": "inv_misc_desecrated_platebracer.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 3,
+          "chance": 33.33
+        },
+        {
+          "bossId": 5,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22356,
       "name": "Desecrated Waistguard",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Waistguard</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_platebelt.png"
+      "icon": "inv_misc_desecrated_platebelt.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 2,
+          "chance": 33.33
+        },
+        {
+          "bossId": 4,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22358,
       "name": "Desecrated Sabatons",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Sabatons</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_plateboots.png"
+      "icon": "inv_misc_desecrated_plateboots.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 7,
+          "chance": 33.33
+        },
+        {
+          "bossId": 8,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22367,
       "name": "Desecrated Circlet",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -298,13 +636,25 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Circlet</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Cloth Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_clothhelm.png"
+      "icon": "inv_misc_desecrated_clothhelm.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 33.33
+        },
+        {
+          "bossId": 10,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22360,
       "name": "Desecrated Headpiece",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -313,176 +663,338 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Headpiece</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Druid<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Chain, Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_mailhelm.png"
+      "icon": "inv_misc_desecrated_mailhelm.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 33.33
+        },
+        {
+          "bossId": 10,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22353,
       "name": "Desecrated Helmet",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Helmet</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_platehelm.png"
+      "icon": "inv_misc_desecrated_platehelm.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 33.33
+        },
+        {
+          "bossId": 10,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 23000,
       "name": "Plated Abomination Ribcage",
-      "slot": "Chest",
-      "type": "Plate",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Plated Abomination Ribcage</b><span>Binds when picked up</span><div><div><span>Chest</span></div><div><span>Plate</span></div></div><span>953 Armor<br/>+45 Strength<br/>+25 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_chest_chain_15.png"
+      "icon": "inv_chest_chain_15.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 23070,
       "name": "Leggings of Polarity",
-      "slot": "Legs",
-      "type": "Cloth",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Leggings of Polarity</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Cloth</span></div></div><span>112 Armor<br/>+20 Stamina<br/>+14 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 44.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 2%.</span></span></div>",
-      "icon": "inv_pants_08.png"
+      "icon": "inv_pants_08.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 23001,
       "name": "Eye of Diminution",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Eye of Diminution</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 3%.</span><br/><span class=\"q2\">Use: Reduces the threat you generate by 35% for 20 sec.</span></span></div>",
-      "icon": "inv_trinket_naxxramas02.png"
+      "icon": "inv_trinket_naxxramas02.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 22808,
       "name": "The Castigator",
-      "slot": "One-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">The Castigator</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Mace</span></div></div><div><div>129 - 238 Damage</div><div>Speed 2.80</div></div><span>(65.5 damage per second)<br/>+11 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Equip: +22 Attack Power.</span></span></div>",
-      "icon": "inv_mace_1h_stratholme_d_01.png"
+      "icon": "inv_mace_1h_stratholme_d_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 22801,
       "name": "Spire of Twilight",
-      "slot": "Two-Hand",
-      "type": "Staff",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Spire of Twilight</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>140 - 250 Damage</div><div>Speed 3.20</div></div><span>(60.9 damage per second)<br/>+24 Stamina<br/>+30 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your attack and casting speed by 2%.</span><br/><span class=\"q2\">Equip: Restores 8 mana per 5 sec.</span><br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 178.</span></span></div>",
-      "icon": "inv_staff_31.png"
+      "icon": "inv_staff_31.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Staff"
+      ]
     },
     {
       "id": 22935,
       "name": "Touch of Frost",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Touch of Frost</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Neck</span></div><div></div></div><span>+20 Stamina<br/>+24 Frost Resistance<br/>Requires Level 60</span></div>",
-      "icon": "inv_jewelry_amulet_04.png"
+      "icon": "inv_jewelry_amulet_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 22938,
       "name": "Cryptfiend Silk Cloak",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Cryptfiend Silk Cloak</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>203 Armor<br/>+14 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +7.</span><br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_misc_cape_naxxramas_02.png"
+      "icon": "inv_misc_cape_naxxramas_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 22936,
       "name": "Wristguards of Vengeance",
-      "slot": "Wrist",
-      "type": "Plate",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Wristguards of Vengeance</b><span>Binds when picked up</span><div><div><span>Wrist</span></div><div><span>Plate</span></div></div><span>407 Armor<br/>+24 Strength<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span></span></div>",
-      "icon": "inv_bracer_17.png"
+      "icon": "inv_bracer_17.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 22939,
       "name": "Band of Unanswered Prayers",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Band of Unanswered Prayers</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+11 Stamina<br/>+11 Intellect<br/>+12 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 51.</span></span></div>",
-      "icon": "inv_jewelry_ring_50naxxramas.png"
+      "icon": "inv_jewelry_ring_50naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 22937,
       "name": "Gem of Nerubis",
-      "slot": "Held In Off-hand",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Gem of Nerubis</b><span>Binds when picked up</span><div><div><span>Held In Off-Hand</span></div><div></div></div><span>+12 Stamina<br/>+8 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Decreases the magical resistances of your spell targets by 10.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 32.</span></span></div>",
-      "icon": "inv_offhand_naxxramas_d_01.png"
+      "icon": "inv_offhand_naxxramas_d_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Held In Off-hand"
+      ],
+      "types": []
     },
     {
       "id": 22943,
       "name": "Malice Stone Pendant",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Malice Stone Pendant</b><span>Binds when picked up</span><div><div><span>Neck</span></div><div></div></div><span>+9 Stamina<br/>+8 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 28.</span><br/><span class=\"q2\">Equip: Decreases the magical resistances of your spell targets by 13.</span></span></div>",
-      "icon": "inv_jewelry_necklace_29naxxramas.png"
+      "icon": "inv_jewelry_necklace_29naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 22941,
       "name": "Polar Shoulder Pads",
-      "slot": "Shoulder",
-      "type": "Leather",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Polar Shoulder Pads</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Leather</span></div></div><span>181 Armor<br/>+25 Stamina<br/>+33 Frost Resistance<br/>Requires Level 60</span></div>",
-      "icon": "inv_shoulder_07.png"
+      "icon": "inv_shoulder_07.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 22940,
       "name": "Icebane Pauldrons",
-      "slot": "Shoulder",
-      "type": "Plate",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Icebane Pauldrons</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Plate</span></div></div><span>698 Armor<br/>+9 Strength<br/>+18 Stamina<br/>+33 Frost Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +7.</span></span></div>",
-      "icon": "inv_shoulder_16.png"
+      "icon": "inv_shoulder_16.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 22942,
       "name": "The Widow's Embrace",
-      "slot": "One-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">The Widow's Embrace</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Mace</span></div></div><div><div>42 - 116 Damage</div><div>Speed 1.90</div></div><span>(41.6 damage per second)<br/>+12 Stamina<br/>+12 Intellect<br/>+14 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 178.</span></span></div>",
-      "icon": "inv_mace_29.png"
+      "icon": "inv_mace_29.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 22806,
       "name": "Widow's Remorse",
-      "slot": "One-Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Widow's Remorse</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Sword</span></div></div><div><div>76 - 133 Damage</div><div>Speed 1.60</div></div><span>(65.3 damage per second)<br/>100 Armor<br/>+8 Agility<br/>+15 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_sword_60.png"
+      "icon": "inv_sword_60.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 22371,
       "name": "Desecrated Gloves",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -490,13 +1002,25 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Gloves</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Cloth Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_clothglove.png"
+      "icon": "inv_misc_desecrated_clothglove.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 33.33
+        },
+        {
+          "bossId": 9,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22364,
       "name": "Desecrated Handguards",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -505,196 +1029,376 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Handguards</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Druid<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Chain, Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_mailglove.png"
+      "icon": "inv_misc_desecrated_mailglove.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 33.33
+        },
+        {
+          "bossId": 9,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22357,
       "name": "Desecrated Gauntlets",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Gauntlets</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_plategloves.png"
+      "icon": "inv_misc_desecrated_plategloves.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 33.33
+        },
+        {
+          "bossId": 9,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22947,
       "name": "Pendant of Forgotten Names",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Pendant of Forgotten Names</b><span>Binds when picked up</span><div><div><span>Neck</span></div><div></div></div><span>+13 Intellect<br/>+13 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Allows 10% of your Mana regeneration to continue while casting.</span></span></div>",
-      "icon": "inv_jewelry_necklace_28naxxramas.png"
+      "icon": "inv_jewelry_necklace_28naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 23220,
       "name": "Crystal Webbed Robe",
-      "slot": "Chest",
-      "type": "Cloth",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Crystal Webbed Robe</b><span>Binds when picked up</span><div><div><span>Chest</span></div><div><span>Cloth</span></div></div><span>128 Armor<br/>+25 Stamina<br/>+19 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 53.</span></span></div>",
-      "icon": "inv_chest_cloth_46.png"
+      "icon": "inv_chest_cloth_46.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 22954,
       "name": "Kiss of the Spider",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Kiss of the Spider</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Use: Increases your attack speed by 20% for 15 sec.</span></span></div>",
-      "icon": "inv_trinket_naxxramas04.png"
+      "icon": "inv_trinket_naxxramas04.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 22807,
       "name": "Wraith Blade",
-      "slot": "One-Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Wraith Blade</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Sword</span></div></div><div><div>38 - 109 Damage</div><div>Speed 1.80</div></div><span>(40.8 damage per second)<br/>+10 Stamina<br/>+8 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 95.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
-      "icon": "inv_sword_11.png"
+      "icon": "inv_sword_11.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 22804,
       "name": "Maexxna's Fang",
-      "slot": "One-Hand",
-      "type": "Dagger",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Maexxna's Fang</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Dagger</span></div></div><div><div>99 - 149 Damage</div><div>Speed 1.90</div></div><span>(65.3 damage per second)<br/>+10 Strength<br/>+10 Agility<br/>Requires Level 60<br/><span class=\"q2\">Equip: +20 Attack Power.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_knife_1h_stratholme_d_01.png"
+      "icon": "inv_knife_1h_stratholme_d_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Dagger"
+      ]
     },
     {
       "id": 23030,
       "name": "Cloak of the Scourge",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Cloak of the Scourge</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>63 Armor<br/>+23 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: +30 Attack Power.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_misc_cape_naxxramas_01.png"
+      "icon": "inv_misc_cape_naxxramas_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 23031,
       "name": "Band of the Inevitable",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Band of the Inevitable</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 36.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span></span></div>",
-      "icon": "inv_jewelry_ring_53naxxramas.png"
+      "icon": "inv_jewelry_ring_53naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 23028,
       "name": "Hailstone Band",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Hailstone Band</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+18 Stamina<br/>+20 Frost Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span></span></div>",
-      "icon": "inv_jewelry_ring_35.png"
+      "icon": "inv_jewelry_ring_35.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 23029,
       "name": "Noth's Frigid Heart",
-      "slot": "Held In Off-hand",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Noth's Frigid Heart</b><span>Binds when picked up</span><div><div><span>Held In Off-Hand</span></div><div></div></div><span>+10 Intellect<br/>+8 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 53.</span><br/><span class=\"q2\">Equip: Restores 5 mana per 5 sec.</span></span></div>",
-      "icon": "inv_offhand_naxxramas_04.png"
+      "icon": "inv_offhand_naxxramas_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Held In Off-hand"
+      ],
+      "types": []
     },
     {
       "id": 23006,
       "name": "Libram of Light",
-      "slot": "Relic",
-      "type": "Libram",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Libram of Light</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Libram</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by Flash of Light by 41.</span></span></div>",
-      "icon": "inv_relics_libramofgrace.png"
+      "icon": "inv_relics_libramofgrace.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Relic"
+      ],
+      "types": [
+        "Libram"
+      ]
     },
     {
       "id": 23005,
       "name": "Totem of Flowing Water",
-      "slot": "Relic",
-      "type": "Totem",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Totem of Flowing Water</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Totem</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Your Water Totems grant party members within 30 yards of you a unique effect depending on the totem.</span></span></div>",
-      "icon": "inv_relics_totemoflife.png"
+      "icon": "inv_relics_totemoflife.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Relic"
+      ],
+      "types": [
+        "Totem"
+      ]
     },
     {
       "id": 22816,
       "name": "Hatchet of Sundered Bone",
-      "slot": "One-Hand",
-      "type": "Axe",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Hatchet of Sundered Bone</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Axe</span></div></div><div><div>119 - 221 Damage</div><div>Speed 2.60</div></div><span>(65.4 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +36 Attack Power.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span></span></div>",
-      "icon": "inv_axe_08.png"
+      "icon": "inv_axe_08.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Axe"
+      ]
     },
     {
       "id": 23035,
       "name": "Preceptor's Hat",
-      "slot": "Head",
-      "type": "Cloth",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Preceptor's Hat</b><span>Binds when picked up</span><div><div><span>Head</span></div><div><span>Cloth</span></div></div><span>102 Armor<br/>+18 Stamina<br/>+24 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 51.</span></span></div>",
-      "icon": "inv_helmet_50.png"
+      "icon": "inv_helmet_50.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 23033,
       "name": "Icy Scale Coif",
-      "slot": "Head",
-      "type": "Mail",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Icy Scale Coif</b><span>Binds when picked up</span><div><div><span>Head</span></div><div><span>Mail</span></div></div><span>425 Armor<br/>+18 Agility<br/>+24 Stamina<br/>+44 Frost Resistance<br/>Requires Level 60</span></div>",
-      "icon": "inv_helmet_20.png"
+      "icon": "inv_helmet_20.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 23019,
       "name": "Icebane Helmet",
-      "slot": "Head",
-      "type": "Plate",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Icebane Helmet</b><span>Binds when picked up</span><div><div><span>Head</span></div><div><span>Plate</span></div></div><span>757 Armor<br/>+12 Strength<br/>+24 Stamina<br/>+44 Frost Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +8.</span></span></div>",
-      "icon": "inv_helmet_06.png"
+      "icon": "inv_helmet_06.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 23036,
       "name": "Necklace of Necropsy",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Necklace of Necropsy</b><span>Binds when picked up</span><div><div><span>Neck</span></div><div></div></div><span>+10 Stamina<br/>+11 Intellect<br/>+10 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 53.</span></span></div>",
-      "icon": "inv_jewelry_necklace_30naxxramas.png"
+      "icon": "inv_jewelry_necklace_30naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 23068,
       "name": "Legplates of Carnage",
-      "slot": "Legs",
-      "type": "Plate",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Legplates of Carnage</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Plate</span></div></div><span>815 Armor<br/>+42 Strength<br/>+18 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 2%.</span></span></div>",
-      "icon": "inv_pants_plate_20.png"
+      "icon": "inv_pants_plate_20.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 22366,
       "name": "Desecrated Leggings",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Priest",
         "Mage",
@@ -702,13 +1406,25 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Leggings</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Cloth Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_clothpants.png"
+      "icon": "inv_misc_desecrated_clothpants.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 33.33
+        },
+        {
+          "bossId": 11,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22359,
       "name": "Desecrated Legguards",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Paladin",
         "Hunter",
@@ -717,582 +1433,1280 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Legguards</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Druid<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Chain, Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_mailpants.png"
+      "icon": "inv_misc_desecrated_mailpants.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 33.33
+        },
+        {
+          "bossId": 11,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 22352,
       "name": "Desecrated Legplates",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Warrior",
         "Rogue"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Legplates</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_platepants.png"
+      "icon": "inv_misc_desecrated_platepants.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 33.33
+        },
+        {
+          "bossId": 11,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 23038,
       "name": "Band of Unnatural Forces",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Band of Unnatural Forces</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Equip: +52 Attack Power.</span></span></div>",
-      "icon": "inv_jewelry_ring_48naxxramas.png"
+      "icon": "inv_jewelry_ring_48naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 23037,
       "name": "Ring of Spiritual Fervor",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ring of Spiritual Fervor</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+14 Intellect<br/>+11 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Allows 10% of your Mana regeneration to continue while casting.</span></span></div>",
-      "icon": "inv_jewelry_ring_52naxxramas.png"
+      "icon": "inv_jewelry_ring_52naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 23042,
       "name": "Loatheb's Reflection",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Loatheb's Reflection</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>+13 Arcane Resistance<br/>+13 Fire Resistance<br/>+13 Nature Resistance<br/>+13 Frost Resistance<br/>+13 Shadow Resistance<br/>Requires Level 60<br/><span class=\"q2\">Use: Increases resistances to all schools of magic by 40 for 20 sec.</span></span></div>",
-      "icon": "inv_trinket_naxxramas07.png"
+      "icon": "inv_trinket_naxxramas07.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 23039,
       "name": "The Eye of Nerub",
-      "slot": "Two-Hand",
-      "type": "Polearm",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">The Eye of Nerub</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Polearm</span></div></div><div><div>251 - 378 Damage</div><div>Speed 3.70</div></div><span>(85.0 damage per second)<br/>+45 Agility<br/>+22 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Polearms +5.</span><br/><span class=\"q2\">Equip: +322 Attack Power in Cat, Bear, Dire Bear, and Moonkin forms only.</span></span></div>",
-      "icon": "inv_spear_09.png"
+      "icon": "inv_spear_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Polearm"
+      ]
     },
     {
       "id": 22800,
       "name": "Brimstone Staff",
-      "slot": "Two-Hand",
-      "type": "Staff",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Brimstone Staff</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>140 - 250 Damage</div><div>Speed 3.20</div></div><span>(60.9 damage per second)<br/>+31 Stamina<br/>+30 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 2%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 113.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
-      "icon": "inv_staff_13.png"
+      "icon": "inv_staff_13.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Staff"
+      ]
     },
     {
       "id": 23017,
       "name": "Veil of Eclipse",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Veil of Eclipse</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>63 Armor<br/>+10 Stamina<br/>+10 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 28.</span><br/><span class=\"q2\">Equip: Decreases the magical resistances of your spell targets by 10.</span></span></div>",
-      "icon": "inv_misc_cape_naxxramas_01.png"
+      "icon": "inv_misc_cape_naxxramas_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 8,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 23219,
       "name": "Girdle of the Mentor",
-      "slot": "Waist",
-      "type": "Plate",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Girdle of the Mentor</b><span>Binds when picked up</span><div><div><span>Waist</span></div><div><span>Plate</span></div></div><span>536 Armor<br/>+21 Strength<br/>+20 Agility<br/>+21 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_belt_13.png"
+      "icon": "inv_belt_13.png",
+      "dropsFrom": [
+        {
+          "bossId": 8,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 23018,
       "name": "Signet of the Fallen Defender",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Signet of the Fallen Defender</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>140 Armor<br/>+24 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_jewelry_ring_50naxxramas.png"
+      "icon": "inv_jewelry_ring_50naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 8,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 23004,
       "name": "Idol of Longevity",
-      "slot": "Relic",
-      "type": "Idol",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Idol of Longevity</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Idol</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Gain 25 mana each time you cast Healing Touch.</span></span></div>",
-      "icon": "inv_relics_idolofhealth.png"
+      "icon": "inv_relics_idolofhealth.png",
+      "dropsFrom": [
+        {
+          "bossId": 8,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Relic"
+      ],
+      "types": [
+        "Idol"
+      ]
     },
     {
       "id": 23009,
       "name": "Wand of the Whispering Dead",
-      "slot": "Ranged",
-      "type": "Wand",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Wand of the Whispering Dead</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Wand</span></div></div><div><div>119 - 222 Shadow Damage</div><div>Speed 1.50</div></div><span>(113.7 damage per second)<br/>+10 Intellect<br/>+9 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 22.</span></span></div>",
-      "icon": "inv_wand_1h_stratholme_d_01.png"
+      "icon": "inv_wand_1h_stratholme_d_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 8,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Wand"
+      ]
     },
     {
       "id": 23014,
       "name": "Iblis, Blade of the Fallen Seraph",
-      "slot": "One-Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Iblis, Blade of the Fallen Seraph</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Sword</span></div></div><div><div>76 - 133 Damage</div><div>Speed 1.60</div></div><span>(65.3 damage per second)<br/>+7 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Equip: +26 Attack Power.</span></span></div>",
-      "icon": "inv_sword_07.png"
+      "icon": "inv_sword_07.png",
+      "dropsFrom": [
+        {
+          "bossId": 8,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 23032,
       "name": "Glacial Headdress",
-      "slot": "Head",
-      "type": "Cloth",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Glacial Headdress</b><span>Binds when picked up</span><div><div><span>Head</span></div><div><span>Cloth</span></div></div><span>102 Armor<br/>+20 Stamina<br/>+21 Intellect<br/>+40 Frost Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 18.</span></span></div>",
-      "icon": "inv_helmet_53.png"
+      "icon": "inv_helmet_53.png",
+      "dropsFrom": [
+        {
+          "bossId": 7,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 23020,
       "name": "Polar Helmet",
-      "slot": "Head",
-      "type": "Leather",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Polar Helmet</b><span>Binds when picked up</span><div><div><span>Head</span></div><div><span>Leather</span></div></div><span>196 Armor<br/>+18 Agility<br/>+24 Stamina<br/>+44 Frost Resistance<br/>Requires Level 60</span></div>",
-      "icon": "inv_helmet_04.png"
+      "icon": "inv_helmet_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 7,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 23023,
       "name": "Sadist's Collar",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Sadist's Collar</b><span>Binds when picked up</span><div><div><span>Neck</span></div><div></div></div><span>+24 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: +20 Attack Power.</span></span></div>",
-      "icon": "inv_jewelry_necklace_29naxxramas.png"
+      "icon": "inv_jewelry_necklace_29naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 7,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 23021,
       "name": "The Soul Harvester's Bindings",
-      "slot": "Wrist",
-      "type": "Cloth",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">The Soul Harvester's Bindings</b><span>Binds when picked up</span><div><div><span>Wrist</span></div><div><span>Cloth</span></div></div><span>55 Armor<br/>+12 Stamina<br/>+8 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 26.</span></span></div>",
-      "icon": "inv_bracer_07.png"
+      "icon": "inv_bracer_07.png",
+      "dropsFrom": [
+        {
+          "bossId": 7,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 23073,
       "name": "Boots of Displacement",
-      "slot": "Feet",
-      "type": "Leather",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Boots of Displacement</b><span>Binds when picked up</span><div><div><span>Feet</span></div><div><span>Leather</span></div></div><span>166 Armor<br/>+30 Agility<br/>+21 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your attack and casting speed by 2%.</span><br/><span class=\"q2\">Equip: Increases your effective stealth level.</span></span></div>",
-      "icon": "inv_boots_08.png"
-    },
-    {
-      "id": 22351,
-      "name": "Desecrated Robe",
-      "slot": "Token",
-      "type": null,
-      "classes": [
-        "Priest",
-        "Mage",
-        "Warlock"
+      "icon": "inv_boots_08.png",
+      "dropsFrom": [
+        {
+          "bossId": 7,
+          "chance": 20.0
+        }
       ],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Robe</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Cloth Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_clothchest.png"
-    },
-    {
-      "id": 22350,
-      "name": "Desecrated Tunic",
-      "slot": "Token",
-      "type": null,
-      "classes": [
-        "Paladin",
-        "Hunter",
-        "Shaman",
-        "Druid"
+      "slots": [
+        "Feet"
       ],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Tunic</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Druid<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Chain, Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_mailchest.png"
-    },
-    {
-      "id": 22349,
-      "name": "Desecrated Breastplate",
-      "slot": "Token",
-      "type": null,
-      "classes": [
-        "Warrior",
-        "Rogue"
-      ],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Breastplate</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Leather and Plate Wartorn scraps.\"</span></span></div>",
-      "icon": "inv_misc_desecrated_platechest.png"
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 23071,
       "name": "Leggings of Apocalypse",
-      "slot": "Legs",
-      "type": "Leather",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Leggings of Apocalypse</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Leather</span></div></div><span>211 Armor<br/>+15 Strength<br/>+31 Agility<br/>+23 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 2%.</span></span></div>",
-      "icon": "inv_pants_leather_09.png"
+      "icon": "inv_pants_leather_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 0.0
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 23025,
       "name": "Seal of the Damned",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Seal of the Damned</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+17 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 21.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
-      "icon": "inv_jewelry_ring_48naxxramas.png"
+      "icon": "inv_jewelry_ring_48naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 0.0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 23027,
       "name": "Warmth of Forgiveness",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Warmth of Forgiveness</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 33.</span><br/><span class=\"q2\">Equip: Restores 10 mana per 5 sec.</span><br/><span class=\"q2\">Use: Restores 700 mana.</span></span></div>",
-      "icon": "inv_trinket_naxxramas08.png"
+      "icon": "inv_trinket_naxxramas08.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 0.0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 22811,
       "name": "Soulstring",
-      "slot": "Ranged",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Soulstring</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Bow</span></div></div><div><div>113 - 201 Damage</div><div>Speed 2.90</div></div><span>(54.1 damage per second)<br/>+6 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: +18 Attack Power.</span></span></div>",
-      "icon": "inv_weapon_bow_13.png"
+      "icon": "inv_weapon_bow_13.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 0.0
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": []
     },
     {
       "id": 22809,
       "name": "Maul of the Redeemed Crusader",
-      "slot": "Two-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Maul of the Redeemed Crusader</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Mace</span></div></div><div><div>259 - 389 Damage</div><div>Speed 3.60</div></div><span>(90.0 damage per second)<br/>+29 Stamina<br/>+20 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your attack and casting speed by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 40.</span></span></div>",
-      "icon": "inv_mace_26.png"
+      "icon": "inv_mace_26.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 0.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 22691,
       "name": "Corrupted Ashbringer",
-      "slot": "Two-Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Corrupted Ashbringer</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Two-hand</span></div><div><span>Sword</span></div></div><div><div>259 - 389 Damage</div><div>Speed 3.60</div></div><span>(90.0 damage per second)<br/>-25 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Inflicts the will of the Ashbringer upon the wielder.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 2%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Chance on hit: Steals 185 to 215 life from target enemy.</span><br/><span class=\"q\">\"Blade of the Scarlet Highlord\"</span></span></div>",
-      "icon": "inv_sword_2h_ashbringercorrupt.png"
+      "icon": "inv_sword_2h_ashbringercorrupt.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 0.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 23050,
       "name": "Cloak of the Necropolis",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Cloak of the Necropolis</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>68 Armor<br/>+12 Stamina<br/>+11 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 26.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span></span></div>",
-      "icon": "inv_misc_cape_naxxramas_03.png"
+      "icon": "inv_misc_cape_naxxramas_03.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 10.0
+        },
+        {
+          "bossId": 13,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 23045,
       "name": "Shroud of Dominion",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Shroud of Dominion</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>68 Armor<br/>+11 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: +50 Attack Power.</span></span></div>",
-      "icon": "inv_misc_cape_naxxramas_03.png"
+      "icon": "inv_misc_cape_naxxramas_03.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 10.0
+        },
+        {
+          "bossId": 13,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 23040,
       "name": "Glyph of Deflection",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Glyph of Deflection</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 3%.</span><br/><span class=\"q2\">Equip: Increases the block value of your shield by 23.</span><br/><span class=\"q2\">Use: Increases the block value of your shield by 235 for 20 sec.</span></span></div>",
-      "icon": "inv_trinket_naxxramas05.png"
+      "icon": "inv_trinket_naxxramas05.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 10.0
+        },
+        {
+          "bossId": 13,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 23047,
       "name": "Eye of the Dead",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Eye of the Dead</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 70.</span><br/><span class=\"q2\">Use: Increases healing done by the next 5 spells by up to 450 for 30 sec.</span></span></div>",
-      "icon": "inv_trinket_naxxramas01.png"
+      "icon": "inv_trinket_naxxramas01.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 10.0
+        },
+        {
+          "bossId": 13,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 23041,
       "name": "Slayer's Crest",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Slayer's Crest</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: +64 Attack Power.</span><br/><span class=\"q2\">Use: Increases Attack Power by 260 for 20 sec.</span></span></div>",
-      "icon": "inv_trinket_naxxramas03.png"
+      "icon": "inv_trinket_naxxramas03.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 10.0
+        },
+        {
+          "bossId": 13,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 23046,
       "name": "The Restrained Essence of Sapphiron",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">The Restrained Essence of Sapphiron</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 40.</span><br/><span class=\"q2\">Use: Increases damage and healing done by magical spells and effects by up to 130 for 20 sec.</span></span></div>",
-      "icon": "inv_trinket_naxxramas06.png"
+      "icon": "inv_trinket_naxxramas06.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 10.0
+        },
+        {
+          "bossId": 13,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 23049,
       "name": "Sapphiron's Left Eye",
-      "slot": "Held In Off-hand",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Sapphiron's Left Eye</b><span>Binds when picked up</span><div><div><span>Held In Off-Hand</span></div><div></div></div><span>+12 Stamina<br/>+8 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 26.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span></span></div>",
-      "icon": "inv_offhand_naxxramas_03.png"
+      "icon": "inv_offhand_naxxramas_03.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 10.0
+        },
+        {
+          "bossId": 13,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Held In Off-hand"
+      ],
+      "types": []
     },
     {
       "id": 23048,
       "name": "Sapphiron's Right Eye",
-      "slot": "Held In Off-hand",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Sapphiron's Right Eye</b><span>Binds when picked up</span><div><div><span>Held In Off-Hand</span></div><div></div></div><span>+9 Stamina<br/>+10 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 62.</span><br/><span class=\"q2\">Equip: Restores 4 mana per 5 sec.</span></span></div>",
-      "icon": "inv_offhand_naxxramas_02.png"
+      "icon": "inv_offhand_naxxramas_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 10.0
+        },
+        {
+          "bossId": 13,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Held In Off-hand"
+      ],
+      "types": []
     },
     {
       "id": 23043,
       "name": "The Face of Death",
-      "slot": "Off Hand",
-      "type": "Shield",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">The Face of Death</b><span>Binds when picked up</span><div><div><span>Off Hand</span></div><div><span>Shield</span></div></div><span>3494 Armor<br/>66 Block<br/>+21 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 3%.</span><br/><span class=\"q2\">Equip: Increases the block value of your shield by 21.</span></span></div>",
-      "icon": "inv_shield_26.png"
+      "icon": "inv_shield_26.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 10.0
+        },
+        {
+          "bossId": 13,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
     },
     {
       "id": 23242,
       "name": "Claw of the Frost Wyrm",
-      "slot": "Off Hand",
-      "type": "Fist Weapon",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Claw of the Frost Wyrm</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Off Hand</span></div><div><span>Fist Weapon</span></div></div><div><div>75 - 140 Damage</div><div>Speed 1.50</div></div><span>(71.7 damage per second)<br/>+8 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Equip: +22 Attack Power.</span></span></div>",
-      "icon": "inv_weapon_hand_03.png"
+      "icon": "inv_weapon_hand_03.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 10.0
+        },
+        {
+          "bossId": 13,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Fist Weapon"
+      ]
     },
     {
       "id": 23549,
       "name": "Fortitude of the Scourge",
-      "slot": "Enchants",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Fortitude of the Scourge</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Use: Permanently adds to a shoulder slot item increased Stamina by 16 and also grants 100 armor. </span></span></div>",
-      "icon": "spell_shadow_antishadow.png"
+      "icon": "spell_shadow_antishadow.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 50.0
+        }
+      ],
+      "slots": [
+        "Enchants"
+      ],
+      "types": []
     },
     {
       "id": 23548,
       "name": "Might of the Scourge",
-      "slot": "Enchants",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Might of the Scourge</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Use: Permanently adds to a shoulder slot item increased Attack Power by 26 and also increases your chance to land a critical strike by 1%.</span></span></div>",
-      "icon": "spell_shadow_deathpact.png"
+      "icon": "spell_shadow_deathpact.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 50.0
+        }
+      ],
+      "slots": [
+        "Enchants"
+      ],
+      "types": []
     },
     {
       "id": 23545,
       "name": "Power of the Scourge",
-      "slot": "Enchants",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Power of the Scourge</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Use: Permanently adds to a shoulder slot item increased damage and healing done by magical spells and effects up to 15 and also increases your chance to land a critical strike with spells by 1%.</span></span></div>",
-      "icon": "spell_shadow_darkritual.png"
+      "icon": "spell_shadow_darkritual.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 50.0
+        }
+      ],
+      "slots": [
+        "Enchants"
+      ],
+      "types": []
     },
     {
       "id": 23547,
       "name": "Resilience of the Scourge",
-      "slot": "Enchants",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Resilience of the Scourge</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Use: Permanently adds to a shoulder slot item increased healing done by magical spells and effects up to 31 and also increases your mana regen by 5 mana per 5 sec.</span></span></div>",
-      "icon": "spell_shadow_deadofnight.png"
+      "icon": "spell_shadow_deadofnight.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 50.0
+        }
+      ],
+      "slots": [
+        "Enchants"
+      ],
+      "types": []
     },
     {
       "id": 23057,
       "name": "Gem of Trapped Innocents",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Gem of Trapped Innocents</b><span>Binds when picked up</span><div><div><span>Neck</span></div><div></div></div><span>+9 Stamina<br/>+7 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 15.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 2%.</span></span></div>",
-      "icon": "inv_jewelry_necklace_29naxxramas.png"
+      "icon": "inv_jewelry_necklace_29naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 9.091
+        },
+        {
+          "bossId": 14,
+          "chance": 9.091
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 23053,
       "name": "Stormrage's Talisman of Seething",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Stormrage's Talisman of Seething</b><span>Binds when picked up</span><div><div><span>Neck</span></div><div></div></div><span>+12 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 2%.</span><br/><span class=\"q2\">Equip: +26 Attack Power.</span></span></div>",
-      "icon": "inv_jewelry_necklace_28naxxramas.png"
+      "icon": "inv_jewelry_necklace_28naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 9.091
+        },
+        {
+          "bossId": 14,
+          "chance": 9.091
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 22812,
       "name": "Nerubian Slavemaker",
-      "slot": "Ranged",
-      "type": "Crossbow",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Nerubian Slavemaker</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Crossbow</span></div></div><div><div>128 - 238 Damage</div><div>Speed 3.20</div></div><span>(57.2 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +24 Attack Power.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span></span></div>",
-      "icon": "inv_weapon_crossbow_12.png"
+      "icon": "inv_weapon_crossbow_12.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 9.091
+        },
+        {
+          "bossId": 14,
+          "chance": 9.091
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Crossbow"
+      ]
     },
     {
       "id": 22821,
       "name": "Doomfinger",
-      "slot": "Ranged",
-      "type": "Wand",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Doomfinger</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Wand</span></div></div><div><div>146 - 271 Shadow Damage</div><div>Speed 1.50</div></div><span>(139.0 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 16.</span></span></div>",
-      "icon": "inv_wand_1h_stratholme_d_02.png"
+      "icon": "inv_wand_1h_stratholme_d_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 9.091
+        },
+        {
+          "bossId": 14,
+          "chance": 9.091
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Wand"
+      ]
     },
     {
       "id": 22819,
       "name": "Shield of Condemnation",
-      "slot": "Off Hand",
-      "type": "Shield",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Shield of Condemnation</b><span>Binds when picked up</span><div><div><span>Off Hand</span></div><div><span>Shield</span></div></div><span>3425 Armor<br/>68 Block<br/>+10 Stamina<br/>+10 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Restores 6 mana per 5 sec.</span><br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 59.</span></span></div>",
-      "icon": "inv_shield_28.png"
+      "icon": "inv_shield_28.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 9.091
+        },
+        {
+          "bossId": 14,
+          "chance": 9.091
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
     },
     {
       "id": 22802,
       "name": "Kingsfall",
-      "slot": "One-Hand",
-      "type": "Dagger",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Kingsfall</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Dagger</span></div></div><div><div>105 - 158 Damage</div><div>Speed 1.80</div></div><span>(73.1 damage per second)<br/>+16 Agility<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_weapon_shortblade_37.png"
+      "icon": "inv_weapon_shortblade_37.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 9.091
+        },
+        {
+          "bossId": 14,
+          "chance": 9.091
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Dagger"
+      ]
     },
     {
       "id": 23056,
       "name": "Hammer of the Twisting Nether",
-      "slot": "One-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Hammer of the Twisting Nether</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Mace</span></div></div><div><div>36 - 120 Damage</div><div>Speed 1.90</div></div><span>(41.1 damage per second)<br/>+8 Stamina<br/>+11 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 238.</span><br/><span class=\"q2\">Equip: Restores 8 mana per 5 sec.</span></span></div>",
-      "icon": "inv_mace_27.png"
+      "icon": "inv_mace_27.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 9.091
+        },
+        {
+          "bossId": 14,
+          "chance": 9.091
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 23054,
       "name": "Gressil, Dawn of Ruin",
-      "slot": "One-Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Gressil, Dawn of Ruin</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Sword</span></div></div><div><div>138 - 257 Damage</div><div>Speed 2.70</div></div><span>(73.1 damage per second)<br/>+15 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: +40 Attack Power.</span></span></div>",
-      "icon": "inv_sword_61.png"
+      "icon": "inv_sword_61.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 9.091
+        },
+        {
+          "bossId": 14,
+          "chance": 9.091
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 23577,
       "name": "The Hungering Cold",
-      "slot": "One-Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">The Hungering Cold</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Sword</span></div></div><div><div>76 - 143 Damage</div><div>Speed 1.50</div></div><span>(73.0 damage per second)<br/>140 Armor<br/>+14 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Swords +6.</span></span></div>",
-      "icon": "inv_sword_62.png"
+      "icon": "inv_sword_62.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 9.091
+        },
+        {
+          "bossId": 14,
+          "chance": 9.091
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 22798,
       "name": "Might of Menethil",
-      "slot": "Two-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Might of Menethil</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Mace</span></div></div><div><div>289 - 435 Damage</div><div>Speed 3.80</div></div><span>(95.3 damage per second)<br/>+20 Strength<br/>+46 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 2%.</span><br/><span class=\"q2\">Equip: +406 Attack Power in Cat, Bear, Dire Bear, and Moonkin forms only.</span></span></div>",
-      "icon": "inv_mace_25.png"
+      "icon": "inv_mace_25.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 9.091
+        },
+        {
+          "bossId": 14,
+          "chance": 9.091
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 22799,
       "name": "Soulseeker",
-      "slot": "Two-Hand",
-      "type": "Staff",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Soulseeker</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>142 - 265 Damage</div><div>Speed 3.20</div></div><span>(63.6 damage per second)<br/>+30 Stamina<br/>+31 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 126.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 2%.</span><br/><span class=\"q2\">Equip: Decreases the magical resistances of your spell targets by 25.</span></span></div>",
-      "icon": "inv_staff_15.png"
+      "icon": "inv_staff_15.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 9.091
+        },
+        {
+          "bossId": 14,
+          "chance": 9.091
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Staff"
+      ]
     },
     {
       "id": 22520,
       "name": "The Phylactery of Kel'Thuzad",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">The Phylactery of Kel'Thuzad</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span>This Item Begins a Quest<br/>Requires Level 60</span></div>",
-      "icon": "inv_misc_urn_01.png"
+      "icon": "inv_misc_urn_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 100.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 22733,
       "name": "Staff Head of Atiesh",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [],
       "quality": 5,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q5\">Staff Head of Atiesh</b><span>Unique</span><div><div></div><div></div></div><span>Quest Item</span></div>",
-      "icon": "inv_misc_ahnqirajtrinket_04.png"
+      "icon": "inv_misc_ahnqirajtrinket_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 100.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 23664,
       "name": "Pauldrons of Elemental Fury",
-      "slot": "Shoulder",
-      "type": "Mail",
       "classes": [
         "Shaman"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Pauldrons of Elemental Fury</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Mail</span></div></div><span>379 Armor<br/>+18 Stamina<br/>+20 Intellect<br/>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 21.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span></span></div>",
-      "icon": "inv_shoulder_01.png"
+      "icon": "inv_shoulder_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 15,
+          "chance": 0.0574
+        },
+        {
+          "bossId": 16,
+          "chance": 0.04
+        },
+        {
+          "bossId": 17,
+          "chance": 0.02
+        },
+        {
+          "bossId": 18,
+          "chance": 0.28
+        },
+        {
+          "bossId": 19,
+          "chance": 0.0863
+        },
+        {
+          "bossId": 20,
+          "chance": 0.15
+        },
+        {
+          "bossId": 21,
+          "chance": 0.0718
+        },
+        {
+          "bossId": 22,
+          "chance": 0.1972
+        },
+        {
+          "bossId": 23,
+          "chance": 0.1591
+        },
+        {
+          "bossId": 24,
+          "chance": 0.05
+        },
+        {
+          "bossId": 25,
+          "chance": 0.06
+        },
+        {
+          "bossId": 26,
+          "chance": 0.05
+        },
+        {
+          "bossId": 27,
+          "chance": 0.092
+        },
+        {
+          "bossId": 28,
+          "chance": 0.8584
+        },
+        {
+          "bossId": 29,
+          "chance": 0.4926
+        },
+        {
+          "bossId": 30,
+          "chance": 0.1
+        },
+        {
+          "bossId": 31,
+          "chance": 0.13
+        },
+        {
+          "bossId": 32,
+          "chance": 0.18
+        },
+        {
+          "bossId": 33,
+          "chance": 0.08
+        },
+        {
+          "bossId": 34,
+          "chance": 0.11
+        },
+        {
+          "bossId": 35,
+          "chance": 0.05
+        },
+        {
+          "bossId": 36,
+          "chance": 0.1859
+        },
+        {
+          "bossId": 37,
+          "chance": 0.308
+        },
+        {
+          "bossId": 38,
+          "chance": 0.21
+        },
+        {
+          "bossId": 39,
+          "chance": 0.03
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 23667,
       "name": "Spaulders of the Grand Crusader",
-      "slot": "Shoulder",
-      "type": "Plate",
       "classes": [
         "Paladin"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Spaulders of the Grand Crusader</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Plate</span></div></div><span>674 Armor<br/>+16 Strength<br/>+16 Stamina<br/>+17 Intellect<br/>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Equip: Restores 4 mana per 5 sec.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 18.</span></span></div>",
-      "icon": "inv_shoulder_22.png"
+      "icon": "inv_shoulder_22.png",
+      "dropsFrom": [
+        {
+          "bossId": 30,
+          "chance": 0.1
+        },
+        {
+          "bossId": 15,
+          "chance": 0.0574
+        },
+        {
+          "bossId": 31,
+          "chance": 0.13
+        },
+        {
+          "bossId": 32,
+          "chance": 0.18
+        },
+        {
+          "bossId": 33,
+          "chance": 0.08
+        },
+        {
+          "bossId": 16,
+          "chance": 0.3028
+        },
+        {
+          "bossId": 17,
+          "chance": 0.08
+        },
+        {
+          "bossId": 19,
+          "chance": 0.1726
+        },
+        {
+          "bossId": 21,
+          "chance": 0.0718
+        },
+        {
+          "bossId": 23,
+          "chance": 0.03
+        },
+        {
+          "bossId": 34,
+          "chance": 0.11
+        },
+        {
+          "bossId": 35,
+          "chance": 0.05
+        },
+        {
+          "bossId": 25,
+          "chance": 0.2924
+        },
+        {
+          "bossId": 36,
+          "chance": 0.1859
+        },
+        {
+          "bossId": 37,
+          "chance": 0.308
+        },
+        {
+          "bossId": 38,
+          "chance": 0.21
+        },
+        {
+          "bossId": 39,
+          "chance": 0.03
+        },
+        {
+          "bossId": 26,
+          "chance": 0.71
+        },
+        {
+          "bossId": 27,
+          "chance": 0.092
+        },
+        {
+          "bossId": 28,
+          "chance": 0.09
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 23069,
       "name": "Necro-Knight's Garb",
-      "slot": "Chest",
-      "type": "Cloth",
       "classes": [
         "Priest",
         "Mage",
@@ -1300,275 +2714,2622 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Necro-Knight's Garb</b><span>Binds when picked up</span><div><div><span>Chest</span></div><div><span>Cloth</span></div></div><span>422 Armor<br/>+30 Stamina<br/>Classes: Priest, Mage, Warlock<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 34.</span></span></div>",
-      "icon": "inv_chest_cloth_46.png"
+      "icon": "inv_chest_cloth_46.png",
+      "dropsFrom": [
+        {
+          "bossId": 30,
+          "chance": 0.3
+        },
+        {
+          "bossId": 15,
+          "chance": 0.28
+        },
+        {
+          "bossId": 31,
+          "chance": 0.07
+        },
+        {
+          "bossId": 32,
+          "chance": 1.33
+        },
+        {
+          "bossId": 33,
+          "chance": 0.5
+        },
+        {
+          "bossId": 16,
+          "chance": 0.61
+        },
+        {
+          "bossId": 17,
+          "chance": 0.36
+        },
+        {
+          "bossId": 18,
+          "chance": 0.28
+        },
+        {
+          "bossId": 19,
+          "chance": 0.49
+        },
+        {
+          "bossId": 20,
+          "chance": 0.15
+        },
+        {
+          "bossId": 21,
+          "chance": 0.35
+        },
+        {
+          "bossId": 22,
+          "chance": 0.12
+        },
+        {
+          "bossId": 40,
+          "chance": 1.23
+        },
+        {
+          "bossId": 23,
+          "chance": 0.11
+        },
+        {
+          "bossId": 34,
+          "chance": 0.49
+        },
+        {
+          "bossId": 35,
+          "chance": 0.47
+        },
+        {
+          "bossId": 24,
+          "chance": 0.67
+        },
+        {
+          "bossId": 25,
+          "chance": 0.35
+        },
+        {
+          "bossId": 36,
+          "chance": 0.23
+        },
+        {
+          "bossId": 37,
+          "chance": 0.15
+        },
+        {
+          "bossId": 41,
+          "chance": 0.45
+        },
+        {
+          "bossId": 42,
+          "chance": 0.35
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 38,
+          "chance": 0.78
+        },
+        {
+          "bossId": 39,
+          "chance": 0.56
+        },
+        {
+          "bossId": 26,
+          "chance": 0.54
+        },
+        {
+          "bossId": 46,
+          "chance": 0.68
+        },
+        {
+          "bossId": 27,
+          "chance": 0.44
+        },
+        {
+          "bossId": 47,
+          "chance": 1.38
+        },
+        {
+          "bossId": 28,
+          "chance": 0.18
+        },
+        {
+          "bossId": 48,
+          "chance": 7.46
+        },
+        {
+          "bossId": 29,
+          "chance": 0.38
+        }
+      ],
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 23226,
       "name": "Ghoul Skin Tunic",
-      "slot": "Chest",
-      "type": "Leather",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ghoul Skin Tunic</b><span>Binds when picked up</span><div><div><span>Chest</span></div><div><span>Leather</span></div></div><span>369 Armor<br/>+34 Strength<br/>+22 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 2%.</span></span></div>",
-      "icon": "inv_chest_leather_02.png"
+      "icon": "inv_chest_leather_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 30,
+          "chance": 0.32
+        },
+        {
+          "bossId": 15,
+          "chance": 0.25
+        },
+        {
+          "bossId": 31,
+          "chance": 0.24
+        },
+        {
+          "bossId": 32,
+          "chance": 0.18
+        },
+        {
+          "bossId": 33,
+          "chance": 0.35
+        },
+        {
+          "bossId": 16,
+          "chance": 0.69
+        },
+        {
+          "bossId": 17,
+          "chance": 0.65
+        },
+        {
+          "bossId": 18,
+          "chance": 0.83
+        },
+        {
+          "bossId": 19,
+          "chance": 0.22
+        },
+        {
+          "bossId": 20,
+          "chance": 0.54
+        },
+        {
+          "bossId": 21,
+          "chance": 1.33
+        },
+        {
+          "bossId": 40,
+          "chance": 0.07
+        },
+        {
+          "bossId": 23,
+          "chance": 0.42
+        },
+        {
+          "bossId": 34,
+          "chance": 0.38
+        },
+        {
+          "bossId": 47,
+          "chance": 2.07
+        },
+        {
+          "bossId": 35,
+          "chance": 0.19
+        },
+        {
+          "bossId": 24,
+          "chance": 0.21
+        },
+        {
+          "bossId": 25,
+          "chance": 0.35
+        },
+        {
+          "bossId": 36,
+          "chance": 0.64
+        },
+        {
+          "bossId": 37,
+          "chance": 0.12
+        },
+        {
+          "bossId": 41,
+          "chance": 1.81
+        },
+        {
+          "bossId": 38,
+          "chance": 0.35
+        },
+        {
+          "bossId": 39,
+          "chance": 0.14
+        },
+        {
+          "bossId": 26,
+          "chance": 0.48
+        },
+        {
+          "bossId": 46,
+          "chance": 0.68
+        },
+        {
+          "bossId": 49,
+          "chance": 0.24
+        },
+        {
+          "bossId": 27,
+          "chance": 0.16
+        },
+        {
+          "bossId": 22,
+          "chance": 0.23
+        },
+        {
+          "bossId": 28,
+          "chance": 0.27
+        },
+        {
+          "bossId": 48,
+          "chance": 0.32
+        }
+      ],
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 23663,
       "name": "Girdle of Elemental Fury",
-      "slot": "Waist",
-      "type": "Mail",
       "classes": [
         "Shaman"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Girdle of Elemental Fury</b><span>Binds when picked up</span><div><div><span>Waist</span></div><div><span>Mail</span></div></div><span>285 Armor<br/>+19 Stamina<br/>+20 Intellect<br/>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 26.</span><br/><span class=\"q2\">Equip: Restores 5 mana per 5 sec.</span></span></div>",
-      "icon": "inv_belt_32.png"
+      "icon": "inv_belt_32.png",
+      "dropsFrom": [
+        {
+          "bossId": 33,
+          "chance": 0.1257
+        },
+        {
+          "bossId": 17,
+          "chance": 0.33
+        },
+        {
+          "bossId": 18,
+          "chance": 0.1321
+        },
+        {
+          "bossId": 19,
+          "chance": 0.04
+        },
+        {
+          "bossId": 40,
+          "chance": 0.14
+        },
+        {
+          "bossId": 23,
+          "chance": 0.06
+        },
+        {
+          "bossId": 35,
+          "chance": 0.1316
+        },
+        {
+          "bossId": 37,
+          "chance": 0.05
+        },
+        {
+          "bossId": 26,
+          "chance": 0.03
+        },
+        {
+          "bossId": 27,
+          "chance": 0.092
+        },
+        {
+          "bossId": 48,
+          "chance": 0.1802
+        },
+        {
+          "bossId": 30,
+          "chance": 0.03
+        },
+        {
+          "bossId": 15,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.2375
+        },
+        {
+          "bossId": 32,
+          "chance": 0.45
+        },
+        {
+          "bossId": 16,
+          "chance": 0.05
+        },
+        {
+          "bossId": 21,
+          "chance": 0.0718
+        },
+        {
+          "bossId": 22,
+          "chance": 0.23
+        },
+        {
+          "bossId": 24,
+          "chance": 0.79
+        },
+        {
+          "bossId": 25,
+          "chance": 0.2924
+        },
+        {
+          "bossId": 42,
+          "chance": 0.9091
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 38,
+          "chance": 0.31
+        },
+        {
+          "bossId": 39,
+          "chance": 0.1284
+        },
+        {
+          "bossId": 50,
+          "chance": 0.56
+        },
+        {
+          "bossId": 29,
+          "chance": 0.13
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 23666,
       "name": "Belt of the Grand Crusader",
-      "slot": "Waist",
-      "type": "Plate",
       "classes": [
         "Paladin"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Belt of the Grand Crusader</b><span>Binds when picked up</span><div><div><span>Waist</span></div><div><span>Plate</span></div></div><span>506 Armor<br/>+17 Strength<br/>+17 Stamina<br/>+17 Intellect<br/>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 18.</span><br/><span class=\"q2\">Equip: Restores 7 mana per 5 sec.</span></span></div>",
-      "icon": "inv_belt_27.png"
+      "icon": "inv_belt_27.png",
+      "dropsFrom": [
+        {
+          "bossId": 48,
+          "chance": 0.1802
+        },
+        {
+          "bossId": 30,
+          "chance": 0.03
+        },
+        {
+          "bossId": 15,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.2375
+        },
+        {
+          "bossId": 32,
+          "chance": 0.45
+        },
+        {
+          "bossId": 33,
+          "chance": 0.2514
+        },
+        {
+          "bossId": 16,
+          "chance": 0.05
+        },
+        {
+          "bossId": 17,
+          "chance": 0.02
+        },
+        {
+          "bossId": 18,
+          "chance": 0.14
+        },
+        {
+          "bossId": 19,
+          "chance": 0.18
+        },
+        {
+          "bossId": 21,
+          "chance": 0.0718
+        },
+        {
+          "bossId": 22,
+          "chance": 0.23
+        },
+        {
+          "bossId": 23,
+          "chance": 0.2387
+        },
+        {
+          "bossId": 35,
+          "chance": 0.05
+        },
+        {
+          "bossId": 24,
+          "chance": 0.79
+        },
+        {
+          "bossId": 25,
+          "chance": 0.2924
+        },
+        {
+          "bossId": 37,
+          "chance": 0.02
+        },
+        {
+          "bossId": 42,
+          "chance": 0.9091
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 38,
+          "chance": 0.31
+        },
+        {
+          "bossId": 39,
+          "chance": 0.1284
+        },
+        {
+          "bossId": 26,
+          "chance": 0.0651
+        },
+        {
+          "bossId": 27,
+          "chance": 0.276
+        },
+        {
+          "bossId": 50,
+          "chance": 0.56
+        },
+        {
+          "bossId": 29,
+          "chance": 0.13
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 23665,
       "name": "Leggings of Elemental Fury",
-      "slot": "Legs",
-      "type": "Mail",
       "classes": [
         "Shaman"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Leggings of Elemental Fury</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Mail</span></div></div><span>379 Armor<br/>+25 Stamina<br/>+24 Intellect<br/>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 29.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 2%.</span></span></div>",
-      "icon": "inv_pants_mail_14.png"
+      "icon": "inv_pants_mail_14.png",
+      "dropsFrom": [
+        {
+          "bossId": 30,
+          "chance": 0.0886
+        },
+        {
+          "bossId": 15,
+          "chance": 0.0574
+        },
+        {
+          "bossId": 32,
+          "chance": 0.4808
+        },
+        {
+          "bossId": 33,
+          "chance": 0.0629
+        },
+        {
+          "bossId": 16,
+          "chance": 0.1817
+        },
+        {
+          "bossId": 17,
+          "chance": 0.06
+        },
+        {
+          "bossId": 18,
+          "chance": 0.03
+        },
+        {
+          "bossId": 21,
+          "chance": 0.03
+        },
+        {
+          "bossId": 40,
+          "chance": 0.11
+        },
+        {
+          "bossId": 23,
+          "chance": 0.0796
+        },
+        {
+          "bossId": 34,
+          "chance": 0.2751
+        },
+        {
+          "bossId": 35,
+          "chance": 0.23
+        },
+        {
+          "bossId": 25,
+          "chance": 2.21
+        },
+        {
+          "bossId": 36,
+          "chance": 0.05
+        },
+        {
+          "bossId": 37,
+          "chance": 0.02
+        },
+        {
+          "bossId": 39,
+          "chance": 0.3851
+        },
+        {
+          "bossId": 51,
+          "chance": 0.31
+        },
+        {
+          "bossId": 29,
+          "chance": 0.13
+        },
+        {
+          "bossId": 31,
+          "chance": 0.4751
+        },
+        {
+          "bossId": 19,
+          "chance": 1.88
+        },
+        {
+          "bossId": 42,
+          "chance": 0.39
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 38,
+          "chance": 0.09
+        },
+        {
+          "bossId": 26,
+          "chance": 0.1302
+        },
+        {
+          "bossId": 49,
+          "chance": 0.7246
+        },
+        {
+          "bossId": 41,
+          "chance": 0.32
+        },
+        {
+          "bossId": 22,
+          "chance": 0.12
+        },
+        {
+          "bossId": 28,
+          "chance": 0.09
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 23668,
       "name": "Leggings of the Grand Crusader",
-      "slot": "Legs",
-      "type": "Plate",
       "classes": [
         "Paladin"
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Leggings of the Grand Crusader</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Plate</span></div></div><span>787 Armor<br/>+20 Strength<br/>+20 Stamina<br/>+21 Intellect<br/>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 23.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 2%.</span></span></div>",
-      "icon": "inv_pants_04.png"
+      "icon": "inv_pants_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 31,
+          "chance": 0.4751
+        },
+        {
+          "bossId": 16,
+          "chance": 0.26
+        },
+        {
+          "bossId": 17,
+          "chance": 0.16
+        },
+        {
+          "bossId": 18,
+          "chance": 0.1321
+        },
+        {
+          "bossId": 19,
+          "chance": 1.88
+        },
+        {
+          "bossId": 21,
+          "chance": 0.03
+        },
+        {
+          "bossId": 40,
+          "chance": 0.11
+        },
+        {
+          "bossId": 23,
+          "chance": 0.0796
+        },
+        {
+          "bossId": 35,
+          "chance": 0.1316
+        },
+        {
+          "bossId": 25,
+          "chance": 0.2924
+        },
+        {
+          "bossId": 36,
+          "chance": 0.05
+        },
+        {
+          "bossId": 37,
+          "chance": 0.2053
+        },
+        {
+          "bossId": 42,
+          "chance": 0.39
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 38,
+          "chance": 0.09
+        },
+        {
+          "bossId": 26,
+          "chance": 0.1302
+        },
+        {
+          "bossId": 49,
+          "chance": 0.7246
+        },
+        {
+          "bossId": 41,
+          "chance": 0.32
+        },
+        {
+          "bossId": 22,
+          "chance": 0.12
+        },
+        {
+          "bossId": 15,
+          "chance": 0.0574
+        },
+        {
+          "bossId": 30,
+          "chance": 0.32
+        },
+        {
+          "bossId": 33,
+          "chance": 0.2
+        },
+        {
+          "bossId": 28,
+          "chance": 0.09
+        },
+        {
+          "bossId": 51,
+          "chance": 0.31
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 23237,
       "name": "Ring of the Eternal Flame",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ring of the Eternal Flame</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+10 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage done by Fire spells and effects by up to 29.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
-      "icon": "inv_jewelry_ring_48naxxramas.png"
+      "icon": "inv_jewelry_ring_48naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 30,
+          "chance": 0.0886
+        },
+        {
+          "bossId": 15,
+          "chance": 0.2872
+        },
+        {
+          "bossId": 31,
+          "chance": 0.4751
+        },
+        {
+          "bossId": 32,
+          "chance": 0.36
+        },
+        {
+          "bossId": 33,
+          "chance": 0.1257
+        },
+        {
+          "bossId": 16,
+          "chance": 0.848
+        },
+        {
+          "bossId": 17,
+          "chance": 0.0876
+        },
+        {
+          "bossId": 18,
+          "chance": 0.2642
+        },
+        {
+          "bossId": 19,
+          "chance": 0.0863
+        },
+        {
+          "bossId": 20,
+          "chance": 0.23
+        },
+        {
+          "bossId": 21,
+          "chance": 0.0718
+        },
+        {
+          "bossId": 22,
+          "chance": 0.5917
+        },
+        {
+          "bossId": 40,
+          "chance": 1.672
+        },
+        {
+          "bossId": 23,
+          "chance": 0.7955
+        },
+        {
+          "bossId": 34,
+          "chance": 0.2751
+        },
+        {
+          "bossId": 35,
+          "chance": 0.3947
+        },
+        {
+          "bossId": 24,
+          "chance": 0.39
+        },
+        {
+          "bossId": 25,
+          "chance": 0.23
+        },
+        {
+          "bossId": 36,
+          "chance": 0.48
+        },
+        {
+          "bossId": 37,
+          "chance": 0.2053
+        },
+        {
+          "bossId": 41,
+          "chance": 0.5348
+        },
+        {
+          "bossId": 42,
+          "chance": 2.727
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 38,
+          "chance": 0.7036
+        },
+        {
+          "bossId": 39,
+          "chance": 0.5135
+        },
+        {
+          "bossId": 26,
+          "chance": 0.3906
+        },
+        {
+          "bossId": 49,
+          "chance": 0.72
+        },
+        {
+          "bossId": 27,
+          "chance": 0.092
+        },
+        {
+          "bossId": 28,
+          "chance": 1.288
+        },
+        {
+          "bossId": 52,
+          "chance": 2.703
+        },
+        {
+          "bossId": 48,
+          "chance": 0.1802
+        },
+        {
+          "bossId": 29,
+          "chance": 0.9852
+        },
+        {
+          "bossId": 53,
+          "chance": 0.93
+        },
+        {
+          "bossId": 51,
+          "chance": 1.54
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 23238,
       "name": "Stygian Buckler",
-      "slot": "Off Hand",
-      "type": "Shield",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Stygian Buckler</b><span>Binds when picked up</span><div><div><span>Off Hand</span></div><div><span>Shield</span></div></div><span>2929 Armor<br/>55 Block<br/>Requires Level 60<br/><span class=\"q2\">Equip: When struck has a 15% chance of reducing the attacker's movement speed by 50% for 5 secs.</span></span></div>",
-      "icon": "inv_armor_shield_naxxramas_d_02.png"
+      "icon": "inv_armor_shield_naxxramas_d_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 30,
+          "chance": 0.33
+        },
+        {
+          "bossId": 15,
+          "chance": 0.44
+        },
+        {
+          "bossId": 31,
+          "chance": 0.07
+        },
+        {
+          "bossId": 33,
+          "chance": 1.36
+        },
+        {
+          "bossId": 16,
+          "chance": 0.5
+        },
+        {
+          "bossId": 17,
+          "chance": 0.34
+        },
+        {
+          "bossId": 18,
+          "chance": 0.3
+        },
+        {
+          "bossId": 19,
+          "chance": 0.33
+        },
+        {
+          "bossId": 20,
+          "chance": 0.69
+        },
+        {
+          "bossId": 21,
+          "chance": 0.33
+        },
+        {
+          "bossId": 22,
+          "chance": 0.87
+        },
+        {
+          "bossId": 40,
+          "chance": 0.5
+        },
+        {
+          "bossId": 23,
+          "chance": 0.85
+        },
+        {
+          "bossId": 34,
+          "chance": 1.03
+        },
+        {
+          "bossId": 47,
+          "chance": 0.34
+        },
+        {
+          "bossId": 35,
+          "chance": 0.38
+        },
+        {
+          "bossId": 24,
+          "chance": 0.1
+        },
+        {
+          "bossId": 25,
+          "chance": 0.58
+        },
+        {
+          "bossId": 36,
+          "chance": 0.43
+        },
+        {
+          "bossId": 37,
+          "chance": 0.08
+        },
+        {
+          "bossId": 41,
+          "chance": 0.32
+        },
+        {
+          "bossId": 42,
+          "chance": 0.35
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 38,
+          "chance": 0.18
+        },
+        {
+          "bossId": 39,
+          "chance": 0.17
+        },
+        {
+          "bossId": 26,
+          "chance": 0.71
+        },
+        {
+          "bossId": 49,
+          "chance": 0.24
+        },
+        {
+          "bossId": 27,
+          "chance": 0.19
+        },
+        {
+          "bossId": 46,
+          "chance": 1.01
+        },
+        {
+          "bossId": 28,
+          "chance": 0.09
+        },
+        {
+          "bossId": 51,
+          "chance": 0.62
+        },
+        {
+          "bossId": 54,
+          "chance": 0.27
+        },
+        {
+          "bossId": 29,
+          "chance": 0.38
+        },
+        {
+          "bossId": 48,
+          "chance": 0.2
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
     },
     {
       "id": 23044,
       "name": "Harbinger of Doom",
-      "slot": "One-Hand",
-      "type": "Dagger",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Harbinger of Doom</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Dagger</span></div></div><div><div>66 - 124 Damage</div><div>Speed 1.60</div></div><span>(59.4 damage per second)<br/>+8 Agility<br/>+8 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_knife_1h_stratholme_d_03.png"
+      "icon": "inv_knife_1h_stratholme_d_03.png",
+      "dropsFrom": [
+        {
+          "bossId": 30,
+          "chance": 0.16
+        },
+        {
+          "bossId": 15,
+          "chance": 0.15
+        },
+        {
+          "bossId": 31,
+          "chance": 0.13
+        },
+        {
+          "bossId": 33,
+          "chance": 1.36
+        },
+        {
+          "bossId": 16,
+          "chance": 0.35
+        },
+        {
+          "bossId": 17,
+          "chance": 0.49
+        },
+        {
+          "bossId": 18,
+          "chance": 0.28
+        },
+        {
+          "bossId": 19,
+          "chance": 0.24
+        },
+        {
+          "bossId": 20,
+          "chance": 0.15
+        },
+        {
+          "bossId": 21,
+          "chance": 0.15
+        },
+        {
+          "bossId": 22,
+          "chance": 0.41
+        },
+        {
+          "bossId": 40,
+          "chance": 0.31
+        },
+        {
+          "bossId": 23,
+          "chance": 0.42
+        },
+        {
+          "bossId": 34,
+          "chance": 0.21
+        },
+        {
+          "bossId": 55,
+          "chance": 1.47
+        },
+        {
+          "bossId": 35,
+          "chance": 0.58
+        },
+        {
+          "bossId": 24,
+          "chance": 1.97
+        },
+        {
+          "bossId": 25,
+          "chance": 0.06
+        },
+        {
+          "bossId": 36,
+          "chance": 0.2
+        },
+        {
+          "bossId": 37,
+          "chance": 0.91
+        },
+        {
+          "bossId": 41,
+          "chance": 0.21
+        },
+        {
+          "bossId": 42,
+          "chance": 0.07
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 38,
+          "chance": 0.62
+        },
+        {
+          "bossId": 39,
+          "chance": 0.17
+        },
+        {
+          "bossId": 26,
+          "chance": 0.34
+        },
+        {
+          "bossId": 49,
+          "chance": 0.48
+        },
+        {
+          "bossId": 27,
+          "chance": 0.21
+        },
+        {
+          "bossId": 52,
+          "chance": 1.1
+        },
+        {
+          "bossId": 28,
+          "chance": 0.45
+        },
+        {
+          "bossId": 48,
+          "chance": 0.24
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Dagger"
+      ]
     },
     {
       "id": 23221,
       "name": "Misplaced Servo Arm",
-      "slot": "One-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Misplaced Servo Arm</b><span>Binds when picked up</span><div><div><span>One-hand</span></div><div><span>Mace</span></div></div><div><div>112 - 221 Damage</div><div>Speed 2.80</div></div><span>(59.5 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Chance to discharge electricity causing 100 to 150 Nature damage to your target.</span></span></div>",
-      "icon": "inv_mace_28.png"
+      "icon": "inv_mace_28.png",
+      "dropsFrom": [
+        {
+          "bossId": 30,
+          "chance": 0.48
+        },
+        {
+          "bossId": 15,
+          "chance": 0.25
+        },
+        {
+          "bossId": 31,
+          "chance": 0.03
+        },
+        {
+          "bossId": 33,
+          "chance": 0.28
+        },
+        {
+          "bossId": 16,
+          "chance": 0.69
+        },
+        {
+          "bossId": 17,
+          "chance": 0.49
+        },
+        {
+          "bossId": 18,
+          "chance": 0.14
+        },
+        {
+          "bossId": 19,
+          "chance": 0.22
+        },
+        {
+          "bossId": 20,
+          "chance": 2.2
+        },
+        {
+          "bossId": 21,
+          "chance": 0.31
+        },
+        {
+          "bossId": 40,
+          "chance": 1.84
+        },
+        {
+          "bossId": 23,
+          "chance": 0.11
+        },
+        {
+          "bossId": 34,
+          "chance": 0.33
+        },
+        {
+          "bossId": 35,
+          "chance": 0.19
+        },
+        {
+          "bossId": 24,
+          "chance": 0.1
+        },
+        {
+          "bossId": 25,
+          "chance": 0.37
+        },
+        {
+          "bossId": 36,
+          "chance": 0.64
+        },
+        {
+          "bossId": 37,
+          "chance": 0.19
+        },
+        {
+          "bossId": 41,
+          "chance": 0.11
+        },
+        {
+          "bossId": 42,
+          "chance": 0.13
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 38,
+          "chance": 0.47
+        },
+        {
+          "bossId": 39,
+          "chance": 0.2
+        },
+        {
+          "bossId": 26,
+          "chance": 0.41
+        },
+        {
+          "bossId": 27,
+          "chance": 0.15
+        },
+        {
+          "bossId": 22,
+          "chance": 0.7
+        },
+        {
+          "bossId": 28,
+          "chance": 3.23
+        },
+        {
+          "bossId": 52,
+          "chance": 2.94
+        },
+        {
+          "bossId": 29,
+          "chance": 0.25
+        },
+        {
+          "bossId": 53,
+          "chance": 1.23
+        },
+        {
+          "bossId": 48,
+          "chance": 0.16
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 22376,
       "name": "Wartorn Cloth Scrap",
-      "slot": "Materials",
-      "type": "Cloth",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Wartorn Cloth Scrap</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cff98b0e094|r|cff98b0e0s|r |cffc8602c98|r|cffc8602cc|r</span></div>",
-      "icon": "inv_misc_wartornscrap_cloth.png"
+      "icon": "inv_misc_wartornscrap_cloth.png",
+      "dropsFrom": [
+        {
+          "bossId": 30,
+          "chance": 16.39
+        },
+        {
+          "bossId": 33,
+          "chance": 18.16
+        },
+        {
+          "bossId": 16,
+          "chance": 17.93
+        },
+        {
+          "bossId": 17,
+          "chance": 26.53
+        },
+        {
+          "bossId": 18,
+          "chance": 28.53
+        },
+        {
+          "bossId": 19,
+          "chance": 28.3
+        },
+        {
+          "bossId": 22,
+          "chance": 25.84
+        },
+        {
+          "bossId": 40,
+          "chance": 21.07
+        },
+        {
+          "bossId": 23,
+          "chance": 10.98
+        },
+        {
+          "bossId": 34,
+          "chance": 12.38
+        },
+        {
+          "bossId": 50,
+          "chance": 17.42
+        },
+        {
+          "bossId": 55,
+          "chance": 8.82
+        },
+        {
+          "bossId": 35,
+          "chance": 12.37
+        },
+        {
+          "bossId": 36,
+          "chance": 12.08
+        },
+        {
+          "bossId": 37,
+          "chance": 35.01
+        },
+        {
+          "bossId": 41,
+          "chance": 12.3
+        },
+        {
+          "bossId": 42,
+          "chance": 20.45
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 38,
+          "chance": 30.34
+        },
+        {
+          "bossId": 26,
+          "chance": 21.88
+        },
+        {
+          "bossId": 46,
+          "chance": 21.5
+        },
+        {
+          "bossId": 27,
+          "chance": 15.46
+        },
+        {
+          "bossId": 28,
+          "chance": 12.45
+        },
+        {
+          "bossId": 32,
+          "chance": 11.06
+        },
+        {
+          "bossId": 31,
+          "chance": 13.3
+        },
+        {
+          "bossId": 39,
+          "chance": 19.77
+        },
+        {
+          "bossId": 47,
+          "chance": 13.68
+        },
+        {
+          "bossId": 15,
+          "chance": 15.34
+        },
+        {
+          "bossId": 21,
+          "chance": 24.14
+        },
+        {
+          "bossId": 24,
+          "chance": 11.56
+        },
+        {
+          "bossId": 20,
+          "chance": 27.18
+        },
+        {
+          "bossId": 49,
+          "chance": 14.49
+        },
+        {
+          "bossId": 25,
+          "chance": 14.49
+        },
+        {
+          "bossId": 53,
+          "chance": 21.28
+        },
+        {
+          "bossId": 52,
+          "chance": 13.51
+        },
+        {
+          "bossId": 54,
+          "chance": 5.97
+        },
+        {
+          "bossId": 51,
+          "chance": 13.56
+        },
+        {
+          "bossId": 48,
+          "chance": 17.84
+        },
+        {
+          "bossId": 29,
+          "chance": 11.82
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 22373,
       "name": "Wartorn Leather Scrap",
-      "slot": "Materials",
-      "type": "Leather",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Wartorn Leather Scrap</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cff98b0e09|r|cff98b0e0s|r |cffc8602c98|r|cffc8602cc|r</span></div>",
-      "icon": "inv_misc_wartornscrap_leather.png"
+      "icon": "inv_misc_wartornscrap_leather.png",
+      "dropsFrom": [
+        {
+          "bossId": 15,
+          "chance": 12.64
+        },
+        {
+          "bossId": 31,
+          "chance": 12.59
+        },
+        {
+          "bossId": 32,
+          "chance": 14.9
+        },
+        {
+          "bossId": 33,
+          "chance": 14.9
+        },
+        {
+          "bossId": 16,
+          "chance": 14.96
+        },
+        {
+          "bossId": 17,
+          "chance": 19.44
+        },
+        {
+          "bossId": 20,
+          "chance": 16.03
+        },
+        {
+          "bossId": 21,
+          "chance": 18.97
+        },
+        {
+          "bossId": 22,
+          "chance": 21.3
+        },
+        {
+          "bossId": 40,
+          "chance": 26.09
+        },
+        {
+          "bossId": 50,
+          "chance": 8.77
+        },
+        {
+          "bossId": 55,
+          "chance": 10.29
+        },
+        {
+          "bossId": 47,
+          "chance": 13.68
+        },
+        {
+          "bossId": 24,
+          "chance": 9.14
+        },
+        {
+          "bossId": 25,
+          "chance": 12.28
+        },
+        {
+          "bossId": 41,
+          "chance": 6.417
+        },
+        {
+          "bossId": 39,
+          "chance": 16.82
+        },
+        {
+          "bossId": 46,
+          "chance": 23.36
+        },
+        {
+          "bossId": 49,
+          "chance": 26.09
+        },
+        {
+          "bossId": 27,
+          "chance": 10.58
+        },
+        {
+          "bossId": 37,
+          "chance": 24.13
+        },
+        {
+          "bossId": 26,
+          "chance": 15.17
+        },
+        {
+          "bossId": 36,
+          "chance": 9.851
+        },
+        {
+          "bossId": 38,
+          "chance": 24.54
+        },
+        {
+          "bossId": 35,
+          "chance": 9.605
+        },
+        {
+          "bossId": 19,
+          "chance": 17.69
+        },
+        {
+          "bossId": 18,
+          "chance": 15.32
+        },
+        {
+          "bossId": 30,
+          "chance": 13.64
+        },
+        {
+          "bossId": 42,
+          "chance": 19.09
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 34,
+          "chance": 7.428
+        },
+        {
+          "bossId": 23,
+          "chance": 7.955
+        },
+        {
+          "bossId": 28,
+          "chance": 18.45
+        },
+        {
+          "bossId": 52,
+          "chance": 5.405
+        },
+        {
+          "bossId": 54,
+          "chance": 1.492
+        },
+        {
+          "bossId": 29,
+          "chance": 13.3
+        },
+        {
+          "bossId": 53,
+          "chance": 4.255
+        },
+        {
+          "bossId": 48,
+          "chance": 15.32
+        },
+        {
+          "bossId": 51,
+          "chance": 13.56
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 22374,
       "name": "Wartorn Chain Scrap",
-      "slot": "Materials",
-      "type": "Mail",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Wartorn Chain Scrap</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cff98b0e018|r|cff98b0e0s|r |cffc8602c88|r|cffc8602cc|r</span></div>",
-      "icon": "inv_misc_wartornscrap_chain.png"
+      "icon": "inv_misc_wartornscrap_chain.png",
+      "dropsFrom": [
+        {
+          "bossId": 15,
+          "chance": 12.98
+        },
+        {
+          "bossId": 31,
+          "chance": 13.78
+        },
+        {
+          "bossId": 32,
+          "chance": 6.731
+        },
+        {
+          "bossId": 33,
+          "chance": 16.09
+        },
+        {
+          "bossId": 16,
+          "chance": 15.75
+        },
+        {
+          "bossId": 17,
+          "chance": 22.94
+        },
+        {
+          "bossId": 19,
+          "chance": 18.98
+        },
+        {
+          "bossId": 20,
+          "chance": 25.09
+        },
+        {
+          "bossId": 21,
+          "chance": 21.84
+        },
+        {
+          "bossId": 22,
+          "chance": 24.06
+        },
+        {
+          "bossId": 23,
+          "chance": 8.115
+        },
+        {
+          "bossId": 34,
+          "chance": 9.078
+        },
+        {
+          "bossId": 50,
+          "chance": 15.74
+        },
+        {
+          "bossId": 47,
+          "chance": 12.42
+        },
+        {
+          "bossId": 35,
+          "chance": 8.947
+        },
+        {
+          "bossId": 24,
+          "chance": 9.677
+        },
+        {
+          "bossId": 41,
+          "chance": 8.021
+        },
+        {
+          "bossId": 42,
+          "chance": 23.64
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 39,
+          "chance": 20.28
+        },
+        {
+          "bossId": 46,
+          "chance": 24.3
+        },
+        {
+          "bossId": 49,
+          "chance": 21.74
+        },
+        {
+          "bossId": 27,
+          "chance": 14.35
+        },
+        {
+          "bossId": 40,
+          "chance": 20.74
+        },
+        {
+          "bossId": 25,
+          "chance": 21.74
+        },
+        {
+          "bossId": 37,
+          "chance": 28.75
+        },
+        {
+          "bossId": 36,
+          "chance": 6.691
+        },
+        {
+          "bossId": 30,
+          "chance": 14.7
+        },
+        {
+          "bossId": 26,
+          "chance": 14.97
+        },
+        {
+          "bossId": 38,
+          "chance": 27.09
+        },
+        {
+          "bossId": 18,
+          "chance": 24.04
+        },
+        {
+          "bossId": 28,
+          "chance": 26.61
+        },
+        {
+          "bossId": 51,
+          "chance": 6.78
+        },
+        {
+          "bossId": 53,
+          "chance": 17.02
+        },
+        {
+          "bossId": 48,
+          "chance": 20.18
+        },
+        {
+          "bossId": 52,
+          "chance": 5.405
+        },
+        {
+          "bossId": 29,
+          "chance": 11.82
+        },
+        {
+          "bossId": 54,
+          "chance": 11.94
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 22375,
       "name": "Wartorn Plate Scrap",
-      "slot": "Materials",
-      "type": "Plate",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Wartorn Plate Scrap</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffffd10011|r|cffffd100g|r |cff98b0e079|r|cff98b0e0s|r |cffc8602c99|r|cffc8602cc|r</span></div>",
-      "icon": "inv_misc_wartornscrap_plate.png"
+      "icon": "inv_misc_wartornscrap_plate.png",
+      "dropsFrom": [
+        {
+          "bossId": 30,
+          "chance": 15.0
+        },
+        {
+          "bossId": 31,
+          "chance": 12.0
+        },
+        {
+          "bossId": 32,
+          "chance": 15.0
+        },
+        {
+          "bossId": 33,
+          "chance": 15.0
+        },
+        {
+          "bossId": 16,
+          "chance": 15.0
+        },
+        {
+          "bossId": 17,
+          "chance": 18.3
+        },
+        {
+          "bossId": 18,
+          "chance": 19.29
+        },
+        {
+          "bossId": 19,
+          "chance": 20.79
+        },
+        {
+          "bossId": 22,
+          "chance": 19.13
+        },
+        {
+          "bossId": 23,
+          "chance": 12.0
+        },
+        {
+          "bossId": 34,
+          "chance": 12.0
+        },
+        {
+          "bossId": 50,
+          "chance": 12.0
+        },
+        {
+          "bossId": 55,
+          "chance": 15.0
+        },
+        {
+          "bossId": 47,
+          "chance": 12.0
+        },
+        {
+          "bossId": 35,
+          "chance": 12.0
+        },
+        {
+          "bossId": 36,
+          "chance": 12.0
+        },
+        {
+          "bossId": 37,
+          "chance": 21.56
+        },
+        {
+          "bossId": 41,
+          "chance": 12.0
+        },
+        {
+          "bossId": 42,
+          "chance": 25.0
+        },
+        {
+          "bossId": 43,
+          "chance": null
+        },
+        {
+          "bossId": 44,
+          "chance": null
+        },
+        {
+          "bossId": 45,
+          "chance": null
+        },
+        {
+          "bossId": 38,
+          "chance": 22.52
+        },
+        {
+          "bossId": 39,
+          "chance": 16.82
+        },
+        {
+          "bossId": 46,
+          "chance": 12.0
+        },
+        {
+          "bossId": 49,
+          "chance": 18.12
+        },
+        {
+          "bossId": 27,
+          "chance": 12.79
+        },
+        {
+          "bossId": 24,
+          "chance": 12.0
+        },
+        {
+          "bossId": 21,
+          "chance": 16.95
+        },
+        {
+          "bossId": 20,
+          "chance": 19.16
+        },
+        {
+          "bossId": 40,
+          "chance": 17.73
+        },
+        {
+          "bossId": 25,
+          "chance": 18.12
+        },
+        {
+          "bossId": 26,
+          "chance": 16.93
+        },
+        {
+          "bossId": 15,
+          "chance": 15.0
+        },
+        {
+          "bossId": 53,
+          "chance": 21.28
+        },
+        {
+          "bossId": 52,
+          "chance": 15.0
+        },
+        {
+          "bossId": 51,
+          "chance": 12.0
+        },
+        {
+          "bossId": 29,
+          "chance": 14.78
+        },
+        {
+          "bossId": 28,
+          "chance": 16.74
+        },
+        {
+          "bossId": 54,
+          "chance": 15.0
+        },
+        {
+          "bossId": 48,
+          "chance": 16.4
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 23055,
       "name": "Word of Thawing",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 1,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Word of Thawing</b><div><div></div><div></div></div><span><span class=\"q2\">Use: Use on a Frozen Rune to melt it free.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_scroll_02.png"
+      "icon": "inv_scroll_02.png",
+      "dropsFrom": [],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 22682,
       "name": "Frozen Rune",
-      "slot": "Consumable",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Frozen Rune</b><div><div></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Use: Absorbs 1500 to 2500 fire damage.  Lasts 1 hour.</span><br/>|cFFFFFFFFValue:|r |cffffd1002|r|cffffd100g|r |cff98b0e029|r|cff98b0e0s|r |cffc8602c99|r|cffc8602cc|r</span></div>",
-      "icon": "inv_misc_rune_09.png"
+      "icon": "inv_misc_rune_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 56,
+          "chance": 100.0
+        }
+      ],
+      "slots": [
+        "Consumable"
+      ],
+      "types": []
     },
     {
       "id": 22815,
       "name": "Severance",
-      "slot": "Two-Hand",
-      "type": "Axe",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Severance</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Axe</span></div></div><div><div>242 - 366 Damage</div><div>Speed 3.60</div></div><span>(84.4 damage per second)<br/>+43 Strength<br/>+20 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 2%.</span></span></div>",
-      "icon": "inv_axe_2h_stratholme_d_01.png"
+      "icon": "inv_axe_2h_stratholme_d_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Axe"
+      ]
     },
     {
       "id": 22818,
       "name": "The Plague Bearer",
-      "slot": "Off Hand",
-      "type": "Shield",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">The Plague Bearer</b><span>Binds when picked up</span><div><div><span>Off Hand</span></div><div><span>Shield</span></div></div><span>3106 Armor<br/>59 Block<br/>+21 Stamina<br/>+15 Frost Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +9.</span></span></div>",
-      "icon": "inv_shield_27.png"
+      "icon": "inv_shield_27.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
     },
     {
       "id": 22820,
       "name": "Wand of Fates",
-      "slot": "Ranged",
-      "type": "Wand",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Wand of Fates</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Wand</span></div></div><div><div>119 - 222 Shadow Damage</div><div>Speed 1.50</div></div><span>(113.7 damage per second)<br/>+7 Stamina<br/>+7 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 12.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span></span></div>",
-      "icon": "inv_wand_1h_stratholme_d_01.png"
+      "icon": "inv_wand_1h_stratholme_d_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Wand"
+      ]
     },
     {
       "id": 22960,
       "name": "Cloak of Suturing",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Cloak of Suturing</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>63 Armor<br/>+12 Intellect<br/>+12 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 48.</span><br/><span class=\"q2\">Equip: Restores 5 mana per 5 sec.</span></span></div>",
-      "icon": "inv_misc_cape_naxxramas_02.png"
+      "icon": "inv_misc_cape_naxxramas_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 22961,
       "name": "Band of Reanimation",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Band of Reanimation</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+34 Agility<br/>Requires Level 60</span></div>",
-      "icon": "inv_jewelry_ring_49naxxramas.png"
+      "icon": "inv_jewelry_ring_49naxxramas.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 81283,
       "name": "Mr. Bigglesworth",
-      "slot": "Companion",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Mr. Bigglesworth</b><span>Binds when picked up</span><div><div></div><div></div></div><span><span class=\"q2\">Use: Adds a companion to the player's companion collection.</span><br/><span class=\"q\">\"Upon exiting the freezing necropolis of Naxxramas, Mr. Bigglesworth promptly found a warm spot in the sun to take a long nap in.\"</span></span></div>",
-      "icon": "inv_misc_ribbon_01.png"
+      "icon": "inv_misc_ribbon_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 100.0
+        }
+      ],
+      "slots": [
+        "Companion"
+      ],
+      "types": []
     },
     {
       "id": 55583,
       "name": "Desecrated Signet",
-      "slot": "Token",
-      "type": null,
-      "classes": ["Warrior","Rogue"],
+      "classes": [
+        "Warrior",
+        "Rogue"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Signet</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Druid<br/>Requires Level 60</span></div>",
-      "icon": "inv_jewelry_ring_16.png"
+      "icon": "inv_jewelry_ring_16.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 33.33
+        },
+        {
+          "bossId": 14,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 55582,
       "name": "Desecrated Loop",
-      "slot": "Token",
-      "type": null,
-      "classes": ["Priest","Mage","Warlock"],
+      "classes": [
+        "Priest",
+        "Mage",
+        "Warlock"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Loop</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock<br/>Requires Level 60</span></div>",
-      "icon": "inv_jewelry_ring_27.png"
+      "icon": "inv_jewelry_ring_27.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 33.33
+        },
+        {
+          "bossId": 14,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 55581,
       "name": "Desecrated Ring",
-      "slot": "Token",
-      "type": null,
-      "classes": ["Paladin","Hunter","Shaman","Druid"],
+      "classes": [
+        "Paladin",
+        "Hunter",
+        "Shaman",
+        "Druid"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Ring</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue<br/>Requires Level 60</span></div>",
-      "icon": "inv_jewelry_ring_15.png"
+      "icon": "inv_jewelry_ring_15.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 33.33
+        },
+        {
+          "bossId": 14,
+          "chance": 33.33
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 36666,
       "name": "Plagued Riding Spider",
-      "slot": "Mount",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Plagued Riding Spider</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span><span class=\"q2\">Use: Adds a mount to the player's mount collection.</span><br/><span class=\"q\">\"Born of plague and shadow, this monstrous spider skitters forth from Naxxramas, its twisted form a testament to the horrors of the Scourge.\"</span></span></div>",
-      "icon": "inv_misc_monsterspidercarapace_01.png"
+      "icon": "inv_misc_monsterspidercarapace_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 1.0
+        }
+      ],
+      "slots": [
+        "Mount"
+      ],
+      "types": []
     },
     {
       "id": 37012,
       "name": "Maexxna's Hatchling",
-      "slot": "Companion",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Maexxna's Hatchling</b><span>Binds when picked up</span><div><div></div><div></div></div><span><span class=\"q2\">Use: Adds a companion to the player's companion collection.</span><br/><span class=\"q\">\"One of the few rare hatchlings of Maexxna, this little one feasts on corpses just like its mother.\"</span></span></div>",
-      "icon": "inv_misc_monsterspidercarapace_01.png"
+      "icon": "inv_misc_monsterspidercarapace_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 30.0
+        }
+      ],
+      "slots": [
+        "Companion"
+      ],
+      "types": []
+    }
+  ],
+  "bosses": [
+    {
+      "bossId": 0,
+      "name": "Grobbulus"
+    },
+    {
+      "bossId": 1,
+      "name": "Gluth"
+    },
+    {
+      "bossId": 2,
+      "name": "Heigan the Unclean"
+    },
+    {
+      "bossId": 3,
+      "name": "Grand Widow Faerlina"
+    },
+    {
+      "bossId": 4,
+      "name": "Noth the Plaguebringer"
+    },
+    {
+      "bossId": 5,
+      "name": "Anub'Rekhan"
+    },
+    {
+      "bossId": 6,
+      "name": "Patchwerk"
+    },
+    {
+      "bossId": 7,
+      "name": "Gothik the Harvester"
+    },
+    {
+      "bossId": 8,
+      "name": "Instructor Razuvious"
+    },
+    {
+      "bossId": 9,
+      "name": "Maexxna"
+    },
+    {
+      "bossId": 10,
+      "name": "Thaddius"
+    },
+    {
+      "bossId": 11,
+      "name": "Loatheb"
+    },
+    {
+      "bossId": 12,
+      "name": "Four Horsemen Chest"
+    },
+    {
+      "bossId": 13,
+      "name": "Sapphiron"
+    },
+    {
+      "bossId": 14,
+      "name": "Kel'Thuzad"
+    },
+    {
+      "bossId": 15,
+      "name": "Carrion Spinner"
+    },
+    {
+      "bossId": 16,
+      "name": "Naxxramas Acolyte"
+    },
+    {
+      "bossId": 17,
+      "name": "Patchwork Golem"
+    },
+    {
+      "bossId": 18,
+      "name": "Bile Retcher"
+    },
+    {
+      "bossId": 19,
+      "name": "Mad Scientist"
+    },
+    {
+      "bossId": 20,
+      "name": "Living Monstrosity"
+    },
+    {
+      "bossId": 21,
+      "name": "Surgical Assistant"
+    },
+    {
+      "bossId": 22,
+      "name": "Stitched Spewer"
+    },
+    {
+      "bossId": 23,
+      "name": "Deathknight Captain"
+    },
+    {
+      "bossId": 24,
+      "name": "Shade of Naxxramas"
+    },
+    {
+      "bossId": 25,
+      "name": "Necro Knight"
+    },
+    {
+      "bossId": 26,
+      "name": "Plagued Ghoul"
+    },
+    {
+      "bossId": 27,
+      "name": "Necro Stalker"
+    },
+    {
+      "bossId": 28,
+      "name": "Spirit of Naxxramas"
+    },
+    {
+      "bossId": 29,
+      "name": "Tomb Horror"
+    },
+    {
+      "bossId": 30,
+      "name": "Dread Creeper"
+    },
+    {
+      "bossId": 31,
+      "name": "Venom Stalker"
+    },
+    {
+      "bossId": 32,
+      "name": "Crypt Reaver"
+    },
+    {
+      "bossId": 33,
+      "name": "Naxxramas Cultist"
+    },
+    {
+      "bossId": 34,
+      "name": "Risen Deathknight"
+    },
+    {
+      "bossId": 35,
+      "name": "Deathknight Cavalier"
+    },
+    {
+      "bossId": 36,
+      "name": "Bony Construct"
+    },
+    {
+      "bossId": 37,
+      "name": "Stoneskin Gargoyle"
+    },
+    {
+      "bossId": 38,
+      "name": "Infectious Ghoul"
+    },
+    {
+      "bossId": 39,
+      "name": "Necropolis Acolyte"
+    },
+    {
+      "bossId": 40,
+      "name": "Skeletal Steed"
+    },
+    {
+      "bossId": 41,
+      "name": "Skeletal Smith"
+    },
+    {
+      "bossId": 42,
+      "name": "Plague Slime"
+    },
+    {
+      "bossId": 43,
+      "name": "Plague Slime (Blue)"
+    },
+    {
+      "bossId": 44,
+      "name": "Plague Slime (Red)"
+    },
+    {
+      "bossId": 45,
+      "name": "Plague Slime (Green)"
+    },
+    {
+      "bossId": 46,
+      "name": "Deathknight Vindicator"
+    },
+    {
+      "bossId": 47,
+      "name": "Death Touched Warrior"
+    },
+    {
+      "bossId": 48,
+      "name": "Plagued Gargoyle"
+    },
+    {
+      "bossId": 49,
+      "name": "Necro Knight Guardian"
+    },
+    {
+      "bossId": 50,
+      "name": "Dark Touched Warrior"
+    },
+    {
+      "bossId": 51,
+      "name": "Unholy Axe"
+    },
+    {
+      "bossId": 52,
+      "name": "Unholy Swords"
+    },
+    {
+      "bossId": 53,
+      "name": "Plagued Deathhound"
+    },
+    {
+      "bossId": 54,
+      "name": "Unholy Staff"
+    },
+    {
+      "bossId": 55,
+      "name": "Doom Touched Warrior"
+    },
+    {
+      "bossId": 56,
+      "name": "Frozen Rune"
     }
   ]
 }

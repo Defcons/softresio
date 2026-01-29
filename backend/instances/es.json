@@ -6,502 +6,1516 @@
     {
       "id": 61652,
       "name": "Claw of Erennius",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Claw of Erennius</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span>This Item Begins a Quest</span></div>",
-      "icon": "inv_misc_monsterclaw_02.png"
+      "icon": "inv_misc_monsterclaw_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 100.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 61198,
       "name": "Small Dream Shard",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Small Dream Shard</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_stone_03.png"
+      "icon": "inv_stone_03.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 100.0
+        },
+        {
+          "bossId": 1,
+          "chance": 15.0
+        },
+        {
+          "bossId": 2,
+          "chance": 15.0
+        },
+        {
+          "bossId": 3,
+          "chance": 15.0
+        },
+        {
+          "bossId": 4,
+          "chance": 15.0
+        },
+        {
+          "bossId": 5,
+          "chance": 15.0
+        },
+        {
+          "bossId": 6,
+          "chance": 20.0
+        },
+        {
+          "bossId": 7,
+          "chance": 20.0
+        },
+        {
+          "bossId": 8,
+          "chance": 20.0
+        },
+        {
+          "bossId": 9,
+          "chance": 20.0
+        },
+        {
+          "bossId": 10,
+          "chance": 20.0
+        },
+        {
+          "bossId": 11,
+          "chance": 20.0
+        },
+        {
+          "bossId": 12,
+          "chance": 3.8
+        },
+        {
+          "bossId": 13,
+          "chance": 3.8
+        },
+        {
+          "bossId": 14,
+          "chance": 3.8
+        },
+        {
+          "bossId": 15,
+          "chance": 3.8
+        },
+        {
+          "bossId": 16,
+          "chance": 3.8
+        },
+        {
+          "bossId": 17,
+          "chance": 3.8
+        },
+        {
+          "bossId": 18,
+          "chance": 3.8
+        },
+        {
+          "bossId": 19,
+          "chance": 3.8
+        },
+        {
+          "bossId": 20,
+          "chance": 3.8
+        },
+        {
+          "bossId": 21,
+          "chance": 3.8
+        },
+        {
+          "bossId": 22,
+          "chance": 3.8
+        },
+        {
+          "bossId": 23,
+          "chance": 3.8
+        },
+        {
+          "bossId": 24,
+          "chance": 3.8
+        },
+        {
+          "bossId": 25,
+          "chance": 3.8
+        },
+        {
+          "bossId": 26,
+          "chance": 6.5
+        },
+        {
+          "bossId": 27,
+          "chance": 6.5
+        },
+        {
+          "bossId": 28,
+          "chance": 6.5
+        },
+        {
+          "bossId": 29,
+          "chance": 6.5
+        },
+        {
+          "bossId": 30,
+          "chance": 3.8
+        },
+        {
+          "bossId": 31,
+          "chance": 100.0
+        },
+        {
+          "bossId": 32,
+          "chance": 6.5
+        },
+        {
+          "bossId": 33,
+          "chance": 15.0
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 61197,
       "name": "Fading Dream Fragment",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Fading Dream Fragment</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_stone_05.png"
+      "icon": "inv_stone_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 100.0
+        },
+        {
+          "bossId": 1,
+          "chance": 0.35
+        },
+        {
+          "bossId": 2,
+          "chance": 0.71
+        },
+        {
+          "bossId": 3,
+          "chance": 0.71
+        },
+        {
+          "bossId": 4,
+          "chance": 0.71
+        },
+        {
+          "bossId": 5,
+          "chance": 0.71
+        },
+        {
+          "bossId": 6,
+          "chance": 0.35
+        },
+        {
+          "bossId": 7,
+          "chance": 0.35
+        },
+        {
+          "bossId": 8,
+          "chance": 0.35
+        },
+        {
+          "bossId": 9,
+          "chance": 0.35
+        },
+        {
+          "bossId": 10,
+          "chance": 0.35
+        },
+        {
+          "bossId": 11,
+          "chance": 0.35
+        },
+        {
+          "bossId": 12,
+          "chance": 0.35
+        },
+        {
+          "bossId": 13,
+          "chance": 0.35
+        },
+        {
+          "bossId": 14,
+          "chance": 0.35
+        },
+        {
+          "bossId": 15,
+          "chance": 0.35
+        },
+        {
+          "bossId": 16,
+          "chance": 0.35
+        },
+        {
+          "bossId": 17,
+          "chance": 0.35
+        },
+        {
+          "bossId": 18,
+          "chance": 0.35
+        },
+        {
+          "bossId": 19,
+          "chance": 0.35
+        },
+        {
+          "bossId": 20,
+          "chance": 0.35
+        },
+        {
+          "bossId": 21,
+          "chance": 0.35
+        },
+        {
+          "bossId": 22,
+          "chance": 0.35
+        },
+        {
+          "bossId": 23,
+          "chance": 0.35
+        },
+        {
+          "bossId": 24,
+          "chance": 0.35
+        },
+        {
+          "bossId": 25,
+          "chance": 0.35
+        },
+        {
+          "bossId": 26,
+          "chance": 0.71
+        },
+        {
+          "bossId": 27,
+          "chance": 0.71
+        },
+        {
+          "bossId": 28,
+          "chance": 0.71
+        },
+        {
+          "bossId": 29,
+          "chance": 0.71
+        },
+        {
+          "bossId": 0,
+          "chance": 48.0
+        },
+        {
+          "bossId": 30,
+          "chance": 0.35
+        },
+        {
+          "bossId": 31,
+          "chance": 0.71
+        },
+        {
+          "bossId": 32,
+          "chance": 0.71
+        },
+        {
+          "bossId": 33,
+          "chance": 0.71
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 20381,
       "name": "Dreamscale",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Dreamscale</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_misc_monsterscales_11.png"
+      "icon": "inv_misc_monsterscales_11.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 100.0
+        },
+        {
+          "bossId": 6,
+          "chance": 4.5
+        },
+        {
+          "bossId": 7,
+          "chance": 4.5
+        },
+        {
+          "bossId": 8,
+          "chance": 4.5
+        },
+        {
+          "bossId": 9,
+          "chance": 4.5
+        },
+        {
+          "bossId": 10,
+          "chance": 4.5
+        },
+        {
+          "bossId": 11,
+          "chance": 4.5
+        },
+        {
+          "bossId": 0,
+          "chance": 80.0
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 61206,
       "name": "Robe of the Dreamways",
-      "slot": "Chest",
-      "type": "Cloth",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Robe of the Dreamways</b><span>Binds when picked up</span><div><div><span>Chest</span></div><div><span>Cloth</span></div></div><span>118 Armor<br/>+15 Stamina<br/>+14 Intellect<br/>+14 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 46.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
-      "icon": "inv_chest_leather_06.png"
+      "icon": "inv_chest_leather_06.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 61211,
       "name": "Sandals of Lucidity",
-      "slot": "Feet",
-      "type": "Cloth",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Sandals of Lucidity</b><span>Binds when picked up</span><div><div><span>Feet</span></div><div><span>Cloth</span></div></div><span>81 Armor<br/>+18 Stamina<br/>+18 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 2%.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
-      "icon": "inv_boots_fabric_01.png"
+      "icon": "inv_boots_fabric_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 61213,
       "name": "Talonwind Gauntlets",
-      "slot": "Hands",
-      "type": "Mail",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Talonwind Gauntlets</b><span>Binds when picked up</span><div><div><span>Hands</span></div><div><span>Mail</span></div></div><span>309 Armor<br/>+22 Agility<br/>+17 Stamina<br/>+16 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Increases your attack and casting speed by 1%.</span></span></div>",
-      "icon": "inv_gauntlets_29.png"
+      "icon": "inv_gauntlets_29.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 61239,
       "name": "Ancient Jade Leggings",
-      "slot": "Legs",
-      "type": "Mail",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ancient Jade Leggings</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Mail</span></div></div><span>432 Armor<br/>+9 Strength<br/>+26 Agility<br/>+21 Stamina<br/>+16 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Two-handed Maces +8.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 15.</span></span></div>",
-      "icon": "inv_pants_03.png"
+      "icon": "inv_pants_03.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 61237,
       "name": "Mallet of the Awakening",
-      "slot": "Main Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Mallet of the Awakening</b><span>Binds when picked up</span><div><div><span>Main Hand</span></div><div><span>Mace</span></div></div><div><div>76 - 140 Damage</div><div>Speed 1.80</div></div><span>(60.0 damage per second)<br/>+11 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 2%.</span><br/><span class=\"q2\">Equip: Increases the block value of your shield by 21.</span><br/><span class=\"q\">\"Covered in moss, biding its time.\"</span></span></div>",
-      "icon": "inv_mace_35.png"
+      "icon": "inv_mace_35.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 61238,
       "name": "Scaleshield of Emerald Flight",
-      "slot": "Off Hand",
-      "type": "Shield",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Scaleshield of Emerald Flight</b><span>Binds when picked up</span><div><div><span>Off Hand</span></div><div><span>Shield</span></div></div><span>2929 Armor<br/>55 Block<br/>+12 Strength<br/>+12 Agility<br/>+12 Stamina<br/>+12 Intellect<br/>+12 Spirit<br/>+15 Nature Resistance<br/>Requires Level 60<br/><span class=\"q2\">Use: Take the form of a green dragonkin, gaining immunity to Fear and Charm effects.  Lasts 15 sec.</span></span></div>",
-      "icon": "inv_shield_23.png"
+      "icon": "inv_shield_23.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
     },
     {
       "id": 61205,
       "name": "Ring of Nature's Duality",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ring of Nature's Duality</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+7 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage done by Nature spells and effects by up to 33.</span><br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 40.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
-      "icon": "inv_jewelry_ring_37.png"
+      "icon": "inv_jewelry_ring_37.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 61209,
       "name": "Shard of Nightmare",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Shard of Nightmare</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>+10 Nature Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 37.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Use: Puts the enemy target to sleep for up to 10 sec.  Any damage caused will awaken the target.  </span><br/><span class=\"q\">\"Past the point of cleansing, a small glimpse is enough to induce nightmares.\"</span></span></div>",
-      "icon": "inv_enchant_essencemysticallarge.png"
+      "icon": "inv_enchant_essencemysticallarge.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 61210,
       "name": "Veil of Nightmare",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Veil of Nightmare</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>57 Armor<br/>+12 Stamina<br/>+10 Nature Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: +32 Attack Power.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span></span></div>",
-      "icon": "inv_misc_cape_01.png"
+      "icon": "inv_misc_cape_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 61212,
       "name": "Sanctum Bark Wraps",
-      "slot": "Wrist",
-      "type": "Leather",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Sanctum Bark Wraps</b><span>Binds when picked up</span><div><div><span>Wrist</span></div><div><span>Leather</span></div></div><span>96 Armor<br/>+15 Strength<br/>+15 Agility<br/>+14 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your attack and casting speed by 1%.</span></span></div>",
-      "icon": "inv_bracer_09.png"
+      "icon": "inv_bracer_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 61214,
       "name": "Mantle of the Wakener",
-      "slot": "Shoulder",
-      "type": "Leather",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Mantle of the Wakener</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Leather</span></div></div><span>166 Armor<br/>+12 Stamina<br/>+14 Intellect<br/>+14 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 28.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Equip: Restores 6 health per 5 sec.</span><br/><span class=\"q\">\"Once worn to usher in the Awakening.\"</span></span></div>",
-      "icon": "inv_shoulder_13.png"
+      "icon": "inv_shoulder_13.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 61207,
       "name": "Jadestone Helmet",
-      "slot": "Head",
-      "type": "Plate",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Jadestone Helmet</b><span>Binds when picked up</span><div><div><span>Head</span></div><div><span>Plate</span></div></div><span>712 Armor<br/>+16 Strength<br/>+18 Agility<br/>+32 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 2%.</span><br/><span class=\"q2\">Equip: Increased Defense +6.</span></span></div>",
-      "icon": "inv_helmet_02.png"
+      "icon": "inv_helmet_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 61448,
       "name": "Axe of Dormant Slumber",
-      "slot": "One-Hand",
-      "type": "Axe",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Axe of Dormant Slumber</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Axe</span></div></div><div><div>92 - 171 Damage</div><div>Speed 2.20</div></div><span>(59.8 damage per second)<br/>100 Armor<br/>+9 Strength<br/>+11 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_weapon_halberd_05.png"
+      "icon": "inv_weapon_halberd_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Axe"
+      ]
     },
     {
       "id": 61208,
       "name": "Staff of the Dreamer",
-      "slot": "Two-Hand",
-      "type": "Staff",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Staff of the Dreamer</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>128 - 218 Damage</div><div>Speed 3.00</div></div><span>(57.7 damage per second)<br/>+25 Intellect<br/>+32 Spirit<br/>+15 Nature Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 134.</span><br/><span class=\"q2\">Equip: Increases your attack and casting speed by 1%.</span><br/><span class=\"q2\">Equip: Allows 5% of your Mana regeneration to continue while casting.</span><br/><span class=\"q2\">Equip: Restores 5 mana per 5 sec.</span></span></div>",
-      "icon": "inv_staff_49.png"
+      "icon": "inv_staff_49.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Staff"
+      ]
     },
     {
       "id": 61455,
       "name": "Idol of the Emerald Rot",
-      "slot": "Relic",
-      "type": "Idol",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Idol of the Emerald Rot</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Idol</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Your finishing moves have a 20% chance per combo point to deal 150 to 190 Nature damage.</span></span></div>",
-      "icon": "spell_nature_naturetouchdecay.png"
+      "icon": "spell_nature_naturetouchdecay.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Relic"
+      ],
+      "types": [
+        "Idol"
+      ]
     },
     {
       "id": 61203,
       "name": "Libram of the Dreamguard",
-      "slot": "Relic",
-      "type": "Libram",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Libram of the Dreamguard</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Libram</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases the number of charges of your Holy Shield by 1.</span></span></div>",
-      "icon": "inv_relics_libramofgrace.png"
+      "icon": "inv_relics_libramofgrace.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Relic"
+      ],
+      "types": [
+        "Libram"
+      ]
     },
     {
       "id": 61204,
       "name": "Totem of the Stonebreaker",
-      "slot": "Relic",
-      "type": "Totem",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Totem of the Stonebreaker</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Relic</span></div><div><span>Totem</span></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Your Shock spells have a 35% chance to grant 130 attack power for 10 sec.</span></span></div>",
-      "icon": "spell_nature_stoneskintotem.png"
+      "icon": "spell_nature_stoneskintotem.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Relic"
+      ],
+      "types": [
+        "Totem"
+      ]
     },
     {
       "id": 61215,
       "name": "Head of Solnius",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Head of Solnius</b><span>Binds when picked up</span><div><div></div><div></div></div><span>This Item Begins a Quest</span></div>",
-      "icon": "inv_misc_head_dragon_green.png"
+      "icon": "inv_misc_head_dragon_green.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 100.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 61196,
       "name": "Bag of Vast Consciousness",
-      "slot": "Bag",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bag of Vast Consciousness</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span>22 Slot Bag</span></div>",
-      "icon": "inv_misc_bag_18.png"
+      "icon": "inv_misc_bag_18.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 25.0
+        }
+      ],
+      "slots": [
+        "Bag"
+      ],
+      "types": []
     },
     {
       "id": 61733,
       "name": "Formula: Eternal Dreamstone Shard",
-      "slot": "Profession",
-      "type": null,
       "classes": [],
       "quality": 5,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q5\">Formula: Eternal Dreamstone Shard</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Enchanting (300)<br/><span class=\"q2\">Use: Teaches you how to create an Eternal Dreamstone Shard</span></span></div>",
-      "icon": "inv_misc_note_01.png"
+      "icon": "inv_misc_note_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 1.5
+        }
+      ],
+      "slots": [
+        "Profession"
+      ],
+      "types": []
     },
     {
       "id": 61217,
       "name": "Formula: Enchant Chest - Mighty Mana",
-      "slot": "Profession",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Formula: Enchant Chest - Mighty Mana</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Enchanting (300)<br/><span class=\"q2\">Use: Teaches you how to permanently enchant a chest armor to increase mana by 150.</span></span></div>",
-      "icon": "inv_misc_note_01.png"
+      "icon": "inv_misc_note_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 4.0
+        }
+      ],
+      "slots": [
+        "Profession"
+      ],
+      "types": []
     },
     {
       "id": 70000,
       "name": "Formula: Enchant Gloves - Nature Power",
-      "slot": "Profession",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Formula: Enchant Gloves - Nature Power</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Enchanting (300)<br/><span class=\"q2\">Use: Teaches you how to permanently enchant gloves to increase the nature damage done by spells and abilities by 20.</span></span></div>",
-      "icon": "inv_misc_note_01.png"
+      "icon": "inv_misc_note_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 4.0
+        }
+      ],
+      "slots": [
+        "Profession"
+      ],
+      "types": []
     },
     {
       "id": 61218,
       "name": "Recipe: Elixir of Greater Nature Power",
-      "slot": "Profession",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Recipe: Elixir of Greater Nature Power</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Alchemy (300)<br/><span class=\"q2\">Use: Teaches you how to make an Elixir of Greater Nature Power.</span></span></div>",
-      "icon": "inv_scroll_05.png"
+      "icon": "inv_scroll_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 4.0
+        }
+      ],
+      "slots": [
+        "Profession"
+      ],
+      "types": []
     },
     {
       "id": 61444,
       "name": "Smoldering Dream Essence",
-      "slot": "Quest Item",
-      "type": null,
-      "classes": ["Druid"],
+      "classes": [
+        "Druid"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Smoldering Dream Essence</b><span>Binds when picked up</span><div><div></div><div></div></div><span>This Item Begins a Quest<br/>Classes: Druid<br/>Requires Level 60</span></div>",
-      "icon": "inv_stone_05.png"
+      "icon": "inv_stone_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 35.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 51361,
       "name": "Glyph of the Dreamkin",
-      "slot": "Consumable",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Glyph of the Dreamkin</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span>Classes: Druid<br/><span class=\"q2\">Use: Add a new glyph to your spellbook.</span><br/><span class=\"q\">\"While active, your Moonkin Form will take the appearance of a Dreamkin.\"</span></span></div>",
-      "icon": "inv_misc_note_05.png"
+      "icon": "inv_misc_note_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 15.0
+        }
+      ],
+      "slots": [
+        "Consumable"
+      ],
+      "types": []
     },
     {
       "id": 61428,
       "name": "Pattern: Dreamhide Mantle",
-      "slot": "Profession",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Pattern: Dreamhide Mantle</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Leatherworking (300)<br/><span class=\"q2\">Use: Teaches you how to craft a Dreamhide Mantle.</span></span></div>",
-      "icon": "inv_scroll_05.png"
+      "icon": "inv_scroll_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 4.0
+        }
+      ],
+      "slots": [
+        "Profession"
+      ],
+      "types": []
     },
     {
       "id": 61432,
       "name": "Pattern: Dreamthread Mantle",
-      "slot": "Profession",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Pattern: Dreamthread Mantle</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Tailoring (300)<br/><span class=\"q2\">Use: Teaches you how to sew a Dreamthread Mantle.</span></span></div>",
-      "icon": "inv_scroll_05.png"
+      "icon": "inv_scroll_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 4.0
+        }
+      ],
+      "slots": [
+        "Profession"
+      ],
+      "types": []
     },
     {
       "id": 61424,
       "name": "Plans: Dreamsteel Mantle",
-      "slot": "Profession",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Plans: Dreamsteel Mantle</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Blacksmithing (300)<br/><span class=\"q2\">Use: Teaches you how to make Dreamsteel Mantle.</span></span></div>",
-      "icon": "inv_scroll_05.png"
-    },
-    {
-      "id": 61524,
-      "name": "Naturecaller's Tunic",
-      "slot": "Chest",
-      "type": "Leather",
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Naturecaller's Tunic</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Chest</span></div><div><span>Leather</span></div></div><span>237 Armor<br/>+20 Stamina<br/>+21 Intellect<br/>+25 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage done by Nature spells and effects by up to 30.</span><br/><span class=\"q2\">Equip: Increases damage done by Arcane spells and effects by up to 30.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
-      "icon": "inv_chest_plate07.png"
-    },
-    {
-      "id": 61522,
-      "name": "Choker of the Emerald Lord",
-      "slot": "Neck",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Choker of the Emerald Lord</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Neck</span></div><div></div></div><span>+12 Nature Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 28.</span></span></div>",
-      "icon": "inv_jewelry_necklace_01.png"
-    },
-    {
-      "id": 61527,
-      "name": "Breath of Solnius",
-      "slot": "Trinket",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Breath of Solnius</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>+11 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 30.</span><br/><span class=\"q2\">Equip: Gives a 5% chance when your helpful spells land to increase your casting speed by 20 for 20 sec.</span><br/><span class=\"q\">\"Brimming with life energies.\"</span></span></div>",
-      "icon": "btnorbofchaos.png"
-    },
-    {
-      "id": 61523,
-      "name": "Crystal Sword of the Blossom",
-      "slot": "One-Hand",
-      "type": "Sword",
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Crystal Sword of the Blossom</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Sword</span></div></div><div><div>79 - 147 Damage</div><div>Speed 1.80</div></div><span>(62.8 damage per second)<br/>+11 Stamina<br/>+7 Nature Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Equip: +20 Attack Power.</span><br/><span class=\"q2\">Equip: Increased Swords +3.</span></span></div>",
-      "icon": "inv_sword_38.png"
-    },
-    {
-      "id": 61525,
-      "name": "Nature's Call",
-      "slot": "Ranged",
-      "type": null,
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Nature's Call</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Ranged</span></div><div><span>Bow</span></div></div><div><div>103 - 191 Damage</div><div>Speed 3.00</div></div><span>(49.0 damage per second)<br/>+8 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Equip: Your attacks ignore 25 of the target's armor.</span><br/><span class=\"q\">\"Favored by the dryad.\"</span></span></div>",
-      "icon": "inv_weapon_bow_04.png"
-    },
-    {
-      "id": 61526,
-      "name": "Jadestone Protector",
-      "slot": "Off Hand",
-      "type": "Shield",
-      "classes": [],
-      "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Jadestone Protector</b><span>Binds when picked up</span><div><div><span>Off Hand</span></div><div><span>Shield</span></div></div><span>3035 Armor<br/>57 Block<br/>+14 Stamina<br/>+13 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +9.</span><br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 1%.</span><br/><span class=\"q2\">Equip: Increases the block value of your shield by 18.</span></span></div>",
-      "icon": "inv_shield_21.png"
+      "icon": "inv_scroll_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 4.0
+        }
+      ],
+      "slots": [
+        "Profession"
+      ],
+      "types": []
     },
     {
       "id": 84502,
       "name": "Verdant Dreamer's Boots",
-      "slot": "Feet",
-      "type": "Leather",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Verdant Dreamer's Boots</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Feet</span></div><div><span>Leather</span></div></div><span>150 Armor<br/>+10 Intellect<br/>+16 Spirit<br/>+10 Nature Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 28.</span></span></div>",
-      "icon": "inv_boots_cloth_04.png"
+      "icon": "inv_boots_cloth_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 0.5
+        },
+        {
+          "bossId": 9,
+          "chance": 0.5
+        },
+        {
+          "bossId": 8,
+          "chance": 0.5
+        },
+        {
+          "bossId": 7,
+          "chance": 0.5
+        },
+        {
+          "bossId": 6,
+          "chance": 0.125
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 84505,
       "name": "Infused Wildthorn Bracers",
-      "slot": "Wrist",
-      "type": "Mail",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Infused Wildthorn Bracers</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Wrist</span></div><div><span>Mail</span></div></div><span>198 Armor<br/>+11 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage done by Nature spells and effects by up to 29.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span></span></div>",
-      "icon": "inv_bracer_06.png"
+      "icon": "inv_bracer_06.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 0.5
+        },
+        {
+          "bossId": 9,
+          "chance": 0.5
+        },
+        {
+          "bossId": 8,
+          "chance": 0.5
+        },
+        {
+          "bossId": 7,
+          "chance": 0.5
+        },
+        {
+          "bossId": 6,
+          "chance": 0.125
+        }
+      ],
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 84506,
       "name": "Sleeper's Ring",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Sleeper's Ring</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+25 Nature Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Allows 10% of your Health regeneration to work while in combat.</span></span></div>",
-      "icon": "inv_jewelry_ring_37.png"
+      "icon": "inv_jewelry_ring_37.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 0.5
+        },
+        {
+          "bossId": 9,
+          "chance": 0.5
+        },
+        {
+          "bossId": 8,
+          "chance": 0.5
+        },
+        {
+          "bossId": 7,
+          "chance": 0.5
+        },
+        {
+          "bossId": 6,
+          "chance": 0.125
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 84504,
       "name": "Lasher's Whip",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Lasher's Whip</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>+15 Stamina<br/>+15 Nature Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: When struck in combat inflicts 4 Nature damage to the attacker.</span></span></div>",
-      "icon": "inv_misc_herb_15.png"
+      "icon": "inv_misc_herb_15.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 0.5
+        },
+        {
+          "bossId": 9,
+          "chance": 0.5
+        },
+        {
+          "bossId": 8,
+          "chance": 0.5
+        },
+        {
+          "bossId": 7,
+          "chance": 0.5
+        },
+        {
+          "bossId": 6,
+          "chance": 0.125
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 84500,
       "name": "Lucid Nightmare",
-      "slot": "Main Hand",
-      "type": "Dagger",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Lucid Nightmare</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Main Hand</span></div><div><span>Dagger</span></div></div><div><div>55 - 107 Damage</div><div>Speed 1.90</div></div><span>(42.6 damage per second)<br/>+10 Intellect<br/>+11 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 40.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span></span></div>",
-      "icon": "inv_weapon_shortblade_22.png"
+      "icon": "inv_weapon_shortblade_22.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 0.5
+        },
+        {
+          "bossId": 9,
+          "chance": 0.5
+        },
+        {
+          "bossId": 8,
+          "chance": 0.5
+        },
+        {
+          "bossId": 7,
+          "chance": 0.5
+        },
+        {
+          "bossId": 6,
+          "chance": 0.125
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Dagger"
+      ]
     },
     {
       "id": 84509,
       "name": "Emerald Rod",
-      "slot": "Held In Off-hand",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Emerald Rod</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Held In Off-Hand</span></div><div></div></div><span>+12 Intellect<br/>+10 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Restores 8 mana per 5 sec.</span></span></div>",
-      "icon": "inv_staff_14.png"
+      "icon": "inv_staff_14.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 0.5
+        },
+        {
+          "bossId": 9,
+          "chance": 0.5
+        },
+        {
+          "bossId": 8,
+          "chance": 0.5
+        },
+        {
+          "bossId": 7,
+          "chance": 0.5
+        },
+        {
+          "bossId": 6,
+          "chance": 0.125
+        }
+      ],
+      "slots": [
+        "Held In Off-hand"
+      ],
+      "types": []
     },
     {
       "id": 84501,
       "name": "Corrupted Reed",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Corrupted Reed</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>-10 Shadow Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 37.</span></span></div>",
-      "icon": "inv_misc_root_02corrupt.png"
+      "icon": "inv_misc_root_02corrupt.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 0.5
+        },
+        {
+          "bossId": 9,
+          "chance": 0.5
+        },
+        {
+          "bossId": 8,
+          "chance": 0.5
+        },
+        {
+          "bossId": 7,
+          "chance": 0.5
+        },
+        {
+          "bossId": 6,
+          "chance": 0.125
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 54001,
       "name": "Dream Frog",
-      "slot": "Companion",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Dream Frog</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span><span class=\"q2\">Use: Adds a companion to the player's companion collection.</span><br/><span class=\"q\">\"This ethereal creature is believed to possess the ability to enter the dreams of sleeping adventurers, offering them guidance and wisdom.\"</span></span></div>",
-      "icon": "inv_crate_02.png"
+      "icon": "inv_crate_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 0.08
+        },
+        {
+          "bossId": 7,
+          "chance": 0.08
+        },
+        {
+          "bossId": 8,
+          "chance": 0.08
+        },
+        {
+          "bossId": 9,
+          "chance": 0.08
+        },
+        {
+          "bossId": 10,
+          "chance": 0.08
+        },
+        {
+          "bossId": 11,
+          "chance": 0.08
+        }
+      ],
+      "slots": [
+        "Companion"
+      ],
+      "types": []
     },
     {
       "id": 84503,
       "name": "Nature's Gift",
-      "slot": "Two-Hand",
-      "type": "Staff",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Nature's Gift</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>160 - 299 Damage</div><div>Speed 3.30</div></div><span>(69.5 damage per second)<br/>+28 Strength<br/>+22 Agility<br/>+25 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: +168 Attack Power in Cat, Bear, Dire Bear, and Moonkin forms only.</span><br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span></span></div>",
-      "icon": "inv_staff_42.png"
+      "icon": "inv_staff_42.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 0.5
+        },
+        {
+          "bossId": 9,
+          "chance": 0.5
+        },
+        {
+          "bossId": 8,
+          "chance": 0.5
+        },
+        {
+          "bossId": 7,
+          "chance": 0.5
+        },
+        {
+          "bossId": 6,
+          "chance": 0.125
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Staff"
+      ]
     },
     {
       "id": 41076,
       "name": "Aspect of Seradane",
-      "slot": "Two-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Aspect of Seradane</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Mace</span></div></div><div><div>181 - 335 Damage</div><div>Speed 3.30</div></div><span>(78.2 damage per second)<br/>+28 Agility<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Chance on hit: Unleashes a wave of energy that blasts up to 3 targets for 130 to 174 Nature damage.</span></span></div>",
-      "icon": "inv_mace_09.png"
+      "icon": "inv_mace_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 17965,
       "name": "Yellow Sack of Gems",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_misc_bag_10.png"
+      "icon": "inv_misc_bag_10.png",
+      "dropsFrom": [
+        {
+          "bossId": 35,
+          "chance": 1.205
+        },
+        {
+          "bossId": 36,
+          "chance": 0.0
+        },
+        {
+          "bossId": 34,
+          "chance": 20.0
+        },
+        {
+          "bossId": 37,
+          "chance": 20.0
+        },
+        {
+          "bossId": 38,
+          "chance": 20.0
+        },
+        {
+          "bossId": 39,
+          "chance": 20.0
+        },
+        {
+          "bossId": 40,
+          "chance": 20.0
+        },
+        {
+          "bossId": 41,
+          "chance": 20.0
+        },
+        {
+          "bossId": 42,
+          "chance": 20.0
+        },
+        {
+          "bossId": 43,
+          "chance": 20.0
+        },
+        {
+          "bossId": 44,
+          "chance": 20.0
+        },
+        {
+          "bossId": 39,
+          "chance": 20.0
+        },
+        {
+          "bossId": 41,
+          "chance": 20.0
+        },
+        {
+          "bossId": 42,
+          "chance": 20.0
+        },
+        {
+          "bossId": 40,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 30018,
       "name": "Emerald Drake",
-      "slot": "Mount",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div id=\"tooltip30018-generic\" class=\"tooltip\" style=\"float: left; padding-top: 1px\">\n                <table>\n                    <tr>\n                        <td><table><tr><td><b class=\"q4\">Emerald Drake</b><br />Binds when picked up<br />Requires Level 60<br />Requires Riding (150)<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Adds a mount to the player's mount collection.</span><br /><span class=\"q\">\"Dreamy, green, and very-very sleepy.\"</span></td></tr></table>\n                                                    </td>\n                        <th style=\"background-position: top right\"></th>\n                    </tr>\n                    <tr>\n                        <th style=\"background-position: bottom left\"></th>\n                        <th style=\"background-position: bottom right\"></th>\n                    </tr>\n                </table>\n            </div>",
-      "icon": "inv_misc_head_dragon_green.png"
+      "icon": "inv_misc_head_dragon_green.png",
+      "dropsFrom": [
+        {
+          "bossId": 34,
+          "chance": 1.5
+        }
+      ],
+      "slots": [
+        "Mount"
+      ],
+      "types": []
+    }
+  ],
+  "bosses": [
+    {
+      "bossId": 0,
+      "name": "Erennius"
+    },
+    {
+      "bossId": 1,
+      "name": "Shadeflayer Troll"
+    },
+    {
+      "bossId": 2,
+      "name": "Shadeflayer Trapper"
+    },
+    {
+      "bossId": 3,
+      "name": "Shadeflayer Shaman"
+    },
+    {
+      "bossId": 4,
+      "name": "Shadeflayer Shadowhunter"
+    },
+    {
+      "bossId": 5,
+      "name": "Shadeflayer Berserker"
+    },
+    {
+      "bossId": 6,
+      "name": "Sanctum Dreamer"
+    },
+    {
+      "bossId": 7,
+      "name": "Sanctum Dragonkin"
+    },
+    {
+      "bossId": 8,
+      "name": "Sanctum Wyrm"
+    },
+    {
+      "bossId": 9,
+      "name": "Sanctum Wyrmkin"
+    },
+    {
+      "bossId": 10,
+      "name": "Sanctum Scalebane"
+    },
+    {
+      "bossId": 11,
+      "name": "Sanctum Supressor"
+    },
+    {
+      "bossId": 12,
+      "name": "Repulsing Ooze"
+    },
+    {
+      "bossId": 13,
+      "name": "Verdant Ooze"
+    },
+    {
+      "bossId": 14,
+      "name": "Misthoof Stag"
+    },
+    {
+      "bossId": 15,
+      "name": "Misthoof Sprinter"
+    },
+    {
+      "bossId": 16,
+      "name": "Greathorn Owl"
+    },
+    {
+      "bossId": 17,
+      "name": "Greathorn Hunter"
+    },
+    {
+      "bossId": 18,
+      "name": "Vilemusk Satyr"
+    },
+    {
+      "bossId": 19,
+      "name": "Vilemusk Felsworn"
+    },
+    {
+      "bossId": 20,
+      "name": "Vilemusk Shadowstalker"
+    },
+    {
+      "bossId": 21,
+      "name": "Vilemusk Hellcaller"
+    },
+    {
+      "bossId": 22,
+      "name": "Barkskin Den Watcher"
+    },
+    {
+      "bossId": 23,
+      "name": "Barkskin Gardener"
+    },
+    {
+      "bossId": 24,
+      "name": "Barkskin Avenger"
+    },
+    {
+      "bossId": 25,
+      "name": "Barkskin Pathfinder"
+    },
+    {
+      "bossId": 26,
+      "name": "Barkskin Ursa"
+    },
+    {
+      "bossId": 27,
+      "name": "Barkskin Windtalker"
+    },
+    {
+      "bossId": 28,
+      "name": "Dreadlord Commander"
+    },
+    {
+      "bossId": 29,
+      "name": "Enduring Doomguard"
+    },
+    {
+      "bossId": 30,
+      "name": "Xalthix"
+    },
+    {
+      "bossId": 31,
+      "name": "Lord Xanvarak"
+    },
+    {
+      "bossId": 32,
+      "name": "Elder Growlheart"
+    },
+    {
+      "bossId": 33,
+      "name": "Warlord Hanzento"
+    },
+    {
+      "bossId": 34,
+      "name": "Solnius"
+    },
+    {
+      "bossId": 35,
+      "name": "Lord Kazzak"
+    },
+    {
+      "bossId": 36,
+      "name": "Ostarius"
+    },
+    {
+      "bossId": 37,
+      "name": "Onyxia"
+    },
+    {
+      "bossId": 38,
+      "name": "Azuregos"
+    },
+    {
+      "bossId": 39,
+      "name": "Lethon"
+    },
+    {
+      "bossId": 40,
+      "name": "Emeriss"
+    },
+    {
+      "bossId": 41,
+      "name": "Ysondre"
+    },
+    {
+      "bossId": 42,
+      "name": "Taerar"
+    },
+    {
+      "bossId": 43,
+      "name": "Nefarian"
+    },
+    {
+      "bossId": 44,
+      "name": "Gahz'ranka"
     }
   ]
 }

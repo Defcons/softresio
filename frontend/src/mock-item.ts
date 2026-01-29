@@ -4,8 +4,9 @@ export const nothingItem: Item = {
   tooltip: "",
   icon: "",
   name: "No item reserved",
-  slot: "",
-  type: "",
+  slots: [],
+  types: [],
   classes: [],
   quality: 1,
+  dropsFrom: [],
 }

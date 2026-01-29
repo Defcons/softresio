@@ -124,15 +124,26 @@ export interface CreateSrRequest {
   selectedItemIds: number[]
 }
 
+export interface DropsFrom {
+  bossId: string
+  chance: number
+}
+
 export interface Item {
   id: number
   tooltip: string
   icon: string
   name: string
-  slot: string
-  type: string
+  slots: string[]
+  types: string[]
+  dropsFrom: DropsFrom[]
   classes: Class[]
   quality: 1 | 2 | 3 | 4 | 5
+}
+
+export interface Boss {
+  id: number
+  name: string
 }
 
 export interface Instance {
@@ -140,4 +151,5 @@ export interface Instance {
   name: string
   shortname: string
   items: Item[]
+  bosses: Boss[]
 }

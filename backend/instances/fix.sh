@@ -7,5 +7,4 @@ jq . k40.json | sponge k40.json
 jq . mc.json | sponge mc.json
 jq . naxx.json | sponge naxx.json
 jq . ony.json | sponge ony.json
-jq . ubrs.json | sponge ubrs.json
 jq . zg.json | sponge zg.json

@@ -6,28 +6,106 @@
     {
       "id": 19721,
       "name": "Primal Hakkari Shawl",
-      "slot": "Token",
-      "type": null,
-      "classes": ["Paladin","Hunter","Mage"],
+      "classes": [
+        "Paladin",
+        "Hunter",
+        "Mage"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Shawl</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Mage<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
-      "icon": "inv_shoulder_19.png"
+      "icon": "inv_shoulder_19.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 11.11
+        },
+        {
+          "bossId": 1,
+          "chance": 11.11
+        },
+        {
+          "bossId": 2,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 4,
+          "chance": 11.11
+        },
+        {
+          "bossId": 5,
+          "chance": 11.11
+        },
+        {
+          "bossId": 6,
+          "chance": 11.11
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 19724,
       "name": "Primal Hakkari Aegis",
-      "slot": "Token",
-      "type": null,
-      "classes": ["Hunter","Rogue","Priest"],
+      "classes": [
+        "Hunter",
+        "Rogue",
+        "Priest"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Aegis</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Hunter, Rogue, Priest<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
-      "icon": "inv_chest_chain_12.png"
+      "icon": "inv_chest_chain_12.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 11.11
+        },
+        {
+          "bossId": 1,
+          "chance": 11.11
+        },
+        {
+          "bossId": 2,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 4,
+          "chance": 11.11
+        },
+        {
+          "bossId": 5,
+          "chance": 11.11
+        },
+        {
+          "bossId": 6,
+          "chance": 11.11
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 19723,
       "name": "Primal Hakkari Kossack",
-      "slot": "Token",
-      "type": null,
       "classes": [
         "Warrior",
         "Mage",
@@ -35,1327 +113,4333 @@
       ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Kossack</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Mage, Warlock<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
-      "icon": "inv_shirt_07.png"
+      "icon": "inv_shirt_07.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 11.11
+        },
+        {
+          "bossId": 1,
+          "chance": 11.11
+        },
+        {
+          "bossId": 2,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 4,
+          "chance": 11.11
+        },
+        {
+          "bossId": 5,
+          "chance": 11.11
+        },
+        {
+          "bossId": 6,
+          "chance": 11.11
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 19722,
       "name": "Primal Hakkari Tabard",
-      "slot": "Token",
-      "type": null,
-      "classes": ["Paladin","Shaman","Druid"],
+      "classes": [
+        "Paladin",
+        "Shaman",
+        "Druid"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Tabard</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Shaman, Druid<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
-      "icon": "inv_banner_01.png"
+      "icon": "inv_banner_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 11.11
+        },
+        {
+          "bossId": 1,
+          "chance": 11.11
+        },
+        {
+          "bossId": 2,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 4,
+          "chance": 11.11
+        },
+        {
+          "bossId": 5,
+          "chance": 11.11
+        },
+        {
+          "bossId": 6,
+          "chance": 11.11
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 19717,
       "name": "Primal Hakkari Armsplint",
-      "slot": "Token",
-      "type": null,
-      "classes": ["Warlock","Rogue","Shaman"],
+      "classes": [
+        "Warlock",
+        "Rogue",
+        "Shaman"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Armsplint</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue, Shaman<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
-      "icon": "inv_bracer_18.png"
+      "icon": "inv_bracer_18.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 11.11
+        },
+        {
+          "bossId": 1,
+          "chance": 11.11
+        },
+        {
+          "bossId": 2,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 4,
+          "chance": 11.11
+        },
+        {
+          "bossId": 5,
+          "chance": 11.11
+        },
+        {
+          "bossId": 6,
+          "chance": 11.11
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 19716,
       "name": "Primal Hakkari Bindings",
-      "slot": "Token",
-      "type": null,
-      "classes": ["Paladin","Hunter","Mage"],
+      "classes": [
+        "Paladin",
+        "Hunter",
+        "Mage"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Bindings</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Mage<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
-      "icon": "inv_bracer_05.png"
+      "icon": "inv_bracer_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 11.11
+        },
+        {
+          "bossId": 1,
+          "chance": 11.11
+        },
+        {
+          "bossId": 2,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 4,
+          "chance": 11.11
+        },
+        {
+          "bossId": 5,
+          "chance": 11.11
+        },
+        {
+          "bossId": 6,
+          "chance": 11.11
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 19718,
       "name": "Primal Hakkari Stanchion",
-      "slot": "Token",
-      "type": null,
-      "classes": ["Priest","Warlock","Druid"],
+      "classes": [
+        "Priest",
+        "Warlock",
+        "Druid"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Stanchion</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Warlock, Druid<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
-      "icon": "inv_bracer_14.png"
+      "icon": "inv_bracer_14.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 11.11
+        },
+        {
+          "bossId": 1,
+          "chance": 11.11
+        },
+        {
+          "bossId": 2,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 4,
+          "chance": 11.11
+        },
+        {
+          "bossId": 5,
+          "chance": 11.11
+        },
+        {
+          "bossId": 6,
+          "chance": 11.11
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 19719,
       "name": "Primal Hakkari Girdle",
-      "slot": "Token",
-      "type": null,
-      "classes": ["Warrior","Rogue","Shaman"],
+      "classes": [
+        "Warrior",
+        "Rogue",
+        "Shaman"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Girdle</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue, Shaman<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
-      "icon": "inv_belt_12.png"
+      "icon": "inv_belt_12.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 11.11
+        },
+        {
+          "bossId": 1,
+          "chance": 11.11
+        },
+        {
+          "bossId": 2,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 4,
+          "chance": 11.11
+        },
+        {
+          "bossId": 5,
+          "chance": 11.11
+        },
+        {
+          "bossId": 6,
+          "chance": 11.11
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 19720,
       "name": "Primal Hakkari Sash",
-      "slot": "Token",
-      "type": null,
-      "classes": ["Priest","Warlock","Druid"],
+      "classes": [
+        "Priest",
+        "Warlock",
+        "Druid"
+      ],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Primal Hakkari Sash</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Warlock, Druid<br/><span class=\"q\">\"A legendary Paragon of Power from the old Gurubashi Empire.\"</span></span></div>",
-      "icon": "inv_belt_07.png"
+      "icon": "inv_belt_07.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 11.11
+        },
+        {
+          "bossId": 1,
+          "chance": 11.11
+        },
+        {
+          "bossId": 2,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "bossId": 4,
+          "chance": 11.11
+        },
+        {
+          "bossId": 5,
+          "chance": 11.11
+        },
+        {
+          "bossId": 6,
+          "chance": 11.11
+        }
+      ],
+      "slots": [
+        "Token"
+      ],
+      "types": []
     },
     {
       "id": 19918,
       "name": "Jeklik's Crusher",
-      "slot": "Two-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Jeklik's Crusher</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Mace</span></div></div><div><div>159 - 248 Damage</div><div>Speed 3.60</div></div><span>(56.5 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Chance on hit: Wounds the target for 200 to 220 damage.</span></span></div>",
-      "icon": "inv_mace_19.png"
+      "icon": "inv_mace_19.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 19923,
       "name": "Jeklik's Opaline Talisman",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Jeklik's Opaline Talisman</b><span>Binds when picked up</span><div><div><span>Neck</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 22.</span><br/><span class=\"q2\">Equip: Restores 3 mana per 5 sec.</span></span></div>",
-      "icon": "inv_jewelry_necklace_03.png"
+      "icon": "inv_jewelry_necklace_03.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 19928,
       "name": "Animist's Spaulders",
-      "slot": "Shoulder",
-      "type": "Leather",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Animist's Spaulders</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Leather</span></div></div><span>201 Armor<br/>+11 Stamina<br/>+18 Intellect<br/>+12 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 37.</span></span></div>",
-      "icon": "inv_shoulder_09.png"
+      "icon": "inv_shoulder_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 20262,
       "name": "Seafury Boots",
-      "slot": "Feet",
-      "type": "Mail",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Seafury Boots</b><span>Binds when picked up</span><div><div><span>Feet</span></div><div><span>Mail</span></div></div><span>274 Armor<br/>+10 Stamina<br/>+15 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 12.</span><br/><span class=\"q2\">Equip: Restores 5 mana per 5 sec.</span></span></div>",
-      "icon": "inv_boots_chain_11.png"
+      "icon": "inv_boots_chain_11.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 20265,
       "name": "Peacekeeper Boots",
-      "slot": "Feet",
-      "type": "Plate",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Peacekeeper Boots</b><span>Binds when picked up</span><div><div><span>Feet</span></div><div><span>Plate</span></div></div><span>486 Armor<br/>+10 Stamina<br/>+12 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Restores 6 mana per 5 sec.</span><br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 22.</span></span></div>",
-      "icon": "inv_boots_plate_03.png"
+      "icon": "inv_boots_plate_03.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 19920,
       "name": "Primalist's Band",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Primalist's Band</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+8 Stamina<br/>+10 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Restores 6 mana per 5 sec.</span><br/><br/><span class=\"q\">Prayer of the Primal (0/2)</span><br/><span class=\"q0\">  Primalist's Seal</span><br/><span class=\"q0\">  Primalist's Band</span><br/><span class=\"q0\">(2) Set: Increases healing done by spells and effects by up to 33.</span></span></div>",
-      "icon": "inv_jewelry_ring_47.png"
+      "icon": "inv_jewelry_ring_47.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 19915,
       "name": "Zulian Defender",
-      "slot": "Off Hand",
-      "type": "Shield",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Defender</b><span>Binds when picked up</span><div><div><span>Off Hand</span></div><div><span>Shield</span></div></div><span>2312 Armor<br/>43 Block<br/>+15 Stamina<br/>+9 Intellect<br/>+8 Spirit<br/>Requires Level 60</span></div>",
-      "icon": "inv_shield_22.png"
+      "icon": "inv_shield_22.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
     },
     {
       "id": 19904,
       "name": "Runed Bloodstained Hauberk",
-      "slot": "Chest",
-      "type": "Mail",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Runed Bloodstained Hauberk</b><span>Binds when picked up</span><div><div><span>Chest</span></div><div><span>Mail</span></div></div><span>416 Armor<br/>+19 Stamina<br/>+15 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: +58 Attack Power.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span></span></div>",
-      "icon": "inv_chest_plate08.png"
+      "icon": "inv_chest_plate08.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 19903,
       "name": "Fang of Venoxis",
-      "slot": "Main Hand",
-      "type": "Dagger",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Fang of Venoxis</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Main Hand</span></div><div><span>Dagger</span></div></div><div><div>35 - 73 Damage</div><div>Speed 1.30</div></div><span>(41.3 damage per second)<br/>+8 Intellect<br/>+6 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 24.</span><br/><span class=\"q2\">Equip: Restores 6 mana per 5 sec.</span></span></div>",
-      "icon": "inv_weapon_shortblade_31.png"
+      "icon": "inv_weapon_shortblade_31.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Dagger"
+      ]
     },
     {
       "id": 19907,
       "name": "Zulian Tigerhide Cloak",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Tigerhide Cloak</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>48 Armor<br/>+13 Agility<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_misc_cape_10.png"
+      "icon": "inv_misc_cape_10.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 19906,
       "name": "Blooddrenched Footpads",
-      "slot": "Feet",
-      "type": "Leather",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Blooddrenched Footpads</b><span>Binds when picked up</span><div><div><span>Feet</span></div><div><span>Leather</span></div></div><span>129 Armor<br/>+21 Agility<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_boots_chain_04.png"
+      "icon": "inv_boots_chain_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 19905,
       "name": "Zanzil's Band",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zanzil's Band</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+13 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Equip: Restores 4 mana per 5 sec.</span><br/><br/><span class=\"q\">Zanzil's Concentration (0/2)</span><br/><span class=\"q0\">  Zanzil's Band</span><br/><span class=\"q0\">  Zanzil's Seal</span><br/><span class=\"q0\">(2) Set: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q0\">(2) Set: Increases damage and healing done by magical spells and effects by up to 6.</span></span></div>",
-      "icon": "inv_jewelry_ring_46.png"
+      "icon": "inv_jewelry_ring_46.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 19900,
       "name": "Zulian Stone Axe",
-      "slot": "Two-Hand",
-      "type": "Axe",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Stone Axe</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Axe</span></div></div><div><div>131 - 197 Damage</div><div>Speed 2.80</div></div><span>(58.6 damage per second)<br/>+22 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: +44 Attack Power.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q\">\"Bears the mark of Jin.\"</span></span></div>",
-      "icon": "inv_axe_34.png"
+      "icon": "inv_axe_34.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Axe"
+      ]
     },
     {
       "id": 20032,
       "name": "Flowing Ritual Robes",
-      "slot": "Chest",
-      "type": "Cloth",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Flowing Ritual Robes</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Chest</span></div><div><span>Cloth</span></div></div><span>100 Armor<br/>+15 Stamina<br/>+23 Intellect<br/>+24 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 22.</span></span></div>",
-      "icon": "inv_chest_cloth_25.png"
+      "icon": "inv_chest_cloth_25.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 19927,
       "name": "Mar'li's Touch",
-      "slot": "Ranged",
-      "type": "Wand",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Mar'li's Touch</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Wand</span></div></div><div><div>91 - 170 Nature Damage</div><div>Speed 1.70</div></div><span>(76.8 damage per second)<br/>+5 Stamina<br/>+11 Intellect<br/>+6 Spirit<br/>Requires Level 60</span></div>",
-      "icon": "inv_wand_06.png"
+      "icon": "inv_wand_06.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Wand"
+      ]
     },
     {
       "id": 19871,
       "name": "Talisman of Protection",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Talisman of Protection</b><span>Binds when picked up</span><div><div><span>Neck</span></div><div></div></div><span>+8 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +9.</span><br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span></span></div>",
-      "icon": "inv_jewelry_necklace_21.png"
+      "icon": "inv_jewelry_necklace_21.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 19919,
       "name": "Bloodstained Greaves",
-      "slot": "Feet",
-      "type": "Mail",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bloodstained Greaves</b><span>Binds when picked up</span><div><div><span>Feet</span></div><div><span>Mail</span></div></div><span>274 Armor<br/>+21 Agility<br/>+10 Stamina<br/>+10 Intellect<br/>Requires Level 60</span></div>",
-      "icon": "inv_boots_chain_04.png"
+      "icon": "inv_boots_chain_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 19925,
       "name": "Band of Jin",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Band of Jin</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+14 Agility<br/>+8 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><br/><span class=\"q\">Major Mojo Infusion (0/2)</span><br/><span class=\"q0\">  Seal of Jin</span><br/><span class=\"q0\">  Band of Jin</span><br/><span class=\"q0\">(2) Set: +30 Attack Power.</span></span></div>",
-      "icon": "inv_jewelry_ring_44.png"
+      "icon": "inv_jewelry_ring_44.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 19930,
       "name": "Mar'li's Eye",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Mar'li's Eye</b><span>Binds when picked up</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Use: Restores 60 mana every 5 sec for 30 sec.</span></span></div>",
-      "icon": "inv_zulgurubtrinket.png"
+      "icon": "inv_zulgurubtrinket.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 16.67
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 81003,
       "name": "Ancient Hakkari Flayer",
-      "slot": "Main Hand",
-      "type": "Fist Weapon",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Ancient Hakkari Flayer</b><span>Binds when picked up</span><div><div><span>Main Hand</span></div><div><span>Fist Weapon</span></div></div><div><div>56 - 105 Damage</div><div>Speed 1.80</div></div><span>(44.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Chance on hit: Wounds the target for 90 to 114 damage.</span><br/><span class=\"q2\">Equip: Increased Fist Weapons +4.</span></span></div>",
-      "icon": "inv_weapon_hand_02.png"
+      "icon": "inv_weapon_hand_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 4,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Fist Weapon"
+      ]
     },
     {
       "id": 22637,
       "name": "Primal Hakkari Idol",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Primal Hakkari Idol</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Level 58<br/><span class=\"q\">\"An ancient evil stirs within...\"</span></span></div>",
-      "icon": "inv_zulgurubtrinket.png"
+      "icon": "inv_zulgurubtrinket.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 100.0
+        },
+        {
+          "bossId": 1,
+          "chance": 100.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 19872,
       "name": "Armored Razzashi Raptor",
-      "slot": "Mount",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Armored Razzashi Raptor</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span>Requires Level 60<br/>Requires Riding (150)<br/><span class=\"q2\">Use: Adds a mount to the player's mount collection.</span><br/><span class=\"q\">\"The only known Razzashi Raptors were said to have been in the custody of Bloodlord Mandokir in Zul'Gurub. This species of raptor has not been seen in many years.\"</span></span></div>",
-      "icon": "ability_mount_raptor.png"
+      "icon": "ability_mount_raptor.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 2.0
+        }
+      ],
+      "slots": [
+        "Mount"
+      ],
+      "types": []
     },
     {
       "id": 20038,
       "name": "Mandokir's Sting",
-      "slot": "Ranged",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Mandokir's Sting</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Bow</span></div></div><div><div>68 - 127 Damage</div><div>Speed 2.60</div></div><span>(37.5 damage per second)<br/>+11 Agility<br/>+8 Stamina<br/>Requires Level 60</span></div>",
-      "icon": "inv_waepon_bow_zulgrub_d_01.png"
+      "icon": "inv_waepon_bow_zulgrub_d_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": []
     },
     {
       "id": 19867,
       "name": "Bloodlord's Defender",
-      "slot": "Main Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Bloodlord's Defender</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Main Hand</span></div><div><span>Sword</span></div></div><div><div>64 - 119 Damage</div><div>Speed 1.90</div></div><span>(48.2 damage per second)<br/>80 Armor<br/>+15 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +4.</span></span></div>",
-      "icon": "inv_sword_54.png"
+      "icon": "inv_sword_54.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 19866,
       "name": "Warblade of the Hakkari (OH)",
-      "slot": "Off Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Warblade of the Hakkari</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Off Hand</span></div><div><span>Sword</span></div></div><div><div>57 - 106 Damage</div><div>Speed 1.70</div></div><span>(47.9 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +40 Attack Power.</span><br/><br/><span class=\"q\">The Twin Blades of Hakkari (0/2)</span><br/><span class=\"q0\">  Warblade of the Hakkari</span><br/><span class=\"q0\">  Warblade of the Hakkari</span><br/><span class=\"q0\">(2) Set: Increased Swords +6.</span><br/><span class=\"q\">\"The seething flames of hatred.\"</span></span></div>",
-      "icon": "inv_sword_55.png"
+      "icon": "inv_sword_55.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 19874,
       "name": "Halberd of Smiting",
-      "slot": "Two-Hand",
-      "type": "Polearm",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Halberd of Smiting</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Polearm</span></div></div><div><div>175 - 263 Damage</div><div>Speed 3.50</div></div><span>(62.6 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Chance to decapitate the target on a melee swing, causing 452 to 676 damage.</span></span></div>",
-      "icon": "inv_weapon_halberd_12.png"
+      "icon": "inv_weapon_halberd_12.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Polearm"
+      ]
     },
     {
       "id": 19878,
       "name": "Bloodsoaked Pauldrons",
-      "slot": "Shoulder",
-      "type": "Plate",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bloodsoaked Pauldrons</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Plate</span></div></div><span>552 Armor<br/>+16 Strength<br/>+11 Agility<br/>+16 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +3.</span></span></div>",
-      "icon": "inv_shoulder_01.png"
+      "icon": "inv_shoulder_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 19870,
       "name": "Hakkari Loa Cloak",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Hakkari Loa Cloak</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>50 Armor<br/>+6 Stamina<br/>+6 Intellect<br/>+8 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 33.</span></span></div>",
-      "icon": "inv_misc_cape_18.png"
+      "icon": "inv_misc_cape_18.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 19869,
       "name": "Blooddrenched Grips",
-      "slot": "Hands",
-      "type": "Leather",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Blooddrenched Grips</b><span>Binds when picked up</span><div><div><span>Hands</span></div><div><span>Leather</span></div></div><span>122 Armor<br/>+12 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: +34 Attack Power.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Increased Axes +5.</span></span></div>",
-      "icon": "inv_gauntlets_26.png"
+      "icon": "inv_gauntlets_26.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 19895,
       "name": "Bloodtinged Kilt",
-      "slot": "Legs",
-      "type": "Cloth",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bloodtinged Kilt</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Cloth</span></div></div><span>87 Armor<br/>+20 Stamina<br/>+20 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 28.</span></span></div>",
-      "icon": "inv_pants_cloth_14.png"
+      "icon": "inv_pants_cloth_14.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 19877,
       "name": "Animist's Leggings",
-      "slot": "Legs",
-      "type": "Leather",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Animist's Leggings</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Leather</span></div></div><span>240 Armor<br/>+15 Stamina<br/>+18 Intellect<br/>+18 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 35.</span></span></div>",
-      "icon": "inv_pants_mail_14.png"
+      "icon": "inv_pants_mail_14.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 19873,
       "name": "Overlord's Crimson Band",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Overlord's Crimson Band</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+9 Strength<br/>+8 Agility<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +7.</span><br/><br/><span class=\"q\">Overlord's Resolution (0/2)</span><br/><span class=\"q0\">  Overlord's Crimson Band</span><br/><span class=\"q0\">  Overlord's Onyx Band</span><br/><span class=\"q0\">(2) Set: Increases your chance to dodge an attack by 1%.</span></span></div>",
-      "icon": "inv_jewelry_ring_39.png"
+      "icon": "inv_jewelry_ring_39.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 19863,
       "name": "Primalist's Seal",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Primalist's Seal</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+12 Intellect<br/>+8 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 29.</span><br/><br/><span class=\"q\">Prayer of the Primal (0/2)</span><br/><span class=\"q0\">  Primalist's Seal</span><br/><span class=\"q0\">  Primalist's Band</span><br/><span class=\"q0\">(2) Set: Increases healing done by spells and effects by up to 33.</span></span></div>",
-      "icon": "inv_jewelry_ring_47.png"
+      "icon": "inv_jewelry_ring_47.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 19893,
       "name": "Zanzil's Seal",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zanzil's Seal</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+10 Stamina<br/>+10 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 11.</span><br/><br/><span class=\"q\">Zanzil's Concentration (0/2)</span><br/><span class=\"q0\">  Zanzil's Band</span><br/><span class=\"q0\">  Zanzil's Seal</span><br/><span class=\"q0\">(2) Set: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q0\">(2) Set: Increases damage and healing done by magical spells and effects by up to 6.</span></span></div>",
-      "icon": "inv_jewelry_ring_46.png"
+      "icon": "inv_jewelry_ring_46.png",
+      "dropsFrom": [
+        {
+          "bossId": 1,
+          "chance": 8.333
+        },
+        {
+          "bossId": 1,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 19961,
       "name": "Gri'lek's Grinder",
-      "slot": "One-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Gri'lek's Grinder</b><span>Binds when picked up</span><div><div><span>One-hand</span></div><div><span>Mace</span></div></div><div><div>75 - 140 Damage</div><div>Speed 2.40</div></div><span>(44.8 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +48 Attack Power when fighting Dragonkin.</span></span></div>",
-      "icon": "inv_mace_04.png"
+      "icon": "inv_mace_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 7,
+          "chance": 43.0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 19962,
       "name": "Gri'lek's Carver",
-      "slot": "Two-Hand",
-      "type": "Axe",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Gri'lek's Carver</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Axe</span></div></div><div><div>182 - 274 Damage</div><div>Speed 3.90</div></div><span>(58.5 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +117 Attack Power when fighting Dragonkin.</span></span></div>",
-      "icon": "inv_axe_24.png"
+      "icon": "inv_axe_24.png",
+      "dropsFrom": [
+        {
+          "bossId": 7,
+          "chance": 43.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Axe"
+      ]
     },
     {
       "id": 19939,
       "name": "Gri'lek's Blood",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Gri'lek's Blood</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span><span class=\"q\">\"The Iron Blood of Gri'lek.\"</span></span></div>",
-      "icon": "inv_potion_26.png"
+      "icon": "inv_potion_26.png",
+      "dropsFrom": [
+        {
+          "bossId": 7,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 19967,
       "name": "Thoughtblighter",
-      "slot": "Ranged",
-      "type": "Wand",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Thoughtblighter</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Wand</span></div></div><div><div>90 - 168 Shadow Damage</div><div>Speed 1.80</div></div><span>(71.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Restores 5 mana per 5 sec.</span></span></div>",
-      "icon": "inv_wand_05.png"
+      "icon": "inv_wand_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 8,
+          "chance": 45.0
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Wand"
+      ]
     },
     {
       "id": 19968,
       "name": "Fiery Retributer",
-      "slot": "Main Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Fiery Retributer</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Main Hand</span></div><div><span>Sword</span></div></div><div><div>56 - 105 Damage</div><div>Speed 1.80</div></div><span>(44.7 damage per second)<br/>60 Armor<br/>+7 Strength<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +5.</span><br/><span class=\"q2\">Equip: Adds 2 fire damage to your melee attacks.</span></span></div>",
-      "icon": "inv_sword_01.png"
+      "icon": "inv_sword_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 8,
+          "chance": 40.0
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 19942,
       "name": "Hazza'rah's Dream Thread",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Hazza'rah's Dream Thread</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span></span></div>",
-      "icon": "inv_misc_bandage_16.png"
+      "icon": "inv_misc_bandage_16.png",
+      "dropsFrom": [
+        {
+          "bossId": 8,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 19964,
       "name": "Renataki's Soul Conduit",
-      "slot": "Main Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Renataki's Soul Conduit</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Main Hand</span></div><div><span>Sword</span></div></div><div><div>57 - 115 Damage</div><div>Speed 2.10</div></div><span>(41.0 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 16.</span><br/><span class=\"q2\">Equip: Restores 6 mana per 5 sec.</span></span></div>",
-      "icon": "inv_sword_37.png"
+      "icon": "inv_sword_37.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 40.0
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 19963,
       "name": "Pitchfork of Madness",
-      "slot": "Two-Hand",
-      "type": "Polearm",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Pitchfork of Madness</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Polearm</span></div></div><div><div>163 - 246 Damage</div><div>Speed 3.50</div></div><span>(58.4 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +117 Attack Power when fighting Demons.</span></span></div>",
-      "icon": "inv_spear_03.png"
+      "icon": "inv_spear_03.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 45.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Polearm"
+      ]
     },
     {
       "id": 19940,
       "name": "Renataki's Tooth",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Renataki's Tooth</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span><span class=\"q\">\"The Razor Sharp Tooth of Renataki.\"</span></span></div>",
-      "icon": "inv_misc_monsterfang_01.png"
+      "icon": "inv_misc_monsterfang_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 9,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 19993,
       "name": "Hoodoo Hunting Bow",
-      "slot": "Ranged",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Hoodoo Hunting Bow</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Bow</span></div></div><div><div>68 - 128 Damage</div><div>Speed 2.80</div></div><span>(35.0 damage per second)<br/>+10 Agility<br/>+4 Stamina<br/>Requires Level 60</span></div>",
-      "icon": "inv_waepon_bow_zulgrub_d_02.png"
+      "icon": "inv_waepon_bow_zulgrub_d_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 40.0
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": []
     },
     {
       "id": 19965,
       "name": "Wushoolay's Poker",
-      "slot": "Main Hand",
-      "type": "Dagger",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Wushoolay's Poker</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Main Hand</span></div><div><span>Dagger</span></div></div><div><div>43 - 88 Damage</div><div>Speed 1.60</div></div><span>(41.0 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 31.</span><br/><span class=\"q2\">Equip: Restores 6 mana per 5 sec.</span></span></div>",
-      "icon": "inv_sword_38.png"
+      "icon": "inv_sword_38.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 45.0
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Dagger"
+      ]
     },
     {
       "id": 19941,
       "name": "Wushoolay's Mane",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Wushoolay's Mane</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span><span class=\"q\">\"Wushoolay's Unkempt Mane.\"</span></span></div>",
-      "icon": "inv_misc_monstertail_02.png"
+      "icon": "inv_misc_monstertail_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 10,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 19945,
       "name": "Foror's Eyepatch",
-      "slot": "Head",
-      "type": "Leather",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Foror's Eyepatch</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Head</span></div><div><span>Leather</span></div></div><span>160 Armor<br/>+19 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 2%.</span><br/><span class=\"q2\">Equip: +44 Attack Power.</span></span></div>",
-      "icon": "inv_helmet_46.png"
+      "icon": "inv_helmet_46.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 25.0
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 19944,
       "name": "Nat Pagle's Fish Terminator",
-      "slot": "Two-Hand",
-      "type": "Staff",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Nat Pagle's Fish Terminator</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>172 - 258 Damage</div><div>Speed 3.50</div></div><span>(61.4 damage per second)<br/>+41 Strength<br/>+19 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: +70 Attack Power in Cat, Bear, Dire Bear, and Moonkin forms only.</span><br/><span class=\"q\">\"The inscription reads: Fishin's fer sissies -Nat Pagle\"</span></span></div>",
-      "icon": "inv_fishingpole_02.png"
+      "icon": "inv_fishingpole_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 25.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Staff"
+      ]
     },
     {
       "id": 19947,
       "name": "Nat Pagle's Broken Reel",
-      "slot": "Trinket",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Nat Pagle's Broken Reel</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Use: Increases the chance to hit with spells by 10% for 15 sec.</span><br/><span class=\"q\">\"The inscription reads: Fer really long castin'.\"</span></span></div>",
-      "icon": "inv_gizmo_09.png"
+      "icon": "inv_gizmo_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 25.0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
     },
     {
       "id": 19946,
       "name": "Tigule's Harpoon",
-      "slot": "Two-Hand",
-      "type": "Polearm",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tigule's Harpoon</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Two-hand</span></div><div><span>Polearm</span></div></div><div><div>154 - 232 Damage</div><div>Speed 3.30</div></div><span>(58.5 damage per second)<br/>+20 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 2%.</span><br/><span class=\"q2\">Equip: +60 Attack Power when fighting Beasts.</span><br/><span class=\"q2\">Equip: +112 Attack Power in Cat, Bear, Dire Bear, and Moonkin forms only.</span></span></div>",
-      "icon": "inv_spear_04.png"
+      "icon": "inv_spear_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 25.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Polearm"
+      ]
     },
     {
       "id": 22739,
       "name": "Tome of Polymorph: Turtle",
-      "slot": "Consumable",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Polymorph: Turtle</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Polymorph: Turtle.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_misc_book_07.png"
+      "icon": "inv_misc_book_07.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 15.0
+        }
+      ],
+      "slots": [
+        "Consumable"
+      ],
+      "types": []
     },
     {
       "id": 19902,
       "name": "Swift Zulian Tiger",
-      "slot": "Mount",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Swift Zulian Tiger</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span>Requires Level 60<br/>Requires Riding (150)<br/><span class=\"q2\">Use: Adds a mount to the player's mount collection.</span></span></div>",
-      "icon": "ability_mount_jungletiger.png"
+      "icon": "ability_mount_jungletiger.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 2.0
+        },
+        {
+          "bossId": 3,
+          "chance": 2.0
+        }
+      ],
+      "slots": [
+        "Mount"
+      ],
+      "types": []
     },
     {
       "id": 19897,
       "name": "Betrayer's Boots",
-      "slot": "Feet",
-      "type": "Cloth",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Betrayer's Boots</b><span>Binds when picked up</span><div><div><span>Feet</span></div><div><span>Cloth</span></div></div><span>69 Armor<br/>+8 Stamina<br/>+12 Intellect<br/>+12 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 30.</span></span></div>",
-      "icon": "inv_boots_cloth_09.png"
+      "icon": "inv_boots_cloth_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 14.29
+        },
+        {
+          "bossId": 3,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 19896,
       "name": "Thekal's Grasp",
-      "slot": "Main Hand",
-      "type": "Fist Weapon",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Thekal's Grasp</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Main Hand</span></div><div><span>Fist Weapon</span></div></div><div><div>72 - 135 Damage</div><div>Speed 2.20</div></div><span>(47.0 damage per second)<br/>+13 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><br/><span class=\"q\">Primal Blessing (0/2)</span><br/><span class=\"q0\">  Thekal's Grasp</span><br/><span class=\"q0\">  Arlokk's Grasp</span><br/><span class=\"q0\">(2) Set: Grants a small chance when ranged or melee damage is dealt to infuse the wielder with a blessing from the Primal Gods. Ranged and melee attack power increased by 300 for 12 seconds.</span></span></div>",
-      "icon": "inv_weapon_hand_01.png"
+      "icon": "inv_weapon_hand_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 14.29
+        },
+        {
+          "bossId": 3,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Fist Weapon"
+      ]
     },
     {
       "id": 19899,
       "name": "Ritualistic Legguards",
-      "slot": "Legs",
-      "type": "Cloth",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Ritualistic Legguards</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Cloth</span></div></div><span>84 Armor<br/>+13 Stamina<br/>+14 Intellect<br/>+20 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 37.</span></span></div>",
-      "icon": "inv_pants_cloth_14.png"
+      "icon": "inv_pants_cloth_14.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 14.29
+        },
+        {
+          "bossId": 3,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 20260,
       "name": "Seafury Leggings",
-      "slot": "Legs",
-      "type": "Mail",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Seafury Leggings</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Mail</span></div></div><span>348 Armor<br/>+15 Strength<br/>+15 Stamina<br/>+15 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 16.</span><br/><span class=\"q2\">Equip: Restores 6 mana per 5 sec.</span></span></div>",
-      "icon": "inv_pants_mail_06.png"
+      "icon": "inv_pants_mail_06.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 14.29
+        },
+        {
+          "bossId": 3,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 20266,
       "name": "Peacekeeper Leggings",
-      "slot": "Legs",
-      "type": "Plate",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Peacekeeper Leggings</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Plate</span></div></div><span>618 Armor<br/>+14 Stamina<br/>+18 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 37.</span><br/><span class=\"q2\">Equip: Restores 7 mana per 5 sec.</span></span></div>",
-      "icon": "inv_pants_plate_04.png"
+      "icon": "inv_pants_plate_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 14.29
+        },
+        {
+          "bossId": 3,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 19898,
       "name": "Seal of Jin",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Seal of Jin</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+8 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: +20 Attack Power.</span><br/><br/><span class=\"q\">Major Mojo Infusion (0/2)</span><br/><span class=\"q0\">  Seal of Jin</span><br/><span class=\"q0\">  Band of Jin</span><br/><span class=\"q0\">(2) Set: +30 Attack Power.</span></span></div>",
-      "icon": "inv_jewelry_ring_44.png"
+      "icon": "inv_jewelry_ring_44.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 14.29
+        },
+        {
+          "bossId": 3,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 19901,
       "name": "Zulian Slicer",
-      "slot": "One-Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Slicer</b><span>Binds when picked up</span><div><div><span>One-hand</span></div><div><span>Sword</span></div></div><div><div>78 - 146 Damage</div><div>Speed 2.50</div></div><span>(44.8 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Chance on hit: Slices the enemy for 72 to 96 Nature damage.</span><br/><span class=\"q2\">Equip: +12 Attack Power.</span><br/><span class=\"q2\">Equip: Skinning +10.</span></span></div>",
-      "icon": "inv_sword_35.png"
+      "icon": "inv_sword_35.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 14.29
+        },
+        {
+          "bossId": 3,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 19910,
       "name": "Arlokk's Grasp",
-      "slot": "Off Hand",
-      "type": "Fist Weapon",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Arlokk's Grasp</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Off Hand</span></div><div><span>Fist Weapon</span></div></div><div><div>43 - 92 Damage</div><div>Speed 1.50</div></div><span>(45.0 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Chance on hit: Sends a shadowy bolt at the enemy causing 55 to 85 Shadow damage.</span><br/><br/><span class=\"q\">Primal Blessing (0/2)</span><br/><span class=\"q0\">  Thekal's Grasp</span><br/><span class=\"q0\">  Arlokk's Grasp</span><br/><span class=\"q0\">(2) Set: Grants a small chance when ranged or melee damage is dealt to infuse the wielder with a blessing from the Primal Gods. Ranged and melee attack power increased by 300 for 12 seconds.</span></span></div>",
-      "icon": "inv_weapon_hand_01.png"
+      "icon": "inv_weapon_hand_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Fist Weapon"
+      ]
     },
     {
       "id": 19909,
       "name": "Will of Arlokk",
-      "slot": "Two-Hand",
-      "type": "Staff",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Will of Arlokk</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>129 - 204 Damage</div><div>Speed 3.00</div></div><span>(55.5 damage per second)<br/>+15 Stamina<br/>+19 Intellect<br/>+35 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 46.</span></span></div>",
-      "icon": "inv_staff_35.png"
+      "icon": "inv_staff_35.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Staff"
+      ]
     },
     {
       "id": 19913,
       "name": "Bloodsoaked Greaves",
-      "slot": "Feet",
-      "type": "Plate",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bloodsoaked Greaves</b><span>Binds when picked up</span><div><div><span>Feet</span></div><div><span>Plate</span></div></div><span>486 Armor<br/>+8 Agility<br/>+25 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +5.</span></span></div>",
-      "icon": "inv_boots_plate_06.png"
+      "icon": "inv_boots_plate_06.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 19912,
       "name": "Overlord's Onyx Band",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Overlord's Onyx Band</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+11 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 2%.</span><br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/><br/><span class=\"q\">Overlord's Resolution (0/2)</span><br/><span class=\"q0\">  Overlord's Crimson Band</span><br/><span class=\"q0\">  Overlord's Onyx Band</span><br/><span class=\"q0\">(2) Set: Increases your chance to dodge an attack by 1%.</span></span></div>",
-      "icon": "inv_jewelry_ring_39.png"
+      "icon": "inv_jewelry_ring_39.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 19922,
       "name": "Arlokk's Hoodoo Stick",
-      "slot": "Held In Off-hand",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Arlokk's Hoodoo Stick</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Held In Off-Hand</span></div><div></div></div><span>+8 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 22.</span></span></div>",
-      "icon": "inv_misc_bone_dwarfskull_01.png"
+      "icon": "inv_misc_bone_dwarfskull_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Held In Off-hand"
+      ],
+      "types": []
     },
     {
       "id": 19914,
       "name": "Panther Hide Sack",
-      "slot": "Bag",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Panther Hide Sack</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span>20 Slot Bag</span></div>",
-      "icon": "inv_misc_bag_14.png"
+      "icon": "inv_misc_bag_14.png",
+      "dropsFrom": [
+        {
+          "bossId": 6,
+          "chance": 18.0
+        }
+      ],
+      "slots": [
+        "Bag"
+      ],
+      "types": []
     },
     {
       "id": 19885,
       "name": "Jin'do's Evil Eye",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Jin'do's Evil Eye</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Neck</span></div><div></div></div><span>+5 Stamina<br/>+11 Intellect<br/>+6 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 44.</span></span></div>",
-      "icon": "inv_jewelry_ring_45.png"
+      "icon": "inv_jewelry_ring_45.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 19891,
       "name": "Jin'do's Bag of Whammies",
-      "slot": "Held In Off-hand",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Jin'do's Bag of Whammies</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Held In Off-Hand</span></div><div></div></div><span>+8 Stamina<br/>+11 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 18.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span></span></div>",
-      "icon": "inv_misc_bag_10_black.png"
+      "icon": "inv_misc_bag_10_black.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Held In Off-hand"
+      ],
+      "types": []
     },
     {
       "id": 19890,
       "name": "Jin'do's Hexxer",
-      "slot": "Main Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Jin'do's Hexxer</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Main Hand</span></div><div><span>Mace</span></div></div><div><div>64 - 135 Damage</div><div>Speed 2.40</div></div><span>(41.4 damage per second)<br/>+6 Stamina<br/>+9 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 51.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
-      "icon": "inv_mace_17.png"
+      "icon": "inv_mace_17.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 19884,
       "name": "Jin'do's Judgement",
-      "slot": "Two-Hand",
-      "type": "Staff",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Jin'do's Judgement</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>143 - 227 Damage</div><div>Speed 3.30</div></div><span>(56.1 damage per second)<br/>+10 Stamina<br/>+10 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 2%.</span><br/><span class=\"q2\">Equip: Restores 14 mana per 5 sec.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 27.</span></span></div>",
-      "icon": "inv_staff_33.png"
+      "icon": "inv_staff_33.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Staff"
+      ]
     },
     {
       "id": 19886,
       "name": "The Hexxer's Cover",
-      "slot": "Head",
-      "type": "Cloth",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">The Hexxer's Cover</b><span>Binds when picked up</span><div><div><span>Head</span></div><div><span>Cloth</span></div></div><span>81 Armor<br/>+10 Stamina<br/>+10 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 41.</span></span></div>",
-      "icon": "inv_mask_02.png"
+      "icon": "inv_mask_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 19875,
       "name": "Bloodstained Coif",
-      "slot": "Head",
-      "type": "Mail",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bloodstained Coif</b><span>Binds when picked up</span><div><div><span>Head</span></div><div><span>Mail</span></div></div><span>337 Armor<br/>+14 Stamina<br/>+14 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 2%.</span><br/><span class=\"q2\">Equip: +28 Attack Power.</span></span></div>",
-      "icon": "inv_helmet_39.png"
+      "icon": "inv_helmet_39.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 19888,
       "name": "Overlord's Embrace",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Overlord's Embrace</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>140 Armor<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +7.</span><br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 1%.</span></span></div>",
-      "icon": "inv_misc_cape_21.png"
+      "icon": "inv_misc_cape_21.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 19929,
       "name": "Bloodtinged Gloves",
-      "slot": "Hands",
-      "type": "Cloth",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bloodtinged Gloves</b><span>Binds when picked up</span><div><div><span>Hands</span></div><div><span>Cloth</span></div></div><span>62 Armor<br/>+10 Stamina<br/>+10 Intellect<br/>+10 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 19.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span></span></div>",
-      "icon": "inv_gauntlets_16.png"
+      "icon": "inv_gauntlets_16.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 19894,
       "name": "Bloodsoaked Gauntlets",
-      "slot": "Hands",
-      "type": "Plate",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bloodsoaked Gauntlets</b><span>Binds when picked up</span><div><div><span>Hands</span></div><div><span>Plate</span></div></div><span>460 Armor<br/>+17 Strength<br/>+14 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +5.</span><br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span></span></div>",
-      "icon": "inv_gauntlets_14.png"
+      "icon": "inv_gauntlets_14.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 19889,
       "name": "Blooddrenched Leggings",
-      "slot": "Legs",
-      "type": "Leather",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Blooddrenched Leggings</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Leather</span></div></div><span>170 Armor<br/>+35 Agility<br/>+15 Stamina<br/>Requires Level 60</span></div>",
-      "icon": "inv_pants_leather_09.png"
+      "icon": "inv_pants_leather_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 19887,
       "name": "Bloodstained Legplates",
-      "slot": "Legs",
-      "type": "Mail",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Bloodstained Legplates</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Mail</span></div></div><span>363 Armor<br/>+24 Agility<br/>+15 Stamina<br/>+11 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span></span></div>",
-      "icon": "inv_pants_mail_09.png"
+      "icon": "inv_pants_mail_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 19892,
       "name": "Animist's Boots",
-      "slot": "Feet",
-      "type": "Leather",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Animist's Boots</b><span>Binds when picked up</span><div><div><span>Feet</span></div><div><span>Leather</span></div></div><span>184 Armor<br/>+9 Stamina<br/>+14 Intellect<br/>+14 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 29.</span></span></div>",
-      "icon": "inv_boots_chain_13.png"
+      "icon": "inv_boots_chain_13.png",
+      "dropsFrom": [
+        {
+          "bossId": 0,
+          "chance": 8.333
+        },
+        {
+          "bossId": 0,
+          "chance": 8.333
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 19857,
       "name": "Cloak of Consumption",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Cloak of Consumption</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>52 Armor<br/>+10 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 23.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span></span></div>",
-      "icon": "inv_misc_cape_22.png"
+      "icon": "inv_misc_cape_22.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 20257,
       "name": "Seafury Gauntlets",
-      "slot": "Hands",
-      "type": "Mail",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Seafury Gauntlets</b><span>Binds when picked up</span><div><div><span>Hands</span></div><div><span>Mail</span></div></div><span>271 Armor<br/>+13 Strength<br/>+13 Stamina<br/>+13 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells and attacks by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 11.</span><br/><span class=\"q2\">Equip: Restores 5 mana per 5 sec.</span></span></div>",
-      "icon": "inv_gauntlets_30.png"
+      "icon": "inv_gauntlets_30.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 20264,
       "name": "Peacekeeper Gauntlets",
-      "slot": "Hands",
-      "type": "Plate",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Peacekeeper Gauntlets</b><span>Binds when picked up</span><div><div><span>Hands</span></div><div><span>Plate</span></div></div><span>482 Armor<br/>+8 Stamina<br/>+12 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 51.</span><br/><span class=\"q2\">Equip: Restores 6 mana per 5 sec.</span></span></div>",
-      "icon": "inv_gauntlets_10.png"
+      "icon": "inv_gauntlets_10.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 19855,
       "name": "Bloodsoaked Legplates",
-      "slot": "Legs",
-      "type": "Plate",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Bloodsoaked Legplates</b><span>Binds when picked up</span><div><div><span>Legs</span></div><div><span>Plate</span></div></div><span>674 Armor<br/>+36 Strength<br/>+21 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +10.</span></span></div>",
-      "icon": "inv_pants_plate_21.png"
+      "icon": "inv_pants_plate_21.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 19876,
       "name": "Soul Corrupter's Necklace",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Soul Corrupter's Necklace</b><span>Binds when picked up</span><div><div><span>Neck</span></div><div></div></div><span>+5 Stamina<br/>+13 Intellect<br/>+8 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases your attack and casting speed by 1%.</span></span></div>",
-      "icon": "inv_jewelry_necklace_19.png"
+      "icon": "inv_jewelry_necklace_19.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 19856,
       "name": "The Eye of Hakkar",
-      "slot": "Neck",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">The Eye of Hakkar</b><span>Binds when picked up</span><div><div><span>Neck</span></div><div></div></div><span>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: +40 Attack Power.</span></span></div>",
-      "icon": "inv_jewelry_necklace_22.png"
+      "icon": "inv_jewelry_necklace_22.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
     },
     {
       "id": 19861,
       "name": "Touch of Chaos",
-      "slot": "Ranged",
-      "type": "Wand",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Touch of Chaos</b><span>Binds when picked up</span><div><div><span>Ranged</span></div><div><span>Wand</span></div></div><div><div>86 - 160 Shadow Damage</div><div>Speed 1.50</div></div><span>(82.0 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 18.</span></span></div>",
-      "icon": "inv_wand_09.png"
+      "icon": "inv_wand_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Wand"
+      ]
     },
     {
       "id": 19853,
       "name": "Gurubashi Dwarf Destroyer",
-      "slot": "Ranged",
-      "type": "Gun",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Gurubashi Dwarf Destroyer</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>76 - 142 Damage</div><div>Speed 2.80</div></div><span>(38.9 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +30 Attack Power.</span></span></div>",
-      "icon": "inv_weapon_rifle_10.png"
+      "icon": "inv_weapon_rifle_10.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Gun"
+      ]
     },
     {
       "id": 19862,
       "name": "Aegis of the Blood God",
-      "slot": "Off Hand",
-      "type": "Shield",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Aegis of the Blood God</b><span>Binds when picked up</span><div><div><span>Off Hand</span></div><div><span>Shield</span></div></div><span>2575 Armor<br/>47 Block<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases the block value of your shield by 30.</span><br/><span class=\"q2\">Equip: Increased Defense +7.</span><br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 2%.</span></span></div>",
-      "icon": "inv_shield_12.png"
+      "icon": "inv_shield_12.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
     },
     {
       "id": 19864,
       "name": "Bloodcaller",
-      "slot": "Main Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Bloodcaller</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Main Hand</span></div><div><span>Sword</span></div></div><div><div>52 - 114 Damage</div><div>Speed 2.00</div></div><span>(41.5 damage per second)<br/>+12 Stamina<br/>+15 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 33.</span></span></div>",
-      "icon": "inv_sword_18.png"
+      "icon": "inv_sword_18.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 19865,
       "name": "Warblade of the Hakkari (MH)",
-      "slot": "Main Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Warblade of the Hakkari</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Main Hand</span></div><div><span>Sword</span></div></div><div><div>59 - 110 Damage</div><div>Speed 1.70</div></div><span>(49.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: +28 Attack Power.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><br/><span class=\"q\">The Twin Blades of Hakkari (0/2)</span><br/><span class=\"q0\">  Warblade of the Hakkari</span><br/><span class=\"q0\">  Warblade of the Hakkari</span><br/><span class=\"q0\">(2) Set: Increased Swords +6.</span><br/><span class=\"q\">\"Forged in...\"</span></span></div>",
-      "icon": "inv_sword_55.png"
+      "icon": "inv_sword_55.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 19852,
       "name": "Ancient Hakkari Manslayer",
-      "slot": "One-Hand",
-      "type": "Axe",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Ancient Hakkari Manslayer</b><span>Binds when picked up</span><div><div><span>One-hand</span></div><div><span>Axe</span></div></div><div><div>69 - 130 Damage</div><div>Speed 2.00</div></div><span>(49.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Chance on hit: Steals 48 to 54 life from target enemy.</span></span></div>",
-      "icon": "inv_axe_35.png"
+      "icon": "inv_axe_35.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Axe"
+      ]
     },
     {
       "id": 19859,
       "name": "Fang of the Faceless",
-      "slot": "One-Hand",
-      "type": "Dagger",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Fang of the Faceless</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Dagger</span></div></div><div><div>66 - 123 Damage</div><div>Speed 1.90</div></div><span>(49.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: +28 Attack Power.</span></span></div>",
-      "icon": "inv_weapon_shortblade_30.png"
+      "icon": "inv_weapon_shortblade_30.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Dagger"
+      ]
     },
     {
       "id": 19854,
       "name": "Zin'rokh, Destroyer of Worlds",
-      "slot": "Two-Hand",
-      "type": "Sword",
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Zin'rokh, Destroyer of Worlds</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Two-hand</span></div><div><span>Sword</span></div></div><div><div>196 - 295 Damage</div><div>Speed 3.80</div></div><span>(64.6 damage per second)<br/>+28 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: +72 Attack Power.</span></span></div>",
-      "icon": "inv_sword_55.png"
+      "icon": "inv_sword_55.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 14.29
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
     },
     {
       "id": 19802,
       "name": "Heart of Hakkar",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Heart of Hakkar</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span>This Item Begins a Quest<br/>Requires Level 58</span></div>",
-      "icon": "inv_misc_gem_bloodstone_02.png"
+      "icon": "inv_misc_gem_bloodstone_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 12,
+          "chance": 100.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 19975,
       "name": "Zulian Mudskunk",
-      "slot": "Miscellaneous",
-      "type": null,
       "classes": [],
       "quality": 1,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Zulian Mudskunk</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_misc_fish_05.png"
+      "icon": "inv_misc_fish_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 13,
+          "chance": 100.0
+        }
+      ],
+      "slots": [
+        "Miscellaneous"
+      ],
+      "types": []
     },
     {
       "id": 19727,
       "name": "Blood Scythe",
-      "slot": "Miscellaneous",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Blood Scythe</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span><span class=\"q\">\"Allows an Herbalist to collect Bloodvine from Zul'Gurub Flora when carried.\"</span></span></div>",
-      "icon": "inv_weapon_shortblade_29.png"
+      "icon": "inv_weapon_shortblade_29.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 0.12
+        },
+        {
+          "bossId": 15,
+          "chance": 0.02
+        },
+        {
+          "bossId": 16,
+          "chance": 0.08
+        },
+        {
+          "bossId": 17,
+          "chance": 0.02
+        },
+        {
+          "bossId": 18,
+          "chance": 0.02
+        },
+        {
+          "bossId": 19,
+          "chance": 0.06
+        },
+        {
+          "bossId": 20,
+          "chance": 0.02
+        },
+        {
+          "bossId": 21,
+          "chance": 0.18
+        },
+        {
+          "bossId": 22,
+          "chance": 0.1
+        },
+        {
+          "bossId": 23,
+          "chance": 0.017
+        },
+        {
+          "bossId": 24,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.08
+        },
+        {
+          "bossId": 26,
+          "chance": 0.02
+        },
+        {
+          "bossId": 27,
+          "chance": 0.06
+        },
+        {
+          "bossId": 28,
+          "chance": 0.02
+        },
+        {
+          "bossId": 29,
+          "chance": 0.04
+        },
+        {
+          "bossId": 30,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.06
+        },
+        {
+          "bossId": 32,
+          "chance": 0.04
+        }
+      ],
+      "slots": [
+        "Miscellaneous"
+      ],
+      "types": []
     },
     {
       "id": 20263,
       "name": "Gurubashi Helm",
-      "slot": "Head",
-      "type": "Plate",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Gurubashi Helm</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Plate</span></div></div><span>549 Armor<br/>+22 Strength<br/>+21 Agility<br/>+13 Stamina<br/>Requires Level 60<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_helmet_25.png"
+      "icon": "inv_helmet_25.png",
+      "dropsFrom": [
+        {
+          "bossId": 15,
+          "chance": 0.02
+        },
+        {
+          "bossId": 16,
+          "chance": 0.0575
+        },
+        {
+          "bossId": 17,
+          "chance": 0.02
+        },
+        {
+          "bossId": 18,
+          "chance": 0.04
+        },
+        {
+          "bossId": 19,
+          "chance": 0.04
+        },
+        {
+          "bossId": 20,
+          "chance": 0.0214
+        },
+        {
+          "bossId": 33,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.03
+        },
+        {
+          "bossId": 27,
+          "chance": 0.04
+        },
+        {
+          "bossId": 29,
+          "chance": 0.0172
+        },
+        {
+          "bossId": 31,
+          "chance": 0.08
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 20259,
       "name": "Shadow Panther Hide Gloves",
-      "slot": "Hands",
-      "type": "Leather",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadow Panther Hide Gloves</b><span>Binds when equipped</span><div><div><span>Hands</span></div><div><span>Leather</span></div></div><span>173 Armor<br/>+15 Strength<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_gauntlets_25.png"
+      "icon": "inv_gauntlets_25.png",
+      "dropsFrom": [
+        {
+          "bossId": 15,
+          "chance": 0.03
+        },
+        {
+          "bossId": 16,
+          "chance": 0.06
+        },
+        {
+          "bossId": 17,
+          "chance": 0.06
+        },
+        {
+          "bossId": 18,
+          "chance": 0.04
+        },
+        {
+          "bossId": 19,
+          "chance": 0.08
+        },
+        {
+          "bossId": 20,
+          "chance": 0.02
+        },
+        {
+          "bossId": 33,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.03
+        },
+        {
+          "bossId": 29,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.02
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 20261,
       "name": "Shadow Panther Hide Belt",
-      "slot": "Waist",
-      "type": "Leather",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadow Panther Hide Belt</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Leather</span></div></div><span>102 Armor<br/>+8 Strength<br/>+16 Agility<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_belt_26.png"
+      "icon": "inv_belt_26.png",
+      "dropsFrom": [
+        {
+          "bossId": 15,
+          "chance": 0.08
+        },
+        {
+          "bossId": 16,
+          "chance": 0.06
+        },
+        {
+          "bossId": 17,
+          "chance": 0.06
+        },
+        {
+          "bossId": 18,
+          "chance": 0.02
+        },
+        {
+          "bossId": 19,
+          "chance": 0.04
+        },
+        {
+          "bossId": 20,
+          "chance": 0.04
+        },
+        {
+          "bossId": 33,
+          "chance": 0.0225
+        },
+        {
+          "bossId": 25,
+          "chance": 0.0469
+        },
+        {
+          "bossId": 27,
+          "chance": 0.06
+        },
+        {
+          "bossId": 29,
+          "chance": 0.0172
+        },
+        {
+          "bossId": 31,
+          "chance": 0.0333
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 19921,
       "name": "Zulian Hacker",
-      "slot": "One-Hand",
-      "type": "Axe",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Hacker</b><span>Binds when equipped</span><div><div><span>One-hand</span></div><div><span>Axe</span></div></div><div><div>71 - 134 Damage</div><div>Speed 2.40</div></div><span>(42.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Axes +2.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_axe_08.png"
+      "icon": "inv_axe_08.png",
+      "dropsFrom": [
+        {
+          "bossId": 15,
+          "chance": 0.08
+        },
+        {
+          "bossId": 16,
+          "chance": 0.02
+        },
+        {
+          "bossId": 17,
+          "chance": 0.02
+        },
+        {
+          "bossId": 18,
+          "chance": 0.02
+        },
+        {
+          "bossId": 19,
+          "chance": 0.06
+        },
+        {
+          "bossId": 20,
+          "chance": 0.02
+        },
+        {
+          "bossId": 33,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.03
+        },
+        {
+          "bossId": 27,
+          "chance": 0.04
+        },
+        {
+          "bossId": 29,
+          "chance": 0.06
+        },
+        {
+          "bossId": 31,
+          "chance": 0.06
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Axe"
+      ]
     },
     {
       "id": 19908,
       "name": "Sceptre of Smiting",
-      "slot": "One-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Sceptre of Smiting</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Mace</span></div></div><div><div>77 - 145 Damage</div><div>Speed 2.60</div></div><span>(42.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Maces +2.</span><br/><span class=\"q2\">Chance on hit: Blasts the enemy with poison for 63 to 93 Nature damage.</span></span></div>",
-      "icon": "inv_mace_08.png"
+      "icon": "inv_mace_08.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 0.04
+        },
+        {
+          "bossId": 15,
+          "chance": 0.04
+        },
+        {
+          "bossId": 16,
+          "chance": 0.06
+        },
+        {
+          "bossId": 17,
+          "chance": 0.08
+        },
+        {
+          "bossId": 18,
+          "chance": 0.02
+        },
+        {
+          "bossId": 19,
+          "chance": 0.12
+        },
+        {
+          "bossId": 20,
+          "chance": 0.06
+        },
+        {
+          "bossId": 33,
+          "chance": 0.1
+        },
+        {
+          "bossId": 25,
+          "chance": 0.08
+        },
+        {
+          "bossId": 27,
+          "chance": 0.06
+        },
+        {
+          "bossId": 29,
+          "chance": 0.04
+        },
+        {
+          "bossId": 31,
+          "chance": 0.1
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 20258,
       "name": "Zulian Ceremonial Staff",
-      "slot": "Two-Hand",
-      "type": "Staff",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Ceremonial Staff</b><span>Binds when equipped</span><span>Unique</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>112 - 172 Damage</div><div>Speed 2.60</div></div><span>(54.6 damage per second)<br/>+13 Stamina<br/>+16 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 32.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_staff_34.png"
+      "icon": "inv_staff_34.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 0.06
+        },
+        {
+          "bossId": 15,
+          "chance": 0.08
+        },
+        {
+          "bossId": 16,
+          "chance": 0.04
+        },
+        {
+          "bossId": 18,
+          "chance": 0.04
+        },
+        {
+          "bossId": 19,
+          "chance": 0.08
+        },
+        {
+          "bossId": 20,
+          "chance": 0.04
+        },
+        {
+          "bossId": 33,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.02
+        },
+        {
+          "bossId": 27,
+          "chance": 0.04
+        },
+        {
+          "bossId": 29,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.03
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Staff"
+      ]
     },
     {
       "id": 19726,
       "name": "Bloodvine",
-      "slot": "Miscellaneous",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Bloodvine</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_misc_herb_09.png"
+      "icon": "inv_misc_herb_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 1.332
+        },
+        {
+          "bossId": 15,
+          "chance": 1.162
+        },
+        {
+          "bossId": 34,
+          "chance": 2.242
+        },
+        {
+          "bossId": 16,
+          "chance": 1.936
+        },
+        {
+          "bossId": 17,
+          "chance": 1.886
+        },
+        {
+          "bossId": 18,
+          "chance": 1.447
+        },
+        {
+          "bossId": 19,
+          "chance": 1.899
+        },
+        {
+          "bossId": 20,
+          "chance": 1.928
+        },
+        {
+          "bossId": 21,
+          "chance": 0.04
+        },
+        {
+          "bossId": 22,
+          "chance": 0.02
+        },
+        {
+          "bossId": 24,
+          "chance": 0.02
+        },
+        {
+          "bossId": 35,
+          "chance": 0.02
+        },
+        {
+          "bossId": 36,
+          "chance": 0.02
+        },
+        {
+          "bossId": 37,
+          "chance": 0.02
+        },
+        {
+          "bossId": 38,
+          "chance": 0.1
+        },
+        {
+          "bossId": 33,
+          "chance": 2.142
+        },
+        {
+          "bossId": 25,
+          "chance": 2.065
+        },
+        {
+          "bossId": 26,
+          "chance": 0.02
+        },
+        {
+          "bossId": 27,
+          "chance": 1.885
+        },
+        {
+          "bossId": 28,
+          "chance": 0.02
+        },
+        {
+          "bossId": 29,
+          "chance": 0.02
+        },
+        {
+          "bossId": 30,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 2.096
+        },
+        {
+          "bossId": 32,
+          "chance": 0.04
+        }
+      ],
+      "slots": [
+        "Miscellaneous"
+      ],
+      "types": []
     },
     {
       "id": 19774,
       "name": "Souldarite",
-      "slot": "Miscellaneous",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Souldarite</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cff98b0e045|r|cff98b0e0s|r</span></div>",
-      "icon": "inv_misc_gem_01.png"
+      "icon": "inv_misc_gem_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 15,
+          "chance": 0.02
+        },
+        {
+          "bossId": 16,
+          "chance": 0.02
+        },
+        {
+          "bossId": 17,
+          "chance": 0.1
+        },
+        {
+          "bossId": 18,
+          "chance": 0.06
+        },
+        {
+          "bossId": 19,
+          "chance": 0.04
+        },
+        {
+          "bossId": 20,
+          "chance": 0.02
+        },
+        {
+          "bossId": 21,
+          "chance": 0.04
+        },
+        {
+          "bossId": 22,
+          "chance": 0.02
+        },
+        {
+          "bossId": 24,
+          "chance": 0.04
+        },
+        {
+          "bossId": 37,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.08
+        },
+        {
+          "bossId": 27,
+          "chance": 0.18
+        },
+        {
+          "bossId": 28,
+          "chance": 0.02
+        },
+        {
+          "bossId": 29,
+          "chance": 0.08
+        },
+        {
+          "bossId": 31,
+          "chance": 0.06
+        },
+        {
+          "bossId": 32,
+          "chance": 0.02
+        }
+      ],
+      "slots": [
+        "Miscellaneous"
+      ],
+      "types": []
     },
     {
       "id": 19767,
       "name": "Primal Bat Leather",
-      "slot": "Materials",
-      "type": "Leather",
       "classes": [],
       "quality": 1,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Primal Bat Leather</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_misc_pelt_01.png"
+      "icon": "inv_misc_pelt_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 5,
+          "chance": 24.0
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 19768,
       "name": "Primal Tiger Leather",
-      "slot": "Materials",
-      "type": "Leather",
       "classes": [],
       "quality": 1,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Primal Tiger Leather</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_misc_pelt_04.png"
+      "icon": "inv_misc_pelt_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 3,
+          "chance": 24.0
+        },
+        {
+          "bossId": 3,
+          "chance": 24.0
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 19820,
       "name": "Punctured Voodoo Doll (Priest)",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Priest<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a priest.\"</span><br/>|cFFFFFFFFValue:|r |cff98b0e044|r|cff98b0e0s|r |cffc8602c39|r|cffc8602cc|r</span></div>",
-      "icon": "inv_misc_idol_10.png"
+      "icon": "inv_misc_idol_10.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 0.03
+        },
+        {
+          "bossId": 15,
+          "chance": 0.02
+        },
+        {
+          "bossId": 16,
+          "chance": 0.02
+        },
+        {
+          "bossId": 17,
+          "chance": 0.02
+        },
+        {
+          "bossId": 18,
+          "chance": 0.02
+        },
+        {
+          "bossId": 19,
+          "chance": 0.04
+        },
+        {
+          "bossId": 21,
+          "chance": 0.04
+        },
+        {
+          "bossId": 22,
+          "chance": 0.02
+        },
+        {
+          "bossId": 24,
+          "chance": 0.02
+        },
+        {
+          "bossId": 35,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.06
+        },
+        {
+          "bossId": 26,
+          "chance": 0.02
+        },
+        {
+          "bossId": 27,
+          "chance": 0.02
+        },
+        {
+          "bossId": 28,
+          "chance": 0.02
+        },
+        {
+          "bossId": 29,
+          "chance": 0.02
+        },
+        {
+          "bossId": 30,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.02
+        },
+        {
+          "bossId": 32,
+          "chance": 0.04
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 19818,
       "name": "Punctured Voodoo Doll (Mage)",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Mage<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a mage.\"</span><br/>|cFFFFFFFFValue:|r |cffffd10029|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r |cffc8602c98|r|cffc8602cc|r</span></div>",
-      "icon": "inv_misc_idol_09.png"
+      "icon": "inv_misc_idol_09.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 0.02
+        },
+        {
+          "bossId": 15,
+          "chance": 0.04
+        },
+        {
+          "bossId": 16,
+          "chance": 0.02
+        },
+        {
+          "bossId": 17,
+          "chance": 0.02
+        },
+        {
+          "bossId": 18,
+          "chance": 0.02
+        },
+        {
+          "bossId": 19,
+          "chance": 0.02
+        },
+        {
+          "bossId": 21,
+          "chance": 0.04
+        },
+        {
+          "bossId": 22,
+          "chance": 0.04
+        },
+        {
+          "bossId": 35,
+          "chance": 0.02
+        },
+        {
+          "bossId": 36,
+          "chance": 0.02
+        },
+        {
+          "bossId": 27,
+          "chance": 0.02
+        },
+        {
+          "bossId": 28,
+          "chance": 0.02
+        },
+        {
+          "bossId": 30,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.02
+        },
+        {
+          "bossId": 32,
+          "chance": 0.06
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 19819,
       "name": "Punctured Voodoo Doll (Warlock)",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Warlock<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a warlock.\"</span><br/>|cFFFFFFFFValue:|r |cff98b0e055|r|cff98b0e0s|r |cffc8602c49|r|cffc8602cc|r</span></div>",
-      "icon": "inv_misc_idol_02.png"
+      "icon": "inv_misc_idol_02.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 0.02
+        },
+        {
+          "bossId": 16,
+          "chance": 0.02
+        },
+        {
+          "bossId": 18,
+          "chance": 0.02
+        },
+        {
+          "bossId": 19,
+          "chance": 0.02
+        },
+        {
+          "bossId": 21,
+          "chance": 0.04
+        },
+        {
+          "bossId": 22,
+          "chance": 0.06
+        },
+        {
+          "bossId": 23,
+          "chance": 0.017
+        },
+        {
+          "bossId": 24,
+          "chance": 0.02
+        },
+        {
+          "bossId": 33,
+          "chance": 0.02
+        },
+        {
+          "bossId": 26,
+          "chance": 0.02
+        },
+        {
+          "bossId": 27,
+          "chance": 0.03
+        },
+        {
+          "bossId": 29,
+          "chance": 0.02
+        },
+        {
+          "bossId": 30,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.04
+        },
+        {
+          "bossId": 32,
+          "chance": 0.06
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 19814,
       "name": "Punctured Voodoo Doll (Rogue)",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Rogue<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a rogue.\"</span><br/>|cFFFFFFFFValue:|r |cff98b0e021|r|cff98b0e0s|r</span></div>",
-      "icon": "inv_misc_idol_05.png"
+      "icon": "inv_misc_idol_05.png",
+      "dropsFrom": [
+        {
+          "bossId": 16,
+          "chance": 0.02
+        },
+        {
+          "bossId": 17,
+          "chance": 0.06
+        },
+        {
+          "bossId": 18,
+          "chance": 0.02
+        },
+        {
+          "bossId": 19,
+          "chance": 0.02
+        },
+        {
+          "bossId": 21,
+          "chance": 0.04
+        },
+        {
+          "bossId": 22,
+          "chance": 0.02
+        },
+        {
+          "bossId": 24,
+          "chance": 0.02
+        },
+        {
+          "bossId": 35,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.04
+        },
+        {
+          "bossId": 26,
+          "chance": 0.02
+        },
+        {
+          "bossId": 27,
+          "chance": 0.02
+        },
+        {
+          "bossId": 28,
+          "chance": 0.02
+        },
+        {
+          "bossId": 29,
+          "chance": 0.02
+        },
+        {
+          "bossId": 30,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.02
+        },
+        {
+          "bossId": 32,
+          "chance": 0.04
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 19821,
       "name": "Punctured Voodoo Doll (Druid)",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Druid<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a druid.\"</span><br/>|cFFFFFFFFValue:|r |cff98b0e021|r|cff98b0e0s|r</span></div>",
-      "icon": "inv_misc_idol_11.png"
+      "icon": "inv_misc_idol_11.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 0.08
+        },
+        {
+          "bossId": 16,
+          "chance": 0.04
+        },
+        {
+          "bossId": 17,
+          "chance": 0.04
+        },
+        {
+          "bossId": 18,
+          "chance": 0.04
+        },
+        {
+          "bossId": 19,
+          "chance": 0.02
+        },
+        {
+          "bossId": 39,
+          "chance": 0.02
+        },
+        {
+          "bossId": 21,
+          "chance": 0.04
+        },
+        {
+          "bossId": 22,
+          "chance": 0.02
+        },
+        {
+          "bossId": 24,
+          "chance": 0.02
+        },
+        {
+          "bossId": 33,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.02
+        },
+        {
+          "bossId": 27,
+          "chance": 0.02
+        },
+        {
+          "bossId": 29,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.04
+        },
+        {
+          "bossId": 32,
+          "chance": 0.1
+        },
+        {
+          "bossId": 30,
+          "chance": 0.02
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 19816,
       "name": "Punctured Voodoo Doll (Hunter)",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Hunter<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a hunter.\"</span><br/>|cFFFFFFFFValue:|r |cffffd1004|r|cffffd100g|r |cff98b0e098|r|cff98b0e0s|r |cffc8602c97|r|cffc8602cc|r</span></div>",
-      "icon": "inv_misc_idol_07.png"
+      "icon": "inv_misc_idol_07.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 0.02
+        },
+        {
+          "bossId": 16,
+          "chance": 0.02
+        },
+        {
+          "bossId": 17,
+          "chance": 0.06
+        },
+        {
+          "bossId": 19,
+          "chance": 0.02
+        },
+        {
+          "bossId": 21,
+          "chance": 0.04
+        },
+        {
+          "bossId": 22,
+          "chance": 0.04
+        },
+        {
+          "bossId": 35,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.02
+        },
+        {
+          "bossId": 26,
+          "chance": 0.02
+        },
+        {
+          "bossId": 28,
+          "chance": 0.02
+        },
+        {
+          "bossId": 29,
+          "chance": 0.02
+        },
+        {
+          "bossId": 30,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.02
+        },
+        {
+          "bossId": 32,
+          "chance": 0.06
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 19817,
       "name": "Punctured Voodoo Doll (Shaman)",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Shaman<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a shaman.\"</span><br/>|cFFFFFFFFValue:|r |cffffd1005|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r |cffc8602c98|r|cffc8602cc|r</span></div>",
-      "icon": "inv_misc_idol_08.png"
+      "icon": "inv_misc_idol_08.png",
+      "dropsFrom": [
+        {
+          "bossId": 16,
+          "chance": 0.02
+        },
+        {
+          "bossId": 19,
+          "chance": 0.02
+        },
+        {
+          "bossId": 21,
+          "chance": 0.02
+        },
+        {
+          "bossId": 22,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.02
+        },
+        {
+          "bossId": 27,
+          "chance": 0.02
+        },
+        {
+          "bossId": 28,
+          "chance": 0.02
+        },
+        {
+          "bossId": 32,
+          "chance": 0.04
+        },
+        {
+          "bossId": 14,
+          "chance": 0.02
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 19815,
       "name": "Punctured Voodoo Doll (Paladin)",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Paladin<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a paladin.\"</span><br/>|cFFFFFFFFValue:|r |cffffd10019|r|cffffd100g|r</span></div>",
-      "icon": "inv_misc_idol_06.png"
+      "icon": "inv_misc_idol_06.png",
+      "dropsFrom": [
+        {
+          "bossId": 14,
+          "chance": 0.02
+        },
+        {
+          "bossId": 15,
+          "chance": 0.04
+        },
+        {
+          "bossId": 16,
+          "chance": 0.02
+        },
+        {
+          "bossId": 17,
+          "chance": 0.02
+        },
+        {
+          "bossId": 19,
+          "chance": 0.02
+        },
+        {
+          "bossId": 22,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.02
+        },
+        {
+          "bossId": 26,
+          "chance": 0.02
+        },
+        {
+          "bossId": 27,
+          "chance": 0.02
+        },
+        {
+          "bossId": 28,
+          "chance": 0.02
+        },
+        {
+          "bossId": 29,
+          "chance": 0.02
+        },
+        {
+          "bossId": 30,
+          "chance": 0.02
+        },
+        {
+          "bossId": 31,
+          "chance": 0.02
+        },
+        {
+          "bossId": 32,
+          "chance": 0.02
+        },
+        {
+          "bossId": 40,
+          "chance": 0.3
+        },
+        {
+          "bossId": 41,
+          "chance": 0.02
+        },
+        {
+          "bossId": 42,
+          "chance": 0.02
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 19813,
       "name": "Punctured Voodoo Doll (Warrior)",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Warrior<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a warrior.\"</span><br/>|cFFFFFFFFValue:|r |cffffd1001|r|cffffd100g|r |cffc8602c98|r|cffc8602cc|r</span></div>",
-      "icon": "inv_misc_idol_04.png"
+      "icon": "inv_misc_idol_04.png",
+      "dropsFrom": [
+        {
+          "bossId": 16,
+          "chance": 0.02
+        },
+        {
+          "bossId": 17,
+          "chance": 0.02
+        },
+        {
+          "bossId": 18,
+          "chance": 0.02
+        },
+        {
+          "bossId": 19,
+          "chance": 0.02
+        },
+        {
+          "bossId": 21,
+          "chance": 0.08
+        },
+        {
+          "bossId": 22,
+          "chance": 0.04
+        },
+        {
+          "bossId": 24,
+          "chance": 0.02
+        },
+        {
+          "bossId": 25,
+          "chance": 0.02
+        },
+        {
+          "bossId": 26,
+          "chance": 0.02
+        },
+        {
+          "bossId": 28,
+          "chance": 0.02
+        },
+        {
+          "bossId": 29,
+          "chance": 0.02
+        },
+        {
+          "bossId": 30,
+          "chance": 0.02
+        },
+        {
+          "bossId": 14,
+          "chance": 0.04
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 22721,
       "name": "Band of Servitude",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Band of Servitude</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+8 Stamina<br/>+9 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 18.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
-      "icon": "inv_jewelry_ring_16.png"
+      "icon": "inv_jewelry_ring_16.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 10.0
+        },
+        {
+          "bossId": 6,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 4,
+          "chance": 10.0
+        },
+        {
+          "bossId": 5,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 22722,
       "name": "Seal of the Gurubashi Berserker",
-      "slot": "Finger",
-      "type": null,
       "classes": [],
       "quality": 4,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Seal of the Gurubashi Berserker</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Finger</span></div><div></div></div><span>+13 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: +40 Attack Power.</span></span></div>",
-      "icon": "inv_jewelry_ring_20.png"
+      "icon": "inv_jewelry_ring_20.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 10.0
+        },
+        {
+          "bossId": 6,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 4,
+          "chance": 10.0
+        },
+        {
+          "bossId": 5,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
     },
     {
       "id": 22720,
       "name": "Zulian Headdress",
-      "slot": "Head",
-      "type": "Cloth",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Headdress</b><span>Binds when picked up</span><div><div><span>Head</span></div><div><span>Cloth</span></div></div><span>78 Armor<br/>+13 Stamina<br/>+15 Intellect<br/>+14 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 55.</span></span></div>",
-      "icon": "inv_helmet_61.png"
+      "icon": "inv_helmet_61.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 10.0
+        },
+        {
+          "bossId": 6,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 4,
+          "chance": 10.0
+        },
+        {
+          "bossId": 5,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 22718,
       "name": "Blooddrenched Mask",
-      "slot": "Head",
-      "type": "Leather",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Blooddrenched Mask</b><span>Binds when picked up</span><div><div><span>Head</span></div><div><span>Leather</span></div></div><span>153 Armor<br/>+22 Agility<br/>+17 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 2%.</span></span></div>",
-      "icon": "inv_helmet_41.png"
+      "icon": "inv_helmet_41.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 10.0
+        },
+        {
+          "bossId": 6,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 4,
+          "chance": 10.0
+        },
+        {
+          "bossId": 5,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Leather"
+      ]
     },
     {
       "id": 22711,
       "name": "Cloak of the Hakkari Worshipers",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Cloak of the Hakkari Worshipers</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>48 Armor<br/>+6 Stamina<br/>+6 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 23.</span></span></div>",
-      "icon": "inv_misc_cape_16.png"
+      "icon": "inv_misc_cape_16.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 10.0
+        },
+        {
+          "bossId": 6,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 4,
+          "chance": 10.0
+        },
+        {
+          "bossId": 5,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 22712,
       "name": "Might of the Tribe",
-      "slot": "Back",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Might of the Tribe</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>48 Armor<br/>+18 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: +28 Attack Power.</span></span></div>",
-      "icon": "inv_misc_cape_16.png"
+      "icon": "inv_misc_cape_16.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 10.0
+        },
+        {
+          "bossId": 6,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 4,
+          "chance": 10.0
+        },
+        {
+          "bossId": 5,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": []
     },
     {
       "id": 22715,
       "name": "Gloves of the Tormented",
-      "slot": "Hands",
-      "type": "Mail",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Gloves of the Tormented</b><span>Binds when picked up</span><div><div><span>Hands</span></div><div><span>Mail</span></div></div><span>249 Armor<br/>+19 Agility<br/>+9 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span></span></div>",
-      "icon": "inv_gauntlets_10.png"
+      "icon": "inv_gauntlets_10.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 10.0
+        },
+        {
+          "bossId": 6,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 4,
+          "chance": 10.0
+        },
+        {
+          "bossId": 5,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Mail"
+      ]
     },
     {
       "id": 22714,
       "name": "Sacrificial Gauntlets",
-      "slot": "Hands",
-      "type": "Plate",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Sacrificial Gauntlets</b><span>Binds when picked up</span><div><div><span>Hands</span></div><div><span>Plate</span></div></div><span>441 Armor<br/>+19 Strength<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
-      "icon": "inv_gauntlets_31.png"
+      "icon": "inv_gauntlets_31.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 10.0
+        },
+        {
+          "bossId": 6,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 4,
+          "chance": 10.0
+        },
+        {
+          "bossId": 5,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Plate"
+      ]
     },
     {
       "id": 22716,
       "name": "Belt of Untapped Power",
-      "slot": "Waist",
-      "type": "Cloth",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Belt of Untapped Power</b><span>Binds when picked up</span><div><div><span>Waist</span></div><div><span>Cloth</span></div></div><span>54 Armor<br/>+6 Stamina<br/>+7 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 29.</span></span></div>",
-      "icon": "inv_belt_01.png"
+      "icon": "inv_belt_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 10.0
+        },
+        {
+          "bossId": 6,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 4,
+          "chance": 10.0
+        },
+        {
+          "bossId": 5,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Cloth"
+      ]
     },
     {
       "id": 22713,
       "name": "Zulian Scepter of Rites",
-      "slot": "One-Hand",
-      "type": "Mace",
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Scepter of Rites</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Mace</span></div></div><div><div>71 - 143 Damage</div><div>Speed 2.60</div></div><span>(41.3 damage per second)<br/>+9 Stamina<br/>+8 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 26.</span><br/><span class=\"q2\">Equip: Restores 4 mana per 5 sec.</span></span></div>",
-      "icon": "inv_mace_18.png"
+      "icon": "inv_mace_18.png",
+      "dropsFrom": [
+        {
+          "bossId": 2,
+          "chance": 10.0
+        },
+        {
+          "bossId": 6,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 3,
+          "chance": 10.0
+        },
+        {
+          "bossId": 4,
+          "chance": 10.0
+        },
+        {
+          "bossId": 5,
+          "chance": 10.0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
     },
     {
       "id": 56084,
       "name": "Middle Piece of an Ancient Idol",
-      "slot": "Quest Item",
-      "type": null,
       "classes": [],
       "quality": 3,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Middle Piece of an Ancient Idol</b><span>Binds when picked up</span><span>Unique</span><div><div></div><div></div></div><span><span class=\"q2\">Use: Combine the top, middle, and bottom pieces of the ancient idol.</span></span></div>",
-      "icon": "inv_misc_orb_01.png"
+      "icon": "inv_misc_orb_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 11,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Quest Item"
+      ],
+      "types": []
     },
     {
       "id": 17965,
       "name": "Yellow Sack of Gems",
-      "slot": "Materials",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
-      "icon": "inv_misc_bag_10.png"
+      "icon": "inv_misc_bag_10.png",
+      "dropsFrom": [
+        {
+          "bossId": 43,
+          "chance": 1.205
+        },
+        {
+          "bossId": 44,
+          "chance": 0.0
+        },
+        {
+          "bossId": 45,
+          "chance": 20.0
+        },
+        {
+          "bossId": 46,
+          "chance": 20.0
+        },
+        {
+          "bossId": 47,
+          "chance": 20.0
+        },
+        {
+          "bossId": 48,
+          "chance": 20.0
+        },
+        {
+          "bossId": 49,
+          "chance": 20.0
+        },
+        {
+          "bossId": 50,
+          "chance": 20.0
+        },
+        {
+          "bossId": 51,
+          "chance": 20.0
+        },
+        {
+          "bossId": 52,
+          "chance": 20.0
+        },
+        {
+          "bossId": 11,
+          "chance": 20.0
+        },
+        {
+          "bossId": 48,
+          "chance": 20.0
+        },
+        {
+          "bossId": 50,
+          "chance": 20.0
+        },
+        {
+          "bossId": 51,
+          "chance": 20.0
+        },
+        {
+          "bossId": 49,
+          "chance": 20.0
+        }
+      ],
+      "slots": [
+        "Materials"
+      ],
+      "types": []
     },
     {
       "id": 37010,
       "name": "Razzashi Hatchling",
-      "slot": "Companion",
-      "type": null,
       "classes": [],
       "quality": 2,
       "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Razzashi Hatchling</b><span>Binds when picked up</span><div><div></div><div></div></div><span><span class=\"q2\">Use: Adds a companion to the player's companion collection.</span><br/><span class=\"q\">\"Blessed by Shadra herself, this brood is known for their especially potent venom.\"</span></span></div>",
-      "icon": "inv_misc_monsterspidercarapace_01.png"
+      "icon": "inv_misc_monsterspidercarapace_01.png",
+      "dropsFrom": [
+        {
+          "bossId": 35,
+          "chance": 6.0
+        },
+        {
+          "bossId": 30,
+          "chance": 6.0
+        },
+        {
+          "bossId": 26,
+          "chance": 6.0
+        }
+      ],
+      "slots": [
+        "Companion"
+      ],
+      "types": []
+    }
+  ],
+  "bosses": [
+    {
+      "bossId": 0,
+      "name": "Jin'do the Hexxer"
+    },
+    {
+      "bossId": 1,
+      "name": "Bloodlord Mandokir"
+    },
+    {
+      "bossId": 2,
+      "name": "High Priest Venoxis"
+    },
+    {
+      "bossId": 3,
+      "name": "High Priest Thekal"
+    },
+    {
+      "bossId": 4,
+      "name": "High Priestess Mar'li"
+    },
+    {
+      "bossId": 5,
+      "name": "High Priestess Jeklik"
+    },
+    {
+      "bossId": 6,
+      "name": "High Priestess Arlokk"
+    },
+    {
+      "bossId": 7,
+      "name": "Gri'lek"
+    },
+    {
+      "bossId": 8,
+      "name": "Hazza'rah"
+    },
+    {
+      "bossId": 9,
+      "name": "Renataki"
+    },
+    {
+      "bossId": 10,
+      "name": "Wushoolay"
+    },
+    {
+      "bossId": 11,
+      "name": "Gahz'ranka"
+    },
+    {
+      "bossId": 12,
+      "name": "Hakkar"
+    },
+    {
+      "bossId": 13,
+      "name": "Zulian Crocolisk"
+    },
+    {
+      "bossId": 14,
+      "name": "Hakkari Shadowcaster"
+    },
+    {
+      "bossId": 15,
+      "name": "Hakkari Shadow Hunter"
+    },
+    {
+      "bossId": 16,
+      "name": "Gurubashi Axe Thrower"
+    },
+    {
+      "bossId": 17,
+      "name": "Gurubashi Headhunter"
+    },
+    {
+      "bossId": 18,
+      "name": "Gurubashi Berserker"
+    },
+    {
+      "bossId": 19,
+      "name": "Gurubashi Blood Drinker"
+    },
+    {
+      "bossId": 20,
+      "name": "Gurubashi Champion"
+    },
+    {
+      "bossId": 21,
+      "name": "Zulian Cub"
+    },
+    {
+      "bossId": 22,
+      "name": "Zulian Tiger"
+    },
+    {
+      "bossId": 23,
+      "name": "Zulian Panther"
+    },
+    {
+      "bossId": 24,
+      "name": "Bloodseeker Bat"
+    },
+    {
+      "bossId": 25,
+      "name": "Hakkari Witch Doctor"
+    },
+    {
+      "bossId": 26,
+      "name": "Razzashi Venombrood"
+    },
+    {
+      "bossId": 27,
+      "name": "Gurubashi Bat Rider"
+    },
+    {
+      "bossId": 28,
+      "name": "Razzashi Raptor"
+    },
+    {
+      "bossId": 29,
+      "name": "Withered Mistress"
+    },
+    {
+      "bossId": 30,
+      "name": "Razzashi Skitterer"
+    },
+    {
+      "bossId": 31,
+      "name": "Atal'ai Mistress"
+    },
+    {
+      "bossId": 32,
+      "name": "Voodoo Slave"
+    },
+    {
+      "bossId": 33,
+      "name": "Hakkari Priest"
+    },
+    {
+      "bossId": 34,
+      "name": "Hakkari Blood Priest"
+    },
+    {
+      "bossId": 35,
+      "name": "Razzashi Broodwidow"
+    },
+    {
+      "bossId": 36,
+      "name": "Razzashi Serpent"
+    },
+    {
+      "bossId": 37,
+      "name": "Razzashi Adder"
+    },
+    {
+      "bossId": 38,
+      "name": "Sandfury Speaker"
+    },
+    {
+      "bossId": 39,
+      "name": "Son of Hakkar"
+    },
+    {
+      "bossId": 40,
+      "name": "Zulian Stalker"
+    },
+    {
+      "bossId": 41,
+      "name": "Hooktooth Frenzy"
+    },
+    {
+      "bossId": 42,
+      "name": "Spawn of Mar'li"
+    },
+    {
+      "bossId": 43,
+      "name": "Lord Kazzak"
+    },
+    {
+      "bossId": 44,
+      "name": "Ostarius"
+    },
+    {
+      "bossId": 45,
+      "name": "Solnius"
+    },
+    {
+      "bossId": 46,
+      "name": "Onyxia"
+    },
+    {
+      "bossId": 47,
+      "name": "Azuregos"
+    },
+    {
+      "bossId": 48,
+      "name": "Lethon"
+    },
+    {
+      "bossId": 49,
+      "name": "Emeriss"
+    },
+    {
+      "bossId": 50,
+      "name": "Ysondre"
+    },
+    {
+      "bossId": 51,
+      "name": "Taerar"
+    },
+    {
+      "bossId": 52,
+      "name": "Nefarian"
     }
   ]
 }
