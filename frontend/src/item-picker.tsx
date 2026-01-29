@@ -191,6 +191,7 @@ export const ItemPicker = ({
           rowComponent={ReactWindowSelectableItem}
           rowCount={filteredItems.length}
           rowHeight={41}
+          style={{ flexGrow: 0 }}
           rowProps={{
             items: filteredItems,
             attendees: attendees,
