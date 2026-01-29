@@ -71,7 +71,7 @@ export const SrListElement = (
       centered: true,
       children: (
         <Text size="sm">
-          Do you want to promote {attendee.character.name} to administrator?
+          Do you want to promote <b>{attendee.character.name}</b> to admin?
         </Text>
       ),
       labels: { confirm: "Confirm", cancel: "Cancel" },
@@ -85,10 +85,12 @@ export const SrListElement = (
       centered: true,
       children: (
         <Text size="sm">
-          Do you want to remove admin privileges from {attendee.character.name}?
+          Do you want to remove admin privileges from{" "}
+          <b>{attendee.character.name}</b>?
         </Text>
       ),
       labels: { confirm: "Confirm", cancel: "Cancel" },
+      confirmProps: { color: "red" },
       onCancel: () => console.log("Cancel"),
       onConfirm: () => editAdmin(attendee.user, true),
     })
