@@ -10,6 +10,7 @@ import {
   Text,
   Title,
 } from "@mantine/core"
+import { useHover } from "@mantine/hooks"
 import { useNavigate } from "react-router"
 import type {
   GetInstancesResponse,
@@ -17,73 +18,75 @@ import type {
   Instance,
   Raid,
   User,
-} from "../types/types.ts"
+} from "../shared/types.ts"
 import { IconShieldFilled, IconUserFilled } from "@tabler/icons-react"
 
 const MyRaidItem = (
-  { user, instances, raids }: {
+  { user, instances, raid }: {
     user: User
     instances: Instance[]
-    raids: Raid[]
+    raid: Raid
   },
 ) => {
   const navigate = useNavigate()
+  const { hovered, ref } = useHover()
 
   const idToInstance = (id: number): Instance =>
     instances.filter((instance) => instance.id == id)[0]
 
   return (
-    <Stack>
-      {raids.map((raid) => (
-        <Box
-          onClick={() => navigate(`/${raid.sheet.raidId}`)}
-          key={raid.sheet.raidId}
-        >
-          <Paper shadow="sm" p="sm" className="list-element">
-            <Group wrap="nowrap" justify="space-between">
-              <Group gap="xs">
-                <Title
-                  w={45}
-                  variant="default"
-                  c="orange"
-                  lineClamp={1}
-                  order={5}
-                >
-                  {idToInstance(raid.sheet.instanceId).shortname.toUpperCase()}
-                </Title>
-                <Title
-                  variant="default"
-                  lineClamp={1}
-                  order={5}
-                  visibleFrom="sm"
-                >
-                  {idToInstance(raid.sheet.instanceId).name}
-                </Title>
-              </Group>
-              <Group wrap="nowrap" gap="xs">
-                <Text lineClamp={1}>
-                  {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
-                </Text>
-                <Group
-                  style={{
-                    visibility:
-                      raid.sheet.admins.some((e) => e.userId == user.userId)
-                        ? "visible"
-                        : "hidden",
-                  }}
-                >
-                  <IconShieldFilled size={20} />
-                </Group>
-                <Group gap={3} miw={45}>
-                  <IconUserFilled size={20} />
-                  <Title order={6}>{raid.sheet.attendees.length}</Title>
-                </Group>
-              </Group>
+    <Box
+      onClick={() => navigate(`/${raid.sheet.raidId}`)}
+      key={raid.sheet.raidId}
+    >
+      <Paper
+        ref={ref}
+        shadow="sm"
+        p="sm"
+        className={hovered ? "list-element-highlight" : "list-element"}
+      >
+        <Group wrap="nowrap" justify="space-between">
+          <Group gap="xs">
+            <Title
+              w={45}
+              variant="default"
+              c="orange"
+              lineClamp={1}
+              order={5}
+            >
+              {idToInstance(raid.sheet.instanceId).shortname.toUpperCase()}
+            </Title>
+            <Title
+              variant="default"
+              lineClamp={1}
+              order={5}
+              visibleFrom="sm"
+            >
+              {idToInstance(raid.sheet.instanceId).name}
+            </Title>
+          </Group>
+          <Group wrap="nowrap" gap="xs">
+            <Text lineClamp={1}>
+              {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
+            </Text>
+            <Group
+              style={{
+                visibility:
+                  raid.sheet.admins.some((e) => e.userId == user.userId)
+                    ? "visible"
+                    : "hidden",
+              }}
+            >
+              <IconShieldFilled size={20} />
             </Group>
-          </Paper>
-        </Box>
-      ))}
-    </Stack>
+            <Group gap={3} miw={45}>
+              <IconUserFilled size={20} />
+              <Title order={6}>{raid.sheet.attendees.length}</Title>
+            </Group>
+          </Group>
+        </Group>
+      </Paper>
+    </Box>
   )
 }
 
@@ -161,11 +164,11 @@ export const MyRaids = () => {
               <Title order={4}>Upcoming</Title>
               {createRaidButton}
             </Group>
-            <MyRaidItem
-              user={user}
-              instances={instances}
-              raids={upcomingRaids}
-            />
+            <Stack>
+              {upcomingRaids.map((raid) => (
+                <MyRaidItem user={user} instances={instances} raid={raid} />
+              ))}
+            </Stack>
           </>
         )
         : null}
@@ -176,7 +179,11 @@ export const MyRaids = () => {
               <Title order={4}>Past</Title>
               {upcomingRaids.length == 0 ? createRaidButton : null}
             </Group>
-            <MyRaidItem user={user} instances={instances} raids={pastRaids} />
+            <Stack>
+              {pastRaids.map((raid) => (
+                <MyRaidItem user={user} instances={instances} raid={raid} />
+              ))}
+            </Stack>
           </>
         )
         : null}

@@ -9,14 +9,14 @@ services:
       - "./frontend/src:/app/src:ro"
       - "./frontend/css:/app/css:ro"
       - "./frontend/public:/app/public:ro"
-      - "./types:/app/types:ro"
+      - "./shared:/app/shared:ro"
   backend:
     build:
       target: "backend"
     command: ["deno", "task", "start-dev"]
     volumes:
       - "./backend/src:/app/src:ro"
-      - "./types:/app/types:ro"
+      - "./shared:/app/shared:ro"
       - "./backend/instances:/app/instances:ro"
     ports:
       - "127.0.0.1:9000:8000"

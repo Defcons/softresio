@@ -1,4 +1,4 @@
-import type { Item } from "../types/types.ts"
+import type { Item } from "../shared/types.ts"
 export const nothingItem: Item = {
   id: 0,
   tooltip: "",

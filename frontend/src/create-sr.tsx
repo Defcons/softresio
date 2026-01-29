@@ -10,7 +10,7 @@ import type {
   Item,
   Sheet,
   User,
-} from "../types/types.ts"
+} from "../shared/types.ts"
 import {
   Autocomplete,
   Button,

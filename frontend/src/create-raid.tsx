@@ -20,7 +20,7 @@ import type {
   CreateRaidResponse,
   GetInstancesResponse,
   Instance,
-} from "../types/types.ts"
+} from "../shared/types.ts"
 
 export const CreateRaid = (
   { itemPickerOpen = false }: { itemPickerOpen?: boolean },

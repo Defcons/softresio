@@ -17,7 +17,7 @@ import type {
   Sheet,
   SoftReserve,
   User,
-} from "../types/types.ts"
+} from "../shared/types.ts"
 import { ItemNameAndIcon } from "./item.tsx"
 import { ClassIcon } from "./class.tsx"
 import {
@@ -33,13 +33,15 @@ import { IconShieldFilled, IconTrash } from "@tabler/icons-react"
 type ListElement = { attendee: Attendee; softReserve: SoftReserve }
 
 export const SrListElement = (
-  { visible, item, attendee, admins, user, owner }: {
+  { visible, item, attendee, admins, user, owner, editAdmin, deleteSr }: {
     visible: boolean
     item: Item
     attendee: Attendee
     admins: User[]
     owner: User
     user: User
+    editAdmin: (user: User, remove: boolean) => void
+    deleteSr: () => void
   },
 ) => {
   const { ref, hovered } = useHover()
@@ -53,6 +55,7 @@ export const SrListElement = (
       return (
         <Menu.Item
           leftSection={<IconShieldFilled size={14} />}
+          onClick={() => editAdmin(attendee.user, false)}
         >
           Promote to Admin
         </Menu.Item>
@@ -63,8 +66,10 @@ export const SrListElement = (
           label={owner.userId == attendee.user.userId
             ? "You cannot remove owner as Admin"
             : ""}
+          disabled={owner.userId != attendee.user.userId}
         >
           <Menu.Item
+            onClick={() => editAdmin(attendee.user, true)}
             disabled={owner.userId == attendee.user.userId}
             leftSection={<IconShieldFilled size={14} />}
           >
@@ -85,7 +90,7 @@ export const SrListElement = (
         <Table.Tr
           ref={ref}
           className={hovered || menuOpen
-            ? "list-element-hover"
+            ? "list-element-highlight"
             : "list-element"}
           style={{ visibility: visible ? "visible" : "hidden" }}
         >
@@ -124,6 +129,7 @@ export const SrListElement = (
       <Menu.Dropdown>
         {promoteRemoveAdmin()}
         <Menu.Item
+          onClick={deleteSr}
           disabled={attendee.user.userId == user.userId ||
               admins.find((a) => a.userId == user.userId)
             ? false
@@ -139,10 +145,12 @@ export const SrListElement = (
 }
 
 export const SrList = (
-  { sheet, items, user }: {
+  { sheet, items, user, editAdmin, deleteSr }: {
     sheet: Sheet
     items: Item[]
     user: User
+    editAdmin: (user: User, remove: boolean) => void
+    deleteSr: (user: User, itemId: number) => void
   },
 ) => {
   const [classFilter, setClassFilter] = useState<Class>()
@@ -292,6 +300,8 @@ export const SrList = (
             user={user}
             admins={sheet.admins}
             owner={sheet.owner}
+            editAdmin={editAdmin}
+            deleteSr={() => deleteSr(e.attendee.user, e.softReserve.itemId)}
           />
         ))}
       </Table.Tbody>

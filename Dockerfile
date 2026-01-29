@@ -8,7 +8,7 @@ RUN deno install
 
 # Copy app
 COPY frontend/src/ ./src/
-COPY frontend/types/ ./types/
+COPY frontend/shared/ ./shared/
 COPY frontend/css/ ./css/
 
 RUN deno run build
@@ -23,7 +23,7 @@ RUN deno install
 
 # Copy app
 COPY backend/src/ ./src/
-COPY backend/types/ ./types/
+COPY backend/shared/ ./shared/
 COPY backend/instances/ ./instances/
 COPY --from=frontend /app/dist ./static/
 COPY frontend/src/assets/favicon.ico ./static/

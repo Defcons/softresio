@@ -10,7 +10,7 @@ import {
 } from "@mantine/core"
 import { IconSearch } from "@tabler/icons-react"
 import { itemFilters } from "./item-filters.ts"
-import type { Attendee, Class, Item, User } from "../types/types.ts"
+import type { Attendee, Class, Item, User } from "../shared/types.ts"
 import { useDebounce } from "use-debounce"
 import { List } from "react-window"
 import { useNavigate } from "react-router"

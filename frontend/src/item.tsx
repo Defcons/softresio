@@ -1,7 +1,7 @@
 import type { ReactElement } from "react"
 import { useHover } from "@mantine/hooks"
 import { LongPressCallbackReason, useLongPress } from "use-long-press"
-import type { Attendee, Item, User } from "../types/types.ts"
+import type { Attendee, Item, User } from "../shared/types.ts"
 import { type RowComponentProps } from "react-window"
 import {
   ActionIcon,
@@ -67,7 +67,9 @@ export const ItemNameAndIcon = (
         justify="space-between"
         wrap="nowrap"
         className={`list-element ${
-          highlight || (hovered && !isTouchScreen) ? "list-element-hover" : ""
+          highlight || (hovered && !isTouchScreen)
+            ? "list-element-highlight"
+            : ""
         }`}
       >
         <Box

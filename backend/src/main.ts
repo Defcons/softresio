@@ -7,6 +7,10 @@ import type {
   CreateRaidResponse,
   CreateSrRequest,
   CreateSrResponse,
+  DeleteSrRequest,
+  DeleteSrResponse,
+  EditAdminRequest,
+  EditAdminResponse,
   GetCharactersResponse,
   GetInstancesResponse,
   GetMyRaidsResponse,
@@ -16,7 +20,8 @@ import type {
   Raid,
   SoftReserve,
   User,
-} from "../types/types.ts"
+} from "../shared/types.ts"
+import { removeOne } from "../shared/utils.ts"
 import { Hono } from "hono"
 import { serveStatic, upgradeWebSocket } from "hono/deno"
 import type { Context } from "hono"
@@ -230,7 +235,53 @@ app.post("/api/raid/create", async (c) => {
   return c.json(response)
 })
 
-app.post("/api/raid/lock/:raidId", async (c) => {
+app.post("/api/admin", async (c) => {
+  const user = await getOrCreateUser(c)
+  const {
+    raidId,
+    add,
+    remove,
+  } = await c.req
+    .json() as EditAdminRequest
+  const raid = await beginWithTimeout(async (tx) => {
+    const [raid] = await tx<
+      Raid[]
+    >`select raid -> 'sheet' as sheet from raids where raid @> ${{
+      sheet: { raidId },
+    } as never} for update;`
+    if (!raid) return
+
+    if (raid.sheet.admins.some((u) => u.userId == user.userId)) {
+      if (add && raid.sheet.admins.some((a) => a.userId != add.userId)) {
+        raid.sheet.admins = [...raid.sheet.admins, add]
+      }
+      if (remove && raid.sheet.owner.userId != remove.userId) {
+        raid.sheet.admins = raid.sheet.admins.filter((a) =>
+          a.userId != remove.userId
+        )
+      }
+      await tx`update raids set ${
+        sql({ raid: raid } as never)
+      } where raid @> ${{
+        sheet: { raidId },
+      } as never}`
+    }
+
+    return raid
+  })
+  if (raid) {
+    const response: EditAdminResponse = { user, data: raid.sheet }
+    return c.json(response)
+  } else {
+    const response: EditAdminResponse = {
+      user,
+      error: "An error occured while editing admins",
+    }
+    return c.json(response)
+  }
+})
+
+app.post("/api/raid/:raidId/lock", async (c) => {
   const user = await getOrCreateUser(c)
   const raidId = c.req.param("raidId")
   const raid = await beginWithTimeout(async (tx) => {
@@ -257,6 +308,53 @@ app.post("/api/raid/lock/:raidId", async (c) => {
     const response: CreateSrResponse = {
       user,
       error: "An error occured while locking raid",
+    }
+    return c.json(response)
+  }
+})
+
+app.post("/api/sr/delete", async (c) => {
+  const user = await getOrCreateUser(c)
+  const request = await c.req.json() as DeleteSrRequest
+  const raid = await beginWithTimeout(async (tx) => {
+    const [raid] = await tx<
+      Raid[]
+    >`select raid -> 'sheet' as sheet from raids where raid @> ${{
+      sheet: { raidId: request.raidId },
+    } as never} for update;`
+    if (!raid) return
+
+    if (
+      raid.sheet.admins.some((u) => u.userId == user.userId) ||
+      request.user.userId == user.userId
+    ) {
+      raid.sheet.attendees = raid.sheet.attendees.map((attendee) => ({
+        user: attendee.user,
+        character: attendee.character,
+        softReserves: removeOne(
+          (softReserve) =>
+            attendee.user.userId == request.user.userId &&
+            softReserve.itemId == request.itemId,
+          attendee.softReserves,
+        ),
+      }))
+
+      await tx`update raids set ${
+        sql({ raid: raid } as never)
+      } where raid @> ${{
+        sheet: { raidId: request.raidId },
+      } as never}`
+    }
+
+    return raid
+  })
+  if (raid) {
+    const response: DeleteSrResponse = { user, data: raid.sheet }
+    return c.json(response)
+  } else {
+    const response: DeleteSrResponse = {
+      user,
+      error: "An error occured while deleting sr",
     }
     return c.json(response)
   }

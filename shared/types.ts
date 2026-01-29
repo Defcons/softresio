@@ -102,7 +102,21 @@ export type GetMyRaidsResponse = GenericResponse<Raid[]>
 
 export type GetCharactersResponse = GenericResponse<Character[]>
 
+export type EditAdminRequest = {
+  raidId: string
+  add?: User
+  remove?: User
+}
 export type LockRaidResponse = GenericResponse<Sheet>
+
+export type DeleteSrRequest = {
+  raidId: string
+  user: User
+  itemId: number
+}
+export type DeleteSrResponse = GenericResponse<Sheet>
+
+export type EditAdminResponse = GenericResponse<Sheet>
 
 export interface CreateSrRequest {
   raidId: string

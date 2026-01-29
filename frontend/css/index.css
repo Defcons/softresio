@@ -9,7 +9,7 @@ body {
   border-radius: var(--mantine-radius-default);
 }
 
-.list-element-hover {
+.list-element-highlight {
   user-select: none;
   -webkit-user-select: none;
   cursor: pointer;

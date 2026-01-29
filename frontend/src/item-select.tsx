@@ -1,4 +1,5 @@
-import type { Attendee, Class, Item, User } from "../types/types.ts"
+import type { Attendee, Class, Item, User } from "../shared/types.ts"
+import { removeOne } from "../shared/utils.ts"
 import { Button, Group, Paper, Stack, Text } from "@mantine/core"
 import "../css/tooltip.css"
 import { ItemPicker } from "./item-picker.tsx"
@@ -59,13 +60,7 @@ export const ItemSelect = (
               key={`${itemId}|${index}`}
               item={items.find((i) => i.id == itemId) || nothingItem}
               onRightSectionClick={() => {
-                const idx = value.indexOf(itemId)
-                if (idx !== -1) {
-                  onChange([
-                    ...value.slice(0, idx),
-                    ...value.slice(idx + 1),
-                  ])
-                }
+                onChange(removeOne((e) => e == itemId, value))
               }}
               onClick={() => navigate("items")}
               deleteMode

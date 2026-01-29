@@ -3,7 +3,7 @@ deno check --config frontend/deno.json frontend/src
 deno check --config backend/deno.json backend/src
 deno fmt --config frontend/deno.json frontend/src
 deno fmt --config backend/deno.json backend/src
-deno fmt --config frontend/deno.json types/types.ts
+deno fmt --config frontend/deno.json shared/
 for f in backend/instances/*.json; do
   if ! jq -e '.' "$f" > /dev/null; then
     echo "$f is invalid"

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import type { GetInstancesResponse, Instance } from "../types/types.ts"
+import type { GetInstancesResponse, Instance } from "../shared/types.ts"
 import { Paper, Select, Stack } from "@mantine/core"
 import { ItemPicker } from "./item-picker.tsx"
 import { instanceFilter, instanceOrder, renderInstance } from "./instances.tsx"

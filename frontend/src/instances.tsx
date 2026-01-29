@@ -1,6 +1,6 @@
 import type { ComboboxItem, OptionsFilter, SelectProps } from "@mantine/core"
 import { Title } from "@mantine/core"
-import type { Instance } from "../types/types.ts"
+import type { Instance } from "../shared/types.ts"
 
 export const instanceOrder = [
   "Zul'Gurub",

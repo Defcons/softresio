@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react"
 import type {
   Attendee,
+  DeleteSrRequest,
+  DeleteSrResponse,
+  EditAdminRequest,
+  EditAdminResponse,
   GetInstancesResponse,
   GetRaidResponse,
   Instance,
   Sheet,
   User,
-} from "../types/types.ts"
+} from "../shared/types.ts"
 import { useParams } from "react-router"
 import naxx from "./assets/naxx.png"
 import kara40 from "./assets/kara40.png"
@@ -108,7 +112,7 @@ export const Raid = (
   }
 
   const lockRaid = () => {
-    fetch(`/api/raid/lock/${params.raidId}`, { method: "POST" }).then((r) =>
+    fetch(`/api/raid/${params.raidId}/lock`, { method: "POST" }).then((r) =>
       r.json()
     ).then(
       (j: GetRaidResponse) => {
@@ -119,6 +123,41 @@ export const Raid = (
         }
       },
     )
+  }
+
+  const editAdmin = (user: User, remove: boolean) => {
+    if (!sheet) return
+    const request: EditAdminRequest = {
+      raidId: sheet.raidId,
+      [remove ? "remove" : "add"]: user,
+    }
+
+    fetch(`/api/admin`, { method: "POST", body: JSON.stringify(request) }).then(
+      (r) => r.json(),
+    ).then(
+      (j: EditAdminResponse) => {
+        if (j.error) {
+          alert(j.error)
+        } else if (j.data) {
+          loadRaid(j.data)
+        }
+      },
+    )
+  }
+
+  const deleteSr = (user: User, itemId: number) => {
+    if (!sheet) return
+    const request: DeleteSrRequest = { raidId: sheet.raidId, itemId, user }
+    fetch(`/api/sr/delete`, { method: "POST", body: JSON.stringify(request) })
+      .then((r) => r.json()).then(
+        (j: DeleteSrResponse) => {
+          if (j.error) {
+            alert(j.error)
+          } else if (j.data) {
+            loadRaid(j.data)
+          }
+        },
+      )
   }
 
   useEffect(loadRaid, [])
@@ -243,6 +282,8 @@ export const Raid = (
                 sheet={sheet}
                 items={instance.items}
                 user={user}
+                deleteSr={deleteSr}
+                editAdmin={editAdmin}
               />
             )
             : null}

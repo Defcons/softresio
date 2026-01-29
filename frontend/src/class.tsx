@@ -1,4 +1,4 @@
-import type { Character, CharacterWithId, Class } from "../types/types.ts"
+import type { Character, CharacterWithId, Class } from "../shared/types.ts"
 import { CheckIcon, Group, Image, Title, Tooltip } from "@mantine/core"
 import { IconCheck } from "@tabler/icons-react"
 import type { AutocompleteProps, SelectProps } from "@mantine/core"

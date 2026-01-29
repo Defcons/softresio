@@ -1,4 +1,4 @@
-import type { Sheet } from "../types/types.ts"
+import type { Sheet } from "../shared/types.ts"
 
 export const rollForExport = (sheet: Sheet) => (globalThis.btoa(JSON.stringify({
   metadata: {
