@@ -29,6 +29,12 @@ export const LootBrowser = (
       })
   }, [])
 
+  useEffect(() => {
+    if (!itemPickerOpen) {
+      setInstanceId(undefined)
+    }
+  }, [itemPickerOpen])
+
   return (
     <Paper shadow="sm" p="sm">
       <Stack gap="md">
@@ -39,7 +45,7 @@ export const LootBrowser = (
           data={instances?.map((e) => {
             return { value: e.id.toString(), label: e.name }
           })}
-          value={(instanceId || "").toString()}
+          value={instanceId?.toString() || null}
           renderOption={renderInstance(instances)}
           filter={instanceFilter(instances)}
           onChange={(v) => {
