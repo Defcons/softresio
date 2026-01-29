@@ -69,7 +69,9 @@ function App() {
                 <Group mx="lg" ref={githubRef}>
                   <IconBrandGithubFilled
                     size={20}
-                    color={githubHovered ? "#e8590c" : "grey"}
+                    color={githubHovered
+                      ? "var(--mantine-primary-color-filled)"
+                      : "grey"}
                   />
                   <Anchor
                     href="https://github.com/kofoednielsen/softresio"
@@ -82,7 +84,9 @@ function App() {
                 <Group mx="lg" ref={discordRef}>
                   <IconBrandDiscordFilled
                     size={20}
-                    color={discordHovered ? "#e8590c" : "grey"}
+                    color={discordHovered
+                      ? "var(--mantine-primary-color-filled)"
+                      : "grey"}
                   />
                   <Anchor
                     href="https://discord.gg/DbfRrGGQ7J"

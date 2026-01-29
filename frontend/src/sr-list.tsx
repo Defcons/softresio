@@ -113,7 +113,14 @@ export const SrListElement = (
                 {attendee.character.name}
               </Title>
               {admins.find((a) => a.userId == attendee.user.userId)
-                ? <IconShieldFilled size={16} />
+                ? (
+                  <IconShieldFilled
+                    color={owner.userId == attendee.user.userId
+                      ? "var(--mantine-color-orange-text)"
+                      : undefined}
+                    size={16}
+                  />
+                )
                 : null}
             </Group>
           </Table.Td>
