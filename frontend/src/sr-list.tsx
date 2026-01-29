@@ -162,12 +162,18 @@ export const SrListElement = (
               </Title>
               {admins.find((a) => a.userId == attendee.user.userId)
                 ? (
-                  <IconShieldFilled
-                    color={owner.userId == attendee.user.userId
-                      ? "var(--mantine-color-orange-text)"
-                      : undefined}
-                    size={16}
-                  />
+                  <Tooltip
+                    label={owner.userId == attendee.user.userId
+                      ? "Owner"
+                      : "Admin"}
+                  >
+                    <IconShieldFilled
+                      color={owner.userId == attendee.user.userId
+                        ? "var(--mantine-color-orange-text)"
+                        : undefined}
+                      size={16}
+                    />
+                  </Tooltip>
                 )
                 : null}
             </Group>
