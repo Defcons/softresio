@@ -14,7 +14,8 @@
       "icon": "inv_helmet_24.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 11.11
         }
       ],
@@ -36,7 +37,8 @@
       "icon": "inv_helmet_70.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 11.11
         }
       ],
@@ -58,7 +60,8 @@
       "icon": "inv_helmet_08.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 11.11
         }
       ],
@@ -80,7 +83,8 @@
       "icon": "inv_helmet_41.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 11.11
         }
       ],
@@ -102,7 +106,8 @@
       "icon": "inv_helmet_09.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 11.11
         }
       ],
@@ -124,7 +129,8 @@
       "icon": "inv_helmet_05.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 11.11
         }
       ],
@@ -146,7 +152,8 @@
       "icon": "inv_helmet_69.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 11.11
         }
       ],
@@ -168,7 +175,8 @@
       "icon": "inv_helmet_74.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 11.11
         }
       ],
@@ -190,7 +198,8 @@
       "icon": "inv_helmet_71.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 11.11
         }
       ],
@@ -210,7 +219,8 @@
       "icon": "inv_misc_head_dragon_01.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 100.0
         }
       ],
@@ -228,7 +238,8 @@
       "icon": "spell_holy_dispelmagic.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 40.0
         }
       ],
@@ -246,7 +257,8 @@
       "icon": "inv_belt_12.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 25.0
         }
       ],
@@ -264,7 +276,8 @@
       "icon": "inv_misc_cape_16.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 25.0
         }
       ],
@@ -282,7 +295,8 @@
       "icon": "inv_jewelry_ring_13.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 25.0
         }
       ],
@@ -300,7 +314,8 @@
       "icon": "inv_misc_monsterscales_15.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 8.0
         }
       ],
@@ -318,7 +333,8 @@
       "icon": "inv_misc_book_07.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 25.0
         }
       ],
@@ -336,7 +352,8 @@
       "icon": "inv_axe_09.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 8.0
         }
       ],
@@ -356,7 +373,8 @@
       "icon": "inv_sword_18.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 8.0
         }
       ],
@@ -376,7 +394,8 @@
       "icon": "inv_misc_bag_22.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 100.0
         }
       ],
@@ -390,11 +409,12 @@
       "name": "Scale of Onyxia",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Scale of Onyxia</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Scale of Onyxia</b><div><div></div><div></div></div><span></span></div>",
       "icon": "inv_misc_monsterscales_24.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 100.0
         }
       ],
@@ -412,7 +432,8 @@
       "icon": "inv_misc_head_dragon_01.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 100.0
         }
       ],
@@ -430,7 +451,8 @@
       "icon": "inv_misc_stonetablet_03.png",
       "dropsFrom": [
         {
-          "bossId": 1,
+          "npcId": 37,
+          "bossId": 35,
           "chance": 100.0
         }
       ],
@@ -444,67 +466,17 @@
       "name": "Yellow Sack of Gems",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span></span></div>",
       "icon": "inv_misc_bag_10.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 37,
+          "bossId": 35,
           "chance": 1.205
         },
         {
-          "bossId": 3,
-          "chance": 0.0
-        },
-        {
-          "bossId": 4,
-          "chance": 20.0
-        },
-        {
-          "bossId": 0,
-          "chance": 20.0
-        },
-        {
-          "bossId": 5,
-          "chance": 20.0
-        },
-        {
-          "bossId": 6,
-          "chance": 20.0
-        },
-        {
-          "bossId": 7,
-          "chance": 20.0
-        },
-        {
-          "bossId": 8,
-          "chance": 20.0
-        },
-        {
-          "bossId": 9,
-          "chance": 20.0
-        },
-        {
-          "bossId": 10,
-          "chance": 20.0
-        },
-        {
-          "bossId": 11,
-          "chance": 20.0
-        },
-        {
-          "bossId": 6,
-          "chance": 20.0
-        },
-        {
-          "bossId": 8,
-          "chance": 20.0
-        },
-        {
-          "bossId": 9,
-          "chance": 20.0
-        },
-        {
-          "bossId": 7,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 20.0
         }
       ],
@@ -518,115 +490,17 @@
       "name": "Formula: Enchant Chest - Greater Stats",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Formula: Enchant Chest - Greater Stats</b><div><div></div><div></div></div><span>Requires Enchanting (300)<br/><span class=\"q2\">Use: Teaches you how to permanently enchant a piece of chest armor to give +4 to each of the five attributes.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Formula: Enchant Chest - Greater Stats</b><div><div></div><div></div></div><span>Requires Enchanting (300)<br/><span class=\"q2\">Use: Teaches you how to permanently enchant a piece of chest armor to give +4 to each of the five attributes.</span><br/></span></div>",
       "icon": "inv_misc_note_01.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 37,
+          "bossId": 35,
           "chance": 0.02
         },
         {
-          "bossId": 13,
-          "chance": 0.02
-        },
-        {
-          "bossId": 14,
-          "chance": 0.02
-        },
-        {
-          "bossId": 15,
-          "chance": 0.02
-        },
-        {
-          "bossId": 16,
-          "chance": 0.02
-        },
-        {
-          "bossId": 17,
-          "chance": 0.02
-        },
-        {
-          "bossId": 18,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.02
-        },
-        {
-          "bossId": 20,
-          "chance": 0.05
-        },
-        {
-          "bossId": 2,
-          "chance": 0.04
-        },
-        {
-          "bossId": 21,
-          "chance": 0.02
-        },
-        {
-          "bossId": 22,
-          "chance": 0.02
-        },
-        {
-          "bossId": 23,
-          "chance": 0.02
-        },
-        {
-          "bossId": 24,
-          "chance": 0.02
-        },
-        {
-          "bossId": 5,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 7,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 8,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 6,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 6,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 0,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 8,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 9,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 7,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 9,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 11,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 10,
-          "chance": 0.9524
-        },
-        {
-          "bossId": 25,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 0.9524
         }
       ],
@@ -644,7 +518,8 @@
       "icon": "inv_misc_head_dragon_01.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 36,
+          "bossId": 34,
           "chance": 1.5
         }
       ],
@@ -656,108 +531,24 @@
   ],
   "bosses": [
     {
-      "bossId": 0,
+      "id": 34,
       "name": "Onyxia"
     },
     {
-      "bossId": 1,
-      "name": "Ragnaros"
+      "id": 35,
+      "name": "Trash"
+    }
+  ],
+  "npcs": [
+    {
+      "bossId": 34,
+      "id": 36,
+      "name": "Onyxia"
     },
     {
-      "bossId": 2,
-      "name": "Lord Kazzak"
-    },
-    {
-      "bossId": 3,
-      "name": "Ostarius"
-    },
-    {
-      "bossId": 4,
-      "name": "Solnius"
-    },
-    {
-      "bossId": 5,
-      "name": "Azuregos"
-    },
-    {
-      "bossId": 6,
-      "name": "Lethon"
-    },
-    {
-      "bossId": 7,
-      "name": "Emeriss"
-    },
-    {
-      "bossId": 8,
-      "name": "Ysondre"
-    },
-    {
-      "bossId": 9,
-      "name": "Taerar"
-    },
-    {
-      "bossId": 10,
-      "name": "Nefarian"
-    },
-    {
-      "bossId": 11,
-      "name": "Gahz'ranka"
-    },
-    {
-      "bossId": 12,
-      "name": "Blackhand Assassin"
-    },
-    {
-      "bossId": 13,
-      "name": "Blackhand Iron Guard"
-    },
-    {
-      "bossId": 14,
-      "name": "Rage Talon Dragon Guard"
-    },
-    {
-      "bossId": 15,
-      "name": "Gurubashi Berserker"
-    },
-    {
-      "bossId": 16,
-      "name": "Lava Annihilator"
-    },
-    {
-      "bossId": 17,
-      "name": "Firewalker"
-    },
-    {
-      "bossId": 18,
-      "name": "Hive'Regal Hive Lord"
-    },
-    {
-      "bossId": 19,
-      "name": "Death Talon Hatcher"
-    },
-    {
-      "bossId": 20,
-      "name": "Dread Creeper"
-    },
-    {
-      "bossId": 21,
-      "name": "Anubisath Defender"
-    },
-    {
-      "bossId": 22,
-      "name": "Flesh Hunter"
-    },
-    {
-      "bossId": 23,
-      "name": "Firelord"
-    },
-    {
-      "bossId": 24,
-      "name": "Qiraji Swarmguard"
-    },
-    {
-      "bossId": 25,
-      "name": "Korrak the Bloodrager"
+      "bossId": 35,
+      "id": 37,
+      "name": "Trash"
     }
   ]
 }

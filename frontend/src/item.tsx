@@ -1,7 +1,12 @@
 import type { ReactElement } from "react"
 import { useHover } from "@mantine/hooks"
 import { LongPressCallbackReason, useLongPress } from "use-long-press"
-import type { Attendee, Item, User } from "../shared/types.ts"
+import type {
+  Attendee,
+  Item,
+  ItemPickerElementType,
+  User,
+} from "../shared/types.ts"
 import { type RowComponentProps } from "react-window"
 import {
   ActionIcon,
@@ -9,9 +14,11 @@ import {
   Box,
   Checkbox,
   CloseButton,
+  Divider,
   Flex,
   Group,
   Image,
+  Text,
   Title,
   Tooltip,
 } from "@mantine/core"
@@ -55,6 +62,7 @@ export const ItemNameAndIcon = (
       m={0}
       p={0}
       opened={showTooltipItemId == item.id || (!isTouchScreen && hovered)}
+      position="bottom"
       label={
         <div
           className="tt-wrap"
@@ -102,16 +110,16 @@ export const ItemNameAndIcon = (
             )}
         </Box>
         <Box flex={1} p={padding} {...handlers()}>
-          <Title
+          <Text
             fs={(item.id == 0) ? "italic" : undefined}
             fw={(item.id == 0) ? 200 : undefined}
-            order={6}
+            size="sm"
             flex={1}
             className={`q${item.quality}`}
             lineClamp={1}
           >
             {item.name}
-          </Title>
+          </Text>
         </Box>
         <Flex
           onClick={onRightSectionClick}
@@ -156,7 +164,6 @@ export const SelectableItem = ({
   deleteMode,
   sameItemLimit = 0,
   selectMode,
-  style,
   hardReserves = [],
 }: {
   onClick?: () => void
@@ -169,7 +176,6 @@ export const SelectableItem = ({
   attendees?: Attendee[]
   deleteMode?: boolean
   selectMode?: boolean
-  style?: React.CSSProperties
   hardReserves?: number[]
   sameItemLimit?: number
 }) => {
@@ -178,54 +184,55 @@ export const SelectableItem = ({
   const itemCount = selectedItemIds?.filter((id) => item.id == id).length || 0
 
   return (
-    <Box style={style}>
-      <ItemNameAndIcon
-        item={item}
-        showTooltipItemId={showTooltipItemId}
-        highlight={highlight}
-        onClick={onClick}
-        onLongClick={onLongClick}
-        onRightSectionClick={onRightSectionClick}
-        rightSection={
-          <Group wrap="nowrap">
-            {attendees && user
-              ? (
-                <ReservedByOthers
-                  itemId={item.id}
-                  user={user}
-                  attendees={attendees}
-                />
-              )
-              : null}
-            {hardReserves.includes(item.id)
-              ? <Badge color="red">HR</Badge>
-              : null}
-            {deleteMode ? <CloseButton /> : null}
-            {(selectMode && !hardReserves.includes(item.id) &&
-                sameItemLimit > 1 && itemCount > 0)
-              ? (
-                <ActionIcon size={25}>
-                  <Title order={6}>{itemCount}</Title>
-                </ActionIcon>
-              )
-              : null}
-            {(selectMode && !hardReserves.includes(item.id) &&
-                (sameItemLimit === 1 || itemCount == 0))
-              ? (
-                <Checkbox
-                  checked={selectedItemIds?.includes(item.id)}
-                  size="md"
-                />
-              )
-              : null}
-          </Group>
-        }
-      />
-    </Box>
+    <ItemNameAndIcon
+      item={item}
+      showTooltipItemId={showTooltipItemId}
+      highlight={highlight}
+      onClick={onClick}
+      onLongClick={onLongClick}
+      onRightSectionClick={onRightSectionClick}
+      rightSection={
+        <Group wrap="nowrap" mr="xs">
+          {attendees && user
+            ? (
+              <ReservedByOthers
+                itemId={item.id}
+                user={user}
+                attendees={attendees}
+              />
+            )
+            : null}
+          <Text size="xs" c="grey">
+            {item.dropsFrom[0].chance}%
+          </Text>
+          {hardReserves.includes(item.id)
+            ? <Badge color="red">HR</Badge>
+            : null}
+          {deleteMode ? <CloseButton /> : null}
+          {(selectMode && !hardReserves.includes(item.id) &&
+              sameItemLimit > 1 && itemCount > 0)
+            ? (
+              <ActionIcon size={25}>
+                <Title order={6}>{itemCount}</Title>
+              </ActionIcon>
+            )
+            : null}
+          {(selectMode && !hardReserves.includes(item.id) &&
+              (sameItemLimit === 1 || itemCount == 0))
+            ? (
+              <Checkbox
+                checked={selectedItemIds?.includes(item.id)}
+                size="md"
+              />
+            )
+            : null}
+        </Group>
+      }
+    />
   )
 }
 
-export const ReactWindowSelectableItem = ({
+export const ItemPickerElement = ({
   index,
   selectedItemIds,
   onClick,
@@ -236,7 +243,7 @@ export const ReactWindowSelectableItem = ({
   style,
   deleteMode = false,
   selectMode = false,
-  items,
+  elements,
   attendees,
   hardReserves = [],
   sameItemLimit,
@@ -249,26 +256,47 @@ export const ReactWindowSelectableItem = ({
   showTooltipItemId?: number
   deleteMode?: boolean
   selectMode?: boolean
-  items: Item[]
+  elements: ItemPickerElementType[]
   attendees?: Attendee[]
   hardReserves?: number[]
   sameItemLimit: number
 }>) => {
+  const element = elements[index]
+  const segment = element.segment
+  const item = element.item
   return (
-    <SelectableItem
-      item={items[index]}
-      selectedItemIds={selectedItemIds}
-      onClick={() => onClick(items[index].id)}
-      onLongClick={() => onLongClick(items[index].id)}
-      onRightSectionClick={() => onRightSectionClick(items[index].id)}
-      showTooltipItemId={showTooltipItemId}
-      user={user}
-      deleteMode={deleteMode}
-      selectMode={selectMode}
-      style={style}
-      attendees={attendees}
-      hardReserves={hardReserves}
-      sameItemLimit={sameItemLimit}
-    />
+    <Box style={style}>
+      {segment
+        ? (
+          <Divider
+            labelPosition="center"
+            py={5}
+            label={
+              <Text size="lg" c="var(--mantine-color-gray-6)">
+                {element.segment}
+              </Text>
+            }
+          />
+        )
+        : null}
+      {item
+        ? (
+          <SelectableItem
+            item={item}
+            selectedItemIds={selectedItemIds}
+            onLongClick={() => onLongClick(item.id)}
+            onClick={() => onClick(item.id)}
+            onRightSectionClick={() => onRightSectionClick(item.id)}
+            showTooltipItemId={showTooltipItemId}
+            user={user}
+            deleteMode={deleteMode}
+            selectMode={selectMode}
+            attendees={attendees}
+            hardReserves={hardReserves}
+            sameItemLimit={sameItemLimit}
+          />
+        )
+        : null}
+    </Box>
   )
 }

@@ -1,4 +1,4 @@
-import type { Attendee, Class, Item, User } from "../shared/types.ts"
+import type { Attendee, Class, Instance, User } from "../shared/types.ts"
 import { removeOne } from "../shared/utils.ts"
 import { Button, Group, Paper, Stack, Text } from "@mantine/core"
 import "../css/tooltip.css"
@@ -12,7 +12,7 @@ export const ItemSelect = (
     value,
     label,
     onChange,
-    items,
+    instance,
     selectedClass,
     user,
     attendees,
@@ -24,7 +24,7 @@ export const ItemSelect = (
     value: number[]
     label: string
     onChange: (itemIds: number[]) => void
-    items: Item[]
+    instance: Instance
     selectedClass?: Class | null
     user?: User
     attendees?: Attendee[]
@@ -58,7 +58,7 @@ export const ItemSelect = (
           {value.map((itemId, index) => (
             <SelectableItem
               key={`${itemId}|${index}`}
-              item={items.find((i) => i.id == itemId) || nothingItem}
+              item={instance.items.find((i) => i.id == itemId) || nothingItem}
               onRightSectionClick={() => {
                 onChange(removeOne((e) => e == itemId, value))
               }}
@@ -96,7 +96,7 @@ export const ItemSelect = (
       <ItemPicker
         selectedItemIds={value}
         setSelectedItemIds={onChange}
-        items={items}
+        instance={instance}
         selectedClass={selectedClass || null}
         user={user}
         attendees={attendees}

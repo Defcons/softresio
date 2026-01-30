@@ -125,7 +125,8 @@ export interface CreateSrRequest {
 }
 
 export interface DropsFrom {
-  bossId: string
+  npcId: number
+  bossId: number
   chance: number
 }
 
@@ -141,6 +142,12 @@ export interface Item {
   quality: 1 | 2 | 3 | 4 | 5
 }
 
+export interface Npc {
+  id: number
+  name: string
+  bossId: number
+}
+
 export interface Boss {
   id: number
   name: string
@@ -152,4 +159,10 @@ export interface Instance {
   shortname: string
   items: Item[]
   bosses: Boss[]
+  npcs: Npc[]
+}
+
+export interface ItemPickerElementType {
+  segment?: string
+  item?: Item
 }

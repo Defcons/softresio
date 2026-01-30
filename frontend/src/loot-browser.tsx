@@ -35,6 +35,8 @@ export const LootBrowser = (
     }
   }, [itemPickerOpen])
 
+  const instance = instances.find((instance) => instance.id == instanceId)
+
   return (
     <Paper shadow="sm" p="sm">
       <Stack gap="md">
@@ -54,11 +56,14 @@ export const LootBrowser = (
           }}
         />
       </Stack>
-      <ItemPicker
-        items={instances.filter((instance) => instance.id == instanceId)[0]
-          ?.items || []}
-        itemPickerOpen={itemPickerOpen}
-      />
+      {instance
+        ? (
+          <ItemPicker
+            itemPickerOpen={itemPickerOpen}
+            instance={instance}
+          />
+        )
+        : null}
     </Paper>
   )
 }

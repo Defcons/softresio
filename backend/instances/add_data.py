@@ -12,11 +12,32 @@ raids = []
 for file in glob("*.json"):
     instances.append(json.loads(open(file).read()))
 
+lines = open("bosses").read().split("\n")
+bosses = {}
+current_bosses = None
+current_npcs = None
+current_instance_name = None
+npc_id = 0
+boss_id = 0
+for line in lines:
+    content = line.strip()
+    if line.startswith("    "): # NPC
+        current_npcs.append({"bossId": boss_id-1, "id": npc_id, "name": content})
+        npc_id += 1
+    elif line.startswith("  "): # Boss
+        current_bosses.append({"id": boss_id, "name": content})
+        boss_id += 1
+    else:
+        if current_instance_name:
+            bosses[current_instance_name] = {"bosses": current_bosses, "npcs": current_npcs}
+        current_bosses = []
+        current_npcs = []
+        current_instance_name = content
 
-boss_map={}
+
+
 
 for instance in instances:
-    bosses = []
     new_items = []
     for item in instance["items"]:
         link = f"https://database.turtlecraft.gg/?item={item["id"]}"
@@ -26,30 +47,28 @@ for instance in instances:
         if not len(splits) > 2:
             open("fucked_links", "a").write(link+"\n")
             continue
-        scraped_bosses = re.findall(r"name: '(.*?)',", splits[2])
-        for boss in scraped_bosses:
-            boss = boss.replace("\\", "\\\\")
+        npcs = re.findall(r"name: '(.*?)',", splits[2])
+        for npc in npcs:
+            npc = npc.replace("\\", "\\\\")
             try:
-                drop_chance = float(re.search(fr"{boss}.*?percent: ([0-9\.]+)", r.text).group(1))
+                drop_chance = float(re.search(fr"{npc}.*?percent: ([0-9\.]+)", r.text).group(1))
             except:
-                print("------- failed! ------", file=sys.stderr)
-                print(boss, file=sys.stderr)
-                print(link, file=sys.stderr)
-                print(splits[2], file=sys.stderr)
+                print(npc, file=sys.stderr)
                 drop_chance = None
-            boss = boss.replace("\\\\", "")
-            if boss not in bosses:
-                bosses.append(boss)
-            boss_id = bosses.index(boss)
-            dropsFrom.append({"bossId": boss_id, "chance": drop_chance})
+            npc = npc.replace("\\\\", "")
+
+            if not any(filter(lambda n: n["name"] == npc, bosses[instance["name"]]["npcs"])):
+                print(npc, file=sys.stderr)
+                npc = "Trash"
+            npc = next(filter(lambda n: n["name"] == npc, bosses[instance["name"]]["npcs"]))
+            npc_id = npc["id"]
+            boss_id = npc["bossId"]
+            if not any(filter(lambda d: d["npcId"] == npc_id, dropsFrom)):
+                dropsFrom.append({"npcId": npc_id, "bossId": boss_id, "chance": drop_chance})
 
         item["dropsFrom"] = dropsFrom
-        item["slots"] = [item["slot"]]
-        item["types"] = [] if not item["type"] else [item["type"]]
-        del item["slot"]
-        del item["type"]
-
         new_items.append(item)
-    instance["bosses"] = list(map(lambda e: {"bossId": e[0], "name": e[1]}, enumerate(bosses)))
+    instance["bosses"] = bosses[instance["name"]]["bosses"]
+    instance["npcs"] = bosses[instance["name"]]["npcs"]
     instance["items"] = new_items
     open(instance["shortname"] + ".json", "w").write(json.dumps(instance))

@@ -249,7 +249,7 @@ export const Raid = (
         </Paper>
         <CreateSr
           loadRaid={loadRaid}
-          items={instance.items}
+          instance={instance}
           sheet={sheet}
           user={user}
           itemPickerOpen={itemPickerOpen}

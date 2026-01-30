@@ -16,35 +16,28 @@
       "icon": "inv_shoulder_19.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 11.11
         },
         {
+          "npcId": 3,
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "npcId": 1,
           "bossId": 1,
           "chance": 11.11
         },
         {
-          "bossId": 2,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 11.11
         },
         {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 4,
-          "chance": 11.11
-        },
-        {
-          "bossId": 5,
-          "chance": 11.11
-        },
-        {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 11.11
         }
       ],
@@ -66,35 +59,28 @@
       "icon": "inv_chest_chain_12.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 11.11
         },
         {
+          "npcId": 3,
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "npcId": 1,
           "bossId": 1,
           "chance": 11.11
         },
         {
-          "bossId": 2,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 11.11
         },
         {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 4,
-          "chance": 11.11
-        },
-        {
-          "bossId": 5,
-          "chance": 11.11
-        },
-        {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 11.11
         }
       ],
@@ -116,35 +102,28 @@
       "icon": "inv_shirt_07.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 11.11
         },
         {
+          "npcId": 3,
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "npcId": 1,
           "bossId": 1,
           "chance": 11.11
         },
         {
-          "bossId": 2,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 11.11
         },
         {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 4,
-          "chance": 11.11
-        },
-        {
-          "bossId": 5,
-          "chance": 11.11
-        },
-        {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 11.11
         }
       ],
@@ -166,35 +145,28 @@
       "icon": "inv_banner_01.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 11.11
         },
         {
+          "npcId": 3,
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "npcId": 1,
           "bossId": 1,
           "chance": 11.11
         },
         {
-          "bossId": 2,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 11.11
         },
         {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 4,
-          "chance": 11.11
-        },
-        {
-          "bossId": 5,
-          "chance": 11.11
-        },
-        {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 11.11
         }
       ],
@@ -216,35 +188,28 @@
       "icon": "inv_bracer_18.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 11.11
         },
         {
+          "npcId": 3,
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "npcId": 1,
           "bossId": 1,
           "chance": 11.11
         },
         {
-          "bossId": 2,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 11.11
         },
         {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 4,
-          "chance": 11.11
-        },
-        {
-          "bossId": 5,
-          "chance": 11.11
-        },
-        {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 11.11
         }
       ],
@@ -266,35 +231,28 @@
       "icon": "inv_bracer_05.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 11.11
         },
         {
+          "npcId": 3,
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "npcId": 1,
           "bossId": 1,
           "chance": 11.11
         },
         {
-          "bossId": 2,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 11.11
         },
         {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 4,
-          "chance": 11.11
-        },
-        {
-          "bossId": 5,
-          "chance": 11.11
-        },
-        {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 11.11
         }
       ],
@@ -316,35 +274,28 @@
       "icon": "inv_bracer_14.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 11.11
         },
         {
+          "npcId": 3,
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "npcId": 1,
           "bossId": 1,
           "chance": 11.11
         },
         {
-          "bossId": 2,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 11.11
         },
         {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 4,
-          "chance": 11.11
-        },
-        {
-          "bossId": 5,
-          "chance": 11.11
-        },
-        {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 11.11
         }
       ],
@@ -366,35 +317,28 @@
       "icon": "inv_belt_12.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 11.11
         },
         {
+          "npcId": 3,
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "npcId": 1,
           "bossId": 1,
           "chance": 11.11
         },
         {
-          "bossId": 2,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 11.11
         },
         {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 4,
-          "chance": 11.11
-        },
-        {
-          "bossId": 5,
-          "chance": 11.11
-        },
-        {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 11.11
         }
       ],
@@ -416,35 +360,28 @@
       "icon": "inv_belt_07.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 11.11
         },
         {
+          "npcId": 3,
+          "bossId": 3,
+          "chance": 11.11
+        },
+        {
+          "npcId": 1,
           "bossId": 1,
           "chance": 11.11
         },
         {
-          "bossId": 2,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 11.11
         },
         {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 3,
-          "chance": 11.11
-        },
-        {
-          "bossId": 4,
-          "chance": 11.11
-        },
-        {
-          "bossId": 5,
-          "chance": 11.11
-        },
-        {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 11.11
         }
       ],
@@ -462,7 +399,8 @@
       "icon": "inv_mace_19.png",
       "dropsFrom": [
         {
-          "bossId": 5,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 14.29
         }
       ],
@@ -482,7 +420,8 @@
       "icon": "inv_jewelry_necklace_03.png",
       "dropsFrom": [
         {
-          "bossId": 5,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 14.29
         }
       ],
@@ -500,7 +439,8 @@
       "icon": "inv_shoulder_09.png",
       "dropsFrom": [
         {
-          "bossId": 5,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 14.29
         }
       ],
@@ -520,7 +460,8 @@
       "icon": "inv_boots_chain_11.png",
       "dropsFrom": [
         {
-          "bossId": 5,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 14.29
         }
       ],
@@ -540,7 +481,8 @@
       "icon": "inv_boots_plate_03.png",
       "dropsFrom": [
         {
-          "bossId": 5,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 14.29
         }
       ],
@@ -560,7 +502,8 @@
       "icon": "inv_jewelry_ring_47.png",
       "dropsFrom": [
         {
-          "bossId": 5,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 14.29
         }
       ],
@@ -578,7 +521,8 @@
       "icon": "inv_shield_22.png",
       "dropsFrom": [
         {
-          "bossId": 5,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 14.29
         }
       ],
@@ -598,7 +542,8 @@
       "icon": "inv_chest_plate08.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 16.67
         }
       ],
@@ -618,7 +563,8 @@
       "icon": "inv_weapon_shortblade_31.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 16.67
         }
       ],
@@ -638,7 +584,8 @@
       "icon": "inv_misc_cape_10.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 16.67
         }
       ],
@@ -656,7 +603,8 @@
       "icon": "inv_boots_chain_04.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 16.67
         }
       ],
@@ -676,7 +624,8 @@
       "icon": "inv_jewelry_ring_46.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 16.67
         }
       ],
@@ -694,7 +643,8 @@
       "icon": "inv_axe_34.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 16.67
         }
       ],
@@ -714,7 +664,8 @@
       "icon": "inv_chest_cloth_25.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 16.67
         }
       ],
@@ -734,7 +685,8 @@
       "icon": "inv_wand_06.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 16.67
         }
       ],
@@ -754,7 +706,8 @@
       "icon": "inv_jewelry_necklace_21.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 16.67
         }
       ],
@@ -772,7 +725,8 @@
       "icon": "inv_boots_chain_04.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 16.67
         }
       ],
@@ -792,7 +746,8 @@
       "icon": "inv_jewelry_ring_44.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 16.67
         }
       ],
@@ -810,7 +765,8 @@
       "icon": "inv_zulgurubtrinket.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 16.67
         }
       ],
@@ -828,7 +784,8 @@
       "icon": "inv_weapon_hand_02.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 10.0
         }
       ],
@@ -848,11 +805,13 @@
       "icon": "inv_zulgurubtrinket.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 100.0
         },
         {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 100.0
         }
       ],
@@ -870,7 +829,8 @@
       "icon": "ability_mount_raptor.png",
       "dropsFrom": [
         {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 2.0
         }
       ],
@@ -888,11 +848,8 @@
       "icon": "inv_waepon_bow_zulgrub_d_01.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -910,11 +867,8 @@
       "icon": "inv_sword_54.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -934,11 +888,8 @@
       "icon": "inv_sword_55.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -958,11 +909,8 @@
       "icon": "inv_weapon_halberd_12.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -982,11 +930,8 @@
       "icon": "inv_shoulder_01.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -1006,11 +951,8 @@
       "icon": "inv_misc_cape_18.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -1028,11 +970,8 @@
       "icon": "inv_gauntlets_26.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -1052,11 +991,8 @@
       "icon": "inv_pants_cloth_14.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -1076,11 +1012,8 @@
       "icon": "inv_pants_mail_14.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -1100,11 +1033,8 @@
       "icon": "inv_jewelry_ring_39.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -1122,11 +1052,8 @@
       "icon": "inv_jewelry_ring_47.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -1144,11 +1071,8 @@
       "icon": "inv_jewelry_ring_46.png",
       "dropsFrom": [
         {
-          "bossId": 1,
-          "chance": 8.333
-        },
-        {
-          "bossId": 1,
+          "npcId": 3,
+          "bossId": 3,
           "chance": 8.333
         }
       ],
@@ -1166,7 +1090,8 @@
       "icon": "inv_mace_04.png",
       "dropsFrom": [
         {
-          "bossId": 7,
+          "npcId": 4,
+          "bossId": 4,
           "chance": 43.0
         }
       ],
@@ -1186,7 +1111,8 @@
       "icon": "inv_axe_24.png",
       "dropsFrom": [
         {
-          "bossId": 7,
+          "npcId": 4,
+          "bossId": 4,
           "chance": 43.0
         }
       ],
@@ -1206,7 +1132,8 @@
       "icon": "inv_potion_26.png",
       "dropsFrom": [
         {
-          "bossId": 7,
+          "npcId": 4,
+          "bossId": 4,
           "chance": 20.0
         }
       ],
@@ -1224,7 +1151,8 @@
       "icon": "inv_wand_05.png",
       "dropsFrom": [
         {
-          "bossId": 8,
+          "npcId": 5,
+          "bossId": 5,
           "chance": 45.0
         }
       ],
@@ -1244,7 +1172,8 @@
       "icon": "inv_sword_01.png",
       "dropsFrom": [
         {
-          "bossId": 8,
+          "npcId": 5,
+          "bossId": 5,
           "chance": 40.0
         }
       ],
@@ -1264,7 +1193,8 @@
       "icon": "inv_misc_bandage_16.png",
       "dropsFrom": [
         {
-          "bossId": 8,
+          "npcId": 5,
+          "bossId": 5,
           "chance": 20.0
         }
       ],
@@ -1282,7 +1212,8 @@
       "icon": "inv_sword_37.png",
       "dropsFrom": [
         {
-          "bossId": 9,
+          "npcId": 6,
+          "bossId": 6,
           "chance": 40.0
         }
       ],
@@ -1302,7 +1233,8 @@
       "icon": "inv_spear_03.png",
       "dropsFrom": [
         {
-          "bossId": 9,
+          "npcId": 6,
+          "bossId": 6,
           "chance": 45.0
         }
       ],
@@ -1322,7 +1254,8 @@
       "icon": "inv_misc_monsterfang_01.png",
       "dropsFrom": [
         {
-          "bossId": 9,
+          "npcId": 6,
+          "bossId": 6,
           "chance": 20.0
         }
       ],
@@ -1340,7 +1273,8 @@
       "icon": "inv_waepon_bow_zulgrub_d_02.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 7,
+          "bossId": 7,
           "chance": 40.0
         }
       ],
@@ -1358,7 +1292,8 @@
       "icon": "inv_sword_38.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 7,
+          "bossId": 7,
           "chance": 45.0
         }
       ],
@@ -1378,7 +1313,8 @@
       "icon": "inv_misc_monstertail_02.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 7,
+          "bossId": 7,
           "chance": 20.0
         }
       ],
@@ -1396,7 +1332,8 @@
       "icon": "inv_helmet_46.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 8,
+          "bossId": 8,
           "chance": 25.0
         }
       ],
@@ -1416,7 +1353,8 @@
       "icon": "inv_fishingpole_02.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 8,
+          "bossId": 8,
           "chance": 25.0
         }
       ],
@@ -1436,7 +1374,8 @@
       "icon": "inv_gizmo_09.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 8,
+          "bossId": 8,
           "chance": 25.0
         }
       ],
@@ -1454,7 +1393,8 @@
       "icon": "inv_spear_04.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 8,
+          "bossId": 8,
           "chance": 25.0
         }
       ],
@@ -1470,11 +1410,12 @@
       "name": "Tome of Polymorph: Turtle",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Polymorph: Turtle</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Polymorph: Turtle.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Polymorph: Turtle</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Polymorph: Turtle.</span><br/></span></div>",
       "icon": "inv_misc_book_07.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 8,
+          "bossId": 8,
           "chance": 15.0
         }
       ],
@@ -1492,11 +1433,8 @@
       "icon": "ability_mount_jungletiger.png",
       "dropsFrom": [
         {
-          "bossId": 3,
-          "chance": 2.0
-        },
-        {
-          "bossId": 3,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 2.0
         }
       ],
@@ -1514,11 +1452,8 @@
       "icon": "inv_boots_cloth_09.png",
       "dropsFrom": [
         {
-          "bossId": 3,
-          "chance": 14.29
-        },
-        {
-          "bossId": 3,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 14.29
         }
       ],
@@ -1538,11 +1473,8 @@
       "icon": "inv_weapon_hand_01.png",
       "dropsFrom": [
         {
-          "bossId": 3,
-          "chance": 14.29
-        },
-        {
-          "bossId": 3,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 14.29
         }
       ],
@@ -1562,11 +1494,8 @@
       "icon": "inv_pants_cloth_14.png",
       "dropsFrom": [
         {
-          "bossId": 3,
-          "chance": 14.29
-        },
-        {
-          "bossId": 3,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 14.29
         }
       ],
@@ -1586,11 +1515,8 @@
       "icon": "inv_pants_mail_06.png",
       "dropsFrom": [
         {
-          "bossId": 3,
-          "chance": 14.29
-        },
-        {
-          "bossId": 3,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 14.29
         }
       ],
@@ -1610,11 +1536,8 @@
       "icon": "inv_pants_plate_04.png",
       "dropsFrom": [
         {
-          "bossId": 3,
-          "chance": 14.29
-        },
-        {
-          "bossId": 3,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 14.29
         }
       ],
@@ -1634,11 +1557,8 @@
       "icon": "inv_jewelry_ring_44.png",
       "dropsFrom": [
         {
-          "bossId": 3,
-          "chance": 14.29
-        },
-        {
-          "bossId": 3,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 14.29
         }
       ],
@@ -1656,11 +1576,8 @@
       "icon": "inv_sword_35.png",
       "dropsFrom": [
         {
-          "bossId": 3,
-          "chance": 14.29
-        },
-        {
-          "bossId": 3,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 14.29
         }
       ],
@@ -1680,7 +1597,8 @@
       "icon": "inv_weapon_hand_01.png",
       "dropsFrom": [
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 20.0
         }
       ],
@@ -1700,7 +1618,8 @@
       "icon": "inv_staff_35.png",
       "dropsFrom": [
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 20.0
         }
       ],
@@ -1720,7 +1639,8 @@
       "icon": "inv_boots_plate_06.png",
       "dropsFrom": [
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 20.0
         }
       ],
@@ -1740,7 +1660,8 @@
       "icon": "inv_jewelry_ring_39.png",
       "dropsFrom": [
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 20.0
         }
       ],
@@ -1758,7 +1679,8 @@
       "icon": "inv_misc_bone_dwarfskull_01.png",
       "dropsFrom": [
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 20.0
         }
       ],
@@ -1776,7 +1698,8 @@
       "icon": "inv_misc_bag_14.png",
       "dropsFrom": [
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 18.0
         }
       ],
@@ -1794,11 +1717,8 @@
       "icon": "inv_jewelry_ring_45.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -1816,11 +1736,8 @@
       "icon": "inv_misc_bag_10_black.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -1838,11 +1755,8 @@
       "icon": "inv_mace_17.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -1862,11 +1776,8 @@
       "icon": "inv_staff_33.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -1886,11 +1797,8 @@
       "icon": "inv_mask_02.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -1910,11 +1818,8 @@
       "icon": "inv_helmet_39.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -1934,11 +1839,8 @@
       "icon": "inv_misc_cape_21.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -1956,11 +1858,8 @@
       "icon": "inv_gauntlets_16.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -1980,11 +1879,8 @@
       "icon": "inv_gauntlets_14.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -2004,11 +1900,8 @@
       "icon": "inv_pants_leather_09.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -2028,11 +1921,8 @@
       "icon": "inv_pants_mail_09.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -2052,11 +1942,8 @@
       "icon": "inv_boots_chain_13.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 8.333
-        },
-        {
-          "bossId": 0,
+          "npcId": 11,
+          "bossId": 11,
           "chance": 8.333
         }
       ],
@@ -2076,6 +1963,7 @@
       "icon": "inv_misc_cape_22.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2094,6 +1982,7 @@
       "icon": "inv_gauntlets_30.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2114,6 +2003,7 @@
       "icon": "inv_gauntlets_10.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2134,6 +2024,7 @@
       "icon": "inv_pants_plate_21.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2154,6 +2045,7 @@
       "icon": "inv_jewelry_necklace_19.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2172,6 +2064,7 @@
       "icon": "inv_jewelry_necklace_22.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2190,6 +2083,7 @@
       "icon": "inv_wand_09.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2210,6 +2104,7 @@
       "icon": "inv_weapon_rifle_10.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2230,6 +2125,7 @@
       "icon": "inv_shield_12.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2250,6 +2146,7 @@
       "icon": "inv_sword_18.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2270,6 +2167,7 @@
       "icon": "inv_sword_55.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2290,6 +2188,7 @@
       "icon": "inv_axe_35.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2310,6 +2209,7 @@
       "icon": "inv_weapon_shortblade_30.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2330,6 +2230,7 @@
       "icon": "inv_sword_55.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 14.29
         }
@@ -2350,6 +2251,7 @@
       "icon": "inv_misc_gem_bloodstone_02.png",
       "dropsFrom": [
         {
+          "npcId": 12,
           "bossId": 12,
           "chance": 100.0
         }
@@ -2364,10 +2266,11 @@
       "name": "Zulian Mudskunk",
       "classes": [],
       "quality": 1,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Zulian Mudskunk</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Zulian Mudskunk</b><div><div></div><div></div></div><span></span></div>",
       "icon": "inv_misc_fish_05.png",
       "dropsFrom": [
         {
+          "npcId": 13,
           "bossId": 13,
           "chance": 100.0
         }
@@ -2386,80 +2289,9 @@
       "icon": "inv_weapon_shortblade_29.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.12
-        },
-        {
-          "bossId": 15,
-          "chance": 0.02
-        },
-        {
-          "bossId": 16,
-          "chance": 0.08
-        },
-        {
-          "bossId": 17,
-          "chance": 0.02
-        },
-        {
-          "bossId": 18,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.06
-        },
-        {
-          "bossId": 20,
-          "chance": 0.02
-        },
-        {
-          "bossId": 21,
-          "chance": 0.18
-        },
-        {
-          "bossId": 22,
-          "chance": 0.1
-        },
-        {
-          "bossId": 23,
-          "chance": 0.017
-        },
-        {
-          "bossId": 24,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.08
-        },
-        {
-          "bossId": 26,
-          "chance": 0.02
-        },
-        {
-          "bossId": 27,
-          "chance": 0.06
-        },
-        {
-          "bossId": 28,
-          "chance": 0.02
-        },
-        {
-          "bossId": 29,
-          "chance": 0.04
-        },
-        {
-          "bossId": 30,
-          "chance": 0.02
-        },
-        {
-          "bossId": 31,
-          "chance": 0.06
-        },
-        {
-          "bossId": 32,
-          "chance": 0.04
         }
       ],
       "slots": [
@@ -2472,52 +2304,13 @@
       "name": "Gurubashi Helm",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Gurubashi Helm</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Plate</span></div></div><span>549 Armor<br/>+22 Strength<br/>+21 Agility<br/>+13 Stamina<br/>Requires Level 60<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Gurubashi Helm</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Plate</span></div></div><span>549 Armor<br/>+22 Strength<br/>+21 Agility<br/>+13 Stamina<br/>Requires Level 60<br/></span></div>",
       "icon": "inv_helmet_25.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.02
-        },
-        {
-          "bossId": 16,
-          "chance": 0.0575
-        },
-        {
-          "bossId": 17,
-          "chance": 0.02
-        },
-        {
-          "bossId": 18,
-          "chance": 0.04
-        },
-        {
-          "bossId": 19,
-          "chance": 0.04
-        },
-        {
-          "bossId": 20,
-          "chance": 0.0214
-        },
-        {
-          "bossId": 33,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.03
-        },
-        {
-          "bossId": 27,
-          "chance": 0.04
-        },
-        {
-          "bossId": 29,
-          "chance": 0.0172
-        },
-        {
-          "bossId": 31,
-          "chance": 0.08
         }
       ],
       "slots": [
@@ -2532,48 +2325,13 @@
       "name": "Shadow Panther Hide Gloves",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadow Panther Hide Gloves</b><span>Binds when equipped</span><div><div><span>Hands</span></div><div><span>Leather</span></div></div><span>173 Armor<br/>+15 Strength<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadow Panther Hide Gloves</b><span>Binds when equipped</span><div><div><span>Hands</span></div><div><span>Leather</span></div></div><span>173 Armor<br/>+15 Strength<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/></span></div>",
       "icon": "inv_gauntlets_25.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.03
-        },
-        {
-          "bossId": 16,
-          "chance": 0.06
-        },
-        {
-          "bossId": 17,
-          "chance": 0.06
-        },
-        {
-          "bossId": 18,
-          "chance": 0.04
-        },
-        {
-          "bossId": 19,
-          "chance": 0.08
-        },
-        {
-          "bossId": 20,
-          "chance": 0.02
-        },
-        {
-          "bossId": 33,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.03
-        },
-        {
-          "bossId": 29,
-          "chance": 0.02
-        },
-        {
-          "bossId": 31,
-          "chance": 0.02
         }
       ],
       "slots": [
@@ -2588,52 +2346,13 @@
       "name": "Shadow Panther Hide Belt",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadow Panther Hide Belt</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Leather</span></div></div><span>102 Armor<br/>+8 Strength<br/>+16 Agility<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Shadow Panther Hide Belt</b><span>Binds when equipped</span><div><div><span>Waist</span></div><div><span>Leather</span></div></div><span>102 Armor<br/>+8 Strength<br/>+16 Agility<br/>+10 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br/></span></div>",
       "icon": "inv_belt_26.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.08
-        },
-        {
-          "bossId": 16,
-          "chance": 0.06
-        },
-        {
-          "bossId": 17,
-          "chance": 0.06
-        },
-        {
-          "bossId": 18,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.04
-        },
-        {
-          "bossId": 20,
-          "chance": 0.04
-        },
-        {
-          "bossId": 33,
-          "chance": 0.0225
-        },
-        {
-          "bossId": 25,
-          "chance": 0.0469
-        },
-        {
-          "bossId": 27,
-          "chance": 0.06
-        },
-        {
-          "bossId": 29,
-          "chance": 0.0172
-        },
-        {
-          "bossId": 31,
-          "chance": 0.0333
         }
       ],
       "slots": [
@@ -2648,52 +2367,13 @@
       "name": "Zulian Hacker",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Hacker</b><span>Binds when equipped</span><div><div><span>One-hand</span></div><div><span>Axe</span></div></div><div><div>71 - 134 Damage</div><div>Speed 2.40</div></div><span>(42.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Axes +2.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Hacker</b><span>Binds when equipped</span><div><div><span>One-hand</span></div><div><span>Axe</span></div></div><div><div>71 - 134 Damage</div><div>Speed 2.40</div></div><span>(42.7 damage per second)<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Axes +2.</span><br/></span></div>",
       "icon": "inv_axe_08.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.08
-        },
-        {
-          "bossId": 16,
-          "chance": 0.02
-        },
-        {
-          "bossId": 17,
-          "chance": 0.02
-        },
-        {
-          "bossId": 18,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.06
-        },
-        {
-          "bossId": 20,
-          "chance": 0.02
-        },
-        {
-          "bossId": 33,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.03
-        },
-        {
-          "bossId": 27,
-          "chance": 0.04
-        },
-        {
-          "bossId": 29,
-          "chance": 0.06
-        },
-        {
-          "bossId": 31,
-          "chance": 0.06
         }
       ],
       "slots": [
@@ -2712,52 +2392,9 @@
       "icon": "inv_mace_08.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.04
-        },
-        {
-          "bossId": 15,
-          "chance": 0.04
-        },
-        {
-          "bossId": 16,
-          "chance": 0.06
-        },
-        {
-          "bossId": 17,
-          "chance": 0.08
-        },
-        {
-          "bossId": 18,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.12
-        },
-        {
-          "bossId": 20,
-          "chance": 0.06
-        },
-        {
-          "bossId": 33,
-          "chance": 0.1
-        },
-        {
-          "bossId": 25,
-          "chance": 0.08
-        },
-        {
-          "bossId": 27,
-          "chance": 0.06
-        },
-        {
-          "bossId": 29,
-          "chance": 0.04
-        },
-        {
-          "bossId": 31,
-          "chance": 0.1
         }
       ],
       "slots": [
@@ -2772,52 +2409,13 @@
       "name": "Zulian Ceremonial Staff",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Ceremonial Staff</b><span>Binds when equipped</span><span>Unique</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>112 - 172 Damage</div><div>Speed 2.60</div></div><span>(54.6 damage per second)<br/>+13 Stamina<br/>+16 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 32.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Zulian Ceremonial Staff</b><span>Binds when equipped</span><span>Unique</span><div><div><span>Two-hand</span></div><div><span>Staff</span></div></div><div><div>112 - 172 Damage</div><div>Speed 2.60</div></div><span>(54.6 damage per second)<br/>+13 Stamina<br/>+16 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 32.</span><br/></span></div>",
       "icon": "inv_staff_34.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.06
-        },
-        {
-          "bossId": 15,
-          "chance": 0.08
-        },
-        {
-          "bossId": 16,
-          "chance": 0.04
-        },
-        {
-          "bossId": 18,
-          "chance": 0.04
-        },
-        {
-          "bossId": 19,
-          "chance": 0.08
-        },
-        {
-          "bossId": 20,
-          "chance": 0.04
-        },
-        {
-          "bossId": 33,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.02
-        },
-        {
-          "bossId": 27,
-          "chance": 0.04
-        },
-        {
-          "bossId": 29,
-          "chance": 0.02
-        },
-        {
-          "bossId": 31,
-          "chance": 0.03
         }
       ],
       "slots": [
@@ -2832,104 +2430,13 @@
       "name": "Bloodvine",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Bloodvine</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Bloodvine</b><div><div></div><div></div></div><span></span></div>",
       "icon": "inv_misc_herb_09.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 1.332
-        },
-        {
-          "bossId": 15,
-          "chance": 1.162
-        },
-        {
-          "bossId": 34,
-          "chance": 2.242
-        },
-        {
-          "bossId": 16,
-          "chance": 1.936
-        },
-        {
-          "bossId": 17,
-          "chance": 1.886
-        },
-        {
-          "bossId": 18,
-          "chance": 1.447
-        },
-        {
-          "bossId": 19,
-          "chance": 1.899
-        },
-        {
-          "bossId": 20,
-          "chance": 1.928
-        },
-        {
-          "bossId": 21,
-          "chance": 0.04
-        },
-        {
-          "bossId": 22,
-          "chance": 0.02
-        },
-        {
-          "bossId": 24,
-          "chance": 0.02
-        },
-        {
-          "bossId": 35,
-          "chance": 0.02
-        },
-        {
-          "bossId": 36,
-          "chance": 0.02
-        },
-        {
-          "bossId": 37,
-          "chance": 0.02
-        },
-        {
-          "bossId": 38,
-          "chance": 0.1
-        },
-        {
-          "bossId": 33,
-          "chance": 2.142
-        },
-        {
-          "bossId": 25,
-          "chance": 2.065
-        },
-        {
-          "bossId": 26,
-          "chance": 0.02
-        },
-        {
-          "bossId": 27,
-          "chance": 1.885
-        },
-        {
-          "bossId": 28,
-          "chance": 0.02
-        },
-        {
-          "bossId": 29,
-          "chance": 0.02
-        },
-        {
-          "bossId": 30,
-          "chance": 0.02
-        },
-        {
-          "bossId": 31,
-          "chance": 2.096
-        },
-        {
-          "bossId": 32,
-          "chance": 0.04
         }
       ],
       "slots": [
@@ -2942,71 +2449,12 @@
       "name": "Souldarite",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Souldarite</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cff98b0e045|r|cff98b0e0s|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Souldarite</b><div><div></div><div></div></div><span></span></div>",
       "icon": "inv_misc_gem_01.png",
       "dropsFrom": [
         {
-          "bossId": 15,
-          "chance": 0.02
-        },
-        {
-          "bossId": 16,
-          "chance": 0.02
-        },
-        {
-          "bossId": 17,
-          "chance": 0.1
-        },
-        {
-          "bossId": 18,
-          "chance": 0.06
-        },
-        {
-          "bossId": 19,
-          "chance": 0.04
-        },
-        {
-          "bossId": 20,
-          "chance": 0.02
-        },
-        {
-          "bossId": 21,
-          "chance": 0.04
-        },
-        {
-          "bossId": 22,
-          "chance": 0.02
-        },
-        {
-          "bossId": 24,
-          "chance": 0.04
-        },
-        {
-          "bossId": 37,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.08
-        },
-        {
-          "bossId": 27,
-          "chance": 0.18
-        },
-        {
-          "bossId": 28,
-          "chance": 0.02
-        },
-        {
-          "bossId": 29,
-          "chance": 0.08
-        },
-        {
-          "bossId": 31,
-          "chance": 0.06
-        },
-        {
-          "bossId": 32,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.02
         }
       ],
@@ -3020,11 +2468,12 @@
       "name": "Primal Bat Leather",
       "classes": [],
       "quality": 1,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Primal Bat Leather</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Primal Bat Leather</b><div><div></div><div></div></div><span></span></div>",
       "icon": "inv_misc_pelt_01.png",
       "dropsFrom": [
         {
-          "bossId": 5,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 24.0
         }
       ],
@@ -3040,15 +2489,12 @@
       "name": "Primal Tiger Leather",
       "classes": [],
       "quality": 1,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Primal Tiger Leather</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q1\">Primal Tiger Leather</b><div><div></div><div></div></div><span></span></div>",
       "icon": "inv_misc_pelt_04.png",
       "dropsFrom": [
         {
-          "bossId": 3,
-          "chance": 24.0
-        },
-        {
-          "bossId": 3,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 24.0
         }
       ],
@@ -3064,80 +2510,13 @@
       "name": "Punctured Voodoo Doll (Priest)",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Priest<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a priest.\"</span><br/>|cFFFFFFFFValue:|r |cff98b0e044|r|cff98b0e0s|r |cffc8602c39|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Priest<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a priest.\"</span><br/></span></div>",
       "icon": "inv_misc_idol_10.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.03
-        },
-        {
-          "bossId": 15,
-          "chance": 0.02
-        },
-        {
-          "bossId": 16,
-          "chance": 0.02
-        },
-        {
-          "bossId": 17,
-          "chance": 0.02
-        },
-        {
-          "bossId": 18,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.04
-        },
-        {
-          "bossId": 21,
-          "chance": 0.04
-        },
-        {
-          "bossId": 22,
-          "chance": 0.02
-        },
-        {
-          "bossId": 24,
-          "chance": 0.02
-        },
-        {
-          "bossId": 35,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.06
-        },
-        {
-          "bossId": 26,
-          "chance": 0.02
-        },
-        {
-          "bossId": 27,
-          "chance": 0.02
-        },
-        {
-          "bossId": 28,
-          "chance": 0.02
-        },
-        {
-          "bossId": 29,
-          "chance": 0.02
-        },
-        {
-          "bossId": 30,
-          "chance": 0.02
-        },
-        {
-          "bossId": 31,
-          "chance": 0.02
-        },
-        {
-          "bossId": 32,
-          "chance": 0.04
         }
       ],
       "slots": [
@@ -3150,68 +2529,13 @@
       "name": "Punctured Voodoo Doll (Mage)",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Mage<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a mage.\"</span><br/>|cFFFFFFFFValue:|r |cffffd10029|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r |cffc8602c98|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Mage<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a mage.\"</span><br/></span></div>",
       "icon": "inv_misc_idol_09.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.02
-        },
-        {
-          "bossId": 15,
-          "chance": 0.04
-        },
-        {
-          "bossId": 16,
-          "chance": 0.02
-        },
-        {
-          "bossId": 17,
-          "chance": 0.02
-        },
-        {
-          "bossId": 18,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.02
-        },
-        {
-          "bossId": 21,
-          "chance": 0.04
-        },
-        {
-          "bossId": 22,
-          "chance": 0.04
-        },
-        {
-          "bossId": 35,
-          "chance": 0.02
-        },
-        {
-          "bossId": 36,
-          "chance": 0.02
-        },
-        {
-          "bossId": 27,
-          "chance": 0.02
-        },
-        {
-          "bossId": 28,
-          "chance": 0.02
-        },
-        {
-          "bossId": 30,
-          "chance": 0.02
-        },
-        {
-          "bossId": 31,
-          "chance": 0.02
-        },
-        {
-          "bossId": 32,
-          "chance": 0.06
         }
       ],
       "slots": [
@@ -3224,68 +2548,13 @@
       "name": "Punctured Voodoo Doll (Warlock)",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Warlock<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a warlock.\"</span><br/>|cFFFFFFFFValue:|r |cff98b0e055|r|cff98b0e0s|r |cffc8602c49|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Warlock<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a warlock.\"</span><br/></span></div>",
       "icon": "inv_misc_idol_02.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.02
-        },
-        {
-          "bossId": 16,
-          "chance": 0.02
-        },
-        {
-          "bossId": 18,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.02
-        },
-        {
-          "bossId": 21,
-          "chance": 0.04
-        },
-        {
-          "bossId": 22,
-          "chance": 0.06
-        },
-        {
-          "bossId": 23,
-          "chance": 0.017
-        },
-        {
-          "bossId": 24,
-          "chance": 0.02
-        },
-        {
-          "bossId": 33,
-          "chance": 0.02
-        },
-        {
-          "bossId": 26,
-          "chance": 0.02
-        },
-        {
-          "bossId": 27,
-          "chance": 0.03
-        },
-        {
-          "bossId": 29,
-          "chance": 0.02
-        },
-        {
-          "bossId": 30,
-          "chance": 0.02
-        },
-        {
-          "bossId": 31,
-          "chance": 0.04
-        },
-        {
-          "bossId": 32,
-          "chance": 0.06
         }
       ],
       "slots": [
@@ -3298,72 +2567,13 @@
       "name": "Punctured Voodoo Doll (Rogue)",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Rogue<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a rogue.\"</span><br/>|cFFFFFFFFValue:|r |cff98b0e021|r|cff98b0e0s|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Rogue<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a rogue.\"</span><br/></span></div>",
       "icon": "inv_misc_idol_05.png",
       "dropsFrom": [
         {
-          "bossId": 16,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.02
-        },
-        {
-          "bossId": 17,
-          "chance": 0.06
-        },
-        {
-          "bossId": 18,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.02
-        },
-        {
-          "bossId": 21,
-          "chance": 0.04
-        },
-        {
-          "bossId": 22,
-          "chance": 0.02
-        },
-        {
-          "bossId": 24,
-          "chance": 0.02
-        },
-        {
-          "bossId": 35,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.04
-        },
-        {
-          "bossId": 26,
-          "chance": 0.02
-        },
-        {
-          "bossId": 27,
-          "chance": 0.02
-        },
-        {
-          "bossId": 28,
-          "chance": 0.02
-        },
-        {
-          "bossId": 29,
-          "chance": 0.02
-        },
-        {
-          "bossId": 30,
-          "chance": 0.02
-        },
-        {
-          "bossId": 31,
-          "chance": 0.02
-        },
-        {
-          "bossId": 32,
-          "chance": 0.04
         }
       ],
       "slots": [
@@ -3376,72 +2586,13 @@
       "name": "Punctured Voodoo Doll (Druid)",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Druid<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a druid.\"</span><br/>|cFFFFFFFFValue:|r |cff98b0e021|r|cff98b0e0s|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Druid<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a druid.\"</span><br/></span></div>",
       "icon": "inv_misc_idol_11.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.08
-        },
-        {
-          "bossId": 16,
-          "chance": 0.04
-        },
-        {
-          "bossId": 17,
-          "chance": 0.04
-        },
-        {
-          "bossId": 18,
-          "chance": 0.04
-        },
-        {
-          "bossId": 19,
-          "chance": 0.02
-        },
-        {
-          "bossId": 39,
-          "chance": 0.02
-        },
-        {
-          "bossId": 21,
-          "chance": 0.04
-        },
-        {
-          "bossId": 22,
-          "chance": 0.02
-        },
-        {
-          "bossId": 24,
-          "chance": 0.02
-        },
-        {
-          "bossId": 33,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.02
-        },
-        {
-          "bossId": 27,
-          "chance": 0.02
-        },
-        {
-          "bossId": 29,
-          "chance": 0.02
-        },
-        {
-          "bossId": 31,
-          "chance": 0.04
-        },
-        {
-          "bossId": 32,
-          "chance": 0.1
-        },
-        {
-          "bossId": 30,
-          "chance": 0.02
         }
       ],
       "slots": [
@@ -3454,64 +2605,13 @@
       "name": "Punctured Voodoo Doll (Hunter)",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Hunter<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a hunter.\"</span><br/>|cFFFFFFFFValue:|r |cffffd1004|r|cffffd100g|r |cff98b0e098|r|cff98b0e0s|r |cffc8602c97|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Hunter<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a hunter.\"</span><br/></span></div>",
       "icon": "inv_misc_idol_07.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.02
-        },
-        {
-          "bossId": 16,
-          "chance": 0.02
-        },
-        {
-          "bossId": 17,
-          "chance": 0.06
-        },
-        {
-          "bossId": 19,
-          "chance": 0.02
-        },
-        {
-          "bossId": 21,
-          "chance": 0.04
-        },
-        {
-          "bossId": 22,
-          "chance": 0.04
-        },
-        {
-          "bossId": 35,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.02
-        },
-        {
-          "bossId": 26,
-          "chance": 0.02
-        },
-        {
-          "bossId": 28,
-          "chance": 0.02
-        },
-        {
-          "bossId": 29,
-          "chance": 0.02
-        },
-        {
-          "bossId": 30,
-          "chance": 0.02
-        },
-        {
-          "bossId": 31,
-          "chance": 0.02
-        },
-        {
-          "bossId": 32,
-          "chance": 0.06
         }
       ],
       "slots": [
@@ -3524,43 +2624,12 @@
       "name": "Punctured Voodoo Doll (Shaman)",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Shaman<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a shaman.\"</span><br/>|cFFFFFFFFValue:|r |cffffd1005|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r |cffc8602c98|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Shaman<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a shaman.\"</span><br/></span></div>",
       "icon": "inv_misc_idol_08.png",
       "dropsFrom": [
         {
-          "bossId": 16,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.02
-        },
-        {
-          "bossId": 21,
-          "chance": 0.02
-        },
-        {
-          "bossId": 22,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.02
-        },
-        {
-          "bossId": 27,
-          "chance": 0.02
-        },
-        {
-          "bossId": 28,
-          "chance": 0.02
-        },
-        {
-          "bossId": 32,
-          "chance": 0.04
-        },
-        {
-          "bossId": 14,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.02
         }
       ],
@@ -3574,75 +2643,12 @@
       "name": "Punctured Voodoo Doll (Paladin)",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Paladin<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a paladin.\"</span><br/>|cFFFFFFFFValue:|r |cffffd10019|r|cffffd100g|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Paladin<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a paladin.\"</span><br/></span></div>",
       "icon": "inv_misc_idol_06.png",
       "dropsFrom": [
         {
-          "bossId": 14,
-          "chance": 0.02
-        },
-        {
-          "bossId": 15,
-          "chance": 0.04
-        },
-        {
-          "bossId": 16,
-          "chance": 0.02
-        },
-        {
-          "bossId": 17,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.02
-        },
-        {
-          "bossId": 22,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.02
-        },
-        {
-          "bossId": 26,
-          "chance": 0.02
-        },
-        {
-          "bossId": 27,
-          "chance": 0.02
-        },
-        {
-          "bossId": 28,
-          "chance": 0.02
-        },
-        {
-          "bossId": 29,
-          "chance": 0.02
-        },
-        {
-          "bossId": 30,
-          "chance": 0.02
-        },
-        {
-          "bossId": 31,
-          "chance": 0.02
-        },
-        {
-          "bossId": 32,
-          "chance": 0.02
-        },
-        {
-          "bossId": 40,
-          "chance": 0.3
-        },
-        {
-          "bossId": 41,
-          "chance": 0.02
-        },
-        {
-          "bossId": 42,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.02
         }
       ],
@@ -3656,60 +2662,13 @@
       "name": "Punctured Voodoo Doll (Warrior)",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Warrior<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a warrior.\"</span><br/>|cFFFFFFFFValue:|r |cffffd1001|r|cffffd100g|r |cffc8602c98|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Punctured Voodoo Doll</b><span>Unique</span><div><div></div><div></div></div><span>Classes: Warrior<br/><span class=\"q2\">Use: Combines with Gri'lek's Blood, Renataki's Tooth, Wushoolay's Mane, and Hazza'rah's Dream Thread to form a powerful charm.</span><br/><span class=\"q\">\"The doll resembles a warrior.\"</span><br/></span></div>",
       "icon": "inv_misc_idol_04.png",
       "dropsFrom": [
         {
-          "bossId": 16,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 0.02
-        },
-        {
-          "bossId": 17,
-          "chance": 0.02
-        },
-        {
-          "bossId": 18,
-          "chance": 0.02
-        },
-        {
-          "bossId": 19,
-          "chance": 0.02
-        },
-        {
-          "bossId": 21,
-          "chance": 0.08
-        },
-        {
-          "bossId": 22,
-          "chance": 0.04
-        },
-        {
-          "bossId": 24,
-          "chance": 0.02
-        },
-        {
-          "bossId": 25,
-          "chance": 0.02
-        },
-        {
-          "bossId": 26,
-          "chance": 0.02
-        },
-        {
-          "bossId": 28,
-          "chance": 0.02
-        },
-        {
-          "bossId": 29,
-          "chance": 0.02
-        },
-        {
-          "bossId": 30,
-          "chance": 0.02
-        },
-        {
-          "bossId": 14,
-          "chance": 0.04
         }
       ],
       "slots": [
@@ -3726,27 +2685,18 @@
       "icon": "inv_jewelry_ring_16.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 10.0
         },
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 10.0
         },
         {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 4,
-          "chance": 10.0
-        },
-        {
-          "bossId": 5,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 10.0
         }
       ],
@@ -3764,27 +2714,18 @@
       "icon": "inv_jewelry_ring_20.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 10.0
         },
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 10.0
         },
         {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 4,
-          "chance": 10.0
-        },
-        {
-          "bossId": 5,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 10.0
         }
       ],
@@ -3802,27 +2743,18 @@
       "icon": "inv_helmet_61.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 10.0
         },
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 10.0
         },
         {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 4,
-          "chance": 10.0
-        },
-        {
-          "bossId": 5,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 10.0
         }
       ],
@@ -3842,27 +2774,18 @@
       "icon": "inv_helmet_41.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 10.0
         },
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 10.0
         },
         {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 4,
-          "chance": 10.0
-        },
-        {
-          "bossId": 5,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 10.0
         }
       ],
@@ -3882,27 +2805,18 @@
       "icon": "inv_misc_cape_16.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 10.0
         },
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 10.0
         },
         {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 4,
-          "chance": 10.0
-        },
-        {
-          "bossId": 5,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 10.0
         }
       ],
@@ -3920,27 +2834,18 @@
       "icon": "inv_misc_cape_16.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 10.0
         },
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 10.0
         },
         {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 4,
-          "chance": 10.0
-        },
-        {
-          "bossId": 5,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 10.0
         }
       ],
@@ -3958,27 +2863,18 @@
       "icon": "inv_gauntlets_10.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 10.0
         },
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 10.0
         },
         {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 4,
-          "chance": 10.0
-        },
-        {
-          "bossId": 5,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 10.0
         }
       ],
@@ -3998,27 +2894,18 @@
       "icon": "inv_gauntlets_31.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 10.0
         },
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 10.0
         },
         {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 4,
-          "chance": 10.0
-        },
-        {
-          "bossId": 5,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 10.0
         }
       ],
@@ -4038,27 +2925,18 @@
       "icon": "inv_belt_01.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 10.0
         },
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 10.0
         },
         {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 4,
-          "chance": 10.0
-        },
-        {
-          "bossId": 5,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 10.0
         }
       ],
@@ -4078,27 +2956,18 @@
       "icon": "inv_mace_18.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 1,
+          "bossId": 1,
           "chance": 10.0
         },
         {
-          "bossId": 6,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 10.0
         },
         {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 3,
-          "chance": 10.0
-        },
-        {
-          "bossId": 4,
-          "chance": 10.0
-        },
-        {
-          "bossId": 5,
+          "npcId": 9,
+          "bossId": 9,
           "chance": 10.0
         }
       ],
@@ -4118,7 +2987,8 @@
       "icon": "inv_misc_orb_01.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 8,
+          "bossId": 8,
           "chance": 20.0
         }
       ],
@@ -4132,67 +3002,17 @@
       "name": "Yellow Sack of Gems",
       "classes": [],
       "quality": 2,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q2\">Yellow Sack of Gems</b><div><div></div><div></div></div><span></span></div>",
       "icon": "inv_misc_bag_10.png",
       "dropsFrom": [
         {
-          "bossId": 43,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 1.205
         },
         {
-          "bossId": 44,
-          "chance": 0.0
-        },
-        {
-          "bossId": 45,
-          "chance": 20.0
-        },
-        {
-          "bossId": 46,
-          "chance": 20.0
-        },
-        {
-          "bossId": 47,
-          "chance": 20.0
-        },
-        {
-          "bossId": 48,
-          "chance": 20.0
-        },
-        {
-          "bossId": 49,
-          "chance": 20.0
-        },
-        {
-          "bossId": 50,
-          "chance": 20.0
-        },
-        {
-          "bossId": 51,
-          "chance": 20.0
-        },
-        {
-          "bossId": 52,
-          "chance": 20.0
-        },
-        {
-          "bossId": 11,
-          "chance": 20.0
-        },
-        {
-          "bossId": 48,
-          "chance": 20.0
-        },
-        {
-          "bossId": 50,
-          "chance": 20.0
-        },
-        {
-          "bossId": 51,
-          "chance": 20.0
-        },
-        {
-          "bossId": 49,
+          "npcId": 8,
+          "bossId": 8,
           "chance": 20.0
         }
       ],
@@ -4210,15 +3030,8 @@
       "icon": "inv_misc_monsterspidercarapace_01.png",
       "dropsFrom": [
         {
-          "bossId": 35,
-          "chance": 6.0
-        },
-        {
-          "bossId": 30,
-          "chance": 6.0
-        },
-        {
-          "bossId": 26,
+          "npcId": 13,
+          "bossId": 13,
           "chance": 6.0
         }
       ],
@@ -4230,216 +3043,132 @@
   ],
   "bosses": [
     {
-      "bossId": 0,
-      "name": "Jin'do the Hexxer"
+      "id": 0,
+      "name": "Jeklik"
     },
     {
-      "bossId": 1,
-      "name": "Bloodlord Mandokir"
+      "id": 1,
+      "name": "Venoxis"
     },
     {
-      "bossId": 2,
-      "name": "High Priest Venoxis"
+      "id": 2,
+      "name": "Mar'li"
     },
     {
-      "bossId": 3,
-      "name": "High Priest Thekal"
+      "id": 3,
+      "name": "Mandokir"
     },
     {
-      "bossId": 4,
-      "name": "High Priestess Mar'li"
-    },
-    {
-      "bossId": 5,
-      "name": "High Priestess Jeklik"
-    },
-    {
-      "bossId": 6,
-      "name": "High Priestess Arlokk"
-    },
-    {
-      "bossId": 7,
+      "id": 4,
       "name": "Gri'lek"
     },
     {
-      "bossId": 8,
+      "id": 5,
       "name": "Hazza'rah"
     },
     {
-      "bossId": 9,
+      "id": 6,
       "name": "Renataki"
     },
     {
-      "bossId": 10,
+      "id": 7,
       "name": "Wushoolay"
     },
     {
-      "bossId": 11,
+      "id": 8,
       "name": "Gahz'ranka"
     },
     {
+      "id": 9,
+      "name": "Thekal"
+    },
+    {
+      "id": 10,
+      "name": "Arlokk"
+    },
+    {
+      "id": 11,
+      "name": "Jin'do the Hexxer"
+    },
+    {
+      "id": 12,
+      "name": "Hakkar"
+    },
+    {
+      "id": 13,
+      "name": "Trash"
+    }
+  ],
+  "npcs": [
+    {
+      "bossId": 0,
+      "id": 0,
+      "name": "High Priestress Jeklik"
+    },
+    {
+      "bossId": 1,
+      "id": 1,
+      "name": "High Priest Venoxis"
+    },
+    {
+      "bossId": 2,
+      "id": 2,
+      "name": "Mar'li"
+    },
+    {
+      "bossId": 3,
+      "id": 3,
+      "name": "Bloodlord Mandokir"
+    },
+    {
+      "bossId": 4,
+      "id": 4,
+      "name": "Gri'lek"
+    },
+    {
+      "bossId": 5,
+      "id": 5,
+      "name": "Hazza'rah"
+    },
+    {
+      "bossId": 6,
+      "id": 6,
+      "name": "Renataki"
+    },
+    {
+      "bossId": 7,
+      "id": 7,
+      "name": "Wushoolay"
+    },
+    {
+      "bossId": 8,
+      "id": 8,
+      "name": "Gahz'ranka"
+    },
+    {
+      "bossId": 9,
+      "id": 9,
+      "name": "High Priest Thekal"
+    },
+    {
+      "bossId": 10,
+      "id": 10,
+      "name": "High Priestress Arlokk"
+    },
+    {
+      "bossId": 11,
+      "id": 11,
+      "name": "Jin'do the Hexxer"
+    },
+    {
       "bossId": 12,
+      "id": 12,
       "name": "Hakkar"
     },
     {
       "bossId": 13,
-      "name": "Zulian Crocolisk"
-    },
-    {
-      "bossId": 14,
-      "name": "Hakkari Shadowcaster"
-    },
-    {
-      "bossId": 15,
-      "name": "Hakkari Shadow Hunter"
-    },
-    {
-      "bossId": 16,
-      "name": "Gurubashi Axe Thrower"
-    },
-    {
-      "bossId": 17,
-      "name": "Gurubashi Headhunter"
-    },
-    {
-      "bossId": 18,
-      "name": "Gurubashi Berserker"
-    },
-    {
-      "bossId": 19,
-      "name": "Gurubashi Blood Drinker"
-    },
-    {
-      "bossId": 20,
-      "name": "Gurubashi Champion"
-    },
-    {
-      "bossId": 21,
-      "name": "Zulian Cub"
-    },
-    {
-      "bossId": 22,
-      "name": "Zulian Tiger"
-    },
-    {
-      "bossId": 23,
-      "name": "Zulian Panther"
-    },
-    {
-      "bossId": 24,
-      "name": "Bloodseeker Bat"
-    },
-    {
-      "bossId": 25,
-      "name": "Hakkari Witch Doctor"
-    },
-    {
-      "bossId": 26,
-      "name": "Razzashi Venombrood"
-    },
-    {
-      "bossId": 27,
-      "name": "Gurubashi Bat Rider"
-    },
-    {
-      "bossId": 28,
-      "name": "Razzashi Raptor"
-    },
-    {
-      "bossId": 29,
-      "name": "Withered Mistress"
-    },
-    {
-      "bossId": 30,
-      "name": "Razzashi Skitterer"
-    },
-    {
-      "bossId": 31,
-      "name": "Atal'ai Mistress"
-    },
-    {
-      "bossId": 32,
-      "name": "Voodoo Slave"
-    },
-    {
-      "bossId": 33,
-      "name": "Hakkari Priest"
-    },
-    {
-      "bossId": 34,
-      "name": "Hakkari Blood Priest"
-    },
-    {
-      "bossId": 35,
-      "name": "Razzashi Broodwidow"
-    },
-    {
-      "bossId": 36,
-      "name": "Razzashi Serpent"
-    },
-    {
-      "bossId": 37,
-      "name": "Razzashi Adder"
-    },
-    {
-      "bossId": 38,
-      "name": "Sandfury Speaker"
-    },
-    {
-      "bossId": 39,
-      "name": "Son of Hakkar"
-    },
-    {
-      "bossId": 40,
-      "name": "Zulian Stalker"
-    },
-    {
-      "bossId": 41,
-      "name": "Hooktooth Frenzy"
-    },
-    {
-      "bossId": 42,
-      "name": "Spawn of Mar'li"
-    },
-    {
-      "bossId": 43,
-      "name": "Lord Kazzak"
-    },
-    {
-      "bossId": 44,
-      "name": "Ostarius"
-    },
-    {
-      "bossId": 45,
-      "name": "Solnius"
-    },
-    {
-      "bossId": 46,
-      "name": "Onyxia"
-    },
-    {
-      "bossId": 47,
-      "name": "Azuregos"
-    },
-    {
-      "bossId": 48,
-      "name": "Lethon"
-    },
-    {
-      "bossId": 49,
-      "name": "Emeriss"
-    },
-    {
-      "bossId": 50,
-      "name": "Ysondre"
-    },
-    {
-      "bossId": 51,
-      "name": "Taerar"
-    },
-    {
-      "bossId": 52,
-      "name": "Nefarian"
+      "id": 13,
+      "name": "Trash"
     }
   ]
 }

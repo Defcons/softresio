@@ -9,17 +9,23 @@ import {
   Select,
 } from "@mantine/core"
 import { IconSearch } from "@tabler/icons-react"
-import type { Attendee, Class, Item, User } from "../shared/types.ts"
+import type {
+  Attendee,
+  Class,
+  Instance,
+  Item,
+  ItemPickerElementType,
+  User,
+} from "../shared/types.ts"
 import { useDebounce } from "use-debounce"
 import { List } from "react-window"
 import { useNavigate } from "react-router"
 
-import { ReactWindowSelectableItem } from "./item.tsx"
+import { ItemPickerElement } from "./item.tsx"
 
 export const ItemPicker = ({
   selectedItemIds,
   setSelectedItemIds,
-  items,
   selectedClass,
   user,
   attendees,
@@ -27,10 +33,10 @@ export const ItemPicker = ({
   hardReserves = [],
   sameItemLimit = 0,
   itemPickerOpen,
+  instance,
 }: {
   selectedItemIds?: number[]
   setSelectedItemIds?: (itemIds: number[]) => void
-  items: Item[]
   selectedClass?: Class | null
   user?: User
   attendees?: Attendee[]
@@ -38,31 +44,43 @@ export const ItemPicker = ({
   hardReserves?: number[]
   sameItemLimit?: number
   itemPickerOpen: boolean
+  instance: Instance
 }) => {
   const [showTooltipItemId, setShowTooltipItemId] = useState<number>()
   const [slotFilter, setSlotFilter] = useState<string>()
   const [typeFilter, setTypeFilter] = useState<string>()
+  const [bossFilter, setBossFilter] = useState<number>()
   const [search, setSearch] = useState("")
   const [debouncedSearch] = useDebounce(search, 100)
-  const [filteredItems, setFilteredItems] = useState(items)
+  const [filteredItems, setFilteredItems] = useState(instance.items)
   const navigate = useNavigate()
 
-  const slotsForType = (
-    type?: string,
-  ) => [
+  const possibleSlots = [
     ...new Set(
-      items.filter((i) => type ? i.types.includes(type) : true).flatMap((i) =>
-        i.slots
-      ),
+      instance.items.filter((i) =>
+        (!typeFilter || i.types.includes(typeFilter)) &&
+        (!bossFilter || i.dropsFrom.find((df) => df.bossId == bossFilter))
+      ).flatMap((i) => i.slots),
     ),
   ]
-  const typesForSlot = (
-    slot?: string,
-  ) => [
+  const possibleTypes = [
     ...new Set(
-      items.filter((i) => slot ? i.slots.includes(slot) : true).flatMap((i) =>
-        i.types
-      ),
+      instance.items.filter((i) =>
+        (!slotFilter || i.slots.includes(slotFilter)) &&
+        (!bossFilter || i.dropsFrom.find((df) => df.bossId == bossFilter))
+      ).flatMap((i) => i.types),
+    ),
+  ]
+  const possibleBosses = [
+    ...new Set(
+      instance.items.filter((i) =>
+        (!slotFilter || i.slots.includes(slotFilter)) &&
+        (!typeFilter || i.types.includes(typeFilter))
+      ).flatMap((i) =>
+        i.dropsFrom.map((df) =>
+          instance.bosses.find((boss) => boss.id == df.bossId)?.name
+        )
+      ).filter((e) => e !== undefined),
     ),
   ]
 
@@ -93,7 +111,7 @@ export const ItemPicker = ({
 
   useEffect(() => {
     setFilteredItems(
-      items.filter((item) => {
+      instance.items.filter((item) => {
         const stringQuery = debouncedSearch?.toLowerCase() || ""
         if (
           !item.name.toLowerCase().includes(stringQuery)
@@ -111,6 +129,10 @@ export const ItemPicker = ({
         ) {
           return false
         } else if (
+          bossFilter && !item.dropsFrom.find((df) => df.bossId == bossFilter)
+        ) {
+          return false
+        } else if (
           typeFilter && !item.types.includes(typeFilter)
         ) {
           return false
@@ -119,7 +141,65 @@ export const ItemPicker = ({
         }
       }),
     )
-  }, [items, debouncedSearch, slotFilter, typeFilter, selectedClass])
+  }, [
+    instance,
+    bossFilter,
+    debouncedSearch,
+    slotFilter,
+    typeFilter,
+    selectedClass,
+  ])
+
+  const sortItem = (a: Item, b: Item) => {
+    if (a.quality == b.quality) {
+      return b.dropsFrom[0].chance - a.dropsFrom[0].chance
+    } else {
+      return b.quality - a.quality
+    }
+  }
+
+  const makeListElements = () => {
+    let elements: ItemPickerElementType[] = []
+    if (bossFilter) {
+      // NPC segments if boss selected
+      for (
+        const npc of instance.npcs.filter((npc) => npc.bossId == bossFilter)
+      ) {
+        const items = filteredItems.map((i) => ({
+          item: {
+            ...i,
+            dropsFrom: i.dropsFrom.filter((df) => df.npcId == npc.id),
+          },
+        })).filter((i) => i.item.dropsFrom.length > 0).sort((a, b) =>
+          sortItem(a.item, b.item)
+        )
+        if (items.length > 0) {
+          elements = [...elements, { segment: npc.name }, ...items]
+        }
+      }
+    } else {
+      // Boss segments otherwise
+      for (const boss of instance.bosses) {
+        const items = instance.npcs.filter((npc) => npc.bossId == boss.id)
+          .flatMap((npc) =>
+            filteredItems.map((i) => ({
+              item: {
+                ...i,
+                dropsFrom: i.dropsFrom.filter((df) => df.npcId == npc.id),
+              },
+            })).filter((i) => i.item.dropsFrom.length > 0).sort((a, b) =>
+              sortItem(a.item, b.item)
+            )
+          )
+        if (items.length > 0) {
+          elements = [...elements, { segment: boss.name }, ...items]
+        }
+      }
+    }
+    return elements
+  }
+
+  const listElements = makeListElements()
 
   return (
     <Modal
@@ -164,35 +244,50 @@ export const ItemPicker = ({
             placeholder="Slot"
             searchable
             clearable
-            disabled={slotsForType(typeFilter).length == 0}
+            disabled={possibleSlots.length == 0}
             onFocus={() => setShowTooltipItemId(undefined)}
             value={slotFilter || null}
             onChange={(value) => {
               setSlotFilter(value || undefined)
             }}
-            data={slotsForType(typeFilter)}
+            data={possibleSlots}
           />
           <Select
             placeholder="Type"
-            disabled={typesForSlot(slotFilter).length == 0}
+            disabled={possibleTypes.length == 0}
             onFocus={() => setShowTooltipItemId(undefined)}
             searchable
             clearable
             value={typeFilter || null}
             onChange={(value) => setTypeFilter(value || undefined)}
-            data={typesForSlot(slotFilter)}
+            data={possibleTypes}
           />
         </Group>
+        <Select
+          placeholder="Boss"
+          disabled={possibleBosses.length == 0}
+          onFocus={() => setShowTooltipItemId(undefined)}
+          searchable
+          clearable
+          value={instance.bosses.find((boss) => boss.id == bossFilter)?.name ||
+            null}
+          onChange={(value) => {
+            const boss = instance.bosses.find((b) => b.name == value)
+            if (boss) setBossFilter(boss.id)
+            else setBossFilter(undefined)
+          }}
+          data={possibleBosses}
+        />
         <List
-          rowComponent={ReactWindowSelectableItem}
-          rowCount={filteredItems.length}
+          rowComponent={ItemPickerElement}
+          rowCount={listElements.length}
           rowHeight={41}
           style={{ flexGrow: 0 }}
           rowProps={{
-            items: filteredItems,
             attendees: attendees,
-            onClick: (itemId) => onItemClick(itemId, false),
-            onRightSectionClick: (itemId) => onItemClick(itemId, true),
+            elements: listElements,
+            onClick: (itemId: number) => onItemClick(itemId, false),
+            onRightSectionClick: (itemId: number) => onItemClick(itemId, true),
             selectedItemIds,
             showTooltipItemId,
             onLongClick: onItemLongClick,

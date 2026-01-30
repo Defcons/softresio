@@ -8,47 +8,12 @@
       "name": "Broken Lock",
       "classes": [],
       "quality": 1,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q0\">Broken Lock</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q0\">Broken Lock</b><div><div></div><div></div></div><span></span></div>",
       "icon": "inv_gizmo_03.png",
       "dropsFrom": [
         {
-          "bossId": 0,
-          "chance": 0.02
-        },
-        {
-          "bossId": 1,
-          "chance": 0.02
-        },
-        {
-          "bossId": 2,
-          "chance": 0.02
-        },
-        {
-          "bossId": 3,
-          "chance": 1.14
-        },
-        {
-          "bossId": 4,
-          "chance": 0.08
-        },
-        {
-          "bossId": 5,
-          "chance": 0.04
-        },
-        {
-          "bossId": 6,
-          "chance": 0.04
-        },
-        {
-          "bossId": 7,
-          "chance": 0.02
-        },
-        {
-          "bossId": 8,
-          "chance": 0.02
-        },
-        {
-          "bossId": 9,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 0.02
         }
       ],
@@ -66,7 +31,8 @@
       "icon": "inv_enchant_dustsoul.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 87,
+          "bossId": 84,
           "chance": 25.0
         }
       ],
@@ -84,7 +50,8 @@
       "icon": "inv_bloodmoon.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 85,
+          "bossId": 82,
           "chance": 25.0
         }
       ],
@@ -104,7 +71,8 @@
       "icon": "inv_gauntlets_05.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 85,
+          "bossId": 82,
           "chance": 25.0
         }
       ],
@@ -124,7 +92,8 @@
       "icon": "inv_helmet_24.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 85,
+          "bossId": 82,
           "chance": 25.0
         }
       ],
@@ -144,7 +113,8 @@
       "icon": "inv_jewelry_talisman_mana.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 85,
+          "bossId": 82,
           "chance": 25.0
         }
       ],
@@ -162,7 +132,8 @@
       "icon": "inv_boots_05.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 85,
+          "bossId": 82,
           "chance": 25.0
         }
       ],
@@ -182,7 +153,8 @@
       "icon": "inv_chest_leather_04.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 85,
+          "bossId": 82,
           "chance": 25.0
         }
       ],
@@ -202,7 +174,8 @@
       "icon": "inv_misc_cape_10.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 85,
+          "bossId": 82,
           "chance": 25.0
         }
       ],
@@ -220,19 +193,8 @@
       "icon": "inv_bishophat.png",
       "dropsFrom": [
         {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 0.0
         }
       ],
@@ -252,19 +214,8 @@
       "icon": "inv_misc_cape_21.png",
       "dropsFrom": [
         {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 0.0
         }
       ],
@@ -282,19 +233,8 @@
       "icon": "inv_checkmate.png",
       "dropsFrom": [
         {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 0.0
         }
       ],
@@ -314,19 +254,8 @@
       "icon": "inv_gauntlets_05.png",
       "dropsFrom": [
         {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 0.0
         }
       ],
@@ -352,19 +281,8 @@
       "icon": "inv_boots_cloth_01.png",
       "dropsFrom": [
         {
-          "bossId": 12,
-          "chance": 50.0
-        },
-        {
-          "bossId": 12,
-          "chance": 50.0
-        },
-        {
-          "bossId": 12,
-          "chance": 50.0
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 50.0
         }
       ],
@@ -387,19 +305,8 @@
       "icon": "inv_boots_cloth_01.png",
       "dropsFrom": [
         {
-          "bossId": 12,
-          "chance": 50.0
-        },
-        {
-          "bossId": 12,
-          "chance": 50.0
-        },
-        {
-          "bossId": 12,
-          "chance": 50.0
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 50.0
         }
       ],
@@ -417,19 +324,8 @@
       "icon": "inv_chest_plate08.png",
       "dropsFrom": [
         {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 0.0
         }
       ],
@@ -449,19 +345,8 @@
       "icon": "inv_misc_book_11.png",
       "dropsFrom": [
         {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 0.0
         }
       ],
@@ -479,19 +364,8 @@
       "icon": "inv_boots_chain_05.png",
       "dropsFrom": [
         {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 0.0
         }
       ],
@@ -511,19 +385,8 @@
       "icon": "btnlancelot_ring.png",
       "dropsFrom": [
         {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
-          "chance": 0.0
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 0.0
         }
       ],
@@ -547,11 +410,8 @@
       "icon": "inv_pants_plate_11.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 50.0
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 50.0
         }
       ],
@@ -574,11 +434,8 @@
       "icon": "inv_pants_plate_11.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 50.0
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 50.0
         }
       ],
@@ -596,11 +453,8 @@
       "icon": "ability_thunderbolt.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 11.1
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 11.1
         }
       ],
@@ -620,11 +474,8 @@
       "icon": "inv_desecration.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 11.1
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 11.1
         }
       ],
@@ -644,11 +495,8 @@
       "icon": "spell_shadow_lifedrain.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 11.1
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 11.1
         }
       ],
@@ -666,11 +514,8 @@
       "icon": "inv_demonaxe.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 11.1
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 11.1
         }
       ],
@@ -690,11 +535,8 @@
       "icon": "inv_misc_stonetablet_02.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 11.1
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 11.1
         }
       ],
@@ -712,11 +554,8 @@
       "icon": "inv_belt_27.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 11.1
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 11.1
         }
       ],
@@ -736,11 +575,8 @@
       "icon": "inv_bracer_09.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 11.1
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 11.1
         }
       ],
@@ -760,7 +596,8 @@
       "icon": "inv_bracer_02.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 86,
+          "bossId": 83,
           "chance": 25.0
         }
       ],
@@ -780,7 +617,8 @@
       "icon": "inv_jewelry_necklace_28.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 86,
+          "bossId": 83,
           "chance": 25.0
         }
       ],
@@ -798,7 +636,8 @@
       "icon": "inv_misc_gem_variety_01.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 86,
+          "bossId": 83,
           "chance": 25.0
         }
       ],
@@ -816,7 +655,8 @@
       "icon": "inv_pants_plate_18.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 86,
+          "bossId": 83,
           "chance": 25.0
         }
       ],
@@ -841,7 +681,8 @@
       "icon": "inv_jewelry_ring_saphire.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 86,
+          "bossId": 83,
           "chance": 25.0
         }
       ],
@@ -859,7 +700,8 @@
       "icon": "inv_belt_22.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 86,
+          "bossId": 83,
           "chance": 25.0
         }
       ],
@@ -879,7 +721,8 @@
       "icon": "inv_pants_cloth_13.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 86,
+          "bossId": 83,
           "chance": 25.0
         }
       ],
@@ -899,7 +742,8 @@
       "icon": "inv_shield_23.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 86,
+          "bossId": 83,
           "chance": 25.0
         }
       ],
@@ -919,7 +763,8 @@
       "icon": "inv_censer.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 5.6
         }
       ],
@@ -937,7 +782,8 @@
       "icon": "inv_misc_cape_20.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 8.0
         }
       ],
@@ -955,7 +801,8 @@
       "icon": "inv_shoulder_01.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 8.0
         }
       ],
@@ -975,7 +822,8 @@
       "icon": "inv_gauntlets_05.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 8.0
         }
       ],
@@ -995,7 +843,8 @@
       "icon": "inv_kirel.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 5.6
         }
       ],
@@ -1015,7 +864,8 @@
       "icon": "inv_belt_03.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 8.0
         }
       ],
@@ -1035,7 +885,8 @@
       "icon": "inv_jewelry_ring_nightbreaker.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 8.0
         }
       ],
@@ -1053,7 +904,8 @@
       "icon": "inv_bracer_18.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 8.0
         }
       ],
@@ -1073,7 +925,8 @@
       "icon": "inv_nethraka.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 5.6
         }
       ],
@@ -1093,7 +946,8 @@
       "icon": "inv_weapon_bonebow2.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 5.6
         }
       ],
@@ -1111,7 +965,8 @@
       "icon": "inv_belt_26.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 8.0
         }
       ],
@@ -1131,7 +986,8 @@
       "icon": "inv_thunderfall.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 5.6
         }
       ],
@@ -1151,7 +1007,8 @@
       "icon": "inv_chest_chain_07.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 8.0
         }
       ],
@@ -1171,7 +1028,8 @@
       "icon": "inv_belt_22.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 8.0
         }
       ],
@@ -1191,11 +1049,8 @@
       "icon": "inv_elementalfist.png",
       "dropsFrom": [
         {
-          "bossId": 16,
-          "chance": 14.3
-        },
-        {
-          "bossId": 16,
+          "npcId": 91,
+          "bossId": 88,
           "chance": 14.3
         }
       ],
@@ -1215,11 +1070,8 @@
       "icon": "inv_bulwark.png",
       "dropsFrom": [
         {
-          "bossId": 16,
-          "chance": 14.3
-        },
-        {
-          "bossId": 16,
+          "npcId": 91,
+          "bossId": 88,
           "chance": 14.3
         }
       ],
@@ -1239,11 +1091,8 @@
       "icon": "inv_pants_mail_15.png",
       "dropsFrom": [
         {
-          "bossId": 16,
-          "chance": 14.3
-        },
-        {
-          "bossId": 16,
+          "npcId": 91,
+          "bossId": 88,
           "chance": 14.3
         }
       ],
@@ -1263,11 +1112,8 @@
       "icon": "inv_stone_10.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 11.1
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 11.1
         }
       ],
@@ -1287,11 +1133,8 @@
       "icon": "inv_gauntlets_05.png",
       "dropsFrom": [
         {
-          "bossId": 16,
-          "chance": 14.3
-        },
-        {
-          "bossId": 16,
+          "npcId": 91,
+          "bossId": 88,
           "chance": 14.3
         }
       ],
@@ -1311,11 +1154,8 @@
       "icon": "inv_jewelry_ring_bronze.png",
       "dropsFrom": [
         {
-          "bossId": 16,
-          "chance": 14.3
-        },
-        {
-          "bossId": 16,
+          "npcId": 91,
+          "bossId": 88,
           "chance": 14.3
         }
       ],
@@ -1333,11 +1173,8 @@
       "icon": "inv_shoulder_14.png",
       "dropsFrom": [
         {
-          "bossId": 16,
-          "chance": 14.2
-        },
-        {
-          "bossId": 16,
+          "npcId": 91,
+          "bossId": 88,
           "chance": 14.2
         }
       ],
@@ -1357,11 +1194,8 @@
       "icon": "inv_misc_gem_diamond_02.png",
       "dropsFrom": [
         {
-          "bossId": 16,
-          "chance": 14.3
-        },
-        {
-          "bossId": 16,
+          "npcId": 91,
+          "bossId": 88,
           "chance": 14.3
         }
       ],
@@ -1379,11 +1213,8 @@
       "icon": "inv_demonhornhelmet.png",
       "dropsFrom": [
         {
-          "bossId": 17,
-          "chance": 14.3
-        },
-        {
-          "bossId": 17,
+          "npcId": 90,
+          "bossId": 87,
           "chance": 14.3
         }
       ],
@@ -1403,11 +1234,8 @@
       "icon": "inv_helmet_24.png",
       "dropsFrom": [
         {
-          "bossId": 17,
-          "chance": 14.3
-        },
-        {
-          "bossId": 17,
+          "npcId": 90,
+          "bossId": 87,
           "chance": 14.3
         }
       ],
@@ -1427,11 +1255,8 @@
       "icon": "inv_belt_22.png",
       "dropsFrom": [
         {
-          "bossId": 17,
-          "chance": 14.2
-        },
-        {
-          "bossId": 17,
+          "npcId": 90,
+          "bossId": 87,
           "chance": 14.2
         }
       ],
@@ -1451,11 +1276,8 @@
       "icon": "inv_misc_cape_06.png",
       "dropsFrom": [
         {
-          "bossId": 17,
-          "chance": 14.3
-        },
-        {
-          "bossId": 17,
+          "npcId": 90,
+          "bossId": 87,
           "chance": 14.3
         }
       ],
@@ -1473,11 +1295,8 @@
       "icon": "inv_draeneispear.png",
       "dropsFrom": [
         {
-          "bossId": 17,
-          "chance": 14.3
-        },
-        {
-          "bossId": 17,
+          "npcId": 90,
+          "bossId": 87,
           "chance": 14.3
         }
       ],
@@ -1497,11 +1316,8 @@
       "icon": "inv_riftcarver.png",
       "dropsFrom": [
         {
-          "bossId": 17,
-          "chance": 14.3
-        },
-        {
-          "bossId": 17,
+          "npcId": 90,
+          "bossId": 87,
           "chance": 14.3
         }
       ],
@@ -1527,11 +1343,8 @@
       "icon": "inv_shoulder_17.png",
       "dropsFrom": [
         {
-          "bossId": 17,
-          "chance": 50.0
-        },
-        {
-          "bossId": 17,
+          "npcId": 90,
+          "bossId": 87,
           "chance": 50.0
         }
       ],
@@ -1554,11 +1367,8 @@
       "icon": "inv_shoulder_17.png",
       "dropsFrom": [
         {
-          "bossId": 17,
-          "chance": 50.0
-        },
-        {
-          "bossId": 17,
+          "npcId": 90,
+          "bossId": 87,
           "chance": 50.0
         }
       ],
@@ -1576,11 +1386,8 @@
       "icon": "inv_qirajidol_sage.png",
       "dropsFrom": [
         {
-          "bossId": 17,
-          "chance": 14.3
-        },
-        {
-          "bossId": 17,
+          "npcId": 90,
+          "bossId": 87,
           "chance": 14.3
         }
       ],
@@ -1600,15 +1407,13 @@
       "icon": "inv_demonhornshoulders.png",
       "dropsFrom": [
         {
-          "bossId": 18,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 25.0
         },
         {
-          "bossId": 19,
-          "chance": 25.0
-        },
-        {
-          "bossId": 20,
+          "npcId": 88,
+          "bossId": 85,
           "chance": 25.0
         }
       ],
@@ -1628,15 +1433,13 @@
       "icon": "spell_shadow_soulgem.png",
       "dropsFrom": [
         {
-          "bossId": 18,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 25.0
         },
         {
-          "bossId": 19,
-          "chance": 25.0
-        },
-        {
-          "bossId": 20,
+          "npcId": 88,
+          "bossId": 85,
           "chance": 25.0
         }
       ],
@@ -1654,15 +1457,13 @@
       "icon": "inv_mallet.png",
       "dropsFrom": [
         {
-          "bossId": 18,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 25.0
         },
         {
-          "bossId": 19,
-          "chance": 25.0
-        },
-        {
-          "bossId": 20,
+          "npcId": 88,
+          "bossId": 85,
           "chance": 25.0
         }
       ],
@@ -1682,15 +1483,13 @@
       "icon": "inv_gauntlets_05.png",
       "dropsFrom": [
         {
-          "bossId": 18,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 25.0
         },
         {
-          "bossId": 19,
-          "chance": 25.0
-        },
-        {
-          "bossId": 20,
+          "npcId": 88,
+          "bossId": 85,
           "chance": 25.0
         }
       ],
@@ -1710,15 +1509,13 @@
       "icon": "inv_trickster_leggings.png",
       "dropsFrom": [
         {
-          "bossId": 18,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 25.0
         },
         {
-          "bossId": 19,
-          "chance": 25.0
-        },
-        {
-          "bossId": 20,
+          "npcId": 88,
+          "bossId": 85,
           "chance": 25.0
         }
       ],
@@ -1738,15 +1535,13 @@
       "icon": "inv_misc_book_07.png",
       "dropsFrom": [
         {
-          "bossId": 18,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 25.0
         },
         {
-          "bossId": 19,
-          "chance": 25.0
-        },
-        {
-          "bossId": 20,
+          "npcId": 88,
+          "bossId": 85,
           "chance": 25.0
         }
       ],
@@ -1766,15 +1561,13 @@
       "icon": "inv_jewelry_ring_jade.png",
       "dropsFrom": [
         {
-          "bossId": 18,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 25.0
         },
         {
-          "bossId": 19,
-          "chance": 25.0
-        },
-        {
-          "bossId": 20,
+          "npcId": 88,
+          "bossId": 85,
           "chance": 25.0
         }
       ],
@@ -1792,15 +1585,13 @@
       "icon": "inv_jewelry_talisman_health.png",
       "dropsFrom": [
         {
-          "bossId": 18,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 25.0
         },
         {
-          "bossId": 19,
-          "chance": 25.0
-        },
-        {
-          "bossId": 20,
+          "npcId": 88,
+          "bossId": 85,
           "chance": 25.0
         }
       ],
@@ -1818,7 +1609,8 @@
       "icon": "inv_staff_22.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 87,
+          "bossId": 84,
           "chance": 25.0
         }
       ],
@@ -1836,7 +1628,8 @@
       "icon": "inv_jewelry_necklace_08.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 87,
+          "bossId": 84,
           "chance": 25.0
         }
       ],
@@ -1854,7 +1647,8 @@
       "icon": "inv_misc_cape_18.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 87,
+          "bossId": 84,
           "chance": 25.0
         }
       ],
@@ -1872,7 +1666,8 @@
       "icon": "inv_gauntlets_05.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 87,
+          "bossId": 84,
           "chance": 25.0
         }
       ],
@@ -1892,7 +1687,8 @@
       "icon": "inv_boots_plate_06.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 87,
+          "bossId": 84,
           "chance": 25.0
         }
       ],
@@ -1912,7 +1708,8 @@
       "icon": "inv_weapon_crossbow_18.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 87,
+          "bossId": 84,
           "chance": 25.0
         }
       ],
@@ -1932,7 +1729,8 @@
       "icon": "inv_bracer_10.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 87,
+          "bossId": 84,
           "chance": 25.0
         }
       ],
@@ -1954,116 +1752,9 @@
       "icon": "inv_stormhowl_sabatons.png",
       "dropsFrom": [
         {
-          "bossId": 21,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 0.1
-        },
-        {
-          "bossId": 22,
-          "chance": 0.025
-        },
-        {
-          "bossId": 23,
-          "chance": 0.1
-        },
-        {
-          "bossId": 24,
-          "chance": 0.25
-        },
-        {
-          "bossId": 25,
-          "chance": 0.1
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 27,
-          "chance": 0.1
-        },
-        {
-          "bossId": 28,
-          "chance": 0.1
-        },
-        {
-          "bossId": 29,
-          "chance": 0.1
-        },
-        {
-          "bossId": 30,
-          "chance": 0.1
-        },
-        {
-          "bossId": 31,
-          "chance": 0.1
-        },
-        {
-          "bossId": 32,
-          "chance": 0.1
-        },
-        {
-          "bossId": 33,
-          "chance": 0.1
-        },
-        {
-          "bossId": 34,
-          "chance": 0.1
-        },
-        {
-          "bossId": 35,
-          "chance": 0.1
-        },
-        {
-          "bossId": 36,
-          "chance": 0.1
-        },
-        {
-          "bossId": 37,
-          "chance": 0.1
-        },
-        {
-          "bossId": 38,
-          "chance": 0.1
-        },
-        {
-          "bossId": 39,
-          "chance": 0.1
-        },
-        {
-          "bossId": 40,
-          "chance": 0.1
-        },
-        {
-          "bossId": 41,
-          "chance": 0.025
-        },
-        {
-          "bossId": 42,
-          "chance": 0.25
-        },
-        {
-          "bossId": 43,
-          "chance": 0.25
-        },
-        {
-          "bossId": 44,
-          "chance": 0.25
-        },
-        {
-          "bossId": 45,
-          "chance": 0.25
-        },
-        {
-          "bossId": 46,
-          "chance": 0.25
-        },
-        {
-          "bossId": 47,
-          "chance": 0.025
-        },
-        {
-          "bossId": 48,
-          "chance": 0.01
         }
       ],
       "slots": [
@@ -2084,116 +1775,9 @@
       "icon": "inv_lionheart_sabatons.png",
       "dropsFrom": [
         {
-          "bossId": 23,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 0.1
-        },
-        {
-          "bossId": 21,
-          "chance": 0.1
-        },
-        {
-          "bossId": 24,
-          "chance": 0.25
-        },
-        {
-          "bossId": 25,
-          "chance": 0.1
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 27,
-          "chance": 0.1
-        },
-        {
-          "bossId": 28,
-          "chance": 0.1
-        },
-        {
-          "bossId": 29,
-          "chance": 0.1
-        },
-        {
-          "bossId": 30,
-          "chance": 0.1
-        },
-        {
-          "bossId": 31,
-          "chance": 0.1
-        },
-        {
-          "bossId": 32,
-          "chance": 0.1
-        },
-        {
-          "bossId": 33,
-          "chance": 0.1
-        },
-        {
-          "bossId": 34,
-          "chance": 0.1
-        },
-        {
-          "bossId": 35,
-          "chance": 0.1
-        },
-        {
-          "bossId": 36,
-          "chance": 0.1
-        },
-        {
-          "bossId": 37,
-          "chance": 0.1
-        },
-        {
-          "bossId": 38,
-          "chance": 0.1
-        },
-        {
-          "bossId": 39,
-          "chance": 0.1
-        },
-        {
-          "bossId": 40,
-          "chance": 0.1
-        },
-        {
-          "bossId": 22,
-          "chance": 0.025
-        },
-        {
-          "bossId": 41,
-          "chance": 0.025
-        },
-        {
-          "bossId": 42,
-          "chance": 0.25
-        },
-        {
-          "bossId": 43,
-          "chance": 0.25
-        },
-        {
-          "bossId": 44,
-          "chance": 0.25
-        },
-        {
-          "bossId": 45,
-          "chance": 0.25
-        },
-        {
-          "bossId": 46,
-          "chance": 0.25
-        },
-        {
-          "bossId": 47,
-          "chance": 0.025
-        },
-        {
-          "bossId": 48,
-          "chance": 0.01
         }
       ],
       "slots": [
@@ -2212,116 +1796,9 @@
       "icon": "inv_jewelry_necklace_27.png",
       "dropsFrom": [
         {
-          "bossId": 21,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 0.1
-        },
-        {
-          "bossId": 23,
-          "chance": 0.1
-        },
-        {
-          "bossId": 22,
-          "chance": 0.025
-        },
-        {
-          "bossId": 24,
-          "chance": 0.25
-        },
-        {
-          "bossId": 25,
-          "chance": 0.1
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 27,
-          "chance": 0.1
-        },
-        {
-          "bossId": 28,
-          "chance": 0.1
-        },
-        {
-          "bossId": 29,
-          "chance": 0.1
-        },
-        {
-          "bossId": 30,
-          "chance": 0.1
-        },
-        {
-          "bossId": 31,
-          "chance": 0.1
-        },
-        {
-          "bossId": 32,
-          "chance": 0.1
-        },
-        {
-          "bossId": 33,
-          "chance": 0.1
-        },
-        {
-          "bossId": 34,
-          "chance": 0.1
-        },
-        {
-          "bossId": 35,
-          "chance": 0.1
-        },
-        {
-          "bossId": 36,
-          "chance": 0.1
-        },
-        {
-          "bossId": 37,
-          "chance": 0.1
-        },
-        {
-          "bossId": 38,
-          "chance": 0.1
-        },
-        {
-          "bossId": 39,
-          "chance": 0.1
-        },
-        {
-          "bossId": 40,
-          "chance": 0.1
-        },
-        {
-          "bossId": 41,
-          "chance": 0.025
-        },
-        {
-          "bossId": 42,
-          "chance": 0.25
-        },
-        {
-          "bossId": 43,
-          "chance": 0.25
-        },
-        {
-          "bossId": 44,
-          "chance": 0.25
-        },
-        {
-          "bossId": 45,
-          "chance": 0.25
-        },
-        {
-          "bossId": 46,
-          "chance": 0.25
-        },
-        {
-          "bossId": 47,
-          "chance": 0.025
-        },
-        {
-          "bossId": 48,
-          "chance": 0.01
         }
       ],
       "slots": [
@@ -2338,116 +1815,9 @@
       "icon": "inv_belt_08.png",
       "dropsFrom": [
         {
-          "bossId": 23,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 0.1
-        },
-        {
-          "bossId": 21,
-          "chance": 0.1
-        },
-        {
-          "bossId": 24,
-          "chance": 0.25
-        },
-        {
-          "bossId": 25,
-          "chance": 0.1
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 27,
-          "chance": 0.1
-        },
-        {
-          "bossId": 28,
-          "chance": 0.1
-        },
-        {
-          "bossId": 29,
-          "chance": 0.1
-        },
-        {
-          "bossId": 30,
-          "chance": 0.1
-        },
-        {
-          "bossId": 31,
-          "chance": 0.1
-        },
-        {
-          "bossId": 32,
-          "chance": 0.1
-        },
-        {
-          "bossId": 33,
-          "chance": 0.1
-        },
-        {
-          "bossId": 34,
-          "chance": 0.1
-        },
-        {
-          "bossId": 35,
-          "chance": 0.1
-        },
-        {
-          "bossId": 36,
-          "chance": 0.1
-        },
-        {
-          "bossId": 37,
-          "chance": 0.1
-        },
-        {
-          "bossId": 38,
-          "chance": 0.1
-        },
-        {
-          "bossId": 39,
-          "chance": 0.1
-        },
-        {
-          "bossId": 40,
-          "chance": 0.1
-        },
-        {
-          "bossId": 22,
-          "chance": 0.025
-        },
-        {
-          "bossId": 41,
-          "chance": 0.025
-        },
-        {
-          "bossId": 42,
-          "chance": 0.25
-        },
-        {
-          "bossId": 43,
-          "chance": 0.25
-        },
-        {
-          "bossId": 44,
-          "chance": 0.25
-        },
-        {
-          "bossId": 45,
-          "chance": 0.25
-        },
-        {
-          "bossId": 46,
-          "chance": 0.25
-        },
-        {
-          "bossId": 47,
-          "chance": 0.025
-        },
-        {
-          "bossId": 48,
-          "chance": 0.01
         }
       ],
       "slots": [
@@ -2468,116 +1838,9 @@
       "icon": "inv_gauntlets_05.png",
       "dropsFrom": [
         {
-          "bossId": 23,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 0.1
-        },
-        {
-          "bossId": 21,
-          "chance": 0.1
-        },
-        {
-          "bossId": 24,
-          "chance": 0.25
-        },
-        {
-          "bossId": 25,
-          "chance": 0.1
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 27,
-          "chance": 0.1
-        },
-        {
-          "bossId": 28,
-          "chance": 0.1
-        },
-        {
-          "bossId": 29,
-          "chance": 0.1
-        },
-        {
-          "bossId": 30,
-          "chance": 0.1
-        },
-        {
-          "bossId": 31,
-          "chance": 0.1
-        },
-        {
-          "bossId": 32,
-          "chance": 0.1
-        },
-        {
-          "bossId": 33,
-          "chance": 0.1
-        },
-        {
-          "bossId": 34,
-          "chance": 0.1
-        },
-        {
-          "bossId": 35,
-          "chance": 0.1
-        },
-        {
-          "bossId": 36,
-          "chance": 0.1
-        },
-        {
-          "bossId": 37,
-          "chance": 0.1
-        },
-        {
-          "bossId": 38,
-          "chance": 0.1
-        },
-        {
-          "bossId": 39,
-          "chance": 0.1
-        },
-        {
-          "bossId": 40,
-          "chance": 0.1
-        },
-        {
-          "bossId": 22,
-          "chance": 0.025
-        },
-        {
-          "bossId": 41,
-          "chance": 0.025
-        },
-        {
-          "bossId": 42,
-          "chance": 0.25
-        },
-        {
-          "bossId": 43,
-          "chance": 0.25
-        },
-        {
-          "bossId": 44,
-          "chance": 0.25
-        },
-        {
-          "bossId": 45,
-          "chance": 0.25
-        },
-        {
-          "bossId": 46,
-          "chance": 0.25
-        },
-        {
-          "bossId": 47,
-          "chance": 0.025
-        },
-        {
-          "bossId": 48,
-          "chance": 0.01
         }
       ],
       "slots": [
@@ -2598,116 +1861,9 @@
       "icon": "inv_gauntlets_05.png",
       "dropsFrom": [
         {
-          "bossId": 23,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 0.1
-        },
-        {
-          "bossId": 21,
-          "chance": 0.1
-        },
-        {
-          "bossId": 24,
-          "chance": 0.25
-        },
-        {
-          "bossId": 25,
-          "chance": 0.1
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 27,
-          "chance": 0.1
-        },
-        {
-          "bossId": 28,
-          "chance": 0.1
-        },
-        {
-          "bossId": 29,
-          "chance": 0.1
-        },
-        {
-          "bossId": 30,
-          "chance": 0.1
-        },
-        {
-          "bossId": 31,
-          "chance": 0.1
-        },
-        {
-          "bossId": 32,
-          "chance": 0.1
-        },
-        {
-          "bossId": 33,
-          "chance": 0.1
-        },
-        {
-          "bossId": 34,
-          "chance": 0.1
-        },
-        {
-          "bossId": 35,
-          "chance": 0.1
-        },
-        {
-          "bossId": 36,
-          "chance": 0.1
-        },
-        {
-          "bossId": 37,
-          "chance": 0.1
-        },
-        {
-          "bossId": 38,
-          "chance": 0.1
-        },
-        {
-          "bossId": 39,
-          "chance": 0.1
-        },
-        {
-          "bossId": 40,
-          "chance": 0.1
-        },
-        {
-          "bossId": 22,
-          "chance": 0.025
-        },
-        {
-          "bossId": 41,
-          "chance": 0.025
-        },
-        {
-          "bossId": 42,
-          "chance": 0.25
-        },
-        {
-          "bossId": 43,
-          "chance": 0.25
-        },
-        {
-          "bossId": 44,
-          "chance": 0.25
-        },
-        {
-          "bossId": 45,
-          "chance": 0.25
-        },
-        {
-          "bossId": 46,
-          "chance": 0.25
-        },
-        {
-          "bossId": 47,
-          "chance": 0.025
-        },
-        {
-          "bossId": 48,
-          "chance": 0.01
         }
       ],
       "slots": [
@@ -2726,116 +1882,9 @@
       "icon": "inv_gauntlets_05.png",
       "dropsFrom": [
         {
-          "bossId": 21,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 0.1
-        },
-        {
-          "bossId": 23,
-          "chance": 0.1
-        },
-        {
-          "bossId": 25,
-          "chance": 0.1
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 27,
-          "chance": 0.1
-        },
-        {
-          "bossId": 28,
-          "chance": 0.1
-        },
-        {
-          "bossId": 29,
-          "chance": 0.1
-        },
-        {
-          "bossId": 30,
-          "chance": 0.1
-        },
-        {
-          "bossId": 31,
-          "chance": 0.1
-        },
-        {
-          "bossId": 32,
-          "chance": 0.1
-        },
-        {
-          "bossId": 33,
-          "chance": 0.1
-        },
-        {
-          "bossId": 34,
-          "chance": 0.1
-        },
-        {
-          "bossId": 35,
-          "chance": 0.1
-        },
-        {
-          "bossId": 36,
-          "chance": 0.1
-        },
-        {
-          "bossId": 37,
-          "chance": 0.1
-        },
-        {
-          "bossId": 38,
-          "chance": 0.1
-        },
-        {
-          "bossId": 39,
-          "chance": 0.1
-        },
-        {
-          "bossId": 40,
-          "chance": 0.1
-        },
-        {
-          "bossId": 22,
-          "chance": 0.025
-        },
-        {
-          "bossId": 41,
-          "chance": 0.025
-        },
-        {
-          "bossId": 24,
-          "chance": 0.25
-        },
-        {
-          "bossId": 42,
-          "chance": 0.25
-        },
-        {
-          "bossId": 43,
-          "chance": 0.25
-        },
-        {
-          "bossId": 44,
-          "chance": 0.25
-        },
-        {
-          "bossId": 45,
-          "chance": 0.25
-        },
-        {
-          "bossId": 46,
-          "chance": 0.25
-        },
-        {
-          "bossId": 47,
-          "chance": 0.025
-        },
-        {
-          "bossId": 48,
-          "chance": 0.01
         }
       ],
       "slots": [
@@ -2854,116 +1903,9 @@
       "icon": "inv_jewelry_ring_33.png",
       "dropsFrom": [
         {
-          "bossId": 21,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 0.1
-        },
-        {
-          "bossId": 23,
-          "chance": 0.1
-        },
-        {
-          "bossId": 25,
-          "chance": 0.1
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 27,
-          "chance": 0.1
-        },
-        {
-          "bossId": 28,
-          "chance": 0.1
-        },
-        {
-          "bossId": 29,
-          "chance": 0.1
-        },
-        {
-          "bossId": 30,
-          "chance": 0.1
-        },
-        {
-          "bossId": 31,
-          "chance": 0.1
-        },
-        {
-          "bossId": 32,
-          "chance": 0.1
-        },
-        {
-          "bossId": 33,
-          "chance": 0.1
-        },
-        {
-          "bossId": 34,
-          "chance": 0.1
-        },
-        {
-          "bossId": 35,
-          "chance": 0.1
-        },
-        {
-          "bossId": 36,
-          "chance": 0.1
-        },
-        {
-          "bossId": 37,
-          "chance": 0.1
-        },
-        {
-          "bossId": 38,
-          "chance": 0.1
-        },
-        {
-          "bossId": 39,
-          "chance": 0.1
-        },
-        {
-          "bossId": 40,
-          "chance": 0.1
-        },
-        {
-          "bossId": 22,
-          "chance": 0.025
-        },
-        {
-          "bossId": 41,
-          "chance": 0.025
-        },
-        {
-          "bossId": 24,
-          "chance": 0.25
-        },
-        {
-          "bossId": 42,
-          "chance": 0.25
-        },
-        {
-          "bossId": 43,
-          "chance": 0.25
-        },
-        {
-          "bossId": 44,
-          "chance": 0.25
-        },
-        {
-          "bossId": 45,
-          "chance": 0.25
-        },
-        {
-          "bossId": 46,
-          "chance": 0.25
-        },
-        {
-          "bossId": 47,
-          "chance": 0.025
-        },
-        {
-          "bossId": 48,
-          "chance": 0.01
         }
       ],
       "slots": [
@@ -2980,116 +1922,9 @@
       "icon": "inv_misc_gem_amethyst_03.png",
       "dropsFrom": [
         {
-          "bossId": 23,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 0.1
-        },
-        {
-          "bossId": 21,
-          "chance": 0.1
-        },
-        {
-          "bossId": 25,
-          "chance": 0.1
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 27,
-          "chance": 0.1
-        },
-        {
-          "bossId": 28,
-          "chance": 0.1
-        },
-        {
-          "bossId": 29,
-          "chance": 0.1
-        },
-        {
-          "bossId": 30,
-          "chance": 0.1
-        },
-        {
-          "bossId": 31,
-          "chance": 0.1
-        },
-        {
-          "bossId": 32,
-          "chance": 0.1
-        },
-        {
-          "bossId": 33,
-          "chance": 0.1
-        },
-        {
-          "bossId": 34,
-          "chance": 0.1
-        },
-        {
-          "bossId": 35,
-          "chance": 0.1
-        },
-        {
-          "bossId": 36,
-          "chance": 0.1
-        },
-        {
-          "bossId": 37,
-          "chance": 0.1
-        },
-        {
-          "bossId": 38,
-          "chance": 0.1
-        },
-        {
-          "bossId": 39,
-          "chance": 0.1
-        },
-        {
-          "bossId": 40,
-          "chance": 0.1
-        },
-        {
-          "bossId": 22,
-          "chance": 0.025
-        },
-        {
-          "bossId": 41,
-          "chance": 0.025
-        },
-        {
-          "bossId": 24,
-          "chance": 0.25
-        },
-        {
-          "bossId": 42,
-          "chance": 0.25
-        },
-        {
-          "bossId": 43,
-          "chance": 0.25
-        },
-        {
-          "bossId": 44,
-          "chance": 0.25
-        },
-        {
-          "bossId": 45,
-          "chance": 0.25
-        },
-        {
-          "bossId": 46,
-          "chance": 0.25
-        },
-        {
-          "bossId": 47,
-          "chance": 0.025
-        },
-        {
-          "bossId": 48,
-          "chance": 0.01
         }
       ],
       "slots": [
@@ -3106,116 +1941,9 @@
       "icon": "inv_theend.png",
       "dropsFrom": [
         {
-          "bossId": 23,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 0.1
-        },
-        {
-          "bossId": 21,
-          "chance": 0.1
-        },
-        {
-          "bossId": 25,
-          "chance": 0.1
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 27,
-          "chance": 0.1
-        },
-        {
-          "bossId": 28,
-          "chance": 0.1
-        },
-        {
-          "bossId": 29,
-          "chance": 0.1
-        },
-        {
-          "bossId": 30,
-          "chance": 0.1
-        },
-        {
-          "bossId": 31,
-          "chance": 0.1
-        },
-        {
-          "bossId": 32,
-          "chance": 0.1
-        },
-        {
-          "bossId": 33,
-          "chance": 0.1
-        },
-        {
-          "bossId": 34,
-          "chance": 0.1
-        },
-        {
-          "bossId": 35,
-          "chance": 0.1
-        },
-        {
-          "bossId": 36,
-          "chance": 0.1
-        },
-        {
-          "bossId": 37,
-          "chance": 0.1
-        },
-        {
-          "bossId": 38,
-          "chance": 0.1
-        },
-        {
-          "bossId": 39,
-          "chance": 0.1
-        },
-        {
-          "bossId": 40,
-          "chance": 0.1
-        },
-        {
-          "bossId": 22,
-          "chance": 0.025
-        },
-        {
-          "bossId": 41,
-          "chance": 0.025
-        },
-        {
-          "bossId": 24,
-          "chance": 0.25
-        },
-        {
-          "bossId": 42,
-          "chance": 0.25
-        },
-        {
-          "bossId": 43,
-          "chance": 0.25
-        },
-        {
-          "bossId": 44,
-          "chance": 0.25
-        },
-        {
-          "bossId": 45,
-          "chance": 0.25
-        },
-        {
-          "bossId": 46,
-          "chance": 0.25
-        },
-        {
-          "bossId": 47,
-          "chance": 0.025
-        },
-        {
-          "bossId": 48,
-          "chance": 0.01
         }
       ],
       "slots": [
@@ -3234,7 +1962,8 @@
       "icon": "inv_qirajidol_war.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 85,
+          "bossId": 82,
           "chance": 25.0
         }
       ],
@@ -3254,11 +1983,8 @@
       "icon": "ability_mount_ridinghorse.png",
       "dropsFrom": [
         {
-          "bossId": 12,
-          "chance": 2.5
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 2.5
         }
       ],
@@ -3276,7 +2002,8 @@
       "icon": "inv_misc_enggizmos_08.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 86,
+          "bossId": 83,
           "chance": 100.0
         }
       ],
@@ -3294,7 +2021,8 @@
       "icon": "inv_enchant_shardglowingsmall.png",
       "dropsFrom": [
         {
-          "bossId": 14,
+          "npcId": 86,
+          "bossId": 83,
           "chance": 100.0
         }
       ],
@@ -3312,7 +2040,8 @@
       "icon": "inv_enchant_dustsoul.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 87,
+          "bossId": 84,
           "chance": 100.0
         }
       ],
@@ -3330,15 +2059,13 @@
       "icon": "inv_enchant_essencemysticalsmall.png",
       "dropsFrom": [
         {
-          "bossId": 18,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 100.0
         },
         {
-          "bossId": 19,
-          "chance": 100.0
-        },
-        {
-          "bossId": 20,
+          "npcId": 88,
+          "bossId": 85,
           "chance": 100.0
         }
       ],
@@ -3356,7 +2083,8 @@
       "icon": "inv_misc_gem_pearl_06.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 100.0
         }
       ],
@@ -3370,144 +2098,53 @@
       "name": "Pristine Ley Crystal",
       "classes": [],
       "quality": 4,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Pristine Ley Crystal</b><div><div></div><div></div></div><span>|cFFFFFFFFValue:|r |cffffd100168|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r |cffc8602c96|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Pristine Ley Crystal</b><div><div></div><div></div></div><span></span></div>",
       "icon": "inv_misc_gem_diamond_01.png",
       "dropsFrom": [
         {
-          "bossId": 16,
+          "npcId": 91,
+          "bossId": 88,
           "chance": 100.0
         },
         {
-          "bossId": 18,
+          "npcId": 94,
+          "bossId": 91,
           "chance": 3.25
         },
         {
-          "bossId": 19,
+          "npcId": 88,
+          "bossId": 85,
           "chance": 3.25
         },
         {
-          "bossId": 20,
+          "npcId": 86,
+          "bossId": 83,
           "chance": 3.25
         },
         {
-          "bossId": 14,
+          "npcId": 87,
+          "bossId": 84,
           "chance": 3.25
         },
         {
-          "bossId": 10,
-          "chance": 3.25
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 100.0
         },
         {
-          "bossId": 12,
+          "npcId": 90,
+          "bossId": 87,
           "chance": 100.0
         },
         {
-          "bossId": 17,
-          "chance": 100.0
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 3.25
         },
         {
-          "bossId": 22,
-          "chance": 0.4
-        },
-        {
-          "bossId": 47,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 100.0
-        },
-        {
-          "bossId": 46,
-          "chance": 0.4
-        },
-        {
-          "bossId": 40,
-          "chance": 0.4
-        },
-        {
-          "bossId": 39,
-          "chance": 0.4
-        },
-        {
-          "bossId": 38,
-          "chance": 0.4
-        },
-        {
-          "bossId": 45,
-          "chance": 0.4
-        },
-        {
-          "bossId": 37,
-          "chance": 0.4
-        },
-        {
-          "bossId": 36,
-          "chance": 0.4
-        },
-        {
-          "bossId": 24,
-          "chance": 0.4
-        },
-        {
-          "bossId": 35,
-          "chance": 0.4
-        },
-        {
-          "bossId": 34,
-          "chance": 0.4
-        },
-        {
-          "bossId": 33,
-          "chance": 0.4
-        },
-        {
-          "bossId": 32,
-          "chance": 0.4
-        },
-        {
-          "bossId": 31,
-          "chance": 0.4
-        },
-        {
-          "bossId": 30,
-          "chance": 0.4
-        },
-        {
-          "bossId": 29,
-          "chance": 0.4
-        },
-        {
-          "bossId": 44,
-          "chance": 0.4
-        },
-        {
-          "bossId": 43,
-          "chance": 0.4
-        },
-        {
-          "bossId": 28,
-          "chance": 0.4
-        },
-        {
-          "bossId": 49,
-          "chance": 0.4
-        },
-        {
-          "bossId": 15,
-          "chance": 100.0
-        },
-        {
-          "bossId": 48,
-          "chance": 0.4
-        },
-        {
-          "bossId": 50,
-          "chance": 0.4
         }
       ],
       "slots": [
@@ -3524,27 +2161,28 @@
       "icon": "inv_jewelry_necklace_29.png",
       "dropsFrom": [
         {
-          "bossId": 16,
+          "npcId": 91,
+          "bossId": 88,
           "chance": 20.0
         },
         {
-          "bossId": 17,
+          "npcId": 90,
+          "bossId": 87,
           "chance": 20.0
         },
         {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 20.0
         },
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 20.0
         },
         {
-          "bossId": 12,
-          "chance": 20.0
-        },
-        {
-          "bossId": 12,
+          "npcId": 89,
+          "bossId": 86,
           "chance": 20.0
         }
       ],
@@ -3567,11 +2205,8 @@
       "icon": "inv_helmet_57.png",
       "dropsFrom": [
         {
-          "bossId": 16,
-          "chance": 50.0
-        },
-        {
-          "bossId": 16,
+          "npcId": 91,
+          "bossId": 88,
           "chance": 50.0
         }
       ],
@@ -3595,11 +2230,8 @@
       "icon": "inv_helmet_57.png",
       "dropsFrom": [
         {
-          "bossId": 16,
-          "chance": 50.0
-        },
-        {
-          "bossId": 16,
+          "npcId": 91,
+          "bossId": 88,
           "chance": 50.0
         }
       ],
@@ -3622,7 +2254,8 @@
       "icon": "inv_chest_cloth_45.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 100.0
         }
       ],
@@ -3646,7 +2279,8 @@
       "icon": "inv_chest_cloth_45.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 100.0
         }
       ],
@@ -3664,11 +2298,8 @@
       "icon": "inv_wand_06.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 11.2
-        },
-        {
-          "bossId": 13,
+          "npcId": 92,
+          "bossId": 89,
           "chance": 11.2
         }
       ],
@@ -3688,7 +2319,8 @@
       "icon": "btnheartamulet.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 100.0
         }
       ],
@@ -3706,7 +2338,8 @@
       "icon": "spell_shadow_summonfelhunter.png",
       "dropsFrom": [
         {
-          "bossId": 15,
+          "npcId": 93,
+          "bossId": 90,
           "chance": 5.0
         }
       ],
@@ -3718,208 +2351,96 @@
   ],
   "bosses": [
     {
-      "bossId": 0,
-      "name": "Shadethicket Stone Mover"
+      "id": 82,
+      "name": "Gnarlmoon"
     },
     {
-      "bossId": 1,
-      "name": "Wildthorn Stalker"
+      "id": 83,
+      "name": "Incantagos"
     },
     {
-      "bossId": 2,
-      "name": "Ghostpaw Runner"
-    },
-    {
-      "bossId": 3,
-      "name": "Rotting Slime"
-    },
-    {
-      "bossId": 4,
-      "name": "Sharptalon"
-    },
-    {
-      "bossId": 5,
-      "name": "Ashenvale Outrunner"
-    },
-    {
-      "bossId": 6,
-      "name": "Ashenvale Stalker"
-    },
-    {
-      "bossId": 7,
-      "name": "Deranged Ancient"
-    },
-    {
-      "bossId": 8,
-      "name": "Twisted Ancient"
-    },
-    {
-      "bossId": 9,
-      "name": "Glade Creeper"
-    },
-    {
-      "bossId": 10,
+      "id": 84,
       "name": "Anomalus"
     },
     {
-      "bossId": 11,
-      "name": "Keeper Gnarlmoon"
+      "id": 85,
+      "name": "Medivh"
     },
     {
-      "bossId": 12,
-      "name": "King"
+      "id": 86,
+      "name": "Chess Fight"
     },
     {
-      "bossId": 13,
+      "id": 87,
+      "name": "Sanv"
+    },
+    {
+      "id": 88,
+      "name": "Rupturan"
+    },
+    {
+      "id": 89,
       "name": "Kruul"
     },
     {
-      "bossId": 14,
-      "name": "Ley-Watcher Incantagos"
-    },
-    {
-      "bossId": 15,
+      "id": 90,
       "name": "Mephistroth"
     },
     {
-      "bossId": 16,
-      "name": "Rupturan the Broken"
+      "id": 91,
+      "name": "Trash"
+    }
+  ],
+  "npcs": [
+    {
+      "bossId": 82,
+      "id": 85,
+      "name": "Keeper Gnarlmoon"
     },
     {
-      "bossId": 17,
-      "name": "Sanv Tas'dal"
+      "bossId": 83,
+      "id": 86,
+      "name": "Ley-Watcher Incantagos"
     },
     {
-      "bossId": 18,
-      "name": "Echo of Sargeras"
+      "bossId": 84,
+      "id": 87,
+      "name": "Anomalus"
     },
     {
-      "bossId": 19,
-      "name": "Corrupted Ashbringer"
-    },
-    {
-      "bossId": 20,
+      "bossId": 85,
+      "id": 88,
       "name": "Echo of Medivh"
     },
     {
-      "bossId": 21,
-      "name": "Desolate Invader"
+      "bossId": 86,
+      "id": 89,
+      "name": "King"
     },
     {
-      "bossId": 22,
-      "name": "Manascale Whelp"
+      "bossId": 87,
+      "id": 90,
+      "name": "Sanv Tas'dal"
     },
     {
-      "bossId": 23,
-      "name": "Desolate Destroyer"
+      "bossId": 88,
+      "id": 91,
+      "name": "Rupturan the Broken"
     },
     {
-      "bossId": 24,
-      "name": "Disrupted Arcane Elemental"
+      "bossId": 89,
+      "id": 92,
+      "name": "Kruul"
     },
     {
-      "bossId": 25,
-      "name": "Draenei Waterseeker"
+      "bossId": 90,
+      "id": 93,
+      "name": "Mephistroth"
     },
     {
-      "bossId": 26,
-      "name": "Draenei Darkbinder"
-    },
-    {
-      "bossId": 27,
-      "name": "Outcast Souleater"
-    },
-    {
-      "bossId": 28,
-      "name": "Infernal Destroyer"
-    },
-    {
-      "bossId": 29,
-      "name": "Lingering Enchanter"
-    },
-    {
-      "bossId": 30,
-      "name": "Lingering Astrologist"
-    },
-    {
-      "bossId": 31,
-      "name": "Lingering Arcanist"
-    },
-    {
-      "bossId": 32,
-      "name": "Lingering Magus"
-    },
-    {
-      "bossId": 33,
-      "name": "Karazhan Protector Golem"
-    },
-    {
-      "bossId": 34,
-      "name": "Crumbling Protector"
-    },
-    {
-      "bossId": 35,
-      "name": "Arcane Anomaly"
-    },
-    {
-      "bossId": 36,
-      "name": "Unstable Arcane Elemental"
-    },
-    {
-      "bossId": 37,
-      "name": "Arcane Overflow"
-    },
-    {
-      "bossId": 38,
-      "name": "Manascale Mageweaver"
-    },
-    {
-      "bossId": 39,
-      "name": "Manascale Suppressor"
-    },
-    {
-      "bossId": 40,
-      "name": "Manascale Dragon Guard"
-    },
-    {
-      "bossId": 41,
-      "name": "Draenei Worshipper"
-    },
-    {
-      "bossId": 42,
-      "name": "Warbringer Overseer"
-    },
-    {
-      "bossId": 43,
-      "name": "Doomguard Annihilator"
-    },
-    {
-      "bossId": 44,
-      "name": "Dreadlord Doomseeker"
-    },
-    {
-      "bossId": 45,
-      "name": "Manascale Overseer"
-    },
-    {
-      "bossId": 46,
-      "name": "Manascale Drake"
-    },
-    {
-      "bossId": 47,
-      "name": "Ima'ghaol, Herald of Desolation"
-    },
-    {
-      "bossId": 48,
-      "name": "Forgotten Echo"
-    },
-    {
-      "bossId": 49,
-      "name": "Darkflame Imp"
-    },
-    {
-      "bossId": 50,
-      "name": "Shadowclaw Darkbringer"
+      "bossId": 91,
+      "id": 94,
+      "name": "Trash"
     }
   ]
 }

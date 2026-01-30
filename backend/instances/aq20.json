@@ -12,7 +12,8 @@
       "icon": "inv_chest_cloth_17.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 16.67
         }
       ],
@@ -32,7 +33,8 @@
       "icon": "inv_weapon_shortblade_34.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 16.67
         }
       ],
@@ -52,7 +54,8 @@
       "icon": "inv_bracer_19.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 16.67
         }
       ],
@@ -72,7 +75,8 @@
       "icon": "inv_gauntlets_24.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 16.67
         }
       ],
@@ -92,7 +96,8 @@
       "icon": "inv_belt_05.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 16.67
         }
       ],
@@ -112,7 +117,8 @@
       "icon": "inv_belt_13.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 16.67
         }
       ],
@@ -137,19 +143,23 @@
       "icon": "inv_qiraj_drapemartial.png",
       "dropsFrom": [
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 25.0
         },
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 25.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 16.67
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 16.67
         }
       ],
@@ -173,19 +183,23 @@
       "icon": "inv_bracer_18.png",
       "dropsFrom": [
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 25.0
         },
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 25.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 16.67
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 16.67
         }
       ],
@@ -208,23 +222,28 @@
       "icon": "inv_qiraj_ringceremonial.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 25.0
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 25.0
         },
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 25.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 16.67
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 16.67
         }
       ],
@@ -248,23 +267,28 @@
       "icon": "inv_qiraj_ringmagisterial.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 25.0
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 25.0
         },
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 25.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 16.67
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 16.67
         }
       ],
@@ -282,7 +306,8 @@
       "icon": "inv_boots_08.png",
       "dropsFrom": [
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 16.67
         }
       ],
@@ -302,7 +327,8 @@
       "icon": "inv_sword_56.png",
       "dropsFrom": [
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 16.67
         }
       ],
@@ -322,7 +348,8 @@
       "icon": "inv_bracer_13.png",
       "dropsFrom": [
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 16.67
         }
       ],
@@ -342,7 +369,8 @@
       "icon": "inv_belt_25.png",
       "dropsFrom": [
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 16.67
         }
       ],
@@ -362,7 +390,8 @@
       "icon": "inv_pants_plate_15.png",
       "dropsFrom": [
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 16.67
         }
       ],
@@ -382,7 +411,8 @@
       "icon": "inv_boots_chain_11.png",
       "dropsFrom": [
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 16.67
         }
       ],
@@ -402,7 +432,8 @@
       "icon": "inv_weapon_shortblade_32.png",
       "dropsFrom": [
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 10.0
         }
       ],
@@ -422,32 +453,9 @@
       "icon": "inv_jewelry_necklace_14.png",
       "dropsFrom": [
         {
-          "bossId": 5,
+          "npcId": 21,
+          "bossId": 20,
           "chance": 4.626
-        },
-        {
-          "bossId": 6,
-          "chance": 13.24
-        },
-        {
-          "bossId": 7,
-          "chance": 3.419
-        },
-        {
-          "bossId": 8,
-          "chance": 3.247
-        },
-        {
-          "bossId": 9,
-          "chance": 3.953
-        },
-        {
-          "bossId": 10,
-          "chance": 3.704
-        },
-        {
-          "bossId": 11,
-          "chance": 1.942
         }
       ],
       "slots": [
@@ -464,32 +472,9 @@
       "icon": "inv_boots_cloth_05.png",
       "dropsFrom": [
         {
-          "bossId": 11,
+          "npcId": 21,
+          "bossId": 20,
           "chance": 3.884
-        },
-        {
-          "bossId": 8,
-          "chance": 4.221
-        },
-        {
-          "bossId": 7,
-          "chance": 4.274
-        },
-        {
-          "bossId": 5,
-          "chance": 7.117
-        },
-        {
-          "bossId": 9,
-          "chance": 1.186
-        },
-        {
-          "bossId": 10,
-          "chance": 11.11
-        },
-        {
-          "bossId": 6,
-          "chance": 12.5
         }
       ],
       "slots": [
@@ -508,32 +493,9 @@
       "icon": "inv_hammer_04.png",
       "dropsFrom": [
         {
-          "bossId": 10,
+          "npcId": 21,
+          "bossId": 20,
           "chance": 3.77
-        },
-        {
-          "bossId": 5,
-          "chance": 2.05
-        },
-        {
-          "bossId": 7,
-          "chance": 2.48
-        },
-        {
-          "bossId": 11,
-          "chance": 2.77
-        },
-        {
-          "bossId": 9,
-          "chance": 2.71
-        },
-        {
-          "bossId": 8,
-          "chance": 2.25
-        },
-        {
-          "bossId": 6,
-          "chance": 7.11
         }
       ],
       "slots": [
@@ -552,7 +514,8 @@
       "icon": "inv_helmet_62.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 25.0
         }
       ],
@@ -572,7 +535,8 @@
       "icon": "inv_chest_leather_07.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 25.0
         }
       ],
@@ -592,11 +556,13 @@
       "icon": "inv_gauntlets_31.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 25.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 12.5
         }
       ],
@@ -616,7 +582,8 @@
       "icon": "inv_mace_21.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 25.0
         }
       ],
@@ -634,7 +601,8 @@
       "icon": "inv_helmet_01.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 11.11
         }
       ],
@@ -654,7 +622,8 @@
       "icon": "inv_shoulder_25.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 11.11
         }
       ],
@@ -674,7 +643,8 @@
       "icon": "inv_shoulder_29.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 11.11
         }
       ],
@@ -694,7 +664,8 @@
       "icon": "inv_misc_cape_16.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 11.11
         }
       ],
@@ -712,7 +683,8 @@
       "icon": "inv_gauntlets_05.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 11.11
         }
       ],
@@ -732,7 +704,8 @@
       "icon": "inv_pants_mail_15.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 11.11
         }
       ],
@@ -752,7 +725,8 @@
       "icon": "inv_pants_plate_01.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 11.11
         }
       ],
@@ -772,7 +746,8 @@
       "icon": "inv_jewelry_ring_ahnqiraj_04.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 11.11
         }
       ],
@@ -790,7 +765,8 @@
       "icon": "inv_misc_eye_01.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 11.11
         }
       ],
@@ -813,19 +789,23 @@
       "icon": "inv_qiraj_hiltornate.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 50.0
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 25.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 16.67
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 16.67
         }
       ],
@@ -849,19 +829,23 @@
       "icon": "inv_qiraj_hiltspiked.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 50.0
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 25.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 16.67
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 16.67
         }
       ],
@@ -879,7 +863,8 @@
       "icon": "inv_scroll_05.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 15.0
         }
       ],
@@ -897,7 +882,8 @@
       "icon": "inv_gauntlets_12.png",
       "dropsFrom": [
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 14.29
         }
       ],
@@ -917,7 +903,8 @@
       "icon": "inv_gauntlets_30.png",
       "dropsFrom": [
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 14.29
         }
       ],
@@ -937,7 +924,8 @@
       "icon": "inv_shield_22.png",
       "dropsFrom": [
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 14.29
         }
       ],
@@ -957,7 +945,8 @@
       "icon": "inv_bracer_03.png",
       "dropsFrom": [
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 14.29
         }
       ],
@@ -977,7 +966,8 @@
       "icon": "inv_boots_cloth_05.png",
       "dropsFrom": [
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 14.29
         }
       ],
@@ -997,7 +987,8 @@
       "icon": "inv_boots_plate_04.png",
       "dropsFrom": [
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 14.29
         }
       ],
@@ -1017,7 +1008,8 @@
       "icon": "inv_misc_ahnqirajtrinket_02.png",
       "dropsFrom": [
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 14.29
         }
       ],
@@ -1035,7 +1027,8 @@
       "icon": "inv_weapon_bow_13.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 12.5
         }
       ],
@@ -1053,7 +1046,8 @@
       "icon": "inv_mace23.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 12.5
         }
       ],
@@ -1073,7 +1067,8 @@
       "icon": "inv_helmet_15.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 12.5
         }
       ],
@@ -1093,7 +1088,8 @@
       "icon": "inv_gauntlets_10.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 12.5
         }
       ],
@@ -1113,7 +1109,8 @@
       "icon": "inv_boots_chain_02.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 12.5
         }
       ],
@@ -1133,7 +1130,8 @@
       "icon": "inv_boots_plate_05.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 12.5
         }
       ],
@@ -1153,7 +1151,8 @@
       "icon": "inv_jewelry_ring_ahnqiraj_05.png",
       "dropsFrom": [
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 12.5
         }
       ],
@@ -1171,7 +1170,8 @@
       "icon": "inv_helmet_09.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 15.0
         }
       ],
@@ -1191,7 +1191,8 @@
       "icon": "inv_shoulder_18.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 18.0
         }
       ],
@@ -1211,7 +1212,8 @@
       "icon": "inv_shoulder_28.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 18.0
         }
       ],
@@ -1231,7 +1233,8 @@
       "icon": "inv_misc_cape_06.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 18.0
         }
       ],
@@ -1249,7 +1252,8 @@
       "icon": "inv_bracer_07.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 15.0
         }
       ],
@@ -1269,7 +1273,8 @@
       "icon": "inv_bracer_19.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 15.0
         }
       ],
@@ -1289,7 +1294,8 @@
       "icon": "inv_gauntlets_19.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 15.0
         }
       ],
@@ -1309,7 +1315,8 @@
       "icon": "inv_gauntlets_24.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 18.0
         }
       ],
@@ -1329,7 +1336,8 @@
       "icon": "inv_belt_18.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 15.0
         }
       ],
@@ -1349,7 +1357,8 @@
       "icon": "inv_pants_cloth_06.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 15.0
         }
       ],
@@ -1369,7 +1378,8 @@
       "icon": "inv_weapon_crossbow_06.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 10.0
         }
       ],
@@ -1389,7 +1399,8 @@
       "icon": "inv_mace_24.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 10.0
         }
       ],
@@ -1409,7 +1420,8 @@
       "icon": "inv_staff_12.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 18.0
         }
       ],
@@ -1429,7 +1441,8 @@
       "icon": "ability_hunter_pet_owl.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 100.0
         }
       ],
@@ -1443,60 +1456,13 @@
       "name": "Coif of Elemental Fury",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Coif of Elemental Fury</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Mail</span></div></div><span>323 Armor<br/>+17 Stamina<br/>+18 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 20.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Coif of Elemental Fury</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Mail</span></div></div><span>323 Armor<br/>+17 Stamina<br/>+18 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 20.</span><br/></span></div>",
       "icon": "inv_helmet_24.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 0.06
-        },
-        {
-          "bossId": 14,
-          "chance": 0.02
-        },
-        {
-          "bossId": 15,
-          "chance": 0.4144
-        },
-        {
-          "bossId": 16,
-          "chance": 0.02
-        },
-        {
-          "bossId": 17,
-          "chance": 0.0689
-        },
-        {
-          "bossId": 18,
-          "chance": 0.5618
-        },
-        {
-          "bossId": 19,
-          "chance": 0.02
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.02
-        },
-        {
-          "bossId": 21,
-          "chance": 0.02
-        },
-        {
-          "bossId": 22,
-          "chance": 0.07
-        },
-        {
-          "bossId": 10,
-          "chance": 0.1
-        },
-        {
-          "bossId": 23,
-          "chance": 0.07
-        },
-        {
-          "bossId": 24,
-          "chance": 0.02
+          "chance": 0.06
         }
       ],
       "slots": [
@@ -1511,68 +1477,13 @@
       "name": "Helm of the Holy Avenger",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Helm of the Holy Avenger</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Plate</span></div></div><span>574 Armor<br/>+17 Stamina<br/>+18 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 20.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Helm of the Holy Avenger</b><span>Binds when equipped</span><div><div><span>Head</span></div><div><span>Plate</span></div></div><span>574 Armor<br/>+17 Stamina<br/>+18 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 20.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/></span></div>",
       "icon": "inv_helmet_03.png",
       "dropsFrom": [
         {
-          "bossId": 25,
-          "chance": 0.15
-        },
-        {
-          "bossId": 13,
-          "chance": 0.06
-        },
-        {
-          "bossId": 14,
-          "chance": 0.04
-        },
-        {
-          "bossId": 15,
-          "chance": 0.03
-        },
-        {
-          "bossId": 26,
-          "chance": 0.2964
-        },
-        {
-          "bossId": 16,
-          "chance": 0.038
-        },
-        {
-          "bossId": 17,
-          "chance": 0.0344
-        },
-        {
-          "bossId": 19,
-          "chance": 0.4444
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.06
-        },
-        {
-          "bossId": 21,
-          "chance": 0.02
-        },
-        {
-          "bossId": 22,
-          "chance": 0.1493
-        },
-        {
-          "bossId": 8,
-          "chance": 0.02
-        },
-        {
-          "bossId": 23,
-          "chance": 0.13
-        },
-        {
-          "bossId": 7,
-          "chance": 0.03
-        },
-        {
-          "bossId": 24,
-          "chance": 0.05
+          "chance": 0.15
         }
       ],
       "slots": [
@@ -1587,84 +1498,13 @@
       "name": "Polished Obsidian Pauldrons",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Polished Obsidian Pauldrons</b><span>Binds when equipped</span><div><div><span>Shoulder</span></div><div><span>Plate</span></div></div><span>530 Armor<br/>+16 Strength<br/>+17 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +7.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Polished Obsidian Pauldrons</b><span>Binds when equipped</span><div><div><span>Shoulder</span></div><div><span>Plate</span></div></div><span>530 Armor<br/>+16 Strength<br/>+17 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +7.</span><br/></span></div>",
       "icon": "inv_shoulder_26.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 0.17
-        },
-        {
-          "bossId": 14,
-          "chance": 0.09
-        },
-        {
-          "bossId": 16,
-          "chance": 0.1519
-        },
-        {
-          "bossId": 17,
-          "chance": 0.0689
-        },
-        {
-          "bossId": 18,
-          "chance": 0.11
-        },
-        {
-          "bossId": 19,
-          "chance": 0.06
-        },
-        {
-          "bossId": 27,
-          "chance": 0.26
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.04
-        },
-        {
-          "bossId": 21,
-          "chance": 0.0593
-        },
-        {
-          "bossId": 22,
-          "chance": 0.2985
-        },
-        {
-          "bossId": 15,
-          "chance": 0.04
-        },
-        {
-          "bossId": 25,
-          "chance": 0.08
-        },
-        {
-          "bossId": 28,
-          "chance": 0.3304
-        },
-        {
-          "bossId": 26,
-          "chance": 0.0593
-        },
-        {
-          "bossId": 5,
-          "chance": 0.05
-        },
-        {
-          "bossId": 24,
-          "chance": 0.0597
-        },
-        {
-          "bossId": 11,
-          "chance": 0.13
-        },
-        {
-          "bossId": 23,
-          "chance": 0.09
-        },
-        {
-          "bossId": 8,
-          "chance": 0.3247
+          "chance": 0.17
         }
       ],
       "slots": [
@@ -1679,79 +1519,12 @@
       "name": "Alabaster Idol",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Alabaster Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Mage, Druid<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Alabaster Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Mage, Druid<br/></span></div>",
       "icon": "inv_qirajidol_alabaster.png",
       "dropsFrom": [
         {
-          "bossId": 24,
-          "chance": 0.4
-        },
-        {
-          "bossId": 25,
-          "chance": 0.4
-        },
-        {
-          "bossId": 13,
-          "chance": 0.4
-        },
-        {
-          "bossId": 14,
-          "chance": 0.4
-        },
-        {
-          "bossId": 15,
-          "chance": 0.4
-        },
-        {
-          "bossId": 26,
-          "chance": 0.4
-        },
-        {
-          "bossId": 16,
-          "chance": 0.4
-        },
-        {
-          "bossId": 17,
-          "chance": 0.4
-        },
-        {
-          "bossId": 5,
-          "chance": 0.4
-        },
-        {
-          "bossId": 18,
-          "chance": 1.3
-        },
-        {
-          "bossId": 19,
-          "chance": 0.6
-        },
-        {
-          "bossId": 27,
-          "chance": 0.4
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.4
-        },
-        {
-          "bossId": 21,
-          "chance": 0.4
-        },
-        {
-          "bossId": 28,
-          "chance": 0.4
-        },
-        {
-          "bossId": 22,
-          "chance": 0.4
-        },
-        {
-          "bossId": 23,
-          "chance": 0.4
-        },
-        {
-          "bossId": 7,
           "chance": 0.4
         }
       ],
@@ -1765,79 +1538,12 @@
       "name": "Amber Idol",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Amber Idol</b><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Warlock<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Amber Idol</b><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Warlock<br/></span></div>",
       "icon": "inv_qirajidol_amber.png",
       "dropsFrom": [
         {
-          "bossId": 7,
-          "chance": 0.4
-        },
-        {
-          "bossId": 24,
-          "chance": 0.4
-        },
-        {
-          "bossId": 25,
-          "chance": 0.4
-        },
-        {
-          "bossId": 13,
-          "chance": 0.4
-        },
-        {
-          "bossId": 14,
-          "chance": 0.4
-        },
-        {
-          "bossId": 15,
-          "chance": 0.4
-        },
-        {
-          "bossId": 26,
-          "chance": 0.4
-        },
-        {
-          "bossId": 16,
-          "chance": 0.4
-        },
-        {
-          "bossId": 17,
-          "chance": 0.4
-        },
-        {
-          "bossId": 18,
-          "chance": 1.3
-        },
-        {
-          "bossId": 19,
-          "chance": 0.6
-        },
-        {
-          "bossId": 27,
-          "chance": 0.4
-        },
-        {
-          "bossId": 5,
-          "chance": 0.4
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.4
-        },
-        {
-          "bossId": 21,
-          "chance": 0.4
-        },
-        {
-          "bossId": 28,
-          "chance": 0.4
-        },
-        {
-          "bossId": 22,
-          "chance": 0.4
-        },
-        {
-          "bossId": 23,
           "chance": 0.4
         }
       ],
@@ -1851,79 +1557,12 @@
       "name": "Azure Idol",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Azure Idol</b><div><div></div><div></div></div><span>Classes: Hunter, Rogue, Mage<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Azure Idol</b><div><div></div><div></div></div><span>Classes: Hunter, Rogue, Mage<br/></span></div>",
       "icon": "inv_qirajidol_azure.png",
       "dropsFrom": [
         {
-          "bossId": 7,
-          "chance": 0.4
-        },
-        {
-          "bossId": 24,
-          "chance": 0.4
-        },
-        {
-          "bossId": 25,
-          "chance": 0.4
-        },
-        {
-          "bossId": 13,
-          "chance": 0.4
-        },
-        {
-          "bossId": 14,
-          "chance": 0.4
-        },
-        {
-          "bossId": 15,
-          "chance": 0.4
-        },
-        {
-          "bossId": 26,
-          "chance": 0.4
-        },
-        {
-          "bossId": 16,
-          "chance": 0.4
-        },
-        {
-          "bossId": 17,
-          "chance": 0.4
-        },
-        {
-          "bossId": 18,
-          "chance": 1.3
-        },
-        {
-          "bossId": 19,
-          "chance": 0.6
-        },
-        {
-          "bossId": 27,
-          "chance": 0.4
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.4
-        },
-        {
-          "bossId": 21,
-          "chance": 0.4
-        },
-        {
-          "bossId": 28,
-          "chance": 0.4
-        },
-        {
-          "bossId": 22,
-          "chance": 0.4
-        },
-        {
-          "bossId": 5,
-          "chance": 0.4
-        },
-        {
-          "bossId": 23,
           "chance": 0.4
         }
       ],
@@ -1937,79 +1576,12 @@
       "name": "Jasper Idol",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Jasper Idol</b><div><div></div><div></div></div><span>Classes: Priest, Warlock, Druid<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Jasper Idol</b><div><div></div><div></div></div><span>Classes: Priest, Warlock, Druid<br/></span></div>",
       "icon": "inv_qirajidol_jasper.png",
       "dropsFrom": [
         {
-          "bossId": 24,
-          "chance": 0.4
-        },
-        {
-          "bossId": 25,
-          "chance": 0.4
-        },
-        {
-          "bossId": 13,
-          "chance": 0.4
-        },
-        {
-          "bossId": 14,
-          "chance": 0.4
-        },
-        {
-          "bossId": 15,
-          "chance": 0.4
-        },
-        {
-          "bossId": 26,
-          "chance": 0.4
-        },
-        {
-          "bossId": 16,
-          "chance": 0.4
-        },
-        {
-          "bossId": 17,
-          "chance": 0.4
-        },
-        {
-          "bossId": 18,
-          "chance": 1.3
-        },
-        {
-          "bossId": 5,
-          "chance": 0.4
-        },
-        {
-          "bossId": 19,
-          "chance": 0.6
-        },
-        {
-          "bossId": 27,
-          "chance": 0.4
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.4
-        },
-        {
-          "bossId": 21,
-          "chance": 0.4
-        },
-        {
-          "bossId": 28,
-          "chance": 0.4
-        },
-        {
-          "bossId": 22,
-          "chance": 0.4
-        },
-        {
-          "bossId": 7,
-          "chance": 0.4
-        },
-        {
-          "bossId": 23,
           "chance": 0.4
         }
       ],
@@ -2023,79 +1595,12 @@
       "name": "Lambent Idol",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Lambent Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Hunter, Priest<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Lambent Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Hunter, Priest<br/></span></div>",
       "icon": "inv_qirajidol_lambent.png",
       "dropsFrom": [
         {
-          "bossId": 7,
-          "chance": 0.4
-        },
-        {
-          "bossId": 24,
-          "chance": 0.4
-        },
-        {
-          "bossId": 25,
-          "chance": 0.4
-        },
-        {
-          "bossId": 13,
-          "chance": 0.4
-        },
-        {
-          "bossId": 14,
-          "chance": 0.4
-        },
-        {
-          "bossId": 15,
-          "chance": 0.4
-        },
-        {
-          "bossId": 26,
-          "chance": 0.4
-        },
-        {
-          "bossId": 16,
-          "chance": 0.4
-        },
-        {
-          "bossId": 17,
-          "chance": 0.4
-        },
-        {
-          "bossId": 18,
-          "chance": 1.3
-        },
-        {
-          "bossId": 19,
-          "chance": 0.6
-        },
-        {
-          "bossId": 27,
-          "chance": 0.4
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.4
-        },
-        {
-          "bossId": 5,
-          "chance": 0.4
-        },
-        {
-          "bossId": 21,
-          "chance": 0.4
-        },
-        {
-          "bossId": 28,
-          "chance": 0.4
-        },
-        {
-          "bossId": 22,
-          "chance": 0.4
-        },
-        {
-          "bossId": 23,
           "chance": 0.4
         }
       ],
@@ -2109,79 +1614,12 @@
       "name": "Obsidian Idol",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Obsidian Idol</b><div><div></div><div></div></div><span>Classes: Paladin, Priest, Shaman, Mage<br/>|cFFFFFFFFValue:|r |cffffd1006|r|cffffd100g|r |cff98b0e098|r|cff98b0e0s|r |cffc8602c38|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Obsidian Idol</b><div><div></div><div></div></div><span>Classes: Paladin, Priest, Shaman, Mage<br/></span></div>",
       "icon": "inv_qirajidol_obsidian.png",
       "dropsFrom": [
         {
-          "bossId": 24,
-          "chance": 0.4
-        },
-        {
-          "bossId": 25,
-          "chance": 0.4
-        },
-        {
-          "bossId": 13,
-          "chance": 0.4
-        },
-        {
-          "bossId": 14,
-          "chance": 0.4
-        },
-        {
-          "bossId": 15,
-          "chance": 0.4
-        },
-        {
-          "bossId": 26,
-          "chance": 0.4
-        },
-        {
-          "bossId": 16,
-          "chance": 0.4
-        },
-        {
-          "bossId": 17,
-          "chance": 0.4
-        },
-        {
-          "bossId": 5,
-          "chance": 0.4
-        },
-        {
-          "bossId": 18,
-          "chance": 1.3
-        },
-        {
-          "bossId": 19,
-          "chance": 0.6
-        },
-        {
-          "bossId": 27,
-          "chance": 0.4
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.4
-        },
-        {
-          "bossId": 21,
-          "chance": 0.4
-        },
-        {
-          "bossId": 28,
-          "chance": 0.4
-        },
-        {
-          "bossId": 22,
-          "chance": 0.4
-        },
-        {
-          "bossId": 7,
-          "chance": 0.4
-        },
-        {
-          "bossId": 23,
           "chance": 0.4
         }
       ],
@@ -2195,71 +1633,12 @@
       "name": "Onyx Idol",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Onyx Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Rogue, Warlock<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Onyx Idol</b><div><div></div><div></div></div><span>Classes: Warrior, Rogue, Warlock<br/></span></div>",
       "icon": "inv_qirajidol_onyx.png",
       "dropsFrom": [
         {
-          "bossId": 7,
-          "chance": 0.4
-        },
-        {
-          "bossId": 24,
-          "chance": 0.4
-        },
-        {
-          "bossId": 5,
-          "chance": 0.4
-        },
-        {
-          "bossId": 16,
-          "chance": 0.4
-        },
-        {
-          "bossId": 23,
-          "chance": 0.4
-        },
-        {
-          "bossId": 26,
-          "chance": 0.4
-        },
-        {
-          "bossId": 21,
-          "chance": 0.4
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.4
-        },
-        {
-          "bossId": 27,
-          "chance": 0.4
-        },
-        {
-          "bossId": 19,
-          "chance": 0.6
-        },
-        {
-          "bossId": 18,
-          "chance": 1.3
-        },
-        {
-          "bossId": 17,
-          "chance": 0.4
-        },
-        {
-          "bossId": 15,
-          "chance": 0.4
-        },
-        {
-          "bossId": 14,
-          "chance": 0.4
-        },
-        {
-          "bossId": 13,
-          "chance": 0.4
-        },
-        {
-          "bossId": 25,
           "chance": 0.4
         }
       ],
@@ -2273,79 +1652,12 @@
       "name": "Vermillion Idol",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Vermillion Idol</b><div><div></div><div></div></div><span>Classes: Paladin, Rogue, Shaman, Druid<br/>|cFFFFFFFFValue:|r |cffffd1007|r|cffffd100g|r |cff98b0e039|r|cff98b0e0s|r |cffc8602c97|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Vermillion Idol</b><div><div></div><div></div></div><span>Classes: Paladin, Rogue, Shaman, Druid<br/></span></div>",
       "icon": "inv_qirajidol_vermillion.png",
       "dropsFrom": [
         {
-          "bossId": 24,
-          "chance": 0.4
-        },
-        {
-          "bossId": 25,
-          "chance": 0.4
-        },
-        {
-          "bossId": 13,
-          "chance": 0.4
-        },
-        {
-          "bossId": 14,
-          "chance": 0.4
-        },
-        {
-          "bossId": 15,
-          "chance": 0.4
-        },
-        {
-          "bossId": 26,
-          "chance": 0.4
-        },
-        {
-          "bossId": 16,
-          "chance": 0.4
-        },
-        {
-          "bossId": 17,
-          "chance": 0.4
-        },
-        {
-          "bossId": 5,
-          "chance": 0.4
-        },
-        {
-          "bossId": 18,
-          "chance": 1.3
-        },
-        {
-          "bossId": 19,
-          "chance": 0.6
-        },
-        {
-          "bossId": 27,
-          "chance": 0.4
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.4
-        },
-        {
-          "bossId": 21,
-          "chance": 0.4
-        },
-        {
-          "bossId": 7,
-          "chance": 0.4
-        },
-        {
-          "bossId": 28,
-          "chance": 0.4
-        },
-        {
-          "bossId": 22,
-          "chance": 0.4
-        },
-        {
-          "bossId": 23,
           "chance": 0.4
         }
       ],
@@ -2359,92 +1671,13 @@
       "name": "Antenna of Invigoration",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Antenna of Invigoration</b><span>Binds when equipped</span><div><div><span>Ranged</span></div><div><span>Wand</span></div></div><div><div>80 - 149 Nature Damage</div><div>Speed 1.60</div></div><span>(71.6 damage per second)<br/>+4 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Restores 3 mana per 5 sec.</span><br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 13.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Antenna of Invigoration</b><span>Binds when equipped</span><div><div><span>Ranged</span></div><div><span>Wand</span></div></div><div><div>80 - 149 Nature Damage</div><div>Speed 1.60</div></div><span>(71.6 damage per second)<br/>+4 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Restores 3 mana per 5 sec.</span><br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 13.</span><br/></span></div>",
       "icon": "inv_wand_04.png",
       "dropsFrom": [
         {
-          "bossId": 13,
-          "chance": 0.06
-        },
-        {
-          "bossId": 14,
-          "chance": 0.05
-        },
-        {
-          "bossId": 15,
-          "chance": 0.06
-        },
-        {
-          "bossId": 16,
-          "chance": 0.09
-        },
-        {
-          "bossId": 17,
-          "chance": 0.04
-        },
-        {
-          "bossId": 18,
-          "chance": 0.06
-        },
-        {
-          "bossId": 19,
-          "chance": 0.05
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.07
-        },
-        {
-          "bossId": 21,
-          "chance": 0.17
-        },
-        {
-          "bossId": 28,
-          "chance": 0.1
-        },
-        {
-          "bossId": 22,
-          "chance": 0.28
-        },
-        {
-          "bossId": 26,
-          "chance": 0.4
-        },
-        {
-          "bossId": 27,
-          "chance": 0.16
-        },
-        {
-          "bossId": 23,
-          "chance": 0.04
-        },
-        {
-          "bossId": 6,
-          "chance": 0.16
-        },
-        {
-          "bossId": 5,
-          "chance": 0.02
-        },
-        {
-          "bossId": 8,
-          "chance": 0.02
-        },
-        {
-          "bossId": 7,
-          "chance": 0.03
-        },
-        {
-          "bossId": 10,
-          "chance": 0.03
-        },
-        {
-          "bossId": 11,
-          "chance": 0.09
-        },
-        {
-          "bossId": 24,
-          "chance": 0.07
+          "chance": 0.06
         }
       ],
       "slots": [
@@ -2459,84 +1692,13 @@
       "name": "Silithid Husked Launcher",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Silithid Husked Launcher</b><span>Binds when equipped</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>68 - 128 Damage</div><div>Speed 2.80</div></div><span>(35.0 damage per second)<br/>+4 Agility<br/>+10 Stamina<br/>Requires Level 60<br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Silithid Husked Launcher</b><span>Binds when equipped</span><div><div><span>Ranged</span></div><div><span>Gun</span></div></div><div><div>68 - 128 Damage</div><div>Speed 2.80</div></div><span>(35.0 damage per second)<br/>+4 Agility<br/>+10 Stamina<br/>Requires Level 60<br/></span></div>",
       "icon": "inv_weapon_rifle_10.png",
       "dropsFrom": [
         {
-          "bossId": 25,
-          "chance": 0.08
-        },
-        {
-          "bossId": 14,
-          "chance": 0.04
-        },
-        {
-          "bossId": 15,
-          "chance": 0.04
-        },
-        {
-          "bossId": 16,
-          "chance": 0.05
-        },
-        {
-          "bossId": 17,
-          "chance": 0.05
-        },
-        {
-          "bossId": 18,
-          "chance": 0.05
-        },
-        {
-          "bossId": 19,
-          "chance": 0.08
-        },
-        {
-          "bossId": 27,
-          "chance": 0.11
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.06
-        },
-        {
-          "bossId": 21,
-          "chance": 0.05
-        },
-        {
-          "bossId": 22,
-          "chance": 0.1
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 23,
-          "chance": 0.22
-        },
-        {
-          "bossId": 7,
-          "chance": 0.1
-        },
-        {
-          "bossId": 5,
-          "chance": 0.02
-        },
-        {
-          "bossId": 8,
-          "chance": 0.07
-        },
-        {
-          "bossId": 9,
-          "chance": 0.04
-        },
-        {
-          "bossId": 10,
-          "chance": 0.03
-        },
-        {
-          "bossId": 24,
-          "chance": 0.06
+          "chance": 0.08
         }
       ],
       "slots": [
@@ -2551,88 +1713,13 @@
       "name": "The Lost Kris of Zedd",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">The Lost Kris of Zedd</b><span>Binds when equipped</span><div><div><span>Main Hand</span></div><div><span>Dagger</span></div></div><div><div>41 - 83 Damage</div><div>Speed 1.50</div></div><span>(41.5 damage per second)<br/>+6 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 14.</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">The Lost Kris of Zedd</b><span>Binds when equipped</span><div><div><span>Main Hand</span></div><div><span>Dagger</span></div></div><div><div>41 - 83 Damage</div><div>Speed 1.50</div></div><span>(41.5 damage per second)<br/>+6 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 14.</span><br/></span></div>",
       "icon": "inv_sword_32.png",
       "dropsFrom": [
         {
-          "bossId": 25,
-          "chance": 0.3
-        },
-        {
-          "bossId": 13,
-          "chance": 0.11
-        },
-        {
-          "bossId": 14,
-          "chance": 0.04
-        },
-        {
-          "bossId": 15,
-          "chance": 0.02
-        },
-        {
-          "bossId": 16,
-          "chance": 0.07
-        },
-        {
-          "bossId": 17,
-          "chance": 0.07
-        },
-        {
-          "bossId": 18,
-          "chance": 0.16
-        },
-        {
-          "bossId": 19,
-          "chance": 0.05
-        },
-        {
+          "npcId": 21,
           "bossId": 20,
-          "chance": 0.07
-        },
-        {
-          "bossId": 21,
-          "chance": 0.03
-        },
-        {
-          "bossId": 28,
-          "chance": 0.4
-        },
-        {
-          "bossId": 22,
-          "chance": 0.07
-        },
-        {
-          "bossId": 26,
-          "chance": 0.1
-        },
-        {
-          "bossId": 23,
-          "chance": 0.33
-        },
-        {
-          "bossId": 8,
-          "chance": 0.02
-        },
-        {
-          "bossId": 7,
-          "chance": 0.14
-        },
-        {
-          "bossId": 9,
-          "chance": 0.04
-        },
-        {
-          "bossId": 10,
-          "chance": 0.1
-        },
-        {
-          "bossId": 11,
-          "chance": 0.13
-        },
-        {
-          "bossId": 24,
-          "chance": 0.08
+          "chance": 0.3
         }
       ],
       "slots": [
@@ -2647,47 +1734,37 @@
       "name": "Codex of Greater Heal V",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Codex of Greater Heal V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Priest<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Greater Heal (Rank 5).</span><br/>|cFFFFFFFFValue:|r |cffffd10015|r|cffffd100g|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Codex of Greater Heal V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Priest<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Greater Heal (Rank 5).</span><br/></span></div>",
       "icon": "inv_misc_book_09.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -2701,47 +1778,37 @@
       "name": "Codex of Prayer of Healing V",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Codex of Prayer of Healing V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Priest<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Prayer of Healing (Rank 5).</span><br/>|cFFFFFFFFValue:|r |cffffd10012|r|cffffd100g|r |cff98b0e06|r|cff98b0e0s|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Codex of Prayer of Healing V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Priest<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Prayer of Healing (Rank 5).</span><br/></span></div>",
       "icon": "inv_misc_book_09.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -2755,47 +1822,37 @@
       "name": "Codex of Renew X",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Codex of Renew X</b><div><div><span>Book</span></div><div></div></div><span>Classes: Priest<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Renew (Rank 10).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Codex of Renew X</b><div><div><span>Book</span></div><div></div></div><span>Classes: Priest<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Renew (Rank 10).</span><br/></span></div>",
       "icon": "inv_misc_book_09.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -2809,47 +1866,37 @@
       "name": "Tome of Fireball XII",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Fireball XII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Fireball (Rank 12).</span><br/>|cFFFFFFFFValue:|r |cffffd10011|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r |cffc8602c93|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Fireball XII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Fireball (Rank 12).</span><br/></span></div>",
       "icon": "inv_misc_book_07.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -2863,47 +1910,37 @@
       "name": "Tome of Frostbolt XI",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Frostbolt XI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Frostbolt (Rank 11).</span><br/>|cFFFFFFFFValue:|r |cffffd10015|r|cffffd100g|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Frostbolt XI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Frostbolt (Rank 11).</span><br/></span></div>",
       "icon": "inv_misc_book_07.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -2917,47 +1954,37 @@
       "name": "Tome of Arcane Missiles VIII",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Arcane Missiles VIII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Arcane Missiles (Rank 8).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tome of Arcane Missiles VIII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Mage<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Arcane Missiles (Rank 8).</span><br/></span></div>",
       "icon": "inv_misc_book_07.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -2971,47 +1998,37 @@
       "name": "Grimoire of Shadow Bolt X",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Grimoire of Shadow Bolt X</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warlock<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Shadow Bolt (Rank 10).</span><br/>|cFFFFFFFFValue:|r |cffffd10013|r|cffffd100g|r |cff98b0e098|r|cff98b0e0s|r |cffc8602c92|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Grimoire of Shadow Bolt X</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warlock<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Shadow Bolt (Rank 10).</span><br/></span></div>",
       "icon": "inv_misc_book_06.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3025,47 +2042,37 @@
       "name": "Grimoire of Corruption VII",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Grimoire of Corruption VII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warlock<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Corruption (Rank 7).</span><br/>|cFFFFFFFFValue:|r |cffffd10013|r|cffffd100g|r |cff98b0e090|r|cff98b0e0s|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Grimoire of Corruption VII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warlock<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Corruption (Rank 7).</span><br/></span></div>",
       "icon": "inv_misc_book_06.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3079,47 +2086,37 @@
       "name": "Grimoire of Immolate VIII",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Grimoire of Immolate VIII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warlock<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Immolate (Rank 8).</span><br/>|cFFFFFFFFValue:|r |cffffd10011|r|cffffd100g|r |cff98b0e050|r|cff98b0e0s|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Grimoire of Immolate VIII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warlock<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Immolate (Rank 8).</span><br/></span></div>",
       "icon": "inv_misc_book_06.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3133,47 +2130,37 @@
       "name": "Handbook of Backstab IX",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Handbook of Backstab IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Rogue<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Backstab (Rank 9).</span><br/>|cFFFFFFFFValue:|r |cffffd10016|r|cffffd100g|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Handbook of Backstab IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Rogue<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Backstab (Rank 9).</span><br/></span></div>",
       "icon": "inv_misc_book_10.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3187,47 +2174,37 @@
       "name": "Handbook of Feint V",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Handbook of Feint V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Rogue<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Feint (Rank 5).</span><br/>|cFFFFFFFFValue:|r |cffffd10011|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Handbook of Feint V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Rogue<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Feint (Rank 5).</span><br/></span></div>",
       "icon": "inv_misc_book_10.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3241,47 +2218,37 @@
       "name": "Handbook of Deadly Poison V",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Handbook of Lethal Poisons</b><div><div><span>Book</span></div><div></div></div><span>Classes: Rogue<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Corrosive Poison (Rank 2) and Deadly Poison (Rank 5).</span><br/><span class=\"q\">\"Everything you need to get the job done quietly, efficiently, and without a mess.\"</span><br/>|cFFFFFFFFValue:|r |cffffd10017|r|cffffd100g|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Handbook of Lethal Poisons</b><div><div><span>Book</span></div><div></div></div><span>Classes: Rogue<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Corrosive Poison (Rank 2) and Deadly Poison (Rank 5).</span><br/><span class=\"q\">\"Everything you need to get the job done quietly, efficiently, and without a mess.\"</span><br/></span></div>",
       "icon": "inv_misc_book_10.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3295,47 +2262,37 @@
       "name": "Book of Healing Touch XI",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Book of Healing Touch XI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Druid<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Healing Touch (Rank 11).</span><br/>|cFFFFFFFFValue:|r |cffffd10012|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r |cffc8602c99|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Book of Healing Touch XI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Druid<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Healing Touch (Rank 11).</span><br/></span></div>",
       "icon": "inv_misc_book_11.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3349,47 +2306,37 @@
       "name": "Book of Rejuvenation XI",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Book of Rejuvenation XI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Druid<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Rejuvenation (Rank 11).</span><br/>|cFFFFFFFFValue:|r |cffffd10029|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r |cffc8602c99|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Book of Rejuvenation XI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Druid<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Rejuvenation (Rank 11).</span><br/></span></div>",
       "icon": "inv_misc_book_11.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3403,47 +2350,37 @@
       "name": "Book of Starfire VII",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Book of Starfire VII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Druid<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Starfire (Rank 7).</span><br/>|cFFFFFFFFValue:|r |cffffd10017|r|cffffd100g|r |cff98b0e049|r|cff98b0e0s|r |cffc8602c97|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Book of Starfire VII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Druid<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Starfire (Rank 7).</span><br/></span></div>",
       "icon": "inv_misc_book_11.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3457,47 +2394,37 @@
       "name": "Guide: Serpent Sting IX",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Guide: Serpent Sting IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Hunter<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Serpent Sting (Rank 9).</span><br/>|cFFFFFFFFValue:|r |cffffd10013|r|cffffd100g|r |cff98b0e084|r|cff98b0e0s|r |cffc8602c97|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Guide: Serpent Sting IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Hunter<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Serpent Sting (Rank 9).</span><br/></span></div>",
       "icon": "inv_misc_book_02.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3511,47 +2438,37 @@
       "name": "Guide: Multi-Shot V",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Guide: Multi-Shot V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Hunter<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Multi-Shot (Rank 5).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Guide: Multi-Shot V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Hunter<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Multi-Shot (Rank 5).</span><br/></span></div>",
       "icon": "inv_misc_book_02.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3565,47 +2482,37 @@
       "name": "Guide: Aspect of the Hawk VII",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Guide: Aspect of the Hawk VII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Hunter<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Aspect of the Hawk (Rank 7).</span><br/>|cFFFFFFFFValue:|r |cffffd10012|r|cffffd100g|r |cff98b0e080|r|cff98b0e0s|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Guide: Aspect of the Hawk VII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Hunter<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Aspect of the Hawk (Rank 7).</span><br/></span></div>",
       "icon": "inv_misc_book_02.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3619,47 +2526,37 @@
       "name": "Tablet of Healing Wave X",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tablet of Healing Wave X</b><div><div><span>Book</span></div><div></div></div><span>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Healing Wave (Rank 10).</span><br/>|cFFFFFFFFValue:|r |cffffd10012|r|cffffd100g|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tablet of Healing Wave X</b><div><div><span>Book</span></div><div></div></div><span>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Healing Wave (Rank 10).</span><br/></span></div>",
       "icon": "inv_misc_stonetablet_11.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3673,47 +2570,37 @@
       "name": "Tablet of Strength of Earth Totem V",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tablet of Strength of Earth Totem V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Strength of Earth Totem (Rank 5).</span><br/>|cFFFFFFFFValue:|r |cffffd10015|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r |cffc8602c99|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tablet of Strength of Earth Totem V</b><div><div><span>Book</span></div><div></div></div><span>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Strength of Earth Totem (Rank 5).</span><br/></span></div>",
       "icon": "inv_misc_stonetablet_11.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3727,47 +2614,37 @@
       "name": "Tablet of Grace of Air Totem III",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tablet of Grace of Air Totem III</b><div><div><span>Book</span></div><div></div></div><span>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Grace of Air Totem (Rank 3).</span><br/>|cFFFFFFFFValue:|r |cffffd10022|r|cffffd100g|r |cff98b0e089|r|cff98b0e0s|r |cffc8602c99|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Tablet of Grace of Air Totem III</b><div><div><span>Book</span></div><div></div></div><span>Classes: Shaman<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Grace of Air Totem (Rank 3).</span><br/></span></div>",
       "icon": "inv_misc_stonetablet_11.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3781,47 +2658,37 @@
       "name": "Libram: Blessing of Wisdom VI",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Libram: Blessing of Wisdom VI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Blessing of Wisdom (Rank 6).</span><br/>|cFFFFFFFFValue:|r |cffffd10014|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r |cffc8602c96|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Libram: Blessing of Wisdom VI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Blessing of Wisdom (Rank 6).</span><br/></span></div>",
       "icon": "inv_misc_book_08.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3835,47 +2702,37 @@
       "name": "Libram: Blessing of Might VII",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Libram: Blessing of Might VII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Blessing of Might (Rank 7).</span><br/>|cFFFFFFFFValue:|r |cffffd10020|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r |cffc8602c97|r|cffc8602cc|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Libram: Blessing of Might VII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Blessing of Might (Rank 7).</span><br/></span></div>",
       "icon": "inv_misc_book_08.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3889,47 +2746,37 @@
       "name": "Libram: Holy Light IX",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Libram: Holy Light IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Holy Light (Rank 9).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Libram: Holy Light IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Paladin<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Holy Light (Rank 9).</span><br/></span></div>",
       "icon": "inv_misc_book_08.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3943,47 +2790,37 @@
       "name": "Manual of Battle Shout VII",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Battle Shout VII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warrior<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Battle Shout (Rank 7).</span><br/>|cFFFFFFFFValue:|r |cffffd10019|r|cffffd100g|r |cff98b0e099|r|cff98b0e0s|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Battle Shout VII</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warrior<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Battle Shout (Rank 7).</span><br/></span></div>",
       "icon": "inv_misc_book_03.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -3997,47 +2834,37 @@
       "name": "Manual of Revenge VI",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Revenge VI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warrior<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Revenge (Rank 6).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Revenge VI</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warrior<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Revenge (Rank 6).</span><br/></span></div>",
       "icon": "inv_misc_book_03.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -4051,47 +2878,37 @@
       "name": "Manual of Heroic Strike IX",
       "classes": [],
       "quality": 3,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Heroic Strike IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warrior<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Heroic Strike (Rank 9).</span><br/>|cFFFFFFFFValue:|r |cffff2020Miscellaneous|r</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Manual of Heroic Strike IX</b><div><div><span>Book</span></div><div></div></div><span>Classes: Warrior<br/>Requires Level 60<br/><span class=\"q2\">Use: Teaches Heroic Strike (Rank 9).</span><br/></span></div>",
       "icon": "inv_misc_book_03.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 11.11
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 3.704
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 3.704
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 3.704
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 3.704
         },
         {
-          "bossId": 0,
-          "chance": 3.704
-        },
-        {
-          "bossId": 4,
-          "chance": 3.704
-        },
-        {
-          "bossId": 1,
-          "chance": 3.704
-        },
-        {
-          "bossId": 2,
-          "chance": 3.704
-        },
-        {
-          "bossId": 3,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 3.704
         }
       ],
@@ -4109,63 +2926,38 @@
       "icon": "inv_misc_note_01.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 1.0
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 1.0
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 1.0
         },
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 1.0
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 1.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 1.0
         },
         {
-          "bossId": 29,
-          "chance": 1.0
-        },
-        {
-          "bossId": 30,
-          "chance": 1.0
-        },
-        {
-          "bossId": 31,
-          "chance": 1.0
-        },
-        {
-          "bossId": 32,
-          "chance": 1.0
-        },
-        {
-          "bossId": 33,
-          "chance": 1.0
-        },
-        {
-          "bossId": 34,
-          "chance": 1.0
-        },
-        {
-          "bossId": 35,
-          "chance": 1.0
-        },
-        {
-          "bossId": 36,
-          "chance": 1.0
-        },
-        {
-          "bossId": 37,
+          "npcId": 21,
+          "bossId": 20,
           "chance": 1.0
         }
       ],
@@ -4183,63 +2975,38 @@
       "icon": "inv_misc_note_01.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 1.0
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 1.0
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 1.0
         },
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 1.0
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 1.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 1.0
         },
         {
-          "bossId": 29,
-          "chance": 1.0
-        },
-        {
-          "bossId": 30,
-          "chance": 1.0
-        },
-        {
-          "bossId": 31,
-          "chance": 1.0
-        },
-        {
-          "bossId": 32,
-          "chance": 1.0
-        },
-        {
-          "bossId": 33,
-          "chance": 1.0
-        },
-        {
-          "bossId": 34,
-          "chance": 1.0
-        },
-        {
-          "bossId": 35,
-          "chance": 1.0
-        },
-        {
-          "bossId": 36,
-          "chance": 1.0
-        },
-        {
-          "bossId": 37,
+          "npcId": 21,
+          "bossId": 20,
           "chance": 1.0
         }
       ],
@@ -4257,63 +3024,38 @@
       "icon": "inv_misc_note_01.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 1.0
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 1.0
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 1.0
         },
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 1.0
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 1.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 1.0
         },
         {
-          "bossId": 29,
-          "chance": 1.0
-        },
-        {
-          "bossId": 30,
-          "chance": 1.0
-        },
-        {
-          "bossId": 31,
-          "chance": 1.0
-        },
-        {
-          "bossId": 32,
-          "chance": 1.0
-        },
-        {
-          "bossId": 33,
-          "chance": 1.0
-        },
-        {
-          "bossId": 34,
-          "chance": 1.0
-        },
-        {
-          "bossId": 35,
-          "chance": 1.0
-        },
-        {
-          "bossId": 36,
-          "chance": 1.0
-        },
-        {
-          "bossId": 37,
+          "npcId": 21,
+          "bossId": 20,
           "chance": 1.0
         }
       ],
@@ -4331,63 +3073,38 @@
       "icon": "inv_misc_note_01.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 1.0
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 1.0
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 1.0
         },
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 1.0
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 1.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 1.0
         },
         {
-          "bossId": 29,
-          "chance": 1.0
-        },
-        {
-          "bossId": 30,
-          "chance": 1.0
-        },
-        {
-          "bossId": 31,
-          "chance": 1.0
-        },
-        {
-          "bossId": 32,
-          "chance": 1.0
-        },
-        {
-          "bossId": 33,
-          "chance": 1.0
-        },
-        {
-          "bossId": 34,
-          "chance": 1.0
-        },
-        {
-          "bossId": 35,
-          "chance": 1.0
-        },
-        {
-          "bossId": 36,
-          "chance": 1.0
-        },
-        {
-          "bossId": 37,
+          "npcId": 21,
+          "bossId": 20,
           "chance": 1.0
         }
       ],
@@ -4405,63 +3122,38 @@
       "icon": "inv_misc_note_01.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 1.0
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 1.0
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 1.0
         },
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 1.0
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 1.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 1.0
         },
         {
-          "bossId": 29,
-          "chance": 1.0
-        },
-        {
-          "bossId": 30,
-          "chance": 1.0
-        },
-        {
-          "bossId": 31,
-          "chance": 1.0
-        },
-        {
-          "bossId": 32,
-          "chance": 1.0
-        },
-        {
-          "bossId": 33,
-          "chance": 1.0
-        },
-        {
-          "bossId": 34,
-          "chance": 1.0
-        },
-        {
-          "bossId": 35,
-          "chance": 1.0
-        },
-        {
-          "bossId": 36,
-          "chance": 1.0
-        },
-        {
-          "bossId": 37,
+          "npcId": 21,
+          "bossId": 20,
           "chance": 1.0
         }
       ],
@@ -4479,63 +3171,38 @@
       "icon": "inv_misc_note_01.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 1.0
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 1.0
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 1.0
         },
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 1.0
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 1.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 1.0
         },
         {
-          "bossId": 29,
-          "chance": 1.0
-        },
-        {
-          "bossId": 30,
-          "chance": 1.0
-        },
-        {
-          "bossId": 31,
-          "chance": 1.0
-        },
-        {
-          "bossId": 32,
-          "chance": 1.0
-        },
-        {
-          "bossId": 33,
-          "chance": 1.0
-        },
-        {
-          "bossId": 34,
-          "chance": 1.0
-        },
-        {
-          "bossId": 35,
-          "chance": 1.0
-        },
-        {
-          "bossId": 36,
-          "chance": 1.0
-        },
-        {
-          "bossId": 37,
+          "npcId": 21,
+          "bossId": 20,
           "chance": 1.0
         }
       ],
@@ -4553,63 +3220,38 @@
       "icon": "inv_misc_note_01.png",
       "dropsFrom": [
         {
-          "bossId": 0,
+          "npcId": 14,
+          "bossId": 14,
           "chance": 1.0
         },
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 1.0
         },
         {
-          "bossId": 3,
+          "npcId": 18,
+          "bossId": 17,
           "chance": 1.0
         },
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 1.0
         },
         {
-          "bossId": 1,
+          "npcId": 16,
+          "bossId": 15,
           "chance": 1.0
         },
         {
-          "bossId": 2,
+          "npcId": 19,
+          "bossId": 18,
           "chance": 1.0
         },
         {
-          "bossId": 29,
-          "chance": 1.0
-        },
-        {
-          "bossId": 30,
-          "chance": 1.0
-        },
-        {
-          "bossId": 31,
-          "chance": 1.0
-        },
-        {
-          "bossId": 32,
-          "chance": 1.0
-        },
-        {
-          "bossId": 33,
-          "chance": 1.0
-        },
-        {
-          "bossId": 34,
-          "chance": 1.0
-        },
-        {
-          "bossId": 35,
-          "chance": 1.0
-        },
-        {
-          "bossId": 36,
-          "chance": 1.0
-        },
-        {
-          "bossId": 37,
+          "npcId": 21,
+          "bossId": 20,
           "chance": 1.0
         }
       ],
@@ -4627,7 +3269,8 @@
       "icon": "inv_misc_ahnqirajtrinket_04.png",
       "dropsFrom": [
         {
-          "bossId": 4,
+          "npcId": 17,
+          "bossId": 16,
           "chance": 100.0
         }
       ],
@@ -4645,7 +3288,8 @@
       "icon": "inv_scroll_06.png",
       "dropsFrom": [
         {
-          "bossId": 12,
+          "npcId": 20,
+          "bossId": 19,
           "chance": 6.0
         }
       ],
@@ -4657,156 +3301,74 @@
   ],
   "bosses": [
     {
-      "bossId": 0,
+      "id": 14,
       "name": "Kurinnaxx"
     },
     {
-      "bossId": 1,
+      "id": 15,
       "name": "General Rajaxx"
     },
     {
-      "bossId": 2,
-      "name": "Ayamiss the Hunter"
-    },
-    {
-      "bossId": 3,
-      "name": "Buru the Gorger"
-    },
-    {
-      "bossId": 4,
+      "id": 16,
       "name": "Moam"
     },
     {
-      "bossId": 5,
-      "name": "Captain Tuubid"
+      "id": 17,
+      "name": "Buru"
     },
     {
-      "bossId": 6,
-      "name": "Colonel Zerran"
+      "id": 18,
+      "name": "Ayamiss"
     },
     {
-      "bossId": 7,
-      "name": "Major Yeggeth"
+      "id": 19,
+      "name": "Ossirian"
     },
     {
-      "bossId": 8,
-      "name": "Captain Qeez"
-    },
-    {
-      "bossId": 9,
-      "name": "Captain Xurrem"
-    },
-    {
-      "bossId": 10,
-      "name": "Captain Drenn"
-    },
-    {
-      "bossId": 11,
-      "name": "Major Pakkon"
-    },
-    {
-      "bossId": 12,
-      "name": "Ossirian the Unscarred"
-    },
-    {
-      "bossId": 13,
-      "name": "Hive'Zara Collector"
-    },
+      "id": 20,
+      "name": "Trash"
+    }
+  ],
+  "npcs": [
     {
       "bossId": 14,
-      "name": "Hive'Zara Soldier"
+      "id": 14,
+      "name": "Kurinnaxx"
     },
     {
       "bossId": 15,
-      "name": "Hive'Zara Sandstalker"
+      "id": 15,
+      "name": "Rajaxx's Captains"
+    },
+    {
+      "bossId": 15,
+      "id": 16,
+      "name": "General Rajaxx"
     },
     {
       "bossId": 16,
-      "name": "Hive'Zara Wasp"
+      "id": 17,
+      "name": "Moam"
     },
     {
       "bossId": 17,
-      "name": "Hive'Zara Stinger"
+      "id": 18,
+      "name": "Buru the Gorger"
     },
     {
       "bossId": 18,
-      "name": "Silicate Feeder"
+      "id": 19,
+      "name": "Ayamiss the Hunter"
     },
     {
       "bossId": 19,
-      "name": "Flesh Hunter"
+      "id": 20,
+      "name": "Ossirian the Unscarred"
     },
     {
       "bossId": 20,
-      "name": "Obsidian Destroyer"
-    },
-    {
-      "bossId": 21,
-      "name": "Anubisath Guardian"
-    },
-    {
-      "bossId": 22,
-      "name": "Spitting Scarab"
-    },
-    {
-      "bossId": 23,
-      "name": "Qiraji Warrior"
-    },
-    {
-      "bossId": 24,
-      "name": "Qiraji Swarmguard"
-    },
-    {
-      "bossId": 25,
-      "name": "Hive'Zara Drone"
-    },
-    {
-      "bossId": 26,
-      "name": "Qiraji Gladiator"
-    },
-    {
-      "bossId": 27,
-      "name": "Hive'Zara Tail Lasher"
-    },
-    {
-      "bossId": 28,
-      "name": "Shrieker Scarab"
-    },
-    {
-      "bossId": 29,
-      "name": "Princess Yauj"
-    },
-    {
-      "bossId": 30,
-      "name": "Princess Huhuran"
-    },
-    {
-      "bossId": 31,
-      "name": "Vem"
-    },
-    {
-      "bossId": 32,
-      "name": "Ouro"
-    },
-    {
-      "bossId": 33,
-      "name": "Viscidus"
-    },
-    {
-      "bossId": 34,
-      "name": "Lord Kri"
-    },
-    {
-      "bossId": 35,
-      "name": "The Prophet Skeram"
-    },
-    {
-      "bossId": 36,
-      "name": "Battleguard Sartura"
-    },
-    {
-      "bossId": 37,
-      "name": "Fankriss the Unyielding"
+      "id": 21,
+      "name": "Trash"
     }
   ]
 }

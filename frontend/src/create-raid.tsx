@@ -28,9 +28,9 @@ export const CreateRaid = (
   const navigate = useNavigate()
 
   const [instances, setInstances] = useState<Instance[]>()
+  const [instance, setInstance] = useState<Instance>()
   const [hrItemIds, setHrItemIds] = useState<number[]>([])
 
-  const [instanceId, setInstanceId] = useState<number>()
   const [description, setDescription] = useState("")
   const [useSrPlus, setUseSrPlus] = useState(false)
   const [allowDuplicateSr, setAllowDuplicateSr] = useState(false)
@@ -44,14 +44,14 @@ export const CreateRaid = (
 
   function createRaid() {
     if (
-      instanceId == undefined || srCount == undefined
+      instance == undefined || srCount == undefined
     ) {
       alert("Missing information")
       return
     }
     const request: CreateRaidRequest = {
       adminPassword: "", // Maybe we completely remove this later
-      instanceId,
+      instanceId: instance.id,
       useSrPlus,
       description,
       time: time.toISOString(),
@@ -91,18 +91,18 @@ export const CreateRaid = (
       <Paper shadow="sm" p="sm">
         <Stack gap="md">
           <Select
-            withAsterisk={instanceId == undefined}
+            withAsterisk={instance == undefined}
             label="Instance"
             searchable
             placeholder="Select instance"
             data={instances?.map((e) => {
               return { value: e.id.toString(), label: e.name }
             })}
-            value={(instanceId || "").toString()}
+            value={instance?.id.toString() || null}
             renderOption={renderInstance(instances || [])}
             filter={instanceFilter(instances || [])}
             onChange={(v) => {
-              setInstanceId(Number(v))
+              setInstance(instances?.find((i) => i.id == Number(v)))
               setHrItemIds([])
             }}
           />
@@ -166,21 +166,24 @@ export const CreateRaid = (
             }}
             label="Use hard reserves"
           />
-          <Collapse in={useHr && !!instanceId}>
-            <ItemSelect
-              label={"Select the item's you want to hard-reserve"}
-              value={hrItemIds}
-              onChange={setHrItemIds}
-              sameItemLimit={1}
-              items={instances?.find((instance) => instance.id == instanceId)
-                ?.items || []}
-              itemPickerOpen={itemPickerOpen}
-            />
+          <Collapse in={useHr && instance ? true : false}>
+            {instance
+              ? (
+                <ItemSelect
+                  label={"Select the item's you want to hard-reserve"}
+                  value={hrItemIds}
+                  onChange={setHrItemIds}
+                  sameItemLimit={1}
+                  instance={instance}
+                  itemPickerOpen={itemPickerOpen}
+                />
+              )
+              : null}
           </Collapse>
           <Button
             mt="sm"
             onClick={createRaid}
-            disabled={!instanceId || !srCount ||
+            disabled={!instance || !srCount ||
               (useHr && hrItemIds.length == 0)}
           >
             Create Raid

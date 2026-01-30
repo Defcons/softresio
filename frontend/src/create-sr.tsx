@@ -7,7 +7,7 @@ import type {
   CreateSrRequest,
   CreateSrResponse,
   GetCharactersResponse,
-  Item,
+  Instance,
   Sheet,
   User,
 } from "../shared/types.ts"
@@ -33,8 +33,8 @@ import { deepEqual } from "fast-equals"
 import { modals } from "@mantine/modals"
 
 export const CreateSr = (
-  { items, sheet, loadRaid, user, itemPickerOpen }: {
-    items: Item[]
+  { instance, sheet, loadRaid, user, itemPickerOpen }: {
+    instance: Instance
     sheet: Sheet
     loadRaid: (sheet?: Sheet) => void
     user: User
@@ -211,7 +211,7 @@ export const CreateSr = (
           label="Items"
           value={selectedItemIds}
           onChange={setSelectedItemIds}
-          items={items}
+          instance={instance}
           selectedClass={selectedClass}
           user={user}
           attendees={sheet.attendees}
