@@ -57,7 +57,14 @@ export const ItemPicker = ({
 
   const possibleSlots = [
     ...new Set(
-      filteredItems.flatMap((i) => i.slots),
+      [
+        ...filteredItems.flatMap((i) => i.slots),
+        ...(filteredItems.find((i) =>
+            selectedClass && i.classes.includes(selectedClass)
+          ))
+          ? ["Class"]
+          : [],
+      ],
     ),
   ]
   const possibleTypes = [
@@ -104,9 +111,10 @@ export const ItemPicker = ({
         (item.name.toLowerCase().includes(
           debouncedSearch.toLowerCase() || "",
         )) &&
-        (slotFilter != "Class" ||
-          (selectedClass && item.classes.includes(selectedClass))) &&
-        (!slotFilter || item.slots.includes(slotFilter)) &&
+        (!slotFilter ||
+          (slotFilter == "Class" && selectedClass &&
+            item.classes.includes(selectedClass)) ||
+          item.slots.includes(slotFilter)) &&
         (!bossFilter || item.dropsFrom.find((df) => df.bossId == bossFilter)) &&
         (!typeFilter || item.types.includes(typeFilter))
       ),

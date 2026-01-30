@@ -215,6 +215,12 @@ export const Raid = (
               </Group>
               {sheet.locked ? <Badge color="red">Locked</Badge> : null}
             </Group>
+            <Badge color="var(--mantine-color-dark-5)" radius="xs">
+              {new Intl.DateTimeFormat(navigator.language, {
+                dateStyle: "medium",
+                timeStyle: "short",
+              }).format(new Date(sheet.time))}
+            </Badge>
             {sheet.description
               ? (
                 <Text span style={{ whiteSpace: "pre-line" }}>
