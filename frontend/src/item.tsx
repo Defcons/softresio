@@ -192,7 +192,7 @@ export const SelectableItem = ({
       onLongClick={onLongClick}
       onRightSectionClick={onRightSectionClick}
       rightSection={
-        <Group wrap="nowrap" mr="xs">
+        <Group wrap="nowrap" mr="xs" gap="xs">
           {attendees && user
             ? (
               <ReservedByOthers
@@ -204,7 +204,7 @@ export const SelectableItem = ({
             : null}
           {!deleteMode && !hardReserves.includes(item.id)
             ? (
-              <Text size="xs" c="grey">
+              <Text w={30} size="xs" c="grey" ta="right">
                 {chance > 1 ? Math.round(chance) : chance}%
               </Text>
             )
