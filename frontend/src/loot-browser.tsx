@@ -52,7 +52,7 @@ export const LootBrowser = (
           filter={instanceFilter(instances)}
           onChange={(v) => {
             setInstanceId(Number(v))
-            navigate("items")
+            if (!itemPickerOpen) navigate("items")
           }}
         />
       </Stack>

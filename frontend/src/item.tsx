@@ -182,7 +182,7 @@ export const SelectableItem = ({
   const highlight = showTooltipItemId == item.id ||
     (selectedItemIds || []).includes(item.id)
   const itemCount = selectedItemIds?.filter((id) => item.id == id).length || 0
-
+  const chance = item.dropsFrom[0].chance
   return (
     <ItemNameAndIcon
       item={item}
@@ -202,9 +202,13 @@ export const SelectableItem = ({
               />
             )
             : null}
-          <Text size="xs" c="grey">
-            {item.dropsFrom[0].chance}%
-          </Text>
+          {!deleteMode
+            ? (
+              <Text size="xs" c="grey">
+                {chance > 1 ? Math.round(chance) : chance}%
+              </Text>
+            )
+            : null}
           {hardReserves.includes(item.id)
             ? <Badge color="red">HR</Badge>
             : null}
@@ -272,7 +276,7 @@ export const ItemPickerElement = ({
             labelPosition="center"
             py={5}
             label={
-              <Text size="lg" c="var(--mantine-color-gray-6)">
+              <Text size="md" c="var(--mantine-color-gray-6)">
                 {element.segment}
               </Text>
             }

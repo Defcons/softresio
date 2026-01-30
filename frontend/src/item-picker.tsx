@@ -57,30 +57,19 @@ export const ItemPicker = ({
 
   const possibleSlots = [
     ...new Set(
-      instance.items.filter((i) =>
-        (!typeFilter || i.types.includes(typeFilter)) &&
-        (!bossFilter || i.dropsFrom.find((df) => df.bossId == bossFilter))
-      ).flatMap((i) => i.slots),
+      filteredItems.flatMap((i) => i.slots),
     ),
   ]
   const possibleTypes = [
-    ...new Set(
-      instance.items.filter((i) =>
-        (!slotFilter || i.slots.includes(slotFilter)) &&
-        (!bossFilter || i.dropsFrom.find((df) => df.bossId == bossFilter))
-      ).flatMap((i) => i.types),
-    ),
+    ...new Set(filteredItems.flatMap((i) => i.types)),
   ]
   const possibleBosses = [
     ...new Set(
-      instance.items.filter((i) =>
-        (!slotFilter || i.slots.includes(slotFilter)) &&
-        (!typeFilter || i.types.includes(typeFilter))
-      ).flatMap((i) =>
-        i.dropsFrom.map((df) =>
-          instance.bosses.find((boss) => boss.id == df.bossId)?.name
+      instance.bosses.filter((boss) =>
+        filteredItems.find((i) =>
+          i.dropsFrom.find((df) => df.bossId == boss.id)
         )
-      ).filter((e) => e !== undefined),
+      ).map((boss) => boss.name),
     ),
   ]
 
@@ -111,35 +100,16 @@ export const ItemPicker = ({
 
   useEffect(() => {
     setFilteredItems(
-      instance.items.filter((item) => {
-        const stringQuery = debouncedSearch?.toLowerCase() || ""
-        if (
-          !item.name.toLowerCase().includes(stringQuery)
-        ) {
-          return false
-        } else if (
-          slotFilter == "Class" && selectedClass &&
-          !item.classes.includes(selectedClass)
-        ) {
-          console.log(item.name)
-          return false
-        } else if (
-          slotFilter && slotFilter != "Class" &&
-          !item.slots.includes(slotFilter)
-        ) {
-          return false
-        } else if (
-          bossFilter && !item.dropsFrom.find((df) => df.bossId == bossFilter)
-        ) {
-          return false
-        } else if (
-          typeFilter && !item.types.includes(typeFilter)
-        ) {
-          return false
-        } else {
-          return true
-        }
-      }),
+      instance.items.filter((item) =>
+        (item.name.toLowerCase().includes(
+          debouncedSearch.toLowerCase() || "",
+        )) &&
+        (slotFilter != "Class" ||
+          (selectedClass && item.classes.includes(selectedClass))) &&
+        (!slotFilter || item.slots.includes(slotFilter)) &&
+        (!bossFilter || item.dropsFrom.find((df) => df.bossId == bossFilter)) &&
+        (!typeFilter || item.types.includes(typeFilter))
+      ),
     )
   }, [
     instance,
