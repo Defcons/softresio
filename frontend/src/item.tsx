@@ -202,7 +202,7 @@ export const SelectableItem = ({
               />
             )
             : null}
-          {!deleteMode
+          {!deleteMode && !hardReserves.includes(item.id)
             ? (
               <Text size="xs" c="grey">
                 {chance > 1 ? Math.round(chance) : chance}%
