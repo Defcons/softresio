@@ -267,7 +267,7 @@ export const SrList = (
     >
       <Table.Thead>
         <Table.Tr>
-          <Table.Th maw={35}>
+          <Table.Th w={35} maw={35}>
             <Select
               pb="sm"
               data={Object.keys(classes)}
