@@ -3,8 +3,8 @@ import process from "node:process"
 import type {
   Attendee,
   Character,
-  CreateRaidRequest,
-  CreateRaidResponse,
+  CreateEditRaidRequest,
+  CreateEditRaidResponse,
   CreateSrRequest,
   CreateSrResponse,
   DeleteSrRequest,
@@ -76,6 +76,10 @@ await sql`
 
 await sql`
   create index if not exists idxraids ON raids using gin ( raid );
+`
+
+await sql`
+  create unique index if not exists idx_raidId ON raids ((raid->'sheet'->>'raidId'));
 `
 
 await sql`
@@ -160,14 +164,14 @@ app.post("/api/sr/create", async (c) => {
     softReserves,
     user,
   }
-  const raid = await beginWithTimeout(async (tx) => {
+  const response: CreateSrResponse = await beginWithTimeout(async (tx) => {
     const [raid] = await tx<
       Raid[]
     >`select raid -> 'sheet' as sheet from raids where raid @> ${{
       sheet: { raidId },
     } as never} for update;`
-    if (!raid) return
-    if (raid.sheet.locked) return raid
+    if (!raid) return { user, error: "Raid not found" }
+    if (raid.sheet.locked) return { user, error: "Raid is locked" }
     raid.sheet.attendees = raid.sheet.attendees.filter((attendee) =>
       attendee.character.name !== character.name &&
       attendee.user.userId !== user.userId
@@ -176,23 +180,15 @@ app.post("/api/sr/create", async (c) => {
     await tx`update raids set ${sql({ raid: raid } as never)} where raid @> ${{
       sheet: { raidId },
     } as never}`
-    return raid
+    return { user, data: raid.sheet }
   })
-  if (raid) {
-    const response: CreateSrResponse = { user, data: raid.sheet }
-    return c.json(response)
-  } else {
-    const response: CreateSrResponse = {
-      user,
-      error: "An error occured while creating your SR",
-    }
-    return c.json(response)
-  }
+  return c.json(response)
 })
 
 app.post("/api/raid/create", async (c) => {
   const user = await getOrCreateUser(c)
   const {
+    raidId: editRaidId,
     instanceId,
     srCount,
     useSrPlus,
@@ -201,36 +197,55 @@ app.post("/api/raid/create", async (c) => {
     hardReserves,
     allowDuplicateSr,
   } = await c.req
-    .json() as CreateRaidRequest
-  const raidId = generateRaidId()
-  const raid: Raid = {
-    sheet: {
-      raidId,
-      instanceId,
-      time,
-      useSrPlus,
-      srCount,
-      description,
-      locked: false,
-      activityLog: [],
-      attendees: [],
-      admins: [
+    .json() as CreateEditRaidRequest
+
+  const raidId = editRaidId || generateRaidId()
+  const response: CreateEditRaidResponse = await beginWithTimeout(
+    async (tx) => {
+      const [raid] = await tx<
+        (Raid | undefined)[]
+      >`select raid -> 'sheet' as sheet from raids where raid @> ${{
+        sheet: { raidId },
+      } as never} for update;`
+
+      if (raid && !raid.sheet.admins.some((u) => u.userId == user.userId)) {
+        return ({
+          error: "You are not allowed to edit this raid",
+          user,
+        })
+      }
+
+      const updatedRaid: Raid = {
+        sheet: {
+          raidId,
+          instanceId,
+          time,
+          useSrPlus,
+          srCount,
+          description,
+          locked: false,
+          activityLog: raid?.sheet.activityLog || [],
+          attendees: raid?.sheet.attendees || [],
+          admins: raid?.sheet.admins || [user],
+          owner: raid?.sheet.owner || user,
+          hardReserves,
+          allowDuplicateSr,
+        },
+      }
+
+      if (raid?.sheet.instanceId !== updatedRaid.sheet.instanceId) {
+        updatedRaid.sheet.attendees = []
+      }
+
+      await tx`insert into raids ${
+        sql({ raid: updatedRaid } as never)
+      } on conflict ((raid->'sheet'->>'raidId')) do update set raid = EXCLUDED.raid;`
+      return ({
+        data: { raidId },
         user,
-      ],
-      owner: user,
-      password: {
-        hash: "coming soon",
-        salt: "coming soon",
-      },
-      hardReserves,
-      allowDuplicateSr,
+      })
     },
-  }
-  await sql`insert into raids ${sql({ raid: raid } as never)};`
-  const response: CreateRaidResponse = {
-    data: { raidId },
-    user,
-  }
+  )
 
   return c.json(response)
 })
@@ -243,13 +258,13 @@ app.post("/api/admin", async (c) => {
     remove,
   } = await c.req
     .json() as EditAdminRequest
-  const raid = await beginWithTimeout(async (tx) => {
+  const response: EditAdminResponse = await beginWithTimeout(async (tx) => {
     const [raid] = await tx<
       Raid[]
     >`select raid -> 'sheet' as sheet from raids where raid @> ${{
       sheet: { raidId },
     } as never} for update;`
-    if (!raid) return
+    if (!raid) return { user, error: "Raid not found" }
 
     if (raid.sheet.admins.some((u) => u.userId == user.userId)) {
       if (add && raid.sheet.admins.some((a) => a.userId != add.userId)) {
@@ -267,62 +282,46 @@ app.post("/api/admin", async (c) => {
       } as never}`
     }
 
-    return raid
+    return { user, data: raid.sheet }
   })
-  if (raid) {
-    const response: EditAdminResponse = { user, data: raid.sheet }
-    return c.json(response)
-  } else {
-    const response: EditAdminResponse = {
-      user,
-      error: "An error occured while editing admins",
-    }
-    return c.json(response)
-  }
+  return c.json(response)
 })
 
 app.post("/api/raid/:raidId/lock", async (c) => {
   const user = await getOrCreateUser(c)
   const raidId = c.req.param("raidId")
-  const raid = await beginWithTimeout(async (tx) => {
+  const response: LockRaidResponse = await beginWithTimeout(async (tx) => {
     const [raid] = await tx<
       Raid[]
     >`select raid -> 'sheet' as sheet from raids where raid @> ${{
       sheet: { raidId },
     } as never} for update;`
-    if (!raid) return
+    if (!raid) return { user, error: "Raid not found" }
 
     if (raid.sheet.admins.some((u) => u.userId == user.userId)) {
       raid.sheet.locked = !raid.sheet.locked
+    } else {
+      return { user, error: "You are not allowed to lock this raid" }
     }
 
     await tx`update raids set ${sql({ raid: raid } as never)} where raid @> ${{
       sheet: { raidId },
     } as never}`
-    return raid
+    return { user, data: raid.sheet }
   })
-  if (raid) {
-    const response: LockRaidResponse = { user, data: raid.sheet }
-    return c.json(response)
-  } else {
-    const response: CreateSrResponse = {
-      user,
-      error: "An error occured while locking raid",
-    }
-    return c.json(response)
-  }
+  return c.json(response)
 })
 
 app.post("/api/sr/delete", async (c) => {
   const user = await getOrCreateUser(c)
   const request = await c.req.json() as DeleteSrRequest
-  const raid = await beginWithTimeout(async (tx) => {
+  const response: DeleteSrResponse = await beginWithTimeout(async (tx) => {
     const [raid] = await tx<
       Raid[]
     >`select raid -> 'sheet' as sheet from raids where raid @> ${{
       sheet: { raidId: request.raidId },
     } as never} for update;`
-    if (!raid) return
+    if (!raid) return { user, error: "Raid not found" }
 
     if (
       raid.sheet.admins.some((u) => u.userId == user.userId) ||
@@ -344,20 +343,12 @@ app.post("/api/sr/delete", async (c) => {
       } where raid @> ${{
         sheet: { raidId: request.raidId },
       } as never}`
+      return { user, data: raid.sheet }
+    } else {
+      return { user, error: "You are not allowed to delete that SR" }
     }
-
-    return raid
   })
-  if (raid) {
-    const response: DeleteSrResponse = { user, data: raid.sheet }
-    return c.json(response)
-  } else {
-    const response: DeleteSrResponse = {
-      user,
-      error: "An error occured while deleting sr",
-    }
-    return c.json(response)
-  }
+  return c.json(response)
 })
 
 app.get("/api/raid/:raidId", async (c) => {

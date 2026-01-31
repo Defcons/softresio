@@ -59,7 +59,6 @@ export interface Sheet {
   time: string // rfc 3339
   attendees: Attendee[]
   admins: User[]
-  password: Password
   activityLog: Activity[]
   srCount: number
   description: string
@@ -79,7 +78,8 @@ interface GenericResponse<T> {
   user: User
 }
 
-export interface CreateRaidRequest {
+export interface CreateEditRaidRequest {
+  raidId?: string // Only set if it's an edit
   instanceId: number
   description: string
   useSrPlus: boolean
@@ -92,7 +92,7 @@ export interface CreateRaidRequest {
 
 export type GetInstancesResponse = GenericResponse<Instance[]>
 
-export type CreateRaidResponse = GenericResponse<{ raidId: string }>
+export type CreateEditRaidResponse = GenericResponse<{ raidId: string }>
 
 export type CreateSrResponse = GenericResponse<Sheet>
 

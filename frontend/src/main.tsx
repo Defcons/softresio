@@ -48,6 +48,11 @@ function App() {
                       path="/create/items"
                       element={<CreateRaid itemPickerOpen />}
                     />
+                    <Route path="/edit/:raidId" element={<CreateRaid />} />
+                    <Route
+                      path="/edit/:raidId/items"
+                      element={<CreateRaid itemPickerOpen />}
+                    />
                     <Route path="/:raidId" element={<Raid />} />
                     <Route
                       path="/:raidId/items"

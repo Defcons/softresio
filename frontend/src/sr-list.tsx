@@ -61,6 +61,7 @@ export const SrListElement = (
         </Text>
       ),
       labels: { confirm: "Confirm", cancel: "Cancel" },
+      confirmProps: { color: "red" },
       onCancel: () => console.log("Cancel"),
       onConfirm: deleteSr,
     })

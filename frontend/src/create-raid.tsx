@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useNavigate } from "react-router"
+import { useNavigate, useParams } from "react-router"
 import {
   Button,
   Collapse,
@@ -13,23 +13,29 @@ import {
   Textarea,
 } from "@mantine/core"
 import { DateTimePicker } from "@mantine/dates"
+import { modals } from "@mantine/modals"
 import { instanceFilter, instanceOrder, renderInstance } from "./instances.tsx"
 import { ItemSelect } from "./item-select.tsx"
 import type {
-  CreateRaidRequest,
-  CreateRaidResponse,
+  CreateEditRaidRequest,
+  CreateEditRaidResponse,
   GetInstancesResponse,
+  GetRaidResponse,
   Instance,
+  Sheet,
 } from "../shared/types.ts"
+import { deepEqual } from "fast-equals"
 
 export const CreateRaid = (
   { itemPickerOpen = false }: { itemPickerOpen?: boolean },
 ) => {
   const navigate = useNavigate()
+  const params = useParams()
 
+  const [sheetBeforeEdit, setSheetBeforeEdit] = useState<Sheet>()
   const [instances, setInstances] = useState<Instance[]>()
   const [instance, setInstance] = useState<Instance>()
-  const [hrItemIds, setHrItemIds] = useState<number[]>([])
+  const [hardReserves, setHardReserves] = useState<number[]>([])
 
   const [description, setDescription] = useState("")
   const [useSrPlus, setUseSrPlus] = useState(false)
@@ -42,26 +48,27 @@ export const CreateRaid = (
     ),
   )
 
-  function createRaid() {
+  const createRaid = () => {
     if (
       instance == undefined || srCount == undefined
     ) {
       alert("Missing information")
       return
     }
-    const request: CreateRaidRequest = {
+    const request: CreateEditRaidRequest = {
+      raidId: params.raidId,
       adminPassword: "", // Maybe we completely remove this later
       instanceId: instance.id,
       useSrPlus,
       description,
       time: time.toISOString(),
       srCount,
-      hardReserves: hrItemIds,
+      hardReserves,
       allowDuplicateSr,
     }
     fetch("/api/raid/create", { method: "POST", body: JSON.stringify(request) })
       .then((r) => r.json())
-      .then((j: CreateRaidResponse) => {
+      .then((j: CreateEditRaidResponse) => {
         if (j.error) {
           alert(j.error)
         } else if (j.data) {
@@ -86,6 +93,52 @@ export const CreateRaid = (
       })
   }, [])
 
+  useEffect(() => {
+    if (params.raidId && instances) {
+      fetch(`/api/raid/${params.raidId}`).then((r) => r.json()).then(
+        (j: GetRaidResponse) => {
+          if (j.error) {
+            alert(j.error)
+          } else if (j.data) {
+            const sheet = j.data
+            setInstance(instances.find((i) => i.id == sheet.instanceId))
+            setHardReserves(sheet.hardReserves)
+            setDescription(sheet.description)
+            setUseSrPlus(sheet.useSrPlus)
+            setAllowDuplicateSr(sheet.allowDuplicateSr)
+            setUseHr(sheet.hardReserves.length > 0)
+            setSrCount(sheet.srCount)
+            setTime(new Date(sheet.time))
+            setSheetBeforeEdit(sheet)
+          }
+        },
+      )
+    }
+  }, [instances])
+
+  const raidChanged = () => {
+    if (!sheetBeforeEdit) return true
+    const a = {
+      instanceId: sheetBeforeEdit.instanceId,
+      hardReserves: sheetBeforeEdit.hardReserves.sort(),
+      description: sheetBeforeEdit.description,
+      useSrPlus: sheetBeforeEdit.useSrPlus,
+      allowDuplicateSr: sheetBeforeEdit.allowDuplicateSr,
+      srCount: sheetBeforeEdit.srCount,
+      time: sheetBeforeEdit.time,
+    }
+    const b = {
+      instanceId: instance?.id,
+      hardReserves: hardReserves.sort(),
+      description,
+      useSrPlus,
+      allowDuplicateSr,
+      srCount,
+      time: time.toISOString(),
+    }
+    return !deepEqual(a, b)
+  }
+
   return (
     <>
       <Paper shadow="sm" p="sm">
@@ -103,8 +156,26 @@ export const CreateRaid = (
             renderOption={renderInstance(instances || [])}
             filter={instanceFilter(instances || [])}
             onChange={(v) => {
-              setInstance(instances?.find((i) => i.id == Number(v)))
-              setHrItemIds([])
+              const update = () => {
+                setInstance(instances?.find((i) => i.id == Number(v)))
+                setHardReserves([])
+              }
+              if (params.raidId) {
+                modals.openConfirmModal({
+                  title: "Are you sure?",
+                  centered: true,
+                  children: (
+                    <Text size="sm">
+                      Changing the instance will remove all exisiting SR's
+                    </Text>
+                  ),
+                  labels: { confirm: "Confirm", cancel: "Cancel" },
+                  confirmProps: { color: "red" },
+                  onConfirm: () => update(),
+                })
+              } else {
+                update()
+              }
             }}
           />
           <Textarea
@@ -139,7 +210,7 @@ export const CreateRaid = (
           </Stack>
           <Collapse in={(srCount || 0) > 1}>
             <Switch
-              value={allowDuplicateSr ? 1 : 0}
+              checked={allowDuplicateSr}
               onChange={(event) =>
                 setAllowDuplicateSr(event.currentTarget.checked)}
               label="Allow duplicate SRs"
@@ -154,16 +225,10 @@ export const CreateRaid = (
             placeholder="Pick date and time"
           />
           <Switch
-            disabled
-            value={useSrPlus ? 1 : 0}
-            onChange={(event) => setUseSrPlus(event.currentTarget.checked)}
-            label="Use SR+"
-          />
-          <Switch
-            value={useHr ? 1 : 0}
+            checked={useHr}
             onChange={(event) => {
               setUseHr(event.target.checked)
-              if (!event.target.checked) setHrItemIds([])
+              if (!event.target.checked) setHardReserves([])
             }}
             label="Use hard reserves"
           />
@@ -172,8 +237,8 @@ export const CreateRaid = (
               ? (
                 <ItemSelect
                   label={"Select the item's you want to hard-reserve"}
-                  value={hrItemIds}
-                  onChange={setHrItemIds}
+                  value={hardReserves}
+                  onChange={setHardReserves}
                   sameItemLimit={1}
                   instance={instance}
                   itemPickerOpen={itemPickerOpen}
@@ -185,9 +250,9 @@ export const CreateRaid = (
             mt="sm"
             onClick={createRaid}
             disabled={!instance || !srCount ||
-              (useHr && hrItemIds.length == 0)}
+              (useHr && hardReserves.length == 0) || !raidChanged()}
           >
-            Create Raid
+            {params.raidId ? "Save changes" : "Create Raid"}
           </Button>
         </Stack>
       </Paper>

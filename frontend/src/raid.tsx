@@ -45,6 +45,7 @@ import {
   IconUserFilled,
 } from "@tabler/icons-react"
 import { IconLock, IconLockOpen2, IconShieldFilled } from "@tabler/icons-react"
+import { useNavigate } from "react-router"
 import { deepEqual } from "fast-equals"
 
 const raidImage = (key: string) => {
@@ -99,6 +100,7 @@ export const Raid = (
   const [attendeesWhenExportedLast, setAttendeesWhenExportedLast] = useState<
     Attendee[]
   >()
+  const navigate = useNavigate()
 
   const loadRaid = (sheet?: Sheet) => {
     if (sheet) {
@@ -245,6 +247,12 @@ export const Raid = (
                   tooltip="Copy link to raid"
                   orange={false}
                 />
+                <Button
+                  variant="default"
+                  onClick={() => navigate(`/edit/${params.raidId}`)}
+                >
+                  Edit
+                </Button>
                 <Button
                   onClick={lockRaid}
                   variant={sheet.locked ? "" : "default"}
