@@ -287,9 +287,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Feet"
       ],
-      "types": []
+      "types": ["Plate","Mail","Leather","Cloth"]
     },
     {
       "id": 55483,
@@ -311,9 +311,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Feet"
       ],
-      "types": []
+      "types": ["Plate","Leather","Cloth"]
     },
     {
       "id": 55102,
@@ -416,9 +416,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Legs"
       ],
-      "types": []
+      "types": ["Plate","Mail","Leather","Cloth"]
     },
     {
       "id": 55489,
@@ -440,9 +440,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Legs"
       ],
-      "types": []
+      "types": ["Plate","Leather","Cloth"]
     },
     {
       "id": 55128,
@@ -1349,9 +1349,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Shoulder"
       ],
-      "types": []
+      "types": ["Plate","Mail","Leather","Cloth"]
     },
     {
       "id": 55485,
@@ -1373,9 +1373,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Shoulder"
       ],
-      "types": []
+      "types": ["Plate","Leather","Cloth"]
     },
     {
       "id": 55114,
@@ -2132,7 +2132,7 @@
         }
       ],
       "slots": [
-        "Neck"
+        "Token","Neck"
       ],
       "types": []
     },
@@ -2156,9 +2156,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Head"
       ],
-      "types": []
+      "types": ["Plate","Leather","Cloth"]
     },
     {
       "id": 55488,
@@ -2181,9 +2181,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Head"
       ],
-      "types": []
+      "types": ["Plate","Mail","Leather","Cloth"]
     },
     {
       "id": 55491,
@@ -2205,9 +2205,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Chest"
       ],
-      "types": []
+      "types": ["Plate","Leather","Cloth"]
     },
     {
       "id": 55492,
@@ -2230,9 +2230,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Chest"
       ],
-      "types": []
+      "types": ["Plate","Mail","Leather","Cloth"]
     },
     {
       "id": 55511,

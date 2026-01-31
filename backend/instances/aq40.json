@@ -1574,9 +1574,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Shoulder","Feet"
       ],
-      "types": []
+      "types": ["Plate","Mail","Leather","Cloth"]
     },
     {
       "id": 20932,
@@ -1604,9 +1604,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Shoulder","Feet"
       ],
-      "types": []
+      "types": ["Plate","Mail","Leather","Cloth"]
     },
     {
       "id": 21621,
@@ -1749,9 +1749,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Head"
       ],
-      "types": []
+      "types": ["Plate","Mail","Leather"]
     },
     {
       "id": 21602,
@@ -1914,9 +1914,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Head"
       ],
-      "types": []
+      "types": ["Plate","Cloth"]
     },
     {
       "id": 21608,
@@ -2266,9 +2266,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Legs"
       ],
-      "types": []
+      "types": ["Plate","Leather","Cloth"]
     },
     {
       "id": 20931,
@@ -2291,9 +2291,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Legs"
       ],
-      "types": []
+      "types": ["Plate","Mail","Leather","Cloth"]
     },
     {
       "id": 22732,
@@ -2600,9 +2600,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Chest"
       ],
-      "types": []
+      "types": ["Plate","Mail","Leather"]
     },
     {
       "id": 20933,
@@ -2624,9 +2624,9 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Chest"
       ],
-      "types": []
+      "types": ["Leather","Cloth"]
     },
     {
       "id": 21221,

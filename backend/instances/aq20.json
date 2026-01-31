@@ -164,7 +164,7 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Back"
       ],
       "types": []
     },
@@ -204,7 +204,7 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Back"
       ],
       "types": []
     },
@@ -248,7 +248,7 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Finger"
       ],
       "types": []
     },
@@ -293,7 +293,7 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Finger"
       ],
       "types": []
     },
@@ -810,7 +810,7 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Main Hand","One-Hand"
       ],
       "types": []
     },
@@ -850,7 +850,7 @@
         }
       ],
       "slots": [
-        "Token"
+        "Token","Main Hand","One-Hand"
       ],
       "types": []
     },
