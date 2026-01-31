@@ -898,6 +898,126 @@
         "Mount"
       ],
       "types": []
+    },
+    {
+      "id": 61524,
+      "name": "Naturecaller's Tunic",
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Leather"
+      ],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Naturecaller's Tunic</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Chest</span></div><div><span>Leather</span></div></div><span>237 Armor<br/>+20 Stamina<br/>+21 Intellect<br/>+25 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage done by Nature spells and effects by up to 30.</span><br/><span class=\"q2\">Equip: Increases damage done by Arcane spells and effects by up to 30.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span></span></div>",
+      "icon": "inv_chest_plate07.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ]
+    },
+    {
+      "id": 61522,
+      "name": "Choker of the Emerald Lord",
+      "slots": [
+        "Neck"
+      ],
+      "types": [],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Choker of the Emerald Lord</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Neck</span></div><div></div></div><span>+12 Nature Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 28.</span></span></div>",
+      "icon": "inv_jewelry_necklace_01.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ]
+    },
+    {
+      "id": 61527,
+      "name": "Breath of Solnius",
+      "slots": [
+        "Trinket"
+      ],
+      "types": [],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Breath of Solnius</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Trinket</span></div><div></div></div><span>+11 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 30.</span><br/><span class=\"q2\">Equip: Gives a 5% chance when your helpful spells land to increase your casting speed by 20 for 20 sec.</span><br/><span class=\"q\">\"Brimming with life energies.\"</span></span></div>",
+      "icon": "btnorbofchaos.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ]
+    },
+    {
+      "id": 61523,
+      "name": "Crystal Sword of the Blossom",
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Sword"
+      ],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Crystal Sword of the Blossom</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Sword</span></div></div><div><div>79 - 147 Damage</div><div>Speed 1.80</div></div><span>(62.8 damage per second)<br/>+11 Stamina<br/>+7 Nature Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Equip: +20 Attack Power.</span><br/><span class=\"q2\">Equip: Increased Swords +3.</span></span></div>",
+      "icon": "inv_sword_38.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ]
+    },
+    {
+      "id": 61525,
+      "name": "Nature's Call",
+      "slots": [
+        "Ranged"
+      ],
+      "types": [],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Nature's Call</b><span>Binds when picked up</span><span>Unique</span><div><div><span>Ranged</span></div><div><span>Bow</span></div></div><div><div>103 - 191 Damage</div><div>Speed 3.00</div></div><span>(49.0 damage per second)<br/>+8 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span><br/><span class=\"q2\">Equip: Your attacks ignore 25 of the target's armor.</span><br/><span class=\"q\">\"Favored by the dryad.\"</span></span></div>",
+      "icon": "inv_weapon_bow_04.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ]
+    },
+    {
+      "id": 61526,
+      "name": "Jadestone Protector",
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Jadestone Protector</b><span>Binds when picked up</span><div><div><span>Off Hand</span></div><div><span>Shield</span></div></div><span>3035 Armor<br/>57 Block<br/>+14 Stamina<br/>+13 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +9.</span><br/><span class=\"q2\">Equip: Increases your chance to block attacks with a shield by 1%.</span><br/><span class=\"q2\">Equip: Increases the block value of your shield by 18.</span></span></div>",
+      "icon": "inv_shield_21.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ]
     }
   ],
   "bosses": [
