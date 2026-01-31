@@ -64,6 +64,7 @@ export const ItemSelect = (
               }}
               onClick={() => navigate("items")}
               deleteMode
+              hideChance
               user={user}
               attendees={attendees}
             />

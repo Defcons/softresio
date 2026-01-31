@@ -162,6 +162,7 @@ export const SelectableItem = ({
   user,
   attendees,
   deleteMode,
+  hideChance,
   sameItemLimit = 0,
   selectMode,
   hardReserves = [],
@@ -175,6 +176,7 @@ export const SelectableItem = ({
   user?: User
   attendees?: Attendee[]
   deleteMode?: boolean
+  hideChance?: boolean
   selectMode?: boolean
   hardReserves?: number[]
   sameItemLimit?: number
@@ -202,7 +204,7 @@ export const SelectableItem = ({
               />
             )
             : null}
-          {!deleteMode && !hardReserves.includes(item.id)
+          {!hideChance && !hardReserves.includes(item.id)
             ? (
               <Text w={30} size="xs" c="grey" ta="right">
                 {chance ? `${chance}%` : null}

@@ -32,6 +32,7 @@ import {
   Stack,
   Text,
   Title,
+  Tooltip,
 } from "@mantine/core"
 import { CopyClipboardButton, raidIdToUrl } from "./copy-clipboard-button.tsx"
 import { CreateSr } from "./create-sr.tsx"
@@ -49,6 +50,8 @@ import { formatTime } from "../shared/utils.ts"
 import { IconLock, IconLockOpen2, IconShieldFilled } from "@tabler/icons-react"
 import { useNavigate } from "react-router"
 import { deepEqual } from "fast-equals"
+import { SelectableItem } from "./item.tsx"
+import { nothingItem } from "./mock-item.ts"
 
 const raidImage = (key: string) => {
   switch (key) {
@@ -225,9 +228,45 @@ export const Raid = (
               </Group>
               {sheet.locked ? <Badge color="red">Locked</Badge> : null}
             </Group>
-            <Badge color="var(--mantine-color-dark-5)" radius="xs">
-              {formatTime(sheet.time)}
-            </Badge>
+            <Group>
+              <Badge color="var(--mantine-color-dark-5)" radius="xs">
+                {formatTime(sheet.time)}
+              </Badge>
+              {sheet.hardReserves.length > 0
+                ? (
+                  <Tooltip
+                    style={{
+                      backgroundColor: "var(--mantine-color-orange-8",
+                      borderRadius: 5,
+                    }}
+                    position="bottom"
+                    p={2}
+                    label={
+                      <Paper
+                        p={5}
+                        style={{
+                          backgroundColor: "var(--mantine-color-dark-8",
+                        }}
+                      >
+                        {sheet.hardReserves.map((itemId) => (
+                          <SelectableItem
+                            hideChance
+                            key={itemId}
+                            item={instance.items.find((i) => i.id == itemId) ||
+                              nothingItem}
+                            user={user}
+                          />
+                        ))}
+                      </Paper>
+                    }
+                  >
+                    <Badge color="orange">
+                      {`${sheet.hardReserves.length} HR`}
+                    </Badge>
+                  </Tooltip>
+                )
+                : null}
+            </Group>
             {sheet.description
               ? (
                 <Text span style={{ whiteSpace: "pre-line" }}>
