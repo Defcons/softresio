@@ -74,7 +74,6 @@ export const ItemNameAndIcon = (
       }
     >
       <Flex
-        ref={ref}
         justify="space-between"
         wrap="nowrap"
         className={`list-element ${
@@ -112,7 +111,7 @@ export const ItemNameAndIcon = (
               />
             )}
         </Box>
-        <Box flex={1} p={padding} {...handlers()}>
+        <Box ref={ref} flex={1} p={padding} {...handlers()}>
           <Text
             fs={(item.id == 0) ? "italic" : undefined}
             fw={(item.id == 0) ? 200 : undefined}
