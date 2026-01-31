@@ -1,0 +1,648 @@
+{ 
+  "raids": {
+    "k40":
+    {
+      "bosses": [
+        {
+          "name": "Keeper Gnarlmoon",
+          "loot": [{
+            "name": "Keeper Gnarlmoon",
+            "link": "https://database.turtlecraft.gg/?npc=61939"
+          }]
+        },
+        {
+          "name": "Ley-Watcher Incantagos",
+          "loot": [{
+            "name": "Ley-Watcher Incantagos",
+            "link": "https://database.turtlecraft.gg/?npc=61946"
+          }]
+        },
+        {
+          "name": "Anomalus",
+          "loot": [{
+            "name": "Anomalus",
+            "link": "https://database.turtlecraft.gg/?npc=61951"
+          }]
+        },
+        {
+          "name": "Chess",
+          "loot": [{
+            "name": "King",
+            "link": "https://database.turtlecraft.gg/?npc=59967"
+          }]
+        },
+        {
+          "name": "Sanv Tas'dal",
+          "loot": [{
+            "name": "Sanv Tas'dal",
+            "link": "https://database.turtlecraft.gg/?npc=59981"
+          }]
+        },
+        {
+          "name": "Rupturan the Broken",
+          "loot": [{
+            "name": "Rupturan the Broken",
+            "link": "https://database.turtlecraft.gg/?npc=59961"
+          }]
+        },
+        {
+          "name": "Kruul",
+          "loot": [{
+            "name": "Kruul",
+            "link": "https://database.turtlecraft.gg/?npc=59991"
+          }]
+        },
+        {
+          "name": "Mephistroth",
+          "loot": [{
+            "name": "Mephistroth",
+            "link": "https://database.turtlecraft.gg/?npc=93333"
+          }]
+        }
+      ]
+    },
+    "naxx":
+    {
+      "bosses": [
+        {
+          "name": "Anub'Rekhan (Spider Wing)",
+          "loot": [{
+            "name": "Anub'Rekhan",
+            "link": "https://database.turtlecraft.gg/?npc=15956"
+          }]
+        },
+        {
+          "name": "Grand Widow Faerlina (Spider Wing)",
+          "loot": [{
+            "name": "Grand Widow Faerlina",
+            "link": "https://database.turtlecraft.gg/?npc=15953"
+          }]
+        },
+        {
+          "name": "Maexxna (Spider Wing)",
+          "loot": [{
+            "name": "Maexxna",
+            "link": "https://database.turtlecraft.gg/?npc=15952"
+          }]
+        },
+        {
+          "name": "Noth the Plaguebringer (Plague Wing)",
+          "loot": [{
+            "name": "Noth the Plaguebringer",
+            "link": "https://database.turtlecraft.gg/?npc=15954"
+          }]
+        },
+        {
+          "name": "Heigan the Unclean (Plague Wing)",
+          "loot": [{
+            "name": "Heigan the Unclean",
+            "link": "https://database.turtlecraft.gg/?npc=15936"
+          }]
+        },
+        {
+          "name": "Loatheb (Plague Wing)",
+          "loot": [{
+            "name": "Loatheb",
+            "link": "https://database.turtlecraft.gg/?npc=16011"
+          }]
+        },
+        {
+          "name": "Instructor Razuvious (Deathknight Wing)",
+          "loot": [{
+            "name": "Instructor Razuvious",
+            "link": "https://database.turtlecraft.gg/?npc=16061"
+          }]
+        },
+        {
+          "name": "Gothik the Harvester (Deathknight Wing)",
+          "loot": [{
+            "name": "Gothik the Harvester",
+            "link": "https://database.turtlecraft.gg/?npc=16060"
+          }]
+        },
+        {
+          "name": "Four Horsemen (Deathknight Wing)",
+          "loot": [{
+            "name": "Four Horsemen Chest",
+            "link": "https://database.turtlecraft.gg/?object=181366"
+          }]
+        },
+        {
+          "name": "Patchwerk (Abomination Wing)",
+          "loot": [{
+            "name": "Patchwerk",
+            "link": "https://database.turtlecraft.gg/?npc=16028"
+          }]
+        },
+        {
+          "name": "Grobbulus (Abomination Wing)",
+          "loot": [{
+            "name": "Grobbulus",
+            "link": "https://database.turtlecraft.gg/?npc=15931"
+          }]
+        },
+        {
+          "name": "Gluth (Abomination Wing)",
+          "loot": [{
+            "name": "Gluth",
+            "link": "https://database.turtlecraft.gg/?npc=15932"
+          }]
+        },
+        {
+          "name": "Thaddius (Abomination Wing)",
+          "loot": [{
+            "name": "Thaddius",
+            "link": "https://database.turtlecraft.gg/?npc=15928"
+          }]
+        },
+        {
+          "name": "Sapphiron (Frostwyrm Lair)",
+          "loot": [{
+            "name": "Sapphiron",
+            "link": "https://database.turtlecraft.gg/?npc=15989"
+          }]
+        },
+        {
+          "name": "Kel'Thuzad (Frostwyrm Lair)",
+          "loot": [{
+            "name": "Kel'Thuzad",
+            "link": "https://database.turtlecraft.gg/?npc=15990"
+          }]
+        }
+      ]
+    },
+    "aq40":
+    {
+      "bosses": [
+        {
+          "name": "The Prophet Skeram",
+          "loot": [{
+            "name": "The Prophet Skeram",
+            "link": "https://database.turtlecraft.gg/?npc=15263"
+          }]
+        },
+        {
+          "name": "Bug Trio",
+          "loot": [
+            {
+            "name": "Princess Yauj",
+            "link": "https://database.turtlecraft.gg/?npc=15543"
+            },
+            {
+            "name": "Vem",
+            "link": "https://database.turtlecraft.gg/?npc=15544"
+            },
+            {
+            "name": "Lord Kri",
+            "link": "https://database.turtlecraft.gg/?npc=15511"
+            }
+          ]
+        },
+        {
+          "name": "Battleguard Sartura",
+          "loot": [{
+            "name": "Battleguard Sartura",
+            "link": "https://database.turtlecraft.gg/?npc=15516"
+          }]
+        },
+        {
+          "name": "Fankriss the Unyielding",
+          "loot": [{
+            "name": "Fankriss the Unyielding",
+            "link": "https://database.turtlecraft.gg/?npc=15510"
+          }]
+        },
+        {
+          "name": "Viscidus",
+          "loot": [{
+            "name": "Viscidus",
+            "link": "https://database.turtlecraft.gg/?npc=15299"
+          }]
+        },
+        {
+          "name": "Princess Huhuran",
+          "loot": [{
+            "name": "Princess Huhuran",
+            "link": "https://database.turtlecraft.gg/?npc=15509"
+          }]
+        },
+        {
+          "name": "Twin Emperors",
+          "loot": [
+            {
+              "name": "Emperor Vek'lor",
+              "link": "https://database.turtlecraft.gg/?npc=15276"
+            },
+            {
+              "name": "Emperor Vek'nilash",
+              "link": "https://database.turtlecraft.gg/?npc=15275"
+            }
+          ]
+        },
+        {
+          "name": "Ouro",
+          "loot": [{
+            "name": "Ouro",
+            "link": "https://database.turtlecraft.gg/?npc=15517"
+          }]
+        },
+        {
+          "name": "C'Thun",
+          "loot": [{
+            "name": "C'Thun",
+            "link": "https://database.turtlecraft.gg/?npc=15727"
+          }]
+        }
+      ]
+    },
+    "bwl": 
+    {
+      "bosses": [
+        {
+          "name": "Razorgore the Untamed",
+          "loot": [{
+            "name": "Razorgore the Untamed",
+            "link": "https://database.turtlecraft.gg/?npc=12435"
+          }]
+        },
+        {
+          "name": "Vaelastrasz the Corrupt",
+          "loot": [{
+            "name": "Vaelastrasz the Corrupt",
+            "link": "https://database.turtlecraft.gg/?npc=13020"
+          }]
+        },
+        {
+          "name": "Broodlord Lashlayer",
+          "loot": [{
+            "name": "Broodlord Lashlayer",
+            "link": "https://database.turtlecraft.gg/?npc=12017"
+          }]
+        },
+        {
+          "name": "Firemaw",
+          "loot": [{
+            "name": "Firemaw",
+            "link": "https://database.turtlecraft.gg/?npc=11983"
+          }]
+        },
+        {
+          "name": "Ebonroc",
+          "loot": [{
+            "name": "Ebonroc",
+            "link": "https://database.turtlecraft.gg/?npc=14601"
+          }]
+        },
+        {
+          "name": "Flamegor",
+          "loot": [{
+            "name": "Flamegor",
+            "link": "https://database.turtlecraft.gg/?npc=11981"
+          }]
+        },
+        {
+          "name": "Chromaggus",
+          "loot": [{
+            "name": "Chromaggus",
+            "link": "https://database.turtlecraft.gg/?npc=14020"
+          }]
+        },
+        {
+          "name": "Nefarian",
+          "loot": [{
+            "name": "Nefarian",
+            "link": "https://database.turtlecraft.gg/?npc=11583"
+          }]
+        }
+      ]
+    },
+    "ony":
+    {
+      "bosses": [
+        {
+          "name": "Onyxia",
+          "loot": [{
+            "name": "Onyxia",
+            "link": "https://database.turtlecraft.gg/?npc=10184"
+          }]
+        }
+      ]
+    },
+    "mc":
+    {
+      "bosses": [
+        {
+          "name": "Lucifron",
+          "loot": [{
+            "name": "Lucifron",
+            "link": "https://database.turtlecraft.gg/?npc=12118"
+          }]
+        },
+        {
+          "name": "Magmadar",
+          "loot": [{
+            "name": "Magmadar",
+            "link": "https://database.turtlecraft.gg/?npc=11982"
+          }]
+        },
+        {
+          "name": "Incindis",
+          "loot": [{
+            "name": "Incindis",
+            "link": "https://database.turtlecraft.gg/?npc=52145"
+          }]
+        },
+        {
+          "name": "Garr",
+          "loot": [{
+            "name": "Garr",
+            "link": "https://database.turtlecraft.gg/?npc=12057"
+          }]
+        },
+        {
+          "name": "Baron Geddon",
+          "loot": [{
+            "name": "Baron Geddon",
+            "link": "https://database.turtlecraft.gg/?npc=12056"
+          }]
+        },
+        {
+          "name": "Shazzrah",
+          "loot": [{
+            "name": "Shazzrah",
+            "link": "https://database.turtlecraft.gg/?npc=12264"
+          }]
+        },
+        {
+          "name": "Sulfuron Harbinger",
+          "loot": [{
+            "name": "Sulfuron Harbinger",
+            "link": "https://database.turtlecraft.gg/?npc=12098"
+          }]
+        },
+        {
+          "name": "Golemagg the Incinerator",
+          "loot": [{
+            "name": "Golemagg the Incinerator",
+            "link": "https://database.turtlecraft.gg/?npc=11988"
+          }]
+        },
+        {
+          "name": "Majordomo Executus",
+          "loot": [{
+            "name": "Cache of the Firelord",
+            "link": "https://database.turtlecraft.gg/?object=179703"
+          }]
+        },
+        {
+          "name": "Sorcerer-Thane Thaurissan",
+          "loot": [{
+            "name": "Sorcerer-Thane Thaurissan",
+            "link": "https://database.turtlecraft.gg/?npc=57642"
+          }]
+        },
+        {
+          "name": "Basalthar & Smoldaris",
+          "loot": [
+            {
+              "name": "Basalthar",
+              "link": "https://database.turtlecraft.gg/?npc=65020"
+            },
+            {
+              "name": "Smoldaris",
+              "link": "https://database.turtlecraft.gg/?npc=65021"
+            }
+          ]
+        },
+        {
+          "name": "Ragnaros",
+          "loot": [{
+            "name": "Ragnaros",
+            "link": "https://database.turtlecraft.gg/?npc=11502"
+          }]
+        }
+      ]
+    },
+    "es":
+    {
+      "bosses": [
+        {
+          "name": "Erennius (Normal mode only)",
+          "loot": [{
+            "name": "Erennius",
+            "link": "https://database.turtlecraft.gg/?npc=60747"
+          }]
+        },
+        {
+          "name": "Solnius",
+          "loot": [{
+            "name": "Solnius",
+            "link": "https://database.turtlecraft.gg/?npc=60748"
+          }]
+        },
+        {
+          "name": "Favor of Erennius (Hard mode only)",
+          "loot": [{
+            "name": "Favor of Erennius",
+            "link": "https://database.turtlecraft.gg/?object=2020042"
+          }]
+        }
+      ]
+    },
+    "zg":
+    {
+      "bosses": [
+        {
+          "name": "High Priest Venoxis",
+          "loot": [
+            {
+              "name": "High Priest Venoxis",
+              "link": "https://database.turtlecraft.gg/?npc=14507"
+            }
+          ]
+        },
+        {
+          "name": "High Priestess Jeklik",
+          "loot": [
+            {
+              "name": "High Priestess Jeklik",
+              "link": "https://database.turtlecraft.gg/?npc=14517"
+            }
+          ]
+        },
+        {
+          "name": "High Priestess Mar'li",
+          "loot": [
+            {
+              "name": "High Priestess Mar'li",
+              "link": "https://database.turtlecraft.gg/?npc=14510"
+            }
+          ]
+        },
+        {
+          "name": "High Priest Thekal",
+          "loot": [
+            {
+              "name": "High Priest Thekal",
+              "link": "https://database.turtlecraft.gg/?npc=14599"
+            }
+          ]
+        },
+        {
+          "name": "High Priestess Arlokk",
+          "loot": [
+            {
+              "name": "High Priestess Arlokk",
+              "link": "https://database.turtlecraft.gg/?npc=14515"
+            }
+          ]
+        },
+        {
+          "name": "Blood Lord Mandokir",
+          "loot": [
+            {
+              "name": "Blood Lord Mandokir",
+              "link": "https://database.turtlecraft.gg/?npc=11382"
+            }
+          ]
+        },
+        {
+          "name": "Gahz'ranka",
+          "loot": [
+            {
+              "name": "Gahz'ranka",
+              "link": "https://database.turtlecraft.gg/?npc=15114"
+            }
+          ]
+        },
+        {
+          "name": "Jin'do the Hexxer",
+          "loot": [
+            {
+              "name": "Jin'do the Hexxer",
+              "link": "https://database.turtlecraft.gg/?npc=11380"
+            }
+          ]
+        },
+        {
+          "name": "Hakkar",
+          "loot": [
+            {
+              "name": "Hakkar",
+              "link": "https://database.turtlecraft.gg/?npc=14834"
+            }
+          ]
+        }
+      ]
+    },
+    "aq20": 
+    {
+      "bosses": [
+        {
+          "name": "Kurinnaxx",
+          "loot": [
+            {
+              "name": "Kurinnaxx",
+              "link": "https://database.turtlecraft.gg/?npc=15348"
+            }
+          ]
+        },
+        {
+          "name": "General Rajaxx",
+          "loot": [
+            {
+              "name": "General Rajaxx",
+              "link": "https://database.turtlecraft.gg/?npc=15341"
+            }
+          ]
+        },
+        {
+          "name": "Buru the Gorger",
+          "loot": [
+            {
+              "name": "Buru the Gorger",
+              "link": "https://database.turtlecraft.gg/?npc=15370"
+            }
+          ]
+        },
+        {
+          "name": "Moam",
+          "loot": [
+            {
+              "name": "Moam",
+              "link": "https://database.turtlecraft.gg/?npc=15340"
+            }
+          ]
+        },
+        {
+          "name": "Ayamiss the Hunter",
+          "loot": [
+            {
+              "name": "Ayamiss the Hunter",
+              "link": "https://database.turtlecraft.gg/?npc=15369"
+            }
+          ]
+        },
+        {
+          "name": "Ossirian the Unscarred",
+          "loot": [
+            {
+              "name": "Ossirian the Unscarred",
+              "link": "https://database.turtlecraft.gg/?npc=15339"
+            }
+          ]
+        }
+      ]
+    },
+    "k10":
+    {
+      "bosses": [
+        {
+          "name": "Lord Blackwald II",
+          "loot": [
+            {
+              "name": "Lord Blackwald II",
+              "link": "https://database.turtlecraft.gg/?npc=61222"
+            }
+          ]
+        },
+        {
+          "name": "Clawlord Howlfang",
+          "loot": [
+            {
+              "name": "Clawlord Howlfang",
+              "link": "https://database.turtlecraft.gg/?npc=61223"
+            }
+          ]
+        },
+        {
+          "name": "Brood Queen Araxxna",
+          "loot": [
+            {
+              "name": "Brood Queen Araxxna",
+              "link": "https://database.turtlecraft.gg/?npc=61221"
+            }
+          ]
+        },
+        {
+          "name": "Grizikil",
+          "loot": [
+            {
+              "name": "Grizikil",
+              "link": "https://database.turtlecraft.gg/?npc=61224"
+            }
+          ]
+        },
+        {
+          "name": "Moroes",
+          "loot": [
+            {
+              "name": "Moroes",
+              "link": "https://database.turtlecraft.gg/?npc=61225"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
