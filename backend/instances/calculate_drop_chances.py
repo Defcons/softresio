@@ -95,7 +95,7 @@ def drops_at_least_one(loot):
             at_least_one = (1 - doesnt_drop) * 100
             if npc not in ret:
                 ret[npc] = {}
-            ret[npc][drop["name"][1:]] = fmt(at_least_one)
+            ret[npc][drop["id"]] = fmt(at_least_one)
     return ret
 
 
