@@ -434,7 +434,7 @@
     {
       "bosses": [
         {
-          "name": "Erennius (Normal mode only)",
+          "name": "Erennius (Normal-Mode only)",
           "loot": [{
             "name": "Erennius",
             "link": "https://database.turtlecraft.gg/?npc=60747"
@@ -448,7 +448,7 @@
           }]
         },
         {
-          "name": "Favor of Erennius (Hard mode only)",
+          "name": "Favor of Erennius (Hard-Mode only)",
           "loot": [{
             "name": "Favor of Erennius",
             "link": "https://database.turtlecraft.gg/?object=2020042"

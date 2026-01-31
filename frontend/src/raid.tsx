@@ -38,7 +38,12 @@ import { CreateSr } from "./create-sr.tsx"
 import { SrList } from "./sr-list.tsx"
 import { rollForExport } from "./rollfor-export.ts"
 import useWebSocket from "react-use-websocket"
-import { IconCopy, IconLogs, IconRefreshAlert } from "@tabler/icons-react"
+import {
+  IconCopy,
+  IconLogs,
+  IconRefreshAlert,
+  IconUserFilled,
+} from "@tabler/icons-react"
 import { IconLock, IconLockOpen2, IconShieldFilled } from "@tabler/icons-react"
 import { deepEqual } from "fast-equals"
 
@@ -269,18 +274,24 @@ export const Raid = (
             >
               Log
             </Button>
-            <CopyClipboardButton
-              toClipboard={rollForExport(sheet)}
-              label="RollFor"
-              tooltip="Copy RollFor export"
-              onClick={() => setAttendeesWhenExportedLast(sheet.attendees)}
-              icon={attendeesWhenExportedLast &&
-                  !deepEqual(attendeesWhenExportedLast, sheet.attendees)
-                ? <IconRefreshAlert size={16} />
-                : <IconCopy size={16} />}
-              orange={attendeesWhenExportedLast &&
-                !deepEqual(attendeesWhenExportedLast, sheet.attendees)}
-            />
+            <Group>
+              <CopyClipboardButton
+                toClipboard={rollForExport(sheet)}
+                label="RollFor"
+                tooltip="Copy RollFor export"
+                onClick={() => setAttendeesWhenExportedLast(sheet.attendees)}
+                icon={attendeesWhenExportedLast &&
+                    !deepEqual(attendeesWhenExportedLast, sheet.attendees)
+                  ? <IconRefreshAlert size={16} />
+                  : <IconCopy size={16} />}
+                orange={attendeesWhenExportedLast &&
+                  !deepEqual(attendeesWhenExportedLast, sheet.attendees)}
+              />
+              <Group gap={3} miw={45}>
+                <IconUserFilled size={20} />
+                <Title order={6}>{sheet.attendees.length}</Title>
+              </Group>
+            </Group>
           </Group>
           {sheet.attendees.length > 0
             ? (

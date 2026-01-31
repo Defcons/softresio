@@ -1022,7 +1022,7 @@
   ],
   "bosses": [
     {
-      "name": "Erennius (Normal mode only)",
+      "name": "Erennius (Normal-Mode only)",
       "id": 0
     },
     {
@@ -1030,7 +1030,7 @@
       "id": 1
     },
     {
-      "name": "Favor of Erennius (Hard mode only)",
+      "name": "Favor of Erennius (Hard-Mode only)",
       "id": 2
     },
     {
@@ -1040,7 +1040,7 @@
   ],
   "npcs": [
     {
-      "name": "Erennius (Normal mode only)",
+      "name": "Erennius (Normal-Mode only)",
       "id": 0,
       "bossId": 0
     },
@@ -1050,7 +1050,7 @@
       "bossId": 1
     },
     {
-      "name": "Favor of Erennius (Hard mode only)",
+      "name": "Favor of Erennius (Hard-Mode only)",
       "id": 2,
       "bossId": 2
     },
