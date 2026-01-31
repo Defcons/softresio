@@ -44,6 +44,7 @@ export const LootBrowser = (
           withAsterisk={instanceId == undefined}
           searchable
           placeholder="Select instance"
+          maxDropdownHeight={1000}
           data={instances?.map((e) => {
             return { value: e.id.toString(), label: e.name }
           })}

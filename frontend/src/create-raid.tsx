@@ -95,6 +95,7 @@ export const CreateRaid = (
             label="Instance"
             searchable
             placeholder="Select instance"
+            maxDropdownHeight={1000}
             data={instances?.map((e) => {
               return { value: e.id.toString(), label: e.name }
             })}
