@@ -25,6 +25,13 @@
           }]
         },
         {
+          "name": "Medivh",
+          "loot": [{
+            "name": "Echo of Medivh",
+            "link": "https://database.turtlecraft.gg/?npc=61958"
+          }]
+        },
+        {
           "name": "Chess",
           "loot": [{
             "name": "King",

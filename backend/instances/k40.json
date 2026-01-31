@@ -13,8 +13,8 @@
       "dropsFrom": [
         {
           "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "bossId": 9,
+          "npcId": 9
         }
       ],
       "slots": [
@@ -194,8 +194,8 @@
       "dropsFrom": [
         {
           "chance": 18.0,
-          "bossId": 3,
-          "npcId": 3
+          "bossId": 4,
+          "npcId": 4
         }
       ],
       "slots": [
@@ -215,8 +215,8 @@
       "dropsFrom": [
         {
           "chance": 18.0,
-          "bossId": 3,
-          "npcId": 3
+          "bossId": 4,
+          "npcId": 4
         }
       ],
       "slots": [
@@ -234,8 +234,8 @@
       "dropsFrom": [
         {
           "chance": 18.0,
-          "bossId": 3,
-          "npcId": 3
+          "bossId": 4,
+          "npcId": 4
         }
       ],
       "slots": [
@@ -255,8 +255,8 @@
       "dropsFrom": [
         {
           "chance": 18.0,
-          "bossId": 3,
-          "npcId": 3
+          "bossId": 4,
+          "npcId": 4
         }
       ],
       "slots": [
@@ -282,14 +282,20 @@
       "dropsFrom": [
         {
           "chance": 62.0,
-          "bossId": 3,
-          "npcId": 3
+          "bossId": 4,
+          "npcId": 4
         }
       ],
       "slots": [
-        "Token","Feet"
+        "Token",
+        "Feet"
       ],
-      "types": ["Plate","Mail","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Mail",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 55483,
@@ -306,14 +312,19 @@
       "dropsFrom": [
         {
           "chance": 62.0,
-          "bossId": 3,
-          "npcId": 3
+          "bossId": 4,
+          "npcId": 4
         }
       ],
       "slots": [
-        "Token","Feet"
+        "Token",
+        "Feet"
       ],
-      "types": ["Plate","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 55102,
@@ -325,8 +336,8 @@
       "dropsFrom": [
         {
           "chance": 18.0,
-          "bossId": 3,
-          "npcId": 3
+          "bossId": 4,
+          "npcId": 4
         }
       ],
       "slots": [
@@ -346,8 +357,8 @@
       "dropsFrom": [
         {
           "chance": 18.0,
-          "bossId": 3,
-          "npcId": 3
+          "bossId": 4,
+          "npcId": 4
         }
       ],
       "slots": [
@@ -365,8 +376,8 @@
       "dropsFrom": [
         {
           "chance": 18.0,
-          "bossId": 3,
-          "npcId": 3
+          "bossId": 4,
+          "npcId": 4
         }
       ],
       "slots": [
@@ -386,8 +397,8 @@
       "dropsFrom": [
         {
           "chance": 18.0,
-          "bossId": 3,
-          "npcId": 3
+          "bossId": 4,
+          "npcId": 4
         }
       ],
       "slots": [
@@ -411,14 +422,20 @@
       "dropsFrom": [
         {
           "chance": 62.0,
-          "bossId": 6,
-          "npcId": 6
+          "bossId": 7,
+          "npcId": 7
         }
       ],
       "slots": [
-        "Token","Legs"
+        "Token",
+        "Legs"
       ],
-      "types": ["Plate","Mail","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Mail",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 55489,
@@ -435,14 +452,19 @@
       "dropsFrom": [
         {
           "chance": 62.0,
-          "bossId": 6,
-          "npcId": 6
+          "bossId": 7,
+          "npcId": 7
         }
       ],
       "slots": [
-        "Token","Legs"
+        "Token",
+        "Legs"
       ],
-      "types": ["Plate","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 55128,
@@ -454,8 +476,8 @@
       "dropsFrom": [
         {
           "chance": 16.0,
-          "bossId": 6,
-          "npcId": 6
+          "bossId": 7,
+          "npcId": 7
         }
       ],
       "slots": [
@@ -475,8 +497,8 @@
       "dropsFrom": [
         {
           "chance": 16.0,
-          "bossId": 6,
-          "npcId": 6
+          "bossId": 7,
+          "npcId": 7
         }
       ],
       "slots": [
@@ -496,8 +518,8 @@
       "dropsFrom": [
         {
           "chance": 16.0,
-          "bossId": 6,
-          "npcId": 6
+          "bossId": 7,
+          "npcId": 7
         }
       ],
       "slots": [
@@ -515,8 +537,8 @@
       "dropsFrom": [
         {
           "chance": 16.0,
-          "bossId": 6,
-          "npcId": 6
+          "bossId": 7,
+          "npcId": 7
         }
       ],
       "slots": [
@@ -536,8 +558,8 @@
       "dropsFrom": [
         {
           "chance": 16.0,
-          "bossId": 6,
-          "npcId": 6
+          "bossId": 7,
+          "npcId": 7
         }
       ],
       "slots": [
@@ -555,8 +577,8 @@
       "dropsFrom": [
         {
           "chance": 16.0,
-          "bossId": 6,
-          "npcId": 6
+          "bossId": 7,
+          "npcId": 7
         }
       ],
       "slots": [
@@ -576,8 +598,8 @@
       "dropsFrom": [
         {
           "chance": 16.0,
-          "bossId": 6,
-          "npcId": 6
+          "bossId": 7,
+          "npcId": 7
         }
       ],
       "slots": [
@@ -764,8 +786,8 @@
       "dropsFrom": [
         {
           "chance": 11.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -783,8 +805,8 @@
       "dropsFrom": [
         {
           "chance": 15.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -802,8 +824,8 @@
       "dropsFrom": [
         {
           "chance": 15.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -823,8 +845,8 @@
       "dropsFrom": [
         {
           "chance": 15.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -844,8 +866,8 @@
       "dropsFrom": [
         {
           "chance": 11.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -865,8 +887,8 @@
       "dropsFrom": [
         {
           "chance": 15.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -886,8 +908,8 @@
       "dropsFrom": [
         {
           "chance": 15.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -905,8 +927,8 @@
       "dropsFrom": [
         {
           "chance": 15.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -926,8 +948,8 @@
       "dropsFrom": [
         {
           "chance": 11.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -947,8 +969,8 @@
       "dropsFrom": [
         {
           "chance": 11.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -966,8 +988,8 @@
       "dropsFrom": [
         {
           "chance": 15.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -987,8 +1009,8 @@
       "dropsFrom": [
         {
           "chance": 11.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -1008,8 +1030,8 @@
       "dropsFrom": [
         {
           "chance": 15.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -1029,8 +1051,8 @@
       "dropsFrom": [
         {
           "chance": 15.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -1050,8 +1072,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 5,
-          "npcId": 5
+          "bossId": 6,
+          "npcId": 6
         }
       ],
       "slots": [
@@ -1071,8 +1093,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 5,
-          "npcId": 5
+          "bossId": 6,
+          "npcId": 6
         }
       ],
       "slots": [
@@ -1092,8 +1114,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 5,
-          "npcId": 5
+          "bossId": 6,
+          "npcId": 6
         }
       ],
       "slots": [
@@ -1113,8 +1135,8 @@
       "dropsFrom": [
         {
           "chance": 16.0,
-          "bossId": 6,
-          "npcId": 6
+          "bossId": 7,
+          "npcId": 7
         }
       ],
       "slots": [
@@ -1134,8 +1156,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 5,
-          "npcId": 5
+          "bossId": 6,
+          "npcId": 6
         }
       ],
       "slots": [
@@ -1155,8 +1177,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 5,
-          "npcId": 5
+          "bossId": 6,
+          "npcId": 6
         }
       ],
       "slots": [
@@ -1174,8 +1196,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 5,
-          "npcId": 5
+          "bossId": 6,
+          "npcId": 6
         }
       ],
       "slots": [
@@ -1195,8 +1217,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 5,
-          "npcId": 5
+          "bossId": 6,
+          "npcId": 6
         }
       ],
       "slots": [
@@ -1214,8 +1236,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 4,
-          "npcId": 4
+          "bossId": 5,
+          "npcId": 5
         }
       ],
       "slots": [
@@ -1235,8 +1257,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 4,
-          "npcId": 4
+          "bossId": 5,
+          "npcId": 5
         }
       ],
       "slots": [
@@ -1256,8 +1278,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 4,
-          "npcId": 4
+          "bossId": 5,
+          "npcId": 5
         }
       ],
       "slots": [
@@ -1277,8 +1299,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 4,
-          "npcId": 4
+          "bossId": 5,
+          "npcId": 5
         }
       ],
       "slots": [
@@ -1296,8 +1318,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 4,
-          "npcId": 4
+          "bossId": 5,
+          "npcId": 5
         }
       ],
       "slots": [
@@ -1317,8 +1339,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 4,
-          "npcId": 4
+          "bossId": 5,
+          "npcId": 5
         }
       ],
       "slots": [
@@ -1344,14 +1366,20 @@
       "dropsFrom": [
         {
           "chance": 62.0,
-          "bossId": 4,
-          "npcId": 4
+          "bossId": 5,
+          "npcId": 5
         }
       ],
       "slots": [
-        "Token","Shoulder"
+        "Token",
+        "Shoulder"
       ],
-      "types": ["Plate","Mail","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Mail",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 55485,
@@ -1368,14 +1396,19 @@
       "dropsFrom": [
         {
           "chance": 62.0,
-          "bossId": 4,
-          "npcId": 4
+          "bossId": 5,
+          "npcId": 5
         }
       ],
       "slots": [
-        "Token","Shoulder"
+        "Token",
+        "Shoulder"
       ],
-      "types": ["Plate","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 55114,
@@ -1387,8 +1420,8 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 4,
-          "npcId": 4
+          "bossId": 5,
+          "npcId": 5
         }
       ],
       "slots": [
@@ -1407,9 +1440,9 @@
       "icon": "inv_demonhornshoulders.png",
       "dropsFrom": [
         {
-          "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "chance": 25.0,
+          "bossId": 3,
+          "npcId": 3
         }
       ],
       "slots": [
@@ -1428,9 +1461,9 @@
       "icon": "spell_shadow_soulgem.png",
       "dropsFrom": [
         {
-          "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "chance": 25.0,
+          "bossId": 3,
+          "npcId": 3
         }
       ],
       "slots": [
@@ -1447,9 +1480,9 @@
       "icon": "inv_mallet.png",
       "dropsFrom": [
         {
-          "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "chance": 25.0,
+          "bossId": 3,
+          "npcId": 3
         }
       ],
       "slots": [
@@ -1468,9 +1501,9 @@
       "icon": "inv_gauntlets_05.png",
       "dropsFrom": [
         {
-          "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "chance": 25.0,
+          "bossId": 3,
+          "npcId": 3
         }
       ],
       "slots": [
@@ -1489,9 +1522,9 @@
       "icon": "inv_trickster_leggings.png",
       "dropsFrom": [
         {
-          "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "chance": 25.0,
+          "bossId": 3,
+          "npcId": 3
         }
       ],
       "slots": [
@@ -1510,9 +1543,9 @@
       "icon": "inv_misc_book_07.png",
       "dropsFrom": [
         {
-          "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "chance": 25.0,
+          "bossId": 3,
+          "npcId": 3
         }
       ],
       "slots": [
@@ -1531,9 +1564,9 @@
       "icon": "inv_jewelry_ring_jade.png",
       "dropsFrom": [
         {
-          "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "chance": 25.0,
+          "bossId": 3,
+          "npcId": 3
         }
       ],
       "slots": [
@@ -1550,9 +1583,9 @@
       "icon": "inv_jewelry_talisman_health.png",
       "dropsFrom": [
         {
-          "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "chance": 25.0,
+          "bossId": 3,
+          "npcId": 3
         }
       ],
       "slots": [
@@ -1713,8 +1746,8 @@
       "dropsFrom": [
         {
           "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "bossId": 9,
+          "npcId": 9
         }
       ],
       "slots": [
@@ -1736,8 +1769,8 @@
       "dropsFrom": [
         {
           "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "bossId": 9,
+          "npcId": 9
         }
       ],
       "slots": [
@@ -1757,8 +1790,8 @@
       "dropsFrom": [
         {
           "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "bossId": 9,
+          "npcId": 9
         }
       ],
       "slots": [
@@ -1776,8 +1809,8 @@
       "dropsFrom": [
         {
           "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "bossId": 9,
+          "npcId": 9
         }
       ],
       "slots": [
@@ -1799,8 +1832,8 @@
       "dropsFrom": [
         {
           "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "bossId": 9,
+          "npcId": 9
         }
       ],
       "slots": [
@@ -1822,8 +1855,8 @@
       "dropsFrom": [
         {
           "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "bossId": 9,
+          "npcId": 9
         }
       ],
       "slots": [
@@ -1843,8 +1876,8 @@
       "dropsFrom": [
         {
           "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "bossId": 9,
+          "npcId": 9
         }
       ],
       "slots": [
@@ -1864,8 +1897,8 @@
       "dropsFrom": [
         {
           "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "bossId": 9,
+          "npcId": 9
         }
       ],
       "slots": [
@@ -1883,8 +1916,8 @@
       "dropsFrom": [
         {
           "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "bossId": 9,
+          "npcId": 9
         }
       ],
       "slots": [
@@ -1902,8 +1935,8 @@
       "dropsFrom": [
         {
           "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "bossId": 9,
+          "npcId": 9
         }
       ],
       "slots": [
@@ -1944,8 +1977,8 @@
       "dropsFrom": [
         {
           "chance": 3.0,
-          "bossId": 3,
-          "npcId": 3
+          "bossId": 4,
+          "npcId": 4
         }
       ],
       "slots": [
@@ -2019,9 +2052,9 @@
       "icon": "inv_enchant_essencemysticalsmall.png",
       "dropsFrom": [
         {
-          "chance": null,
-          "bossId": 8,
-          "npcId": 8
+          "chance": 100.0,
+          "bossId": 3,
+          "npcId": 3
         }
       ],
       "slots": [
@@ -2039,8 +2072,8 @@
       "dropsFrom": [
         {
           "chance": 100.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -2067,7 +2100,7 @@
           "npcId": 2
         },
         {
-          "chance": 100.0,
+          "chance": 3.0,
           "bossId": 3,
           "npcId": 3
         },
@@ -2082,14 +2115,19 @@
           "npcId": 5
         },
         {
-          "chance": 3.0,
+          "chance": 100.0,
           "bossId": 6,
           "npcId": 6
         },
         {
-          "chance": 100.0,
+          "chance": 3.0,
           "bossId": 7,
           "npcId": 7
+        },
+        {
+          "chance": 100.0,
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -2107,11 +2145,6 @@
       "dropsFrom": [
         {
           "chance": 20.0,
-          "bossId": 3,
-          "npcId": 3
-        },
-        {
-          "chance": 20.0,
           "bossId": 4,
           "npcId": 4
         },
@@ -2129,10 +2162,16 @@
           "chance": 20.0,
           "bossId": 7,
           "npcId": 7
+        },
+        {
+          "chance": 20.0,
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
-        "Token","Neck"
+        "Token",
+        "Neck"
       ],
       "types": []
     },
@@ -2151,14 +2190,19 @@
       "dropsFrom": [
         {
           "chance": 62.0,
-          "bossId": 5,
-          "npcId": 5
+          "bossId": 6,
+          "npcId": 6
         }
       ],
       "slots": [
-        "Token","Head"
+        "Token",
+        "Head"
       ],
-      "types": ["Plate","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 55488,
@@ -2176,14 +2220,20 @@
       "dropsFrom": [
         {
           "chance": 62.0,
-          "bossId": 5,
-          "npcId": 5
+          "bossId": 6,
+          "npcId": 6
         }
       ],
       "slots": [
-        "Token","Head"
+        "Token",
+        "Head"
       ],
-      "types": ["Plate","Mail","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Mail",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 55491,
@@ -2200,14 +2250,19 @@
       "dropsFrom": [
         {
           "chance": 100.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
-        "Token","Chest"
+        "Token",
+        "Chest"
       ],
-      "types": ["Plate","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 55492,
@@ -2225,14 +2280,20 @@
       "dropsFrom": [
         {
           "chance": 100.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
-        "Token","Chest"
+        "Token",
+        "Chest"
       ],
-      "types": ["Plate","Mail","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Mail",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 55511,
@@ -2244,8 +2305,8 @@
       "dropsFrom": [
         {
           "chance": 16.0,
-          "bossId": 6,
-          "npcId": 6
+          "bossId": 7,
+          "npcId": 7
         }
       ],
       "slots": [
@@ -2265,8 +2326,8 @@
       "dropsFrom": [
         {
           "chance": 100.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
@@ -2284,12 +2345,31 @@
       "dropsFrom": [
         {
           "chance": 5.0,
-          "bossId": 7,
-          "npcId": 7
+          "bossId": 8,
+          "npcId": 8
         }
       ],
       "slots": [
         "Mount"
+      ],
+      "types": []
+    },
+    {
+      "id": 61674,
+      "name": "Overcharged Ley Energy",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q3\">Overcharged Ley Energy</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Requires Level 58<br/><span class=\"q\">\"Condensed into a pure form of surging power.\"</span></span></div>",
+      "icon": "inv_misc_gem_diamond_03.png",
+      "dropsFrom": [
+        {
+          "chance": null,
+          "bossId": 9,
+          "npcId": 9
+        }
+      ],
+      "slots": [
+        "Materials"
       ],
       "types": []
     }
@@ -2308,28 +2388,32 @@
       "id": 2
     },
     {
-      "name": "Chess",
+      "name": "Medivh",
       "id": 3
     },
     {
-      "name": "Sanv Tas'dal",
+      "name": "Chess",
       "id": 4
     },
     {
-      "name": "Rupturan the Broken",
+      "name": "Sanv Tas'dal",
       "id": 5
     },
     {
-      "name": "Kruul",
+      "name": "Rupturan the Broken",
       "id": 6
     },
     {
-      "name": "Mephistroth",
+      "name": "Kruul",
       "id": 7
     },
     {
-      "name": "Trash",
+      "name": "Mephistroth",
       "id": 8
+    },
+    {
+      "name": "Trash",
+      "id": 9
     }
   ],
   "npcs": [
@@ -2349,34 +2433,39 @@
       "bossId": 2
     },
     {
-      "name": "Chess",
+      "name": "Medivh",
       "id": 3,
       "bossId": 3
     },
     {
-      "name": "Sanv Tas'dal",
+      "name": "Chess",
       "id": 4,
       "bossId": 4
     },
     {
-      "name": "Rupturan the Broken",
+      "name": "Sanv Tas'dal",
       "id": 5,
       "bossId": 5
     },
     {
-      "name": "Kruul",
+      "name": "Rupturan the Broken",
       "id": 6,
       "bossId": 6
     },
     {
-      "name": "Mephistroth",
+      "name": "Kruul",
       "id": 7,
       "bossId": 7
     },
     {
-      "name": "Trash",
+      "name": "Mephistroth",
       "id": 8,
       "bossId": 8
+    },
+    {
+      "name": "Trash",
+      "id": 9,
+      "bossId": 9
     }
   ]
 }

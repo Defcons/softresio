@@ -1574,9 +1574,16 @@
         }
       ],
       "slots": [
-        "Token","Shoulder","Feet"
+        "Token",
+        "Shoulder",
+        "Feet"
       ],
-      "types": ["Plate","Mail","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Mail",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 20932,
@@ -1604,9 +1611,16 @@
         }
       ],
       "slots": [
-        "Token","Shoulder","Feet"
+        "Token",
+        "Shoulder",
+        "Feet"
       ],
-      "types": ["Plate","Mail","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Mail",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 21621,
@@ -1749,9 +1763,14 @@
         }
       ],
       "slots": [
-        "Token","Head"
+        "Token",
+        "Head"
       ],
-      "types": ["Plate","Mail","Leather"]
+      "types": [
+        "Plate",
+        "Mail",
+        "Leather"
+      ]
     },
     {
       "id": 21602,
@@ -1914,9 +1933,13 @@
         }
       ],
       "slots": [
-        "Token","Head"
+        "Token",
+        "Head"
       ],
-      "types": ["Plate","Cloth"]
+      "types": [
+        "Plate",
+        "Cloth"
+      ]
     },
     {
       "id": 21608,
@@ -2266,9 +2289,14 @@
         }
       ],
       "slots": [
-        "Token","Legs"
+        "Token",
+        "Legs"
       ],
-      "types": ["Plate","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 20931,
@@ -2291,9 +2319,15 @@
         }
       ],
       "slots": [
-        "Token","Legs"
+        "Token",
+        "Legs"
       ],
-      "types": ["Plate","Mail","Leather","Cloth"]
+      "types": [
+        "Plate",
+        "Mail",
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 22732,
@@ -2600,9 +2634,14 @@
         }
       ],
       "slots": [
-        "Token","Chest"
+        "Token",
+        "Chest"
       ],
-      "types": ["Plate","Mail","Leather"]
+      "types": [
+        "Plate",
+        "Mail",
+        "Leather"
+      ]
     },
     {
       "id": 20933,
@@ -2624,9 +2663,13 @@
         }
       ],
       "slots": [
-        "Token","Chest"
+        "Token",
+        "Chest"
       ],
-      "types": ["Leather","Cloth"]
+      "types": [
+        "Leather",
+        "Cloth"
+      ]
     },
     {
       "id": 21221,

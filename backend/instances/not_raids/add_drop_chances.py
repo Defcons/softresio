@@ -2,7 +2,7 @@ import json
 from glob import glob
 
 instances = []
-for file in glob("*.json"):
+for file in glob("../*.json"):
     instances.append(json.loads(open(file).read()))
 
 all_drop_chances = json.loads(open("drop_chances").read())
@@ -43,5 +43,5 @@ for instance in instances:
 
         new_items.append({**item, "dropsFrom": drops_from})
     instance["items"] = new_items
-    open(instance["shortname"]+".json", "w").write(json.dumps(instance))
+    open("../"+instance["shortname"]+".json", "w").write(json.dumps(instance))
 
