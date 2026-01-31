@@ -36,6 +36,7 @@ import {
 import { CopyClipboardButton, raidIdToUrl } from "./copy-clipboard-button.tsx"
 import { CreateSr } from "./create-sr.tsx"
 import { SrList } from "./sr-list.tsx"
+import { ActivityLog } from "./activity-log.tsx"
 import { rollForExport } from "./rollfor-export.ts"
 import useWebSocket from "react-use-websocket"
 import {
@@ -44,6 +45,7 @@ import {
   IconRefreshAlert,
   IconUserFilled,
 } from "@tabler/icons-react"
+import { formatTime } from "../shared/utils.ts"
 import { IconLock, IconLockOpen2, IconShieldFilled } from "@tabler/icons-react"
 import { useNavigate } from "react-router"
 import { deepEqual } from "fast-equals"
@@ -93,6 +95,7 @@ export const Raid = (
   { itemPickerOpen = false }: { itemPickerOpen?: boolean },
 ) => {
   const params = useParams()
+  const [logOpen, setLogOpen] = useState(false)
   const [sheet, setSheet] = useState<Sheet>()
   const [user, setUser] = useState<User>()
   const [instance, setInstance] = useState<Instance>()
@@ -223,10 +226,7 @@ export const Raid = (
               {sheet.locked ? <Badge color="red">Locked</Badge> : null}
             </Group>
             <Badge color="var(--mantine-color-dark-5)" radius="xs">
-              {new Intl.DateTimeFormat(navigator.language, {
-                dateStyle: "medium",
-                timeStyle: "short",
-              }).format(new Date(sheet.time))}
+              {formatTime(sheet.time)}
             </Badge>
             {sheet.description
               ? (
@@ -276,7 +276,8 @@ export const Raid = (
         <Paper shadow="sm" mb="md" style={{ overflow: "hidden" }}>
           <Group p="sm" justify="space-between">
             <Button
-              disabled
+              disabled={sheet.activityLog.length == 0}
+              onClick={() => setLogOpen(true)}
               variant="default"
               leftSection={<IconLogs size={16} />}
             >
@@ -314,6 +315,15 @@ export const Raid = (
             : null}
         </Paper>
         <RaidUpdater raidId={sheet.raidId} loadRaid={loadRaid} />
+        <ActivityLog
+          attendees={sheet.attendees}
+          items={instance.items}
+          admins={sheet.admins}
+          owner={sheet.owner}
+          open={logOpen}
+          onClose={() => setLogOpen(false)}
+          activityLog={sheet.activityLog}
+        />
       </Stack>
     )
   } else {

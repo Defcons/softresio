@@ -40,16 +40,30 @@ export interface Password {
   hash: string
 }
 
-export interface Activity {
+export type BaseActivity = {
   time: string // rfc3339
+  byUser: User
+}
+
+export type Activity = RaidChanged | SrChanged | AdminChanged
+
+export interface RaidChanged extends BaseActivity {
+  type: "RaidChanged"
+  change: "created" | "edited" | "locked" | "unlocked"
+}
+
+export interface SrChanged extends BaseActivity {
+  type: "SrChanged"
+  change: "created" | "deleted"
+  itemId: number
+  character?: Character
+}
+
+export interface AdminChanged extends BaseActivity {
+  type: "AdminChanged"
+  change: "promoted" | "removed"
+  character?: Character
   user: User
-  action:
-    | "SRDeleted"
-    | "SRCreated"
-    | "SRUpdated"
-    | "RaidCreated"
-    | "RaidUpdated"
-  attendee: Attendee
 }
 
 export interface Sheet {

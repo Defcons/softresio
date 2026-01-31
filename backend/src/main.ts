@@ -177,6 +177,18 @@ app.post("/api/sr/create", async (c) => {
       attendee.user.userId !== user.userId
     )
     raid.sheet.attendees = [...raid.sheet.attendees, attendee]
+    for (const sr of softReserves) {
+      raid.sheet.activityLog.push(
+        {
+          byUser: user,
+          type: "SrChanged",
+          time: (new Date()).toISOString(),
+          change: "created",
+          character: attendee.character,
+          itemId: sr.itemId,
+        },
+      )
+    }
     await tx`update raids set ${sql({ raid: raid } as never)} where raid @> ${{
       sheet: { raidId },
     } as never}`
@@ -237,6 +249,16 @@ app.post("/api/raid/create", async (c) => {
         updatedRaid.sheet.attendees = []
       }
 
+      const change = raid ? "edited" : "created"
+      updatedRaid.sheet.activityLog.push(
+        {
+          type: "RaidChanged",
+          time: (new Date()).toISOString(),
+          byUser: user,
+          change,
+        },
+      )
+
       await tx`insert into raids ${
         sql({ raid: updatedRaid } as never)
       } on conflict ((raid->'sheet'->>'raidId')) do update set raid = EXCLUDED.raid;`
@@ -269,10 +291,34 @@ app.post("/api/admin", async (c) => {
     if (raid.sheet.admins.some((u) => u.userId == user.userId)) {
       if (add && raid.sheet.admins.some((a) => a.userId != add.userId)) {
         raid.sheet.admins = [...raid.sheet.admins, add]
+        raid.sheet.activityLog.push(
+          {
+            byUser: user,
+            type: "AdminChanged",
+            character: raid.sheet.attendees.find((a) =>
+              a.user.userId == add.userId
+            )?.character,
+            time: (new Date()).toISOString(),
+            change: "promoted",
+            user: add,
+          },
+        )
       }
       if (remove && raid.sheet.owner.userId != remove.userId) {
         raid.sheet.admins = raid.sheet.admins.filter((a) =>
           a.userId != remove.userId
+        )
+        raid.sheet.activityLog.push(
+          {
+            byUser: user,
+            type: "AdminChanged",
+            time: (new Date()).toISOString(),
+            character: raid.sheet.attendees.find((a) =>
+              a.user.userId == remove.userId
+            )?.character,
+            change: "removed",
+            user: remove,
+          },
         )
       }
       await tx`update raids set ${
@@ -300,6 +346,15 @@ app.post("/api/raid/:raidId/lock", async (c) => {
 
     if (raid.sheet.admins.some((u) => u.userId == user.userId)) {
       raid.sheet.locked = !raid.sheet.locked
+      const change = raid.sheet.locked ? "locked" : "unlocked"
+      raid.sheet.activityLog.push(
+        {
+          type: "RaidChanged",
+          time: (new Date()).toISOString(),
+          byUser: user,
+          change,
+        },
+      )
     } else {
       return { user, error: "You are not allowed to lock this raid" }
     }
@@ -337,7 +392,18 @@ app.post("/api/sr/delete", async (c) => {
           attendee.softReserves,
         ),
       }))
-
+      raid.sheet.activityLog.push(
+        {
+          byUser: user,
+          type: "SrChanged",
+          time: (new Date()).toISOString(),
+          change: "deleted",
+          character: raid.sheet.attendees.find((a) =>
+            a.user.userId == request.user.userId
+          )?.character,
+          itemId: request.itemId,
+        },
+      )
       await tx`update raids set ${
         sql({ raid: raid } as never)
       } where raid @> ${{

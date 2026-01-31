@@ -9,6 +9,7 @@ import {
   Stack,
   Text,
   Title,
+  Tooltip,
 } from "@mantine/core"
 import { useHover } from "@mantine/hooks"
 import { useNavigate } from "react-router"
@@ -20,6 +21,7 @@ import type {
   User,
 } from "../shared/types.ts"
 import { IconShieldFilled, IconUserFilled } from "@tabler/icons-react"
+import { formatTime } from "../shared/utils.ts"
 
 const MyRaidItem = (
   { user, instances, raid }: {
@@ -66,9 +68,11 @@ const MyRaidItem = (
             </Title>
           </Group>
           <Group wrap="nowrap" gap="xs">
-            <Text lineClamp={1}>
-              {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
-            </Text>
+            <Tooltip label={formatTime(raid.sheet.time)}>
+              <Text lineClamp={1}>
+                {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
+              </Text>
+            </Tooltip>
             <Group
               style={{
                 visibility:
