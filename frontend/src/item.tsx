@@ -22,7 +22,6 @@ import {
   Title,
   Tooltip,
 } from "@mantine/core"
-import { useDebounce } from "use-debounce"
 
 export const ItemNameAndIcon = (
   {
@@ -47,7 +46,6 @@ export const ItemNameAndIcon = (
   },
 ) => {
   const { hovered, ref } = useHover()
-  const [debouncedHover] = useDebounce(hovered, 300)
   const isTouchScreen = globalThis.matchMedia("(pointer: coarse)").matches
   const handlers = useLongPress(() => onLongClick?.(), {
     onCancel: (_, meta) => {
@@ -64,7 +62,7 @@ export const ItemNameAndIcon = (
       m={0}
       p={0}
       opened={showTooltipItemId == item.id ||
-        (!isTouchScreen && debouncedHover)}
+        (!isTouchScreen && hovered)}
       position="bottom"
       label={
         <div
