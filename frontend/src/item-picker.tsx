@@ -217,6 +217,21 @@ export const ItemPicker = ({
             }}
           />
         </Group>
+        <Select
+          placeholder="Boss"
+          disabled={possibleBosses.length == 0}
+          onFocus={() => setShowTooltipItemId(undefined)}
+          searchable
+          clearable
+          value={instance.bosses.find((boss) => boss.id == bossFilter)?.name ||
+            null}
+          onChange={(value) => {
+            const boss = instance.bosses.find((b) => b.name == value)
+            if (boss) setBossFilter(boss.id)
+            else setBossFilter(undefined)
+          }}
+          data={possibleBosses}
+        />
         <Group grow>
           <Select
             placeholder="Slot"
@@ -241,21 +256,6 @@ export const ItemPicker = ({
             data={possibleTypes}
           />
         </Group>
-        <Select
-          placeholder="Boss"
-          disabled={possibleBosses.length == 0}
-          onFocus={() => setShowTooltipItemId(undefined)}
-          searchable
-          clearable
-          value={instance.bosses.find((boss) => boss.id == bossFilter)?.name ||
-            null}
-          onChange={(value) => {
-            const boss = instance.bosses.find((b) => b.name == value)
-            if (boss) setBossFilter(boss.id)
-            else setBossFilter(undefined)
-          }}
-          data={possibleBosses}
-        />
         <List
           rowComponent={ItemPickerElement}
           rowCount={listElements.length}

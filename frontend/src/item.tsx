@@ -205,7 +205,7 @@ export const SelectableItem = ({
           {!deleteMode && !hardReserves.includes(item.id)
             ? (
               <Text w={30} size="xs" c="grey" ta="right">
-                {chance > 1 ? Math.round(chance) : chance}%
+                {chance ? `${chance}%` : null}
               </Text>
             )
             : null}
