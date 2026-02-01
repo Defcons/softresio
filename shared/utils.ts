@@ -14,18 +14,11 @@ export const formatTime = (time: string) =>
   }).format(new Date(time))
 
 export const diff = (before: number[], after: number[]) => {
-  let added = [...after]
-  let removed = [...before]
-
-  for (const element of before) {
-    if (added.includes(element)) {
-      added = removeOne((e) => e == element, added)
-    }
-  }
-  for (const element of after) {
-    if (removed.includes(element)) {
-      removed = removeOne((e) => e == element, removed)
-    }
-  }
+  const added = before.reduce((acc, cur) => removeOne((e) => e == cur, acc), [
+    ...after,
+  ])
+  const removed = after.reduce((acc, cur) => removeOne((e) => e == cur, acc), [
+    ...before,
+  ])
   return { added, removed }
 }
