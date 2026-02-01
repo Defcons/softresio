@@ -156,25 +156,12 @@ export const CreateRaid = (
             renderOption={renderInstance(instances || [])}
             filter={instanceFilter(instances || [])}
             onChange={(v) => {
-              const update = () => {
-                setInstance(instances?.find((i) => i.id == Number(v)))
-                setHardReserves([])
-              }
-              if (params.raidId) {
-                modals.openConfirmModal({
-                  title: "Are you sure?",
-                  centered: true,
-                  children: (
-                    <Text size="sm">
-                      Changing the instance will remove all exisiting SR's
-                    </Text>
-                  ),
-                  labels: { confirm: "Confirm", cancel: "Cancel" },
-                  confirmProps: { color: "red" },
-                  onConfirm: () => update(),
-                })
+              const newInstance = instances?.find((i) => i.id == Number(v))
+              setInstance(newInstance)
+              if ((newInstance?.id == sheetBeforeEdit?.instanceId) && useHr) {
+                setHardReserves(sheetBeforeEdit?.hardReserves || [])
               } else {
-                update()
+                setHardReserves([])
               }
             }}
           />
@@ -230,7 +217,7 @@ export const CreateRaid = (
               setUseHr(event.target.checked)
               if (!event.target.checked) setHardReserves([])
             }}
-            label="Use hard reserves"
+            label="Use hard-reserves"
           />
           <Collapse in={useHr && instance ? true : false}>
             {instance
@@ -248,7 +235,27 @@ export const CreateRaid = (
           </Collapse>
           <Button
             mt="sm"
-            onClick={createRaid}
+            onClick={() => {
+              if (
+                (params.raidId) && (sheetBeforeEdit?.instanceId != instance?.id)
+              ) {
+                modals.openConfirmModal({
+                  title: "Are you sure?",
+                  centered: true,
+                  children: (
+                    <Text size="sm">
+                      Changing the instance will remove all exisiting
+                      soft-reserves
+                    </Text>
+                  ),
+                  labels: { confirm: "Confirm", cancel: "Cancel" },
+                  confirmProps: { color: "red" },
+                  onConfirm: () => createRaid(),
+                })
+              } else {
+                createRaid()
+              }
+            }}
             disabled={!instance || !srCount ||
               (useHr && hardReserves.length == 0) || !raidChanged()}
           >
