@@ -103,9 +103,10 @@ export const Raid = (
   const [user, setUser] = useState<User>()
   const [instance, setInstance] = useState<Instance>()
   const [instances, setInstances] = useState<Instance[]>()
-  const [attendeesWhenExportedLast, setAttendeesWhenExportedLast] = useState<
-    Attendee[]
-  >()
+  const [exportedLast, setExportedLast] = useState<{
+    attendees: Attendee[]
+    hardReserves: number[]
+  }>()
   const navigate = useNavigate()
 
   const loadRaid = (sheet?: Sheet) => {
@@ -327,13 +328,23 @@ export const Raid = (
                 toClipboard={rollForExport(sheet)}
                 label="RollFor"
                 tooltip="Copy RollFor export"
-                onClick={() => setAttendeesWhenExportedLast(sheet.attendees)}
-                icon={attendeesWhenExportedLast &&
-                    !deepEqual(attendeesWhenExportedLast, sheet.attendees)
+                onClick={() =>
+                  setExportedLast({
+                    attendees: sheet.attendees,
+                    hardReserves: sheet.hardReserves.sort(),
+                  })}
+                icon={exportedLast &&
+                    !deepEqual(exportedLast, {
+                      attendees: sheet.attendees,
+                      hardReserves: sheet.hardReserves.sort(),
+                    })
                   ? <IconRefreshAlert size={16} />
                   : <IconCopy size={16} />}
-                orange={attendeesWhenExportedLast &&
-                  !deepEqual(attendeesWhenExportedLast, sheet.attendees)}
+                orange={exportedLast &&
+                  !deepEqual(exportedLast, {
+                    attendees: sheet.attendees,
+                    hardReserves: sheet.hardReserves.sort(),
+                  })}
               />
               <Group gap={3} miw={45}>
                 <IconUserFilled size={20} />
