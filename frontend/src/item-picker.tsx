@@ -20,6 +20,7 @@ import type {
 import { useDebounce } from "use-debounce"
 import { List } from "react-window"
 import { useNavigate } from "react-router"
+import { slotOrder } from "./slot-order.ts"
 
 import { ItemPickerElement } from "./item.tsx"
 
@@ -66,7 +67,7 @@ export const ItemPicker = ({
           : [],
       ],
     ),
-  ]
+  ].sort((a, b) => slotOrder.indexOf(a) - slotOrder.indexOf(b))
   const possibleTypes = [
     ...new Set(filteredItems.flatMap((i) => i.types)),
   ]
