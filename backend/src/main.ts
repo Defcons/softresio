@@ -87,7 +87,7 @@ create or replace function notify_raid_changed()
   returns trigger
 as $$
 begin
-  perform pg_notify('raid_updated', (new.raid #- '{sheet,password}')::text);
+  perform pg_notify('raid_updated', (new.raid->'sheet'->>'raidId'));
   return null;
 end;
 $$ language plpgsql
@@ -101,14 +101,22 @@ create or replace trigger raid_updated
   execute function notify_raid_changed();
 `
 
-await sql.listen("raid_updated", (raid) => {
-  const sheet = JSON.parse(raid).sheet
-  if (sheet.raidId in clients) {
+await sql.listen("raid_updated", async (raidId) => {
+  if (raidId in clients) {
     console.log(
-      `raidId: ${sheet.raidId}, client: ${clients[sheet.raidId].length}`,
+      `raidId: ${raidId}, client: ${clients[raidId].length}`,
     )
-    for (const client of clients[sheet.raidId]) {
-      client.ws.send(JSON.stringify(sheet))
+
+    const [raid] = await sql<
+      Raid[]
+    >`select raid -> 'sheet' as sheet from raids where raid @> ${{
+      sheet: { raidId },
+    } as never} for update;`
+
+    if (raid) {
+      for (const client of clients[raidId]) {
+        client.ws.send(JSON.stringify(raid.sheet))
+      }
     }
   }
 })
