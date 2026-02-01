@@ -112,12 +112,13 @@ export const ItemPicker = ({
         (item.name.toLowerCase().includes(
           debouncedSearch.toLowerCase() || "",
         )) &&
-        (!slotFilter ||
+        (slotFilter == undefined ||
           (slotFilter == "Class" && selectedClass &&
             item.classes.includes(selectedClass)) ||
           item.slots.includes(slotFilter)) &&
-        (!bossFilter || item.dropsFrom.find((df) => df.bossId == bossFilter)) &&
-        (!typeFilter || item.types.includes(typeFilter))
+        (bossFilter == undefined ||
+          item.dropsFrom.find((df) => df.bossId == bossFilter)) &&
+        (typeFilter == undefined || item.types.includes(typeFilter))
       ),
     )
   }, [
@@ -185,6 +186,10 @@ export const ItemPicker = ({
       opened={itemPickerOpen}
       onClose={() => {
         setShowTooltipItemId(undefined)
+        setSearch("")
+        setSlotFilter(undefined)
+        setTypeFilter(undefined)
+        setBossFilter(undefined)
         navigate(-1)
       }}
       withCloseButton={false}
@@ -230,6 +235,7 @@ export const ItemPicker = ({
             const boss = instance.bosses.find((b) => b.name == value)
             if (boss) setBossFilter(boss.id)
             else setBossFilter(undefined)
+            console.log(boss)
           }}
           data={possibleBosses}
         />
