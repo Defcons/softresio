@@ -1337,7 +1337,7 @@
         "Druid"
       ],
       "quality": 5,
-      "tooltip": "<div class=\"tw-tt\"><b class=\"q5\">The Scythe of Elune</b><div><div></div><div></div></div><span>Quest Item</span></div>",
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q5\">The Scythe of Elune</b><span>Binds when picked up</span><span>Unique</span><span>This Item Begins a Quest</span><span>Classes: Priest, Mage, Warlock, Druid</span><span>Requires Level 60</span></div>",
       "icon": "inv_weapon_shortblade_23.png",
       "dropsFrom": [
         {
