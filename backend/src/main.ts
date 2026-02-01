@@ -21,7 +21,7 @@ import type {
   SoftReserve,
   User,
 } from "../shared/types.ts"
-import { removeOne } from "../shared/utils.ts"
+import { diff, removeOne } from "../shared/utils.ts"
 import { Hono } from "hono"
 import { serveStatic, upgradeWebSocket } from "hono/deno"
 import type { Context } from "hono"
@@ -180,23 +180,72 @@ app.post("/api/sr/create", async (c) => {
     } as never} for update;`
     if (!raid) return { user, error: "Raid not found" }
     if (raid.sheet.locked) return { user, error: "Raid is locked" }
+
+    // need to delete all and add all new
+    const oldNameCharacter = raid.sheet.attendees.find((attendee) =>
+      attendee.character.name != character.name &&
+      attendee.user.userId == user.userId
+    )
+
+    // need to diff
+    const sameCharacter = raid.sheet.attendees.find((attendee) =>
+      attendee.character.name == character.name
+    )
+
+    let changes: { itemId: number; character: Character; remove: boolean }[] =
+      []
+    if (oldNameCharacter) {
+      // remove all
+      changes = changes.concat(oldNameCharacter.softReserves.map((sr) => ({
+        itemId: sr.itemId,
+        character: oldNameCharacter.character,
+        remove: true,
+      })))
+    }
+    if (sameCharacter) {
+      // log diff
+      const { added, removed } = diff(
+        sameCharacter.softReserves.map((sr) => sr.itemId),
+        attendee.softReserves.map((sr) => sr.itemId),
+      )
+      changes = changes.concat(removed.map((itemId) => ({
+        itemId: itemId,
+        character: sameCharacter.character,
+        remove: true,
+      })))
+      changes = changes.concat(added.map((itemId) => ({
+        itemId: itemId,
+        character: sameCharacter.character,
+        remove: false,
+      })))
+    } else {
+      // add all
+      changes = changes.concat(attendee.softReserves.map((sr) => ({
+        itemId: sr.itemId,
+        character: attendee.character,
+        remove: false,
+      })))
+    }
+
+    for (const { itemId, character, remove } of changes) {
+      raid.sheet.activityLog.push(
+        {
+          byUser: user,
+          type: "SrChanged",
+          time: (new Date((new Date()).getTime() + (remove ? 0 : 10)))
+            .toISOString(),
+          change: remove ? "deleted" : "created",
+          character,
+          itemId,
+        },
+      )
+    }
+
     raid.sheet.attendees = raid.sheet.attendees.filter((attendee) =>
       attendee.character.name !== character.name &&
       attendee.user.userId !== user.userId
     )
     raid.sheet.attendees = [...raid.sheet.attendees, attendee]
-    for (const sr of softReserves) {
-      raid.sheet.activityLog.push(
-        {
-          byUser: user,
-          type: "SrChanged",
-          time: (new Date()).toISOString(),
-          change: "created",
-          character: attendee.character,
-          itemId: sr.itemId,
-        },
-      )
-    }
     await tx`update raids set ${sql({ raid: raid } as never)} where raid @> ${{
       sheet: { raidId },
     } as never}`
@@ -399,7 +448,10 @@ app.post("/api/sr/delete", async (c) => {
             softReserve.itemId == request.itemId,
           attendee.softReserves,
         ),
-      }))
+      })).filter(
+        (attendee) => (attendee.softReserves.length > 0 &&
+          attendee.user.userId == request.user.userId),
+      )
       raid.sheet.activityLog.push(
         {
           byUser: user,
