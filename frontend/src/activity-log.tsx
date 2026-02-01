@@ -2,6 +2,7 @@ import type { Activity, Attendee, Item, User } from "../shared/types.ts"
 import { Group, Modal, Table, Text, Tooltip } from "@mantine/core"
 import { formatDistanceToNow } from "date-fns"
 import { formatTime } from "../shared/utils.ts"
+import { nothingItem } from "./mock-item.ts"
 
 const ActivityLogElement = (
   { activity, admins, owner, items, attendees }: {
@@ -56,10 +57,12 @@ const ActivityLogElement = (
                     : "soft-reserve of"}{" "}
                   <b
                     className={`q${
-                      items.find((i) => i.id == activity.itemId)?.quality
+                      (items.find((i) => i.id == activity.itemId) ||
+                        nothingItem).quality
                     }`}
                   >
-                    [{items.find((i) => i.id == activity.itemId)?.name}]
+                    [{(items.find((i) => i.id == activity.itemId) ||
+                      nothingItem).name}]
                   </b>
                   {activity.change == "deleted" ? " was deleted" : null}
                 </Text>
