@@ -208,6 +208,7 @@ export const CreateSr = (
           />
         </Group>
         <ItemSelect
+          withAsterisk={false}
           label="Items"
           value={selectedItemIds}
           onChange={setSelectedItemIds}

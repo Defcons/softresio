@@ -213,6 +213,7 @@ export const CreateRaid = (
           />
           <Switch
             checked={useHr}
+            disabled={!instance}
             onChange={(event) => {
               setUseHr(event.target.checked)
               if (!event.target.checked) setHardReserves([])
@@ -223,7 +224,8 @@ export const CreateRaid = (
             {instance
               ? (
                 <ItemSelect
-                  label={"Select the item's you want to hard-reserve"}
+                  withAsterisk={hardReserves.length == 0}
+                  label="Select the item's you want to hard-reserve"
                   value={hardReserves}
                   onChange={setHardReserves}
                   sameItemLimit={1}

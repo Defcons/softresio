@@ -20,6 +20,7 @@ export const ItemSelect = (
     hardReserves = [],
     sameItemLimit,
     itemPickerOpen,
+    withAsterisk,
   }: {
     value: number[]
     label: string
@@ -32,6 +33,7 @@ export const ItemSelect = (
     hardReserves?: number[]
     sameItemLimit: number
     itemPickerOpen: boolean
+    withAsterisk: boolean
   },
 ) => {
   const navigate = useNavigate()
@@ -44,7 +46,7 @@ export const ItemSelect = (
         <Text
           size="sm"
           c="var(--mantine-color-error)"
-          hidden={itemLimit ? value.length == itemLimit : value.length > 0}
+          hidden={!withAsterisk}
         >
           *
         </Text>
