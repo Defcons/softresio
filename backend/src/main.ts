@@ -614,9 +614,11 @@ app.get("/api/discord", async (c) => {
           btoa(`${DISCORD_CLIENT_ID}:${DISCORD_CLIENT_SECRET}`),
       },
     })).json()
+  console.log(accessData)
   const userData = await (await fetch(`${DISCORD_API_ENDPOINT}/users/@me`, {
     headers: { "Authorization": `Bearer ${accessData.access_token}` },
   })).json()
+  console.log(userData)
   if (userData && userData.id && userData.username) {
     const user = {
       userId: userData.id,
