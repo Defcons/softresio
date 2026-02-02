@@ -121,9 +121,6 @@ export const ActivityLog = (
       opened={open}
       onClose={onClose}
       withCloseButton
-      styles={{
-        body: { height: "90dvh" },
-      }}
       padding="sm"
     >
       <Table>
