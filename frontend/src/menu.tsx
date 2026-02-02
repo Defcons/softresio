@@ -54,6 +54,9 @@ const MenuButtons = (
 
   return (
     <>
+      <Tooltip label="Do not expect data persistance or features to work">
+        <Badge color="red" radius="xs">Early Beta</Badge>
+      </Tooltip>
       <Button
         variant="default"
         fullWidth={mobile}
@@ -129,9 +132,6 @@ export const Menu = (
             <NavLink to="/">
               <Image src={logo} h={40} w="auto" />
             </NavLink>
-            <Tooltip label="Do not expect data persistance or features to work">
-              <Badge color="red" radius="xs">Beta</Badge>
-            </Tooltip>
             <Group visibleFrom="sm">
               <MenuButtons />
             </Group>
