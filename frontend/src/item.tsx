@@ -109,7 +109,12 @@ export const ItemNameAndIcon = (
               />
             )}
         </Box>
-        <Box ref={ref} flex={1} p={padding} {...handlers()}>
+        <Box
+          ref={ref}
+          flex={1}
+          p={padding}
+          {...handlers()}
+        >
           <Text
             fs={(item.id == 0) ? "italic" : undefined}
             fw={(item.id == 0) ? 200 : undefined}
@@ -121,13 +126,17 @@ export const ItemNameAndIcon = (
             {item.name}
           </Text>
         </Box>
-        <Flex
-          onClick={onRightSectionClick}
-          px={padding}
-          align="center"
-        >
-          {rightSection}
-        </Flex>
+        {rightSection
+          ? (
+            <Flex
+              onClick={onRightSectionClick}
+              px={padding}
+              align="center"
+            >
+              {rightSection}
+            </Flex>
+          )
+          : null}
       </Flex>
     </Tooltip>
   )
@@ -193,47 +202,50 @@ export const SelectableItem = ({
       onClick={onClick}
       onLongClick={onLongClick}
       onRightSectionClick={onRightSectionClick}
-      rightSection={
-        <Group wrap="nowrap" mr="xs" gap="xs">
-          {attendees && user
-            ? (
-              <ReservedByOthers
-                itemId={item.id}
-                user={user}
-                attendees={attendees}
-              />
-            )
-            : null}
-          {!hideChance && !hardReserves.includes(item.id)
-            ? (
-              <Text w={30} size="xs" c="grey" ta="right">
-                {chance ? `${chance}%` : null}
-              </Text>
-            )
-            : null}
-          {hardReserves.includes(item.id)
-            ? <Badge color="red">HR</Badge>
-            : null}
-          {deleteMode ? <CloseButton /> : null}
-          {(selectMode && !hardReserves.includes(item.id) &&
-              sameItemLimit > 1 && itemCount > 0)
-            ? (
-              <ActionIcon size={25}>
-                <Title order={6}>{itemCount}</Title>
-              </ActionIcon>
-            )
-            : null}
-          {(selectMode && !hardReserves.includes(item.id) &&
-              (sameItemLimit === 1 || itemCount == 0))
-            ? (
-              <Checkbox
-                checked={selectedItemIds?.includes(item.id)}
-                size="md"
-              />
-            )
-            : null}
-        </Group>
-      }
+      rightSection={((attendees && user) || !hideChance || hardReserves ||
+          deleteMode || selectMode)
+        ? (
+          <Group wrap="nowrap" mr="xs" gap="xs">
+            {attendees && user
+              ? (
+                <ReservedByOthers
+                  itemId={item.id}
+                  user={user}
+                  attendees={attendees}
+                />
+              )
+              : null}
+            {!hideChance && !hardReserves.includes(item.id)
+              ? (
+                <Text w={30} size="xs" c="grey" ta="right">
+                  {chance ? `${chance}%` : null}
+                </Text>
+              )
+              : null}
+            {hardReserves.includes(item.id)
+              ? <Badge color="red">HR</Badge>
+              : null}
+            {deleteMode ? <CloseButton /> : null}
+            {(selectMode && !hardReserves.includes(item.id) &&
+                sameItemLimit > 1 && itemCount > 0)
+              ? (
+                <ActionIcon size={25}>
+                  <Title order={6}>{itemCount}</Title>
+                </ActionIcon>
+              )
+              : null}
+            {(selectMode && !hardReserves.includes(item.id) &&
+                (sameItemLimit === 1 || itemCount == 0))
+              ? (
+                <Checkbox
+                  checked={selectedItemIds?.includes(item.id)}
+                  size="md"
+                />
+              )
+              : null}
+          </Group>
+        )
+        : undefined}
     />
   )
 }

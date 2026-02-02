@@ -27,6 +27,7 @@ import { BrowserRouter, Route, Routes } from "react-router"
 
 const theme = createTheme({
   primaryColor: "orange",
+  cursorType: "pointer",
 })
 
 function App() {
