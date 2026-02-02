@@ -44,7 +44,9 @@ const getEnv = (name: string): string => {
 
 const DATABASE_USER = getEnv("DATABASE_USER")
 const DATABASE_PASSWORD = getEnv("DATABASE_PASSWORD")
+const PORT = process.env["PORT"]
 const DOMAIN = getEnv("DOMAIN")
+const SCHEME = getEnv("SCHEME")
 const JWT_SECRET = getEnv("JWT_SECRET")
 
 const DISCORD_LOGIN_ENABLED = process.env["DISCORD_LOGIN_ENABLED"]
@@ -53,7 +55,9 @@ const DISCORD_CLIENT_SECRET = DISCORD_LOGIN_ENABLED &&
   getEnv("DISCORD_CLIENT_SECRET")
 const DISCORD_API_ENDPOINT = "https://discord.com/api/v10"
 
-const DISCORD_REDIRECT_URI = `${DOMAIN}/api/discord`
+const DISCORD_REDIRECT_URI = `${SCHEME}://${DOMAIN}${
+  PORT ? `:${PORT}` : ""
+}/api/discord`
 
 fs.glob("./instances/*.json", async (err, matches) => {
   if (err) {
@@ -146,7 +150,7 @@ const generateRaidId = (): string => {
 const setAuthCookie = (c: Context, cookie: string) => {
   setCookie(c, "auth", cookie, {
     secure: true,
-    domain: DOMAIN.split(":")[0],
+    domain: DOMAIN,
     httpOnly: true,
     sameSite: "Strict",
     expires: new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 400), // 400 days expiration
@@ -163,7 +167,7 @@ const getOrCreateUser = async (c: Context, reset = false): Promise<User> => {
   ) as unknown as User
   // Create new user cookie or refresh exisiting cookie
   const user = !reset && decoded ||
-    { userId: randomUUID(), issuer: DOMAIN.split(":")[0] }
+    { userId: randomUUID(), issuer: DOMAIN }
   const new_token = await jwt.sign(user as never, JWT_SECRET, "HS256")
   setAuthCookie(c, new_token)
   return user
@@ -615,11 +619,9 @@ app.get("/api/discord", async (c) => {
           btoa(`${DISCORD_CLIENT_ID}:${DISCORD_CLIENT_SECRET}`),
       },
     })).json()
-  console.log(accessData)
   const userData = await (await fetch(`${DISCORD_API_ENDPOINT}/users/@me`, {
     headers: { "Authorization": `Bearer ${accessData.access_token}` },
   })).json()
-  console.log(userData)
   if (userData && userData.id && userData.username) {
     const user = {
       userId: userData.id,
