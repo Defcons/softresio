@@ -183,7 +183,6 @@ export const SrListElement = (
             <ItemNameAndIcon
               item={item}
               highlight={false}
-              allowImageClick={false}
             />
           </Table.Td>
         </Table.Tr>

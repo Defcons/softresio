@@ -82,11 +82,12 @@ export const ItemNameAndIcon = (
       >
         <Box
           p={padding}
-          onClick={() => {
+          onClick={(e) => {
             if (allowImageClick) {
               globalThis.open(
                 `https://database.turtlecraft.gg/?item=${item.id}`,
               )
+              e.stopPropagation()
             }
           }}
         >
@@ -205,7 +206,7 @@ export const SelectableItem = ({
       rightSection={((attendees && user) || !hideChance || hardReserves ||
           deleteMode || selectMode)
         ? (
-          <Group wrap="nowrap" mr="xs" gap="xs">
+          <Group wrap="nowrap" mr={selectMode ? 5 : 0} gap="xs">
             {attendees && user
               ? (
                 <ReservedByOthers

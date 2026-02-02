@@ -50,8 +50,7 @@ import { formatTime } from "../shared/utils.ts"
 import { IconLock, IconLockOpen2, IconShieldFilled } from "@tabler/icons-react"
 import { useNavigate } from "react-router"
 import { deepEqual } from "fast-equals"
-import { SelectableItem } from "./item.tsx"
-import { nothingItem } from "./mock-item.ts"
+import { HardReserves } from "./hard-reserves.tsx"
 
 const raidImage = (key: string) => {
   switch (key) {
@@ -99,6 +98,7 @@ export const Raid = (
 ) => {
   const params = useParams()
   const [logOpen, setLogOpen] = useState(false)
+  const [showHardReserves, setShowHardReserves] = useState(false)
   const [sheet, setSheet] = useState<Sheet>()
   const [user, setUser] = useState<User>()
   const [instance, setInstance] = useState<Instance>()
@@ -235,39 +235,23 @@ export const Raid = (
               </Badge>
               {sheet.hardReserves.length > 0
                 ? (
-                  <Tooltip
-                    style={{
-                      backgroundColor: "var(--mantine-color-orange-8",
-                      borderRadius: 5,
-                    }}
-                    position="bottom"
-                    p={2}
-                    label={
-                      <Paper
-                        p={5}
-                        style={{
-                          backgroundColor: "var(--mantine-color-dark-8",
-                        }}
-                      >
-                        {sheet.hardReserves.map((itemId) => (
-                          <SelectableItem
-                            hideChance
-                            key={itemId}
-                            item={instance.items.find((i) => i.id == itemId) ||
-                              nothingItem}
-                            user={user}
-                          />
-                        ))}
-                      </Paper>
-                    }
-                  >
-                    <Badge color="orange">
+                  <Tooltip label="Click to show hard-reserved items">
+                    <Badge
+                      color="orange"
+                      style={{ userSelect: "none", cursor: "pointer" }}
+                      onClick={() => setShowHardReserves(!showHardReserves)}
+                    >
                       {`${sheet.hardReserves.length} HR`}
                     </Badge>
                   </Tooltip>
                 )
                 : null}
             </Group>
+            <HardReserves
+              items={instance.items}
+              show={showHardReserves}
+              hardReserves={sheet.hardReserves}
+            />
             {sheet.description
               ? (
                 <Text span style={{ whiteSpace: "pre-line" }}>
