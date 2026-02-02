@@ -121,17 +121,16 @@ export const CreateSr = (
     )
 
     const attendeeMe = findAttendeeMe()
-    if (attendeeMe) {
-      setSelectedClass(attendeeMe.character.class)
-      setSelectedSpec(attendeeMe.character.spec)
-      setCharacterName(attendeeMe.character.name)
-      setSelectedItemIds(
-        attendeeMe.softReserves.filter((sr) => sr.itemId != 0).map((sr) =>
-          sr.itemId
-        ),
-      )
-    }
-  }, [])
+    setSelectedClass(attendeeMe?.character.class)
+    setSelectedSpec(attendeeMe?.character.spec)
+    setCharacterName(attendeeMe?.character.name || "")
+    setSelectedItemIds(
+      attendeeMe?.softReserves.filter((sr) => sr.itemId != 0).map((sr) =>
+        sr.itemId
+      ) || [],
+    )
+  }, [user])
+
   const openConfirmSrsModal = () =>
     modals.openConfirmModal({
       title: "Are you sure?",

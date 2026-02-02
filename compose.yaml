@@ -23,7 +23,10 @@ services:
     environment:
       DATABASE_PASSWORD: "softres"
       DATABASE_USER: "softres"
-      DOMAIN: "localhost"
+      DISCORD_CLIENT_ID:
+      DISCORD_CLIENT_SECRET:
+      DISCORD_LOGIN_ENABLED: true
+      DOMAIN: "localhost:8000"
       JWT_SECRET: "softres"
     depends_on:
       database:

@@ -15,9 +15,11 @@ import type {
   GetInstancesResponse,
   GetMyRaidsResponse,
   GetRaidResponse,
+  InfoResponse,
   Instance,
   LockRaidResponse,
   Raid,
+  SignOutResponse,
   SoftReserve,
   User,
 } from "../shared/types.ts"
@@ -44,6 +46,13 @@ const DATABASE_USER = getEnv("DATABASE_USER")
 const DATABASE_PASSWORD = getEnv("DATABASE_PASSWORD")
 const DOMAIN = getEnv("DOMAIN")
 const JWT_SECRET = getEnv("JWT_SECRET")
+
+const DISCORD_LOGIN_ENABLED = process.env["DISCORD_LOGIN_ENABLED"]
+const DISCORD_CLIENT_ID = DISCORD_LOGIN_ENABLED && getEnv("DISCORD_CLIENT_ID")
+const DISCORD_CLIENT_SECRET = DISCORD_LOGIN_ENABLED &&
+  getEnv("DISCORD_CLIENT_SECRET")
+const DISCORD_API_ENDPOINT = "https://discord.com/api/v10"
+const DISCORD_REDIRECT_URI = `http://${DOMAIN}/api/discord`
 
 fs.glob("./instances/*.json", async (err, matches) => {
   if (err) {
@@ -133,7 +142,17 @@ const generateRaidId = (): string => {
   return raidId
 }
 
-const getOrCreateUser = async (c: Context): Promise<User> => {
+const setAuthCookie = (c: Context, cookie: string) => {
+  setCookie(c, "auth", cookie, {
+    secure: true,
+    domain: DOMAIN.split(":")[0],
+    httpOnly: true,
+    sameSite: "Strict",
+    expires: new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 400), // 400 days expiration
+  })
+}
+
+const getOrCreateUser = async (c: Context, reset = false): Promise<User> => {
   // Try to get user from cookie
   const token = getCookie(c, "auth")
   const decoded = token && await jwt.verify(
@@ -142,15 +161,10 @@ const getOrCreateUser = async (c: Context): Promise<User> => {
     "HS256",
   ) as unknown as User
   // Create new user cookie or refresh exisiting cookie
-  const user = decoded || { userId: randomUUID(), issuer: DOMAIN }
+  const user = !reset && decoded ||
+    { userId: randomUUID(), issuer: DOMAIN.split(":")[0] }
   const new_token = await jwt.sign(user as never, JWT_SECRET, "HS256")
-  setCookie(c, "auth", new_token, {
-    secure: true,
-    domain: DOMAIN,
-    httpOnly: true,
-    sameSite: "Strict",
-    expires: new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 400), // 400 days expiration
-  })
+  setAuthCookie(c, new_token)
   return user
 }
 
@@ -560,6 +574,59 @@ app.get("/api/raids", async (c) => {
   const raids = await getRecentRaids(user)
   const response: GetMyRaidsResponse = { data: raids, user }
   return c.json(response)
+})
+
+app.get("/api/info", async (c) => {
+  const user = await getOrCreateUser(c)
+  const response: InfoResponse = {
+    user,
+    data: {
+      discordClientId: DISCORD_CLIENT_ID,
+      discordLoginEnabled: !!DISCORD_LOGIN_ENABLED,
+    },
+  }
+  return c.json(response)
+})
+
+app.get("/api/signout", async (c) => {
+  const user = await getOrCreateUser(c, true)
+  const response: SignOutResponse = {
+    user,
+  }
+  return c.json(response)
+})
+
+app.get("/api/discord", async (c) => {
+  if (!DISCORD_LOGIN_ENABLED) {
+    return c.json({ error: "Discord login is not enabled" })
+  }
+  const accessRequest = new URLSearchParams({
+    "grant_type": "authorization_code",
+    "code": c.req.query("code") || "",
+    "redirect_uri": DISCORD_REDIRECT_URI,
+  })
+  const accessData =
+    await (await fetch(`${DISCORD_API_ENDPOINT}/oauth2/token`, {
+      method: "POST",
+      body: accessRequest,
+      headers: {
+        "Authorization": "Basic " +
+          btoa(`${DISCORD_CLIENT_ID}:${DISCORD_CLIENT_SECRET}`),
+      },
+    })).json()
+  const userData = await (await fetch(`${DISCORD_API_ENDPOINT}/users/@me`, {
+    headers: { "Authorization": `Bearer ${accessData.access_token}` },
+  })).json()
+  if (userData && userData.id && userData.username) {
+    const user = {
+      userId: userData.id,
+      issuer: "discord",
+      username: userData.username,
+    }
+    const token = await jwt.sign(user as never, JWT_SECRET, "HS256")
+    setAuthCookie(c, token)
+  }
+  return c.redirect(c.req.query("state") || "/")
 })
 
 // Serve the frontend

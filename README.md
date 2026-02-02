@@ -21,8 +21,11 @@ Automated, just do this
     git push origin main
 ```
 
-### Example deployment compose
+### Example deployment
+
+
 > Make sure to fill out the `<SECRET>` stuff with actual secrets
+
 ```yaml
 services:
   softresio:
@@ -52,4 +55,15 @@ services:
 
 volumes:
   softres-database:
+```
+
+### Discord login
+Go to https://discord.com/developers/applications and create an application.
+
+Then add the following environment variables to your `compose.yml`
+```yaml
+
+    DISCORD_LOGIN_ENABLED: true
+    DISCORD_CLIENT_ID: <From the link above>
+    DISCORD_CLIENT_SECRET: <Also from the link above>
 ```

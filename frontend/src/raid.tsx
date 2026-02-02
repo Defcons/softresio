@@ -94,13 +94,12 @@ export const RaidUpdater = (
 }
 
 export const Raid = (
-  { itemPickerOpen = false }: { itemPickerOpen?: boolean },
+  { itemPickerOpen = false, user }: { itemPickerOpen?: boolean; user: User },
 ) => {
   const params = useParams()
   const [logOpen, setLogOpen] = useState(false)
   const [showHardReserves, setShowHardReserves] = useState(false)
   const [sheet, setSheet] = useState<Sheet>()
-  const [user, setUser] = useState<User>()
   const [instance, setInstance] = useState<Instance>()
   const [instances, setInstances] = useState<Instance[]>()
   const [exportedLast, setExportedLast] = useState<{
@@ -118,7 +117,6 @@ export const Raid = (
         if (j.error) {
           alert(j.error)
         } else if (j.data) {
-          setUser(j.user)
           setSheet(j.data)
         }
       },
@@ -235,7 +233,11 @@ export const Raid = (
               </Badge>
               {sheet.hardReserves.length > 0
                 ? (
-                  <Tooltip label="Click to show hard-reserved items">
+                  <Tooltip
+                    label={`Click to ${
+                      showHardReserves ? "hide" : "show"
+                    } hard-reserved items`}
+                  >
                     <Badge
                       color="orange"
                       style={{ userSelect: "none", cursor: "pointer" }}

@@ -94,10 +94,9 @@ const MyRaidItem = (
   )
 }
 
-export const MyRaids = () => {
+export const MyRaids = ({ user }: { user: User }) => {
   const [raidList, setRaidList] = useState<Raid[]>()
   const [instances, setInstances] = useState<Instance[]>()
-  const [user, setUser] = useState<User>()
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -109,11 +108,10 @@ export const MyRaids = () => {
           alert(j.error)
         } else if (j.data) {
           setRaidList(j.data)
-          setUser(j.user)
         }
       },
     )
-  }, [])
+  }, [user])
 
   useEffect(() => {
     fetch("/api/instances")
@@ -123,7 +121,6 @@ export const MyRaids = () => {
           alert(j.error)
         } else if (j.data) {
           setInstances(j.data)
-          setUser(j.user)
         }
       })
   }, [])

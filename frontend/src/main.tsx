@@ -1,5 +1,6 @@
-import { StrictMode } from "react"
+import { StrictMode, useEffect, useState } from "react"
 import { createRoot } from "react-dom/client"
+import type { InfoResponse, User } from "../shared/types.ts"
 import "../css/index.css"
 import { CreateRaid } from "./create-raid.tsx"
 import { Raid } from "./raid.tsx"
@@ -33,42 +34,72 @@ const theme = createTheme({
 function App() {
   const { hovered: githubHovered, ref: githubRef } = useHover()
   const { hovered: discordHovered, ref: discordRef } = useHover()
+  const [user, setUser] = useState<User>()
+  const [discordClientId, setDiscordClientId] = useState<string>()
+  const [discordLoginEnabled, setDiscordLoginEnabled] = useState<boolean>()
+
+  useEffect(() => {
+    fetch("/api/info").then((r) => r.json()).then(
+      (j: InfoResponse) => {
+        if (j.error) {
+          alert(j.error)
+        } else if (j.data) {
+          setDiscordLoginEnabled(j.data.discordLoginEnabled)
+          setDiscordClientId(j.data.discordClientId)
+          setUser(j.user)
+        }
+      },
+    )
+  }, [])
+
   return (
     <MantineProvider defaultColorScheme="dark" theme={theme}>
       <ModalsProvider>
         <BrowserRouter>
           <Stack h="100dvh" justify="space-between">
-            <Stack>
-              <Menu />
-              <Grid gutter={0} justify="center">
-                <Grid.Col span={{ base: 11, md: 4, xl: 4 }}>
-                  <Routes>
-                    <Route path="/" element={<MyRaids />} />
-                    <Route path="/create" element={<CreateRaid />} />
-                    <Route
-                      path="/create/items"
-                      element={<CreateRaid itemPickerOpen />}
-                    />
-                    <Route path="/edit/:raidId" element={<CreateRaid />} />
-                    <Route
-                      path="/edit/:raidId/items"
-                      element={<CreateRaid itemPickerOpen />}
-                    />
-                    <Route path="/:raidId" element={<Raid />} />
-                    <Route
-                      path="/:raidId/items"
-                      element={<Raid itemPickerOpen />}
-                    />
-                    <Route path="/raids" element={<MyRaids />} />
-                    <Route path="/loot" element={<LootBrowser />} />
-                    <Route
-                      path="/loot/items"
-                      element={<LootBrowser itemPickerOpen />}
-                    />
-                  </Routes>
-                </Grid.Col>
-              </Grid>
-            </Stack>
+            {user && discordLoginEnabled !== undefined
+              ? (
+                <Stack>
+                  <Menu
+                    user={user}
+                    setUser={setUser}
+                    discordClientId={discordClientId || ""}
+                    discordLoginEnabled={discordLoginEnabled}
+                  />
+                  <Grid gutter={0} justify="center">
+                    <Grid.Col span={{ base: 11, md: 4, xl: 4 }}>
+                      <Routes>
+                        <Route path="/" element={<MyRaids user={user} />} />
+                        <Route path="/create" element={<CreateRaid />} />
+                        <Route
+                          path="/create/items"
+                          element={<CreateRaid itemPickerOpen />}
+                        />
+                        <Route path="/edit/:raidId" element={<CreateRaid />} />
+                        <Route
+                          path="/edit/:raidId/items"
+                          element={<CreateRaid itemPickerOpen />}
+                        />
+                        <Route path="/:raidId" element={<Raid user={user} />} />
+                        <Route
+                          path="/:raidId/items"
+                          element={<Raid user={user} itemPickerOpen />}
+                        />
+                        <Route
+                          path="/raids"
+                          element={<MyRaids user={user} />}
+                        />
+                        <Route path="/loot" element={<LootBrowser />} />
+                        <Route
+                          path="/loot/items"
+                          element={<LootBrowser itemPickerOpen />}
+                        />
+                      </Routes>
+                    </Grid.Col>
+                  </Grid>
+                </Stack>
+              )
+              : null}
             <Stack>
               <Divider />
               <Group gap="sm" mb="md" justify="center">

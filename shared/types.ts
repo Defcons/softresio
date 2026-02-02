@@ -21,6 +21,7 @@ export interface Character {
 export interface User {
   userId: string // uuidv4
   issuer: string
+  username?: string
 }
 
 export interface SoftReserve {
@@ -111,6 +112,12 @@ export type CreateEditRaidResponse = GenericResponse<{ raidId: string }>
 export type CreateSrResponse = GenericResponse<Sheet>
 
 export type GetRaidResponse = GenericResponse<Sheet>
+
+export type InfoResponse = GenericResponse<
+  { discordClientId: string | undefined; discordLoginEnabled: boolean }
+>
+
+export type SignOutResponse = GenericResponse<void>
 
 export type GetMyRaidsResponse = GenericResponse<Raid[]>
 
