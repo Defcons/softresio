@@ -130,7 +130,7 @@ export const Menu = (
               <Image src={logo} h={40} w="auto" />
             </NavLink>
             <Tooltip label="Do not expect data persistance or features to work">
-              <Badge color="red" radius="xs">Early Beta</Badge>
+              <Badge color="red" radius="xs">Beta</Badge>
             </Tooltip>
             <Group visibleFrom="sm">
               <MenuButtons />
