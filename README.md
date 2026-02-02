@@ -35,7 +35,7 @@ services:
     environment:
       DATABASE_PASSWORD: "<SECRET_DATABASE_PASSWORD>"
       DATABASE_USER: "softres"
-      DOMAIN: "<YOUR_DOMAIN_NAME>"
+      DOMAIN: "https://<YOUR_DOMAIN_NAME>"
       JWT_SECRET: "<SECRET_JWT_TOKEN>"
     depends_on:
       database:

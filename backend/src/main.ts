@@ -52,7 +52,8 @@ const DISCORD_CLIENT_ID = DISCORD_LOGIN_ENABLED && getEnv("DISCORD_CLIENT_ID")
 const DISCORD_CLIENT_SECRET = DISCORD_LOGIN_ENABLED &&
   getEnv("DISCORD_CLIENT_SECRET")
 const DISCORD_API_ENDPOINT = "https://discord.com/api/v10"
-const DISCORD_REDIRECT_URI = `http://${DOMAIN}/api/discord`
+
+const DISCORD_REDIRECT_URI = `${DOMAIN}/api/discord`
 
 fs.glob("./instances/*.json", async (err, matches) => {
   if (err) {
