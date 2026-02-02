@@ -1,3 +1,4 @@
+import type { ReactElement } from "react"
 import type { Activity, Attendee, Item, User } from "../shared/types.ts"
 import { Group, Modal, Table, Text, Tooltip } from "@mantine/core"
 import { formatDistanceToNow } from "date-fns"
@@ -5,16 +6,17 @@ import { formatTime } from "../shared/utils.ts"
 import { nothingItem } from "./mock-item.ts"
 
 const ActivityLogElement = (
-  { activity, admins, owner, items, attendees }: {
+  { activity, admins, owner, items, attendees, index }: {
     activity: Activity
     admins: User[]
     owner: User
     items: Item[]
+    index: number
     attendees: Attendee[]
   },
 ) => {
   return (
-    <Table.Tr key="TODO">
+    <Table.Tr>
       <Table.Td>
         <Tooltip label={formatTime(activity.time)}>
           <Text size="sm">
@@ -23,53 +25,53 @@ const ActivityLogElement = (
         </Tooltip>
       </Table.Td>
       <Table.Td>
-        <Text size="sm">
-          {activity.type == "RaidChanged"
-            ? `Raid was ${activity.change}`
-            : null}
-          {activity.type == "AdminChanged"
-            ? (
-              <Group gap={3}>
-                <Tooltip label={activity.user.userId}>
-                  <Text fw={600} size="sm">
-                    {activity.character?.name || "User"}
-                  </Text>
-                </Tooltip>
-                <Text size="sm">
-                  was {activity.change}{" "}
-                  {activity.change == "promoted" ? "to" : "as"} admin
-                </Text>
-              </Group>
-            )
-            : null}
-          {activity.type == "SrChanged"
-            ? (
-              <Group gap={3}>
-                <Tooltip label={activity.byUser.userId}>
-                  <Text fw={600} size="sm">
-                    {(activity.character?.name || "User") +
-                      (activity.change == "deleted" ? "'s" : "")}
-                  </Text>
-                </Tooltip>
-                <Text size="sm">
-                  {activity.change == "created"
-                    ? "soft-reserved"
-                    : "soft-reserve of"}{" "}
-                  <b
-                    className={`q${
-                      (items.find((i) => i.id == activity.itemId) ||
-                        nothingItem).quality
-                    }`}
-                  >
-                    [{(items.find((i) => i.id == activity.itemId) ||
-                      nothingItem).name}]
-                  </b>
-                  {activity.change == "deleted" ? " was deleted" : null}
-                </Text>
-              </Group>
-            )
-            : null}
-        </Text>
+        {activity.type == "RaidChanged" ? `Raid was ${activity.change}` : null}
+        {activity.type == "AdminChanged"
+          ? (
+            <Group>
+              <Tooltip
+                target={`#activity-${index}`}
+                label={activity.byUser.userId}
+              />
+              <Text size="sm">
+                <b id={`activity-${index}`}>
+                  {activity.character?.name || "User"}
+                </b>
+                was {activity.change}{" "}
+                {activity.change == "promoted" ? "to" : "as"} admin
+              </Text>
+            </Group>
+          )
+          : null}
+        {activity.type == "SrChanged"
+          ? (
+            <Group>
+              <Tooltip
+                target={`#activity-${index}`}
+                label={activity.byUser.userId}
+              />
+              <Text size="sm">
+                <b id={`activity-${index}`}>
+                  {activity.character?.name || "User"}
+                </b>
+                {activity.change == "deleted" ? "'s " : " "}
+                {activity.change == "created"
+                  ? "soft-reserved "
+                  : "soft-reserve of "}
+                <b
+                  className={`q${
+                    (items.find((i) => i.id == activity.itemId) ||
+                      nothingItem).quality
+                  }`}
+                >
+                  [{(items.find((i) => i.id == activity.itemId) ||
+                    nothingItem).name}]
+                </b>
+                {activity.change == "deleted" ? " was deleted" : null}
+              </Text>
+            </Group>
+          )
+          : null}
       </Table.Td>
       <Table.Td>
         <Tooltip label={activity.byUser.userId}>
@@ -98,19 +100,21 @@ export const ActivityLog = (
     onClose: () => void
   },
 ) => {
-  const elements = []
+  const elements: ReactElement[] = []
   activityLog.sort((a, b) => a.time.localeCompare(b.time)).reverse()
-  for (const activity of activityLog) {
+  activityLog.map((activity, index) =>
     elements.push(
       <ActivityLogElement
+        key={index}
         owner={owner}
         admins={admins}
         activity={activity}
+        index={index}
         items={items}
         attendees={attendees}
       />,
     )
-  }
+  )
   return (
     <Modal
       size="auto"
