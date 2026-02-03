@@ -103,14 +103,15 @@ function App() {
             <Stack>
               <Divider />
               <Group gap="sm" mb="md" justify="center">
-                <Group mx="lg" ref={githubRef}>
+                <Group gap="xs" mx="lg" ref={githubRef}>
                   <IconBrandGithubFilled
-                    size={20}
+                    size={18}
                     color={githubHovered
                       ? "var(--mantine-primary-color-filled)"
                       : "grey"}
                   />
                   <Anchor
+                    size="sm"
                     href="https://github.com/kofoednielsen/softresio"
                     underline="never"
                     c={githubHovered ? "lightgray" : "grey"}
@@ -118,14 +119,15 @@ function App() {
                     This project is open-source
                   </Anchor>
                 </Group>
-                <Group mx="lg" ref={discordRef}>
+                <Group gap="xs" mx="lg" ref={discordRef}>
                   <IconBrandDiscordFilled
-                    size={20}
+                    size={18}
                     color={discordHovered
                       ? "var(--mantine-primary-color-filled)"
                       : "grey"}
                   />
                   <Anchor
+                    size="sm"
                     href="https://discord.gg/DbfRrGGQ7J"
                     underline="never"
                     c={discordHovered ? "lightgray" : "grey"}
