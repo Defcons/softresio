@@ -54,8 +54,8 @@ const MenuButtons = (
 
   return (
     <>
-      <Tooltip label="Do not expect data persistance or features to work">
-        <Badge color="red" radius="xs">Early Beta</Badge>
+      <Tooltip label="If you experience any issues please let us know">
+        <Badge color="orange" radius="xs">Beta</Badge>
       </Tooltip>
       <Button
         variant="default"
