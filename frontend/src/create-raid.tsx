@@ -142,7 +142,7 @@ export const CreateRaid = (
   return (
     <>
       <Paper shadow="sm" p="sm">
-        <Stack gap="md">
+        <Stack>
           <Select
             withAsterisk={instance == undefined}
             label="Instance"
@@ -172,11 +172,19 @@ export const CreateRaid = (
             minRows={3}
             onChange={(event) => setDescription(event.currentTarget.value)}
           />
+          <DateTimePicker
+            value={time}
+            onChange={(value) => {
+              if (value) setTime(new Date(value))
+            }}
+            label="Date and time"
+            placeholder="Pick date and time"
+          />
 
           <Stack gap={0}>
             <Group mb={3} p={0} gap={3}>
               <Text size="sm">
-                Number of SRs
+                Number of soft-reserves
               </Text>
               <Text
                 size="sm"
@@ -200,17 +208,9 @@ export const CreateRaid = (
               checked={allowDuplicateSr}
               onChange={(event) =>
                 setAllowDuplicateSr(event.currentTarget.checked)}
-              label="Allow duplicate SRs"
+              label="Allow duplicate soft-reserves"
             />
           </Collapse>
-          <DateTimePicker
-            value={time}
-            onChange={(value) => {
-              if (value) setTime(new Date(value))
-            }}
-            label="Pick date and time"
-            placeholder="Pick date and time"
-          />
           <Switch
             checked={useHr}
             disabled={!instance}
@@ -218,7 +218,7 @@ export const CreateRaid = (
               setUseHr(event.target.checked)
               if (!event.target.checked) setHardReserves([])
             }}
-            label="Use hard-reserves"
+            label="Hard-reserve items"
           />
           <Collapse in={useHr && instance ? true : false}>
             {instance
