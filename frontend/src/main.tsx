@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client"
 import type { InfoResponse, User } from "../shared/types.ts"
 import "../css/index.css"
 import { CreateRaid } from "./create-raid.tsx"
+import { CreateGuild } from "./create-guild.tsx"
 import { RaidElement } from "./raid.tsx"
 import { MyRaids } from "./my-raids.tsx"
 import { LootBrowser } from "./loot-browser.tsx"
@@ -70,6 +71,7 @@ function App() {
                     <Grid.Col span={{ base: 11, md: 4, xl: 4 }}>
                       <Routes>
                         <Route path="/" element={<MyRaids user={user} />} />
+                        <Route path="/guild/create" element={<CreateGuild />} />
                         <Route path="/create" element={<CreateRaid />} />
                         <Route
                           path="/create/items"

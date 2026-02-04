@@ -72,6 +72,7 @@ export interface Raid {
   hardReserves: number[]
   allowDuplicateSr: boolean
   owner: User
+  guildId?: string // uuidv4
 }
 
 interface GenericResponse<T> {
@@ -92,6 +93,11 @@ export interface CreateEditRaidRequest {
   srCount: number
   hardReserves: number[]
   allowDuplicateSr: boolean
+  guildId?: string //uuidv4
+}
+
+export interface CreateGuildRequest {
+  name: string
 }
 
 export type GetInstancesResponse = GenericResponse<Instance[]>
@@ -108,7 +114,11 @@ export type InfoResponse = GenericResponse<
 
 export type SignOutResponse = GenericResponse<void>
 
+export type CreateGuildResponse = GenericResponse<void>
+
 export type GetMyRaidsResponse = GenericResponse<Raid[]>
+
+export type GetMyGuildsResponse = GenericResponse<Guild[]>
 
 export type GetCharactersResponse = GenericResponse<Character[]>
 
@@ -184,6 +194,38 @@ export interface ItemPickerElementType {
 }
 
 export interface Guild {
+  id: string // uuidv4
   name: string
-  shortname: string // used as ID
+  owner: User
+  admins: User[]
+  srPlus: SrPlusManual[]
 }
+
+export interface SrPlusManualChangeRequest {
+  guildId: string //uuidv4
+  characterName: string
+  itemId: number
+  value: number
+}
+
+export interface SrPlusManual {
+  type: "manual"
+  time: string // rfc3339
+  characterName: string
+  itemId: number
+  value: number
+}
+
+export interface SrPlusRaid {
+  type: "raid"
+  characterName: string
+  itemId: number
+  raidId: Raid["id"]
+  time: Raid["time"]
+}
+
+export type SrPlus = SrPlusRaid | SrPlusManual
+
+export type GetSrPlusResponse = GenericResponse<SrPlus[]>
+
+export type SrPlusManualChangeResponse = GenericResponse<Guild>

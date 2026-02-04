@@ -20,7 +20,9 @@ import type {
   CreateEditRaidRequest,
   CreateEditRaidResponse,
   GetInstancesResponse,
+  GetMyGuildsResponse,
   GetRaidResponse,
+  Guild,
   Instance,
   Raid,
 } from "../shared/types.ts"
@@ -38,6 +40,8 @@ export const CreateRaid = (
   const [raidBeforeEdit, setRaidBeforeEdit] = useState<Raid>()
   const [instances, setInstances] = useState<Instance[]>()
   const [instance, setInstance] = useState<Instance>()
+  const [guilds, setGuilds] = useState<Guild[]>([])
+  const [selectedGuildId, setSelectedGuildId] = useState<string>()
   const [hardReserves, setHardReserves] = useState<number[]>([])
 
   const [description, setDescription] = useState("")
@@ -67,6 +71,7 @@ export const CreateRaid = (
       srCount,
       hardReserves,
       allowDuplicateSr,
+      guildId: selectedGuildId,
     }
     fetch("/api/raid/create", { method: "POST", body: JSON.stringify(request) })
       .then((r) => r.json())
@@ -96,6 +101,18 @@ export const CreateRaid = (
   }, [])
 
   useEffect(() => {
+    fetch("/api/guilds")
+      .then((r) => r.json())
+      .then((j: GetMyGuildsResponse) => {
+        if (j.error) {
+          alert(j.error.message)
+        } else if (j.data) {
+          setGuilds(j.data)
+        }
+      })
+  }, [])
+
+  useEffect(() => {
     if (params.raidId && instances) {
       fetch(`/api/raid/${params.raidId}`).then((r) => r.json()).then(
         (j: GetRaidResponse) => {
@@ -110,6 +127,7 @@ export const CreateRaid = (
             setAllowDuplicateSr(raid.allowDuplicateSr)
             setUseHr(raid.hardReserves.length > 0)
             setSrCount(raid.srCount)
+            setSelectedGuildId(raid.guildId)
 
             if (edit) {
               setTime(new Date(raid.time))
@@ -131,6 +149,7 @@ export const CreateRaid = (
       allowDuplicateSr: raidBeforeEdit.allowDuplicateSr,
       srCount: raidBeforeEdit.srCount,
       time: raidBeforeEdit.time,
+      selectedGuildId: raidBeforeEdit.guildId,
     }
     const b = {
       instanceId: instance?.id,
@@ -140,6 +159,7 @@ export const CreateRaid = (
       allowDuplicateSr,
       srCount,
       time: time.toISOString(),
+      selectedGuildId,
     }
     return !deepEqual(a, b)
   }
@@ -226,6 +246,20 @@ export const CreateRaid = (
             }}
             label="Hard-reserve items"
           />
+          {guilds.length > 0
+            ? (
+              <Select
+                label="Select Guild"
+                placeholder="No guild"
+                value={selectedGuildId}
+                onChange={(v) => setSelectedGuildId(v || undefined)}
+                data={guilds.map((g) => ({
+                  label: g.name,
+                  value: g.id,
+                }))}
+              />
+            )
+            : null}
           <Collapse in={useHr && instance ? true : false}>
             {instance
               ? (

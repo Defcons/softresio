@@ -22,3 +22,10 @@ export const diff = (before: number[], after: number[]) => {
   ])
   return { added, removed }
 }
+
+export const raidIdToUrl = (raidId: string): string => {
+  const { protocol, hostname, port } = globalThis.location
+  return `${protocol}//${hostname}${
+    hostname == "localhost" ? `:${port}` : ""
+  }/${raidId}`
+}
