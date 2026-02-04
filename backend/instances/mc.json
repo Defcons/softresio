@@ -4687,6 +4687,208 @@
         "Trinket"
       ],
       "types": []
+    },
+    {
+      "id": 19139,
+      "name": "Fireguard Shoulders",
+      "slots": "Shoulder",
+      "types": "Leather",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Fireguard Shoulders</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Leather</span></div></div><span>217 Armor<br/>+28 Stamina<br/>+22 Fire Resistance<br/>Requires Level 60</span></div>",
+      "icon": "inv_shoulder_23.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
+    },
+    {
+      "id": 18810,
+      "name": "Wild Growth Spaulders",
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Leather"
+      ],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Wild Growth Spaulders</b><span>Binds when picked up</span><div><div><span>Shoulder</span></div><div><span>Leather</span></div></div><span>159 Armor<br/>+11 Stamina<br/>+12 Intellect<br/>+10 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 62.</span></span></div>",
+      "icon": "inv_shoulder_18.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
+    },
+    {
+      "id": 18811,
+      "name": "Fireproof Cloak",
+      "slots": [
+        "Back"
+      ],
+      "types": [],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Fireproof Cloak</b><span>Binds when picked up</span><div><div><span>Back</span></div><div><span>Cloth</span></div></div><span>54 Armor<br/>+9 Intellect<br/>+8 Spirit<br/>+8 Fire Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 18.</span><br/><span class=\"q2\">Equip: Increases your attack and casting speed by 1%.</span></span></div>",
+      "icon": "inv_misc_cape_18.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
+    },
+    {
+      "id": 18808,
+      "name": "Gloves of the Hypnotic Flame",
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Cloth"
+      ],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Gloves of the Hypnotic Flame</b><span>Binds when picked up</span><div><div><span>Hands</span></div><div><span>Cloth</span></div></div><span>68 Armor<br/>+18 Stamina<br/>+19 Intellect<br/>+8 Spirit<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage done by Fire spells and effects by up to 23.</span><br/><span class=\"q2\">Equip: Improves your chance to hit with spells by 2%.</span></span></div>",
+      "icon": "inv_gauntlets_03.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
+    },
+    {
+      "id": 18809,
+      "name": "Sash of Whispered Secrets",
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Cloth"
+      ],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Sash of Whispered Secrets</b><span>Binds when picked up</span><div><div><span>Waist</span></div><div><span>Cloth</span></div></div><span>61 Armor<br/>+20 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases damage done by Shadow spells and effects by up to 33.</span><br/><span class=\"q2\">Equip: Restores 10 health per 5 sec.</span></span></div>",
+      "icon": "inv_belt_12.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
+    },
+    {
+      "id": 18812,
+      "name": "Wristguards of True Flight",
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Mail"
+      ],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Wristguards of True Flight</b><span>Binds when picked up</span><div><div><span>Wrist</span></div><div><span>Mail</span></div></div><span>198 Armor<br/>+19 Agility<br/>+11 Stamina<br/>+6 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to hit by 1%.</span></span></div>",
+      "icon": "inv_bracer_02.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
+    },
+    {
+      "id": 18806,
+      "name": "Core Forged Greaves",
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Plate"
+      ],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Core Forged Greaves</b><span>Binds when picked up</span><div><div><span>Feet</span></div><div><span>Plate</span></div></div><span>552 Armor<br/>+28 Stamina<br/>+12 Fire Resistance<br/>+8 Shadow Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increased Defense +4.</span><br/><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 18.</span></span></div>",
+      "icon": "inv_boots_plate_09.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
+    },
+    {
+      "id": 19140,
+      "name": "Cauterizing Band",
+      "slots": [
+        "Finger"
+      ],
+      "types": [],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Cauterizing Band</b><span>Binds when picked up</span><div><div><span>Finger</span></div><div></div></div><span>+9 Stamina<br/>+12 Intellect<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 46.</span></span></div>",
+      "icon": "inv_jewelry_ring_39.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
+    },
+    {
+      "id": 18805,
+      "name": "Core Hound Tooth",
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Dagger"
+      ],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Core Hound Tooth</b><span>Binds when picked up</span><span>Unique</span><div><div><span>One-hand</span></div><div><span>Dagger</span></div></div><div><div>59 - 109 Damage</div><div>Speed 1.60</div></div><span>(52.5 damage per second)<br/>+9 Stamina<br/>Requires Level 60<br/><span class=\"q2\">Equip: Improves your chance to get a critical strike by 1%.</span><br/><span class=\"q2\">Equip: +22 Attack Power.</span></span></div>",
+      "icon": "inv_weapon_shortblade_11.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
+    },
+    {
+      "id": 18803,
+      "name": "Finkle's Lava Dredger",
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Mace"
+      ],
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Finkle's Lava Dredger</b><span>Binds when picked up</span><div><div><span>Two-hand</span></div><div><span>Mace</span></div></div><div><div>129 - 215 Damage</div><div>Speed 2.90</div></div><span>(59.3 damage per second)<br/>+25 Stamina<br/>+24 Intellect<br/>+15 Fire Resistance<br/>Requires Level 60<br/><span class=\"q2\">Equip: Increases healing done by spells and effects by up to 84.</span><br/><span class=\"q2\">Equip: +210 Attack Power in Cat, Bear, Dire Bear, and Moonkin forms only.</span><br/><span class=\"q\">\"Property of Finkle Einhorn, Grandmaster Adventurer\"</span></span></div>",
+      "icon": "inv_gizmo_02.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
     }
   ],
   "bosses": [
