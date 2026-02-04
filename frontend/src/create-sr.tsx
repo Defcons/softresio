@@ -166,6 +166,7 @@ export const CreateSr = (
           }}
           renderOption={renderClassSpec(myCharacters)}
           w="200"
+          maxLength={12}
           label="Character name"
           placeholder="Character name"
           data={myCharacters.map((e) => ({
