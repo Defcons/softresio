@@ -15,7 +15,7 @@ import type {
   Attendee,
   Class,
   Item,
-  Sheet,
+  Raid,
   SoftReserve,
   User,
 } from "../shared/types.ts"
@@ -206,8 +206,8 @@ export const SrListElement = (
 }
 
 export const SrList = (
-  { sheet, items, user, editAdmin, deleteSr }: {
-    sheet: Sheet
+  { raid, items, user, editAdmin, deleteSr }: {
+    raid: Raid
     items: Item[]
     user: User
     editAdmin: (user: User, remove: boolean) => void
@@ -250,7 +250,7 @@ export const SrList = (
     return valueA.localeCompare(valueB) * (sortDesc ? -1 : 1)
   }
 
-  const elements = sheet.attendees.flatMap((attendee) =>
+  const elements = raid.attendees.flatMap((attendee) =>
     attendee.softReserves.map((softReserve, index) => ({
       softReserve,
       attendee,
@@ -359,8 +359,8 @@ export const SrList = (
             item={items.find((i) => i.id == e.softReserve.itemId) ||
               nothingItem}
             user={user}
-            admins={sheet.admins}
-            owner={sheet.owner}
+            admins={raid.admins}
+            owner={raid.owner}
             editAdmin={editAdmin}
             deleteSr={() => deleteSr(e.attendee.user, e.softReserve.itemId)}
           />

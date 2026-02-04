@@ -1,18 +1,18 @@
-import type { Sheet } from "../shared/types.ts"
+import type { Raid } from "../shared/types.ts"
 
-export const rollForExport = (sheet: Sheet) => (globalThis.btoa(JSON.stringify({
+export const rollForExport = (raid: Raid) => (globalThis.btoa(JSON.stringify({
   metadata: {
-    id: sheet.raidId,
+    id: raid.id,
     origin: globalThis.location.hostname,
   },
-  softreserves: sheet.attendees.map((attendee) => ({
+  softreserves: raid.attendees.map((attendee) => ({
     name: attendee.character.name,
     items: attendee.softReserves.map((sr) => ({
       id: sr.itemId,
       sr_plus: sr.srPlus || undefined,
     })),
   })),
-  hardreserves: sheet.hardReserves.map((id) => ({
+  hardreserves: raid.hardReserves.map((id) => ({
     id,
   })),
 })))

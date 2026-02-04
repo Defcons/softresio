@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client"
 import type { InfoResponse, User } from "../shared/types.ts"
 import "../css/index.css"
 import { CreateRaid } from "./create-raid.tsx"
-import { Raid } from "./raid.tsx"
+import { RaidElement } from "./raid.tsx"
 import { MyRaids } from "./my-raids.tsx"
 import { LootBrowser } from "./loot-browser.tsx"
 import "@mantine/core/styles.css"
@@ -80,10 +80,13 @@ function App() {
                           path="/edit/:raidId/items"
                           element={<CreateRaid itemPickerOpen />}
                         />
-                        <Route path="/:raidId" element={<Raid user={user} />} />
+                        <Route
+                          path="/:raidId"
+                          element={<RaidElement user={user} />}
+                        />
                         <Route
                           path="/:raidId/items"
-                          element={<Raid user={user} itemPickerOpen />}
+                          element={<RaidElement user={user} itemPickerOpen />}
                         />
                         <Route
                           path="/raids"

@@ -22,7 +22,7 @@ import type {
   GetInstancesResponse,
   GetRaidResponse,
   Instance,
-  Sheet,
+  Raid,
 } from "../shared/types.ts"
 import { deepEqual } from "fast-equals"
 
@@ -32,7 +32,7 @@ export const CreateRaid = (
   const navigate = useNavigate()
   const params = useParams()
 
-  const [sheetBeforeEdit, setSheetBeforeEdit] = useState<Sheet>()
+  const [raidBeforeEdit, setRaidBeforeEdit] = useState<Raid>()
   const [instances, setInstances] = useState<Instance[]>()
   const [instance, setInstance] = useState<Instance>()
   const [hardReserves, setHardReserves] = useState<number[]>([])
@@ -100,16 +100,16 @@ export const CreateRaid = (
           if (j.error) {
             alert(j.error)
           } else if (j.data) {
-            const sheet = j.data
-            setInstance(instances.find((i) => i.id == sheet.instanceId))
-            setHardReserves(sheet.hardReserves)
-            setDescription(sheet.description)
-            setUseSrPlus(sheet.useSrPlus)
-            setAllowDuplicateSr(sheet.allowDuplicateSr)
-            setUseHr(sheet.hardReserves.length > 0)
-            setSrCount(sheet.srCount)
-            setTime(new Date(sheet.time))
-            setSheetBeforeEdit(sheet)
+            const raid = j.data
+            setInstance(instances.find((i) => i.id == raid.instanceId))
+            setHardReserves(raid.hardReserves)
+            setDescription(raid.description)
+            setUseSrPlus(raid.useSrPlus)
+            setAllowDuplicateSr(raid.allowDuplicateSr)
+            setUseHr(raid.hardReserves.length > 0)
+            setSrCount(raid.srCount)
+            setTime(new Date(raid.time))
+            setRaidBeforeEdit(raid)
           }
         },
       )
@@ -117,15 +117,15 @@ export const CreateRaid = (
   }, [instances])
 
   const raidChanged = () => {
-    if (!sheetBeforeEdit) return true
+    if (!raidBeforeEdit) return true
     const a = {
-      instanceId: sheetBeforeEdit.instanceId,
-      hardReserves: sheetBeforeEdit.hardReserves.sort(),
-      description: sheetBeforeEdit.description,
-      useSrPlus: sheetBeforeEdit.useSrPlus,
-      allowDuplicateSr: sheetBeforeEdit.allowDuplicateSr,
-      srCount: sheetBeforeEdit.srCount,
-      time: sheetBeforeEdit.time,
+      instanceId: raidBeforeEdit.instanceId,
+      hardReserves: raidBeforeEdit.hardReserves.sort(),
+      description: raidBeforeEdit.description,
+      useSrPlus: raidBeforeEdit.useSrPlus,
+      allowDuplicateSr: raidBeforeEdit.allowDuplicateSr,
+      srCount: raidBeforeEdit.srCount,
+      time: raidBeforeEdit.time,
     }
     const b = {
       instanceId: instance?.id,
@@ -158,8 +158,8 @@ export const CreateRaid = (
             onChange={(v) => {
               const newInstance = instances?.find((i) => i.id == Number(v))
               setInstance(newInstance)
-              if ((newInstance?.id == sheetBeforeEdit?.instanceId) && useHr) {
-                setHardReserves(sheetBeforeEdit?.hardReserves || [])
+              if ((newInstance?.id == raidBeforeEdit?.instanceId) && useHr) {
+                setHardReserves(raidBeforeEdit?.hardReserves || [])
               } else {
                 setHardReserves([])
               }
@@ -239,7 +239,7 @@ export const CreateRaid = (
             mt="sm"
             onClick={() => {
               if (
-                (params.raidId) && (sheetBeforeEdit?.instanceId != instance?.id)
+                (params.raidId) && (raidBeforeEdit?.instanceId != instance?.id)
               ) {
                 modals.openConfirmModal({
                   title: "Are you sure?",

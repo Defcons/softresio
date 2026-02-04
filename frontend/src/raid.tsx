@@ -8,7 +8,7 @@ import type {
   GetInstancesResponse,
   GetRaidResponse,
   Instance,
-  Sheet,
+  Raid,
   User,
 } from "../shared/types.ts"
 import { useParams } from "react-router"
@@ -80,7 +80,7 @@ const raidImage = (key: string) => {
 }
 
 export const RaidUpdater = (
-  { loadRaid, raidId }: { loadRaid: (sheet: Sheet) => void; raidId: string },
+  { loadRaid, raidId }: { loadRaid: (raid: Raid) => void; raidId: string },
 ) => {
   const { lastMessage } = useWebSocket(`/api/ws/${raidId}`, {
     shouldReconnect: (_) => true,
@@ -93,13 +93,13 @@ export const RaidUpdater = (
   return null
 }
 
-export const Raid = (
+export const RaidElement = (
   { itemPickerOpen = false, user }: { itemPickerOpen?: boolean; user: User },
 ) => {
   const params = useParams()
   const [logOpen, setLogOpen] = useState(false)
   const [showHardReserves, setShowHardReserves] = useState(false)
-  const [sheet, setSheet] = useState<Sheet>()
+  const [raid, setRaid] = useState<Raid>()
   const [instance, setInstance] = useState<Instance>()
   const [instances, setInstances] = useState<Instance[]>()
   const [exportedLast, setExportedLast] = useState<{
@@ -108,16 +108,16 @@ export const Raid = (
   }>()
   const navigate = useNavigate()
 
-  const loadRaid = (sheet?: Sheet) => {
-    if (sheet) {
-      return setSheet(sheet)
+  const loadRaid = (raid?: Raid) => {
+    if (raid) {
+      return setRaid(raid)
     }
     fetch(`/api/raid/${params.raidId}`).then((r) => r.json()).then(
       (j: GetRaidResponse) => {
         if (j.error) {
           alert(j.error)
         } else if (j.data) {
-          setSheet(j.data)
+          setRaid(j.data)
         }
       },
     )
@@ -138,9 +138,9 @@ export const Raid = (
   }
 
   const editAdmin = (user: User, remove: boolean) => {
-    if (!sheet) return
+    if (!raid) return
     const request: EditAdminRequest = {
-      raidId: sheet.raidId,
+      raidId: raid.id,
       [remove ? "remove" : "add"]: user,
     }
 
@@ -158,8 +158,8 @@ export const Raid = (
   }
 
   const deleteSr = (user: User, itemId: number) => {
-    if (!sheet) return
-    const request: DeleteSrRequest = { raidId: sheet.raidId, itemId, user }
+    if (!raid) return
+    const request: DeleteSrRequest = { raidId: raid.id, itemId, user }
     fetch(`/api/sr/delete`, { method: "POST", body: JSON.stringify(request) })
       .then((r) => r.json()).then(
         (j: DeleteSrResponse) => {
@@ -187,21 +187,19 @@ export const Raid = (
   }, [])
 
   useEffect(() => {
-    if (sheet && instances) {
-      const matches = instances.filter((i: Instance) =>
-        i.id == sheet.instanceId
-      )
+    if (raid && instances) {
+      const matches = instances.filter((i: Instance) => i.id == raid.instanceId)
       if (matches.length == 1) {
         setInstance(matches[0])
       } else {
         alert("Could not find instance")
       }
     }
-  }, [sheet, instances])
+  }, [raid, instances])
 
-  const isAdmin = sheet?.admins.some((u) => u.userId == user?.userId) || false
+  const isAdmin = raid?.admins.some((u) => u.userId == user?.userId) || false
 
-  if (sheet && instance && user) {
+  if (raid && instance && user) {
     return (
       <Stack>
         <Paper shadow="sm" p="sm">
@@ -225,13 +223,13 @@ export const Raid = (
                   }}
                 />
               </Group>
-              {sheet.locked ? <Badge color="red">Locked</Badge> : null}
+              {raid.locked ? <Badge color="red">Locked</Badge> : null}
             </Group>
             <Group>
               <Badge color="var(--mantine-color-dark-5)" radius="xs">
-                {formatTime(sheet.time)}
+                {formatTime(raid.time)}
               </Badge>
-              {sheet.hardReserves.length > 0
+              {raid.hardReserves.length > 0
                 ? (
                   <Tooltip
                     label={`Click to ${
@@ -243,7 +241,7 @@ export const Raid = (
                       style={{ userSelect: "none", cursor: "pointer" }}
                       onClick={() => setShowHardReserves(!showHardReserves)}
                     >
-                      {`${sheet.hardReserves.length} HR`}
+                      {`${raid.hardReserves.length} HR`}
                     </Badge>
                   </Tooltip>
                 )
@@ -252,12 +250,12 @@ export const Raid = (
             <HardReserves
               items={instance.items}
               show={showHardReserves}
-              hardReserves={sheet.hardReserves}
+              hardReserves={raid.hardReserves}
             />
-            {sheet.description
+            {raid.description
               ? (
                 <Text span style={{ whiteSpace: "pre-line" }}>
-                  {sheet.description}
+                  {raid.description}
                 </Text>
               )
               : null}
@@ -281,11 +279,11 @@ export const Raid = (
                 </Button>
                 <Button
                   onClick={lockRaid}
-                  variant={sheet.locked ? "" : "default"}
+                  variant={raid.locked ? "" : "default"}
                   color="red"
-                  leftSection={sheet.locked ? <IconLock /> : <IconLockOpen2 />}
+                  leftSection={raid.locked ? <IconLock /> : <IconLockOpen2 />}
                 >
-                  {sheet.locked ? "Locked" : "Unlocked"}
+                  {raid.locked ? "Locked" : "Unlocked"}
                 </Button>
               </Group>
               <IconShieldFilled size={20} />
@@ -295,14 +293,14 @@ export const Raid = (
         <CreateSr
           loadRaid={loadRaid}
           instance={instance}
-          sheet={sheet}
+          raid={raid}
           user={user}
           itemPickerOpen={itemPickerOpen}
         />
         <Paper shadow="sm" mb="md" style={{ overflow: "hidden" }}>
           <Group p="sm" justify="space-between">
             <Button
-              disabled={sheet.activityLog.length == 0}
+              disabled={raid.activityLog.length == 0}
               onClick={() => setLogOpen(true)}
               variant="default"
               leftSection={<IconLogs size={16} />}
@@ -311,37 +309,37 @@ export const Raid = (
             </Button>
             <Group>
               <CopyClipboardButton
-                toClipboard={rollForExport(sheet)}
+                toClipboard={rollForExport(raid)}
                 label="RollFor"
                 tooltip="Copy RollFor export"
                 onClick={() =>
                   setExportedLast({
-                    attendees: sheet.attendees,
-                    hardReserves: sheet.hardReserves.sort(),
+                    attendees: raid.attendees,
+                    hardReserves: raid.hardReserves.sort(),
                   })}
                 icon={exportedLast &&
                     !deepEqual(exportedLast, {
-                      attendees: sheet.attendees,
-                      hardReserves: sheet.hardReserves.sort(),
+                      attendees: raid.attendees,
+                      hardReserves: raid.hardReserves.sort(),
                     })
                   ? <IconRefreshAlert size={16} />
                   : <IconCopy size={16} />}
                 orange={exportedLast &&
                   !deepEqual(exportedLast, {
-                    attendees: sheet.attendees,
-                    hardReserves: sheet.hardReserves.sort(),
+                    attendees: raid.attendees,
+                    hardReserves: raid.hardReserves.sort(),
                   })}
               />
               <Group gap={3} miw={45}>
                 <IconUserFilled size={20} />
-                <Title order={6}>{sheet.attendees.length}</Title>
+                <Title order={6}>{raid.attendees.length}</Title>
               </Group>
             </Group>
           </Group>
-          {sheet.attendees.length > 0
+          {raid.attendees.length > 0
             ? (
               <SrList
-                sheet={sheet}
+                raid={raid}
                 items={instance.items}
                 user={user}
                 deleteSr={deleteSr}
@@ -350,15 +348,15 @@ export const Raid = (
             )
             : null}
         </Paper>
-        <RaidUpdater raidId={sheet.raidId} loadRaid={loadRaid} />
+        <RaidUpdater raidId={raid.id} loadRaid={loadRaid} />
         <ActivityLog
-          attendees={sheet.attendees}
+          attendees={raid.attendees}
           items={instance.items}
-          admins={sheet.admins}
-          owner={sheet.owner}
+          admins={raid.admins}
+          owner={raid.owner}
           open={logOpen}
           onClose={() => setLogOpen(false)}
-          activityLog={sheet.activityLog}
+          activityLog={raid.activityLog}
         />
       </Stack>
     )

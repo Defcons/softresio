@@ -8,7 +8,7 @@ import type {
   CreateSrResponse,
   GetCharactersResponse,
   Instance,
-  Sheet,
+  Raid,
   User,
 } from "../shared/types.ts"
 import {
@@ -33,10 +33,10 @@ import { deepEqual } from "fast-equals"
 import { modals } from "@mantine/modals"
 
 export const CreateSr = (
-  { instance, sheet, loadRaid, user, itemPickerOpen }: {
+  { instance, raid, loadRaid, user, itemPickerOpen }: {
     instance: Instance
-    sheet: Sheet
-    loadRaid: (sheet?: Sheet) => void
+    raid: Raid
+    loadRaid: (raid?: Raid) => void
     user: User
     itemPickerOpen: boolean
   },
@@ -48,7 +48,7 @@ export const CreateSr = (
   const [myCharacters, setMyCharacters] = useState<CharacterWithId[]>([])
 
   const srCounter = new Map()
-  for (const attendee of sheet.attendees) {
+  for (const attendee of raid.attendees) {
     for (const sr of attendee.softReserves) {
       srCounter.set(sr.itemId, (srCounter.get(sr.itemId) || 0) + 1)
     }
@@ -67,7 +67,7 @@ export const CreateSr = (
       spec: selectedSpec,
     }
     const request: CreateSrRequest = {
-      raidId: sheet.raidId,
+      raidId: raid.id,
       character,
       selectedItemIds: (selectedItemIds.length == 0) ? [0] : selectedItemIds,
     }
@@ -83,9 +83,7 @@ export const CreateSr = (
   }
 
   const findAttendeeMe = (): Attendee | undefined =>
-    sheet.attendees.filter((attendee) =>
-      attendee.user.userId === user.userId
-    )[0]
+    raid.attendees.filter((attendee) => attendee.user.userId === user.userId)[0]
 
   const srChanged = () => {
     const attendeeMe = findAttendeeMe()
@@ -137,8 +135,8 @@ export const CreateSr = (
       centered: true,
       children: (
         <Text size="sm">
-          You are allowed to reserve {sheet.srCount}{" "}
-          item{sheet.srCount == 1 ? "" : "s"}, but you{" "}
+          You are allowed to reserve {raid.srCount}{" "}
+          item{raid.srCount == 1 ? "" : "s"}, but you{" "}
           {selectedItemIds.length == 0
             ? "haven't reserved any."
             : `have only reserved ${selectedItemIds.length}.`}
@@ -215,22 +213,22 @@ export const CreateSr = (
           instance={instance}
           selectedClass={selectedClass}
           user={user}
-          attendees={sheet.attendees}
-          itemLimit={sheet.srCount}
-          hardReserves={sheet.hardReserves}
-          sameItemLimit={sheet.allowDuplicateSr ? sheet.srCount : 1}
+          attendees={raid.attendees}
+          itemLimit={raid.srCount}
+          hardReserves={raid.hardReserves}
+          sameItemLimit={raid.allowDuplicateSr ? raid.srCount : 1}
           itemPickerOpen={itemPickerOpen}
         />
         <Button
-          disabled={sheet.locked || !selectedClass || !selectedSpec ||
+          disabled={raid.locked || !selectedClass || !selectedSpec ||
             !characterName ||
-            (selectedItemIds && (selectedItemIds.length > sheet.srCount)) ||
+            (selectedItemIds && (selectedItemIds.length > raid.srCount)) ||
             !srChanged()}
-          onClick={(selectedItemIds.length < sheet.srCount)
+          onClick={(selectedItemIds.length < raid.srCount)
             ? openConfirmSrsModal
             : submitSr}
         >
-          {sheet.locked ? "Raid is locked" : "Submit"}
+          {raid.locked ? "Raid is locked" : "Submit"}
         </Button>
       </Stack>
     </Paper>

@@ -89,11 +89,15 @@ await sql`
 `
 
 await sql`
+  create table if not exists "guilds" ( guild jsonb );
+`
+
+await sql`
   create index if not exists idxraids ON raids using gin ( raid );
 `
 
 await sql`
-  create unique index if not exists idx_raidId ON raids ((raid->'sheet'->>'raidId'));
+  create unique index if not exists idx_raidId ON raids ((raid->>'id'));
 `
 
 await sql`
@@ -101,7 +105,7 @@ create or replace function notify_raid_changed()
   returns trigger
 as $$
 begin
-  perform pg_notify('raid_updated', (new.raid->'sheet'->>'raidId'));
+  perform pg_notify('raid_updated', (new.raid->>'id'));
   return null;
 end;
 $$ language plpgsql
@@ -121,15 +125,15 @@ await sql.listen("raid_updated", async (raidId) => {
       `raidId: ${raidId}, client: ${clients[raidId].length}`,
     )
 
-    const [raid] = await sql<
-      Raid[]
-    >`select raid -> 'sheet' as sheet from raids where raid @> ${{
-      sheet: { raidId },
+    const [{ raid }] = await sql<
+      { raid: Raid }[]
+    >`select raid from raids where raid @> ${{
+      id: raidId,
     } as never} for update;`
 
     if (raid) {
       for (const client of clients[raidId]) {
-        client.ws.send(JSON.stringify(raid.sheet))
+        client.ws.send(JSON.stringify(raid))
       }
     }
   }
@@ -192,22 +196,22 @@ app.post("/api/sr/create", async (c) => {
     user,
   }
   const response: CreateSrResponse = await beginWithTimeout(async (tx) => {
-    const [raid] = await tx<
-      Raid[]
-    >`select raid -> 'sheet' as sheet from raids where raid @> ${{
-      sheet: { raidId },
+    const [{ raid }] = await tx<
+      { raid: Raid }[]
+    >`select raid from raids where raid @> ${{
+      id: raidId,
     } as never} for update;`
     if (!raid) return { user, error: "Raid not found" }
-    if (raid.sheet.locked) return { user, error: "Raid is locked" }
+    if (raid.locked) return { user, error: "Raid is locked" }
 
     // need to delete all and add all new
-    const oldNameCharacter = raid.sheet.attendees.find((attendee) =>
+    const oldNameCharacter = raid.attendees.find((attendee) =>
       attendee.character.name != character.name &&
       attendee.user.userId == user.userId
     )
 
     // need to diff
-    const sameCharacter = raid.sheet.attendees.find((attendee) =>
+    const sameCharacter = raid.attendees.find((attendee) =>
       attendee.character.name == character.name
     )
 
@@ -247,7 +251,7 @@ app.post("/api/sr/create", async (c) => {
     }
 
     for (const { itemId, character, remove } of changes) {
-      raid.sheet.activityLog.push(
+      raid.activityLog.push(
         {
           byUser: user,
           type: "SrChanged",
@@ -260,15 +264,15 @@ app.post("/api/sr/create", async (c) => {
       )
     }
 
-    raid.sheet.attendees = raid.sheet.attendees.filter((attendee) =>
+    raid.attendees = raid.attendees.filter((attendee) =>
       attendee.character.name !== character.name &&
       attendee.user.userId !== user.userId
     )
-    raid.sheet.attendees = [...raid.sheet.attendees, attendee]
+    raid.attendees = [...raid.attendees, attendee]
     await tx`update raids set ${sql({ raid: raid } as never)} where raid @> ${{
-      sheet: { raidId },
+      id: raidId,
     } as never}`
-    return { user, data: raid.sheet }
+    return { user, data: raid }
   })
   return c.json(response)
 })
@@ -290,13 +294,13 @@ app.post("/api/raid/create", async (c) => {
   const raidId = editRaidId || generateRaidId()
   const response: CreateEditRaidResponse = await beginWithTimeout(
     async (tx) => {
-      const [raid] = await tx<
-        (Raid | undefined)[]
-      >`select raid -> 'sheet' as sheet from raids where raid @> ${{
-        sheet: { raidId },
+      const [result] = await tx<
+        ({ raid: Raid })[]
+      >`select raid from raids where raid @> ${{
+        id: raidId,
       } as never} for update;`
-
-      if (raid && !raid.sheet.admins.some((u) => u.userId == user.userId)) {
+      const raid = result?.raid
+      if (raid && !raid.admins.some((u) => u.userId == user.userId)) {
         return ({
           error: "You are not allowed to edit this raid",
           user,
@@ -304,29 +308,27 @@ app.post("/api/raid/create", async (c) => {
       }
 
       const updatedRaid: Raid = {
-        sheet: {
-          raidId,
-          instanceId,
-          time,
-          useSrPlus,
-          srCount,
-          description,
-          locked: false,
-          activityLog: raid?.sheet.activityLog || [],
-          attendees: raid?.sheet.attendees || [],
-          admins: raid?.sheet.admins || [user],
-          owner: raid?.sheet.owner || user,
-          hardReserves,
-          allowDuplicateSr,
-        },
+        id: raidId,
+        instanceId,
+        time,
+        useSrPlus,
+        srCount,
+        description,
+        locked: false,
+        activityLog: raid?.activityLog || [],
+        attendees: raid?.attendees || [],
+        admins: raid?.admins || [user],
+        owner: raid?.owner || user,
+        hardReserves,
+        allowDuplicateSr,
       }
 
-      if (raid?.sheet.instanceId !== updatedRaid.sheet.instanceId) {
-        updatedRaid.sheet.attendees = []
+      if (raid?.instanceId !== updatedRaid.instanceId) {
+        updatedRaid.attendees = []
       }
 
       const change = raid ? "edited" : "created"
-      updatedRaid.sheet.activityLog.push(
+      updatedRaid.activityLog.push(
         {
           type: "RaidChanged",
           time: (new Date()).toISOString(),
@@ -337,7 +339,7 @@ app.post("/api/raid/create", async (c) => {
 
       await tx`insert into raids ${
         sql({ raid: updatedRaid } as never)
-      } on conflict ((raid->'sheet'->>'raidId')) do update set raid = EXCLUDED.raid;`
+      } on conflict ((raid->>'id')) do update set raid = EXCLUDED.raid;`
       return ({
         data: { raidId },
         user,
@@ -357,39 +359,36 @@ app.post("/api/admin", async (c) => {
   } = await c.req
     .json() as EditAdminRequest
   const response: EditAdminResponse = await beginWithTimeout(async (tx) => {
-    const [raid] = await tx<
-      Raid[]
-    >`select raid -> 'sheet' as sheet from raids where raid @> ${{
-      sheet: { raidId },
+    const [{ raid }] = await tx<
+      { raid: Raid }[]
+    >`select raid from raids where raid @> ${{
+      id: raidId,
     } as never} for update;`
     if (!raid) return { user, error: "Raid not found" }
 
-    if (raid.sheet.admins.some((u) => u.userId == user.userId)) {
-      if (add && raid.sheet.admins.some((a) => a.userId != add.userId)) {
-        raid.sheet.admins = [...raid.sheet.admins, add]
-        raid.sheet.activityLog.push(
+    if (raid.admins.some((u) => u.userId == user.userId)) {
+      if (add && raid.admins.some((a) => a.userId != add.userId)) {
+        raid.admins = [...raid.admins, add]
+        raid.activityLog.push(
           {
             byUser: user,
             type: "AdminChanged",
-            character: raid.sheet.attendees.find((a) =>
-              a.user.userId == add.userId
-            )?.character,
+            character: raid.attendees.find((a) => a.user.userId == add.userId)
+              ?.character,
             time: (new Date()).toISOString(),
             change: "promoted",
             user: add,
           },
         )
       }
-      if (remove && raid.sheet.owner.userId != remove.userId) {
-        raid.sheet.admins = raid.sheet.admins.filter((a) =>
-          a.userId != remove.userId
-        )
-        raid.sheet.activityLog.push(
+      if (remove && raid.owner.userId != remove.userId) {
+        raid.admins = raid.admins.filter((a) => a.userId != remove.userId)
+        raid.activityLog.push(
           {
             byUser: user,
             type: "AdminChanged",
             time: (new Date()).toISOString(),
-            character: raid.sheet.attendees.find((a) =>
+            character: raid.attendees.find((a) =>
               a.user.userId == remove.userId
             )?.character,
             change: "removed",
@@ -400,11 +399,11 @@ app.post("/api/admin", async (c) => {
       await tx`update raids set ${
         sql({ raid: raid } as never)
       } where raid @> ${{
-        sheet: { raidId },
+        id: raidId,
       } as never}`
     }
 
-    return { user, data: raid.sheet }
+    return { user, data: raid }
   })
   return c.json(response)
 })
@@ -413,17 +412,17 @@ app.post("/api/raid/:raidId/lock", async (c) => {
   const user = await getOrCreateUser(c)
   const raidId = c.req.param("raidId")
   const response: LockRaidResponse = await beginWithTimeout(async (tx) => {
-    const [raid] = await tx<
-      Raid[]
-    >`select raid -> 'sheet' as sheet from raids where raid @> ${{
-      sheet: { raidId },
+    const [{ raid }] = await tx<
+      { raid: Raid }[]
+    >`select raid from raids where raid @> ${{
+      id: raidId,
     } as never} for update;`
     if (!raid) return { user, error: "Raid not found" }
 
-    if (raid.sheet.admins.some((u) => u.userId == user.userId)) {
-      raid.sheet.locked = !raid.sheet.locked
-      const change = raid.sheet.locked ? "locked" : "unlocked"
-      raid.sheet.activityLog.push(
+    if (raid.admins.some((u) => u.userId == user.userId)) {
+      raid.locked = !raid.locked
+      const change = raid.locked ? "locked" : "unlocked"
+      raid.activityLog.push(
         {
           type: "RaidChanged",
           time: (new Date()).toISOString(),
@@ -436,9 +435,9 @@ app.post("/api/raid/:raidId/lock", async (c) => {
     }
 
     await tx`update raids set ${sql({ raid: raid } as never)} where raid @> ${{
-      sheet: { raidId },
+      id: raidId,
     } as never}`
-    return { user, data: raid.sheet }
+    return { user, data: raid }
   })
   return c.json(response)
 })
@@ -447,18 +446,18 @@ app.post("/api/sr/delete", async (c) => {
   const user = await getOrCreateUser(c)
   const request = await c.req.json() as DeleteSrRequest
   const response: DeleteSrResponse = await beginWithTimeout(async (tx) => {
-    const [raid] = await tx<
-      Raid[]
-    >`select raid -> 'sheet' as sheet from raids where raid @> ${{
-      sheet: { raidId: request.raidId },
+    const [{ raid }] = await tx<
+      { raid: Raid }[]
+    >`select raid from raids where raid @> ${{
+      id: request.raidId,
     } as never} for update;`
     if (!raid) return { user, error: "Raid not found" }
 
     if (
-      raid.sheet.admins.some((u) => u.userId == user.userId) ||
+      raid.admins.some((u) => u.userId == user.userId) ||
       request.user.userId == user.userId
     ) {
-      raid.sheet.attendees = raid.sheet.attendees.map((attendee) => ({
+      raid.attendees = raid.attendees.map((attendee) => ({
         user: attendee.user,
         character: attendee.character,
         softReserves: removeOne(
@@ -468,16 +467,15 @@ app.post("/api/sr/delete", async (c) => {
           attendee.softReserves,
         ),
       })).filter(
-        (attendee) => (attendee.softReserves.length > 0 &&
-          attendee.user.userId == request.user.userId),
+        (attendee) => (attendee.softReserves.length > 0),
       )
-      raid.sheet.activityLog.push(
+      raid.activityLog.push(
         {
           byUser: user,
           type: "SrChanged",
           time: (new Date()).toISOString(),
           change: "deleted",
-          character: raid.sheet.attendees.find((a) =>
+          character: raid.attendees.find((a) =>
             a.user.userId == request.user.userId
           )?.character,
           itemId: request.itemId,
@@ -486,9 +484,9 @@ app.post("/api/sr/delete", async (c) => {
       await tx`update raids set ${
         sql({ raid: raid } as never)
       } where raid @> ${{
-        sheet: { raidId: request.raidId },
+        id: request.raidId,
       } as never}`
-      return { user, data: raid.sheet }
+      return { user, data: raid }
     } else {
       return { user, error: "You are not allowed to delete that SR" }
     }
@@ -499,15 +497,15 @@ app.post("/api/sr/delete", async (c) => {
 app.get("/api/raid/:raidId", async (c) => {
   const user = await getOrCreateUser(c)
   const raidId = c.req.param("raidId")
-  const [raid] = await sql<
-    Raid[]
-  >`select raid #- '{sheet,password}' -> 'sheet' as sheet from raids where raid @> ${{
-    sheet: { raidId },
+  const [{ raid }] = await sql<
+    { raid: Raid }[]
+  >`select raid from raids where raid @> ${{
+    id: raidId,
   } as never};`
   if (!raid) {
     return c.json({ error: "Raid not found" }, 404)
   }
-  const response: GetRaidResponse = { data: raid.sheet, user }
+  const response: GetRaidResponse = { data: raid, user }
   return c.json(response)
 })
 
@@ -536,19 +534,19 @@ app.get(
 )
 
 const getRecentRaids = async (user: User, n?: number): Promise<Raid[]> => {
-  return await sql<
-    Raid[]
-  >`select raid#-'{sheet,password}'->'sheet' as sheet
+  return (await sql<
+    { raid: Raid }[]
+  >`select raid
         from raids
         where
           raid @> ${{
-    sheet: { attendees: [{ user: { userId: user.userId } }] },
+    attendees: [{ user: { userId: user.userId } }],
   } as never}
         or
-        raid @> ${{ sheet: { admins: [{ userId: user.userId }] } } as never}
-        order by raid->'sheet'->'time' desc
+        raid @> ${{ admins: [{ userId: user.userId }] } as never}
+        order by raid->'time' desc
         limit ${n || null} 
-        ;`
+        ;`).map((r) => r.raid)
 }
 
 app.get("/api/characters", async (c) => {
@@ -556,9 +554,8 @@ app.get("/api/characters", async (c) => {
   const raids = await getRecentRaids(user, 20)
   const distinctCharacters: Character[] = []
   const characters = raids.flatMap((raid) =>
-    raid.sheet.attendees.filter((attendee) =>
-      attendee.user.userId == user.userId
-    ).map((attendee) => attendee.character)
+    raid.attendees.filter((attendee) => attendee.user.userId == user.userId)
+      .map((attendee) => attendee.character)
   )
   for (const char of characters) {
     if (

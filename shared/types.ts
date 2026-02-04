@@ -67,8 +67,8 @@ export interface AdminChanged extends BaseActivity {
   user: User
 }
 
-export interface Sheet {
-  raidId: string
+export interface Raid {
+  id: string
   useSrPlus: boolean
   instanceId: number
   time: string // rfc 3339
@@ -81,10 +81,6 @@ export interface Sheet {
   hardReserves: number[]
   allowDuplicateSr: boolean
   owner: User
-}
-
-export interface Raid {
-  sheet: Sheet
 }
 
 interface GenericResponse<T> {
@@ -109,9 +105,9 @@ export type GetInstancesResponse = GenericResponse<Instance[]>
 
 export type CreateEditRaidResponse = GenericResponse<{ raidId: string }>
 
-export type CreateSrResponse = GenericResponse<Sheet>
+export type CreateSrResponse = GenericResponse<Raid>
 
-export type GetRaidResponse = GenericResponse<Sheet>
+export type GetRaidResponse = GenericResponse<Raid>
 
 export type InfoResponse = GenericResponse<
   { discordClientId: string | undefined; discordLoginEnabled: boolean }
@@ -128,16 +124,16 @@ export type EditAdminRequest = {
   add?: User
   remove?: User
 }
-export type LockRaidResponse = GenericResponse<Sheet>
+export type LockRaidResponse = GenericResponse<Raid>
 
 export type DeleteSrRequest = {
   raidId: string
   user: User
   itemId: number
 }
-export type DeleteSrResponse = GenericResponse<Sheet>
+export type DeleteSrResponse = GenericResponse<Raid>
 
-export type EditAdminResponse = GenericResponse<Sheet>
+export type EditAdminResponse = GenericResponse<Raid>
 
 export interface CreateSrRequest {
   raidId: string
@@ -192,4 +188,9 @@ export interface ItemPickerElementType {
   segment?: string
   item?: Item
   npcId?: number
+}
+
+export interface Guild {
+  name: string
+  shortname: string // used as ID
 }

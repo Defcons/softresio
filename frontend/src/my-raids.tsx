@@ -38,8 +38,8 @@ const MyRaidItem = (
 
   return (
     <Box
-      onClick={() => navigate(`/${raid.sheet.raidId}`)}
-      key={raid.sheet.raidId}
+      onClick={() => navigate(`/${raid.id}`)}
+      key={raid.id}
     >
       <Paper
         ref={ref}
@@ -56,7 +56,7 @@ const MyRaidItem = (
               lineClamp={1}
               order={5}
             >
-              {idToInstance(raid.sheet.instanceId).shortname.toUpperCase()}
+              {idToInstance(raid.instanceId).shortname.toUpperCase()}
             </Title>
             <Title
               variant="default"
@@ -64,28 +64,27 @@ const MyRaidItem = (
               order={5}
               visibleFrom="sm"
             >
-              {idToInstance(raid.sheet.instanceId).name}
+              {idToInstance(raid.instanceId).name}
             </Title>
           </Group>
           <Group wrap="nowrap" gap="xs">
-            <Tooltip label={formatTime(raid.sheet.time)}>
+            <Tooltip label={formatTime(raid.time)}>
               <Text lineClamp={1}>
-                {formatDistanceToNow(raid.sheet.time, { addSuffix: true })}
+                {formatDistanceToNow(raid.time, { addSuffix: true })}
               </Text>
             </Tooltip>
             <Group
               style={{
-                visibility:
-                  raid.sheet.admins.some((e) => e.userId == user.userId)
-                    ? "visible"
-                    : "hidden",
+                visibility: raid.admins.some((e) => e.userId == user.userId)
+                  ? "visible"
+                  : "hidden",
               }}
             >
               <IconShieldFilled size={20} />
             </Group>
             <Group gap={3} miw={45}>
               <IconUserFilled size={20} />
-              <Title order={6}>{raid.sheet.attendees.length}</Title>
+              <Title order={6}>{raid.attendees.length}</Title>
             </Group>
           </Group>
         </Group>
@@ -134,7 +133,7 @@ export const MyRaids = ({ user }: { user: User }) => {
   }
 
   raidList.sort((raid1, raid2) =>
-    Date.parse(raid2.sheet.time) - Date.parse(raid1.sheet.time)
+    Date.parse(raid2.time) - Date.parse(raid1.time)
   )
 
   const upcomingRaids = []
@@ -142,7 +141,7 @@ export const MyRaids = ({ user }: { user: User }) => {
 
   const now = (new Date()).getTime()
   for (const raid of raidList) {
-    if (new Date(raid.sheet.time).getTime() >= now) {
+    if (new Date(raid.time).getTime() >= now) {
       upcomingRaids.push(raid)
     } else {
       pastRaids.push(raid)
