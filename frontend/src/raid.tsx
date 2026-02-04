@@ -7,8 +7,10 @@ import type {
   EditAdminResponse,
   GetInstancesResponse,
   GetRaidResponse,
+  GetSrPlusResponse,
   Instance,
   Raid,
+  SrPlus,
   User,
 } from "../shared/types.ts"
 import { useParams } from "react-router"
@@ -100,6 +102,7 @@ export const RaidElement = (
   const [logOpen, setLogOpen] = useState(false)
   const [showHardReserves, setShowHardReserves] = useState(false)
   const [raid, setRaid] = useState<Raid>()
+  const [srPluses, setSrPluses] = useState<SrPlus[]>()
   const [instance, setInstance] = useState<Instance>()
   const [instances, setInstances] = useState<Instance[]>()
   const [exportedLast, setExportedLast] = useState<{
@@ -173,6 +176,20 @@ export const RaidElement = (
   }
 
   useEffect(loadRaid, [])
+
+  useEffect(() => {
+    if (raid?.guildId && !srPluses) {
+      fetch(`/api/srplus/${raid.id}`)
+        .then((r) => r.json())
+        .then((j: GetSrPlusResponse) => {
+          if (j.error) {
+            alert(j.error.message)
+          } else if (j.data) {
+            setSrPluses(j.data)
+          }
+        })
+    }
+  }, [raid])
 
   useEffect(() => {
     fetch("/api/instances")
@@ -350,6 +367,7 @@ export const RaidElement = (
                 user={user}
                 deleteSr={deleteSr}
                 editAdmin={editAdmin}
+                srPluses={srPluses || []}
               />
             )
             : null}

@@ -119,6 +119,7 @@ export const ActivityLog = (
   )
   return (
     <Modal
+      title="Activity Log"
       size="auto"
       opened={open}
       onClose={onClose}

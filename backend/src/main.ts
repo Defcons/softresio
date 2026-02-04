@@ -6,6 +6,8 @@ import type {
   Character,
   CreateEditRaidRequest,
   CreateEditRaidResponse,
+  CreateGuildRequest,
+  CreateGuildResponse,
   CreateSrRequest,
   CreateSrResponse,
   DeleteSrRequest,
@@ -14,14 +16,20 @@ import type {
   EditAdminResponse,
   GetCharactersResponse,
   GetInstancesResponse,
+  GetMyGuildsResponse,
   GetMyRaidsResponse,
   GetRaidResponse,
+  GetSrPlusResponse,
+  Guild,
   InfoResponse,
   Instance,
   LockRaidResponse,
   Raid,
   SignOutResponse,
   SoftReserve,
+  SrPlus,
+  SrPlusManualChangeRequest,
+  SrPlusManualChangeResponse,
   User,
 } from "../shared/types.ts"
 import { diff, removeOne } from "../shared/utils.ts"
@@ -93,15 +101,23 @@ await sql`
 `
 
 await sql`
-  create table if not exists "guilds" ( guild jsonb );
-`
-
-await sql`
   create index if not exists idxraids ON raids using gin ( raid );
 `
 
 await sql`
   create unique index if not exists idx_raidId ON raids ((raid->>'id'));
+`
+
+await sql`
+  create table if not exists "guilds" ( guild jsonb );
+`
+
+await sql`
+  create index if not exists idxguilds ON guilds using gin ( guild );
+`
+
+await sql`
+  create unique index if not exists idx_guildid ON guilds ((guild->>'id'));
 `
 
 await sql`
@@ -145,14 +161,18 @@ await sql.listen("raid_updated", async (raidId) => {
 
 const app = new Hono()
 
+const raidIdSchema = z.string().length(5)
+
+const uuidSchema = z.string().length(36)
+
 const characterSchema = z.object({
-  name: z.string().max(12),
-  class: z.string().max(20),
-  spec: z.string().max(20),
+  name: z.string().max(12).min(1),
+  class: z.string().max(20).min(1),
+  spec: z.string().max(20).min(1),
 })
 
 const userSchema = z.object({
-  userId: z.string().max(36),
+  userId: uuidSchema,
   issuer: z.string().max(20),
 })
 
@@ -201,7 +221,7 @@ app.get("/api/instances", async (c) => {
 app.post("/api/sr/create", async (c) => {
   const user = await getOrCreateUser(c)
   const request = z.object({
-    raidId: z.string().length(5),
+    raidId: raidIdSchema,
     character: characterSchema,
     selectedItemIds: z.array(z.number()),
   }).safeParse(await c.req.json())
@@ -310,11 +330,48 @@ app.post("/api/sr/create", async (c) => {
   return c.json(response)
 })
 
+app.post("/api/guild/create", async (c) => {
+  const user = await getOrCreateUser(c)
+
+  const request = z.object({
+    name: z.string().max(40).min(1),
+  }).safeParse(await c.req.json())
+
+  if (!request.data) {
+    const response: CreateGuildResponse = {
+      error: {
+        message: "Invalid request",
+        issues: request.error.issues,
+      },
+      user,
+    }
+    return c.json(response, 400)
+  }
+  const {
+    name,
+  }: CreateGuildRequest = request.data
+
+  const guild: Guild = {
+    name,
+    id: randomUUID(),
+    owner: user,
+    admins: [user],
+    srPlus: [],
+  }
+
+  await sql`insert into guilds ${sql({ guild: guild } as never)}`
+
+  const response: CreateGuildResponse = {
+    user,
+  }
+  return c.json(response)
+})
+
 app.post("/api/raid/create", async (c) => {
   const user = await getOrCreateUser(c)
 
   const request = z.object({
-    raidId: z.string().length(5).optional(),
+    raidId: raidIdSchema.optional(),
     hardReserves: z.array(z.number()),
     allowDuplicateSr: z.boolean(),
     useSrPlus: z.boolean(),
@@ -322,6 +379,7 @@ app.post("/api/raid/create", async (c) => {
     time: z.iso.datetime(),
     instanceId: z.number(),
     srCount: z.number().max(4).min(1),
+    guildId: uuidSchema.optional(),
   }).safeParse(await c.req.json())
 
   if (!request.data) {
@@ -344,6 +402,7 @@ app.post("/api/raid/create", async (c) => {
     description,
     hardReserves,
     allowDuplicateSr,
+    guildId,
   }: CreateEditRaidRequest = request.data
 
   const raidId = editRaidId || generateRaidId()
@@ -354,6 +413,26 @@ app.post("/api/raid/create", async (c) => {
       >`select raid from raids where raid @> ${{
         id: raidId,
       } as never} for update;`
+      if (guildId) {
+        const [result] = await sql<
+          { guild: Guild }[]
+        >`select guild 
+            from guilds 
+            where 
+              guild @> ${{
+          admins: [{ userId: user.userId }],
+          id: guildId,
+        } as never};`
+        if (!result?.guild) {
+          return ({
+            error: {
+              message: "You are not an admin of a guild with that id",
+            },
+            user,
+          })
+        }
+      }
+
       const raid = result?.raid
       if (raid && !raid.admins.some((u) => u.userId == user.userId)) {
         return ({
@@ -376,6 +455,7 @@ app.post("/api/raid/create", async (c) => {
         owner: raid?.owner || user,
         hardReserves,
         allowDuplicateSr,
+        guildId,
       }
 
       if (raid?.instanceId !== updatedRaid.instanceId) {
@@ -408,7 +488,7 @@ app.post("/api/raid/create", async (c) => {
 app.post("/api/admin", async (c) => {
   const user = await getOrCreateUser(c)
   const request = z.object({
-    raidId: z.string().length(5),
+    raidId: raidIdSchema,
     add: userSchema.optional(),
     remove: userSchema.optional(),
   }).safeParse(await c.req.json())
@@ -485,7 +565,7 @@ app.post("/api/admin", async (c) => {
 app.post("/api/raid/:raidId/lock", async (c) => {
   const user = await getOrCreateUser(c)
 
-  const request = z.string().length(5).safeParse(c.req.param("raidId"))
+  const request = raidIdSchema.safeParse(c.req.param("raidId"))
   if (!request.data) {
     const response: EditAdminResponse = {
       error: { message: "Missing raidId from request" },
@@ -604,9 +684,164 @@ app.post("/api/sr/delete", async (c) => {
   return c.json(response)
 })
 
+app.post("/api/srplus", async (c) => {
+  const user = await getOrCreateUser(c)
+  const request = z.object({
+    guildId: uuidSchema,
+    characterName: z.string().max(12).min(1),
+    itemId: z.number(),
+    value: z.number().min(0).max(1000),
+  }).safeParse(await c.req.json())
+
+  if (!request.data) {
+    const response: SrPlusManualChangeResponse = {
+      error: {
+        message: "Invalid request",
+        issues: request.error.issues,
+      },
+      user,
+    }
+    return c.json(response, 400)
+  }
+
+  const {
+    guildId,
+    characterName,
+    itemId,
+    value,
+  }: SrPlusManualChangeRequest = request.data
+
+  const response: SrPlusManualChangeResponse = await beginWithTimeout(
+    async (tx) => {
+      const [result] = await sql<
+        { guild: Guild }[]
+      >`select guild 
+          from guilds 
+          where 
+            guild @> ${{
+        admins: [{ userId: user.userId }],
+        id: guildId,
+      } as never} for update;`
+      if (!result?.guild) {
+        return ({
+          error: {
+            message: "You are not an admin of a guild with that id",
+          },
+          user,
+        })
+      }
+      const guild = result.guild
+      guild.srPlus.push({
+        type: "manual",
+        time: (new Date()).toISOString(),
+        characterName,
+        itemId,
+        value,
+      })
+      await tx`insert into guilds ${
+        sql({ guild } as never)
+      } on conflict ((guild->>'id')) do update set guild = EXCLUDED.guild;`
+      return { user, data: guild }
+    },
+  )
+  return c.json(response)
+})
+
+app.get("/api/srplus/:raidId", async (c) => {
+  const user = await getOrCreateUser(c)
+  const request = z.string().length(5).safeParse(c.req.param("raidId"))
+  if (!request.data) {
+    const response: GetSrPlusResponse = {
+      error: { message: "Missing raidId from request" },
+      user,
+    }
+    return c.json(response)
+  }
+  const raidId = request.data
+  const [raidResult] = await sql<
+    { raid: Raid }[]
+  >`select raid from raids where raid @> ${{
+    id: raidId,
+  } as never};`
+  const raid = raidResult?.raid
+  if (!raid) {
+    return c.json({ error: { message: "Raid not found" } }, 404)
+  }
+  if (!raid.guildId) {
+    return c.json({ error: { message: "Raid has no guild" } }, 400)
+  }
+  const [guildResult] = await sql<
+    { guild: Guild }[]
+  >`select guild 
+      from guilds 
+      where 
+        guild @> ${{
+    id: raid.guildId,
+  } as never};`
+  if (!guildResult?.guild) {
+    return c.json({
+      error: {
+        message: "Guild not found",
+      },
+      user,
+    })
+  }
+  const guild = guildResult.guild
+  const srPlus: SrPlus[] = []
+  for (const attendee of raid.attendees) {
+    for (const softReserve of attendee.softReserves) {
+      const raids = await sql<
+        { id: string; time: string }[]
+      >`select raid->'id' as id, raid->'time' as time from raids where raid @> ${{
+        guildId: raid.guildId,
+        attendees: [
+          {
+            character: {
+              name: attendee.character.name,
+            },
+            softReserves: [
+              { itemId: softReserve.itemId },
+            ],
+          },
+        ],
+      } as never} and raid->>'time' < ${raid.time};`
+      for (const raid of raids) {
+        srPlus.push({
+          type: "raid",
+          raidId: raid.id,
+          time: raid.time,
+          characterName: attendee.character.name,
+          itemId: softReserve.itemId,
+        })
+      }
+      for (const srPlusChange of guild.srPlus) {
+        if (
+          srPlusChange.itemId == softReserve.itemId &&
+          srPlusChange.characterName == attendee.character.name
+        ) {
+          srPlus.push(srPlusChange)
+        }
+      }
+    }
+  }
+  const response: GetSrPlusResponse = {
+    user,
+    data: srPlus,
+  }
+  return c.json(response)
+})
+
 app.get("/api/raid/:raidId", async (c) => {
   const user = await getOrCreateUser(c)
-  const raidId = c.req.param("raidId")
+  const request = raidIdSchema.safeParse(c.req.param("raidId"))
+  if (!request.data) {
+    const response: EditAdminResponse = {
+      error: { message: "Missing raidId from request" },
+      user,
+    }
+    return c.json(response)
+  }
+  const raidId = request.data
   const [result] = await sql<
     { raid: Raid }[]
   >`select raid from raids where raid @> ${{
@@ -686,6 +921,23 @@ app.get("/api/raids", async (c) => {
   const user = await getOrCreateUser(c)
   const raids = await getRecentRaids(user)
   const response: GetMyRaidsResponse = { data: raids, user }
+  return c.json(response)
+})
+
+app.get("/api/guilds", async (c) => {
+  const user = await getOrCreateUser(c)
+  const result = await sql<
+    { guild: Guild }[]
+  >`select guild 
+      from guilds 
+      where 
+        guild @> ${{
+    admins: [{ userId: user.userId }],
+  } as never};`
+  const response: GetMyGuildsResponse = {
+    data: result.map((r) => r.guild),
+    user,
+  }
   return c.json(response)
 })
 

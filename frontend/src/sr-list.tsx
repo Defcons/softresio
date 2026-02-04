@@ -2,6 +2,7 @@ import { useState } from "react"
 import {
   ActionIcon,
   Box,
+  Button,
   Group,
   Menu,
   Select,
@@ -17,6 +18,7 @@ import type {
   Item,
   Raid,
   SoftReserve,
+  SrPlus,
   User,
 } from "../shared/types.ts"
 import { ItemNameAndIcon } from "./item.tsx"
@@ -29,27 +31,42 @@ import {
 } from "@tabler/icons-react"
 import { classes, renderClass } from "./class.tsx"
 import { nothingItem } from "./mock-item.ts"
+import { SrPlusLog } from "./sr-plus-log.tsx"
 import { IconShieldFilled, IconTrash } from "@tabler/icons-react"
 import { modals } from "@mantine/modals"
 
 type ListElement = { attendee: Attendee; softReserve: SoftReserve }
 
 export const SrListElement = (
-  { visible, item, attendee, admins, user, owner, editAdmin, deleteSr, locked }:
-    {
-      visible: boolean
-      locked: boolean
-      item: Item
-      attendee: Attendee
-      admins: User[]
-      owner: User
-      user: User
-      editAdmin: (user: User, remove: boolean) => void
-      deleteSr: () => void
-    },
+  {
+    visible,
+    item,
+    attendee,
+    admins,
+    user,
+    owner,
+    editAdmin,
+    deleteSr,
+    locked,
+    srPluses,
+    guildId,
+  }: {
+    srPluses: SrPlus[]
+    visible: boolean
+    locked: boolean
+    item: Item
+    attendee: Attendee
+    admins: User[]
+    owner: User
+    user: User
+    editAdmin: (user: User, remove: boolean) => void
+    deleteSr: () => void
+    guildId?: string
+  },
 ) => {
   const { ref, hovered } = useHover()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [logOpen, setLogOpen] = useState(false)
 
   const openConfirmDeleteSrModal = () =>
     modals.openConfirmModal({
@@ -187,6 +204,34 @@ export const SrListElement = (
               highlight={false}
             />
           </Table.Td>
+          {guildId
+            ? (
+              <Table.Td ta="center">
+                <Button
+                  onClick={(e) => {
+                    setLogOpen(true)
+                    e.stopPropagation()
+                  }}
+                  variant="subtle"
+                  color="lightgrey"
+                >
+                  {(srPluses.length) * 10}
+                </Button>
+                {guildId && srPluses.length > 0
+                  ? (
+                    <SrPlusLog
+                      open={logOpen}
+                      onClose={() => setLogOpen(false)}
+                      characterName={attendee.character.name}
+                      guildId={guildId}
+                      itemId={item.id}
+                      srPluses={srPluses}
+                    />
+                  )
+                  : null}
+              </Table.Td>
+            )
+            : null}
         </Table.Tr>
       </Menu.Target>
       <Menu.Dropdown>
@@ -208,7 +253,8 @@ export const SrListElement = (
 }
 
 export const SrList = (
-  { raid, items, user, editAdmin, deleteSr }: {
+  { raid, items, user, editAdmin, deleteSr, srPluses }: {
+    srPluses: SrPlus[]
     raid: Raid
     items: Item[]
     user: User
@@ -358,11 +404,19 @@ export const SrList = (
               </ActionIcon>
             </Group>
           </Table.Th>
+          {raid.guildId
+            ? (
+              <Table.Th ta="center" pb="sm" px={0} w={10}>
+                SR+
+              </Table.Th>
+            )
+            : null}
         </Table.Tr>
       </Table.Thead>
       <Table.Tbody>
         {elements.map((e) => (
           <SrListElement
+            guildId={raid.guildId}
             locked={raid.locked}
             key={`${e.attendee.character.name}|${e.softReserve.itemId}|${e.index}`}
             visible={filter(e)}
@@ -373,6 +427,10 @@ export const SrList = (
             admins={raid.admins}
             owner={raid.owner}
             editAdmin={editAdmin}
+            srPluses={srPluses?.filter((sr) =>
+              sr.characterName == e.attendee.character.name &&
+              sr.itemId == e.softReserve.itemId
+            )}
             deleteSr={() => deleteSr(e.attendee.user, e.softReserve.itemId)}
           />
         ))}
