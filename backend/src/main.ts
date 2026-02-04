@@ -152,7 +152,7 @@ const setAuthCookie = (c: Context, cookie: string) => {
     secure: true,
     domain: DOMAIN,
     httpOnly: true,
-    sameSite: "Lax",
+    sameSite: "Strict",
     expires: new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 400), // 400 days expiration
   })
 }
@@ -602,7 +602,6 @@ app.get("/api/signout", async (c) => {
 })
 
 app.get("/api/discord", async (c) => {
-  const oldUser = await getOrCreateUser(c)
   if (!DISCORD_LOGIN_ENABLED) {
     return c.json({ error: "Discord login is not enabled" })
   }
@@ -624,17 +623,13 @@ app.get("/api/discord", async (c) => {
     headers: { "Authorization": `Bearer ${accessData.access_token}` },
   })).json()
   if (userData && userData.id && userData.username) {
-    const newUser = {
+    const user = {
       userId: userData.id,
       issuer: "discord",
       username: userData.username,
     }
-    const token = await jwt.sign(newUser as never, JWT_SECRET, "HS256")
+    const token = await jwt.sign(user as never, JWT_SECRET, "HS256")
     setAuthCookie(c, token)
-    await sql`
-      update raids set raid = replace(raid::text, ${oldUser.userId}, ${newUser.userId})::jsonb
-      where raid::text like ${`%${oldUser.userId}%`};
-    `
   }
   return c.redirect(c.req.query("state") || "/")
 })
