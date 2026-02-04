@@ -183,7 +183,13 @@ export interface Instance {
   npcs: Npc[]
 }
 
+export interface NpcItem {
+  itemId: number
+  npcId: number
+}
+
 export interface ItemPickerElementType {
   segment?: string
   item?: Item
+  npcId?: number
 }
