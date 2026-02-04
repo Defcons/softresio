@@ -5,6 +5,7 @@ import type {
   Attendee,
   Item,
   ItemPickerElementType,
+  NpcItem,
   User,
 } from "../shared/types.ts"
 import { type RowComponentProps } from "react-window"
@@ -26,7 +27,8 @@ import {
 export const ItemNameAndIcon = (
   {
     item,
-    showTooltipItemId,
+    npcId,
+    showTooltipElement,
     highlight,
     onClick,
     onLongClick,
@@ -35,7 +37,8 @@ export const ItemNameAndIcon = (
     allowImageClick = true,
   }: {
     item: Item
-    showTooltipItemId?: number
+    npcId?: number
+    showTooltipElement?: NpcItem
     highlight: boolean
     allowImageClick?: boolean
     onClick?: () => void
@@ -61,7 +64,8 @@ export const ItemNameAndIcon = (
     <Tooltip
       m={0}
       p={0}
-      opened={showTooltipItemId == item.id ||
+      opened={(showTooltipElement?.itemId == item.id &&
+        showTooltipElement?.npcId == npcId) ||
         (!isTouchScreen && hovered)}
       position="bottom"
       label={
@@ -164,11 +168,12 @@ const ReservedByOthers = (
 
 export const SelectableItem = ({
   item,
+  npcId,
   onClick,
   onLongClick,
   onRightSectionClick,
   selectedItemIds,
-  showTooltipItemId,
+  showTooltipElement,
   user,
   attendees,
   deleteMode,
@@ -181,8 +186,9 @@ export const SelectableItem = ({
   onLongClick?: () => void
   onRightSectionClick?: () => void
   selectedItemIds?: number[]
-  showTooltipItemId?: number
+  showTooltipElement?: NpcItem
   item: Item
+  npcId?: number
   user?: User
   attendees?: Attendee[]
   deleteMode?: boolean
@@ -191,14 +197,16 @@ export const SelectableItem = ({
   hardReserves?: number[]
   sameItemLimit?: number
 }) => {
-  const highlight = showTooltipItemId == item.id ||
+  const highlight = (showTooltipElement?.itemId == item.id &&
+    showTooltipElement.npcId == npcId) ||
     (selectedItemIds || []).includes(item.id)
   const itemCount = selectedItemIds?.filter((id) => item.id == id).length || 0
   const chance = item.dropsFrom[0].chance
   return (
     <ItemNameAndIcon
       item={item}
-      showTooltipItemId={showTooltipItemId}
+      npcId={npcId}
+      showTooltipElement={showTooltipElement}
       highlight={highlight}
       onClick={onClick}
       onLongClick={onLongClick}
@@ -257,7 +265,7 @@ export const ItemPickerElement = ({
   onClick,
   onLongClick,
   onRightSectionClick,
-  showTooltipItemId,
+  showTooltipElement,
   user,
   style,
   deleteMode = false,
@@ -267,12 +275,12 @@ export const ItemPickerElement = ({
   hardReserves = [],
   sameItemLimit,
 }: RowComponentProps<{
-  onClick: (item_id: number) => void
-  onLongClick: (item_id: number) => void
-  onRightSectionClick: (item_id: number) => void
+  onClick: (element: NpcItem) => void
+  onLongClick: (element: NpcItem) => void
+  onRightSectionClick: (element: NpcItem) => void
   selectedItemIds?: number[]
   user?: User
-  showTooltipItemId?: number
+  showTooltipElement?: NpcItem
   deleteMode?: boolean
   selectMode?: boolean
   elements: ItemPickerElementType[]
@@ -283,6 +291,7 @@ export const ItemPickerElement = ({
   const element = elements[index]
   const segment = element.segment
   const item = element.item
+  const npcId = element.npcId
   return (
     <Box style={style}>
       {segment
@@ -298,15 +307,17 @@ export const ItemPickerElement = ({
           />
         )
         : null}
-      {item
+      {item && npcId !== undefined
         ? (
           <SelectableItem
             item={item}
+            npcId={npcId}
             selectedItemIds={selectedItemIds}
-            onLongClick={() => onLongClick(item.id)}
-            onClick={() => onClick(item.id)}
-            onRightSectionClick={() => onRightSectionClick(item.id)}
-            showTooltipItemId={showTooltipItemId}
+            onLongClick={() => onLongClick({ itemId: item.id, npcId: npcId })}
+            onClick={() => onClick({ itemId: item.id, npcId: npcId })}
+            onRightSectionClick={() =>
+              onRightSectionClick({ itemId: item.id, npcId: npcId })}
+            showTooltipElement={showTooltipElement}
             user={user}
             deleteMode={deleteMode}
             selectMode={selectMode}

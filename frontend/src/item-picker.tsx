@@ -15,12 +15,14 @@ import type {
   Instance,
   Item,
   ItemPickerElementType,
+  NpcItem,
   User,
 } from "../shared/types.ts"
 import { useDebounce } from "use-debounce"
 import { List } from "react-window"
 import { useNavigate } from "react-router"
 import { slotOrder } from "./slot-order.ts"
+import { deepEqual } from "fast-equals"
 
 import { ItemPickerElement } from "./item.tsx"
 
@@ -47,7 +49,7 @@ export const ItemPicker = ({
   itemPickerOpen: boolean
   instance: Instance
 }) => {
-  const [showTooltipItemId, setShowTooltipItemId] = useState<number>()
+  const [showTooltipElement, setShowTooltipElement] = useState<NpcItem>()
   const [slotFilter, setSlotFilter] = useState<string>()
   const [typeFilter, setTypeFilter] = useState<string>()
   const [bossFilter, setBossFilter] = useState<number>()
@@ -81,29 +83,30 @@ export const ItemPicker = ({
     ),
   ]
 
-  const onItemLongClick = (itemId: number) =>
-    showTooltipItemId === itemId
-      ? setShowTooltipItemId(undefined)
-      : setShowTooltipItemId(itemId)
+  const onElementLongClick = (element: NpcItem) =>
+    deepEqual(element, showTooltipElement)
+      ? setShowTooltipElement(undefined)
+      : setShowTooltipElement(element)
 
-  const onItemClick = (itemId: number, rightSection: boolean) => {
+  const onElementClick = (element: NpcItem, rightSection: boolean) => {
     if (!setSelectedItemIds || !selectedItemIds) {
-      return setShowTooltipItemId(undefined)
+      return setShowTooltipElement(undefined)
     }
     if (
-      (!hardReserves.includes(itemId)) &&
-      (!showTooltipItemId || showTooltipItemId == itemId)
+      (!hardReserves.includes(element.itemId)) &&
+      (!showTooltipElement || deepEqual(element, showTooltipElement))
     ) {
       const contextualItemLimit = rightSection ? 1 : sameItemLimit
       if (
-        selectedItemIds.filter((i) => i == itemId).length < contextualItemLimit
+        selectedItemIds.filter((i) => i == element.itemId).length <
+          contextualItemLimit
       ) {
-        setSelectedItemIds([...selectedItemIds, itemId])
+        setSelectedItemIds([...selectedItemIds, element.itemId])
       } else {
-        setSelectedItemIds(selectedItemIds.filter((i) => i !== itemId))
+        setSelectedItemIds(selectedItemIds.filter((i) => i !== element.itemId))
       }
     }
-    setShowTooltipItemId(undefined)
+    setShowTooltipElement(undefined)
   }
 
   useEffect(() => {
@@ -146,6 +149,7 @@ export const ItemPicker = ({
         const npc of instance.npcs.filter((npc) => npc.bossId == bossFilter)
       ) {
         const items = filteredItems.map((i) => ({
+          npcId: npc.id,
           item: {
             ...i,
             dropsFrom: i.dropsFrom.filter((df) => df.npcId == npc.id),
@@ -163,6 +167,7 @@ export const ItemPicker = ({
         const items = instance.npcs.filter((npc) => npc.bossId == boss.id)
           .flatMap((npc) =>
             filteredItems.map((i) => ({
+              npcId: npc.id,
               item: {
                 ...i,
                 dropsFrom: i.dropsFrom.filter((df) => df.npcId == npc.id),
@@ -185,7 +190,7 @@ export const ItemPicker = ({
     <Modal
       opened={itemPickerOpen}
       onClose={() => {
-        setShowTooltipItemId(undefined)
+        setShowTooltipElement(undefined)
         setSearch("")
         setSlotFilter(undefined)
         setTypeFilter(undefined)
@@ -204,7 +209,7 @@ export const ItemPicker = ({
             w="100%"
             value={search}
             onChange={(event) => setSearch(event.currentTarget.value)}
-            onFocus={() => setShowTooltipItemId(undefined)}
+            onFocus={() => setShowTooltipElement(undefined)}
             leftSection={<IconSearch size={16} />}
             rightSection={
               <CloseButton
@@ -218,7 +223,7 @@ export const ItemPicker = ({
           />
           <CloseButton
             onClick={() => {
-              setShowTooltipItemId(undefined)
+              setShowTooltipElement(undefined)
               navigate(-1)
             }}
           />
@@ -226,7 +231,7 @@ export const ItemPicker = ({
         <Select
           placeholder="Boss"
           disabled={possibleBosses.length == 0}
-          onFocus={() => setShowTooltipItemId(undefined)}
+          onFocus={() => setShowTooltipElement(undefined)}
           searchable
           clearable
           value={instance.bosses.find((boss) => boss.id == bossFilter)?.name ||
@@ -245,7 +250,7 @@ export const ItemPicker = ({
             searchable
             clearable
             disabled={possibleSlots.length == 0}
-            onFocus={() => setShowTooltipItemId(undefined)}
+            onFocus={() => setShowTooltipElement(undefined)}
             value={slotFilter || null}
             onChange={(value) => {
               setSlotFilter(value || undefined)
@@ -255,7 +260,7 @@ export const ItemPicker = ({
           <Select
             placeholder="Type"
             disabled={possibleTypes.length == 0}
-            onFocus={() => setShowTooltipItemId(undefined)}
+            onFocus={() => setShowTooltipElement(undefined)}
             searchable
             clearable
             value={typeFilter || null}
@@ -271,18 +276,19 @@ export const ItemPicker = ({
           rowProps={{
             attendees: attendees,
             elements: listElements,
-            onClick: (itemId: number) => onItemClick(itemId, false),
-            onRightSectionClick: (itemId: number) => onItemClick(itemId, true),
+            onClick: (element: NpcItem) => onElementClick(element, false),
+            onRightSectionClick: (element: NpcItem) =>
+              onElementClick(element, true),
             selectedItemIds,
-            showTooltipItemId,
-            onLongClick: onItemLongClick,
+            showTooltipElement,
+            onLongClick: onElementLongClick,
             user,
             selectMode,
             hardReserves,
             sameItemLimit,
           }}
         />
-        <Box onClick={() => setShowTooltipItemId(undefined)} flex={1}>
+        <Box onClick={() => setShowTooltipElement(undefined)} flex={1}>
         </Box>
       </Flex>
     </Modal>
