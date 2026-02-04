@@ -104,7 +104,7 @@ export const MyRaids = ({ user }: { user: User }) => {
     }).then(
       (j: GetMyRaidsResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.data) {
           setRaidList(j.data)
         }
@@ -117,7 +117,7 @@ export const MyRaids = ({ user }: { user: User }) => {
       .then((r) => r.json())
       .then((j: GetInstancesResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.data) {
           setInstances(j.data)
         }

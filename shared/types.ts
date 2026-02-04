@@ -3,18 +3,9 @@ export type CharacterWithId = {
   character: Character
 }
 
-export type Class =
-  | "Warrior"
-  | "Mage"
-  | "Paladin"
-  | "Priest"
-  | "Druid"
-  | "Warlock"
-  | "Rogue"
-  | "Shaman"
 export interface Character {
   name: string
-  class: Class
+  class: string
   spec: string
 }
 
@@ -85,7 +76,10 @@ export interface Raid {
 
 interface GenericResponse<T> {
   data?: T
-  error?: string
+  error?: {
+    message: string
+    issues?: object
+  }
   user: User
 }
 
@@ -94,7 +88,6 @@ export interface CreateEditRaidRequest {
   instanceId: number
   description: string
   useSrPlus: boolean
-  adminPassword: string
   time: string //rfc 3339
   srCount: number
   hardReserves: number[]
@@ -155,7 +148,7 @@ export interface Item {
   slots: string[]
   types: string[]
   dropsFrom: DropsFrom[]
-  classes: Class[]
+  classes: string[]
   quality: 1 | 2 | 3 | 4 | 5
 }
 

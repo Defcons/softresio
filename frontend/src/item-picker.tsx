@@ -11,7 +11,6 @@ import {
 import { IconSearch } from "@tabler/icons-react"
 import type {
   Attendee,
-  Class,
   Instance,
   Item,
   ItemPickerElementType,
@@ -40,7 +39,7 @@ export const ItemPicker = ({
 }: {
   selectedItemIds?: number[]
   setSelectedItemIds?: (itemIds: number[]) => void
-  selectedClass?: Class | null
+  selectedClass?: string | null
   user?: User
   attendees?: Attendee[]
   selectMode?: boolean

@@ -1,4 +1,4 @@
-import type { Character, CharacterWithId, Class } from "../shared/types.ts"
+import type { Character, CharacterWithId } from "../shared/types.ts"
 import { CheckIcon, Group, Image, Title, Tooltip } from "@mantine/core"
 import { IconCheck } from "@tabler/icons-react"
 import type { AutocompleteProps, SelectProps } from "@mantine/core"
@@ -39,7 +39,7 @@ export const renderClassSpec: (
 }
 
 export const renderClass: (
-  selectedClass?: Class,
+  selectedClass?: string,
 ) => SelectProps["renderOption"] = (selectedClass) =>
 (
   { option },
@@ -54,7 +54,7 @@ export const renderClass: (
 )
 
 export const renderSpec: (
-  selectedClass: Class,
+  selectedClass: string,
   selectedSpec?: string | null,
 ) => SelectProps["renderOption"] = (selectedClass, selectedSpec) =>
 (

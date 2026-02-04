@@ -13,7 +13,6 @@ import {
 import { useHover } from "@mantine/hooks"
 import type {
   Attendee,
-  Class,
   Item,
   Raid,
   SoftReserve,
@@ -214,7 +213,7 @@ export const SrList = (
     deleteSr: (user: User, itemId: number) => void
   },
 ) => {
-  const [classFilter, setClassFilter] = useState<Class>()
+  const [classFilter, setClassFilter] = useState<string>()
   const [nameFilter, setNameFilter] = useState<string>()
   const [itemFilter, setItemFilter] = useState<string>()
   const [sortBy, setSortBy] = useState<"name" | "item" | "class">()
@@ -271,7 +270,7 @@ export const SrList = (
             <Select
               pb="sm"
               data={Object.keys(classes)}
-              onChange={(value) => setClassFilter(value as Class || undefined)}
+              onChange={(value) => setClassFilter(value || undefined)}
               value={classFilter}
               rightSection={classFilter
                 ? <ClassIcon xclass={classFilter} />

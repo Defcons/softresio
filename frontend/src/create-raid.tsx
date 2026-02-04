@@ -60,7 +60,6 @@ export const CreateRaid = (
     }
     const request: CreateEditRaidRequest = {
       raidId: edit ? params.raidId : undefined,
-      adminPassword: "", // Maybe we completely remove this later
       instanceId: instance.id,
       useSrPlus,
       description,
@@ -73,7 +72,7 @@ export const CreateRaid = (
       .then((r) => r.json())
       .then((j: CreateEditRaidResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.data) {
           navigate(`/${j.data.raidId}`)
         }
@@ -85,7 +84,7 @@ export const CreateRaid = (
       .then((r) => r.json())
       .then((j: GetInstancesResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.data) {
           setInstances(
             j.data.sort((a, b) =>
@@ -101,7 +100,7 @@ export const CreateRaid = (
       fetch(`/api/raid/${params.raidId}`).then((r) => r.json()).then(
         (j: GetRaidResponse) => {
           if (j.error) {
-            alert(j.error)
+            alert(j.error.message)
           } else if (j.data) {
             const raid = j.data
             setInstance(instances.find((i) => i.id == raid.instanceId))
@@ -176,6 +175,7 @@ export const CreateRaid = (
             value={description}
             autosize
             minRows={3}
+            maxLength={280}
             onChange={(event) => setDescription(event.currentTarget.value)}
           />
           <DateTimePicker

@@ -3,7 +3,6 @@ import type {
   Attendee,
   Character,
   CharacterWithId,
-  Class,
   CreateSrRequest,
   CreateSrResponse,
   GetCharactersResponse,
@@ -41,7 +40,7 @@ export const CreateSr = (
     itemPickerOpen: boolean
   },
 ) => {
-  const [selectedClass, setSelectedClass] = useState<Class | null>()
+  const [selectedClass, setSelectedClass] = useState<string | null>()
   const [selectedSpec, setSelectedSpec] = useState<string | null>()
   const [characterName, setCharacterName] = useState("")
   const [selectedItemIds, setSelectedItemIds] = useState<number[]>([])
@@ -75,7 +74,7 @@ export const CreateSr = (
       .then((r) => r.json())
       .then((j: CreateSrResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.data) {
           loadRaid(j.data)
         }
@@ -109,7 +108,7 @@ export const CreateSr = (
     fetch(`/api/characters`).then((r) => r.json()).then(
       (j: GetCharactersResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.data) {
           setMyCharacters(
             j.data.map((character) => ({ character, id: crypto.randomUUID() })),
@@ -180,7 +179,7 @@ export const CreateSr = (
             value={selectedClass}
             onChange={(value) => {
               setSelectedSpec(null)
-              setSelectedClass(value as Class)
+              setSelectedClass(value)
             }}
             data={Object.keys(classes)}
             label="Class"

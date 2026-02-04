@@ -18,7 +18,7 @@ export const LootBrowser = (
       .then((r) => r.json())
       .then((j: GetInstancesResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.data) {
           setInstances(
             j.data.sort((a, b) =>

@@ -1,7 +1,8 @@
 {
   "imports": {
     "hono": "jsr:@hono/hono@^4.11.4",
-    "postgres": "npm:postgres@3.4.7"
+    "postgres": "npm:postgres@3.4.7",
+    "zod": "npm:zod@^4.3.6"
   },
   "tasks": {
     "start": "deno serve --allow-read --allow-net --allow-sys --allow-env src/main.ts",

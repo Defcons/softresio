@@ -116,7 +116,7 @@ export const Menu = (
     fetch("/api/signout").then((r) => r.json()).then(
       (j: SignOutResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.user) {
           setUser(j.user)
         }

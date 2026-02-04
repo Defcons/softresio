@@ -31,6 +31,7 @@ import { getCookie, setCookie } from "hono/cookie"
 import * as fs from "node:fs"
 import * as jwt from "hono/jwt"
 import { randomUUID } from "node:crypto"
+import * as z from "zod"
 
 const instances: Instance[] = []
 
@@ -141,6 +142,17 @@ await sql.listen("raid_updated", async (raidId) => {
 
 const app = new Hono()
 
+const characterSchema = z.object({
+  name: z.string().max(12),
+  class: z.string().max(20),
+  spec: z.string().max(20),
+})
+
+const userSchema = z.object({
+  userId: z.string().max(36),
+  issuer: z.string().max(20),
+})
+
 const generateRaidId = (): string => {
   const characterSet =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
@@ -185,8 +197,25 @@ app.get("/api/instances", async (c) => {
 
 app.post("/api/sr/create", async (c) => {
   const user = await getOrCreateUser(c)
-  const { raidId, character, selectedItemIds } = await c.req
-    .json() as CreateSrRequest
+  const request = z.object({
+    raidId: z.string().length(5),
+    character: characterSchema,
+    selectedItemIds: z.array(z.number()),
+  }).safeParse(await c.req.json())
+
+  if (!request.data) {
+    const response: CreateSrResponse = {
+      error: {
+        message: "Invalid request",
+        issues: request.error.issues,
+      },
+      user,
+    }
+    return c.json(response, 400)
+  }
+
+  const { raidId, character, selectedItemIds }: CreateSrRequest = request.data
+
   const softReserves: SoftReserve[] = selectedItemIds.map((
     itemId,
   ) => ({ itemId, srPlus: null, comment: null }))
@@ -202,8 +231,8 @@ app.post("/api/sr/create", async (c) => {
       id: raidId,
     } as never} for update;`
     const raid = result?.raid
-    if (!raid) return { user, error: "Raid not found" }
-    if (raid.locked) return { user, error: "Raid is locked" }
+    if (!raid) return { user, error: { message: "Raid not found" } }
+    if (raid.locked) return { user, error: { message: "Raid is locked" } }
 
     // need to delete all and add all new
     const oldNameCharacter = raid.attendees.find((attendee) =>
@@ -280,6 +309,29 @@ app.post("/api/sr/create", async (c) => {
 
 app.post("/api/raid/create", async (c) => {
   const user = await getOrCreateUser(c)
+
+  const request = z.object({
+    raidId: z.string().length(5).optional(),
+    hardReserves: z.array(z.number()),
+    allowDuplicateSr: z.boolean(),
+    useSrPlus: z.boolean(),
+    description: z.string().max(280),
+    time: z.iso.datetime(),
+    instanceId: z.number(),
+    srCount: z.number().max(4).min(1),
+  }).safeParse(await c.req.json())
+
+  if (!request.data) {
+    const response: CreateEditRaidResponse = {
+      error: {
+        message: "Invalid request",
+        issues: request.error.issues,
+      },
+      user,
+    }
+    return c.json(response, 400)
+  }
+
   const {
     raidId: editRaidId,
     instanceId,
@@ -289,8 +341,7 @@ app.post("/api/raid/create", async (c) => {
     description,
     hardReserves,
     allowDuplicateSr,
-  } = await c.req
-    .json() as CreateEditRaidRequest
+  }: CreateEditRaidRequest = request.data
 
   const raidId = editRaidId || generateRaidId()
   const response: CreateEditRaidResponse = await beginWithTimeout(
@@ -303,7 +354,7 @@ app.post("/api/raid/create", async (c) => {
       const raid = result?.raid
       if (raid && !raid.admins.some((u) => u.userId == user.userId)) {
         return ({
-          error: "You are not allowed to edit this raid",
+          error: { message: "You are not allowed to edit this raid" },
           user,
         })
       }
@@ -353,12 +404,30 @@ app.post("/api/raid/create", async (c) => {
 
 app.post("/api/admin", async (c) => {
   const user = await getOrCreateUser(c)
+  const request = z.object({
+    raidId: z.string().length(5),
+    add: userSchema.optional(),
+    remove: userSchema.optional(),
+  }).safeParse(await c.req.json())
+
+  if (!request.data) {
+    const response: EditAdminResponse = {
+      error: {
+        message: "Invalid request",
+        issues: request.error.issues,
+      },
+      user,
+    }
+    return c.json(response, 400)
+  }
+
   const {
     raidId,
     add,
     remove,
   } = await c.req
     .json() as EditAdminRequest
+
   const response: EditAdminResponse = await beginWithTimeout(async (tx) => {
     const [result] = await tx<
       { raid: Raid }[]
@@ -366,7 +435,7 @@ app.post("/api/admin", async (c) => {
       id: raidId,
     } as never} for update;`
     const raid = result?.raid
-    if (!raid) return { user, error: "Raid not found" }
+    if (!raid) return { user, error: { message: "Raid not found" } }
 
     if (raid.admins.some((u) => u.userId == user.userId)) {
       if (add && raid.admins.some((a) => a.userId != add.userId)) {
@@ -412,7 +481,17 @@ app.post("/api/admin", async (c) => {
 
 app.post("/api/raid/:raidId/lock", async (c) => {
   const user = await getOrCreateUser(c)
-  const raidId = c.req.param("raidId")
+
+  const request = z.string().length(5).safeParse(c.req.param("raidId"))
+  if (!request.data) {
+    const response: EditAdminResponse = {
+      error: { message: "Missing raidId from request" },
+      user,
+    }
+    return c.json(response)
+  }
+  const raidId = request.data
+
   const response: LockRaidResponse = await beginWithTimeout(async (tx) => {
     const [result] = await tx<
       { raid: Raid }[]
@@ -420,7 +499,7 @@ app.post("/api/raid/:raidId/lock", async (c) => {
       id: raidId,
     } as never} for update;`
     const raid = result?.raid
-    if (!raid) return { user, error: "Raid not found" }
+    if (!raid) return { user, error: { message: "Raid not found" } }
 
     if (raid.admins.some((u) => u.userId == user.userId)) {
       raid.locked = !raid.locked
@@ -434,7 +513,10 @@ app.post("/api/raid/:raidId/lock", async (c) => {
         },
       )
     } else {
-      return { user, error: "You are not allowed to lock this raid" }
+      return {
+        user,
+        error: { message: "You are not allowed to lock this raid" },
+      }
     }
 
     await tx`update raids set ${sql({ raid: raid } as never)} where raid @> ${{
@@ -447,7 +529,25 @@ app.post("/api/raid/:raidId/lock", async (c) => {
 
 app.post("/api/sr/delete", async (c) => {
   const user = await getOrCreateUser(c)
-  const request = await c.req.json() as DeleteSrRequest
+
+  const requestRaw = z.object({
+    raidId: z.string().length(5),
+    user: userSchema,
+    itemId: z.number(),
+  }).safeParse(await c.req.json())
+
+  if (!requestRaw.data) {
+    const response: DeleteSrResponse = {
+      error: {
+        message: "Invalid request",
+        issues: requestRaw.error.issues,
+      },
+      user,
+    }
+    return c.json(response, 400)
+  }
+  const request: DeleteSrRequest = requestRaw.data
+
   const response: DeleteSrResponse = await beginWithTimeout(async (tx) => {
     const [result] = await tx<
       { raid: Raid }[]
@@ -455,7 +555,7 @@ app.post("/api/sr/delete", async (c) => {
       id: request.raidId,
     } as never} for update;`
     const raid = result?.raid
-    if (!raid) return { user, error: "Raid not found" }
+    if (!raid) return { user, error: { message: "Raid not found" } }
 
     if (
       raid.admins.some((u) => u.userId == user.userId) ||
@@ -492,7 +592,10 @@ app.post("/api/sr/delete", async (c) => {
       } as never}`
       return { user, data: raid }
     } else {
-      return { user, error: "You are not allowed to delete that SR" }
+      return {
+        user,
+        error: { message: "You are not allowed to delete that SR" },
+      }
     }
   })
   return c.json(response)
@@ -508,7 +611,7 @@ app.get("/api/raid/:raidId", async (c) => {
   } as never};`
   const raid = result?.raid
   if (!raid) {
-    return c.json({ error: "Raid not found" }, 404)
+    return c.json({ error: { message: "Raid not found" } }, 404)
   }
   const response: GetRaidResponse = { data: raid, user }
   return c.json(response)
@@ -606,7 +709,7 @@ app.get("/api/signout", async (c) => {
 app.get("/api/discord", async (c) => {
   const oldUser = await getOrCreateUser(c)
   if (!DISCORD_LOGIN_ENABLED) {
-    return c.json({ error: "Discord login is not enabled" })
+    return c.json({ error: { message: "Discord login is not enabled" } })
   }
   const accessRequest = new URLSearchParams({
     "grant_type": "authorization_code",

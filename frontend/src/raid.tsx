@@ -115,7 +115,7 @@ export const RaidElement = (
     fetch(`/api/raid/${params.raidId}`).then((r) => r.json()).then(
       (j: GetRaidResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.data) {
           setRaid(j.data)
         }
@@ -129,7 +129,7 @@ export const RaidElement = (
     ).then(
       (j: GetRaidResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.data) {
           loadRaid(j.data)
         }
@@ -149,7 +149,7 @@ export const RaidElement = (
     ).then(
       (j: EditAdminResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.data) {
           loadRaid(j.data)
         }
@@ -164,7 +164,7 @@ export const RaidElement = (
       .then((r) => r.json()).then(
         (j: DeleteSrResponse) => {
           if (j.error) {
-            alert(j.error)
+            alert(j.error.message)
           } else if (j.data) {
             loadRaid(j.data)
           }
@@ -179,7 +179,7 @@ export const RaidElement = (
       .then((r) => r.json())
       .then((j: GetInstancesResponse) => {
         if (j.error) {
-          alert(j.error)
+          alert(j.error.message)
         } else if (j.data) {
           setInstances(j.data)
         }

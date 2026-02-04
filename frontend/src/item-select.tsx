@@ -1,4 +1,4 @@
-import type { Attendee, Class, Instance, User } from "../shared/types.ts"
+import type { Attendee, Instance, User } from "../shared/types.ts"
 import { removeOne } from "../shared/utils.ts"
 import { Button, Group, Paper, Stack, Text } from "@mantine/core"
 import "../css/tooltip.css"
@@ -26,7 +26,7 @@ export const ItemSelect = (
     label: string
     onChange: (itemIds: number[]) => void
     instance: Instance
-    selectedClass?: Class | null
+    selectedClass?: string | null
     user?: User
     attendees?: Attendee[]
     itemLimit?: number

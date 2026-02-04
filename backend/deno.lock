@@ -4,7 +4,8 @@
     "jsr:@hono/hono@^4.11.4": "4.11.4",
     "npm:@types/node@*": "24.2.0",
     "npm:postgres@3.4.7": "3.4.7",
-    "npm:tsc@*": "2.0.4"
+    "npm:tsc@*": "2.0.4",
+    "npm:zod@^4.3.6": "4.3.6"
   },
   "jsr": {
     "@hono/hono@4.11.4": {
@@ -27,12 +28,16 @@
     },
     "undici-types@7.10.0": {
       "integrity": "sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag=="
+    },
+    "zod@4.3.6": {
+      "integrity": "sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg=="
     }
   },
   "workspace": {
     "dependencies": [
       "jsr:@hono/hono@^4.11.4",
-      "npm:postgres@3.4.7"
+      "npm:postgres@3.4.7",
+      "npm:zod@^4.3.6"
     ]
   }
 }
