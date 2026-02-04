@@ -196,11 +196,12 @@ app.post("/api/sr/create", async (c) => {
     user,
   }
   const response: CreateSrResponse = await beginWithTimeout(async (tx) => {
-    const [{ raid }] = await tx<
+    const [result] = await tx<
       { raid: Raid }[]
     >`select raid from raids where raid @> ${{
       id: raidId,
     } as never} for update;`
+    const raid = result?.raid
     if (!raid) return { user, error: "Raid not found" }
     if (raid.locked) return { user, error: "Raid is locked" }
 
@@ -359,11 +360,12 @@ app.post("/api/admin", async (c) => {
   } = await c.req
     .json() as EditAdminRequest
   const response: EditAdminResponse = await beginWithTimeout(async (tx) => {
-    const [{ raid }] = await tx<
+    const [result] = await tx<
       { raid: Raid }[]
     >`select raid from raids where raid @> ${{
       id: raidId,
     } as never} for update;`
+    const raid = result?.raid
     if (!raid) return { user, error: "Raid not found" }
 
     if (raid.admins.some((u) => u.userId == user.userId)) {
@@ -412,11 +414,12 @@ app.post("/api/raid/:raidId/lock", async (c) => {
   const user = await getOrCreateUser(c)
   const raidId = c.req.param("raidId")
   const response: LockRaidResponse = await beginWithTimeout(async (tx) => {
-    const [{ raid }] = await tx<
+    const [result] = await tx<
       { raid: Raid }[]
     >`select raid from raids where raid @> ${{
       id: raidId,
     } as never} for update;`
+    const raid = result?.raid
     if (!raid) return { user, error: "Raid not found" }
 
     if (raid.admins.some((u) => u.userId == user.userId)) {
@@ -446,11 +449,12 @@ app.post("/api/sr/delete", async (c) => {
   const user = await getOrCreateUser(c)
   const request = await c.req.json() as DeleteSrRequest
   const response: DeleteSrResponse = await beginWithTimeout(async (tx) => {
-    const [{ raid }] = await tx<
+    const [result] = await tx<
       { raid: Raid }[]
     >`select raid from raids where raid @> ${{
       id: request.raidId,
     } as never} for update;`
+    const raid = result?.raid
     if (!raid) return { user, error: "Raid not found" }
 
     if (
@@ -497,11 +501,12 @@ app.post("/api/sr/delete", async (c) => {
 app.get("/api/raid/:raidId", async (c) => {
   const user = await getOrCreateUser(c)
   const raidId = c.req.param("raidId")
-  const [{ raid }] = await sql<
+  const [result] = await sql<
     { raid: Raid }[]
   >`select raid from raids where raid @> ${{
     id: raidId,
   } as never};`
+  const raid = result?.raid
   if (!raid) {
     return c.json({ error: "Raid not found" }, 404)
   }
