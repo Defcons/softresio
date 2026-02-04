@@ -3222,6 +3222,69 @@
         "Companion"
       ],
       "types": []
+    },
+    {
+      "id": 22351,
+      "name": "Desecrated Robe",
+      "slot": "Token",
+      "type": null,
+      "classes": [
+        "Priest",
+        "Mage",
+        "Warlock"
+      ],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Robe</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Priest, Mage, Warlock<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Cloth Wartorn scraps.\"</span></span></div>",
+      "icon": "inv_misc_desecrated_clothchest.png",
+      "dropsFrom": [
+        {
+          "chance": 56.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
+    },
+    {
+      "id": 22350,
+      "name": "Desecrated Tunic",
+      "slot": "Token",
+      "type": null,
+      "classes": [
+        "Paladin",
+        "Hunter",
+        "Shaman",
+        "Druid"
+      ],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Tunic</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Paladin, Hunter, Shaman, Druid<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Chain, Leather and Plate Wartorn scraps.\"</span></span></div>",
+      "icon": "inv_misc_desecrated_mailchest.png",
+      "dropsFrom": [
+        {
+          "chance": 56.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
+    },
+    {
+      "id": 22349,
+      "name": "Desecrated Breastplate",
+      "slot": "Token",
+      "type": null,
+      "classes": [
+        "Warrior",
+        "Rogue"
+      ],
+      "quality": 4,
+      "tooltip": "<div class=\"tw-tt\"><b class=\"q4\">Desecrated Breastplate</b><span>Binds when picked up</span><div><div></div><div></div></div><span>Classes: Warrior, Rogue<br/>Requires Level 60<br/><span class=\"q\">\"This broken armor can be further broken down into Leather and Plate Wartorn scraps.\"</span></span></div>",
+      "icon": "inv_misc_desecrated_platechest.png",
+      "dropsFrom": [
+        {
+          "chance": 56.0,
+          "bossId": 8,
+          "npcId": 8
+        }
+      ]
     }
   ],
   "bosses": [
