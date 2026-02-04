@@ -75,7 +75,11 @@ function App() {
                           path="/create/items"
                           element={<CreateRaid itemPickerOpen />}
                         />
-                        <Route path="/edit/:raidId" element={<CreateRaid />} />
+                        <Route
+                          path="/edit/:raidId"
+                          element={<CreateRaid edit={true} />}
+                        />
+                        <Route path="/copy/:raidId" element={<CreateRaid />} />
                         <Route
                           path="/edit/:raidId/items"
                           element={<CreateRaid itemPickerOpen />}

@@ -278,6 +278,12 @@ export const RaidElement = (
                   Edit
                 </Button>
                 <Button
+                  variant="default"
+                  onClick={() => navigate(`/copy/${params.raidId}`)}
+                >
+                  Copy
+                </Button>
+                <Button
                   onClick={lockRaid}
                   variant={raid.locked ? "" : "default"}
                   color="red"

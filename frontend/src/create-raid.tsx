@@ -27,7 +27,10 @@ import type {
 import { deepEqual } from "fast-equals"
 
 export const CreateRaid = (
-  { itemPickerOpen = false }: { itemPickerOpen?: boolean },
+  { itemPickerOpen = false, edit = false }: {
+    itemPickerOpen?: boolean
+    edit?: boolean
+  },
 ) => {
   const navigate = useNavigate()
   const params = useParams()
@@ -56,7 +59,7 @@ export const CreateRaid = (
       return
     }
     const request: CreateEditRaidRequest = {
-      raidId: params.raidId,
+      raidId: edit ? params.raidId : undefined,
       adminPassword: "", // Maybe we completely remove this later
       instanceId: instance.id,
       useSrPlus,
@@ -108,8 +111,11 @@ export const CreateRaid = (
             setAllowDuplicateSr(raid.allowDuplicateSr)
             setUseHr(raid.hardReserves.length > 0)
             setSrCount(raid.srCount)
-            setTime(new Date(raid.time))
-            setRaidBeforeEdit(raid)
+
+            if (edit) {
+              setTime(new Date(raid.time))
+              setRaidBeforeEdit(raid)
+            }
           }
         },
       )
@@ -239,7 +245,7 @@ export const CreateRaid = (
             mt="sm"
             onClick={() => {
               if (
-                (params.raidId) && (raidBeforeEdit?.instanceId != instance?.id)
+                edit && (raidBeforeEdit?.instanceId != instance?.id)
               ) {
                 modals.openConfirmModal({
                   title: "Are you sure?",
@@ -261,7 +267,7 @@ export const CreateRaid = (
             disabled={!instance || !srCount ||
               (useHr && hardReserves.length == 0) || !raidChanged()}
           >
-            {params.raidId ? "Save changes" : "Create Raid"}
+            {edit ? "Save changes" : "Create Raid"}
           </Button>
         </Stack>
       </Paper>
