@@ -36,7 +36,7 @@ export const instanceFilter: (instances: Instance[]) => OptionsFilter =
       const instance = instances.find((instance) =>
         instance.id == Number(option.value)
       )
-      return instance?.name.toLowerCase().startsWith(search.toLowerCase()) ||
-        instance?.shortname.toLowerCase().startsWith(search.toLowerCase())
+      return instance?.name.toLowerCase().includes(search.toLowerCase()) ||
+        instance?.shortname.toLowerCase().includes(search.toLowerCase())
     })
   }

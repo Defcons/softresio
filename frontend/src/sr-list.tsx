@@ -222,7 +222,10 @@ export const SrList = (
   const filter = (
     { attendee, softReserve }: ListElement,
   ) => ((!classFilter || attendee.character.class == classFilter) &&
-    (!nameFilter || attendee.character.name.startsWith(nameFilter)) &&
+    (!nameFilter ||
+      attendee.character.name.toLowerCase().startsWith(
+        nameFilter.toLowerCase(),
+      )) &&
     (!itemFilter ||
       (items.find((item) => item.id == softReserve.itemId) || nothingItem).name
         .toLowerCase()
