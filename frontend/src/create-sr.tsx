@@ -104,7 +104,7 @@ export const CreateSr = (
     return !deepEqual(a, b)
   }
 
-  useEffect(() => {
+  const loadCharacters = () => {
     fetch(`/api/characters`).then((r) => r.json()).then(
       (j: GetCharactersResponse) => {
         if (j.error) {
@@ -116,7 +116,10 @@ export const CreateSr = (
         }
       },
     )
+  }
 
+  useEffect(() => {
+    loadCharacters()
     const attendeeMe = findAttendeeMe()
     setSelectedClass(attendeeMe?.character.class)
     setSelectedSpec(attendeeMe?.character.spec)
@@ -152,6 +155,7 @@ export const CreateSr = (
         <Autocomplete
           withAsterisk={!characterName}
           value={characterName}
+          onFocus={loadCharacters} // because people are testing it and want to see their new signup
           onChange={(value) => {
             setCharacterName(value)
           }}
