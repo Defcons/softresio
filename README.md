@@ -64,7 +64,7 @@ Go to https://discord.com/developers/applications and create an application.
 Then add the following environment variables to your `compose.yml`
 ```yaml
 
-    DISCORD_LOGIN_ENABLED: true
-    DISCORD_CLIENT_ID: <From the link above>
-    DISCORD_CLIENT_SECRET: <Also from the link above>
+    DISCORD_LOGIN_ENABLED: "true"
+    DISCORD_CLIENT_ID: "<From the link above>"
+    DISCORD_CLIENT_SECRET: "<Also from the link above>"
 ```

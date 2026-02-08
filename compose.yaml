@@ -25,8 +25,8 @@ services:
       DATABASE_USER: "softres"
       DISCORD_CLIENT_ID:
       DISCORD_CLIENT_SECRET:
-      DISCORD_LOGIN_ENABLED: true
-      PORT: 8000
+      DISCORD_LOGIN_ENABLED: "false"
+      PORT: "8000"
       DOMAIN: "localhost"
       SCHEME: "http"
       JWT_SECRET: "softres"
