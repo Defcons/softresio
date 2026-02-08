@@ -51,7 +51,9 @@ const SCHEME = getEnv("SCHEME")
 const JWT_SECRET = getEnv("JWT_SECRET")
 
 const DISCORD_LOGIN_ENABLED = process.env["DISCORD_LOGIN_ENABLED"] === "true"
-const DISCORD_CLIENT_ID = DISCORD_LOGIN_ENABLED && getEnv("DISCORD_CLIENT_ID")
+const DISCORD_CLIENT_ID = DISCORD_LOGIN_ENABLED
+  ? getEnv("DISCORD_CLIENT_ID")
+  : ""
 const DISCORD_CLIENT_SECRET = DISCORD_LOGIN_ENABLED &&
   getEnv("DISCORD_CLIENT_SECRET")
 const DISCORD_API_ENDPOINT = "https://discord.com/api/v10"
@@ -559,7 +561,7 @@ app.post("/api/sr/delete", async (c) => {
 
     if (
       raid.admins.some((u) => u.userId == user.userId) ||
-      request.user.userId == user.userId
+      (request.user.userId == user.userId && !raid.locked)
     ) {
       raid.attendees = raid.attendees.map((attendee) => ({
         user: attendee.user,
