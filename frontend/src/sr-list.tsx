@@ -34,16 +34,18 @@ import { modals } from "@mantine/modals"
 type ListElement = { attendee: Attendee; softReserve: SoftReserve }
 
 export const SrListElement = (
-  { visible, item, attendee, admins, user, owner, editAdmin, deleteSr }: {
-    visible: boolean
-    item: Item
-    attendee: Attendee
-    admins: User[]
-    owner: User
-    user: User
-    editAdmin: (user: User, remove: boolean) => void
-    deleteSr: () => void
-  },
+  { visible, item, attendee, admins, user, owner, editAdmin, deleteSr, locked }:
+    {
+      visible: boolean
+      locked: boolean
+      item: Item
+      attendee: Attendee
+      admins: User[]
+      owner: User
+      user: User
+      editAdmin: (user: User, remove: boolean) => void
+      deleteSr: () => void
+    },
 ) => {
   const { ref, hovered } = useHover()
   const [menuOpen, setMenuOpen] = useState(false)
@@ -190,7 +192,7 @@ export const SrListElement = (
         {promoteRemoveAdmin()}
         <Menu.Item
           onClick={openConfirmDeleteSrModal}
-          disabled={attendee.user.userId == user.userId ||
+          disabled={(attendee.user.userId == user.userId && !locked) ||
               admins.find((a) => a.userId == user.userId)
             ? false
             : true}
@@ -355,6 +357,7 @@ export const SrList = (
       <Table.Tbody>
         {elements.map((e) => (
           <SrListElement
+            locked={raid.locked}
             key={`${e.attendee.character.name}|${e.softReserve.itemId}|${e.index}`}
             visible={filter(e)}
             attendee={e.attendee}
