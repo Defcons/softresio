@@ -277,7 +277,7 @@ export const ItemPicker = ({
             elements: listElements,
             onClick: (element: NpcItem) => onElementClick(element, false),
             onRightSectionClick: (element: NpcItem) =>
-              onElementClick(element, true),
+              onElementClick(element, false),
             selectedItemIds,
             showTooltipElement,
             onLongClick: onElementLongClick,
