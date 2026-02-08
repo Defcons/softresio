@@ -84,7 +84,7 @@ const MenuButtons = (
           closeDrawer?.()
         }}
       >
-        Create raid
+        Create Raid
       </Button>
     </>
   )
