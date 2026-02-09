@@ -1,6 +1,7 @@
 import { useState } from "react"
 import {
   ActionIcon,
+  Box,
   Group,
   Menu,
   Select,
@@ -271,14 +272,19 @@ export const SrList = (
     >
       <Table.Thead>
         <Table.Tr>
-          <Table.Th w={35} maw={35}>
+          <Table.Th w={30}>
             <Select
               pb="sm"
               data={Object.keys(classes)}
               onChange={(value) => setClassFilter(value || undefined)}
               value={classFilter}
+              rightSectionWidth={30}
               rightSection={classFilter
-                ? <ClassIcon xclass={classFilter} />
+                ? (
+                  <Box pr={12}>
+                    <ClassIcon xclass={classFilter} />
+                  </Box>
+                )
                 : undefined}
               rightSectionPointerEvents="none"
               renderOption={renderClass(classFilter)}
