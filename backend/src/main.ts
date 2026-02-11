@@ -1,5 +1,5 @@
 import postgres, { TransactionSql } from "postgres"
-import { choice, randint, sample } from "./util.ts"
+import { choice, randint, sample } from "../shared/utils.ts"
 import process from "node:process"
 import type {
   Attendee,
