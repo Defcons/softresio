@@ -40,49 +40,7 @@ import { DISCORD_API_ENDPOINT, DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET, DISCORD
 import { beginWithTimeout, sql } from "./database.ts"
 import { instances } from "./instances.ts"
 import { generateRaidId } from "./utils.ts"
-
-await sql`
-  create table if not exists "raids" ( raid jsonb );
-`
-
-await sql`
-  create index if not exists idxraids ON raids using gin ( raid );
-`
-
-await sql`
-  create unique index if not exists idx_raidId ON raids ((raid->>'id'));
-`
-
-await sql`
-  create table if not exists "guilds" ( guild jsonb );
-`
-
-await sql`
-  create index if not exists idxguilds ON guilds using gin ( guild );
-`
-
-await sql`
-  create unique index if not exists idx_guildid ON guilds ((guild->>'id'));
-`
-
-await sql`
-create or replace function notify_raid_changed()
-  returns trigger
-as $$
-begin
-  perform pg_notify('raid_updated', (new.raid->>'id'));
-  return null;
-end;
-$$ language plpgsql
-`
-
-await sql`
-create or replace trigger raid_updated
-  after update
-  on raids
-  for each row
-  execute function notify_raid_changed();
-`
+import { characterSchema, raidIdSchema, userSchema, uuidSchema } from "./schemas.ts"
 
 await sql.listen("raid_updated", async (raidId) => {
   if (raidId in clients) {
@@ -106,20 +64,6 @@ await sql.listen("raid_updated", async (raidId) => {
 
 const app = new Hono()
 
-const raidIdSchema = z.string().length(5)
-
-const uuidSchema = z.string().length(36)
-
-const characterSchema = z.object({
-  name: z.string().max(12).min(1),
-  class: z.string().max(20).min(1),
-  spec: z.string().max(20).min(1),
-})
-
-const userSchema = z.object({
-  userId: uuidSchema,
-  issuer: z.string().max(20),
-})
 
 const setAuthCookie = (c: Context, cookie: string) => {
   setCookie(c, "auth", cookie, {
