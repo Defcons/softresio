@@ -1,4 +1,5 @@
 import postgres, { TransactionSql } from "postgres"
+import { choice, randint, sample } from "./util.ts"
 import process from "node:process"
 import type {
   Attendee,
@@ -755,4 +756,77 @@ app.use("/assets/*", serveStatic({ root: "./static" }))
 app.use("/favicon.ico", serveStatic({ path: "./static/favicon.ico" }))
 app.use("*", serveStatic({ path: "./static/index.html" }))
 
-export default { fetch: app.fetch }
+// CLI
+
+const generateRaids = async () => {
+  const users = Array.from({ length: 500 }, (_): User => ({
+    userId: randomUUID(),
+    issuer: DOMAIN,
+  }))
+  const raids = Array.from({ length: 5_000 }, (_): Raid => {
+    const instance = choice(instances)
+    const owner = choice(users)
+    const srCount = randint(1, 4)
+    const [hardReserve1, hardReserve2, ...instanceItems] = instance.items
+    const raid: Raid = {
+      id: generateRaidId(),
+      useSrPlus: choice([true, false]),
+      instanceId: instance.id,
+      time: "2000-01-01T12:00:00.000Z",
+      attendees: Array.from(
+        sample(users, randint(0, 50)),
+        (user): Attendee => ({
+          character: {
+            name: `Jeff${randint(100_000, 1_000_000)}`,
+            class: "Warrior",
+            spec: "Arms",
+          },
+          softReserves: Array.from(
+            { length: randint(0, srCount) },
+            (_): SoftReserve => {
+              const item = choice(instanceItems)
+              return {
+                itemId: item.id,
+                srPlus: randint(0, 15) * 10,
+                comment:
+                  `I really hope I win ${item.name} in ${instance.name}!`,
+              }
+            },
+          ),
+          user: user,
+        }),
+      ),
+      admins: [owner],
+      activityLog: [],
+      srCount: srCount,
+      description:
+        `${hardReserve1.name} and ${hardReserve2.name} is hard-reserved! 😬`,
+      locked: choice([true, false]),
+      hardReserves: [hardReserve1.id, hardReserve2.id],
+      allowDuplicateSr: true,
+      owner: owner,
+    }
+    return raid
+  })
+  console.log(raids.map((r) => r.id))
+  await sql`insert into raids ${sql(raids.map((r) => ({ raid: r })) as never)};`
+}
+
+const cli = async (args: string[]) => {
+  const [command, ..._args] = args
+  switch (command) {
+    case undefined:
+      return // no command => no cli
+    case "generate-raids":
+      await generateRaids()
+      break
+    default:
+      console.log("Unknown command")
+      break
+  }
+  Deno.exit()
+}
+
+await cli(Deno.args)
+
+export default { fetch: app.fetch, generate: generateRaids }

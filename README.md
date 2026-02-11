@@ -7,6 +7,11 @@ To get a working development environment with frontend, backend, database and ho
     docker compose up
 ```
 
+You can populate your database with some random data using
+```sh
+docker compose exec backend deno task run generate-raids
+```
+
 To get deno for linting and such, use the nix shell or get it else where.
 ```sh
     nix develop -c $SHELL
