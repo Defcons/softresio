@@ -763,7 +763,7 @@ const generateRaids = async () => {
     userId: randomUUID(),
     issuer: DOMAIN,
   }))
-  const raids = Array.from({ length: 5_000 }, (_): Raid => {
+  const raids = Array.from({ length: 10_000 }, (_): Raid => {
     const instance = choice(instances)
     const owner = choice(users)
     const srCount = randint(1, 4)
@@ -808,8 +808,8 @@ const generateRaids = async () => {
     }
     return raid
   })
-  console.log(raids.map((r) => r.id))
   await sql`insert into raids ${sql(raids.map((r) => ({ raid: r })) as never)};`
+  console.log(raids.map((r) => r.id))
 }
 
 const cli = async (args: string[]) => {
