@@ -1010,33 +1010,54 @@ app.use("*", serveStatic({ path: "./static/index.html" }))
 
 // CLI
 
-const generateRaids = async () => {
+const generateRaids = async (myUserId?: string) => {
+  // Users
   const users = Array.from({ length: 500 }, (_): User => ({
     userId: randomUUID(),
     issuer: DOMAIN,
   }))
+  if (myUserId) {
+    users.push({userId: myUserId, issuer: DOMAIN})
+  }
+
+  // Guilds
+  const guilds = Array.from({ length: 10 }, (_): Guild => {
+    const owner = choice(users)
+    return {
+      id: randomUUID(),
+      name: `Guild ${randint(100_000, 1_000_000)}`,
+      owner: owner,
+      admins: [owner, choice(users)],
+      srPlus: [],
+    }
+  })
+  await sql`insert into guilds ${sql(guilds.map((g) => ({ guild: g })) as never)};`
+  console.log("Guilds", guilds.map((r) => r.id))
+
+  // Raids
   const raids = Array.from({ length: 10_000 }, (_): Raid => {
     const instance = choice(instances)
     const owner = choice(users)
     const srCount = randint(1, 4)
     const [hardReserve1, hardReserve2, ...instanceItems] = instance.items
+    const date = new Date(2020, randint(1, 12), randint(1, 28), 12, 0, 0)
     const raid: Raid = {
       id: generateRaidId(),
       useSrPlus: choice([true, false]),
       instanceId: instance.id,
-      time: "2000-01-01T12:00:00.000Z",
+      time: date.toISOString(),
       attendees: Array.from(
         sample(users, randint(0, 50)),
         (user): Attendee => ({
           character: {
-            name: `Jeff${randint(100_000, 1_000_000)}`,
+            name: `Jeff${user.userId.slice(0, 5)}`,
             class: "Warrior",
             spec: "Arms",
           },
           softReserves: Array.from(
-            { length: randint(0, srCount) },
+            { length: randint(1, srCount) },
             (_): SoftReserve => {
-              const item = choice(instanceItems)
+              const item = choice(instanceItems.slice(0, 5))
               return {
                 itemId: item.id,
                 srPlus: randint(0, 15) * 10,
@@ -1057,20 +1078,21 @@ const generateRaids = async () => {
       hardReserves: [hardReserve1.id, hardReserve2.id],
       allowDuplicateSr: true,
       owner: owner,
+      guildId: choice(guilds).id,
     }
     return raid
   })
   await sql`insert into raids ${sql(raids.map((r) => ({ raid: r })) as never)};`
-  console.log(raids.map((r) => r.id))
+  console.log("Raids", raids.map((r) => r.id))
 }
 
 const cli = async (args: string[]) => {
-  const [command, ..._args] = args
+  const [command, ...commandArgs] = args
   switch (command) {
     case undefined:
       return // no command => no cli
     case "generate-raids":
-      await generateRaids()
+      await generateRaids(...commandArgs)
       break
     default:
       console.log("Unknown command")
