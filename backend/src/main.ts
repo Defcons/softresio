@@ -1,5 +1,6 @@
-import postgres, { TransactionSql } from "postgres"
 import { choice, randint, sample } from "../shared/utils.ts"
+import { getEnv } from "./utils.ts"
+import { sql, beginWithTimeout } from "./database.ts"
 import process from "node:process"
 import type {
   Attendee,
@@ -44,16 +45,6 @@ import * as z from "zod"
 
 const instances: Instance[] = []
 
-const getEnv = (name: string): string => {
-  const value = process.env[name]
-  if (!value) {
-    throw new Error(`Missing environment variable ${name}`)
-  }
-  return value
-}
-
-const DATABASE_USER = getEnv("DATABASE_USER")
-const DATABASE_PASSWORD = getEnv("DATABASE_PASSWORD")
 const PORT = process.env["PORT"]
 const DOMAIN = getEnv("DOMAIN")
 const SCHEME = getEnv("SCHEME")
@@ -81,20 +72,6 @@ fs.glob("./instances/*.json", async (err, matches) => {
   }
 })
 
-const sql = postgres({
-  host: "database",
-  user: DATABASE_USER,
-  password: DATABASE_PASSWORD,
-})
-
-const beginWithTimeout = <T>(
-  body: (tx: TransactionSql<{}>) => Promise<T>,
-) => {
-  return sql.begin(async (tx) => {
-    await tx`set local transaction_timeout = '1s';`
-    return await body(tx)
-  })
-}
 
 await sql`
   create table if not exists "raids" ( raid jsonb );
