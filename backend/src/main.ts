@@ -1,7 +1,10 @@
-import { choice, randint, sample } from "../shared/utils.ts"
-import { getEnv } from "./utils.ts"
-import { sql, beginWithTimeout } from "./database.ts"
-import process from "node:process"
+import type { Context } from "hono"
+import { Hono } from "hono"
+import { getCookie, setCookie } from "hono/cookie"
+import { serveStatic, upgradeWebSocket } from "hono/deno"
+import * as jwt from "hono/jwt"
+import { randomUUID } from "node:crypto"
+import * as z from "zod"
 import type {
   Attendee,
   Character,
@@ -23,7 +26,6 @@ import type {
   GetSrPlusResponse,
   Guild,
   InfoResponse,
-  Instance,
   LockRaidResponse,
   Raid,
   SignOutResponse,
@@ -34,44 +36,10 @@ import type {
   User,
 } from "../shared/types.ts"
 import { diff, removeOne } from "../shared/utils.ts"
-import { Hono } from "hono"
-import { serveStatic, upgradeWebSocket } from "hono/deno"
-import type { Context } from "hono"
-import { getCookie, setCookie } from "hono/cookie"
-import * as fs from "node:fs"
-import * as jwt from "hono/jwt"
-import { randomUUID } from "node:crypto"
-import * as z from "zod"
-
-const instances: Instance[] = []
-
-const PORT = process.env["PORT"]
-const DOMAIN = getEnv("DOMAIN")
-const SCHEME = getEnv("SCHEME")
-const JWT_SECRET = getEnv("JWT_SECRET")
-
-const DISCORD_LOGIN_ENABLED = process.env["DISCORD_LOGIN_ENABLED"] === "true"
-const DISCORD_CLIENT_ID = DISCORD_LOGIN_ENABLED
-  ? getEnv("DISCORD_CLIENT_ID")
-  : ""
-const DISCORD_CLIENT_SECRET = DISCORD_LOGIN_ENABLED &&
-  getEnv("DISCORD_CLIENT_SECRET")
-const DISCORD_API_ENDPOINT = "https://discord.com/api/v10"
-
-const DISCORD_REDIRECT_URI = `${SCHEME}://${DOMAIN}${
-  PORT ? `:${PORT}` : ""
-}/api/discord`
-
-fs.glob("./instances/*.json", async (err, matches) => {
-  if (err) {
-    throw err
-  }
-  for (const file of matches) {
-    const instance: Instance = JSON.parse(await Deno.readTextFile(file))
-    instances.push(instance)
-  }
-})
-
+import { DISCORD_API_ENDPOINT, DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET, DISCORD_LOGIN_ENABLED, DISCORD_REDIRECT_URI, DOMAIN, JWT_SECRET } from "./config.ts"
+import { beginWithTimeout, sql } from "./database.ts"
+import { instances } from "./instances.ts"
+import { generateRaidId } from "./utils.ts"
 
 await sql`
   create table if not exists "raids" ( raid jsonb );
@@ -152,16 +120,6 @@ const userSchema = z.object({
   userId: uuidSchema,
   issuer: z.string().max(20),
 })
-
-const generateRaidId = (): string => {
-  const characterSet =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-  let raidId = ""
-  for (let i = 0; i < 5; i++) {
-    raidId += characterSet[Math.floor(Math.random() * characterSet.length)]
-  }
-  return raidId
-}
 
 const setAuthCookie = (c: Context, cookie: string) => {
   setCookie(c, "auth", cookie, {
@@ -985,99 +943,4 @@ app.use("/assets/*", serveStatic({ root: "./static" }))
 app.use("/favicon.ico", serveStatic({ path: "./static/favicon.ico" }))
 app.use("*", serveStatic({ path: "./static/index.html" }))
 
-// CLI
-
-const generateRaids = async (myUserId?: string) => {
-  // Users
-  const users = Array.from({ length: 500 }, (_): User => ({
-    userId: randomUUID(),
-    issuer: DOMAIN,
-  }))
-  if (myUserId) {
-    users.push({userId: myUserId, issuer: DOMAIN})
-  }
-
-  // Guilds
-  const guilds = Array.from({ length: 10 }, (_): Guild => {
-    const owner = choice(users)
-    return {
-      id: randomUUID(),
-      name: `Guild ${randint(100_000, 1_000_000)}`,
-      owner: owner,
-      admins: [owner, choice(users)],
-      srPlus: [],
-    }
-  })
-  await sql`insert into guilds ${sql(guilds.map((g) => ({ guild: g })) as never)};`
-  console.log("Guilds", guilds.map((r) => r.id))
-
-  // Raids
-  const raids = Array.from({ length: 10_000 }, (_): Raid => {
-    const instance = choice(instances)
-    const owner = choice(users)
-    const srCount = randint(1, 4)
-    const [hardReserve1, hardReserve2, ...instanceItems] = instance.items
-    const date = new Date(2020, randint(1, 12), randint(1, 28), 12, 0, 0)
-    const raid: Raid = {
-      id: generateRaidId(),
-      useSrPlus: choice([true, false]),
-      instanceId: instance.id,
-      time: date.toISOString(),
-      attendees: Array.from(
-        sample(users, randint(0, 50)),
-        (user): Attendee => ({
-          character: {
-            name: `Jeff${user.userId.slice(0, 5)}`,
-            class: "Warrior",
-            spec: "Arms",
-          },
-          softReserves: Array.from(
-            { length: randint(1, srCount) },
-            (_): SoftReserve => {
-              const item = choice(instanceItems.slice(0, 5))
-              return {
-                itemId: item.id,
-                srPlus: randint(0, 15) * 10,
-                comment:
-                  `I really hope I win ${item.name} in ${instance.name}!`,
-              }
-            },
-          ),
-          user: user,
-        }),
-      ),
-      admins: [owner],
-      activityLog: [],
-      srCount: srCount,
-      description:
-        `${hardReserve1.name} and ${hardReserve2.name} is hard-reserved! 😬`,
-      locked: choice([true, false]),
-      hardReserves: [hardReserve1.id, hardReserve2.id],
-      allowDuplicateSr: true,
-      owner: owner,
-      guildId: choice(guilds).id,
-    }
-    return raid
-  })
-  await sql`insert into raids ${sql(raids.map((r) => ({ raid: r })) as never)};`
-  console.log("Raids", raids.map((r) => r.id))
-}
-
-const cli = async (args: string[]) => {
-  const [command, ...commandArgs] = args
-  switch (command) {
-    case undefined:
-      return // no command => no cli
-    case "generate-raids":
-      await generateRaids(...commandArgs)
-      break
-    default:
-      console.log("Unknown command")
-      break
-  }
-  Deno.exit()
-}
-
-await cli(Deno.args)
-
-export default { fetch: app.fetch, generate: generateRaids }
+export default { fetch: app.fetch }
