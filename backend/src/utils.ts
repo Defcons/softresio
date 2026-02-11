@@ -34,7 +34,10 @@ export const setAuthCookie = (c: Context, cookie: string) => {
   })
 }
 
-export const getOrCreateUser = async (c: Context, reset = false): Promise<User> => {
+export const getOrCreateUser = async (
+  c: Context,
+  reset = false,
+): Promise<User> => {
   // Try to get user from cookie
   const token = getCookie(c, "auth")
   const decoded = token && await jwt.verify(

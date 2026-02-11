@@ -4,7 +4,7 @@ import type {
   Guild,
   Raid,
   SoftReserve,
-  User
+  User,
 } from "../shared/types.ts"
 import { choice, randint, sample } from "../shared/utils.ts"
 import { DOMAIN } from "./config.ts"
@@ -18,7 +18,7 @@ const generateRaids = async (myUserId?: string) => {
     issuer: DOMAIN,
   }))
   if (myUserId) {
-    users.push({userId: myUserId, issuer: DOMAIN})
+    users.push({ userId: myUserId, issuer: DOMAIN })
   }
 
   // Guilds
@@ -32,7 +32,9 @@ const generateRaids = async (myUserId?: string) => {
       srPlus: [],
     }
   })
-  await sql`insert into guilds ${sql(guilds.map((g) => ({ guild: g })) as never)};`
+  await sql`insert into guilds ${
+    sql(guilds.map((g) => ({ guild: g })) as never)
+  };`
   console.log("Guilds", guilds.map((r) => r.id))
 
   // Raids
