@@ -3,31 +3,32 @@
 ## Development
 
 To get a working development environment with frontend, backend, database and hot reloading of all, just run:
+
 ```sh
-    docker compose up
+docker compose up
 ```
 
 You can populate your database with some random data using
+
 ```sh
 docker compose exec backend deno task run generate-raids
 ```
 
 To get deno for linting and such, use the nix shell or get it else where.
-```sh
-    nix develop -c $SHELL
-```
 
+```sh
+nix develop -c $SHELL
+```
 
 ### Deployment
 
 Automated, just do this
 
 ```sh
-    git push origin main
+git push origin main
 ```
 
 ### Example deployment
-
 
 > Make sure to fill out the `<SECRET>` stuff with actual secrets
 
@@ -64,12 +65,13 @@ volumes:
 ```
 
 ### Discord login
+
 Go to https://discord.com/developers/applications and create an application.
 
 Then add the following environment variables to your `compose.yml`
-```yaml
 
-    DISCORD_LOGIN_ENABLED: "true"
-    DISCORD_CLIENT_ID: "<From the link above>"
-    DISCORD_CLIENT_SECRET: "<Also from the link above>"
+```yaml
+DISCORD_LOGIN_ENABLED: "true"
+DISCORD_CLIENT_ID: "<From the link above>"
+DISCORD_CLIENT_SECRET: "<Also from the link above>"
 ```
