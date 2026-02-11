@@ -1,6 +1,4 @@
-import type { Context } from "hono"
 import { Hono } from "hono"
-import { getCookie, setCookie } from "hono/cookie"
 import { serveStatic, upgradeWebSocket } from "hono/deno"
 import * as jwt from "hono/jwt"
 import { randomUUID } from "node:crypto"
@@ -36,11 +34,11 @@ import type {
   User,
 } from "../shared/types.ts"
 import { diff, removeOne } from "../shared/utils.ts"
-import { DISCORD_API_ENDPOINT, DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET, DISCORD_LOGIN_ENABLED, DISCORD_REDIRECT_URI, DOMAIN, JWT_SECRET } from "./config.ts"
+import { DISCORD_API_ENDPOINT, DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET, DISCORD_LOGIN_ENABLED, DISCORD_REDIRECT_URI, JWT_SECRET } from "./config.ts"
 import { beginWithTimeout, sql } from "./database.ts"
 import { instances } from "./instances.ts"
-import { generateRaidId } from "./utils.ts"
 import { characterSchema, raidIdSchema, userSchema, uuidSchema } from "./schemas.ts"
+import { generateRaidId, getOrCreateUser, setAuthCookie } from "./utils.ts"
 
 await sql.listen("raid_updated", async (raidId) => {
   if (raidId in clients) {
@@ -65,31 +63,6 @@ await sql.listen("raid_updated", async (raidId) => {
 const app = new Hono()
 
 
-const setAuthCookie = (c: Context, cookie: string) => {
-  setCookie(c, "auth", cookie, {
-    secure: true,
-    domain: DOMAIN,
-    httpOnly: true,
-    sameSite: "Lax",
-    expires: new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 400), // 400 days expiration
-  })
-}
-
-const getOrCreateUser = async (c: Context, reset = false): Promise<User> => {
-  // Try to get user from cookie
-  const token = getCookie(c, "auth")
-  const decoded = token && await jwt.verify(
-    token,
-    JWT_SECRET,
-    "HS256",
-  ) as unknown as User
-  // Create new user cookie or refresh exisiting cookie
-  const user = !reset && decoded ||
-    { userId: randomUUID(), issuer: DOMAIN }
-  const new_token = await jwt.sign(user as never, JWT_SECRET, "HS256")
-  setAuthCookie(c, new_token)
-  return user
-}
 
 app.get("/api/instances", async (c) => {
   const user = await getOrCreateUser(c)
