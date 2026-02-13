@@ -118,15 +118,20 @@ export const RaidElement = (
     if (raid) {
       return setRaid(raid)
     }
-    fetch(`/api/raid/${params.raidId}`).then((r) => r.json()).then(
-      (j: GetRaidResponse) => {
-        if (j.error) {
-          alert(j.error.message)
-        } else if (j.data) {
-          setRaid(j.data)
-        }
-      },
-    )
+    if (!params.raidId) return
+    if (params.raidId.toUpperCase() !== params.raidId) {
+      navigate(`/${params.raidId.toUpperCase()}`)
+    } else {
+      fetch(`/api/raid/${params.raidId}`).then((r) => r.json()).then(
+        (j: GetRaidResponse) => {
+          if (j.error) {
+            alert(j.error.message)
+          } else if (j.data) {
+            setRaid(j.data)
+          }
+        },
+      )
+    }
   }
 
   const lockRaid = () => {
@@ -193,7 +198,7 @@ export const RaidElement = (
       )
   }
 
-  useEffect(loadRaid, [])
+  useEffect(loadRaid, [params.raidId])
 
   useEffect(() => {
     if (raid?.guildId && !srPluses) {
