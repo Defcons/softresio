@@ -15,7 +15,7 @@ export const getEnv = (name: string): string => {
 }
 
 export const generateRaidId = (): string => {
-  const characterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+  const characterSet = "ABCDEFGHJKLMNPQRSTUVWXYZ123456789"
   let raidId = ""
   for (let i = 0; i < 5; i++) {
     raidId += characterSet[Math.floor(Math.random() * characterSet.length)]
