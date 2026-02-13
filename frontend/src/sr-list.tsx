@@ -206,11 +206,10 @@ export const SrListElement = (
           </Table.Td>
           {guildId
             ? (
-              <Table.Td ta="center">
+              <Table.Td ta="center" onClick={(e) => e.stopPropagation()}>
                 <Button
-                  onClick={(e) => {
+                  onClick={() => {
                     setLogOpen(true)
-                    e.stopPropagation()
                   }}
                   variant="subtle"
                   color="lightgrey"
