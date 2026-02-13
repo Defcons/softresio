@@ -1,5 +1,6 @@
 import { useState } from "react"
 import type {
+  Item,
   SrPlus,
   SrPlusManualChangeRequest,
   SrPlusManualChangeResponse,
@@ -7,6 +8,7 @@ import type {
 import {
   Anchor,
   Button,
+  Group,
   Modal,
   NumberInput,
   Stack,
@@ -15,26 +17,28 @@ import {
   Tooltip,
 } from "@mantine/core"
 import { formatDistanceToNow } from "date-fns"
-import { formatTime, raidIdToUrl } from "../shared/utils.ts"
+import { formatTime, raidIdToUrl, sumSrPlus } from "../shared/utils.ts"
+import { nothingItem } from "./mock-item.ts"
 
 export const SrPlusLog = (
-  { srPluses, open, onClose, characterName, itemId, guildId }: {
+  { srPluses, open, onClose, characterName, itemId, guildId, items }: {
     srPluses: SrPlus[]
     characterName: string
+    items: Item[]
     itemId: number
     guildId: string
     open: boolean
     onClose: () => void
   },
 ) => {
-  const [changeSrPlus, setChangeSrPlus] = useState(srPluses.length * 10)
+  const [changeSrPlus, setChangeSrPlus] = useState(sumSrPlus(srPluses))
 
   const submit = () => {
     const request: SrPlusManualChangeRequest = {
       guildId,
       characterName,
       itemId,
-      value: changeSrPlus,
+      value: changeSrPlus - sumSrPlus(srPluses),
     }
 
     fetch(`/api/srplus`, { method: "POST", body: JSON.stringify(request) })
@@ -53,7 +57,20 @@ export const SrPlusLog = (
 
   return (
     <Modal
-      title={`${srPluses[0]?.characterName}'s SR+ History`}
+      title={
+        <Text size="sm">
+          <b>{srPluses[0]?.characterName}</b>
+          {"'s soft-reserves of "}
+          <b
+            className={`q${
+              (items.find((i) => i.id == itemId) ||
+                nothingItem).quality
+            }`}
+          >
+            [{(items.find((i) => i.id == itemId) || nothingItem).name}]
+          </b>
+        </Text>
+      }
       size="auto"
       opened={open}
       onClose={onClose}
@@ -61,21 +78,24 @@ export const SrPlusLog = (
       padding="sm"
     >
       <Stack mb="md">
-        <Stack>
+        <Group justify="right">
           <NumberInput
-            ta="right"
+            w={100}
             value={changeSrPlus}
             onChange={(e) => setChangeSrPlus(Number(e))}
             step={10}
             max={1000}
           />
+        </Group>
+        <Group justify="right">
           <Button
+            w={100}
             onClick={submit}
-            disabled={changeSrPlus === (srPluses.length * 10)}
+            disabled={changeSrPlus === (sumSrPlus(srPluses))}
           >
             Set SR+
           </Button>
-        </Stack>
+        </Group>
       </Stack>
       <Table>
         <Table.Thead>
@@ -108,7 +128,9 @@ export const SrPlusLog = (
               </Table.Td>
               <Table.Td>
                 <Text size="sm">
-                  {srPlus.type == "raid" ? "+10" : "=" + srPlus.value}
+                  {srPlus.type == "raid"
+                    ? "+10"
+                    : (srPlus.value > 0 ? "+" : "") + srPlus.value}
                 </Text>
               </Table.Td>
             </Table.Tr>

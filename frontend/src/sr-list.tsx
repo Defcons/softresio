@@ -31,6 +31,7 @@ import {
 } from "@tabler/icons-react"
 import { classes, renderClass } from "./class.tsx"
 import { nothingItem } from "./mock-item.ts"
+import { sumSrPlus } from "../shared/utils.ts"
 import { SrPlusLog } from "./sr-plus-log.tsx"
 import { IconShieldFilled, IconTrash } from "@tabler/icons-react"
 import { modals } from "@mantine/modals"
@@ -41,6 +42,7 @@ export const SrListElement = (
   {
     visible,
     item,
+    items,
     attendee,
     admins,
     user,
@@ -55,6 +57,7 @@ export const SrListElement = (
     visible: boolean
     locked: boolean
     item: Item
+    items: Item[]
     attendee: Attendee
     admins: User[]
     owner: User
@@ -214,11 +217,12 @@ export const SrListElement = (
                   variant="subtle"
                   color="lightgrey"
                 >
-                  {(srPluses.length) * 10}
+                  {sumSrPlus(srPluses)}
                 </Button>
                 {guildId && srPluses.length > 0
                   ? (
                     <SrPlusLog
+                      items={items}
                       open={logOpen}
                       onClose={() => setLogOpen(false)}
                       characterName={attendee.character.name}
@@ -415,6 +419,7 @@ export const SrList = (
       <Table.Tbody>
         {elements.map((e) => (
           <SrListElement
+            items={items}
             guildId={raid.guildId}
             locked={raid.locked}
             key={`${e.attendee.character.name}|${e.softReserve.itemId}|${e.index}`}

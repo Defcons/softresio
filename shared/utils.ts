@@ -1,3 +1,5 @@
+import type { SrPlus } from "../shared/types.ts"
+
 type RemoveOneType = <T>(filter: (e: T) => boolean, list: T[]) => T[]
 
 export const removeOne: RemoveOneType = (filter, list) => {
@@ -30,12 +32,12 @@ export const raidIdToUrl = (raidId: string): string => {
   }/${raidId}`
 }
 
-export function choice<T>(array: readonly T[]): T {
+export const choice = <T>(array: readonly T[]): T => {
   // Return a random element
   return array[Math.floor(Math.random() * array.length)]
 }
 
-export function sample<T>(array: readonly T[], k: number): T[] {
+export const sample = <T>(array: readonly T[], k: number): T[] => {
   // Return a k length array of unique elements
   // Partial Fisher-Yates shuffle (which I implemented myself)
   const result = [...array]
@@ -47,10 +49,19 @@ export function sample<T>(array: readonly T[], k: number): T[] {
   return result.slice(0, k)
 }
 
-export function randint(min: number, max: number): number {
+const sum = (array: number[]) =>
+  array.reduce((accumulator, currentValue) => (accumulator + currentValue), 0)
+
+export const randint = (min: number, max: number): number => {
   // Return a random integer between two values, inclusive
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#getting_a_random_integer_between_two_values_inclusive
   min = Math.ceil(min)
   max = Math.floor(max)
   return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+export const sumSrPlus = (srPluses: SrPlus[]) => {
+  return sum(
+    srPluses.map((srPlus) => srPlus.type == "manual" ? srPlus.value : 10),
+  )
 }
