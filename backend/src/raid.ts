@@ -1,8 +1,11 @@
 import { Hono } from "hono"
+import type { ContentfulStatusCode } from "hono/utils/http-status"
 import z from "zod"
 import {
   CreateEditRaidRequest,
   CreateEditRaidResponse,
+  DeleteRaidRequest,
+  DeleteRaidResponse,
   EditAdminRequest,
   EditAdminResponse,
   GetMyRaidsResponse,
@@ -28,14 +31,64 @@ export const getRecentRaids = async (
         where
           raid @> ${{
       attendees: [{ user: { userId: user.userId } }],
+      deleted: false,
     } as never}
         or
-        raid @> ${{ admins: [{ userId: user.userId }] } as never}
+        raid @> ${{
+      admins: [{ userId: user.userId }],
+      deleted: false,
+    } as never}
         order by raid->'time' desc
         limit ${n || null}
         ;`
   ).map((r) => r.raid)
 }
+
+app.post("/api/raid/delete", async (c) => {
+  const user = await getOrCreateUser(c)
+  const request = z.object({ raidId: raidIdSchema }).safeParse(
+    await c.req.json(),
+  )
+  if (!request.data) {
+    const response: DeleteRaidResponse = {
+      error: {
+        message: "Invalid request",
+        issues: request.error.issues,
+      },
+      user,
+    }
+    return c.json(response, 400)
+  }
+  const { raidId }: DeleteRaidRequest = request.data
+  const response: [DeleteRaidResponse, ContentfulStatusCode] =
+    await beginWithTimeout(async (tx) => {
+      const [result] = await tx<
+        { raid: Raid }[]
+      >`select raid from raids where raid @> ${{
+        id: raidId,
+        deleted: false,
+      } as never} for update;`
+      const raid = result?.raid
+      if (!raid) {
+        return [{ error: { message: "Raid not found" }, user }, 404]
+      }
+      if (raid.owner.userId != user.userId) {
+        return [{
+          error: { message: "Only raid owner can delete the raid" },
+          user,
+        }, 400]
+      }
+      raid.deleted = true
+      await tx`update raids set ${
+        sql({ raid: raid } as never)
+      } where raid @> ${{
+        id: raidId,
+      } as never}`
+      return [{ user }, 200]
+    })
+  return c.json(...response)
+})
+
 app.post("/api/raid/create", async (c) => {
   const user = await getOrCreateUser(c)
 
@@ -77,81 +130,84 @@ app.post("/api/raid/create", async (c) => {
   }: CreateEditRaidRequest = request.data
 
   const raidId = editRaidId || generateRaidId()
-  const response: CreateEditRaidResponse = await beginWithTimeout(
-    async (tx) => {
-      const [result] = await tx<
-        { raid: Raid }[]
-      >`select raid from raids where raid @> ${{
-        id: raidId,
-      } as never} for update;`
-      if (guildId) {
-        const [result] = await sql<{ guild: Guild }[]>`select guild
+  const response: [CreateEditRaidResponse, ContentfulStatusCode] =
+    await beginWithTimeout(
+      async (tx) => {
+        const [result] = await tx<
+          { raid: Raid }[]
+        >`select raid from raids where raid @> ${{
+          id: raidId,
+          deleted: false,
+        } as never} for update;`
+        if (guildId) {
+          const [result] = await sql<{ guild: Guild }[]>`select guild
             from guilds
             where
               guild @> ${{
-          admins: [{ userId: user.userId }],
-          id: guildId,
-        } as never};`
-        if (!result?.guild) {
-          return {
-            error: {
-              message: "You are not an admin of a guild with that id",
-            },
-            user,
+            admins: [{ userId: user.userId }],
+            id: guildId,
+          } as never};`
+          if (!result?.guild) {
+            return [{
+              error: {
+                message: "You are not an admin of a guild with that id",
+              },
+              user,
+            }, 400]
           }
         }
-      }
 
-      const raid = result?.raid
-      if (raid && !raid.admins.some((u) => u.userId == user.userId)) {
-        return {
-          error: { message: "You are not allowed to edit this raid" },
-          user,
+        const raid = result?.raid
+        if (raid && !raid.admins.some((u) => u.userId == user.userId)) {
+          return [{
+            error: { message: "You are not allowed to edit this raid" },
+            user,
+          }, 400]
         }
-      }
 
-      const updatedRaid: Raid = {
-        id: raidId,
-        instanceId,
-        time,
-        useSrPlus,
-        srCount,
-        description,
-        locked: false,
-        activityLog: raid?.activityLog || [],
-        attendees: raid?.attendees || [],
-        admins: raid?.admins || [user],
-        owner: raid?.owner || user,
-        hardReserves,
-        allowDuplicateSr,
-        guildId,
-      }
+        const updatedRaid: Raid = {
+          id: raidId,
+          deleted: false,
+          instanceId,
+          time,
+          useSrPlus,
+          srCount,
+          description,
+          locked: false,
+          activityLog: raid?.activityLog || [],
+          attendees: raid?.attendees || [],
+          admins: raid?.admins || [user],
+          owner: raid?.owner || user,
+          hardReserves,
+          allowDuplicateSr,
+          guildId,
+        }
 
-      if (raid?.instanceId !== updatedRaid.instanceId) {
-        updatedRaid.attendees = []
-      }
+        if (raid?.instanceId !== updatedRaid.instanceId) {
+          updatedRaid.attendees = []
+        }
 
-      const change = raid ? "edited" : "created"
-      updatedRaid.activityLog.push({
-        type: "RaidChanged",
-        time: new Date().toISOString(),
-        byUser: user,
-        change,
-      })
+        const change = raid ? "edited" : "created"
+        updatedRaid.activityLog.push({
+          type: "RaidChanged",
+          time: new Date().toISOString(),
+          byUser: user,
+          change,
+        })
 
-      await tx`insert into raids ${
-        sql({
-          raid: updatedRaid,
-        } as never)
-      } on conflict ((raid->>'id')) do update set raid = EXCLUDED.raid;`
-      return {
-        data: { raidId },
-        user,
-      }
-    },
-  )
+        await tx`insert into raids ${
+          sql({
+            raid: updatedRaid,
+          } as never)
+        } on conflict ((raid->>'id')) do update set raid = EXCLUDED.raid;`
+        return [{
+          data: { raidId },
+          user,
+        }, 200]
+      },
+    )
 
-  return c.json(response)
+  return c.json(...response)
 })
 
 app.get("/api/raids", async (c) => {
@@ -169,13 +225,14 @@ app.get("/api/raid/:raidId", async (c) => {
       error: { message: "Missing raidId from request" },
       user,
     }
-    return c.json(response)
+    return c.json(response, 400)
   }
   const raidId = request.data
   const [result] = await sql<
     { raid: Raid }[]
   >`select raid from raids where raid @> ${{
     id: raidId,
+    deleted: false,
   } as never};`
   const raid = result?.raid
   if (!raid) {
@@ -194,41 +251,45 @@ app.post("/api/raid/:raidId/lock", async (c) => {
       error: { message: "Missing raidId from request" },
       user,
     }
-    return c.json(response)
+    return c.json(response, 400)
   }
   const raidId = request.data
 
-  const response: LockRaidResponse = await beginWithTimeout(async (tx) => {
-    const [result] = await tx<
-      { raid: Raid }[]
-    >`select raid from raids where raid @> ${{
-      id: raidId,
-    } as never} for update;`
-    const raid = result?.raid
-    if (!raid) return { user, error: { message: "Raid not found" } }
+  const response: [LockRaidResponse, ContentfulStatusCode] =
+    await beginWithTimeout(async (tx) => {
+      const [result] = await tx<
+        { raid: Raid }[]
+      >`select raid from raids where raid @> ${{
+        id: raidId,
+        deleted: false,
+      } as never} for update;`
+      const raid = result?.raid
+      if (!raid) return [{ user, error: { message: "Raid not found" } }, 404]
 
-    if (raid.admins.some((u) => u.userId == user.userId)) {
-      raid.locked = !raid.locked
-      const change = raid.locked ? "locked" : "unlocked"
-      raid.activityLog.push({
-        type: "RaidChanged",
-        time: new Date().toISOString(),
-        byUser: user,
-        change,
-      })
-    } else {
-      return {
-        user,
-        error: { message: "You are not allowed to lock this raid" },
+      if (raid.admins.some((u) => u.userId == user.userId)) {
+        raid.locked = !raid.locked
+        const change = raid.locked ? "locked" : "unlocked"
+        raid.activityLog.push({
+          type: "RaidChanged",
+          time: new Date().toISOString(),
+          byUser: user,
+          change,
+        })
+      } else {
+        return [{
+          user,
+          error: { message: "You are not allowed to lock this raid" },
+        }, 400]
       }
-    }
 
-    await tx`update raids set ${sql({ raid: raid } as never)} where raid @> ${{
-      id: raidId,
-    } as never}`
-    return { user, data: raid }
-  })
-  return c.json(response)
+      await tx`update raids set ${
+        sql({ raid: raid } as never)
+      } where raid @> ${{
+        id: raidId,
+      } as never}`
+      return [{ user, data: raid }, 200]
+    })
+  return c.json(...response)
 })
 
 app.post("/api/admin", async (c) => {
@@ -254,50 +315,54 @@ app.post("/api/admin", async (c) => {
 
   const { raidId, add, remove } = (await c.req.json()) as EditAdminRequest
 
-  const response: EditAdminResponse = await beginWithTimeout(async (tx) => {
-    const [result] = await tx<
-      { raid: Raid }[]
-    >`select raid from raids where raid @> ${{
-      id: raidId,
-    } as never} for update;`
-    const raid = result?.raid
-    if (!raid) return { user, error: { message: "Raid not found" } }
-
-    if (raid.admins.some((u) => u.userId == user.userId)) {
-      if (add && raid.admins.some((a) => a.userId != add.userId)) {
-        raid.admins = [...raid.admins, add]
-        raid.activityLog.push({
-          byUser: user,
-          type: "AdminChanged",
-          character: raid.attendees.find((a) => a.user.userId == add.userId)
-            ?.character,
-          time: new Date().toISOString(),
-          change: "promoted",
-          user: add,
-        })
-      }
-      if (remove && raid.owner.userId != remove.userId) {
-        raid.admins = raid.admins.filter((a) => a.userId != remove.userId)
-        raid.activityLog.push({
-          byUser: user,
-          type: "AdminChanged",
-          time: new Date().toISOString(),
-          character: raid.attendees.find((a) => a.user.userId == remove.userId)
-            ?.character,
-          change: "removed",
-          user: remove,
-        })
-      }
-      await tx`update raids set ${
-        sql({ raid: raid } as never)
-      } where raid @> ${{
+  const response: [EditAdminResponse, ContentfulStatusCode] =
+    await beginWithTimeout(async (tx) => {
+      const [result] = await tx<
+        { raid: Raid }[]
+      >`select raid from raids where raid @> ${{
         id: raidId,
-      } as never}`
-    }
+        deleted: false,
+      } as never} for update;`
+      const raid = result?.raid
+      if (!raid) return [{ user, error: { message: "Raid not found" } }, 404]
 
-    return { user, data: raid }
-  })
-  return c.json(response)
+      if (raid.admins.some((u) => u.userId == user.userId)) {
+        if (add && raid.admins.some((a) => a.userId != add.userId)) {
+          raid.admins = [...raid.admins, add]
+          raid.activityLog.push({
+            byUser: user,
+            type: "AdminChanged",
+            character: raid.attendees.find((a) => a.user.userId == add.userId)
+              ?.character,
+            time: new Date().toISOString(),
+            change: "promoted",
+            user: add,
+          })
+        }
+        if (remove && raid.owner.userId != remove.userId) {
+          raid.admins = raid.admins.filter((a) => a.userId != remove.userId)
+          raid.activityLog.push({
+            byUser: user,
+            type: "AdminChanged",
+            time: new Date().toISOString(),
+            character: raid.attendees.find((a) =>
+              a.user.userId == remove.userId
+            )
+              ?.character,
+            change: "removed",
+            user: remove,
+          })
+        }
+        await tx`update raids set ${
+          sql({ raid: raid } as never)
+        } where raid @> ${{
+          id: raidId,
+        } as never}`
+      }
+
+      return [{ user, data: raid }, 200]
+    })
+  return c.json(...response)
 })
 
 export default app

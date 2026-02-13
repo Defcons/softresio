@@ -24,6 +24,7 @@ import {
   uuidSchema,
 } from "./schemas.ts"
 import { getOrCreateUser } from "./utils.ts"
+import { ContentfulStatusCode } from "hono/utils/http-status"
 
 const app = new Hono()
 
@@ -60,94 +61,101 @@ app.post("/api/sr/create", async (c) => {
     softReserves,
     user,
   }
-  const response: CreateSrResponse = await beginWithTimeout(async (tx) => {
-    const [result] = await tx<
-      { raid: Raid }[]
-    >`select raid from raids where raid @> ${{
-      id: raidId,
-    } as never} for update;`
-    const raid = result?.raid
-    if (!raid) return { user, error: { message: "Raid not found" } }
-    if (raid.locked) return { user, error: { message: "Raid is locked" } }
+  const response: [CreateSrResponse, ContentfulStatusCode] =
+    await beginWithTimeout(async (tx) => {
+      const [result] = await tx<
+        { raid: Raid }[]
+      >`select raid from raids where raid @> ${{
+        id: raidId,
+        deleted: false,
+      } as never} for update;`
+      const raid = result?.raid
+      if (!raid) return [{ user, error: { message: "Raid not found" } }, 404]
+      if (raid.locked) {
+        return [{ user, error: { message: "Raid is locked" } }, 400]
+      }
 
-    // need to delete all and add all new
-    const oldNameCharacter = raid.attendees.find(
-      (attendee) =>
-        attendee.character.name != character.name &&
-        attendee.user.userId == user.userId,
-    )
+      // need to delete all and add all new
+      const oldNameCharacter = raid.attendees.find(
+        (attendee) =>
+          attendee.character.name != character.name &&
+          attendee.user.userId == user.userId,
+      )
 
-    // need to diff
-    const sameCharacter = raid.attendees.find(
-      (attendee) => attendee.character.name == character.name,
-    )
+      // need to diff
+      const sameCharacter = raid.attendees.find(
+        (attendee) => attendee.character.name == character.name,
+      )
 
-    let changes: { itemId: number; character: Character; remove: boolean }[] =
-      []
-    if (oldNameCharacter) {
-      // remove all
-      changes = changes.concat(
-        oldNameCharacter.softReserves.map((sr) => ({
-          itemId: sr.itemId,
-          character: oldNameCharacter.character,
-          remove: true,
-        })),
-      )
-    }
-    if (sameCharacter) {
-      // log diff
-      const { added, removed } = diff(
-        sameCharacter.softReserves.map((sr) => sr.itemId),
-        attendee.softReserves.map((sr) => sr.itemId),
-      )
-      changes = changes.concat(
-        removed.map((itemId) => ({
-          itemId: itemId,
-          character: sameCharacter.character,
-          remove: true,
-        })),
-      )
-      changes = changes.concat(
-        added.map((itemId) => ({
-          itemId: itemId,
-          character: sameCharacter.character,
-          remove: false,
-        })),
-      )
-    } else {
-      // add all
-      changes = changes.concat(
-        attendee.softReserves.map((sr) => ({
-          itemId: sr.itemId,
-          character: attendee.character,
-          remove: false,
-        })),
-      )
-    }
+      let changes: { itemId: number; character: Character; remove: boolean }[] =
+        []
+      if (oldNameCharacter) {
+        // remove all
+        changes = changes.concat(
+          oldNameCharacter.softReserves.map((sr) => ({
+            itemId: sr.itemId,
+            character: oldNameCharacter.character,
+            remove: true,
+          })),
+        )
+      }
+      if (sameCharacter) {
+        // log diff
+        const { added, removed } = diff(
+          sameCharacter.softReserves.map((sr) => sr.itemId),
+          attendee.softReserves.map((sr) => sr.itemId),
+        )
+        changes = changes.concat(
+          removed.map((itemId) => ({
+            itemId: itemId,
+            character: sameCharacter.character,
+            remove: true,
+          })),
+        )
+        changes = changes.concat(
+          added.map((itemId) => ({
+            itemId: itemId,
+            character: sameCharacter.character,
+            remove: false,
+          })),
+        )
+      } else {
+        // add all
+        changes = changes.concat(
+          attendee.softReserves.map((sr) => ({
+            itemId: sr.itemId,
+            character: attendee.character,
+            remove: false,
+          })),
+        )
+      }
 
-    for (const { itemId, character, remove } of changes) {
-      raid.activityLog.push({
-        byUser: user,
-        type: "SrChanged",
-        time: new Date(new Date().getTime() + (remove ? 0 : 10)).toISOString(),
-        change: remove ? "deleted" : "created",
-        character,
-        itemId,
-      })
-    }
+      for (const { itemId, character, remove } of changes) {
+        raid.activityLog.push({
+          byUser: user,
+          type: "SrChanged",
+          time: new Date(new Date().getTime() + (remove ? 0 : 10))
+            .toISOString(),
+          change: remove ? "deleted" : "created",
+          character,
+          itemId,
+        })
+      }
 
-    raid.attendees = raid.attendees.filter(
-      (attendee) =>
-        attendee.character.name !== character.name &&
-        attendee.user.userId !== user.userId,
-    )
-    raid.attendees = [...raid.attendees, attendee]
-    await tx`update raids set ${sql({ raid: raid } as never)} where raid @> ${{
-      id: raidId,
-    } as never}`
-    return { user, data: raid }
-  })
-  return c.json(response)
+      raid.attendees = raid.attendees.filter(
+        (attendee) =>
+          attendee.character.name !== character.name &&
+          attendee.user.userId !== user.userId,
+      )
+      raid.attendees = [...raid.attendees, attendee]
+      await tx`update raids set ${
+        sql({ raid: raid } as never)
+      } where raid @> ${{
+        id: raidId,
+      } as never}`
+      return [{ user, data: raid }, 200]
+    })
+  return c.json(...response)
 })
 
 app.post("/api/sr/delete", async (c) => {
@@ -173,54 +181,56 @@ app.post("/api/sr/delete", async (c) => {
   }
   const request: DeleteSrRequest = requestRaw.data
 
-  const response: DeleteSrResponse = await beginWithTimeout(async (tx) => {
-    const [result] = await tx<
-      { raid: Raid }[]
-    >`select raid from raids where raid @> ${{
-      id: request.raidId,
-    } as never} for update;`
-    const raid = result?.raid
-    if (!raid) return { user, error: { message: "Raid not found" } }
-
-    if (
-      raid.admins.some((u) => u.userId == user.userId) ||
-      (request.user.userId == user.userId && !raid.locked)
-    ) {
-      raid.attendees = raid.attendees
-        .map((attendee) => ({
-          user: attendee.user,
-          character: attendee.character,
-          softReserves: removeOne(
-            (softReserve) =>
-              attendee.user.userId == request.user.userId &&
-              softReserve.itemId == request.itemId,
-            attendee.softReserves,
-          ),
-        }))
-        .filter((attendee) => attendee.softReserves.length > 0)
-      raid.activityLog.push({
-        byUser: user,
-        type: "SrChanged",
-        time: new Date().toISOString(),
-        change: "deleted",
-        character: raid.attendees.find(
-          (a) => a.user.userId == request.user.userId,
-        )?.character,
-        itemId: request.itemId,
-      })
-      await tx`update raids set ${
-        sql({ raid: raid } as never)
-      } where raid @> ${{
+  const response: [DeleteSrResponse, ContentfulStatusCode] =
+    await beginWithTimeout(async (tx) => {
+      const [result] = await tx<
+        { raid: Raid }[]
+      >`select raid from raids where raid @> ${{
         id: request.raidId,
-      } as never}`
-      return { user, data: raid }
-    } else {
-      return {
-        user,
-        error: { message: "You are not allowed to delete that SR" },
+        deleted: false,
+      } as never} for update;`
+      const raid = result?.raid
+      if (!raid) return [{ user, error: { message: "Raid not found" } }, 404]
+
+      if (
+        raid.admins.some((u) => u.userId == user.userId) ||
+        (request.user.userId == user.userId && !raid.locked)
+      ) {
+        raid.attendees = raid.attendees
+          .map((attendee) => ({
+            user: attendee.user,
+            character: attendee.character,
+            softReserves: removeOne(
+              (softReserve) =>
+                attendee.user.userId == request.user.userId &&
+                softReserve.itemId == request.itemId,
+              attendee.softReserves,
+            ),
+          }))
+          .filter((attendee) => attendee.softReserves.length > 0)
+        raid.activityLog.push({
+          byUser: user,
+          type: "SrChanged",
+          time: new Date().toISOString(),
+          change: "deleted",
+          character: raid.attendees.find(
+            (a) => a.user.userId == request.user.userId,
+          )?.character,
+          itemId: request.itemId,
+        })
+        await tx`update raids set ${
+          sql({ raid: raid } as never)
+        } where raid @> ${{
+          id: request.raidId,
+        } as never}`
+        return [{ user, data: raid }, 200]
+      } else {
+        return [{
+          user,
+          error: { message: "You are not allowed to delete that SR" },
+        }, 400]
       }
-    }
-  })
+    })
   return c.json(response)
 })
 
@@ -249,39 +259,40 @@ app.post("/api/srplus", async (c) => {
   const { guildId, characterName, itemId, value }: SrPlusManualChangeRequest =
     request.data
 
-  const response: SrPlusManualChangeResponse = await beginWithTimeout(
-    async (tx) => {
-      const [result] = await sql<{ guild: Guild }[]>`select guild
+  const response: [SrPlusManualChangeResponse, ContentfulStatusCode] =
+    await beginWithTimeout(
+      async (tx) => {
+        const [result] = await sql<{ guild: Guild }[]>`select guild
           from guilds
           where
             guild @> ${{
-        admins: [{ userId: user.userId }],
-        id: guildId,
-      } as never} for update;`
-      if (!result?.guild) {
-        return {
-          error: {
-            message: "You are not an admin of a guild with that id",
-          },
-          user,
+          admins: [{ userId: user.userId }],
+          id: guildId,
+        } as never} for update;`
+        if (!result?.guild) {
+          return [{
+            error: {
+              message: "You are not an admin of a guild with that id",
+            },
+            user,
+          }, 400]
         }
-      }
-      const guild = result.guild
-      guild.srPlus.push({
-        type: "manual",
-        time: new Date().toISOString(),
-        characterName,
-        itemId,
-        value,
-      })
-      await tx`insert into guilds ${
-        sql({
-          guild,
-        } as never)
-      } on conflict ((guild->>'id')) do update set guild = EXCLUDED.guild;`
-      return { user, data: guild }
-    },
-  )
+        const guild = result.guild
+        guild.srPlus.push({
+          type: "manual",
+          time: new Date().toISOString(),
+          characterName,
+          itemId,
+          value,
+        })
+        await tx`insert into guilds ${
+          sql({
+            guild,
+          } as never)
+        } on conflict ((guild->>'id')) do update set guild = EXCLUDED.guild;`
+        return [{ user, data: guild }, 200]
+      },
+    )
   return c.json(response)
 })
 
@@ -300,6 +311,7 @@ app.get("/api/srplus/:raidId", async (c) => {
     { raid: Raid }[]
   >`select raid from raids where raid @> ${{
     id: raidId,
+    deleted: false,
   } as never};`
   const raid = raidResult?.raid
   if (!raid) {
@@ -320,7 +332,7 @@ app.get("/api/srplus/:raidId", async (c) => {
         message: "Guild not found",
       },
       user,
-    })
+    }, 400)
   }
   const guild = guildResult.guild
   const srPlus: SrPlus[] = []
@@ -329,6 +341,7 @@ app.get("/api/srplus/:raidId", async (c) => {
       const raids = await sql<
         { id: string; time: string }[]
       >`select raid->'id' as id, raid->'time' as time from raids where raid @> ${{
+        deleted: false,
         guildId: raid.guildId,
         attendees: [
           {
