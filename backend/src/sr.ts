@@ -241,7 +241,7 @@ app.post("/api/srplus", async (c) => {
       guildId: uuidSchema,
       characterName: z.string().max(12).min(1),
       itemId: z.number(),
-      value: z.number().min(0).max(1000),
+      value: z.number().min(-1000).max(1000),
     })
     .safeParse(await c.req.json())
 
@@ -293,7 +293,7 @@ app.post("/api/srplus", async (c) => {
         return [{ user, data: guild }, 200]
       },
     )
-  return c.json(response)
+  return c.json(...response)
 })
 
 app.get("/api/srplus/:raidId", async (c) => {
