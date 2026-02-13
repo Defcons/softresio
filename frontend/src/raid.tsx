@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import type {
   Attendee,
+  DeleteRaidRequest,
+  DeleteRaidResponse,
   DeleteSrRequest,
   DeleteSrResponse,
   EditAdminRequest,
@@ -36,6 +38,7 @@ import {
   Title,
   Tooltip,
 } from "@mantine/core"
+import { modals } from "@mantine/modals"
 import { CopyClipboardButton, raidIdToUrl } from "./copy-clipboard-button.tsx"
 import { CreateSr } from "./create-sr.tsx"
 import { SrList } from "./sr-list.tsx"
@@ -175,6 +178,21 @@ export const RaidElement = (
       )
   }
 
+  const deleteRaid = () => {
+    if (!raid) return
+    const request: DeleteRaidRequest = { raidId: raid.id }
+    fetch(`/api/raid/delete`, { method: "POST", body: JSON.stringify(request) })
+      .then((r) => r.json()).then(
+        (j: DeleteRaidResponse) => {
+          if (j.error) {
+            alert(j.error.message)
+          } else {
+            navigate("/")
+          }
+        },
+      )
+  }
+
   useEffect(loadRaid, [])
 
   useEffect(() => {
@@ -300,6 +318,29 @@ export const RaidElement = (
                 >
                   Copy
                 </Button>
+                {raid.owner.userId == user.userId
+                  ? (
+                    <Button
+                      variant="default"
+                      onClick={() => {
+                        modals.openConfirmModal({
+                          title: "Are you sure?",
+                          centered: true,
+                          children: (
+                            <Text size="sm">
+                              You want to permanently delete this raid?
+                            </Text>
+                          ),
+                          labels: { confirm: "Confirm", cancel: "Cancel" },
+                          confirmProps: { color: "red" },
+                          onConfirm: () => deleteRaid(),
+                        })
+                      }}
+                    >
+                      Delete
+                    </Button>
+                  )
+                  : null}
                 <Button
                   onClick={lockRaid}
                   variant={raid.locked ? "" : "default"}

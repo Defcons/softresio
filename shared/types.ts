@@ -60,6 +60,7 @@ export interface AdminChanged extends BaseActivity {
 
 export interface Raid {
   id: string
+  deleted: boolean
   useSrPlus: boolean
   instanceId: number
   time: string // rfc 3339
@@ -128,6 +129,12 @@ export type EditAdminRequest = {
   remove?: User
 }
 export type LockRaidResponse = GenericResponse<Raid>
+
+export type DeleteRaidResponse = GenericResponse<void>
+
+export type DeleteRaidRequest = {
+  raidId: string
+}
 
 export type DeleteSrRequest = {
   raidId: string

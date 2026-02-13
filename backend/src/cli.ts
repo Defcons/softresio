@@ -82,6 +82,7 @@ const generateRaids = async (myUserId?: string) => {
       allowDuplicateSr: true,
       owner: owner,
       guildId: choice(guilds).id,
+      deleted: false,
     }
     return raid
   })

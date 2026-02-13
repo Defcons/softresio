@@ -301,7 +301,7 @@ export const CreateRaid = (
             disabled={!instance || !srCount ||
               (useHr && hardReserves.length == 0) || !raidChanged()}
           >
-            {edit ? "Save changes" : "Create Raid"}
+            {edit ? "Save Changes" : "Create Raid"}
           </Button>
         </Stack>
       </Paper>
