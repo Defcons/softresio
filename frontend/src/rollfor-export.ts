@@ -1,6 +1,7 @@
 import type { Raid } from "../shared/types.ts"
+import { Base64 } from "js-base64"
 
-export const rollForExport = (raid: Raid) => (globalThis.btoa(JSON.stringify({
+export const rollForExport = (raid: Raid) => (Base64.encode(JSON.stringify({
   metadata: {
     id: raid.id,
     origin: globalThis.location.hostname,

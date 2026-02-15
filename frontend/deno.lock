@@ -17,6 +17,7 @@
     "npm:eslint@^9.39.1": "9.39.2",
     "npm:fast-equals@6": "6.0.0",
     "npm:globals@^16.5.0": "16.5.0",
+    "npm:js-base64@^3.7.8": "3.7.8",
     "npm:react-dom@^19.2.0": "19.2.3_react@19.2.3",
     "npm:react-router@^7.12.0": "7.12.0_react@19.2.3_react-dom@19.2.3__react@19.2.3",
     "npm:react-use-websocket@^4.13.0": "4.13.0",
@@ -1141,6 +1142,9 @@
     "isexe@2.0.0": {
       "integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw=="
     },
+    "js-base64@3.7.8": {
+      "integrity": "sha512-hNngCeKxIUQiEUN3GPJOkz4wF/YvdUdbNL9hsBcMQTkKzboD7T/q3OYOuuPZLUE6dBxSGpwhk5mwuDud7JVAow=="
+    },
     "js-tokens@4.0.0": {
       "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
     },
@@ -1618,6 +1622,7 @@
         "npm:eslint@^9.39.1",
         "npm:fast-equals@6",
         "npm:globals@^16.5.0",
+        "npm:js-base64@^3.7.8",
         "npm:react-dom@^19.2.0",
         "npm:react-router@^7.12.0",
         "npm:react-use-websocket@^4.13.0",
