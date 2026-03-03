@@ -77,7 +77,7 @@ export const SrPlusLog = (
       withCloseButton
       padding="sm"
     >
-      <Stack mb="md">
+      <Stack mb="md" display="none">
         <Group justify="right">
           <NumberInput
             w={100}

@@ -11,6 +11,7 @@ import type {
   GetRaidResponse,
   GetSrPlusResponse,
   Instance,
+  LiveUpdate,
   Raid,
   SrPlus,
   User,
@@ -85,14 +86,24 @@ const raidImage = (key: string) => {
 }
 
 export const RaidUpdater = (
-  { loadRaid, raidId }: { loadRaid: (raid: Raid) => void; raidId: string },
+  { loadRaid, raidId, setSrPluses }: {
+    loadRaid: (raid: Raid) => void
+    raidId: string
+    setSrPluses: (srPluses: SrPlus[]) => void
+  },
 ) => {
   const { lastMessage } = useWebSocket(`/api/ws/${raidId}`, {
     shouldReconnect: (_) => true,
   })
   useEffect(() => {
     if (lastMessage?.data) {
-      loadRaid(JSON.parse(lastMessage.data))
+      const liveUpdate: LiveUpdate = JSON.parse(lastMessage.data)
+      if (liveUpdate.raid) {
+        loadRaid(liveUpdate.raid)
+      }
+      if (liveUpdate.srPluses) {
+        setSrPluses(liveUpdate.srPluses)
+      }
     }
   }, [lastMessage])
   return null
@@ -378,7 +389,7 @@ export const RaidElement = (
             </Button>
             <Group>
               <CopyClipboardButton
-                toClipboard={rollForExport(raid)}
+                toClipboard={rollForExport(raid, srPluses)}
                 label="RollFor"
                 tooltip="Copy RollFor export"
                 onClick={() =>
@@ -418,7 +429,11 @@ export const RaidElement = (
             )
             : null}
         </Paper>
-        <RaidUpdater raidId={raid.id} loadRaid={loadRaid} />
+        <RaidUpdater
+          raidId={raid.id}
+          loadRaid={loadRaid}
+          setSrPluses={setSrPluses}
+        />
         <ActivityLog
           attendees={raid.attendees}
           items={instance.items}
