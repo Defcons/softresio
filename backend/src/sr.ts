@@ -296,44 +296,14 @@ app.post("/api/srplus", async (c) => {
   return c.json(...response)
 })
 
-app.get("/api/srplus/:raidId", async (c) => {
-  const user = await getOrCreateUser(c)
-  const request = z.string().length(5).safeParse(c.req.param("raidId"))
-  if (!request.data) {
-    const response: GetSrPlusResponse = {
-      error: { message: "Missing raidId from request" },
-      user,
-    }
-    return c.json(response)
-  }
-  const raidId = request.data
-  const [raidResult] = await sql<
-    { raid: Raid }[]
-  >`select raid from raids where raid @> ${{
-    id: raidId,
-    deleted: false,
-  } as never};`
-  const raid = raidResult?.raid
-  if (!raid) {
-    return c.json({ error: { message: "Raid not found" } }, 404)
-  }
-  if (!raid.guildId) {
-    return c.json({ error: { message: "Raid has no guild" } }, 400)
-  }
+export const getSrPluses = async (raid: Raid): Promise<SrPlus[]> => {
   const [guildResult] = await sql<{ guild: Guild }[]>`select guild
       from guilds
       where
         guild @> ${{
     id: raid.guildId,
   } as never};`
-  if (!guildResult?.guild) {
-    return c.json({
-      error: {
-        message: "Guild not found",
-      },
-      user,
-    }, 400)
-  }
+  if (!guildResult?.guild) return []
   const guild = guildResult.guild
   const srPlus: SrPlus[] = []
   for (const attendee of raid.attendees) {
@@ -342,6 +312,7 @@ app.get("/api/srplus/:raidId", async (c) => {
         { id: string; time: string }[]
       >`select raid->'id' as id, raid->'time' as time from raids where raid @> ${{
         deleted: false,
+        locked: true,
         guildId: raid.guildId,
         attendees: [
           {
@@ -371,9 +342,36 @@ app.get("/api/srplus/:raidId", async (c) => {
       }
     }
   }
+  return srPlus
+}
+
+app.get("/api/srplus/:raidId", async (c) => {
+  const user = await getOrCreateUser(c)
+  const request = z.string().length(5).safeParse(c.req.param("raidId"))
+  if (!request.data) {
+    const response: GetSrPlusResponse = {
+      error: { message: "Missing raidId from request" },
+      user,
+    }
+    return c.json(response)
+  }
+  const raidId = request.data
+  const [raidResult] = await sql<
+    { raid: Raid }[]
+  >`select raid from raids where raid @> ${{
+    id: raidId,
+    deleted: false,
+  } as never};`
+  const raid = raidResult?.raid
+  if (!raid) {
+    return c.json({ error: { message: "Raid not found" } }, 404)
+  }
+  if (!raid.guildId) {
+    return c.json({ error: { message: "Raid has no guild" } }, 400)
+  }
   const response: GetSrPlusResponse = {
     user,
-    data: srPlus,
+    data: await getSrPluses(raid),
   }
   return c.json(response)
 })

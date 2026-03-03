@@ -236,3 +236,8 @@ export type SrPlus = SrPlusRaid | SrPlusManual
 export type GetSrPlusResponse = GenericResponse<SrPlus[]>
 
 export type SrPlusManualChangeResponse = GenericResponse<Guild>
+
+export interface LiveUpdate {
+  raid?: Raid
+  srPluses?: SrPlus[]
+}

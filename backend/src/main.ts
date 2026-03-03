@@ -7,6 +7,7 @@ import type {
   GetCharactersResponse,
   GetInstancesResponse,
   InfoResponse,
+  LiveUpdate,
   Raid,
   SignOutResponse,
 } from "../shared/types.ts"
@@ -20,7 +21,7 @@ import {
 } from "./config.ts"
 import { sql } from "./database.ts"
 import guildRoutes from "./guild.ts"
-import srRoutes from "./sr.ts"
+import srRoutes, { getSrPluses } from "./sr.ts"
 import { instances } from "./instances.ts"
 import raidRoutes, { getRecentRaids } from "./raid.ts"
 import { getOrCreateUser, setAuthCookie } from "./utils.ts"
@@ -36,8 +37,10 @@ await sql.listen("raid_updated", async (raidId) => {
     } as never} for update;`
 
     if (raid) {
+      const srPluses = raid.guildId ? await getSrPluses(raid) : undefined
       for (const client of clients[raidId]) {
-        client.ws.send(JSON.stringify(raid))
+        const liveUpdate: LiveUpdate = { raid, srPluses }
+        client.ws.send(JSON.stringify(liveUpdate))
       }
     }
   }
