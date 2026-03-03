@@ -312,6 +312,13 @@ export const RaidElement = (
               : null}
           </Stack>
         </Paper>
+        <CreateSr
+          loadRaid={loadRaid}
+          instance={instance}
+          raid={raid}
+          user={user}
+          itemPickerOpen={itemPickerOpen}
+        />
         <Paper shadow="sm" p="sm" display={isAdmin ? "block" : "none"}>
           <Stack gap={0}>
             <Group justify="space-between">
@@ -332,7 +339,7 @@ export const RaidElement = (
                   variant="default"
                   onClick={() => navigate(`/copy/${params.raidId}`)}
                 >
-                  Copy
+                  Clone
                 </Button>
                 {raid.owner.userId == user.userId
                   ? (
@@ -370,13 +377,6 @@ export const RaidElement = (
             </Group>
           </Stack>
         </Paper>
-        <CreateSr
-          loadRaid={loadRaid}
-          instance={instance}
-          raid={raid}
-          user={user}
-          itemPickerOpen={itemPickerOpen}
-        />
         <Paper shadow="sm" mb="md" style={{ overflow: "hidden" }}>
           <Group p="sm" justify="space-between">
             <Button
