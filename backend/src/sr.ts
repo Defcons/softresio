@@ -307,7 +307,10 @@ export const getSrPluses = async (raid: Raid): Promise<SrPlus[]> => {
   const guild = guildResult.guild
   const srPlus: SrPlus[] = []
   for (const attendee of raid.attendees) {
-    for (const softReserve of attendee.softReserves) {
+    for (
+      const itemId of (new Set(attendee.softReserves.map((sr) => sr.itemId)))
+        .values()
+    ) {
       const raids = await sql<
         { id: string; time: string }[]
       >`select raid->'id' as id, raid->'time' as time from raids where raid @> ${{
@@ -319,7 +322,7 @@ export const getSrPluses = async (raid: Raid): Promise<SrPlus[]> => {
             character: {
               name: attendee.character.name,
             },
-            softReserves: [{ itemId: softReserve.itemId }],
+            softReserves: [{ itemId }],
           },
         ],
       } as never} and raid->>'time' < ${raid.time};`
@@ -329,12 +332,12 @@ export const getSrPluses = async (raid: Raid): Promise<SrPlus[]> => {
           raidId: raid.id,
           time: raid.time,
           characterName: attendee.character.name,
-          itemId: softReserve.itemId,
+          itemId,
         })
       }
       for (const srPlusChange of guild.srPlus) {
         if (
-          srPlusChange.itemId == softReserve.itemId &&
+          srPlusChange.itemId == itemId &&
           srPlusChange.characterName == attendee.character.name
         ) {
           srPlus.push(srPlusChange)
