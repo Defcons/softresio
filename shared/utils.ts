@@ -65,3 +65,8 @@ export const sumSrPlus = (srPluses: SrPlus[]) => {
     srPluses.map((srPlus) => srPlus.type == "manual" ? srPlus.value : 10),
   )
 }
+
+export const formatCharacterName = (characterName: string) => {
+  const cleaned = characterName.toLowerCase().replace(/[^a-zA-Z]/g, "")
+  return cleaned.charAt(0).toUpperCase() + cleaned.slice(1)
+}

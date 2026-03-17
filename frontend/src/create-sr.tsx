@@ -30,6 +30,7 @@ import {
 } from "./class.tsx"
 import { deepEqual } from "fast-equals"
 import { modals } from "@mantine/modals"
+import { formatCharacterName } from "../shared/utils.ts"
 
 export const CreateSr = (
   { instance, raid, loadRaid, user, itemPickerOpen }: {
@@ -123,7 +124,7 @@ export const CreateSr = (
     const attendeeMe = findAttendeeMe()
     setSelectedClass(attendeeMe?.character.class)
     setSelectedSpec(attendeeMe?.character.spec)
-    setCharacterName(attendeeMe?.character.name || "")
+    setCharacterName(formatCharacterName(attendeeMe?.character.name || ""))
     setSelectedItemIds(
       attendeeMe?.softReserves.filter((sr) => sr.itemId != 0).map((sr) =>
         sr.itemId
@@ -157,13 +158,13 @@ export const CreateSr = (
           value={characterName}
           onFocus={loadCharacters} // because people are testing it and want to see their new signup
           onChange={(value) => {
-            setCharacterName(value)
+            setCharacterName(formatCharacterName(value))
           }}
           onOptionSubmit={(value) => {
             const choice = myCharacters.filter((c) => c.id == value)[0]
             setSelectedSpec(choice.character.spec)
             setSelectedClass(choice.character.class)
-            setCharacterName(choice.character.name)
+            setCharacterName(formatCharacterName(choice.character.name))
           }}
           renderOption={renderClassSpec(myCharacters)}
           w="200"
