@@ -19,6 +19,10 @@
           deno
           pre-commit
           jq
+          python3Packages.requests
+          python3Packages.demjson3
+          python3Packages.tqdm
+          moreutils
         ];
         shellHook = ''
           pre-commit install

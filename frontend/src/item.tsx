@@ -64,13 +64,14 @@ export const ItemNameAndIcon = (
     <Tooltip
       m={0}
       p={0}
+      multiline
       opened={(showTooltipElement?.itemId == item.id &&
         showTooltipElement?.npcId == npcId) ||
         (!isTouchScreen && hovered)}
       position="bottom"
       label={
         <div
-          className="tt-wrap"
+          className="tooltip"
           dangerouslySetInnerHTML={{ __html: item.tooltip }}
         />
       }

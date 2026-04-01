@@ -15,7 +15,7 @@ export const slotOrder = [
   "Trinket",
   "Main Hand",
   "Off Hand",
-  "Held In Off-hand",
+  "Held In Off-Hand",
   "One-Hand",
   "Two-Hand",
   "Ranged",
