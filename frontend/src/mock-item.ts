@@ -8,5 +8,11 @@ export const nothingItem: Item = {
   types: [],
   classes: [],
   quality: 1,
-  dropsFrom: [],
+  dropsFrom: [
+    {
+      chance: 0,
+      npcId: 0,
+      bossId: 0,
+    },
+  ],
 }
