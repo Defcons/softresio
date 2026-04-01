@@ -192,6 +192,7 @@ for instance in instances:
     open(f"../{instance['shortname']}.json", "w").write(json.dumps({
         "id": instance["id"],
         "shortname": instance["shortname"],
+        "raid": instance["raid"],
         "name": instance["name"],
         "items": items,
         "bosses": bosses,

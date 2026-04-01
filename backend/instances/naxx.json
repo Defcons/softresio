@@ -1,6 +1,7 @@
 {
   "id": 8,
   "shortname": "naxx",
+  "raid": true,
   "name": "Naxxramas",
   "items": [
     {

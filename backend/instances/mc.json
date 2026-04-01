@@ -1,6 +1,7 @@
 {
   "id": 7,
   "shortname": "mc",
+  "raid": true,
   "name": "Molten Core",
   "items": [
     {

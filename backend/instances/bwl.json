@@ -1,6 +1,7 @@
 {
   "id": 6,
   "shortname": "bwl",
+  "raid": true,
   "name": "Blackwing Lair",
   "items": [
     {

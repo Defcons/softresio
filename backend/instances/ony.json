@@ -1,6 +1,7 @@
 {
   "id": 9,
   "shortname": "ony",
+  "raid": true,
   "name": "Onyxia's Lair",
   "items": [
     {

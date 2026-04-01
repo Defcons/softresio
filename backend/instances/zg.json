@@ -1,6 +1,7 @@
 {
   "id": 1,
   "shortname": "zg",
+  "raid": true,
   "name": "Zul'Gurub",
   "items": [
     {

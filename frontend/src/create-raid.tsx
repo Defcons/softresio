@@ -40,6 +40,7 @@ export const CreateRaid = (
   const [raidBeforeEdit, setRaidBeforeEdit] = useState<Raid>()
   const [instances, setInstances] = useState<Instance[]>()
   const [instance, setInstance] = useState<Instance>()
+  const [worldBoss, setWorldBoss] = useState(false)
   const [guilds, setGuilds] = useState<Guild[]>([])
   const [selectedGuildId, setSelectedGuildId] = useState<string>()
   const [hardReserves, setHardReserves] = useState<number[]>([])
@@ -168,13 +169,22 @@ export const CreateRaid = (
     <>
       <Paper shadow="sm" p="sm">
         <Stack>
+          <SegmentedControl
+            defaultValue=""
+            data={["Raid", "World Boss"]}
+            size="md"
+            withItemsBorders={false}
+            value={worldBoss ? "World Boss" : "Raid"}
+            onChange={(value: string) => setWorldBoss(value == "World Boss")}
+          />
           <Select
+            w="100%"
             withAsterisk={instance == undefined}
             label="Instance"
             searchable
             placeholder="Select instance"
             maxDropdownHeight={1000}
-            data={instances?.map((e) => {
+            data={instances?.filter((e) => e.raid != worldBoss).map((e) => {
               return { value: e.id.toString(), label: e.name }
             })}
             value={instance?.id.toString() || null}

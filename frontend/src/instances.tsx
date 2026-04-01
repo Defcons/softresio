@@ -24,7 +24,7 @@ export const renderInstance: (
   const instance = instances.filter((i) => i.id.toString() == option.value)[0]
   return (
     <>
-      <Title order={6} w={40}>{instance.shortname.toUpperCase()}</Title>
+      <Title order={6} w={45}>{instance.shortname.toUpperCase()}</Title>
       {instance.name}
     </>
   )

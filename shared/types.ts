@@ -187,6 +187,7 @@ export interface Instance {
   items: Item[]
   bosses: Boss[]
   npcs: Npc[]
+  raid: boolean
 }
 
 export interface NpcItem {

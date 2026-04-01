@@ -1,6 +1,7 @@
 {
   "id": 2,
   "shortname": "k10",
+  "raid": true,
   "name": "Lower Karazhan Halls",
   "items": [
     {

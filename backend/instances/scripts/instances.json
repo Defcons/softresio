@@ -3,6 +3,7 @@
     "id": 7,
     "name": "Molten Core",
     "shortname": "mc",
+    "raid": true,
     "bosses": [
       {
         "name": "Lucifron",
@@ -122,6 +123,7 @@
     "id": 5,
     "name": "Tower of Karazhan",
     "shortname": "k40",
+    "raid": true,
     "bosses": [
       {
         "name": "Keeper Gnarlmoon",
@@ -210,6 +212,7 @@
     "id": 8,
     "name": "Naxxramas",
     "shortname": "naxx",
+    "raid": true,
     "bosses": [
       {
         "name": "Anub'Rekhan (Spider Wing)",
@@ -352,6 +355,7 @@
     "id": 11,
     "name": "Temple of Ahn'Qiraj",
     "shortname": "aq40",
+    "raid": true,
     "bosses": [
       {
         "name": "The Prophet Skeram",
@@ -452,6 +456,7 @@
     "id": 6,
     "name": "Blackwing Lair",
     "shortname": "bwl",
+    "raid": true,
     "bosses": [
       {
         "name": "Razorgore the Untamed",
@@ -540,6 +545,7 @@
     "id": 9,
     "name": "Onyxia's Lair",
     "shortname": "ony",
+    "raid": true,
     "bosses": [
       {
         "name": "Broodcommander Axelus",
@@ -565,6 +571,7 @@
     "id": 3,
     "name": "Emerald Sanctum",
     "shortname": "es",
+    "raid": true,
     "bosses": [
       {
         "name": "Erennius (Normal-Mode only)",
@@ -599,6 +606,7 @@
     "id": 1,
     "name": "Zul'Gurub",
     "shortname": "zg",
+    "raid": true,
     "bosses": [
       {
         "name": "High Priest Venoxis",
@@ -687,6 +695,7 @@
     "id": 10,
     "name": "Ruins of Ahn'Qiraj",
     "shortname": "aq20",
+    "raid": true,
     "bosses": [
       {
         "name": "Kurinnaxx",
@@ -748,6 +757,7 @@
     "id": 2,
     "name": "Lower Karazhan Halls",
     "shortname": "k10",
+    "raid": true,
     "bosses": [
       {
         "name": "Lord Blackwald II",
@@ -800,6 +810,7 @@
     "id": 12,
     "name": "Timbermaw Hold",
     "shortname": "tmh",
+    "raid": true,
     "bosses": [
       {
         "name": "Karrsh the Sentinel",
@@ -892,5 +903,192 @@
         ]
       }
     ]
-  }
+  },
+  {
+    "id": 13,
+    "name": "Emeriss",
+    "shortname": "emis",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Emeriss",
+        "npcs": [
+          {
+            "name": "Emeriss",
+            "link": "https://database.turtlecraft.gg/?npc=14889"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Lethon",
+    "shortname": "leth",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Lethon",
+        "npcs": [
+          {
+            "name": "Lethon",
+            "link": "https://database.turtlecraft.gg/?npc=14888"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Taerar",
+    "shortname": "taer",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Taerar",
+        "npcs": [
+          {
+            "name": "Taerar",
+            "link": "https://database.turtlecraft.gg/?npc=14890"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Ysondre",
+    "shortname": "ysdr",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Ysondre",
+        "npcs": [
+          {
+            "name": "Ysondre",
+            "link": "https://database.turtlecraft.gg/?npc=14887"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Lord Kazzak",
+    "shortname": "kazz",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Lord Kazzak",
+        "npcs": [
+          {
+            "name": "Lord Kazzak",
+            "link": "https://database.turtlecraft.gg/?npc=12397"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Nerubian Overseer",
+    "shortname": "neru",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Nerubian Overseer",
+        "npcs": [
+          {
+            "name": "Nerubian Overseer",
+            "link": "https://database.turtlecraft.gg/?npc=16184"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Dark Reaver of Karazhan",
+    "shortname": "drok",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Dark Reaver of Karazhan",
+        "npcs": [
+          {
+            "name": "Dark Reaver of Karazhan",
+            "link": "https://database.turtlecraft.gg/?npc=80936"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Ostarius",
+    "shortname": "osta",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Ostarius",
+        "npcs": [
+          {
+            "name": "Ostarius",
+            "link": "https://database.turtlecraft.gg/?npc=80935"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Concavius",
+    "shortname": "conc",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Concavius",
+        "npcs": [
+          {
+            "name": "Concavius",
+            "link": "https://database.turtlecraft.gg/?npc=63114"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Cla'ckora",
+    "shortname": "crab",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Cla'ckora",
+        "npcs": [
+          {
+            "name": "Cla'ckora",
+            "link": "https://database.turtlecraft.gg/?npc=59963"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Azuregos",
+    "shortname": "azu",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Azuregos",
+        "npcs": [
+          {
+            "name": "Azuregos",
+            "link": "https://database.turtlecraft.gg/?npc=6109"
+          }
+        ]
+      }
+    ]
+  },
 ]

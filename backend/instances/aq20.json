@@ -1,6 +1,7 @@
 {
   "id": 10,
   "shortname": "aq20",
+  "raid": true,
   "name": "Ruins of Ahn'Qiraj",
   "items": [
     {

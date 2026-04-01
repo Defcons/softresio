@@ -1,6 +1,7 @@
 {
   "id": 5,
   "shortname": "k40",
+  "raid": true,
   "name": "Tower of Karazhan",
   "items": [
     {
