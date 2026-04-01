@@ -141,7 +141,7 @@ export const Menu = (
               <Badge
                 size="sm"
                 color={user?.issuer == "discord"
-                  ? "var(--mantine-color-text)"
+                  ? "#5865F2"
                   : "var(--mantine-color-dark-5)"}
               >
                 {user?.issuer == "discord" ? user.username : "Anonymous"}
