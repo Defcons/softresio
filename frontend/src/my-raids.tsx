@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { formatDistanceToNow } from "date-fns"
 import {
-  Box,
   Button,
   Group,
   Paper,
@@ -12,7 +11,7 @@ import {
   Tooltip,
 } from "@mantine/core"
 import { useHover } from "@mantine/hooks"
-import { useNavigate } from "react-router"
+import { NavLink, useNavigate } from "react-router"
 import type {
   GetInstancesResponse,
   GetMyRaidsResponse,
@@ -30,15 +29,14 @@ const MyRaidItem = (
     raid: Raid
   },
 ) => {
-  const navigate = useNavigate()
   const { hovered, ref } = useHover()
 
   const idToInstance = (id: number): Instance =>
     instances.filter((instance) => instance.id == id)[0]
 
   return (
-    <Box
-      onClick={() => navigate(`/${raid.id}`)}
+    <NavLink
+      to={`/${raid.id}`}
       key={raid.id}
     >
       <Paper
@@ -62,6 +60,7 @@ const MyRaidItem = (
               variant="default"
               lineClamp={1}
               order={5}
+              c="var(--mantine-color-text)"
               visibleFrom="sm"
             >
               {idToInstance(raid.instanceId).name}
@@ -69,7 +68,7 @@ const MyRaidItem = (
           </Group>
           <Group wrap="nowrap" gap="xs">
             <Tooltip label={formatTime(raid.time)}>
-              <Text lineClamp={1}>
+              <Text c="var(--mantine-color-text)" lineClamp={1}>
                 {formatDistanceToNow(raid.time, { addSuffix: true })}
               </Text>
             </Tooltip>
@@ -80,16 +79,29 @@ const MyRaidItem = (
                   : "hidden",
               }}
             >
-              <IconShieldFilled size={20} />
+              <IconShieldFilled
+                color={raid.owner.userId == user.userId
+                  ? "var(--mantine-color-orange-text)"
+                  : "var(--mantine-color-text)"}
+                size={20}
+              />
             </Group>
             <Group gap={3} miw={45}>
-              <IconUserFilled size={20} />
-              <Title order={6}>{raid.attendees.length}</Title>
+              <IconUserFilled
+                color="var(--mantine-color-text)"
+                size={20}
+              />
+              <Title
+                c="var(--mantine-color-text)"
+                order={6}
+              >
+                {raid.attendees.length}
+              </Title>
             </Group>
           </Group>
         </Group>
       </Paper>
-    </Box>
+    </NavLink>
   )
 }
 
