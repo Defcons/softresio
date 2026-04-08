@@ -171,12 +171,18 @@ export const ItemPicker = ({
                 ...i,
                 dropsFrom: i.dropsFrom.filter((df) => df.npcId == npc.id),
               },
-            })).filter((i) => i.item.dropsFrom.length > 0).sort((a, b) =>
-              sortItem(a.item, b.item)
-            )
-          )
-        if (items.length > 0) {
-          elements = [...elements, { segment: boss.name }, ...items]
+            })).filter((i) => i.item.dropsFrom.length > 0)
+          ).sort((a, b) => sortItem(a.item, b.item))
+        const seen: { [item_id: number]: boolean } = {}
+        const deduplicated_items = items.filter((
+          e,
+        ) => (seen[e.item.id] ? false : (seen[e.item.id] = true)))
+        if (deduplicated_items.length > 0) {
+          elements = [
+            ...elements,
+            { segment: boss.name },
+            ...deduplicated_items,
+          ]
         }
       }
     }
