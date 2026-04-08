@@ -228,7 +228,7 @@ export const SelectableItem = ({
             {!hideChance && !hardReserves.includes(item.id)
               ? (
                 <Text w={30} size="xs" c="grey" ta="right">
-                  {chance ? `${chance}%` : null}
+                  {chance ? `${chance}%` : "<1%"}
                 </Text>
               )
               : null}

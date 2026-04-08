@@ -1,1 +1,154 @@
-{"id": 21, "shortname": "conc", "raid": false, "name": "Concavius", "items": [{"id": 83236, "name": "Void-Linked Satchel of Goods", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Void-Linked Satchel of Goods</b><br /></td></tr></table><table><tr><td></td></tr></table>", "icon": "inv_misc_bag_corefelclothbag.png", "dropsFrom": [{"chance": 100.0, "bossId": 0, "npcId": 0}], "slots": ["Miscellaneous"], "types": []}, {"id": 83233, "name": "Charm of Dark Domination", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Charm of Dark Domination</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Neck</td><th></th></tr></table>+12 Agility<br />+12 Intellect<br />+10 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=9416\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 11.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=27206\" class=\"q2\">Increases damage dealt by your pet by 3%.</a></span><br /></td></tr></table>", "icon": "inv_archaeology_70_highborne_inertleystonecharm.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Neck"], "types": []}, {"id": 83234, "name": "Voidclaw Choker", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Voidclaw Choker</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Neck</td><th></th></tr></table>+14 Strength<br />+10 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=7597\" class=\"q2\">Improves your chance to get a critical strike by 1%.</a></span><br /></td></tr></table>", "icon": "inv_jewelry_necklace_17.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Neck"], "types": []}, {"id": 83237, "name": "Band of Ancient Lethality", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Band of Ancient Lethality</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Finger</td><th></th></tr></table>+15 Agility<br />+6 Stamina<br />+5 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=15464\" class=\"q2\">Improves your chance to hit by 1%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=28088\" class=\"q2\">Increases the chance to apply poisons to your target by 1%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=13679\" class=\"q2\">Increases your attack and casting speed by 1%.</a></span><br /></td></tr></table>", "icon": "inv_jewelry_ring_ahnqiraj_01.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Finger"], "types": []}, {"id": 83238, "name": "Ring of the Abyss Watcher", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Ring of the Abyss Watcher</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Finger</td><th></th></tr></table>+8 Intellect<br />+8 Stamina<br />+5 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=23727\" class=\"q2\">Improves your chance to hit with spells by 1%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=9343\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 14.</a></span><br /></td></tr></table>", "icon": "inv_jewelry_ring_ahnqiraj_02.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Finger"], "types": []}, {"id": 83239, "name": "Signet of the Voidwalker", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Signet of the Voidwalker</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Finger</td><th></th></tr></table>50 Armor<br />+18 Stamina<br />+5 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=13669\" class=\"q2\">Increases your chance to dodge an attack by 1%.</a></span><br /></td></tr></table>", "icon": "inv_jewelry_ring_53naxxramas.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Finger"], "types": []}, {"id": 83240, "name": "Ring of the Whispering Mist", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Ring of the Whispering Mist</b><br />Binds when picked up<table width=\"100%\"><tr><td>Finger</td><th></th></tr></table>+9 Stamina<br />+10 Spirit<br />+5 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=7679\" class=\"q2\">Increases healing done by spells and effects by up to 11.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=18379\" class=\"q2\">Restores 6 mana per 5 sec.</a></span><br /></td></tr></table>", "icon": "inv_jewelry_ring_48naxxramas.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Finger"], "types": []}], "bosses": [{"id": 0, "name": "Concavius"}], "npcs": [{"id": 0, "name": "Concavius", "bossId": 0}]}
+{
+  "id": 21,
+  "shortname": "conc",
+  "raid": false,
+  "name": "Concavius",
+  "items": [
+    {
+      "id": 83236,
+      "name": "Void-Linked Satchel of Goods",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Void-Linked Satchel of Goods</b><br /></td></tr></table><table><tr><td></td></tr></table>",
+      "icon": "inv_misc_bag_corefelclothbag.png",
+      "dropsFrom": [
+        {
+          "chance": 100.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Miscellaneous"
+      ],
+      "types": []
+    },
+    {
+      "id": 83233,
+      "name": "Charm of Dark Domination",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Charm of Dark Domination</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Neck</td><th></th></tr></table>+12 Agility<br />+12 Intellect<br />+10 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=9416\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 11.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=27206\" class=\"q2\">Increases damage dealt by your pet by 3%.</a></span><br /></td></tr></table>",
+      "icon": "inv_archaeology_70_highborne_inertleystonecharm.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
+    },
+    {
+      "id": 83234,
+      "name": "Voidclaw Choker",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Voidclaw Choker</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Neck</td><th></th></tr></table>+14 Strength<br />+10 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=7597\" class=\"q2\">Improves your chance to get a critical strike by 1%.</a></span><br /></td></tr></table>",
+      "icon": "inv_jewelry_necklace_17.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
+    },
+    {
+      "id": 83237,
+      "name": "Band of Ancient Lethality",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Band of Ancient Lethality</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Finger</td><th></th></tr></table>+15 Agility<br />+6 Stamina<br />+5 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=15464\" class=\"q2\">Improves your chance to hit by 1%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=28088\" class=\"q2\">Increases the chance to apply poisons to your target by 1%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=13679\" class=\"q2\">Increases your attack and casting speed by 1%.</a></span><br /></td></tr></table>",
+      "icon": "inv_jewelry_ring_ahnqiraj_01.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
+    },
+    {
+      "id": 83238,
+      "name": "Ring of the Abyss Watcher",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Ring of the Abyss Watcher</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Finger</td><th></th></tr></table>+8 Intellect<br />+8 Stamina<br />+5 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=23727\" class=\"q2\">Improves your chance to hit with spells by 1%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=9343\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 14.</a></span><br /></td></tr></table>",
+      "icon": "inv_jewelry_ring_ahnqiraj_02.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
+    },
+    {
+      "id": 83239,
+      "name": "Signet of the Voidwalker",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Signet of the Voidwalker</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Finger</td><th></th></tr></table>50 Armor<br />+18 Stamina<br />+5 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=13669\" class=\"q2\">Increases your chance to dodge an attack by 1%.</a></span><br /></td></tr></table>",
+      "icon": "inv_jewelry_ring_53naxxramas.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
+    },
+    {
+      "id": 83240,
+      "name": "Ring of the Whispering Mist",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Ring of the Whispering Mist</b><br />Binds when picked up<table width=\"100%\"><tr><td>Finger</td><th></th></tr></table>+9 Stamina<br />+10 Spirit<br />+5 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=7679\" class=\"q2\">Increases healing done by spells and effects by up to 11.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=18379\" class=\"q2\">Restores 6 mana per 5 sec.</a></span><br /></td></tr></table>",
+      "icon": "inv_jewelry_ring_48naxxramas.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
+    }
+  ],
+  "bosses": [
+    {
+      "id": 0,
+      "name": "Concavius"
+    }
+  ],
+  "npcs": [
+    {
+      "id": 0,
+      "name": "Concavius",
+      "bossId": 0
+    }
+  ]
+}
