@@ -112,6 +112,7 @@ export const classes: { [className: string]: string[] } = {
     "Balance",
     "Feral Combat",
     "Restoration",
+    "Bear",
   ],
   "Paladin": [
     "Holy",
@@ -122,6 +123,7 @@ export const classes: { [className: string]: string[] } = {
     "Elemental",
     "Enhancement",
     "Restoration",
+    "Tank",
   ],
   "Warlock": [
     "Affliction",
@@ -159,6 +161,7 @@ export const classIcons: { [classSpec: string]: string } = {
   "Shaman": "class_shaman.png",
   "ShamanElemental": "spell_nature_lightning.png",
   "ShamanEnhancement": "spell_nature_lightningshield.png",
+  "ShamanTank": "inv_shield_06.png",
   "ShamanRestoration": "spell_nature_magicimmunity.png",
   "Mage": "class_mage.png",
   "MageArcane": "spell_holy_magicalsentry.png",
@@ -172,4 +175,5 @@ export const classIcons: { [classSpec: string]: string } = {
   "DruidBalance": "spell_nature_starfall.png",
   "DruidFeralCombat": "ability_racial_bearform.png",
   "DruidRestoration": "spell_nature_healingtouch.png",
+  "DruidBear": "ability_hunter_pet_bear.png",
 }
