@@ -1,1 +1,282 @@
-{"id": 22, "shortname": "crab", "raid": false, "name": "Cla'ckora", "items": [{"id": 55494, "name": "The Abyssal Pincer", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">The Abyssal Pincer</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Main Hand</td><th>Fist Weapon</th></tr></table><table width=\"100%\"><tr><td>87 - 163  Damage</td><th>Speed 2.60</th></tr></table>(48.1 damage per second)<br />+5 Stamina<br />+4 Strength<br />Durability 75 / 75<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=7597\" class=\"q2\">Improves your chance to get a critical strike by 1%.</a></span><br /><span class=\"q2\">Chance on hit: <a href=\"?spell=51266\" class=\"q2\">Blasts the target for 120 Frost damage, reducing movement speed by 20% for 2 seconds.</a></span><br /></td></tr></table>", "icon": "inv_misc_birdbeck_02.png", "dropsFrom": [{"chance": 20.0, "bossId": 0, "npcId": 0}], "slots": ["Main Hand"], "types": []}, {"id": 55495, "name": "Zandalar Predator's Glaive", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Zandalar Predator's Glaive</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Two-hand</td><th>Polearm</th></tr></table><table width=\"100%\"><tr><td>175 - 263  Damage</td><th>Speed 3.50</th></tr></table>(62.6 damage per second)<br />+23 Stamina<br />Durability 120 / 120<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=14089\" class=\"q2\">+36 Attack Power.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=15465\" class=\"q2\">Improves your chance to hit by 2%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=51268\" class=\"q2\">Your landing ranged and melee attacks have a 5% chance to increase your Agility by 75 for 10 sec.</a></span><br /></td></tr></table>", "icon": "inv_spear_04.png", "dropsFrom": [{"chance": 20.0, "bossId": 0, "npcId": 0}], "slots": ["Miscellaneous"], "types": ["Polearm"]}, {"id": 55498, "name": "Clamshell of the Depths", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Clamshell of the Depths</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Off Hand</td><th>Shield</th></tr></table>2504 Armor<br />45 Block<br />+9 Intellect<br />Durability 120 / 120<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=18384\" class=\"q2\">Improves your chance to get a critical strike with spells by 1%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=14248\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 21.</a></span><br /></td></tr></table>", "icon": "inv_misc_shell_03.png", "dropsFrom": [{"chance": 20.0, "bossId": 0, "npcId": 0}], "slots": ["Off Hand"], "types": ["Shield"]}, {"id": 55501, "name": "Sphere of the Endless Gulch", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Sphere of the Endless Gulch</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Trinket</td><th></th></tr></table>Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=14798\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 30.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=51272\" class=\"q2\">Gives a 20% chance when your harmful spells land to grant you Wisdom of the Mak'aru. Upon gaining Wisdom of the Mak'aru 20 times, you enter an enlightened state, increasing casting speed by 20% for 12 sec.</a></span><br /></td></tr></table>", "icon": "inv_ore_arcanite_02.png", "dropsFrom": [{"chance": 20.0, "bossId": 0, "npcId": 0}], "slots": ["Trinket"], "types": []}, {"id": 55504, "name": "Anchor of the Wavecutter", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Anchor of the Wavecutter</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Two-hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>182 - 269  Damage</td><th>Speed 3.60</th></tr></table>(62.6 damage per second)<br />+13 Strength<br />+11 Intellect<br />Durability 120 / 120<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=15464\" class=\"q2\">Improves your chance to hit by 1%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=17367\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 32.</a></span><br /><span class=\"q2\">Chance on hit: <a href=\"?spell=51277\" class=\"q2\">Inflicts 200 Frost damage to enemies in a cone in front of you, reducing movement speed by 20% for 5 seconds.</a></span><br /><span class=\"q\">\"The anchor of Daelin Proudmoore's flagship, now infused by the essence of the Abyssal Pincer.\"</span></td></tr></table>", "icon": "inv_generic_anchor.png", "dropsFrom": [{"chance": 20.0, "bossId": 0, "npcId": 0}], "slots": ["Miscellaneous"], "types": ["Mace"]}, {"id": 55496, "name": "Polychromatic Pearl Necklace", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Polychromatic Pearl Necklace</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Neck</td><th></th></tr></table>+12 Stamina<br />+10 Intellect<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=21623\" class=\"q2\">Restores 2 mana per 5 sec.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=14799\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 20.</a></span><br /></td></tr></table>", "icon": "inv_jewelry_necklace_25.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Neck"], "types": []}, {"id": 55497, "name": "Idol of Ebb and Flow", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Idol of Ebb and Flow</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Relic</td><th>Idol</th></tr></table>Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=51269\" class=\"q2\">Reduces the cast time of Starfire by 200 sec.</a></span><br /></td></tr></table>", "icon": "inv_qirajidol_night.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Relic"], "types": ["Idol"]}, {"id": 55499, "name": "Primal Murloc Scale Belt", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Primal Murloc Scale Belt</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Waist</td><th>Mail</th></tr></table>237 Armor<br />+20 Agility<br />+17 Intellect<br />Durability 50 / 50<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=48030\" class=\"q2\">Your attacks ignore 25 of the target's armor.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=21438\" class=\"q2\">+31 ranged Attack Power.</a></span><br /></td></tr></table>", "icon": "inv_belt_35.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Waist"], "types": ["Mail"]}, {"id": 55500, "name": "Barnacle Vambraces", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Barnacle Vambraces</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Wrist</td><th>Plate</th></tr></table>328 Armor<br />+14 Stamina<br />+12 Strength<br />Durability 55 / 55<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=13679\" class=\"q2\">Increases your attack and casting speed by 1%.</a></span><br /></td></tr></table>", "icon": "inv_bracer_17.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Wrist"], "types": ["Plate"]}, {"id": 55502, "name": "Iceplated Leggings", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Iceplated Leggings</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Legs</td><th>Leather</th></tr></table>175 Armor<br />+22 Stamina<br />+21 Agility<br />Durability 90 / 90<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=14089\" class=\"q2\">+36 Attack Power.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=51274\" class=\"q2\">When struck has a 10% chance of dealing 35 to 45 Frost damage and reducing the attacker's attack and movement speed by 5% for 12 sec. Stacks up to 5 times.</a></span><br /></td></tr></table>", "icon": "inv_pants_12.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Legs"], "types": ["Leather"]}, {"id": 55503, "name": "Loop of Unceasing Frost", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Loop of Unceasing Frost</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Finger</td><th></th></tr></table>+16 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=9344\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 15.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=51276\" class=\"q2\">Your landing attacks and harmful spells have a 4% and 10% chance respectively to freeze the target, increasing its Fire damage taken by 5% for 10 sec.</a></span><br /></td></tr></table>", "icon": "inv_jewelry_ring_38.png", "dropsFrom": [{"chance": 17.0, "bossId": 0, "npcId": 0}], "slots": ["Finger"], "types": []}, {"id": 55509, "name": "Deepsea Lobster", "classes": [], "quality": 1, "tooltip": "<table><tr><td><b class=\"q1\">Deepsea Lobster</b><br />Requires Level 35<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: <a href=\"?spell=1131\" class=\"q2\">Restores 2148 health over 30 sec.  Must remain seated while eating.</a></span><br /></td></tr></table>", "icon": "inv_misc_fish_36.png", "dropsFrom": [{"chance": 100.0, "bossId": 0, "npcId": 0}], "slots": ["Miscellaneous"], "types": []}, {"id": 92020, "name": "Spawn of Cla'ckora", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Spawn of Cla'ckora</b><br /></td></tr></table><table><tr><td><span class=\"q2\">Use: <a href=\"?spell=46498\" class=\"q2\">Adds a companion to the player's companion collection.</a></span><br /><span class=\"q\">\"The spawn of the mighty Cla'ckora!\"</span></td></tr></table>", "icon": "inv_misc_birdbeck_02.png", "dropsFrom": [{"chance": 5.0, "bossId": 0, "npcId": 0}], "slots": ["Miscellaneous"], "types": []}], "bosses": [{"id": 0, "name": "Cla'ckora"}], "npcs": [{"id": 0, "name": "Cla'ckora", "bossId": 0}]}
+{
+  "id": 22,
+  "shortname": "crab",
+  "raid": false,
+  "name": "Cla'ckora",
+  "items": [
+    {
+      "id": 55494,
+      "name": "The Abyssal Pincer",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">The Abyssal Pincer</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Main Hand</td><th>Fist Weapon</th></tr></table><table width=\"100%\"><tr><td>87 - 163  Damage</td><th>Speed 2.60</th></tr></table>(48.1 damage per second)<br />+5 Stamina<br />+4 Strength<br />Durability 75 / 75<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=7597\" class=\"q2\">Improves your chance to get a critical strike by 1%.</a></span><br /><span class=\"q2\">Chance on hit: <a href=\"?spell=51266\" class=\"q2\">Blasts the target for 120 Frost damage, reducing movement speed by 20% for 2 seconds.</a></span><br /></td></tr></table>",
+      "icon": "inv_misc_birdbeck_02.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Main Hand"
+      ],
+      "types": []
+    },
+    {
+      "id": 55495,
+      "name": "Zandalar Predator's Glaive",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Zandalar Predator's Glaive</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Two-hand</td><th>Polearm</th></tr></table><table width=\"100%\"><tr><td>175 - 263  Damage</td><th>Speed 3.50</th></tr></table>(62.6 damage per second)<br />+23 Stamina<br />Durability 120 / 120<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=14089\" class=\"q2\">+36 Attack Power.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=15465\" class=\"q2\">Improves your chance to hit by 2%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=51268\" class=\"q2\">Your landing ranged and melee attacks have a 5% chance to increase your Agility by 75 for 10 sec.</a></span><br /></td></tr></table>",
+      "icon": "inv_spear_04.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Polearm"
+      ]
+    },
+    {
+      "id": 55498,
+      "name": "Clamshell of the Depths",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Clamshell of the Depths</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Off Hand</td><th>Shield</th></tr></table>2504 Armor<br />45 Block<br />+9 Intellect<br />Durability 120 / 120<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=18384\" class=\"q2\">Improves your chance to get a critical strike with spells by 1%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=14248\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 21.</a></span><br /></td></tr></table>",
+      "icon": "inv_misc_shell_03.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
+    },
+    {
+      "id": 55501,
+      "name": "Sphere of the Endless Gulch",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Sphere of the Endless Gulch</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Trinket</td><th></th></tr></table>Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=14798\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 30.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=51272\" class=\"q2\">Gives a 20% chance when your harmful spells land to grant you Wisdom of the Mak'aru. Upon gaining Wisdom of the Mak'aru 20 times, you enter an enlightened state, increasing casting speed by 20% for 12 sec.</a></span><br /></td></tr></table>",
+      "icon": "inv_ore_arcanite_02.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
+    },
+    {
+      "id": 55504,
+      "name": "Anchor of the Wavecutter",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Anchor of the Wavecutter</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Two-hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>182 - 269  Damage</td><th>Speed 3.60</th></tr></table>(62.6 damage per second)<br />+13 Strength<br />+11 Intellect<br />Durability 120 / 120<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=15464\" class=\"q2\">Improves your chance to hit by 1%.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=17367\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 32.</a></span><br /><span class=\"q2\">Chance on hit: <a href=\"?spell=51277\" class=\"q2\">Inflicts 200 Frost damage to enemies in a cone in front of you, reducing movement speed by 20% for 5 seconds.</a></span><br /><span class=\"q\">\"The anchor of Daelin Proudmoore's flagship, now infused by the essence of the Abyssal Pincer.\"</span></td></tr></table>",
+      "icon": "inv_generic_anchor.png",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
+    },
+    {
+      "id": 55496,
+      "name": "Polychromatic Pearl Necklace",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Polychromatic Pearl Necklace</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Neck</td><th></th></tr></table>+12 Stamina<br />+10 Intellect<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=21623\" class=\"q2\">Restores 2 mana per 5 sec.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=14799\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 20.</a></span><br /></td></tr></table>",
+      "icon": "inv_jewelry_necklace_25.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
+    },
+    {
+      "id": 55497,
+      "name": "Idol of Ebb and Flow",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Idol of Ebb and Flow</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Relic</td><th>Idol</th></tr></table>Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=51269\" class=\"q2\">Reduces the cast time of Starfire by 200 sec.</a></span><br /></td></tr></table>",
+      "icon": "inv_qirajidol_night.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Relic"
+      ],
+      "types": [
+        "Idol"
+      ]
+    },
+    {
+      "id": 55499,
+      "name": "Primal Murloc Scale Belt",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Primal Murloc Scale Belt</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Waist</td><th>Mail</th></tr></table>237 Armor<br />+20 Agility<br />+17 Intellect<br />Durability 50 / 50<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=48030\" class=\"q2\">Your attacks ignore 25 of the target's armor.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=21438\" class=\"q2\">+31 ranged Attack Power.</a></span><br /></td></tr></table>",
+      "icon": "inv_belt_35.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 55500,
+      "name": "Barnacle Vambraces",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Barnacle Vambraces</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Wrist</td><th>Plate</th></tr></table>328 Armor<br />+14 Stamina<br />+12 Strength<br />Durability 55 / 55<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=13679\" class=\"q2\">Increases your attack and casting speed by 1%.</a></span><br /></td></tr></table>",
+      "icon": "inv_bracer_17.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Plate"
+      ]
+    },
+    {
+      "id": 55502,
+      "name": "Iceplated Leggings",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Iceplated Leggings</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Legs</td><th>Leather</th></tr></table>175 Armor<br />+22 Stamina<br />+21 Agility<br />Durability 90 / 90<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=14089\" class=\"q2\">+36 Attack Power.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=51274\" class=\"q2\">When struck has a 10% chance of dealing 35 to 45 Frost damage and reducing the attacker's attack and movement speed by 5% for 12 sec. Stacks up to 5 times.</a></span><br /></td></tr></table>",
+      "icon": "inv_pants_12.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 55503,
+      "name": "Loop of Unceasing Frost",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Loop of Unceasing Frost</b><br />Binds when picked up<br />Unique<table width=\"100%\"><tr><td>Finger</td><th></th></tr></table>+16 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: <a href=\"?spell=9344\" class=\"q2\">Increases damage and healing done by magical spells and effects by up to 15.</a></span><br /><span class=\"q2\">Equip: <a href=\"?spell=51276\" class=\"q2\">Your landing attacks and harmful spells have a 4% and 10% chance respectively to freeze the target, increasing its Fire damage taken by 5% for 10 sec.</a></span><br /></td></tr></table>",
+      "icon": "inv_jewelry_ring_38.png",
+      "dropsFrom": [
+        {
+          "chance": 17.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
+    },
+    {
+      "id": 55509,
+      "name": "Deepsea Lobster",
+      "classes": [],
+      "quality": 1,
+      "tooltip": "<table><tr><td><b class=\"q1\">Deepsea Lobster</b><br />Requires Level 35<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: <a href=\"?spell=1131\" class=\"q2\">Restores 2148 health over 30 sec.  Must remain seated while eating.</a></span><br /></td></tr></table>",
+      "icon": "inv_misc_fish_36.png",
+      "dropsFrom": [
+        {
+          "chance": 100.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Miscellaneous"
+      ],
+      "types": []
+    },
+    {
+      "id": 92020,
+      "name": "Spawn of Cla'ckora",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Spawn of Cla'ckora</b><br /></td></tr></table><table><tr><td><span class=\"q2\">Use: <a href=\"?spell=46498\" class=\"q2\">Adds a companion to the player's companion collection.</a></span><br /><span class=\"q\">\"The spawn of the mighty Cla'ckora!\"</span></td></tr></table>",
+      "icon": "inv_misc_birdbeck_02.png",
+      "dropsFrom": [
+        {
+          "chance": 5.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Miscellaneous"
+      ],
+      "types": []
+    }
+  ],
+  "bosses": [
+    {
+      "id": 0,
+      "name": "Cla'ckora"
+    }
+  ],
+  "npcs": [
+    {
+      "id": 0,
+      "name": "Cla'ckora",
+      "bossId": 0
+    }
+  ]
+}

@@ -1,10 +1,3 @@
-jq . aq20.json | sponge aq20.json 
-jq . aq40.json | sponge aq40.json
-jq . bwl.json | sponge bwl.json
-jq . es.json | sponge es.json
-jq . k10.json | sponge k10.json
-jq . k40.json | sponge k40.json
-jq . mc.json | sponge mc.json
-jq . naxx.json | sponge naxx.json
-jq . ony.json | sponge ony.json
-jq . zg.json | sponge zg.json
+for file in *.json; do
+    jq . "$file" | sponge "$file"
+done

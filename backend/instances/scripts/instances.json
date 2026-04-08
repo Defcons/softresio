@@ -116,6 +116,55 @@
             "link": "https://database.turtlecraft.gg/?npc=11502"
           }
         ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Molten Giant",
+            "link": "https://database.turtlecraft.gg/?npc=11658"
+          },
+          {
+            "name": "Ancient Core Hound",
+            "link": "https://database.turtlecraft.gg/?npc=11673"
+          },
+          {
+            "name": "Lava Surger",
+            "link": "https://database.turtlecraft.gg/?npc=12101"
+          },
+          {
+            "name": "Flamewaker Protector",
+            "link": "https://database.turtlecraft.gg/?npc=12119"
+          },
+          {
+            "name": "Molten Destroyer",
+            "link": "https://database.turtlecraft.gg/?npc=11659"
+          },
+          {
+            "name": "Lava Elemental",
+            "link": "https://database.turtlecraft.gg/?npc=12076"
+          },
+          {
+            "name": "Lava Reaver",
+            "link": "https://database.turtlecraft.gg/?npc=12100"
+          },
+          {
+            "name": "Flamewaker Priest",
+            "link": "https://database.turtlecraft.gg/?npc=11662"
+          },
+          {
+            "name": "Shadowforge Hierophant",
+            "link": "https://database.turtlecraft.gg/?npc=52151"
+          },
+          {
+            "name": "Shadowforge Guardian",
+            "link": "https://database.turtlecraft.gg/?npc=52150"
+          },
+          {
+            "name": "Shadowforge Blazeweaver",
+            "link": "https://database.turtlecraft.gg/?npc=52152"
+          }
+        ]
       }
     ]
   },
@@ -203,6 +252,155 @@
           {
             "name": "Mephistroth",
             "link": "https://database.turtlecraft.gg/?npc=93333"
+          }
+        ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Shadowclaw Darkbringer",
+            "link": "https://database.turtlecraft.gg/?npc=61936"
+          },
+          {
+            "name": "Shadowclaw Rager",
+            "link": "https://database.turtlecraft.gg/?npc=61938"
+          },
+          {
+            "name": "Greater Gloomwing",
+            "link": "https://database.turtlecraft.gg/?npc=61933"
+          },
+          {
+            "name": "Shadowclaw Worgen",
+            "link": "https://database.turtlecraft.gg/?npc=61937"
+          },
+          {
+            "name": "Vampiric Gloomwing",
+            "link": "https://database.turtlecraft.gg/?npc=61932"
+          },
+          {
+            "name": "Duskfang Creeper",
+            "link": "https://database.turtlecraft.gg/?npc=61935"
+          },
+          {
+            "name": "Desolate Invader",
+            "link": "https://database.turtlecraft.gg/?npc=62604"
+          },
+          {
+            "name": "Desolate Destroyer",
+            "link": "https://database.turtlecraft.gg/?npc=62605"
+          },
+          {
+            "name": "Manascale Mageweaver",
+            "link": "https://database.turtlecraft.gg/?npc=61944"
+          },
+          {
+            "name": "Manascale Suppressor",
+            "link": "https://database.turtlecraft.gg/?npc=61943"
+          },
+          {
+            "name": "Manascale Dragon Guard",
+            "link": "https://database.turtlecraft.gg/?npc=61942"
+          },
+          {
+            "name": "Manascale Overseer",
+            "link": "https://database.turtlecraft.gg/?npc=61945"
+          },
+          {
+            "name": "Manascale Drake",
+            "link": "https://database.turtlecraft.gg/?npc=61940"
+          },
+          {
+            "name": "Arcane Anomaly",
+            "link": "https://database.turtlecraft.gg/?npc=61950"
+          },
+          {
+            "name": "Unstable Arcane Elemental",
+            "link": "https://database.turtlecraft.gg/?npc=61948"
+          },
+          {
+            "name": "Arcane Overflow",
+            "link": "https://database.turtlecraft.gg/?npc=61947"
+          },
+          {
+            "name": "Disrupted Arcane Elemental",
+            "link": "https://database.turtlecraft.gg/?npc=61949"
+          },
+          {
+            "name": "Lingering Arcanist",
+            "link": "https://database.turtlecraft.gg/?npc=61955"
+          },
+          {
+            "name": "Lingering Enchanter",
+            "link": "https://database.turtlecraft.gg/?npc=61957"
+          },
+          {
+            "name": "Lingering Astrologist",
+            "link": "https://database.turtlecraft.gg/?npc=61956"
+          },
+          {
+            "name": "Lingering Magus",
+            "link": "https://database.turtlecraft.gg/?npc=61954"
+          },
+          {
+            "name": "Karazhan Protector Golem",
+            "link": "https://database.turtlecraft.gg/?npc=61953"
+          },
+          {
+            "name": "Crumbling Protector",
+            "link": "https://database.turtlecraft.gg/?npc=61952"
+          },
+          {
+            "name": "Decaying Bishop",
+            "link": "https://database.turtlecraft.gg/?npc=49013"
+          },
+          {
+            "name": "Broken Rook",
+            "link": "https://database.turtlecraft.gg/?npc=49012"
+          },
+          {
+            "name": "Malfunctioning Knight",
+            "link": "https://database.turtlecraft.gg/?npc=49014"
+          },
+          {
+            "name": "Forgotten Echo",
+            "link": "https://database.turtlecraft.gg/?npc=62607"
+          },
+          {
+            "name": "Ima'ghaol",
+            "link": "https://database.turtlecraft.gg/?npc=62606"
+          },
+          {
+            "name": "Warbringer Overseer",
+            "link": "https://database.turtlecraft.gg/?npc=62019"
+          },
+          {
+            "name": "Draenei Darkbinder",
+            "link": "https://database.turtlecraft.gg/?npc=62021"
+          },
+          {
+            "name": "Outcast Souleater",
+            "link": "https://database.turtlecraft.gg/?npc=62020"
+          },
+          {
+            "name": "Doomguard Annihilator",
+            "link": "https://database.turtlecraft.gg/?npc=62016"
+          },
+          {
+            "name": "Darkflame Imp",
+            "link": "https://database.turtlecraft.gg/?npc=62018"
+          },
+          {
+            "name": "Draenei Worshipper",
+            "link": "https://database.turtlecraft.gg/?npc=62022"
+          },
+          {
+            "name": "Fragment of Rupturan",
+            "link": "https://database.turtlecraft.gg/?npc=59957"
+          },
+          {
+            "name": "Dreadlord Doomseeker",
+            "link": "https://database.turtlecraft.gg/?npc=62015"
           }
         ]
       }
@@ -348,6 +546,147 @@
             "link": "https://database.turtlecraft.gg/?npc=15990"
           }
         ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Infectious Skitterer",
+            "link": "https://database.turtlecraft.gg/?npc=15977"
+          },
+          {
+            "name": "Venom Stalker",
+            "link": "https://database.turtlecraft.gg/?npc=15976"
+          },
+          {
+            "name": "Dread Creeper",
+            "link": "https://database.turtlecraft.gg/?npc=15974"
+          },
+          {
+            "name": "Carrion Spinner",
+            "link": "https://database.turtlecraft.gg/?npc=15975"
+          },
+          {
+            "name": "Crypt Reaver",
+            "link": "https://database.turtlecraft.gg/?npc=15978"
+          },
+          {
+            "name": "Necro Stalker",
+            "link": "https://database.turtlecraft.gg/?npc=16453"
+          },
+          {
+            "name": "Naxxramas Acolyte",
+            "link": "https://database.turtlecraft.gg/?npc=15981"
+          },
+          {
+            "name": "Naxxramas Cultist",
+            "link": "https://database.turtlecraft.gg/?npc=15980"
+          },
+          {
+            "name": "Naxxramas Follower",
+            "link": "https://database.turtlecraft.gg/?npc=16505"
+          },
+          {
+            "name": "Naxxramas Worshipper",
+            "link": "https://database.turtlecraft.gg/?npc=16506"
+          },
+          {
+            "name": "Tomb Horror",
+            "link": "https://database.turtlecraft.gg/?npc=15979"
+          },
+          {
+            "name": "Plagued Ghoul",
+            "link": "https://database.turtlecraft.gg/?npc=16447"
+          },
+          {
+            "name": "Plagued Gargoyle",
+            "link": "https://database.turtlecraft.gg/?npc=16446"
+          },
+          {
+            "name": "Deathknight Captain",
+            "link": "https://database.turtlecraft.gg/?npc=16145"
+          },
+          {
+            "name": "Risen Deathknight",
+            "link": "https://database.turtlecraft.gg/?npc=16154"
+          },
+          {
+            "name": "Shade of Naxxramas",
+            "link": "https://database.turtlecraft.gg/?npc=16164"
+          },
+          {
+            "name": "Dark Touched Warrior",
+            "link": "https://database.turtlecraft.gg/?npc=16156"
+          },
+          {
+            "name": "Death Touched Warrior",
+            "link": "https://database.turtlecraft.gg/?npc=16158"
+          },
+          {
+            "name": "Bony Construct",
+            "link": "https://database.turtlecraft.gg/?npc=16167"
+          },
+          {
+            "name": "Skeletal Smith",
+            "link": "https://database.turtlecraft.gg/?npc=16193"
+          },
+          {
+            "name": "Doom Touched Warrior",
+            "link": "https://database.turtlecraft.gg/?npc=16157"
+          },
+          {
+            "name": "Deathknight Cavalier",
+            "link": "https://database.turtlecraft.gg/?npc=16163"
+          },
+          {
+            "name": "Death Lord",
+            "link": "https://database.turtlecraft.gg/?npc=16861"
+          },
+          {
+            "name": "Unholy Axe",
+            "link": "https://database.turtlecraft.gg/?npc=16194"
+          },
+          {
+            "name": "Unholy Swords",
+            "link": "https://database.turtlecraft.gg/?npc=16216"
+          },
+          {
+            "name": "Unholy Staff",
+            "link": "https://database.turtlecraft.gg/?npc=16215"
+          },
+          {
+            "name": "Necro Knight Guardian",
+            "link": "https://database.turtlecraft.gg/?npc=16452"
+          },
+          {
+            "name": "Deathknight Vindicator",
+            "link": "https://database.turtlecraft.gg/?npc=16451"
+          },
+          {
+            "name": "Infectious Ghoul",
+            "link": "https://database.turtlecraft.gg/?npc=16244"
+          },
+          {
+            "name": "Patchwork Golem",
+            "link": "https://database.turtlecraft.gg/?npc=16017"
+          },
+          {
+            "name": "Sludge Belcher",
+            "link": "https://database.turtlecraft.gg/?npc=16029"
+          },
+          {
+            "name": "Living Monstrosity",
+            "link": "https://database.turtlecraft.gg/?npc=16021"
+          },
+          {
+            "name": "Mad Scientist",
+            "link": "https://database.turtlecraft.gg/?npc=16020"
+          },
+          {
+            "name": "Stitched Spewer",
+            "link": "https://database.turtlecraft.gg/?npc=16025"
+          }
+        ]
       }
     ]
   },
@@ -449,6 +788,63 @@
             "link": "https://database.turtlecraft.gg/?npc=15727"
           }
         ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Anubisath Sentinel",
+            "link": "https://database.turtlecraft.gg/?npc=15264"
+          },
+          {
+            "name": "Obsidian Eradicator",
+            "link": "https://database.turtlecraft.gg/?npc=15262"
+          },
+          {
+            "name": "Qiraji Brainwasher",
+            "link": "https://database.turtlecraft.gg/?npc=15247"
+          },
+          {
+            "name": "Vekniss Guardian",
+            "link": "https://database.turtlecraft.gg/?npc=15233"
+          },
+          {
+            "name": "Vekniss Warrior",
+            "link": "https://database.turtlecraft.gg/?npc=15230"
+          },
+          {
+            "name": "Sartura's Royal Guard",
+            "link": "https://database.turtlecraft.gg/?npc=15984"
+          },
+          {
+            "name": "Vekniss Soldier",
+            "link": "https://database.turtlecraft.gg/?npc=15229"
+          },
+          {
+            "name": "Vekniss Hive Crawler",
+            "link": "https://database.turtlecraft.gg/?npc=15240"
+          },
+          {
+            "name": "Vekniss Stinger",
+            "link": "https://database.turtlecraft.gg/?npc=15235"
+          },
+          {
+            "name": "Qiraji Lasher",
+            "link": "https://database.turtlecraft.gg/?npc=15249"
+          },
+          {
+            "name": "Vekniss Wasp",
+            "link": "https://database.turtlecraft.gg/?npc=15236"
+          },
+          {
+            "name": "Anubisath Defender",
+            "link": "https://database.turtlecraft.gg/?npc=15277"
+          },
+          {
+            "name": "Qiraji Champion",
+            "link": "https://database.turtlecraft.gg/?npc=15252"
+          }
+        ]
       }
     ]
   },
@@ -538,6 +934,67 @@
             "link": "https://database.turtlecraft.gg/?npc=11583"
           }
         ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Grethok the Controller",
+            "link": "https://database.turtlecraft.gg/?npc=12557"
+          },
+          {
+            "name": "Blackwing Guardsman",
+            "link": "https://database.turtlecraft.gg/?npc=14456"
+          },
+          {
+            "name": "Death Talon Wyrmkin",
+            "link": "https://database.turtlecraft.gg/?npc=12465"
+          },
+          {
+            "name": "Death Talon Captain",
+            "link": "https://database.turtlecraft.gg/?npc=12467"
+          },
+          {
+            "name": "Death Talon Seether",
+            "link": "https://database.turtlecraft.gg/?npc=12464"
+          },
+          {
+            "name": "Death Talon Flamescale",
+            "link": "https://database.turtlecraft.gg/?npc=12463"
+          },
+          {
+            "name": "Blackwing Taskmaster",
+            "link": "https://database.turtlecraft.gg/?npc=12458"
+          },
+          {
+            "name": "Death Talon Hatcher",
+            "link": "https://database.turtlecraft.gg/?npc=12468"
+          },
+          {
+            "name": "Blackwing Warlock",
+            "link": "https://database.turtlecraft.gg/?npc=12459"
+          },
+          {
+            "name": "Blackwing Spellbinder",
+            "link": "https://database.turtlecraft.gg/?npc=12457"
+          },
+          {
+            "name": "Death Talon Overseer",
+            "link": "https://database.turtlecraft.gg/?npc=12461"
+          },
+          {
+            "name": "Death Talon Wyrmguard",
+            "link": "https://database.turtlecraft.gg/?npc=12460"
+          },
+          {
+            "name": "Master Elemental Shaper Krixix",
+            "link": "https://database.turtlecraft.gg/?npc=14401"
+          },
+          {
+            "name": "Blackwing Technician",
+            "link": "https://database.turtlecraft.gg/?npc=13996"
+          }
+        ]
       }
     ]
   },
@@ -562,6 +1019,23 @@
           {
             "name": "Onyxia",
             "link": "https://database.turtlecraft.gg/?npc=10184"
+          }
+        ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Onyxian Inciter",
+            "link": "https://database.turtlecraft.gg/?npc=49016"
+          },
+          {
+            "name": "Onyxian Flamespawn",
+            "link": "https://database.turtlecraft.gg/?npc=49017"
+          },
+          {
+            "name": "Onyxian Hatcher",
+            "link": "https://database.turtlecraft.gg/?npc=50144"
           }
         ]
       }
@@ -597,6 +1071,31 @@
           {
             "name": "Favor of Erennius",
             "link": "https://database.turtlecraft.gg/?object=2020042"
+          }
+        ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Sanctum Scalebane",
+            "link": "https://database.turtlecraft.gg/?npc=60746"
+          },
+          {
+            "name": "Sanctum Dreamer",
+            "link": "https://database.turtlecraft.gg/?npc=60742"
+          },
+          {
+            "name": "Sanctum Dragonkin",
+            "link": "https://database.turtlecraft.gg/?npc=60743"
+          },
+          {
+            "name": "Sanctum Wyrmkin",
+            "link": "https://database.turtlecraft.gg/?npc=60745"
+          },
+          {
+            "name": "Sanctum Supressor",
+            "link": "https://database.turtlecraft.gg/?npc=61212"
           }
         ]
       }
@@ -663,6 +1162,31 @@
         ]
       },
       {
+        "name": "Madness",
+        "npcs": [
+          {
+            "name": "Gri'lek",
+            "link": "https://database.turtlecraft.gg/?npc=15082",
+            "greens": true
+          },
+          {
+            "name": "Renataki",
+            "link": "https://database.turtlecraft.gg/?npc=15084",
+            "greens": true
+          },
+          {
+            "name": "Wushoolay",
+            "link": "https://database.turtlecraft.gg/?npc=15085",
+            "greens": true
+          },
+          {
+            "name": "Hazza'rah",
+            "link": "https://database.turtlecraft.gg/?npc=15083",
+            "greens": true
+          }
+        ]
+      },
+      {
         "name": "Gahz'ranka",
         "npcs": [
           {
@@ -686,6 +1210,99 @@
           {
             "name": "Hakkar",
             "link": "https://database.turtlecraft.gg/?npc=14834"
+          }
+        ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Razzashi Adder",
+            "link": "https://database.turtlecraft.gg/?npc=11372"
+          },
+          {
+            "name": "Razzashi Serpent",
+            "link": "https://database.turtlecraft.gg/?npc=11371"
+          },
+          {
+            "name": "Hakkari Priest",
+            "link": "https://database.turtlecraft.gg/?npc=11830"
+          },
+          {
+            "name": "Gurubashi Axe Thrower",
+            "link": "https://database.turtlecraft.gg/?npc=11350"
+          },
+          {
+            "name": "Withered Mistress",
+            "link": "https://database.turtlecraft.gg/?npc=14825"
+          },
+          {
+            "name": "Gurubashi Headhunter",
+            "link": "https://database.turtlecraft.gg/?npc=11351"
+          },
+          {
+            "name": "Atal'ai Mistress",
+            "link": "https://database.turtlecraft.gg/?npc=14882"
+          },
+          {
+            "name": "Voodoo Slave",
+            "link": "https://database.turtlecraft.gg/?npc=14883"
+          },
+          {
+            "name": "Gurubashi Bat Rider",
+            "link": "https://database.turtlecraft.gg/?npc=14750"
+          },
+          {
+            "name": "Hakkari Witch Doctor",
+            "link": "https://database.turtlecraft.gg/?npc=11831"
+          },
+          {
+            "name": "Sandfury Speaker",
+            "link": "https://database.turtlecraft.gg/?npc=11387"
+          },
+          {
+            "name": "Gurubashi Blood Drinker",
+            "link": "https://database.turtlecraft.gg/?npc=11353"
+          },
+          {
+            "name": "Gurubashi Champion",
+            "link": "https://database.turtlecraft.gg/?npc=11356"
+          },
+          {
+            "name": "Mad Servant",
+            "link": "https://database.turtlecraft.gg/?npc=15111"
+          },
+          {
+            "name": "Hakkari Blood Priest",
+            "link": "https://database.turtlecraft.gg/?npc=11340"
+          },
+          {
+            "name": "Zealot Lor'Khan",
+            "link": "https://database.turtlecraft.gg/?npc=11347"
+          },
+          {
+            "name": "Zealot Zath",
+            "link": "https://database.turtlecraft.gg/?npc=11348"
+          },
+          {
+            "name": "Zulian Cub",
+            "link": "https://database.turtlecraft.gg/?npc=11360"
+          },
+          {
+            "name": "Hooktooth Frenzy",
+            "link": "https://database.turtlecraft.gg/?npc=11374"
+          },
+          {
+            "name": "Zulian Crocolisk",
+            "link": "https://database.turtlecraft.gg/?npc=15043"
+          },
+          {
+            "name": "Hakkari Shadow Hunter",
+            "link": "https://database.turtlecraft.gg/?npc=11339"
+          },
+          {
+            "name": "Son of Hakkar",
+            "link": "https://database.turtlecraft.gg/?npc=11357"
           }
         ]
       }
@@ -712,6 +1329,34 @@
           {
             "name": "General Rajaxx",
             "link": "https://database.turtlecraft.gg/?npc=15341"
+          },
+          {
+            "name": "Major Pakkon",
+            "link": "https://database.turtlecraft.gg/?npc=15388"
+          },
+          {
+            "name": "Colonel Zerran",
+            "link": "https://database.turtlecraft.gg/?npc=15385"
+          },
+          {
+            "name": "Captain Drenn",
+            "link": "https://database.turtlecraft.gg/?npc=15389"
+          },
+          {
+            "name": "Captain Qeez",
+            "link": "https://database.turtlecraft.gg/?npc=15391"
+          },
+          {
+            "name": "Captain Tuubid",
+            "link": "https://database.turtlecraft.gg/?npc=15392"
+          },
+          {
+            "name": "Captain Xurrem",
+            "link": "https://database.turtlecraft.gg/?npc=15390"
+          },
+          {
+            "name": "Major Yeggeth",
+            "link": "https://database.turtlecraft.gg/?npc=15386"
           }
         ]
       },
@@ -748,6 +1393,47 @@
           {
             "name": "Ossirian the Unscarred",
             "link": "https://database.turtlecraft.gg/?npc=15339"
+          }
+        ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Qiraji Swarmguard",
+            "link": "https://database.turtlecraft.gg/?npc=15343"
+          },
+          {
+            "name": "Qiraji Gladiator",
+            "link": "https://database.turtlecraft.gg/?npc=15324"
+          },
+          {
+            "name": "Hive'Zara Stinger",
+            "link": "https://database.turtlecraft.gg/?npc=15327"
+          },
+          {
+            "name": "Hive'Zara Wasp",
+            "link": "https://database.turtlecraft.gg/?npc=15325"
+          },
+          {
+            "name": "Qiraji Warrior",
+            "link": "https://database.turtlecraft.gg/?npc=15387"
+          },
+          {
+            "name": "Swarmguard Needler",
+            "link": "https://database.turtlecraft.gg/?npc=15344"
+          },
+          {
+            "name": "Flesh Hunter",
+            "link": "https://database.turtlecraft.gg/?npc=15335"
+          },
+          {
+            "name": "Hive'Zara Sandstalker",
+            "link": "https://database.turtlecraft.gg/?npc=15323"
+          },
+          {
+            "name": "Obsidian Destroyer",
+            "link": "https://database.turtlecraft.gg/?npc=15338"
           }
         ]
       }
@@ -801,6 +1487,79 @@
           {
             "name": "Moroes",
             "link": "https://database.turtlecraft.gg/?npc=61225"
+          }
+        ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Shadowbane Ragefang",
+            "link": "https://database.turtlecraft.gg/?npc=61194"
+          },
+          {
+            "name": "Shadowbane Darkcaster",
+            "link": "https://database.turtlecraft.gg/?npc=61192"
+          },
+          {
+            "name": "Shadowbane Ambusher",
+            "link": "https://database.turtlecraft.gg/?npc=61193"
+          },
+          {
+            "name": "Shadowbane Alpha",
+            "link": "https://database.turtlecraft.gg/?npc=61191"
+          },
+          {
+            "name": "Shadowbane Glutton",
+            "link": "https://database.turtlecraft.gg/?npc=61211"
+          },
+          {
+            "name": "Dark Rider Champion",
+            "link": "https://database.turtlecraft.gg/?npc=61204"
+          },
+          {
+            "name": "Haunted Blacksmith",
+            "link": "https://database.turtlecraft.gg/?npc=61202"
+          },
+          {
+            "name": "Phantom Servant",
+            "link": "https://database.turtlecraft.gg/?npc=61205"
+          },
+          {
+            "name": "Phantom Guardsman",
+            "link": "https://database.turtlecraft.gg/?npc=61200"
+          },
+          {
+            "name": "Grellkin Primalist",
+            "link": "https://database.turtlecraft.gg/?npc=61196"
+          },
+          {
+            "name": "Skitterweb Venomfang",
+            "link": "https://database.turtlecraft.gg/?npc=61208"
+          },
+          {
+            "name": "Grellkin Shadow Weaver",
+            "link": "https://database.turtlecraft.gg/?npc=61195"
+          },
+          {
+            "name": "Grellkin Channeler",
+            "link": "https://database.turtlecraft.gg/?npc=61197"
+          },
+          {
+            "name": "Skitterweb Crawler",
+            "link": "https://database.turtlecraft.gg/?npc=61206"
+          },
+          {
+            "name": "Skitterweb Leaper",
+            "link": "https://database.turtlecraft.gg/?npc=61209"
+          },
+          {
+            "name": "Shattercage Magiskull",
+            "link": "https://database.turtlecraft.gg/?npc=61199"
+          },
+          {
+            "name": "Shattercage Spearman",
+            "link": "https://database.turtlecraft.gg/?npc=61198"
           }
         ]
       }
@@ -899,6 +1658,87 @@
           {
             "name": "Peroth'arn <The Herald of Nightmares>",
             "link": "https://database.turtlecraft.gg/?npc=60686"
+          }
+        ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Withermaw Den Watcher",
+            "link": "https://database.turtlecraft.gg/?npc=62876"
+          },
+          {
+            "name": "Withermaw Tracker",
+            "link": "https://database.turtlecraft.gg/?npc=62875"
+          },
+          {
+            "name": "Withermaw Pathfinder",
+            "link": "https://database.turtlecraft.gg/?npc=62872"
+          },
+          {
+            "name": "Withermaw Totemic",
+            "link": "https://database.turtlecraft.gg/?npc=62873"
+          },
+          {
+            "name": "Withermaw Defiler",
+            "link": "https://database.turtlecraft.gg/?npc=62870"
+          },
+          {
+            "name": "Withermaw Shaman",
+            "link": "https://database.turtlecraft.gg/?npc=62871"
+          },
+          {
+            "name": "Corruption of Loktanag",
+            "link": "https://database.turtlecraft.gg/?npc=62879"
+          },
+          {
+            "name": "Son of Ursol",
+            "link": "https://database.turtlecraft.gg/?npc=62885"
+          },
+          {
+            "name": "Tainted Mass",
+            "link": "https://database.turtlecraft.gg/?npc=62878"
+          },
+          {
+            "name": "Withermaw Ursa",
+            "link": "https://database.turtlecraft.gg/?npc=62877"
+          },
+          {
+            "name": "Foulheart Satyr",
+            "link": "https://database.turtlecraft.gg/?npc=62882"
+          },
+          {
+            "name": "Foulheart Deceiver",
+            "link": "https://database.turtlecraft.gg/?npc=62881"
+          },
+          {
+            "name": "Foulheart Trickster",
+            "link": "https://database.turtlecraft.gg/?npc=62883"
+          },
+          {
+            "name": "Foulheart Hellcaller",
+            "link": "https://database.turtlecraft.gg/?npc=62884"
+          },
+          {
+            "name": "Enraged Withermaw",
+            "link": "https://database.turtlecraft.gg/?npc=62867"
+          },
+          {
+            "name": "Withermaw Illuminator",
+            "link": "https://database.turtlecraft.gg/?npc=62942"
+          },
+          {
+            "name": "Withermaw Shadowkeeper",
+            "link": "https://database.turtlecraft.gg/?npc=62943"
+          },
+          {
+            "name": "Twisted Rumbler",
+            "link": "https://database.turtlecraft.gg/?npc=62880"
+          },
+          {
+            "name": "Withermaw Corrupter",
+            "link": "https://database.turtlecraft.gg/?npc=29480"
           }
         ]
       }
@@ -1090,5 +1930,5 @@
         ]
       }
     ]
-  },
+  }
 ]

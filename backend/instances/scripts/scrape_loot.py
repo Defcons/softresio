@@ -3,7 +3,7 @@ import re
 import demjson3
 import requests
 from tqdm import tqdm
-
+from functools import lru_cache
 
 def collect_drops_npc(items):
     result = {}
@@ -17,7 +17,7 @@ def collect_drops_npc(items):
         result[item_id]["drops"].append(
             {
                 "group": item.get("group", 0),
-                "percent": item["percent"],
+                "percent": item.get("percent", 0)
             }
         )
 
@@ -32,7 +32,7 @@ def extract_loot_npc_or_object(text):
     # --- extract data array ---
     start = text.find("data:")
     if start == -1:
-        raise ValueError("data: not found")
+        return []
 
     i = text.find("[", start)
     depth = 0
@@ -84,9 +84,11 @@ def extract_loot_boss(boss):
         total_loot[npc["name"]] = loot
     return total_loot
 
+
+@lru_cache(maxsize=None)
 def get_tooltip_data(item_id):
     url = f"https://database.turtlecraft.gg/ajax.php?item={item_id}"
-    raw_item_data = requests.get(url, headers={"cookie": 'PHPSESSID=7dc70a3ee5823fb8cfcf1aa748470147'}).text
+    raw_item_data = requests.get(url, headers={"cookie": 'PHPSESSID=db250a5ebffd6f3b40aadf50c6fd5075'}).text
     tooltip_data = demjson3.decode("{" + raw_item_data.split("{")[1].split("}")[0] + "}")
     return tooltip_data
 
@@ -124,14 +126,21 @@ def get_slot(tooltip):
       "Miscellaneous",
     ]
     for slot in slots:
-        if f"<td>{slot}</td>" in tooltip:
-            return [slot]
+        slots = []
+        if "<br />Quest Item<br />" in tooltip or "This Item Begins a Quest" in tooltip:
+            slots.append("Quest Item")
+        if f"<td>{slot}</td>".lower() in tooltip.lower():
+            slots.append(slot)
+        if f"<th>Thrown</th>".lower() in tooltip.lower():
+            slots.append("Ranged")
+        if slots:
+            return slots
     return ["Miscellaneous"]
 
 def get_type(tooltip):
     types = ['Plate', 'Axe', 'Libram', 'Plate,', 'Staff', 'Mail,', 'Fist', 'Weapon', 'Dagger', 'Mail', 'Polearm', 'Shield', 'Gun', 'Crossbow', 'Thrown', 'Wand', 'Cloth', 'Mace', 'Sword', 'Totem', 'Leather', 'Idol', 'Leather,']
     for t in types:
-        if f"<th>{t}</th>" in tooltip:
+        if f"<th>{t}</th>".lower() in tooltip.lower():
             return [t]
     return []
 
@@ -148,9 +157,10 @@ def extract_loot_instance(instance):
     instance_items = []
     bosses = []
     npcs = []
-    for boss in tqdm(instance["bosses"]):
+    for boss in instance["bosses"]:
         for npc, items in collect_drops_boss(extract_loot_boss(boss)).items():
-            for drop in items:
+            print(npc)
+            for drop in tqdm(items):
                 doesnt_drop = 1
                 percentages = [group["percent"] for group in drop["drops"]]
                 for percentage in percentages:
@@ -158,6 +168,9 @@ def extract_loot_instance(instance):
                 at_least_one = (1 - doesnt_drop) * 100
                 tooltip_data = get_tooltip_data(drop["id"])
                 try:
+                    greens = next(filter(lambda n: n["name"] == npc, boss["npcs"])).get("greens", False)
+                    if not greens and tooltip_data["quality"] == 2:
+                        continue
                     instance_items.append({
                       "id": drop["id"],
                       "name": tooltip_data["name"],
@@ -176,7 +189,8 @@ def extract_loot_instance(instance):
                       "types": get_type(tooltip_data["tooltip"])
                     })
                 except:
-                    print(f"Could not parse {drop['id']}")
+                    ...
+                    # print(f"Could not parse {drop['id']}")
             npcs.append({"id": len(npcs), "name": npc, "bossId": len(bosses)})
         bosses.append({"id": len(bosses), "name": boss["name"]})
     return instance_items, bosses, npcs
