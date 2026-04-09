@@ -110,9 +110,9 @@ export const classes: { [className: string]: string[] } = {
   ],
   "Druid": [
     "Balance",
-    "Feral Combat",
-    "Restoration",
+    "Cat",
     "Bear",
+    "Restoration",
   ],
   "Paladin": [
     "Holy",
@@ -173,7 +173,7 @@ export const classIcons: { [classSpec: string]: string } = {
   "WarlockDestruction": "spell_shadow_rainoffire.png",
   "Druid": "class_druid.png",
   "DruidBalance": "spell_nature_starfall.png",
-  "DruidFeralCombat": "ability_racial_bearform.png",
+  "DruidCat": "ability_druid_catform.png",
   "DruidRestoration": "spell_nature_healingtouch.png",
-  "DruidBear": "ability_hunter_pet_bear.png",
+  "DruidBear": "ability_racial_bearform.png",
 }
