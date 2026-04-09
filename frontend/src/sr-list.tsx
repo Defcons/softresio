@@ -342,7 +342,7 @@ export const SrList = (
               comboboxProps={{ width: 140, position: "bottom-start" }}
             />
           </Table.Th>
-          <Table.Th w={120}>
+          <Table.Th w={100}>
             <Group wrap="nowrap" gap={0}>
               <TextInput
                 pb="sm"
@@ -411,7 +411,7 @@ export const SrList = (
           </Table.Th>
           {raid.guildId
             ? (
-              <Table.Th ta="center" pb="sm" px={0} w={10}>
+              <Table.Th ta="center" pb="sm" px={0} w={40}>
                 SR+
               </Table.Th>
             )

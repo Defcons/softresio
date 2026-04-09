@@ -127,6 +127,7 @@ export const ItemNameAndIcon = (
             size="sm"
             flex={1}
             className={`q${item.quality}`}
+            style={{ overflowWrap: "anywhere" }}
             lineClamp={1}
           >
             {item.name}
