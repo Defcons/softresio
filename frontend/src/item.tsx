@@ -65,9 +65,9 @@ export const ItemNameAndIcon = (
       m={0}
       p={0}
       multiline
-      opened={(showTooltipElement?.itemId == item.id &&
+      opened={((showTooltipElement?.itemId == item.id &&
         showTooltipElement?.npcId == npcId) ||
-        (!isTouchScreen && hovered)}
+        (!isTouchScreen && hovered)) && item.tooltip != ""}
       position="bottom"
       label={
         <div

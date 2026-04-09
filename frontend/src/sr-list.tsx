@@ -179,7 +179,7 @@ export const SrListElement = (
             </Tooltip>
           </Table.Td>
           <Table.Td>
-            <Group gap={4}>
+            <Group gap={4} wrap="nowrap">
               <Title order={6} lineClamp={1}>
                 {attendee.character.name}
               </Title>
@@ -214,8 +214,10 @@ export const SrListElement = (
                   onClick={() => {
                     setLogOpen(true)
                   }}
-                  variant="subtle"
+                  size="xs"
+                  px={8}
                   color="lightgrey"
+                  variant="subtle"
                 >
                   {sumSrPlus(srPluses)}
                 </Button>
