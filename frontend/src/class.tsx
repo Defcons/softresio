@@ -139,7 +139,7 @@ export const classes: { [className: string]: string[] } = {
 
 export const classIcons: { [classSpec: string]: string } = {
   "Warrior": "class_warrior.png",
-  "WarriorArms": "ability_rogue_eviscerate.png",
+  "WarriorArms": "ability_warrior_savageblow.png",
   "WarriorFury": "ability_warrior_innerrage.png",
   "WarriorProtection": "inv_shield_06.png",
   "Paladin": "class_paladin.png",
