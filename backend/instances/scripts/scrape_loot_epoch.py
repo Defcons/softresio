@@ -206,7 +206,7 @@ total_dict = {}
 for instance in instances:
     print(instance["name"])
     items, bosses, npcs = extract_loot_instance(instance)
-    open(f"../{instance['shortname']}.json", "w").write(json.dumps({
+    open(f"../epoch/{instance['shortname']}.json", "w").write(json.dumps({
         "id": instance["id"],
         "shortname": instance["shortname"],
         "raid": instance["raid"],
