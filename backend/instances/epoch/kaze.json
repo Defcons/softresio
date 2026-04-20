@@ -1,0 +1,166 @@
+{
+  "id": 25,
+  "shortname": "kaze",
+  "raid": false,
+  "name": "Lord Kazzak",
+  "items": [
+    {
+      "id": 19134,
+      "name": "Flayed Doomguard Belt",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">Flayed Doomguard Belt</b><br /><span class=\"q0\">Item Level 68</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Leather</th></tr></table>115 Armor<br />+27 Stamina<br />+18 Intellect<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 14.</span><br /></td></tr></table>",
+      "icon": "inv_belt_16.jpg",
+      "dropsFrom": [
+        {
+          "chance": 100.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 18665,
+      "name": "The Eye of Shadow",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">The Eye of Shadow</b><br /><span class=\"q0\">Item Level 71</span><br />Binds when equipped<br />Unique<br />Trinket<br />Requires Level 60<br /><span class=\"q0\">\"Seething darkness engulfs the eye.\"</span><br /></td></tr></table>",
+      "icon": "spell_shadow_unholyfrenzy.jpg",
+      "dropsFrom": [
+        {
+          "chance": 100.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
+    },
+    {
+      "id": 17112,
+      "name": "Empyrean Demolisher",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">Empyrean Demolisher</b><br /><span class=\"q0\">Item Level 66</span><br />Binds when picked up<br />Unique-Equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>One-Handed Maces</th></tr></table>94 - 175 Damage<br />(48.0 damage per second)<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Chance on hit: Increases your attack speed by 20% for 10 sec.</span><br /></td></tr></table>",
+      "icon": "inv_hammer_05.jpg",
+      "dropsFrom": [
+        {
+          "chance": 50.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
+    },
+    {
+      "id": 13040,
+      "name": "Heartseeking Crossbow",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Heartseeking Crossbow</b><br /><span class=\"q0\">Item Level 56</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Ranged</td><th>Crossbow</th></tr></table><table width=\"100%\"><tr><td>91 - 137 Damage</td><th>Speed 3.10</th></tr></table>(36.77 damage per second)<br />+9 Agility<br />+4 Stamina<br />Durability 75 / 75<br />Requires Level 51<br /><span class=\"q2\">Equip: Chance to strike your ranged target with a Shadow Bolt for 13 to 19 Shadow damage.</span><br /></td></tr></table>",
+      "icon": "inv_weapon_crossbow_04.jpg",
+      "dropsFrom": [
+        {
+          "chance": 50.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Crossbow"
+      ]
+    },
+    {
+      "id": 18546,
+      "name": "Infernal Headcage",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">Infernal Headcage</b><br /><span class=\"q0\">Item Level 69</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Head</td><th>Mail</th></tr></table>358 Armor<br />+36 Stamina<br />+25 Intellect<br />+14 Spirit<br />+10 Fire Resistance<br />+10 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 16.</span><br /></td></tr></table>",
+      "icon": "inv_helmet_18.jpg",
+      "dropsFrom": [
+        {
+          "chance": 50.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 13007,
+      "name": "Mageflame Cloak",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Mageflame Cloak</b><br /><span class=\"q0\">Item Level 58</span><br />Binds when equipped<br />Back<br />41 Armor<br />+10 Fire Resistance<br />Requires Level 53<br /><span class=\"q2\">Equip: Increases spell power by 18.</span><br /></td></tr></table>",
+      "icon": "inv_misc_cape_18.jpg",
+      "dropsFrom": [
+        {
+          "chance": 50.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 17969,
+      "name": "Red Sack of Gems",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q2\">Red Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>",
+      "icon": "inv_misc_bag_10_red.jpg",
+      "dropsFrom": [
+        {
+          "chance": 50.0,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Junk"
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "id": 0,
+      "name": "Lord Kazzak"
+    }
+  ],
+  "npcs": [
+    {
+      "id": 0,
+      "name": "Lord Kazzak",
+      "bossId": 0
+    }
+  ]
+}

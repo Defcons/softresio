@@ -1,0 +1,481 @@
+{
+  "id": 26,
+  "shortname": "volc",
+  "raid": false,
+  "name": "Volchan",
+  "items": [
+    {
+      "id": 17965,
+      "name": "Yellow Sack of Gems",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q2\">Yellow Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>",
+      "icon": "inv_misc_bag_10.jpg",
+      "dropsFrom": [
+        {
+          "chance": 61.54,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Junk"
+      ]
+    },
+    {
+      "id": 64746,
+      "name": "Mantle of the Royal Flame",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">Mantle of the Royal Flame</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Cloth</th></tr></table>74 Armor<br />+9 Stamina<br />+6 Intellect<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases damage done by Fire spells and effects by up to 40.</span><br /></td></tr></table>",
+      "icon": "inv_shoulder_23.jpg",
+      "dropsFrom": [
+        {
+          "chance": 30.77,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 17969,
+      "name": "Red Sack of Gems",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q2\">Red Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>",
+      "icon": "inv_misc_bag_10_red.jpg",
+      "dropsFrom": [
+        {
+          "chance": 30.77,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Junk"
+      ]
+    },
+    {
+      "id": 65713,
+      "name": "Volchan's Burned-Out Husk",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q0\">Volchan's Burned-Out Husk</b><br /></td></tr></table><table><tr><td><span class=\"q\">The smoking remnants of the Giant.</span><br /></td></tr></table>",
+      "icon": "spell_fire_burnout.jpg",
+      "dropsFrom": [
+        {
+          "chance": 30.77,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
+    },
+    {
+      "id": 64744,
+      "name": "Flame-Tempered Shoulderplates",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">Flame-Tempered Shoulderplates</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Plate</th></tr></table>648 Armor<br />+16 Stamina<br />+5 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to hit with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br /><span class=\"q2\">Equip: Increased Defense +8.</span><br /></td></tr></table>",
+      "icon": "inv_shoulder_01.jpg",
+      "dropsFrom": [
+        {
+          "chance": 15.38,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Plate"
+      ]
+    },
+    {
+      "id": 64745,
+      "name": "Living Spark Spaulders",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">Living Spark Spaulders</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Leather</th></tr></table>148 Armor<br />+12 Stamina<br />+12 Intellect<br />+5 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 16.</span><br /></td></tr></table>",
+      "icon": "inv_shoulder_18.jpg",
+      "dropsFrom": [
+        {
+          "chance": 15.38,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 13006,
+      "name": "Mass of McGowan",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Mass of McGowan</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>80 - 149 Damage</td><th>Speed 2.80</th></tr></table>(40.89 damage per second)<br />+10 Strength<br />+10 Stamina<br />Durability 90 / 90<br />Requires Level 57<br /></td></tr></table>",
+      "icon": "inv_hammer_17.jpg",
+      "dropsFrom": [
+        {
+          "chance": 15.38,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
+    },
+    {
+      "id": 13028,
+      "name": "Bludstone Hammer",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Bludstone Hammer</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>59 - 110 Damage</td><th>Speed 2.10</th></tr></table>(40.24 damage per second)<br />+5 Stamina<br />+12 Spirit<br />Durability 90 / 90<br />Requires Level 56<br /></td></tr></table>",
+      "icon": "inv_hammer_19.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
+    },
+    {
+      "id": 64742,
+      "name": "Cloak of Convalescence",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">Cloak of Convalescence</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Back</td><th>Cloth</th></tr></table>47 Armor<br />+12 Stamina<br />+7 Intellect<br />+15 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases healing done by up to 22 and damage done by up to 7 for all magical spells and effects.</span><br /></td></tr></table>",
+      "icon": "inv_misc_cape_18.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 64743,
+      "name": "Crossfire Shoulderguards",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">Crossfire Shoulderguards</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Leather</th></tr></table>148 Armor<br />+18 Agility<br />+12 Stamina<br />+5 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to hit with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /></td></tr></table>",
+      "icon": "inv_shoulder_23.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 13075,
+      "name": "Direwing Legguards",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Direwing Legguards</b><br /><span class=\"q0\">Item Level 63</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Legs</td><th>Plate</th></tr></table>575 Armor<br />+15 Strength<br />+15 Agility<br />+16 Stamina<br />+16 Spirit<br />Durability 100 / 100<br />Requires Level 58<br /></td></tr></table>",
+      "icon": "inv_pants_04.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Plate"
+      ]
+    },
+    {
+      "id": 13133,
+      "name": "Drakesfire Epaulets",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Drakesfire Epaulets</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Mail</th></tr></table>270 Armor<br />+5 Stamina<br />+14 Intellect<br />+15 Spirit<br />+10 Fire Resistance<br />Durability 70 / 70<br />Requires Level 56<br /></td></tr></table>",
+      "icon": "inv_shoulder_23.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 13113,
+      "name": "Feathermoon Headdress",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Feathermoon Headdress</b><br /><span class=\"q0\">Item Level 63</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Head</td><th>Leather</th></tr></table>143 Armor<br />+13 Stamina<br />+20 Intellect<br />Durability 60 / 60<br />Requires Level 58<br /><span class=\"q2\">Equip: Increases damage done by magical spells and effects by up to 25.</span><br /></td></tr></table>",
+      "icon": "inv_helmet_04.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Head"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 13083,
+      "name": "Garrett Family Crest",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Garrett Family Crest</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Off Hand</td><th>Shield</th></tr></table>2121 Armor<br />39 Block<br />+5 Agility<br />+4 Intellect<br />+17 Spirit<br />Durability 100 / 100<br />Requires Level 57<br /></td></tr></table>",
+      "icon": "inv_shield_05.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
+    },
+    {
+      "id": 23197,
+      "name": "Idol of the Moon",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Idol of the Moon</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when equipped<br />Unique<br /><table width=\"100%\"><tr><td>Relic</td><th>Idol</th></tr></table>Requires Level 60<br /><span class=\"q2\">Equip: Increases the spell power your Moonfire spell by 33.</span><br /></td></tr></table>",
+      "icon": "inv_relics_idolofrejuvenation.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Relic"
+      ],
+      "types": [
+        "Idol"
+      ]
+    },
+    {
+      "id": 13107,
+      "name": "Magiskull Cuffs",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Magiskull Cuffs</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Wrist</td><th>Cloth</th></tr></table>38 Armor<br />+7 Stamina<br />+17 Intellect<br />Durability 30 / 30<br />Requires Level 57<br /></td></tr></table>",
+      "icon": "inv_bracer_13.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 64748,
+      "name": "Pyrite-Studded Chain Epaulets",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">Pyrite-Studded Chain Epaulets</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Mail</th></tr></table>312 Armor<br />+25 Agility<br />+9 Intellect<br />+5 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases attack power by 12.</span><br /><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /></td></tr></table>",
+      "icon": "inv_shoulder_04.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 5267,
+      "name": "Scarlet Kris",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Scarlet Kris</b><br /><span class=\"q0\">Item Level 63</span><br />Binds when equipped<br />Unique-Equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Dagger</th></tr></table><table width=\"100%\"><tr><td>43 - 81 Damage</td><th>Speed 1.50</th></tr></table>(41.33 damage per second)<br />+10 Agility<br />+10 Stamina<br />Durability 65 / 65<br />Requires Level 58<br /></td></tr></table>",
+      "icon": "inv_weapon_shortblade_03.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Dagger"
+      ]
+    },
+    {
+      "id": 64749,
+      "name": "Seethe",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">Seethe</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Daggers</th></tr></table>50 - 92 Damage<br />(47.3 damage per second)<br />+4 Agility<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to hit with melee and ranged attacks by 1%.</span><br /></td></tr></table>",
+      "icon": "inv_weapon_shortblade_63.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Dagger"
+      ]
+    },
+    {
+      "id": 6622,
+      "name": "Sword of Zeal",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Sword of Zeal</b><br /><span class=\"q0\">Item Level 63</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Sword</th></tr></table><table width=\"100%\"><tr><td>81 - 151 Damage</td><th>Speed 2.80</th></tr></table>(41.43 damage per second)<br />Durability 90 / 90<br />Requires Level 58<br />Chance on hit: A burst of energy fills the caster, increasing <br /><span class=\"q2\">his</span><br /> damage by 10 and armor by 150 for 15 sec.<br /></td></tr></table>",
+      "icon": "inv_sword_39.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
+    },
+    {
+      "id": 13060,
+      "name": "The Needler",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">The Needler</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Polearm</th></tr></table><table width=\"100%\"><tr><td>90 - 136 Damage</td><th>Speed 2.20</th></tr></table>(51.36 damage per second)<br />Durability 100 / 100<br />Requires Level 55<br /><span class=\"q2\">Chance on hit: Wounds the target for 75 damage.</span><br /></td></tr></table>",
+      "icon": "inv_spear_08.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Polearm"
+      ]
+    },
+    {
+      "id": 64750,
+      "name": "Wildfire Chain Shoulders",
+      "classes": [],
+      "quality": 5,
+      "tooltip": "<table><tr><td><b class=\"q4\">Wildfire Chain Shoulders</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Mail</th></tr></table>312 Armor<br />+12 Intellect<br />+5 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 2%.</span><br /><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 10.</span><br /></td></tr></table>",
+      "icon": "inv_shoulder_23.jpg",
+      "dropsFrom": [
+        {
+          "chance": 7.69,
+          "bossId": 0,
+          "npcId": 0
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Mail"
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "id": 0,
+      "name": "Volchan"
+    }
+  ],
+  "npcs": [
+    {
+      "id": 0,
+      "name": "Volchan",
+      "bossId": 0
+    }
+  ]
+}
