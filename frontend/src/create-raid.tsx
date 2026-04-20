@@ -14,11 +14,12 @@ import {
 } from "@mantine/core"
 import { DateTimePicker } from "@mantine/dates"
 import { modals } from "@mantine/modals"
-import { instanceFilter, instanceOrder, renderInstance } from "./instances.tsx"
+import { instanceFilter, instanceOrder, renderInstance, SERVER_LABELS } from "./instances.tsx"
 import { ItemSelect } from "./item-select.tsx"
 import type {
   CreateEditRaidRequest,
   CreateEditRaidResponse,
+  GameServer,
   GetInstancesResponse,
   GetMyGuildsResponse,
   GetRaidResponse,
@@ -44,6 +45,12 @@ export const CreateRaid = (
   const [guilds, setGuilds] = useState<Guild[]>([])
   const [selectedGuildId, setSelectedGuildId] = useState<string>()
   const [hardReserves, setHardReserves] = useState<number[]>([])
+  const [selectedServer, setSelectedServer] = useState<GameServer | null>(
+    () => {
+      const saved = localStorage.getItem("selectedServer")
+      return (saved === "turtlewow" || saved === "epoch") ? saved : null
+    },
+  )
 
   const [description, setDescription] = useState("")
   const [useSrPlus, setUseSrPlus] = useState(false)
@@ -165,6 +172,10 @@ export const CreateRaid = (
     return !deepEqual(a, b)
   }
 
+  const filteredInstances = instances?.filter((i) =>
+    selectedServer ? i.server === selectedServer : false
+  )
+
   return (
     <>
       <Paper shadow="sm" p="sm">
@@ -179,19 +190,43 @@ export const CreateRaid = (
           />
           <Select
             w="100%"
+            withAsterisk={selectedServer == null}
+            label="Server"
+            placeholder="Select server"
+            data={Object.entries(SERVER_LABELS).map(([value, label]) => ({
+              value,
+              label,
+            }))}
+            value={selectedServer}
+            onChange={(v) => {
+              const server = v as GameServer | null
+              setSelectedServer(server)
+              if (server) localStorage.setItem("selectedServer", server)
+              else localStorage.removeItem("selectedServer")
+              setInstance(undefined)
+              setHardReserves([])
+            }}
+          />
+          <Select
+            w="100%"
             withAsterisk={instance == undefined}
             label="Instance"
             searchable
-            placeholder="Select instance"
+            placeholder={selectedServer ? "Select instance" : "Select a server first"}
+            disabled={!selectedServer}
             maxDropdownHeight={1000}
-            data={instances?.filter((e) => e.raid != worldBoss).map((e) => {
-              return { value: e.id.toString(), label: e.name }
-            })}
+            data={filteredInstances?.filter((e) => e.raid != worldBoss).map(
+              (e) => {
+                return { value: e.id.toString(), label: e.name }
+              },
+            )}
             value={instance?.id.toString() || null}
-            renderOption={renderInstance(instances || [])}
-            filter={instanceFilter(instances || [])}
+            renderOption={renderInstance(filteredInstances || [])}
+            filter={instanceFilter(filteredInstances || [])}
             onChange={(v) => {
-              const newInstance = instances?.find((i) => i.id == Number(v))
+              const newInstance = filteredInstances?.find((i) =>
+                i.id == Number(v)
+              )
               setInstance(newInstance)
               if ((newInstance?.id == raidBeforeEdit?.instanceId) && useHr) {
                 setHardReserves(raidBeforeEdit?.hardReserves || [])

@@ -180,6 +180,8 @@ export interface Boss {
   name: string
 }
 
+export type GameServer = "turtlewow" | "epoch"
+
 export interface Instance {
   id: number
   name: string
@@ -188,6 +190,7 @@ export interface Instance {
   bosses: Boss[]
   npcs: Npc[]
   raid: boolean
+  server: GameServer
 }
 
 export interface NpcItem {

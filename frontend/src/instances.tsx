@@ -1,6 +1,11 @@
 import type { ComboboxItem, OptionsFilter, SelectProps } from "@mantine/core"
 import { Title } from "@mantine/core"
-import type { Instance } from "../shared/types.ts"
+import type { GameServer, Instance } from "../shared/types.ts"
+
+export const SERVER_LABELS: Record<GameServer, string> = {
+  turtlewow: "Turtle WoW",
+  epoch: "Project Epoch",
+}
 
 export const instanceOrder = [
   "Zul'Gurub",
