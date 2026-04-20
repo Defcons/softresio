@@ -1,0 +1,88 @@
+[
+  {
+    "id": 24,
+    "name": "Onyxia's Lair",
+    "shortname": "onye",
+    "raid": true,
+    "bosses": [
+      {
+        "name": "Onyxia",
+        "npcs": [
+          {
+            "name": "Onyxia",
+            "link": "https://epochhead.com/?npc=45133"
+          }
+        ]
+      },
+      {
+        "name": "Ortorg the Ardent",
+        "npcs": [
+          {
+            "name": "Ortorg the Ardent",
+            "link": "https://epochhead.com/?npc=45136"
+          }
+        ]
+      },
+      {
+        "name": "Atressian",
+        "npcs": [
+          {
+            "name": "Atressian",
+            "link": "https://epochhead.com/?npc=45125"
+          }
+        ]
+      },
+      {
+        "name": "Trash",
+        "npcs": [
+          {
+            "name": "Onyxian Warder",
+            "link": "https://epochhead.com/?npc=12129"
+          },
+          {
+            "name": "Onyxian Honorguard",
+            "link": "https://epochhead.com/?npc=45238"
+          },
+          {
+            "name": "Onyxian Flameweaver",
+            "link": "https://epochhead.com/?npc=45237"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Lord Kazzak",
+    "shortname": "kaze",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Lord Kazzak",
+        "npcs": [
+          {
+            "name": "Lord Kazzak",
+            "link": "https://epochhead.com/?npc=12397"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Volchan",
+    "shortname": "volc",
+    "raid": false,
+    "bosses": [
+      {
+        "name": "Volchan",
+        "npcs": [
+          {
+            "name": "Volchan",
+            "link": "https://epochhead.com/?npc=46602"
+          }
+        ]
+      }
+    ]
+  }
+]
