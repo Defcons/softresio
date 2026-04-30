@@ -1,6 +1,27 @@
 body {
-  background-color: var(--mantine-color-dark-8) !important;
+  background-color: #0e1117 !important;
 }
+
+.epog-brand {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #c89b3c;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.epog-brand:hover { color: #e0b557; }
+.epog-brand .sub { color: #718096; font-weight: 500; margin-left: 6px; font-size: 14px; }
+.epog-back-link {
+  font-size: 12px;
+  color: #718096;
+  text-decoration: none;
+  border: 1px solid #2d3748;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.epog-back-link:hover { color: #c89b3c; border-color: #c89b3c; }
 
 .list-element {
   user-select: none;

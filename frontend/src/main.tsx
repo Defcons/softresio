@@ -10,10 +10,7 @@ import { LootBrowser } from "./loot-browser.tsx"
 import "@mantine/core/styles.css"
 import "@mantine/dates/styles.css"
 import { ModalsProvider } from "@mantine/modals"
-import {
-  IconBrandDiscordFilled,
-  IconBrandGithubFilled,
-} from "@tabler/icons-react"
+import { IconBrandGithubFilled } from "@tabler/icons-react"
 import {
   Anchor,
   createTheme,
@@ -27,14 +24,29 @@ import { useHover } from "@mantine/hooks"
 import { Menu } from "./menu.tsx"
 import { BrowserRouter, Route, Routes } from "react-router"
 
+// Epog Logs gold palette — anchored on #c89b3c (epoglogs --accent), 10 shades
+// generated from light → dark to match Mantine's color contract.
 const theme = createTheme({
-  primaryColor: "orange",
+  primaryColor: "epogGold",
   cursorType: "pointer",
+  colors: {
+    epogGold: [
+      "#fbf6e9",
+      "#f3e7c4",
+      "#ead69c",
+      "#e0c473",
+      "#d8b452",
+      "#d2a93e",
+      "#c89b3c",
+      "#a87f2c",
+      "#876520",
+      "#6a4d16",
+    ],
+  },
 })
 
 function App() {
   const { hovered: githubHovered, ref: githubRef } = useHover()
-  const { hovered: discordHovered, ref: discordRef } = useHover()
   const [user, setUser] = useState<User>()
   const [discordClientId, setDiscordClientId] = useState<string>()
   const [discordLoginEnabled, setDiscordLoginEnabled] = useState<boolean>()
@@ -125,27 +137,21 @@ function App() {
                   />
                   <Anchor
                     size="sm"
-                    href="https://github.com/kofoednielsen/softresio"
+                    href="https://github.com/Defcons/softresio"
                     underline="never"
                     c={githubHovered ? "lightgray" : "grey"}
                   >
-                    This project is open-source
+                    Source (AGPL-3.0) — fork of softres.io
                   </Anchor>
                 </Group>
-                <Group gap="xs" mx="lg" ref={discordRef}>
-                  <IconBrandDiscordFilled
-                    size={18}
-                    color={discordHovered
-                      ? "var(--mantine-primary-color-filled)"
-                      : "grey"}
-                  />
+                <Group gap="xs" mx="lg">
                   <Anchor
                     size="sm"
-                    href="https://discord.gg/DbfRrGGQ7J"
+                    href="https://epoglogs.com"
                     underline="never"
-                    c={discordHovered ? "lightgray" : "grey"}
+                    c="grey"
                   >
-                    Give feedback on Discord
+                    ← Back to Epog Logs
                   </Anchor>
                 </Group>
               </Group>
