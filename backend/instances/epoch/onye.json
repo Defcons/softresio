@@ -1,1 +1,2343 @@
-{"id": 24, "shortname": "onye", "raid": true, "name": "Onyxia's Lair", "items": [{"id": 17966, "name": "Onyxia Hide Backpack", "classes": [], "quality": 2, "tooltip": "<table><tr><td><b class=\"q2\">Onyxia Hide Backpack</b><br /><span class=\"q0\">Item Level 55</span><br />Binds when picked up\n18 Slot Bag<br />Dropped by: Onyxia<br />Drop Chance: 84.55%<br /></td></tr></table>", "icon": "inv_misc_bag_22.jpg", "dropsFrom": [{"chance": 150.0, "bossId": 1, "npcId": 1}], "slots": ["Bag"], "types": ["Bag"]}, {"id": 18422, "name": "Head of Onyxia", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Head of Onyxia</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when picked up<br />Unique<br />This Item Begins a Quest<br />Requires Level 60<br /><span class=\"q0\">\"The head of the Black Dragonflight's Brood Mother\"</span><br />Dropped by: Onyxia<br />Drop Chance: 43.65%<br /></td></tr></table>", "icon": "inv_misc_head_dragon_01.jpg", "dropsFrom": [{"chance": 84.78, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Quest"]}, {"id": 61780, "name": "Helm of the Glorious Defender", "classes": ["Warrior", "Hunter", "Druid"], "quality": 4, "tooltip": "<table><tr><td><b class=\"q0\">Helm of the Glorious Defender</b><br />Binds when picked up<br />Classes: Warrior, Hunter, Druid<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>", "icon": "inv_helmet_24.jpg", "dropsFrom": [{"chance": 39.13, "bossId": 1, "npcId": 1}], "slots": ["Miscellaneous"], "types": []}, {"id": 18705, "name": "Mature Black Dragon Sinew", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Mature Black Dragon Sinew</b><br /><span class=\"q0\">Item Level 71</span><br />Quest Item<br />Unique<br />Classes: Hunter<br />Requires Level 60<br />Dropped by: Onyxia<br />Drop Chance: 43.61%<br /></td></tr></table>", "icon": "spell_holy_dispelmagic.jpg", "dropsFrom": [{"chance": 34.78, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Quest"]}, {"id": 17965, "name": "Yellow Sack of Gems", "classes": [], "quality": 2, "tooltip": "<table><tr><td><b class=\"q2\">Yellow Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>", "icon": "inv_misc_bag_10.jpg", "dropsFrom": [{"chance": 32.61, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Junk"]}, {"id": 61786, "name": "Helm of the Glorious Hero", "classes": ["Priest", "Shaman", "Mage"], "quality": 4, "tooltip": "<table><tr><td><b class=\"q0\">Helm of the Glorious Hero</b><br />Binds when picked up<br />Classes: Priest, Shaman, Mage<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>", "icon": "inv_helmet_24.jpg", "dropsFrom": [{"chance": 30.43, "bossId": 1, "npcId": 1}], "slots": ["Miscellaneous"], "types": []}, {"id": 61774, "name": "Helm of the Glorious Champion", "classes": ["Paladin", "Rogue", "Warlock"], "quality": 4, "tooltip": "<table><tr><td><b class=\"q0\">Helm of the Glorious Champion</b><br />Binds when picked up<br />Classes: Paladin, Rogue, Warlock<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>", "icon": "inv_helmet_24.jpg", "dropsFrom": [{"chance": 28.26, "bossId": 1, "npcId": 1}], "slots": ["Miscellaneous"], "types": []}, {"id": 17962, "name": "Blue Sack of Gems", "classes": [], "quality": 2, "tooltip": "<table><tr><td><b class=\"q2\">Blue Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br />Binds when picked up<br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>", "icon": "inv_misc_bag_10_blue.jpg", "dropsFrom": [{"chance": 21.74, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Junk"]}, {"id": 17969, "name": "Red Sack of Gems", "classes": [], "quality": 2, "tooltip": "<table><tr><td><b class=\"q2\">Red Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>", "icon": "inv_misc_bag_10_red.jpg", "dropsFrom": [{"chance": 21.74, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Junk"]}, {"id": 61805, "name": "Draconic Focusing Leystone", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Draconic Focusing Leystone</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br />Unique-Equipped<br />Trinket<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Increases damage and healing done by magical spells and effects by up to 100 and your chance to critically strike with spells by 5% for 15 sec. (2 Min Cooldown)</span><br /></td></tr></table>", "icon": "inv_jewelcrafting_gem_27.jpg", "dropsFrom": [{"chance": 15.22, "bossId": 1, "npcId": 1}], "slots": ["Trinket"], "types": []}, {"id": 17964, "name": "Gray Sack of Gems", "classes": [], "quality": 2, "tooltip": "<table><tr><td><b class=\"q2\">Gray Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>", "icon": "inv_misc_bag_10_black.jpg", "dropsFrom": [{"chance": 15.22, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Junk"]}, {"id": 90503, "name": "Robes of Draconic Legacy", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Robes of Draconic Legacy</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Chest</td><th>Cloth</th></tr></table>102 Armor<br />+20 Stamina<br />+12 Intellect<br />+17 Spirit<br />+5 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases healing done by up to 47 and damage done by up to 15 for all magical spells and effects.</span><br /><span class=\"q2\">Equip: Improves your casting speed and causes periodic effects to occur more frequently with spells by 1%.</span><br /></td></tr></table>", "icon": "inv_chest_cloth_34.jpg", "dropsFrom": [{"chance": 15.22, "bossId": 1, "npcId": 1}], "slots": ["Chest"], "types": ["Cloth"]}, {"id": 61804, "name": "Deathbringer", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Deathbringer</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>One-Hand</td><th>One-Handed Axes</th></tr></table>75 - 209 Damage<br />(49.0 damage per second)<br />+5 Agility<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Chance on hit: Sends a shadowy bolt at the enemy causing 110 to 140 Shadow damage.</span><br /></td></tr></table>", "icon": "inv_axe_09.jpg", "dropsFrom": [{"chance": 13.04, "bossId": 1, "npcId": 1}], "slots": ["One-Hand"], "types": ["Axe"]}, {"id": 17963, "name": "Green Sack of Gems", "classes": [], "quality": 2, "tooltip": "<table><tr><td><b class=\"q2\">Green Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>", "icon": "inv_misc_bag_10_green.jpg", "dropsFrom": [{"chance": 13.04, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Junk"]}, {"id": 61807, "name": "Dragon's Blood Cape", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Dragon's Blood Cape</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Back</td><th>Cloth</th></tr></table>139 Armor<br />+9 Strength<br />+14 Stamina<br />+5 to All Resistances<br />Requires Level 60<br /></td></tr></table>", "icon": "inv_misc_cape_08.jpg", "dropsFrom": [{"chance": 10.87, "bossId": 1, "npcId": 1}], "slots": ["Back"], "types": ["Cloth"]}, {"id": 61808, "name": "Effigy of the Dragon Worshippers", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Effigy of the Dragon Worshippers</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Ranged</td><th>Wands</th></tr></table>112 - 209 Shadow Damage<br />(80.2 damage per second)<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage done by Shadow spells and effects by up to 18.</span><br /><span class=\"q2\">Equip: Restores 3 mana per 5 sec.</span><br /></td></tr></table>", "icon": "inv_wand_10.jpg", "dropsFrom": [{"chance": 10.87, "bossId": 1, "npcId": 1}], "slots": ["Ranged"], "types": ["Wand"]}, {"id": 13002, "name": "Lady Alizabeth's Pendant", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Lady Alizabeth's Pendant</b><br /><span class=\"q0\">Item Level 59</span><br />Binds when equipped<br />Neck<br />+8 Stamina<br />+15 Spirit<br />Requires Level 54<br /></td></tr></table>", "icon": "inv_jewelry_amulet_03.jpg", "dropsFrom": [{"chance": 8.7, "bossId": 1, "npcId": 1}], "slots": ["Neck"], "types": []}, {"id": 13070, "name": "Sapphiron's Scale Boots", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Sapphiron's Scale Boots</b><br /><span class=\"q0\">Item Level 58</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Feet</td><th>Plate</th></tr></table>417 Armor<br />+14 Strength<br />+9 Agility<br />+14 Stamina<br />Durability 65 / 65<br />Requires Level 53<br /></td></tr></table>", "icon": "inv_boots_plate_05.jpg", "dropsFrom": [{"chance": 8.7, "bossId": 1, "npcId": 1}], "slots": ["Feet"], "types": ["Plate"]}, {"id": 61835, "name": "Shroud of the Cloaked Mists", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Shroud of the Cloaked Mists</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Back</td><th>Cloth</th></tr></table>49 Armor<br />+17 Strength<br />+8 Stamina<br />+6 Fire Resistance<br />+6 Arcane Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Reduces your chance to be dodged or parried by 1%.</span><br /></td></tr></table>", "icon": "inv_misc_cape_17.jpg", "dropsFrom": [{"chance": 8.7, "bossId": 1, "npcId": 1}], "slots": ["Back"], "types": ["Cloth"]}, {"id": 13072, "name": "Stonegrip Gauntlets", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Stonegrip Gauntlets</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Hands</td><th>Plate</th></tr></table>392 Armor<br />+9 Strength<br />+14 Stamina<br />Durability 45 / 45<br />Requires Level 55<br /><span class=\"q2\">Equip: Increases defense rating by 15.</span><br /></td></tr></table>", "icon": "inv_gauntlets_03.jpg", "dropsFrom": [{"chance": 8.7, "bossId": 1, "npcId": 1}], "slots": ["Hands"], "types": ["Plate"]}, {"id": 13004, "name": "Torch of Austen", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Torch of Austen</b><br /><span class=\"q0\">Item Level 58</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Ranged</td><th>Wand</th></tr></table><table width=\"100%\"><tr><td>55 - 104 Fire Damage</td><th>Speed 1.40</th></tr></table>(56.79 damage per second)<br />+10 Fire Resistance<br />Durability 65 / 65<br />Requires Level 53<br /></td></tr></table>", "icon": "inv_wand_11.jpg", "dropsFrom": [{"chance": 8.7, "bossId": 1, "npcId": 1}], "slots": ["Ranged"], "types": ["Wand"]}, {"id": 61810, "name": "Fury of the Black Flight", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Fury of the Black Flight</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br />Unique-Equipped<br />Trinket<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Your melee attacks have a chance to capture the Raw Fury of the Black Flight.</span><br /><span class=\"q2\">Use: Consume 5 stacks of Raw Fury of the Black Flight to transform into a Black Drakonid, granting 100 strength for 20 sec. (5 Sec Cooldown)</span><br /></td></tr></table>", "icon": "inv_misc_head_dragon_01.jpg", "dropsFrom": [{"chance": 6.52, "bossId": 1, "npcId": 1}], "slots": ["Trinket"], "types": []}, {"id": 17064, "name": "Shard of the Scale", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Shard of the Scale</b><br />Binds when picked up<br />Unique-Equipped<br />Trinket<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Restores 14 mana per 5 sec.</span><br /><span class=\"q0\">(2) Set: +10 All Resistances.</span><br /></td></tr></table>", "icon": "inv_misc_monsterscales_15.jpg", "dropsFrom": [{"chance": 6.52, "bossId": 1, "npcId": 1}], "slots": ["Trinket"], "types": []}, {"id": 7734, "name": "Six Demon Bag", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Six Demon Bag</b><br /><span class=\"q0\">Item Level 51</span><br />Binds when equipped<br />Unique-Equipped<br />Trinket<br />Requires Level 46<br /><span class=\"q2\">Use: Blasts enemies in front of you with the power of wind, fire, all that kind of thing! (3 Min Cooldown)</span><br /></td></tr></table>", "icon": "inv_misc_bag_01.jpg", "dropsFrom": [{"chance": 6.52, "bossId": 1, "npcId": 1}], "slots": ["Trinket"], "types": []}, {"id": 13060, "name": "The Needler", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">The Needler</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Polearm</th></tr></table><table width=\"100%\"><tr><td>90 - 136 Damage</td><th>Speed 2.20</th></tr></table>(51.36 damage per second)<br />Durability 100 / 100<br />Requires Level 55<br /><span class=\"q2\">Chance on hit: Wounds the target for 75 damage.</span><br /></td></tr></table>", "icon": "inv_spear_08.jpg", "dropsFrom": [{"chance": 6.52, "bossId": 1, "npcId": 1}], "slots": ["Two-Hand"], "types": ["Polearm"]}, {"id": 13096, "name": "Band of the Hierophant", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Band of the Hierophant</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br />Unique-Equipped<br />Finger<br />+7 Stamina<br />+10 Intellect<br />+11 Spirit<br />Requires Level 55<br /></td></tr></table>", "icon": "inv_jewelry_ring_17.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Finger"], "types": []}, {"id": 90505, "name": "Broodmother's Eye", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Broodmother's Eye</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br />Unique-Equipped<br />Trinket<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Your healing spells have a chance to ward the target, absorbing 400 to 600 damage for 12 sec.</span><br /></td></tr></table>", "icon": "inv_misc_eye_02.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Trinket"], "types": []}, {"id": 13053, "name": "Doombringer", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Doombringer</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Sword</th></tr></table><table width=\"100%\"><tr><td>115 - 173 Damage</td><th>Speed 2.80</th></tr></table>(51.43 damage per second)<br />Durability 100 / 100<br />Requires Level 55<br /><span class=\"q2\">Chance on hit: Sends a shadowy bolt at the enemy causing 125 to 275 Shadow damage.</span><br /></td></tr></table>", "icon": "inv_sword_01.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Two-Hand"], "types": ["Sword"]}, {"id": 13133, "name": "Drakesfire Epaulets", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Drakesfire Epaulets</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Mail</th></tr></table>270 Armor<br />+5 Stamina<br />+14 Intellect<br />+15 Spirit<br />+10 Fire Resistance<br />Durability 70 / 70<br />Requires Level 56<br /></td></tr></table>", "icon": "inv_shoulder_23.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Shoulder"], "types": ["Mail"]}, {"id": 13123, "name": "Dreamwalker Armor", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Dreamwalker Armor</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Chest</td><th>Mail</th></tr></table>365 Armor<br />+17 Stamina<br />+20 Intellect<br />+20 Spirit<br />Durability 120 / 120<br />Requires Level 57<br /></td></tr></table>", "icon": "inv_chest_chain_06.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Chest"], "types": ["Mail"]}, {"id": 9402, "name": "Earthborn Kilt", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Earthborn Kilt</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Legs</td><th>Leather</th></tr></table>148 Armor<br />+12 Stamina<br />+29 Spirit<br />Durability 75 / 75<br />Requires Level 55<br /></td></tr></table>", "icon": "inv_pants_12.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Legs"], "types": ["Leather"]}, {"id": 18205, "name": "Eskhandar's Collar", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Eskhandar's Collar</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br />Unique<br />Neck<br />+12 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Reduces your chance to be dodged or parried by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to get a critical strike with all spells and attacks by 1%.</span><br /><span class=\"q0\">(4) Set: 1% chance on a melee critical hit to call forth the spirit of Eskhandar to protect you in battle for 2 min.</span><br /></td></tr></table>", "icon": "inv_belt_12.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Neck"], "types": []}, {"id": 13135, "name": "Lordly Armguards", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Lordly Armguards</b><br /><span class=\"q0\">Item Level 59</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Wrist</td><th>Mail</th></tr></table>153 Armor<br />+7 Strength<br />+7 Agility<br />+8 Stamina<br />+7 Intellect<br />+8 Spirit<br />Durability 40 / 40<br />Requires Level 54<br /></td></tr></table>", "icon": "inv_bracer_17.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Wrist"], "types": ["Mail"]}, {"id": 13001, "name": "Maiden's Circle", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Maiden's Circle</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br />Finger<br />+7 Intellect<br />+6 Spirit<br />Requires Level 55<br /><span class=\"q2\">Equip: Increases spell power by 18.</span><br /></td></tr></table>", "icon": "inv_jewelry_ring_12.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Finger"], "types": []}, {"id": 13091, "name": "Medallion of Grand Marshal Morris", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Medallion of Grand Marshal Morris</b><br /><span class=\"q0\">Item Level 57</span><br />Binds when equipped<br />Neck<br />+7 Stamina<br />Requires Level 52<br /><span class=\"q2\">Equip: Increases defense rating by 15.</span><br /></td></tr></table>", "icon": "inv_jewelry_talisman_08.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Neck"], "types": []}, {"id": 49362, "name": "Onyxian Whelpling", "classes": [], "quality": 1, "tooltip": "<table><tr><td><b class=\"q1\">Onyxian Whelpling</b><br /><span class=\"q0\">Item Level 30</span><br />Binds to account<br /><span class=\"q2\">Use: Teaches you how to summon this companion.</span><br /><span class=\"q2\">Right Click to summon and dismiss your whelpling.</span><br /></td></tr></table>", "icon": "inv_misc_head_dragon_black.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Pet"]}, {"id": 90504, "name": "Roh'umir il Lronash", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Roh'umir il Lronash</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Main Hand</td><th>One-Handed Maces</th></tr></table>64 - 102 Damage<br />(41.5 damage per second)<br />+17 Stamina<br />+10 Spirit<br />+5 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases healing done by up to 63 and damage done by up to 20 for all magical spells and effects.</span><br /><span class=\"q\">The Hand of Katrana</span><br /></td></tr></table>", "icon": "inv_mace_37.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["One-Hand"], "types": ["Mace"]}, {"id": 18600, "name": "Tome of Arcane Brilliance", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Tome of Arcane Brilliance</b><br /><span class=\"q0\">Item Level 56</span><br />Classes: Mage<br />Requires Level 56<br /><span class=\"q2\">Use: Teaches Arcane Brilliance (Rank 1).</span><br /><span class=\"q2\">Infuses all  party and raid members with brilliance, increasing their Intellect by 31 for 1 hour.</span><br /></td></tr></table>", "icon": "inv_misc_book_07.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Book"]}, {"id": 22890, "name": "Tome of Frost Ward V", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Tome of Frost Ward V</b><br /><span class=\"q0\">Item Level 60</span><br />Classes: Mage<br />Requires Level 60<br /><span class=\"q2\">Use: Teaches Frost Ward (Rank 5).</span><br /><span class=\"q2\">Absorbs 875 Frost damage.  Lasts 30 sec.</span><br /></td></tr></table>", "icon": "inv_misc_book_07.jpg", "dropsFrom": [{"chance": 4.35, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Book"]}, {"id": 1203, "name": "Aegis of Stormwind", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Aegis of Stormwind</b><br /><span class=\"q0\">Item Level 54</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Off Hand</td><th>Shield</th></tr></table>1867 Armor<br />33 Block<br />+6 Strength<br />+15 Stamina<br />Durability 100 / 100<br />Requires Level 49<br /></td></tr></table>", "icon": "inv_shield_06.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Off Hand"], "types": ["Shield"]}, {"id": 13036, "name": "Assassination Blade", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Assassination Blade</b><br /><span class=\"q0\">Item Level 57</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Sword</th></tr></table><table width=\"100%\"><tr><td>71 - 132 Damage</td><th>Speed 2.70</th></tr></table>(37.59 damage per second)<br />+3 Strength<br />Durability 90 / 90<br />Requires Level 52<br /><span class=\"q2\">Equip: Increases your critical strike rating by 14.</span><br /></td></tr></table>", "icon": "inv_sword_42.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["One-Hand"], "types": ["Sword"]}, {"id": 13030, "name": "Basilisk Bone", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Basilisk Bone</b><br /><span class=\"q0\">Item Level 51</span><br />Binds when equipped<br />Held In Off-hand<br />+6 Arcane Resistance<br />+6 Fire Resistance<br />+6 Nature Resistance<br />+6 Frost Resistance<br />+6 Shadow Resistance<br />Requires Level 46<br /></td></tr></table>", "icon": "inv_misc_bone_10.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Held In Off-hand"], "types": []}, {"id": 13126, "name": "Battlecaller Gauntlets", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Battlecaller Gauntlets</b><br /><span class=\"q0\">Item Level 53</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Hands</td><th>Mail</th></tr></table>198 Armor<br />+8 Agility<br />+9 Stamina<br />Durability 40 / 40<br />Requires Level 48<br /><span class=\"q2\">Equip: Increases attack power by 30.</span><br /></td></tr></table>", "icon": "inv_gauntlets_10.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Hands"], "types": ["Mail"]}, {"id": 13028, "name": "Bludstone Hammer", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Bludstone Hammer</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>59 - 110 Damage</td><th>Speed 2.10</th></tr></table>(40.24 damage per second)<br />+5 Stamina<br />+12 Spirit<br />Durability 90 / 90<br />Requires Level 56<br /></td></tr></table>", "icon": "inv_hammer_19.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["One-Hand"], "types": ["Mace"]}, {"id": 13009, "name": "Cow King's Hide", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Cow King's Hide</b><br /><span class=\"q0\">Item Level 51</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Chest</td><th>Leather</th></tr></table>148 Armor<br />+10 Stamina<br />+10 Arcane Resistance<br />+10 Fire Resistance<br />+10 Nature Resistance<br />+10 Frost Resistance<br />+10 Shadow Resistance<br />Durability 100 / 100<br />Requires Level 46<br /></td></tr></table>", "icon": "inv_chest_leather_06.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Chest"], "types": ["Leather"]}, {"id": 13120, "name": "Deepfury Bracers", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Deepfury Bracers</b><br /><span class=\"q0\">Item Level 55</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Wrist</td><th>Leather</th></tr></table>69 Armor<br />+4 Strength<br />+15 Agility<br />+4 Stamina<br />Durability 35 / 35<br />Requires Level 50<br /></td></tr></table>", "icon": "inv_bracer_07.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Wrist"], "types": ["Leather"]}, {"id": 13125, "name": "Elven Chain Boots", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Elven Chain Boots</b><br /><span class=\"q0\">Item Level 50</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Feet</td><th>Mail</th></tr></table>206 Armor<br />+18 Agility<br />+3 Stamina<br />Durability 60 / 60<br />Requires Level 45<br /><span class=\"q2\">Equip: Improves hit rating by 7.</span><br /></td></tr></table>", "icon": "inv_boots_01.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Feet"], "types": ["Mail"]}, {"id": 2564, "name": "Elven Spirit Claws", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Elven Spirit Claws</b><br /><span class=\"q0\">Item Level 50</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Hands</td><th>Leather</th></tr></table>91 Armor<br />+5 Intellect<br />+9 Spirit<br />Durability 35 / 35<br />Requires Level 45<br /><span class=\"q2\">Equip: Increases spell power by 18.</span><br /></td></tr></table>", "icon": "inv_gauntlets_07.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Hands"], "types": ["Leather"]}, {"id": 13083, "name": "Garrett Family Crest", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Garrett Family Crest</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Off Hand</td><th>Shield</th></tr></table>2121 Armor<br />39 Block<br />+5 Agility<br />+4 Intellect<br />+17 Spirit<br />Durability 100 / 100<br />Requires Level 57<br /></td></tr></table>", "icon": "inv_shield_05.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Off Hand"], "types": ["Shield"]}, {"id": 13077, "name": "Girdle of Uther", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Girdle of Uther</b><br /><span class=\"q0\">Item Level 57</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Waist</td><th>Plate</th></tr></table>336 Armor<br />+9 Strength<br />+9 Agility<br />+10 Stamina<br />+9 Intellect<br />+10 Spirit<br />Durability 45 / 45<br />Requires Level 52<br /></td></tr></table>", "icon": "inv_belt_32.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Waist"], "types": ["Plate"]}, {"id": 4696, "name": "Lapidis Tankard of Tidesippe", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Lapidis Tankard of Tidesippe</b><br /><span class=\"q0\">Item Level 59</span><br />Binds when equipped<br />Held In Off-hand<br />-15 Agility<br />+5 Intellect<br />+16 Spirit<br />Requires Level 54<br /><span class=\"q2\">Use: Restores 1992 mana over 30 sec.  Must remain seated while drinking. (10 Min Cooldown)</span><br /></td></tr></table>", "icon": "inv_drink_03.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Held In Off-hand"], "types": []}, {"id": 13136, "name": "Lil Timmy's Peashooter", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Lil Timmy's Peashooter</b><br /><span class=\"q0\">Item Level 21</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Ranged</td><th>Gun</th></tr></table><table width=\"100%\"><tr><td>26 - 48 Damage</td><th>Speed 2.60</th></tr></table>(14.23 damage per second)<br />Durability 60 / 60<br />Requires Level 16<br /></td></tr></table>", "icon": "inv_weapon_rifle_08.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Ranged"], "types": ["Gun"]}, {"id": 13007, "name": "Mageflame Cloak", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Mageflame Cloak</b><br /><span class=\"q0\">Item Level 58</span><br />Binds when equipped<br />Back<br />41 Armor<br />+10 Fire Resistance<br />Requires Level 53<br /><span class=\"q2\">Equip: Increases spell power by 18.</span><br /></td></tr></table>", "icon": "inv_misc_cape_18.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Back"], "types": ["Cloth"]}, {"id": 13006, "name": "Mass of McGowan", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Mass of McGowan</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>80 - 149 Damage</td><th>Speed 2.80</th></tr></table>(40.89 damage per second)<br />+10 Strength<br />+10 Stamina<br />Durability 90 / 90<br />Requires Level 57<br /></td></tr></table>", "icon": "inv_hammer_17.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["One-Hand"], "types": ["Mace"]}, {"id": 1973, "name": "Orb of Deception", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Orb of Deception</b><br /><span class=\"q0\">Item Level 59</span><br />Binds when equipped<br />Trinket<br />Requires Level 54<br /><span class=\"q2\">Use: Transforms caster to look like a member of the opposing faction. (30 Min Cooldown)</span><br /></td></tr></table>", "icon": "inv_misc_orb_02.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Trinket"], "types": []}, {"id": 14501, "name": "Pattern: Mooncloth Vest", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Pattern: Mooncloth Vest</b><br /><span class=\"q0\">Item Level 60</span><br />Requires Tailoring (300)<br /><span class=\"q2\">Use: Teaches you how to sew a Mooncloth Vest.</span><br /><span class=\"q3\">Mooncloth Vest</span><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Chest</td><th>Cloth</th></tr></table>85 Armor<br />+12 Stamina<br />+20 Intellect<br />+19 Spirit<br />Durability 80 / 80<br />Requires Level 55<br />\nRequires Bolt of Runecloth (6), Mooncloth (4), Rune Thread<br /></td></tr></table>", "icon": "inv_scroll_03.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Tailoring"]}, {"id": 12728, "name": "Plans: Invulnerable Mail", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Plans: Invulnerable Mail</b><br />Requires Blacksmithing (300)<br />Requires Armorsmith<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Teaches you how to make Invulnerable Mail.</span><br /></td></tr></table>", "icon": "inv_scroll_03.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Blacksmithing"]}, {"id": 7991, "name": "Plans: Mithril Scale Shoulders", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Plans: Mithril Scale Shoulders</b><br /><span class=\"q0\">Item Level 47</span><br />Requires Blacksmithing (235)<br /><span class=\"q2\">Use: Teaches you how to make Mithril Scale Shoulders.</span><br /><span class=\"q2\">Mithril Scale Shoulders</span><br /><span class=\"q0\">Item Level 47</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Mail</th></tr></table>194 Armor<br />+7 Stamina<br />Durability 60 / 60<br />Requires Level 42<br /><span class=\"q2\">Equip: Increases attack power by 24.</span><br />\nRequires Mithril Bar (14), Thick Leather (4)<br /></td></tr></table>", "icon": "inv_scroll_03.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Blacksmithing"]}, {"id": 12720, "name": "Plans: Stronghold Gauntlets", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Plans: Stronghold Gauntlets</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br />Hands<br />441 Armor<br />+18 Stamina<br />Requires Level 57<br />Requires Blacksmithing (300)<br />Requires Armorsmith<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Immune to Disarm.</span><br /><span class=\"q2\">Equip: Increases your chance to parry an attack by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Use: Teaches you how to make Stronghold Gauntlets.</span><br /></td></tr></table>", "icon": "inv_scroll_03.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Hands"], "types": ["Blacksmithing"]}, {"id": 12711, "name": "Plans: Whitesoul Helm", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Plans: Whitesoul Helm</b><br /><span class=\"q0\">Item Level 60</span><br />Requires Blacksmithing (300)<br /><span class=\"q2\">Use: Teaches you how to make a Whitesoul Helm.</span><br /><span class=\"q3\">Whitesoul Helm</span><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Head</td><th>Plate</th></tr></table><span class=\"q2\">629 Armor</span><br />+15 Intellect<br />+15 Spirit<br />Durability 80 / 80<br />Requires Level 55<br /><span class=\"q2\">Equip: Increases spell power by 19.</span><br />\nRequires Thorium Bar (20), Enchanted Thorium Bar (4), Truesilver Bar (6), Gold Bar (6), Azerothian Diamond (2)<br /></td></tr></table>", "icon": "inv_scroll_03.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": ["Blacksmithing"]}, {"id": 13111, "name": "Sandals of the Insurgent", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Sandals of the Insurgent</b><br /><span class=\"q0\">Item Level 54</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Feet</td><th>Leather</th></tr></table>107 Armor<br />+8 Intellect<br />+20 Spirit<br />Durability 50 / 50<br />Requires Level 49<br /></td></tr></table>", "icon": "inv_boots_fabric_01.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Feet"], "types": ["Leather"]}, {"id": 13015, "name": "Serathil", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Serathil</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Axe</th></tr></table><table width=\"100%\"><tr><td>53 - 99 Damage</td><th>Speed 1.90</th></tr></table>(40.00 damage per second)<br />100 Armor<br />+9 Strength<br />Durability 90 / 90<br />Requires Level 56<br /></td></tr></table>", "icon": "inv_axe_08.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["One-Hand"], "types": ["Axe"]}, {"id": 13144, "name": "Serenity Belt", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Serenity Belt</b><br /><span class=\"q0\">Item Level 53</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Waist</td><th>Cloth</th></tr></table>43 Armor<br />+7 Stamina<br />+17 Intellect<br />Durability 30 / 30<br />Requires Level 48<br /></td></tr></table>", "icon": "inv_belt_07.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Waist"], "types": ["Cloth"]}, {"id": 6622, "name": "Sword of Zeal", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Sword of Zeal</b><br /><span class=\"q0\">Item Level 63</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Sword</th></tr></table><table width=\"100%\"><tr><td>81 - 151 Damage</td><th>Speed 2.80</th></tr></table>(41.43 damage per second)<br />Durability 90 / 90<br />Requires Level 58<br />Chance on hit: A burst of energy fills the caster, increasing <br /><span class=\"q2\">his</span><br /> damage by 10 and armor by 150 for 15 sec.<br /></td></tr></table>", "icon": "inv_sword_39.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["One-Hand"], "types": ["Sword"]}, {"id": 13066, "name": "Wyrmslayer Spaulders", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Wyrmslayer Spaulders</b><br /><span class=\"q0\">Item Level 51</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Plate</th></tr></table>403 Armor<br />+12 Strength<br />+8 Agility<br />+12 Stamina<br />Durability 80 / 80<br />Requires Level 46<br /></td></tr></table>", "icon": "inv_shoulder_24.jpg", "dropsFrom": [{"chance": 2.17, "bossId": 1, "npcId": 1}], "slots": ["Shoulder"], "types": ["Plate"]}, {"id": 61800, "name": "Chain Slippers of the Caldera", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Chain Slippers of the Caldera</b><br /><span class=\"q0\">Item Level 66</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Feet</td><th>Mail</th></tr></table>290 Armor<br />+10 Stamina<br />+15 Intellect<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 22.</span><br /><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br /></td></tr></table>", "icon": "inv_boots_01.jpg", "dropsFrom": [{"chance": 26.67, "bossId": 2, "npcId": 2}], "slots": ["Feet"], "types": ["Mail"]}, {"id": 61797, "name": "Ashen Nightslayer Belt", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Ashen Nightslayer Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Leather</th></tr></table>109 Armor<br />+9 Strength<br />+16 Agility<br />+15 Stamina<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /></td></tr></table>", "icon": "inv_belt_23.jpg", "dropsFrom": [{"chance": 22.22, "bossId": 2, "npcId": 2}], "slots": ["Waist"], "types": ["Leather"]}, {"id": 61802, "name": "Cuffs of Malevolence", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Cuffs of Malevolence</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Wrist</td><th>Leather</th></tr></table>86 Armor<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases attack power by 20.</span><br /><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to hit with melee and ranged attacks by 1%.</span><br /></td></tr></table>", "icon": "inv_bracer_10.jpg", "dropsFrom": [{"chance": 22.22, "bossId": 2, "npcId": 2}], "slots": ["Wrist"], "types": ["Leather"]}, {"id": 61811, "name": "Heatproof Escutcheon", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Heatproof Escutcheon</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Off Hand</td><th>Shields</th></tr></table>2468 Armor<br />+6 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases healing done by up to 33 and damage done by up to 10 for all magical spells and effects.</span><br /></td></tr></table>", "icon": "inv_shield_13.jpg", "dropsFrom": [{"chance": 22.22, "bossId": 2, "npcId": 2}], "slots": ["Off Hand"], "types": ["Shield"]}, {"id": 61794, "name": "Ashen Belt of Might", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Ashen Belt of Might</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Plate</th></tr></table>409 Armor<br />+15 Strength<br />+15 Agility<br />+14 Stamina<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Reduces your chance to be dodged or parried by 1%.</span><br /></td></tr></table>", "icon": "inv_belt_09.jpg", "dropsFrom": [{"chance": 20.0, "bossId": 2, "npcId": 2}], "slots": ["Waist"], "types": ["Plate"]}, {"id": 61799, "name": "Boots of Vitriol", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Boots of Vitriol</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Feet</td><th>Leather</th></tr></table>136 Armor<br />+20 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to hit with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Increased Defense +8.</span><br /></td></tr></table>", "icon": "inv_boots_07.jpg", "dropsFrom": [{"chance": 20.0, "bossId": 2, "npcId": 2}], "slots": ["Feet"], "types": ["Leather"]}, {"id": 61806, "name": "Dragon Slayer's Sword", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Dragon Slayer's Sword</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Two-Handed Swords</th></tr></table>126 - 317 Damage<br />(61.5 damage per second)<br />+22 Strength<br />+15 Fire Resistance<br />+15 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Reduces your chance to be dodged or parried by 1%.</span><br /><span class=\"q2\">Equip: Attack Power increased by 50 when fighting Dragonkin.</span><br /></td></tr></table>", "icon": "inv_sword_26.jpg", "dropsFrom": [{"chance": 17.78, "bossId": 2, "npcId": 2}], "slots": ["Two-Hand"], "types": ["Sword"]}, {"id": 61796, "name": "Ashen Giantstalker's Belt", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Ashen Giantstalker's Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Mail</th></tr></table>230 Armor<br />+16 Agility<br />+14 Stamina<br />+8 Intellect<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Restores 2 mana per 5 sec.</span><br /></td></tr></table>", "icon": "inv_belt_28.jpg", "dropsFrom": [{"chance": 15.56, "bossId": 2, "npcId": 2}], "slots": ["Waist"], "types": ["Mail"]}, {"id": 61829, "name": "Ring of Binding", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Ring of Binding</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br />Finger<br />40 Armor<br />+12 Stamina<br />+5 to All Resistances<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increased Defense +6.</span><br /></td></tr></table>", "icon": "inv_jewelry_ring_13.jpg", "dropsFrom": [{"chance": 15.56, "bossId": 2, "npcId": 2}], "slots": ["Finger"], "types": []}, {"id": 18202, "name": "Eskhandar's Left Claw", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Eskhandar's Left Claw</b><br /><span class=\"q0\">Item Level 66</span><br />Binds when picked up<br />Unique<br /><table width=\"100%\"><tr><td>Off Hand</td><th>Fist Weapons</th></tr></table>50 - 94 Damage<br />(48.0 damage per second)<br />+7 Agility<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Chance on hit: Slows enemy's movement by 60% and causes them to bleed for 225 damage over 30 sec.</span><br /><span class=\"q0\">(4) Set: 1% chance on a melee critical hit to call forth the spirit of Eskhandar to protect you in battle for 2 min.</span><br /></td></tr></table>", "icon": "inv_misc_monsterclaw_04.jpg", "dropsFrom": [{"chance": 13.33, "bossId": 2, "npcId": 2}], "slots": ["Off Hand"], "types": ["Fist"]}, {"id": 61795, "name": "Ashen Earthfury Belt", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Ashen Earthfury Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Mail</th></tr></table>230 Armor<br />+17 Strength<br />+12 Stamina<br />+10 Intellect<br />+7 Fire Resistance<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with all spells and attacks by 1%.</span><br /></td></tr></table>", "icon": "inv_belt_14.jpg", "dropsFrom": [{"chance": 6.67, "bossId": 2, "npcId": 2}], "slots": ["Waist"], "types": ["Mail"]}, {"id": 61828, "name": "Premonition", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Premonition</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Staves</th></tr></table>82 - 152 Damage<br />(61.5 damage per second)<br />52 Armor<br />+4 - 8 Nature Damage<br />+12 Strength<br />+12 Agility<br />+18 Stamina<br />+10 Intellect<br />+8 Nature Resistance<br />+8 Arcane Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br /><span class=\"q2\">Equip: Increased Defense +6.</span><br /></td></tr></table>", "icon": "inv_staff_49.jpg", "dropsFrom": [{"chance": 4.44, "bossId": 2, "npcId": 2}], "slots": ["Two-Hand"], "types": ["Staff"]}, {"id": 9402, "name": "Earthborn Kilt", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Earthborn Kilt</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Legs</td><th>Leather</th></tr></table>148 Armor<br />+12 Stamina<br />+29 Spirit<br />Durability 75 / 75<br />Requires Level 55<br /></td></tr></table>", "icon": "inv_pants_12.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 2, "npcId": 2}], "slots": ["Legs"], "types": ["Leather"]}, {"id": 4696, "name": "Lapidis Tankard of Tidesippe", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Lapidis Tankard of Tidesippe</b><br /><span class=\"q0\">Item Level 59</span><br />Binds when equipped<br />Held In Off-hand<br />-15 Agility<br />+5 Intellect<br />+16 Spirit<br />Requires Level 54<br /><span class=\"q2\">Use: Restores 1992 mana over 30 sec.  Must remain seated while drinking. (10 Min Cooldown)</span><br /></td></tr></table>", "icon": "inv_drink_03.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 2, "npcId": 2}], "slots": ["Held In Off-hand"], "types": []}, {"id": 61817, "name": "Pattern: Onyxia Scale Mask", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Pattern: Onyxia Scale Mask</b><br />Binds when picked up<br />Requires Leatherworking (300)<br />Requires Dragonscale Leatherworking<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Teaches you how to make a Onyxia Scale Mask.</span><br /></td></tr></table>", "icon": "inv_scroll_05.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 2, "npcId": 2}], "slots": ["Non-equippable"], "types": []}, {"id": 61825, "name": "Pattern: Red Dragonscale Leggings", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Pattern: Red Dragonscale Leggings</b><br />Binds when picked up<br />Requires Leatherworking (300)<br />Requires Dragonscale Leatherworking<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Teaches you how to make a Red Dragonscale Leggings.</span><br /></td></tr></table>", "icon": "inv_scroll_05.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 2, "npcId": 2}], "slots": ["Non-equippable"], "types": []}, {"id": 12716, "name": "Plans: Helm of the Great Chief", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Plans: Helm of the Great Chief</b><br /><span class=\"q0\">Item Level 61</span><br />Requires Blacksmithing (300)<br /><span class=\"q2\">Use: Teaches you how to make a Helm of the Great Chief.</span><br /><span class=\"q3\">Helm of the Great Chief</span><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Head</td><th>Mail</th></tr></table>292 Armor<br />+12 Stamina<br />+30 Spirit<br />Durability 70 / 70<br />Requires Level 56<br />\nRequires Thorium Bar (40), Enchanted Thorium Bar (4), Large Opal (6), Huge Emerald (2)<br /></td></tr></table>", "icon": "inv_scroll_03.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 2, "npcId": 2}], "slots": ["Non-equippable"], "types": ["Blacksmithing"]}, {"id": 61838, "name": "Woven Shadowthread Chemise", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Woven Shadowthread Chemise</b><br /><span class=\"q0\">Item Level 66</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Chest</td><th>Cloth</th></tr></table>101 Armor<br />+21 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 44.</span><br /></td></tr></table>", "icon": "inv_chest_cloth_71.jpg", "dropsFrom": [{"chance": 28.89, "bossId": 3, "npcId": 3}], "slots": ["Chest"], "types": ["Cloth"]}, {"id": 61832, "name": "Scorched Cenarion Belt", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Scorched Cenarion Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Leather</th></tr></table>109 Armor<br />+10 Stamina<br />+18 Intellect<br />+6 Spirit<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 18.</span><br /><span class=\"q2\">Equip: Restores 4 mana per 5 sec.</span><br /></td></tr></table>", "icon": "inv_belt_06.jpg", "dropsFrom": [{"chance": 26.67, "bossId": 3, "npcId": 3}], "slots": ["Waist"], "types": ["Leather"]}, {"id": 61833, "name": "Scorched Earthfury Belt", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Scorched Earthfury Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Mail</th></tr></table>230 Armor<br />+12 Stamina<br />+14 Intellect<br />+6 Spirit<br />+7 Fire Resistance<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 21.</span><br /><span class=\"q2\">Equip: Restores 4 mana per 5 sec.</span><br /></td></tr></table>", "icon": "inv_belt_14.jpg", "dropsFrom": [{"chance": 26.67, "bossId": 3, "npcId": 3}], "slots": ["Waist"], "types": ["Mail"]}, {"id": 61837, "name": "Vis'kag, the Bloodletter", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Vis'kag, the Bloodletter</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>One-Hand</td><th>One-Handed Swords</th></tr></table>74 - 171 Damage<br />(47.1 damage per second)<br />+6 Agility<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Chance on hit: Delivers a fatal wound for 240 damage.</span><br /></td></tr></table>", "icon": "inv_sword_18.jpg", "dropsFrom": [{"chance": 24.44, "bossId": 3, "npcId": 3}], "slots": ["One-Hand"], "types": ["Sword"]}, {"id": 61798, "name": "Boots of Contempt", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Boots of Contempt</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Feet</td><th>Cloth</th></tr></table>68 Armor<br />+11 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your casting speed and causes periodic effects to occur more frequently with spells by 2%.</span><br /><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br /><span class=\"q2\">Equip: Decreases the magical resistances of your spell targets by 10.</span><br /><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 15.</span><br /></td></tr></table>", "icon": "inv_boots_cloth_10.jpg", "dropsFrom": [{"chance": 20.0, "bossId": 3, "npcId": 3}], "slots": ["Feet"], "types": ["Cloth"]}, {"id": 61793, "name": "Ancient Cornerstone Grimoire", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Ancient Cornerstone Grimoire</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br />Off Hand<br />+12 Stamina<br />+15 Intellect<br />+12 Spirit<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to hit with all spells and attacks by 1%.</span><br /><span class=\"q2\">Use: Summons a Skeleton that will protect you for 1 min. (5 Min Cooldown)</span><br /></td></tr></table>", "icon": "inv_misc_book_07.jpg", "dropsFrom": [{"chance": 17.78, "bossId": 3, "npcId": 3}], "slots": ["Off Hand"], "types": ["Miscellaneous"]}, {"id": 61809, "name": "Faceted Beryl Palm Stone", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Faceted Beryl Palm Stone</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br />Unique-Equipped<br />Trinket<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: When your spells critically strike you feel a sense of calm, causing your next spell within 10 sec to cost 50% less mana. This effect can only occur once every 15 seconds.</span><br /></td></tr></table>", "icon": "inv_jewelcrafting_gem_41.jpg", "dropsFrom": [{"chance": 15.56, "bossId": 3, "npcId": 3}], "slots": ["Trinket"], "types": []}, {"id": 61831, "name": "Scorched Arcanist Belt", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Scorched Arcanist Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Cloth</th></tr></table>55 Armor<br />+11 Stamina<br />+20 Intellect<br />+10 Spirit<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 13.</span><br /></td></tr></table>", "icon": "inv_belt_30.jpg", "dropsFrom": [{"chance": 15.56, "bossId": 3, "npcId": 3}], "slots": ["Waist"], "types": ["Cloth"]}, {"id": 61803, "name": "Cuffs of Spite", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Cuffs of Spite</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Wrist</td><th>Cloth</th></tr></table>43 Armor<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 15.</span><br /></td></tr></table>", "icon": "inv_bracer_12.jpg", "dropsFrom": [{"chance": 11.11, "bossId": 3, "npcId": 3}], "slots": ["Wrist"], "types": ["Cloth"]}, {"id": 61830, "name": "Sapphiron Drape", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Sapphiron Drape</b><br /><span class=\"q0\">Item Level 66</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Back</td><th>Cloth</th></tr></table>48 Armor<br />+8 Stamina<br />+14 Intellect<br />+6 Frost Resistance<br />+6 Arcane Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 20.</span><br /></td></tr></table>", "icon": "inv_misc_cape_16.jpg", "dropsFrom": [{"chance": 11.11, "bossId": 3, "npcId": 3}], "slots": ["Back"], "types": ["Cloth"]}, {"id": 61834, "name": "Scorched Felheart Bracer", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Scorched Felheart Bracer</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Wrist</td><th>Cloth</th></tr></table>42 Armor<br />+11 Stamina<br />+9 Intellect<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 12.</span><br /><span class=\"q\">Looks like a belt, fashionable.</span><br /></td></tr></table>", "icon": "inv_belt_13.jpg", "dropsFrom": [{"chance": 8.89, "bossId": 3, "npcId": 3}], "slots": ["Wrist"], "types": ["Cloth"]}, {"id": 61801, "name": "Cloak of Forewarning", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Cloak of Forewarning</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Back</td><th>Cloth</th></tr></table>47 Armor<br />+10 Stamina<br />+10 Arcane Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage done by Arcane spells and effects by up to 25.</span><br /><span class=\"q2\">Equip: Increases damage done by Nature spells and effects by up to 25.</span><br /></td></tr></table>", "icon": "inv_misc_cape_05.jpg", "dropsFrom": [{"chance": 6.67, "bossId": 3, "npcId": 3}], "slots": ["Back"], "types": ["Cloth"]}, {"id": 13028, "name": "Bludstone Hammer", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Bludstone Hammer</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>59 - 110 Damage</td><th>Speed 2.10</th></tr></table>(40.24 damage per second)<br />+5 Stamina<br />+12 Spirit<br />Durability 90 / 90<br />Requires Level 56<br /></td></tr></table>", "icon": "inv_hammer_19.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 3, "npcId": 3}], "slots": ["One-Hand"], "types": ["Mace"]}, {"id": 13083, "name": "Garrett Family Crest", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Garrett Family Crest</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Off Hand</td><th>Shield</th></tr></table>2121 Armor<br />39 Block<br />+5 Agility<br />+4 Intellect<br />+17 Spirit<br />Durability 100 / 100<br />Requires Level 57<br /></td></tr></table>", "icon": "inv_shield_05.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 3, "npcId": 3}], "slots": ["Off Hand"], "types": ["Shield"]}, {"id": 23197, "name": "Idol of the Moon", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Idol of the Moon</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when equipped<br />Unique<br /><table width=\"100%\"><tr><td>Relic</td><th>Idol</th></tr></table>Requires Level 60<br /><span class=\"q2\">Equip: Increases the spell power your Moonfire spell by 33.</span><br /></td></tr></table>", "icon": "inv_relics_idolofrejuvenation.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 3, "npcId": 3}], "slots": ["Relic"], "types": ["Idol"]}, {"id": 13006, "name": "Mass of McGowan", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Mass of McGowan</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>80 - 149 Damage</td><th>Speed 2.80</th></tr></table>(40.89 damage per second)<br />+10 Strength<br />+10 Stamina<br />Durability 90 / 90<br />Requires Level 57<br /></td></tr></table>", "icon": "inv_hammer_17.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 3, "npcId": 3}], "slots": ["One-Hand"], "types": ["Mace"]}, {"id": 61815, "name": "Pattern: Onyxia Scale Breastplate", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Pattern: Onyxia Scale Breastplate</b><br />Binds when picked up<br />Requires Leatherworking (300)<br />Requires Dragonscale Leatherworking<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Teaches you how to make a Onyxia Scale Breastplate.</span><br /></td></tr></table>", "icon": "inv_scroll_05.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 3, "npcId": 3}], "slots": ["Non-equippable"], "types": []}, {"id": 61821, "name": "Plans: Onyxia Scale Shield", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Plans: Onyxia Scale Shield</b><br />Binds when picked up<br />Requires Blacksmithing (300)<br />Requires Armorsmith<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Teaches you how to make a Onyxia Scale Shield.</span><br /></td></tr></table>", "icon": "inv_scroll_05.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 3, "npcId": 3}], "slots": ["Non-equippable"], "types": []}, {"id": 13060, "name": "The Needler", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">The Needler</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Polearm</th></tr></table><table width=\"100%\"><tr><td>90 - 136 Damage</td><th>Speed 2.20</th></tr></table>(51.36 damage per second)<br />Durability 100 / 100<br />Requires Level 55<br /><span class=\"q2\">Chance on hit: Wounds the target for 75 damage.</span><br /></td></tr></table>", "icon": "inv_spear_08.jpg", "dropsFrom": [{"chance": 2.22, "bossId": 3, "npcId": 3}], "slots": ["Two-Hand"], "types": ["Polearm"]}, {"id": 90104, "name": "Obsidian Scales", "classes": [], "quality": 0, "tooltip": "<table><tr><td><b class=\"q0\">Obsidian Scales</b><br /></td></tr></table>", "icon": "inv_misc_monsterscales_05.jpg", "dropsFrom": [{"chance": 14.16, "bossId": 4, "npcId": 4}], "slots": ["Non-equippable"], "types": []}, {"id": 90101, "name": "Talon Pendant", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Talon Pendant</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br />Neck<br />+12 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your casting speed and causes periodic effects to occur more frequently with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases healing done by up to 28 and damage done by up to 9 for all magical spells and effects.</span><br /></td></tr></table>", "icon": "inv_jewelry_necklace_34.jpg", "dropsFrom": [{"chance": 2.65, "bossId": 4, "npcId": 4}], "slots": ["Neck"], "types": []}, {"id": 17683, "name": "Book: Gift of the Wild II", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Book: Gift of the Wild II</b><br /><span class=\"q0\">Item Level 60</span><br />Classes: Druid<br />Requires Level 60<br /><span class=\"q2\">Use: Teaches Gift of the Wild (Rank 2).</span><br /><span class=\"q2\">Gives the Gift of the Wild to all party and raid members, increasing armor by 285, all attributes by 12 and all resistances by 20 for 1 hour.</span><br /></td></tr></table>", "icon": "inv_misc_book_11.jpg", "dropsFrom": [{"chance": 1.77, "bossId": 4, "npcId": 4}], "slots": ["Non-equippable"], "types": ["Book"]}, {"id": 17414, "name": "Codex: Prayer of Fortitude II", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Codex: Prayer of Fortitude II</b><br /><span class=\"q0\">Item Level 60</span><br />Classes: Priest<br />Requires Level 60<br /><span class=\"q2\">Use: Teaches Prayer of Fortitude (Rank 2).</span><br /><span class=\"q2\">Power infuses all party and raid members, increasing their Stamina by 54 for 1 hour.</span><br /></td></tr></table>", "icon": "inv_misc_book_09.jpg", "dropsFrom": [{"chance": 1.77, "bossId": 4, "npcId": 4}], "slots": ["Non-equippable"], "types": ["Book"]}, {"id": 90100, "name": "Dragonbone Ring", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Dragonbone Ring</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br />Unique-Equipped<br />Finger<br />+14 Strength<br />+8 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to hit with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Reduces your chance to be dodged or parried by 1%.</span><br /></td></tr></table>", "icon": "inv_jewelry_ring_69.jpg", "dropsFrom": [{"chance": 0.88, "bossId": 4, "npcId": 4}], "slots": ["Finger"], "types": []}, {"id": 90102, "name": "Partisane", "classes": [], "quality": 4, "tooltip": "<table><tr><td><b class=\"q4\">Partisane</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Polearms</th></tr></table>165 - 302 Damage<br />(61.4 damage per second)<br />+25 Agility<br />+12 Stamina<br />+10 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 2%.</span><br /></td></tr></table>", "icon": "inv_weapon_halberd13.jpg", "dropsFrom": [{"chance": 0.88, "bossId": 4, "npcId": 4}], "slots": ["Two-Hand"], "types": ["Polearm"]}, {"id": 90105, "name": "Drakonid Horn", "classes": [], "quality": 0, "tooltip": "<table><tr><td><b class=\"q0\">Drakonid Horn</b><br /></td></tr></table>", "icon": "inv_misc_monsterhorn_08.jpg", "dropsFrom": [{"chance": 16.33, "bossId": 4, "npcId": 5}], "slots": ["Non-equippable"], "types": []}, {"id": 90103, "name": "Fireweave", "classes": [], "quality": 0, "tooltip": "<table><tr><td><b class=\"q0\">Fireweave</b><br /></td></tr></table>", "icon": "inv_fabric_spellfire.jpg", "dropsFrom": [{"chance": 11.39, "bossId": 4, "npcId": 6}], "slots": ["Non-equippable"], "types": []}, {"id": 18600, "name": "Tome of Arcane Brilliance", "classes": [], "quality": 3, "tooltip": "<table><tr><td><b class=\"q3\">Tome of Arcane Brilliance</b><br /><span class=\"q0\">Item Level 56</span><br />Classes: Mage<br />Requires Level 56<br /><span class=\"q2\">Use: Teaches Arcane Brilliance (Rank 1).</span><br /><span class=\"q2\">Infuses all  party and raid members with brilliance, increasing their Intellect by 31 for 1 hour.</span><br /></td></tr></table>", "icon": "inv_misc_book_07.jpg", "dropsFrom": [{"chance": 1.27, "bossId": 4, "npcId": 6}], "slots": ["Non-equippable"], "types": ["Book"]}, {"id": 15407, "name": "Scale of Onyxia", "classes": [], "quality": 1, "tooltip": "<table><tr><td><b class=\"q1\">Scale of Onyxia</b><br /></td></tr></table>", "icon": "inv_misc_monsterscales_09.jpg", "dropsFrom": [{"chance": 100.0, "bossId": 1, "npcId": 1}], "slots": ["Non-equippable"], "types": []}], "bosses": [{"id": 1, "name": "Onyxia"}, {"id": 2, "name": "Ortorg the Ardent"}, {"id": 3, "name": "Atressian"}, {"id": 4, "name": "Trash"}], "npcs": [{"id": 1, "name": "Onyxia", "bossId": 1}, {"id": 2, "name": "Ortorg the Ardent", "bossId": 2}, {"id": 3, "name": "Atressian", "bossId": 3}, {"id": 4, "name": "Onyxian Warder", "bossId": 4}, {"id": 5, "name": "Onyxian Honorguard", "bossId": 4}, {"id": 6, "name": "Onyxian Flameweaver", "bossId": 4}]}
+{
+  "id": 24,
+  "shortname": "onye",
+  "raid": true,
+  "name": "Onyxia's Lair",
+  "items": [
+    {
+      "id": 17966,
+      "name": "Onyxia Hide Backpack",
+      "classes": [],
+      "quality": 2,
+      "tooltip": "<table><tr><td><b class=\"q2\">Onyxia Hide Backpack</b><br /><span class=\"q0\">Item Level 55</span><br />Binds when picked up\n18 Slot Bag<br />Dropped by: Onyxia<br />Drop Chance: 84.55%<br /></td></tr></table>",
+      "icon": "inv_misc_bag_22.jpg",
+      "dropsFrom": [
+        {
+          "chance": 150.0,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Bag"
+      ],
+      "types": [
+        "Bag"
+      ]
+    },
+    {
+      "id": 18422,
+      "name": "Head of Onyxia",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Head of Onyxia</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when picked up<br />Unique<br />This Item Begins a Quest<br />Requires Level 60<br /><span class=\"q0\">\"The head of the Black Dragonflight's Brood Mother\"</span><br />Dropped by: Onyxia<br />Drop Chance: 43.65%<br /></td></tr></table>",
+      "icon": "inv_misc_head_dragon_01.jpg",
+      "dropsFrom": [
+        {
+          "chance": 84.78,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Quest"
+      ]
+    },
+    {
+      "id": 61780,
+      "name": "Helm of the Glorious Defender",
+      "classes": [
+        "Warrior",
+        "Hunter",
+        "Druid"
+      ],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q0\">Helm of the Glorious Defender</b><br />Binds when picked up<br />Classes: Warrior, Hunter, Druid<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>",
+      "icon": "inv_helmet_24.jpg",
+      "dropsFrom": [
+        {
+          "chance": 39.13,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Miscellaneous"
+      ],
+      "types": []
+    },
+    {
+      "id": 18705,
+      "name": "Mature Black Dragon Sinew",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Mature Black Dragon Sinew</b><br /><span class=\"q0\">Item Level 71</span><br />Quest Item<br />Unique<br />Classes: Hunter<br />Requires Level 60<br />Dropped by: Onyxia<br />Drop Chance: 43.61%<br /></td></tr></table>",
+      "icon": "spell_holy_dispelmagic.jpg",
+      "dropsFrom": [
+        {
+          "chance": 34.78,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Quest"
+      ]
+    },
+    {
+      "id": 17965,
+      "name": "Yellow Sack of Gems",
+      "classes": [],
+      "quality": 2,
+      "tooltip": "<table><tr><td><b class=\"q2\">Yellow Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>",
+      "icon": "inv_misc_bag_10.jpg",
+      "dropsFrom": [
+        {
+          "chance": 32.61,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Junk"
+      ]
+    },
+    {
+      "id": 61786,
+      "name": "Helm of the Glorious Hero",
+      "classes": [
+        "Priest",
+        "Shaman",
+        "Mage"
+      ],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q0\">Helm of the Glorious Hero</b><br />Binds when picked up<br />Classes: Priest, Shaman, Mage<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>",
+      "icon": "inv_helmet_24.jpg",
+      "dropsFrom": [
+        {
+          "chance": 30.43,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Miscellaneous"
+      ],
+      "types": []
+    },
+    {
+      "id": 61774,
+      "name": "Helm of the Glorious Champion",
+      "classes": [
+        "Paladin",
+        "Rogue",
+        "Warlock"
+      ],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q0\">Helm of the Glorious Champion</b><br />Binds when picked up<br />Classes: Paladin, Rogue, Warlock<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>",
+      "icon": "inv_helmet_24.jpg",
+      "dropsFrom": [
+        {
+          "chance": 28.26,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Miscellaneous"
+      ],
+      "types": []
+    },
+    {
+      "id": 17962,
+      "name": "Blue Sack of Gems",
+      "classes": [],
+      "quality": 2,
+      "tooltip": "<table><tr><td><b class=\"q2\">Blue Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br />Binds when picked up<br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>",
+      "icon": "inv_misc_bag_10_blue.jpg",
+      "dropsFrom": [
+        {
+          "chance": 21.74,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Junk"
+      ]
+    },
+    {
+      "id": 17969,
+      "name": "Red Sack of Gems",
+      "classes": [],
+      "quality": 2,
+      "tooltip": "<table><tr><td><b class=\"q2\">Red Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>",
+      "icon": "inv_misc_bag_10_red.jpg",
+      "dropsFrom": [
+        {
+          "chance": 21.74,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Junk"
+      ]
+    },
+    {
+      "id": 61805,
+      "name": "Draconic Focusing Leystone",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Draconic Focusing Leystone</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br />Unique-Equipped<br />Trinket<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Increases damage and healing done by magical spells and effects by up to 100 and your chance to critically strike with spells by 5% for 15 sec. (2 Min Cooldown)</span><br /></td></tr></table>",
+      "icon": "inv_jewelcrafting_gem_27.jpg",
+      "dropsFrom": [
+        {
+          "chance": 15.22,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
+    },
+    {
+      "id": 17964,
+      "name": "Gray Sack of Gems",
+      "classes": [],
+      "quality": 2,
+      "tooltip": "<table><tr><td><b class=\"q2\">Gray Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>",
+      "icon": "inv_misc_bag_10_black.jpg",
+      "dropsFrom": [
+        {
+          "chance": 15.22,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Junk"
+      ]
+    },
+    {
+      "id": 90503,
+      "name": "Robes of Draconic Legacy",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Robes of Draconic Legacy</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Chest</td><th>Cloth</th></tr></table>102 Armor<br />+20 Stamina<br />+12 Intellect<br />+17 Spirit<br />+5 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases healing done by up to 47 and damage done by up to 15 for all magical spells and effects.</span><br /><span class=\"q2\">Equip: Improves your casting speed and causes periodic effects to occur more frequently with spells by 1%.</span><br /></td></tr></table>",
+      "icon": "inv_chest_cloth_34.jpg",
+      "dropsFrom": [
+        {
+          "chance": 15.22,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 61804,
+      "name": "Deathbringer",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Deathbringer</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>One-Hand</td><th>One-Handed Axes</th></tr></table>75 - 209 Damage<br />(49.0 damage per second)<br />+5 Agility<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Chance on hit: Sends a shadowy bolt at the enemy causing 110 to 140 Shadow damage.</span><br /></td></tr></table>",
+      "icon": "inv_axe_09.jpg",
+      "dropsFrom": [
+        {
+          "chance": 13.04,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Axe"
+      ]
+    },
+    {
+      "id": 17963,
+      "name": "Green Sack of Gems",
+      "classes": [],
+      "quality": 2,
+      "tooltip": "<table><tr><td><b class=\"q2\">Green Sack of Gems</b><br /><span class=\"q0\">Item Level 1</span><br /><span class=\"q2\"><Right Click to Open></span><br /></td></tr></table>",
+      "icon": "inv_misc_bag_10_green.jpg",
+      "dropsFrom": [
+        {
+          "chance": 13.04,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Junk"
+      ]
+    },
+    {
+      "id": 61807,
+      "name": "Dragon's Blood Cape",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Dragon's Blood Cape</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Back</td><th>Cloth</th></tr></table>139 Armor<br />+9 Strength<br />+14 Stamina<br />+5 to All Resistances<br />Requires Level 60<br /></td></tr></table>",
+      "icon": "inv_misc_cape_08.jpg",
+      "dropsFrom": [
+        {
+          "chance": 10.87,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 61808,
+      "name": "Effigy of the Dragon Worshippers",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Effigy of the Dragon Worshippers</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Ranged</td><th>Wands</th></tr></table>112 - 209 Shadow Damage<br />(80.2 damage per second)<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage done by Shadow spells and effects by up to 18.</span><br /><span class=\"q2\">Equip: Restores 3 mana per 5 sec.</span><br /></td></tr></table>",
+      "icon": "inv_wand_10.jpg",
+      "dropsFrom": [
+        {
+          "chance": 10.87,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Wand"
+      ]
+    },
+    {
+      "id": 13002,
+      "name": "Lady Alizabeth's Pendant",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Lady Alizabeth's Pendant</b><br /><span class=\"q0\">Item Level 59</span><br />Binds when equipped<br />Neck<br />+8 Stamina<br />+15 Spirit<br />Requires Level 54<br /></td></tr></table>",
+      "icon": "inv_jewelry_amulet_03.jpg",
+      "dropsFrom": [
+        {
+          "chance": 8.7,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
+    },
+    {
+      "id": 13070,
+      "name": "Sapphiron's Scale Boots",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Sapphiron's Scale Boots</b><br /><span class=\"q0\">Item Level 58</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Feet</td><th>Plate</th></tr></table>417 Armor<br />+14 Strength<br />+9 Agility<br />+14 Stamina<br />Durability 65 / 65<br />Requires Level 53<br /></td></tr></table>",
+      "icon": "inv_boots_plate_05.jpg",
+      "dropsFrom": [
+        {
+          "chance": 8.7,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Plate"
+      ]
+    },
+    {
+      "id": 61835,
+      "name": "Shroud of the Cloaked Mists",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Shroud of the Cloaked Mists</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Back</td><th>Cloth</th></tr></table>49 Armor<br />+17 Strength<br />+8 Stamina<br />+6 Fire Resistance<br />+6 Arcane Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Reduces your chance to be dodged or parried by 1%.</span><br /></td></tr></table>",
+      "icon": "inv_misc_cape_17.jpg",
+      "dropsFrom": [
+        {
+          "chance": 8.7,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 13072,
+      "name": "Stonegrip Gauntlets",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Stonegrip Gauntlets</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Hands</td><th>Plate</th></tr></table>392 Armor<br />+9 Strength<br />+14 Stamina<br />Durability 45 / 45<br />Requires Level 55<br /><span class=\"q2\">Equip: Increases defense rating by 15.</span><br /></td></tr></table>",
+      "icon": "inv_gauntlets_03.jpg",
+      "dropsFrom": [
+        {
+          "chance": 8.7,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Plate"
+      ]
+    },
+    {
+      "id": 13004,
+      "name": "Torch of Austen",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Torch of Austen</b><br /><span class=\"q0\">Item Level 58</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Ranged</td><th>Wand</th></tr></table><table width=\"100%\"><tr><td>55 - 104 Fire Damage</td><th>Speed 1.40</th></tr></table>(56.79 damage per second)<br />+10 Fire Resistance<br />Durability 65 / 65<br />Requires Level 53<br /></td></tr></table>",
+      "icon": "inv_wand_11.jpg",
+      "dropsFrom": [
+        {
+          "chance": 8.7,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Wand"
+      ]
+    },
+    {
+      "id": 61810,
+      "name": "Fury of the Black Flight",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Fury of the Black Flight</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br />Unique-Equipped<br />Trinket<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Your melee attacks have a chance to capture the Raw Fury of the Black Flight.</span><br /><span class=\"q2\">Use: Consume 5 stacks of Raw Fury of the Black Flight to transform into a Black Drakonid, granting 100 strength for 20 sec. (5 Sec Cooldown)</span><br /></td></tr></table>",
+      "icon": "inv_misc_head_dragon_01.jpg",
+      "dropsFrom": [
+        {
+          "chance": 6.52,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
+    },
+    {
+      "id": 17064,
+      "name": "Shard of the Scale",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Shard of the Scale</b><br />Binds when picked up<br />Unique-Equipped<br />Trinket<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Restores 14 mana per 5 sec.</span><br /><span class=\"q0\">(2) Set: +10 All Resistances.</span><br /></td></tr></table>",
+      "icon": "inv_misc_monsterscales_15.jpg",
+      "dropsFrom": [
+        {
+          "chance": 6.52,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
+    },
+    {
+      "id": 7734,
+      "name": "Six Demon Bag",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Six Demon Bag</b><br /><span class=\"q0\">Item Level 51</span><br />Binds when equipped<br />Unique-Equipped<br />Trinket<br />Requires Level 46<br /><span class=\"q2\">Use: Blasts enemies in front of you with the power of wind, fire, all that kind of thing! (3 Min Cooldown)</span><br /></td></tr></table>",
+      "icon": "inv_misc_bag_01.jpg",
+      "dropsFrom": [
+        {
+          "chance": 6.52,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
+    },
+    {
+      "id": 13060,
+      "name": "The Needler",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">The Needler</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Polearm</th></tr></table><table width=\"100%\"><tr><td>90 - 136 Damage</td><th>Speed 2.20</th></tr></table>(51.36 damage per second)<br />Durability 100 / 100<br />Requires Level 55<br /><span class=\"q2\">Chance on hit: Wounds the target for 75 damage.</span><br /></td></tr></table>",
+      "icon": "inv_spear_08.jpg",
+      "dropsFrom": [
+        {
+          "chance": 6.52,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Polearm"
+      ]
+    },
+    {
+      "id": 13096,
+      "name": "Band of the Hierophant",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Band of the Hierophant</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br />Unique-Equipped<br />Finger<br />+7 Stamina<br />+10 Intellect<br />+11 Spirit<br />Requires Level 55<br /></td></tr></table>",
+      "icon": "inv_jewelry_ring_17.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
+    },
+    {
+      "id": 90505,
+      "name": "Broodmother's Eye",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Broodmother's Eye</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br />Unique-Equipped<br />Trinket<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Your healing spells have a chance to ward the target, absorbing 400 to 600 damage for 12 sec.</span><br /></td></tr></table>",
+      "icon": "inv_misc_eye_02.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
+    },
+    {
+      "id": 13053,
+      "name": "Doombringer",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Doombringer</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Sword</th></tr></table><table width=\"100%\"><tr><td>115 - 173 Damage</td><th>Speed 2.80</th></tr></table>(51.43 damage per second)<br />Durability 100 / 100<br />Requires Level 55<br /><span class=\"q2\">Chance on hit: Sends a shadowy bolt at the enemy causing 125 to 275 Shadow damage.</span><br /></td></tr></table>",
+      "icon": "inv_sword_01.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
+    },
+    {
+      "id": 13133,
+      "name": "Drakesfire Epaulets",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Drakesfire Epaulets</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Mail</th></tr></table>270 Armor<br />+5 Stamina<br />+14 Intellect<br />+15 Spirit<br />+10 Fire Resistance<br />Durability 70 / 70<br />Requires Level 56<br /></td></tr></table>",
+      "icon": "inv_shoulder_23.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 13123,
+      "name": "Dreamwalker Armor",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Dreamwalker Armor</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Chest</td><th>Mail</th></tr></table>365 Armor<br />+17 Stamina<br />+20 Intellect<br />+20 Spirit<br />Durability 120 / 120<br />Requires Level 57<br /></td></tr></table>",
+      "icon": "inv_chest_chain_06.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 9402,
+      "name": "Earthborn Kilt",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Earthborn Kilt</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Legs</td><th>Leather</th></tr></table>148 Armor<br />+12 Stamina<br />+29 Spirit<br />Durability 75 / 75<br />Requires Level 55<br /></td></tr></table>",
+      "icon": "inv_pants_12.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 18205,
+      "name": "Eskhandar's Collar",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Eskhandar's Collar</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br />Unique<br />Neck<br />+12 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Reduces your chance to be dodged or parried by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to get a critical strike with all spells and attacks by 1%.</span><br /><span class=\"q0\">(4) Set: 1% chance on a melee critical hit to call forth the spirit of Eskhandar to protect you in battle for 2 min.</span><br /></td></tr></table>",
+      "icon": "inv_belt_12.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
+    },
+    {
+      "id": 13135,
+      "name": "Lordly Armguards",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Lordly Armguards</b><br /><span class=\"q0\">Item Level 59</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Wrist</td><th>Mail</th></tr></table>153 Armor<br />+7 Strength<br />+7 Agility<br />+8 Stamina<br />+7 Intellect<br />+8 Spirit<br />Durability 40 / 40<br />Requires Level 54<br /></td></tr></table>",
+      "icon": "inv_bracer_17.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 13001,
+      "name": "Maiden's Circle",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Maiden's Circle</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br />Finger<br />+7 Intellect<br />+6 Spirit<br />Requires Level 55<br /><span class=\"q2\">Equip: Increases spell power by 18.</span><br /></td></tr></table>",
+      "icon": "inv_jewelry_ring_12.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
+    },
+    {
+      "id": 13091,
+      "name": "Medallion of Grand Marshal Morris",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Medallion of Grand Marshal Morris</b><br /><span class=\"q0\">Item Level 57</span><br />Binds when equipped<br />Neck<br />+7 Stamina<br />Requires Level 52<br /><span class=\"q2\">Equip: Increases defense rating by 15.</span><br /></td></tr></table>",
+      "icon": "inv_jewelry_talisman_08.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
+    },
+    {
+      "id": 49362,
+      "name": "Onyxian Whelpling",
+      "classes": [],
+      "quality": 1,
+      "tooltip": "<table><tr><td><b class=\"q1\">Onyxian Whelpling</b><br /><span class=\"q0\">Item Level 30</span><br />Binds to account<br /><span class=\"q2\">Use: Teaches you how to summon this companion.</span><br /><span class=\"q2\">Right Click to summon and dismiss your whelpling.</span><br /></td></tr></table>",
+      "icon": "inv_misc_head_dragon_black.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Pet"
+      ]
+    },
+    {
+      "id": 90504,
+      "name": "Roh'umir il Lronash",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Roh'umir il Lronash</b><br /><span class=\"q0\">Item Level 67</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Main Hand</td><th>One-Handed Maces</th></tr></table>64 - 102 Damage<br />(41.5 damage per second)<br />+17 Stamina<br />+10 Spirit<br />+5 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases healing done by up to 63 and damage done by up to 20 for all magical spells and effects.</span><br /><span class=\"q\">The Hand of Katrana</span><br /></td></tr></table>",
+      "icon": "inv_mace_37.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
+    },
+    {
+      "id": 18600,
+      "name": "Tome of Arcane Brilliance",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Tome of Arcane Brilliance</b><br /><span class=\"q0\">Item Level 56</span><br />Classes: Mage<br />Requires Level 56<br /><span class=\"q2\">Use: Teaches Arcane Brilliance (Rank 1).</span><br /><span class=\"q2\">Infuses all  party and raid members with brilliance, increasing their Intellect by 31 for 1 hour.</span><br /></td></tr></table>",
+      "icon": "inv_misc_book_07.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Book"
+      ]
+    },
+    {
+      "id": 22890,
+      "name": "Tome of Frost Ward V",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Tome of Frost Ward V</b><br /><span class=\"q0\">Item Level 60</span><br />Classes: Mage<br />Requires Level 60<br /><span class=\"q2\">Use: Teaches Frost Ward (Rank 5).</span><br /><span class=\"q2\">Absorbs 875 Frost damage.  Lasts 30 sec.</span><br /></td></tr></table>",
+      "icon": "inv_misc_book_07.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.35,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Book"
+      ]
+    },
+    {
+      "id": 1203,
+      "name": "Aegis of Stormwind",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Aegis of Stormwind</b><br /><span class=\"q0\">Item Level 54</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Off Hand</td><th>Shield</th></tr></table>1867 Armor<br />33 Block<br />+6 Strength<br />+15 Stamina<br />Durability 100 / 100<br />Requires Level 49<br /></td></tr></table>",
+      "icon": "inv_shield_06.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
+    },
+    {
+      "id": 13036,
+      "name": "Assassination Blade",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Assassination Blade</b><br /><span class=\"q0\">Item Level 57</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Sword</th></tr></table><table width=\"100%\"><tr><td>71 - 132 Damage</td><th>Speed 2.70</th></tr></table>(37.59 damage per second)<br />+3 Strength<br />Durability 90 / 90<br />Requires Level 52<br /><span class=\"q2\">Equip: Increases your critical strike rating by 14.</span><br /></td></tr></table>",
+      "icon": "inv_sword_42.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
+    },
+    {
+      "id": 13030,
+      "name": "Basilisk Bone",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Basilisk Bone</b><br /><span class=\"q0\">Item Level 51</span><br />Binds when equipped<br />Held In Off-hand<br />+6 Arcane Resistance<br />+6 Fire Resistance<br />+6 Nature Resistance<br />+6 Frost Resistance<br />+6 Shadow Resistance<br />Requires Level 46<br /></td></tr></table>",
+      "icon": "inv_misc_bone_10.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Held In Off-hand"
+      ],
+      "types": []
+    },
+    {
+      "id": 13126,
+      "name": "Battlecaller Gauntlets",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Battlecaller Gauntlets</b><br /><span class=\"q0\">Item Level 53</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Hands</td><th>Mail</th></tr></table>198 Armor<br />+8 Agility<br />+9 Stamina<br />Durability 40 / 40<br />Requires Level 48<br /><span class=\"q2\">Equip: Increases attack power by 30.</span><br /></td></tr></table>",
+      "icon": "inv_gauntlets_10.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 13028,
+      "name": "Bludstone Hammer",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Bludstone Hammer</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>59 - 110 Damage</td><th>Speed 2.10</th></tr></table>(40.24 damage per second)<br />+5 Stamina<br />+12 Spirit<br />Durability 90 / 90<br />Requires Level 56<br /></td></tr></table>",
+      "icon": "inv_hammer_19.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
+    },
+    {
+      "id": 13009,
+      "name": "Cow King's Hide",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Cow King's Hide</b><br /><span class=\"q0\">Item Level 51</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Chest</td><th>Leather</th></tr></table>148 Armor<br />+10 Stamina<br />+10 Arcane Resistance<br />+10 Fire Resistance<br />+10 Nature Resistance<br />+10 Frost Resistance<br />+10 Shadow Resistance<br />Durability 100 / 100<br />Requires Level 46<br /></td></tr></table>",
+      "icon": "inv_chest_leather_06.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 13120,
+      "name": "Deepfury Bracers",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Deepfury Bracers</b><br /><span class=\"q0\">Item Level 55</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Wrist</td><th>Leather</th></tr></table>69 Armor<br />+4 Strength<br />+15 Agility<br />+4 Stamina<br />Durability 35 / 35<br />Requires Level 50<br /></td></tr></table>",
+      "icon": "inv_bracer_07.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 13125,
+      "name": "Elven Chain Boots",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Elven Chain Boots</b><br /><span class=\"q0\">Item Level 50</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Feet</td><th>Mail</th></tr></table>206 Armor<br />+18 Agility<br />+3 Stamina<br />Durability 60 / 60<br />Requires Level 45<br /><span class=\"q2\">Equip: Improves hit rating by 7.</span><br /></td></tr></table>",
+      "icon": "inv_boots_01.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 2564,
+      "name": "Elven Spirit Claws",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Elven Spirit Claws</b><br /><span class=\"q0\">Item Level 50</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Hands</td><th>Leather</th></tr></table>91 Armor<br />+5 Intellect<br />+9 Spirit<br />Durability 35 / 35<br />Requires Level 45<br /><span class=\"q2\">Equip: Increases spell power by 18.</span><br /></td></tr></table>",
+      "icon": "inv_gauntlets_07.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 13083,
+      "name": "Garrett Family Crest",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Garrett Family Crest</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Off Hand</td><th>Shield</th></tr></table>2121 Armor<br />39 Block<br />+5 Agility<br />+4 Intellect<br />+17 Spirit<br />Durability 100 / 100<br />Requires Level 57<br /></td></tr></table>",
+      "icon": "inv_shield_05.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
+    },
+    {
+      "id": 13077,
+      "name": "Girdle of Uther",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Girdle of Uther</b><br /><span class=\"q0\">Item Level 57</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Waist</td><th>Plate</th></tr></table>336 Armor<br />+9 Strength<br />+9 Agility<br />+10 Stamina<br />+9 Intellect<br />+10 Spirit<br />Durability 45 / 45<br />Requires Level 52<br /></td></tr></table>",
+      "icon": "inv_belt_32.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Plate"
+      ]
+    },
+    {
+      "id": 4696,
+      "name": "Lapidis Tankard of Tidesippe",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Lapidis Tankard of Tidesippe</b><br /><span class=\"q0\">Item Level 59</span><br />Binds when equipped<br />Held In Off-hand<br />-15 Agility<br />+5 Intellect<br />+16 Spirit<br />Requires Level 54<br /><span class=\"q2\">Use: Restores 1992 mana over 30 sec.  Must remain seated while drinking. (10 Min Cooldown)</span><br /></td></tr></table>",
+      "icon": "inv_drink_03.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Held In Off-hand"
+      ],
+      "types": []
+    },
+    {
+      "id": 13136,
+      "name": "Lil Timmy's Peashooter",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Lil Timmy's Peashooter</b><br /><span class=\"q0\">Item Level 21</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Ranged</td><th>Gun</th></tr></table><table width=\"100%\"><tr><td>26 - 48 Damage</td><th>Speed 2.60</th></tr></table>(14.23 damage per second)<br />Durability 60 / 60<br />Requires Level 16<br /></td></tr></table>",
+      "icon": "inv_weapon_rifle_08.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Ranged"
+      ],
+      "types": [
+        "Gun"
+      ]
+    },
+    {
+      "id": 13007,
+      "name": "Mageflame Cloak",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Mageflame Cloak</b><br /><span class=\"q0\">Item Level 58</span><br />Binds when equipped<br />Back<br />41 Armor<br />+10 Fire Resistance<br />Requires Level 53<br /><span class=\"q2\">Equip: Increases spell power by 18.</span><br /></td></tr></table>",
+      "icon": "inv_misc_cape_18.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 13006,
+      "name": "Mass of McGowan",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Mass of McGowan</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>80 - 149 Damage</td><th>Speed 2.80</th></tr></table>(40.89 damage per second)<br />+10 Strength<br />+10 Stamina<br />Durability 90 / 90<br />Requires Level 57<br /></td></tr></table>",
+      "icon": "inv_hammer_17.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
+    },
+    {
+      "id": 1973,
+      "name": "Orb of Deception",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Orb of Deception</b><br /><span class=\"q0\">Item Level 59</span><br />Binds when equipped<br />Trinket<br />Requires Level 54<br /><span class=\"q2\">Use: Transforms caster to look like a member of the opposing faction. (30 Min Cooldown)</span><br /></td></tr></table>",
+      "icon": "inv_misc_orb_02.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
+    },
+    {
+      "id": 14501,
+      "name": "Pattern: Mooncloth Vest",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Pattern: Mooncloth Vest</b><br /><span class=\"q0\">Item Level 60</span><br />Requires Tailoring (300)<br /><span class=\"q2\">Use: Teaches you how to sew a Mooncloth Vest.</span><br /><span class=\"q3\">Mooncloth Vest</span><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Chest</td><th>Cloth</th></tr></table>85 Armor<br />+12 Stamina<br />+20 Intellect<br />+19 Spirit<br />Durability 80 / 80<br />Requires Level 55<br />\nRequires Bolt of Runecloth (6), Mooncloth (4), Rune Thread<br /></td></tr></table>",
+      "icon": "inv_scroll_03.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Tailoring"
+      ]
+    },
+    {
+      "id": 12728,
+      "name": "Plans: Invulnerable Mail",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Plans: Invulnerable Mail</b><br />Requires Blacksmithing (300)<br />Requires Armorsmith<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Teaches you how to make Invulnerable Mail.</span><br /></td></tr></table>",
+      "icon": "inv_scroll_03.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Blacksmithing"
+      ]
+    },
+    {
+      "id": 7991,
+      "name": "Plans: Mithril Scale Shoulders",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Plans: Mithril Scale Shoulders</b><br /><span class=\"q0\">Item Level 47</span><br />Requires Blacksmithing (235)<br /><span class=\"q2\">Use: Teaches you how to make Mithril Scale Shoulders.</span><br /><span class=\"q2\">Mithril Scale Shoulders</span><br /><span class=\"q0\">Item Level 47</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Mail</th></tr></table>194 Armor<br />+7 Stamina<br />Durability 60 / 60<br />Requires Level 42<br /><span class=\"q2\">Equip: Increases attack power by 24.</span><br />\nRequires Mithril Bar (14), Thick Leather (4)<br /></td></tr></table>",
+      "icon": "inv_scroll_03.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Blacksmithing"
+      ]
+    },
+    {
+      "id": 12720,
+      "name": "Plans: Stronghold Gauntlets",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Plans: Stronghold Gauntlets</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br />Hands<br />441 Armor<br />+18 Stamina<br />Requires Level 57<br />Requires Blacksmithing (300)<br />Requires Armorsmith<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Immune to Disarm.</span><br /><span class=\"q2\">Equip: Increases your chance to parry an attack by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Use: Teaches you how to make Stronghold Gauntlets.</span><br /></td></tr></table>",
+      "icon": "inv_scroll_03.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Hands"
+      ],
+      "types": [
+        "Blacksmithing"
+      ]
+    },
+    {
+      "id": 12711,
+      "name": "Plans: Whitesoul Helm",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Plans: Whitesoul Helm</b><br /><span class=\"q0\">Item Level 60</span><br />Requires Blacksmithing (300)<br /><span class=\"q2\">Use: Teaches you how to make a Whitesoul Helm.</span><br /><span class=\"q3\">Whitesoul Helm</span><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Head</td><th>Plate</th></tr></table><span class=\"q2\">629 Armor</span><br />+15 Intellect<br />+15 Spirit<br />Durability 80 / 80<br />Requires Level 55<br /><span class=\"q2\">Equip: Increases spell power by 19.</span><br />\nRequires Thorium Bar (20), Enchanted Thorium Bar (4), Truesilver Bar (6), Gold Bar (6), Azerothian Diamond (2)<br /></td></tr></table>",
+      "icon": "inv_scroll_03.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Blacksmithing"
+      ]
+    },
+    {
+      "id": 13111,
+      "name": "Sandals of the Insurgent",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Sandals of the Insurgent</b><br /><span class=\"q0\">Item Level 54</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Feet</td><th>Leather</th></tr></table>107 Armor<br />+8 Intellect<br />+20 Spirit<br />Durability 50 / 50<br />Requires Level 49<br /></td></tr></table>",
+      "icon": "inv_boots_fabric_01.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 13015,
+      "name": "Serathil",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Serathil</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Axe</th></tr></table><table width=\"100%\"><tr><td>53 - 99 Damage</td><th>Speed 1.90</th></tr></table>(40.00 damage per second)<br />100 Armor<br />+9 Strength<br />Durability 90 / 90<br />Requires Level 56<br /></td></tr></table>",
+      "icon": "inv_axe_08.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Axe"
+      ]
+    },
+    {
+      "id": 13144,
+      "name": "Serenity Belt",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Serenity Belt</b><br /><span class=\"q0\">Item Level 53</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Waist</td><th>Cloth</th></tr></table>43 Armor<br />+7 Stamina<br />+17 Intellect<br />Durability 30 / 30<br />Requires Level 48<br /></td></tr></table>",
+      "icon": "inv_belt_07.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 6622,
+      "name": "Sword of Zeal",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Sword of Zeal</b><br /><span class=\"q0\">Item Level 63</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Sword</th></tr></table><table width=\"100%\"><tr><td>81 - 151 Damage</td><th>Speed 2.80</th></tr></table>(41.43 damage per second)<br />Durability 90 / 90<br />Requires Level 58<br />Chance on hit: A burst of energy fills the caster, increasing <br /><span class=\"q2\">his</span><br /> damage by 10 and armor by 150 for 15 sec.<br /></td></tr></table>",
+      "icon": "inv_sword_39.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
+    },
+    {
+      "id": 13066,
+      "name": "Wyrmslayer Spaulders",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Wyrmslayer Spaulders</b><br /><span class=\"q0\">Item Level 51</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Shoulder</td><th>Plate</th></tr></table>403 Armor<br />+12 Strength<br />+8 Agility<br />+12 Stamina<br />Durability 80 / 80<br />Requires Level 46<br /></td></tr></table>",
+      "icon": "inv_shoulder_24.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.17,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Shoulder"
+      ],
+      "types": [
+        "Plate"
+      ]
+    },
+    {
+      "id": 61800,
+      "name": "Chain Slippers of the Caldera",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Chain Slippers of the Caldera</b><br /><span class=\"q0\">Item Level 66</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Feet</td><th>Mail</th></tr></table>290 Armor<br />+10 Stamina<br />+15 Intellect<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 22.</span><br /><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br /></td></tr></table>",
+      "icon": "inv_boots_01.jpg",
+      "dropsFrom": [
+        {
+          "chance": 26.67,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 61797,
+      "name": "Ashen Nightslayer Belt",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Ashen Nightslayer Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Leather</th></tr></table>109 Armor<br />+9 Strength<br />+16 Agility<br />+15 Stamina<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /></td></tr></table>",
+      "icon": "inv_belt_23.jpg",
+      "dropsFrom": [
+        {
+          "chance": 22.22,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 61802,
+      "name": "Cuffs of Malevolence",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Cuffs of Malevolence</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Wrist</td><th>Leather</th></tr></table>86 Armor<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases attack power by 20.</span><br /><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to hit with melee and ranged attacks by 1%.</span><br /></td></tr></table>",
+      "icon": "inv_bracer_10.jpg",
+      "dropsFrom": [
+        {
+          "chance": 22.22,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 61811,
+      "name": "Heatproof Escutcheon",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Heatproof Escutcheon</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Off Hand</td><th>Shields</th></tr></table>2468 Armor<br />+6 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases healing done by up to 33 and damage done by up to 10 for all magical spells and effects.</span><br /></td></tr></table>",
+      "icon": "inv_shield_13.jpg",
+      "dropsFrom": [
+        {
+          "chance": 22.22,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
+    },
+    {
+      "id": 61794,
+      "name": "Ashen Belt of Might",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Ashen Belt of Might</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Plate</th></tr></table>409 Armor<br />+15 Strength<br />+15 Agility<br />+14 Stamina<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Reduces your chance to be dodged or parried by 1%.</span><br /></td></tr></table>",
+      "icon": "inv_belt_09.jpg",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Plate"
+      ]
+    },
+    {
+      "id": 61799,
+      "name": "Boots of Vitriol",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Boots of Vitriol</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Feet</td><th>Leather</th></tr></table>136 Armor<br />+20 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to hit with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Increased Defense +8.</span><br /></td></tr></table>",
+      "icon": "inv_boots_07.jpg",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 61806,
+      "name": "Dragon Slayer's Sword",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Dragon Slayer's Sword</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Two-Handed Swords</th></tr></table>126 - 317 Damage<br />(61.5 damage per second)<br />+22 Strength<br />+15 Fire Resistance<br />+15 Shadow Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Reduces your chance to be dodged or parried by 1%.</span><br /><span class=\"q2\">Equip: Attack Power increased by 50 when fighting Dragonkin.</span><br /></td></tr></table>",
+      "icon": "inv_sword_26.jpg",
+      "dropsFrom": [
+        {
+          "chance": 17.78,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
+    },
+    {
+      "id": 61796,
+      "name": "Ashen Giantstalker's Belt",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Ashen Giantstalker's Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Mail</th></tr></table>230 Armor<br />+16 Agility<br />+14 Stamina<br />+8 Intellect<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Restores 2 mana per 5 sec.</span><br /></td></tr></table>",
+      "icon": "inv_belt_28.jpg",
+      "dropsFrom": [
+        {
+          "chance": 15.56,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 61829,
+      "name": "Ring of Binding",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Ring of Binding</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br />Finger<br />40 Armor<br />+12 Stamina<br />+5 to All Resistances<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increased Defense +6.</span><br /></td></tr></table>",
+      "icon": "inv_jewelry_ring_13.jpg",
+      "dropsFrom": [
+        {
+          "chance": 15.56,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
+    },
+    {
+      "id": 18202,
+      "name": "Eskhandar's Left Claw",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Eskhandar's Left Claw</b><br /><span class=\"q0\">Item Level 66</span><br />Binds when picked up<br />Unique<br /><table width=\"100%\"><tr><td>Off Hand</td><th>Fist Weapons</th></tr></table>50 - 94 Damage<br />(48.0 damage per second)<br />+7 Agility<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Chance on hit: Slows enemy's movement by 60% and causes them to bleed for 225 damage over 30 sec.</span><br /><span class=\"q0\">(4) Set: 1% chance on a melee critical hit to call forth the spirit of Eskhandar to protect you in battle for 2 min.</span><br /></td></tr></table>",
+      "icon": "inv_misc_monsterclaw_04.jpg",
+      "dropsFrom": [
+        {
+          "chance": 13.33,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Fist"
+      ]
+    },
+    {
+      "id": 61795,
+      "name": "Ashen Earthfury Belt",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Ashen Earthfury Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Mail</th></tr></table>230 Armor<br />+17 Strength<br />+12 Stamina<br />+10 Intellect<br />+7 Fire Resistance<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with all spells and attacks by 1%.</span><br /></td></tr></table>",
+      "icon": "inv_belt_14.jpg",
+      "dropsFrom": [
+        {
+          "chance": 6.67,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 61828,
+      "name": "Premonition",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Premonition</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Staves</th></tr></table>82 - 152 Damage<br />(61.5 damage per second)<br />52 Armor<br />+4 - 8 Nature Damage<br />+12 Strength<br />+12 Agility<br />+18 Stamina<br />+10 Intellect<br />+8 Nature Resistance<br />+8 Arcane Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases your chance to dodge an attack by 1%.</span><br /><span class=\"q2\">Equip: Increased Defense +6.</span><br /></td></tr></table>",
+      "icon": "inv_staff_49.jpg",
+      "dropsFrom": [
+        {
+          "chance": 4.44,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Staff"
+      ]
+    },
+    {
+      "id": 9402,
+      "name": "Earthborn Kilt",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Earthborn Kilt</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Legs</td><th>Leather</th></tr></table>148 Armor<br />+12 Stamina<br />+29 Spirit<br />Durability 75 / 75<br />Requires Level 55<br /></td></tr></table>",
+      "icon": "inv_pants_12.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Legs"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 4696,
+      "name": "Lapidis Tankard of Tidesippe",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Lapidis Tankard of Tidesippe</b><br /><span class=\"q0\">Item Level 59</span><br />Binds when equipped<br />Held In Off-hand<br />-15 Agility<br />+5 Intellect<br />+16 Spirit<br />Requires Level 54<br /><span class=\"q2\">Use: Restores 1992 mana over 30 sec.  Must remain seated while drinking. (10 Min Cooldown)</span><br /></td></tr></table>",
+      "icon": "inv_drink_03.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Held In Off-hand"
+      ],
+      "types": []
+    },
+    {
+      "id": 61817,
+      "name": "Pattern: Onyxia Scale Mask",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Pattern: Onyxia Scale Mask</b><br />Binds when picked up<br />Requires Leatherworking (300)<br />Requires Dragonscale Leatherworking<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Teaches you how to make a Onyxia Scale Mask.</span><br /></td></tr></table>",
+      "icon": "inv_scroll_05.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": []
+    },
+    {
+      "id": 61825,
+      "name": "Pattern: Red Dragonscale Leggings",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Pattern: Red Dragonscale Leggings</b><br />Binds when picked up<br />Requires Leatherworking (300)<br />Requires Dragonscale Leatherworking<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Teaches you how to make a Red Dragonscale Leggings.</span><br /></td></tr></table>",
+      "icon": "inv_scroll_05.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": []
+    },
+    {
+      "id": 12716,
+      "name": "Plans: Helm of the Great Chief",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Plans: Helm of the Great Chief</b><br /><span class=\"q0\">Item Level 61</span><br />Requires Blacksmithing (300)<br /><span class=\"q2\">Use: Teaches you how to make a Helm of the Great Chief.</span><br /><span class=\"q3\">Helm of the Great Chief</span><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Head</td><th>Mail</th></tr></table>292 Armor<br />+12 Stamina<br />+30 Spirit<br />Durability 70 / 70<br />Requires Level 56<br />\nRequires Thorium Bar (40), Enchanted Thorium Bar (4), Large Opal (6), Huge Emerald (2)<br /></td></tr></table>",
+      "icon": "inv_scroll_03.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 2,
+          "npcId": 2
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Blacksmithing"
+      ]
+    },
+    {
+      "id": 61838,
+      "name": "Woven Shadowthread Chemise",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Woven Shadowthread Chemise</b><br /><span class=\"q0\">Item Level 66</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Chest</td><th>Cloth</th></tr></table>101 Armor<br />+21 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 44.</span><br /></td></tr></table>",
+      "icon": "inv_chest_cloth_71.jpg",
+      "dropsFrom": [
+        {
+          "chance": 28.89,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Chest"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 61832,
+      "name": "Scorched Cenarion Belt",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Scorched Cenarion Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Leather</th></tr></table>109 Armor<br />+10 Stamina<br />+18 Intellect<br />+6 Spirit<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 18.</span><br /><span class=\"q2\">Equip: Restores 4 mana per 5 sec.</span><br /></td></tr></table>",
+      "icon": "inv_belt_06.jpg",
+      "dropsFrom": [
+        {
+          "chance": 26.67,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Leather"
+      ]
+    },
+    {
+      "id": 61833,
+      "name": "Scorched Earthfury Belt",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Scorched Earthfury Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Mail</th></tr></table>230 Armor<br />+12 Stamina<br />+14 Intellect<br />+6 Spirit<br />+7 Fire Resistance<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 21.</span><br /><span class=\"q2\">Equip: Restores 4 mana per 5 sec.</span><br /></td></tr></table>",
+      "icon": "inv_belt_14.jpg",
+      "dropsFrom": [
+        {
+          "chance": 26.67,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Mail"
+      ]
+    },
+    {
+      "id": 61837,
+      "name": "Vis'kag, the Bloodletter",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Vis'kag, the Bloodletter</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>One-Hand</td><th>One-Handed Swords</th></tr></table>74 - 171 Damage<br />(47.1 damage per second)<br />+6 Agility<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Chance on hit: Delivers a fatal wound for 240 damage.</span><br /></td></tr></table>",
+      "icon": "inv_sword_18.jpg",
+      "dropsFrom": [
+        {
+          "chance": 24.44,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Sword"
+      ]
+    },
+    {
+      "id": 61798,
+      "name": "Boots of Contempt",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Boots of Contempt</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Feet</td><th>Cloth</th></tr></table>68 Armor<br />+11 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your casting speed and causes periodic effects to occur more frequently with spells by 2%.</span><br /><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br /><span class=\"q2\">Equip: Decreases the magical resistances of your spell targets by 10.</span><br /><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 15.</span><br /></td></tr></table>",
+      "icon": "inv_boots_cloth_10.jpg",
+      "dropsFrom": [
+        {
+          "chance": 20.0,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Feet"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 61793,
+      "name": "Ancient Cornerstone Grimoire",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Ancient Cornerstone Grimoire</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br />Off Hand<br />+12 Stamina<br />+15 Intellect<br />+12 Spirit<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to hit with all spells and attacks by 1%.</span><br /><span class=\"q2\">Use: Summons a Skeleton that will protect you for 1 min. (5 Min Cooldown)</span><br /></td></tr></table>",
+      "icon": "inv_misc_book_07.jpg",
+      "dropsFrom": [
+        {
+          "chance": 17.78,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Miscellaneous"
+      ]
+    },
+    {
+      "id": 61809,
+      "name": "Faceted Beryl Palm Stone",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Faceted Beryl Palm Stone</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br />Unique-Equipped<br />Trinket<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: When your spells critically strike you feel a sense of calm, causing your next spell within 10 sec to cost 50% less mana. This effect can only occur once every 15 seconds.</span><br /></td></tr></table>",
+      "icon": "inv_jewelcrafting_gem_41.jpg",
+      "dropsFrom": [
+        {
+          "chance": 15.56,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Trinket"
+      ],
+      "types": []
+    },
+    {
+      "id": 61831,
+      "name": "Scorched Arcanist Belt",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Scorched Arcanist Belt</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Waist</td><th>Cloth</th></tr></table>55 Armor<br />+11 Stamina<br />+20 Intellect<br />+10 Spirit<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 13.</span><br /></td></tr></table>",
+      "icon": "inv_belt_30.jpg",
+      "dropsFrom": [
+        {
+          "chance": 15.56,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Waist"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 61803,
+      "name": "Cuffs of Spite",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Cuffs of Spite</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Wrist</td><th>Cloth</th></tr></table>43 Armor<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with spells by 1%.</span><br /><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 15.</span><br /></td></tr></table>",
+      "icon": "inv_bracer_12.jpg",
+      "dropsFrom": [
+        {
+          "chance": 11.11,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 61830,
+      "name": "Sapphiron Drape",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Sapphiron Drape</b><br /><span class=\"q0\">Item Level 66</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Back</td><th>Cloth</th></tr></table>48 Armor<br />+8 Stamina<br />+14 Intellect<br />+6 Frost Resistance<br />+6 Arcane Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 20.</span><br /></td></tr></table>",
+      "icon": "inv_misc_cape_16.jpg",
+      "dropsFrom": [
+        {
+          "chance": 11.11,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 61834,
+      "name": "Scorched Felheart Bracer",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Scorched Felheart Bracer</b><br /><span class=\"q0\">Item Level 64</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Wrist</td><th>Cloth</th></tr></table>42 Armor<br />+11 Stamina<br />+9 Intellect<br />+7 Fire Resistance<br />Requires Level 59<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to hit with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases damage and healing done by magical spells and effects by up to 12.</span><br /><span class=\"q\">Looks like a belt, fashionable.</span><br /></td></tr></table>",
+      "icon": "inv_belt_13.jpg",
+      "dropsFrom": [
+        {
+          "chance": 8.89,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Wrist"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 61801,
+      "name": "Cloak of Forewarning",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Cloak of Forewarning</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Back</td><th>Cloth</th></tr></table>47 Armor<br />+10 Stamina<br />+10 Arcane Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Increases damage done by Arcane spells and effects by up to 25.</span><br /><span class=\"q2\">Equip: Increases damage done by Nature spells and effects by up to 25.</span><br /></td></tr></table>",
+      "icon": "inv_misc_cape_05.jpg",
+      "dropsFrom": [
+        {
+          "chance": 6.67,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Back"
+      ],
+      "types": [
+        "Cloth"
+      ]
+    },
+    {
+      "id": 13028,
+      "name": "Bludstone Hammer",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Bludstone Hammer</b><br /><span class=\"q0\">Item Level 61</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>59 - 110 Damage</td><th>Speed 2.10</th></tr></table>(40.24 damage per second)<br />+5 Stamina<br />+12 Spirit<br />Durability 90 / 90<br />Requires Level 56<br /></td></tr></table>",
+      "icon": "inv_hammer_19.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
+    },
+    {
+      "id": 13083,
+      "name": "Garrett Family Crest",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Garrett Family Crest</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Off Hand</td><th>Shield</th></tr></table>2121 Armor<br />39 Block<br />+5 Agility<br />+4 Intellect<br />+17 Spirit<br />Durability 100 / 100<br />Requires Level 57<br /></td></tr></table>",
+      "icon": "inv_shield_05.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Off Hand"
+      ],
+      "types": [
+        "Shield"
+      ]
+    },
+    {
+      "id": 23197,
+      "name": "Idol of the Moon",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Idol of the Moon</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when equipped<br />Unique<br /><table width=\"100%\"><tr><td>Relic</td><th>Idol</th></tr></table>Requires Level 60<br /><span class=\"q2\">Equip: Increases the spell power your Moonfire spell by 33.</span><br /></td></tr></table>",
+      "icon": "inv_relics_idolofrejuvenation.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Relic"
+      ],
+      "types": [
+        "Idol"
+      ]
+    },
+    {
+      "id": 13006,
+      "name": "Mass of McGowan",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Mass of McGowan</b><br /><span class=\"q0\">Item Level 62</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>One-Hand</td><th>Mace</th></tr></table><table width=\"100%\"><tr><td>80 - 149 Damage</td><th>Speed 2.80</th></tr></table>(40.89 damage per second)<br />+10 Strength<br />+10 Stamina<br />Durability 90 / 90<br />Requires Level 57<br /></td></tr></table>",
+      "icon": "inv_hammer_17.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "One-Hand"
+      ],
+      "types": [
+        "Mace"
+      ]
+    },
+    {
+      "id": 61815,
+      "name": "Pattern: Onyxia Scale Breastplate",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Pattern: Onyxia Scale Breastplate</b><br />Binds when picked up<br />Requires Leatherworking (300)<br />Requires Dragonscale Leatherworking<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Teaches you how to make a Onyxia Scale Breastplate.</span><br /></td></tr></table>",
+      "icon": "inv_scroll_05.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": []
+    },
+    {
+      "id": 61821,
+      "name": "Plans: Onyxia Scale Shield",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Plans: Onyxia Scale Shield</b><br />Binds when picked up<br />Requires Blacksmithing (300)<br />Requires Armorsmith<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: Teaches you how to make a Onyxia Scale Shield.</span><br /></td></tr></table>",
+      "icon": "inv_scroll_05.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": []
+    },
+    {
+      "id": 13060,
+      "name": "The Needler",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">The Needler</b><br /><span class=\"q0\">Item Level 60</span><br />Binds when equipped<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Polearm</th></tr></table><table width=\"100%\"><tr><td>90 - 136 Damage</td><th>Speed 2.20</th></tr></table>(51.36 damage per second)<br />Durability 100 / 100<br />Requires Level 55<br /><span class=\"q2\">Chance on hit: Wounds the target for 75 damage.</span><br /></td></tr></table>",
+      "icon": "inv_spear_08.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.22,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Polearm"
+      ]
+    },
+    {
+      "id": 90104,
+      "name": "Obsidian Scales",
+      "classes": [],
+      "quality": 0,
+      "tooltip": "<table><tr><td><b class=\"q0\">Obsidian Scales</b><br /></td></tr></table>",
+      "icon": "inv_misc_monsterscales_05.jpg",
+      "dropsFrom": [
+        {
+          "chance": 14.16,
+          "bossId": 4,
+          "npcId": 4
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": []
+    },
+    {
+      "id": 90101,
+      "name": "Talon Pendant",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Talon Pendant</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br />Neck<br />+12 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your casting speed and causes periodic effects to occur more frequently with spells by 1%.</span><br /><span class=\"q2\">Equip: Increases healing done by up to 28 and damage done by up to 9 for all magical spells and effects.</span><br /></td></tr></table>",
+      "icon": "inv_jewelry_necklace_34.jpg",
+      "dropsFrom": [
+        {
+          "chance": 2.65,
+          "bossId": 4,
+          "npcId": 4
+        }
+      ],
+      "slots": [
+        "Neck"
+      ],
+      "types": []
+    },
+    {
+      "id": 17683,
+      "name": "Book: Gift of the Wild II",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Book: Gift of the Wild II</b><br /><span class=\"q0\">Item Level 60</span><br />Classes: Druid<br />Requires Level 60<br /><span class=\"q2\">Use: Teaches Gift of the Wild (Rank 2).</span><br /><span class=\"q2\">Gives the Gift of the Wild to all party and raid members, increasing armor by 285, all attributes by 12 and all resistances by 20 for 1 hour.</span><br /></td></tr></table>",
+      "icon": "inv_misc_book_11.jpg",
+      "dropsFrom": [
+        {
+          "chance": 1.77,
+          "bossId": 4,
+          "npcId": 4
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Book"
+      ]
+    },
+    {
+      "id": 17414,
+      "name": "Codex: Prayer of Fortitude II",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Codex: Prayer of Fortitude II</b><br /><span class=\"q0\">Item Level 60</span><br />Classes: Priest<br />Requires Level 60<br /><span class=\"q2\">Use: Teaches Prayer of Fortitude (Rank 2).</span><br /><span class=\"q2\">Power infuses all party and raid members, increasing their Stamina by 54 for 1 hour.</span><br /></td></tr></table>",
+      "icon": "inv_misc_book_09.jpg",
+      "dropsFrom": [
+        {
+          "chance": 1.77,
+          "bossId": 4,
+          "npcId": 4
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Book"
+      ]
+    },
+    {
+      "id": 90100,
+      "name": "Dragonbone Ring",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Dragonbone Ring</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br />Unique-Equipped<br />Finger<br />+14 Strength<br />+8 Stamina<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to hit with melee and ranged attacks by 1%.</span><br /><span class=\"q2\">Equip: Reduces your chance to be dodged or parried by 1%.</span><br /></td></tr></table>",
+      "icon": "inv_jewelry_ring_69.jpg",
+      "dropsFrom": [
+        {
+          "chance": 0.88,
+          "bossId": 4,
+          "npcId": 4
+        }
+      ],
+      "slots": [
+        "Finger"
+      ],
+      "types": []
+    },
+    {
+      "id": 90102,
+      "name": "Partisane",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q4\">Partisane</b><br /><span class=\"q0\">Item Level 65</span><br />Binds when picked up<br /><table width=\"100%\"><tr><td>Two-Hand</td><th>Polearms</th></tr></table>165 - 302 Damage<br />(61.4 damage per second)<br />+25 Agility<br />+12 Stamina<br />+10 Fire Resistance<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q2\">Equip: Improves your chance to get a critical strike with melee and ranged attacks by 2%.</span><br /></td></tr></table>",
+      "icon": "inv_weapon_halberd13.jpg",
+      "dropsFrom": [
+        {
+          "chance": 0.88,
+          "bossId": 4,
+          "npcId": 4
+        }
+      ],
+      "slots": [
+        "Two-Hand"
+      ],
+      "types": [
+        "Polearm"
+      ]
+    },
+    {
+      "id": 90105,
+      "name": "Drakonid Horn",
+      "classes": [],
+      "quality": 0,
+      "tooltip": "<table><tr><td><b class=\"q0\">Drakonid Horn</b><br /></td></tr></table>",
+      "icon": "inv_misc_monsterhorn_08.jpg",
+      "dropsFrom": [
+        {
+          "chance": 16.33,
+          "bossId": 4,
+          "npcId": 5
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": []
+    },
+    {
+      "id": 90103,
+      "name": "Fireweave",
+      "classes": [],
+      "quality": 0,
+      "tooltip": "<table><tr><td><b class=\"q0\">Fireweave</b><br /></td></tr></table>",
+      "icon": "inv_fabric_spellfire.jpg",
+      "dropsFrom": [
+        {
+          "chance": 11.39,
+          "bossId": 4,
+          "npcId": 6
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": []
+    },
+    {
+      "id": 18600,
+      "name": "Tome of Arcane Brilliance",
+      "classes": [],
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Tome of Arcane Brilliance</b><br /><span class=\"q0\">Item Level 56</span><br />Classes: Mage<br />Requires Level 56<br /><span class=\"q2\">Use: Teaches Arcane Brilliance (Rank 1).</span><br /><span class=\"q2\">Infuses all  party and raid members with brilliance, increasing their Intellect by 31 for 1 hour.</span><br /></td></tr></table>",
+      "icon": "inv_misc_book_07.jpg",
+      "dropsFrom": [
+        {
+          "chance": 1.27,
+          "bossId": 4,
+          "npcId": 6
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": [
+        "Book"
+      ]
+    },
+    {
+      "id": 15407,
+      "name": "Scale of Onyxia",
+      "classes": [],
+      "quality": 1,
+      "tooltip": "<table><tr><td><b class=\"q1\">Scale of Onyxia</b><br /></td></tr></table>",
+      "icon": "inv_misc_monsterscales_09.jpg",
+      "dropsFrom": [
+        {
+          "chance": 100.0,
+          "bossId": 1,
+          "npcId": 1
+        }
+      ],
+      "slots": [
+        "Non-equippable"
+      ],
+      "types": []
+    }
+  ],
+  "bosses": [
+    {
+      "id": 1,
+      "name": "Onyxia"
+    },
+    {
+      "id": 2,
+      "name": "Ortorg the Ardent"
+    },
+    {
+      "id": 3,
+      "name": "Atressian"
+    },
+    {
+      "id": 4,
+      "name": "Trash"
+    }
+  ],
+  "npcs": [
+    {
+      "id": 1,
+      "name": "Onyxia",
+      "bossId": 1
+    },
+    {
+      "id": 2,
+      "name": "Ortorg the Ardent",
+      "bossId": 2
+    },
+    {
+      "id": 3,
+      "name": "Atressian",
+      "bossId": 3
+    },
+    {
+      "id": 4,
+      "name": "Onyxian Warder",
+      "bossId": 4
+    },
+    {
+      "id": 5,
+      "name": "Onyxian Honorguard",
+      "bossId": 4
+    },
+    {
+      "id": 6,
+      "name": "Onyxian Flameweaver",
+      "bossId": 4
+    }
+  ]
+}
