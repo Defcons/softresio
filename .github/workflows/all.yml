@@ -14,13 +14,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Validate JSON files
         run: |
-          for f in backend/instances/*.json; do
+          # Files were reorganized into per-server subdirs (epoch/, turtlewow/) — recurse.
+          while IFS= read -r f; do
             if ! jq -e '.' "$f" > /dev/null; then
               echo "$f is invalid"
               exit 1
             fi
             echo "$f is valid"
-          done
+          done < <(find backend/instances -type f -name '*.json')
   frontend-types:
     name: Frontend Types
     runs-on: ubuntu-latest
