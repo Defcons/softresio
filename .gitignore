@@ -1,1 +1,4 @@
 .env
+# Local session-handoff doc with internal infra details (IPs, tunnel ID, firewall rule).
+# Must not be pushed to the public fork.
+SESSION_CONTEXT.md
