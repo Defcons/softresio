@@ -51,10 +51,7 @@ export const CreateRaid = (
   const [selectedGuildId, setSelectedGuildId] = useState<string>()
   const [hardReserves, setHardReserves] = useState<number[]>([])
   const [selectedServer, setSelectedServer] = useState<GameServer | null>(
-    () => {
-      const saved = localStorage.getItem("selectedServer")
-      return (saved === "turtlewow" || saved === "epoch") ? saved : null
-    },
+    "epoch",
   )
 
   const [description, setDescription] = useState("")
