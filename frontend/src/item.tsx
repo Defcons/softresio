@@ -90,7 +90,7 @@ export const ItemNameAndIcon = (
           onClick={(e) => {
             if (allowImageClick) {
               globalThis.open(
-                `https://database.turtlecraft.gg/?item=${item.id}`,
+                `https://epochhead.com/?item=${item.id}`,
               )
               e.stopPropagation()
             }
