@@ -14,7 +14,12 @@ import {
 } from "@mantine/core"
 import { DateTimePicker } from "@mantine/dates"
 import { modals } from "@mantine/modals"
-import { instanceFilter, instanceOrder, renderInstance, SERVER_LABELS } from "./instances.tsx"
+import {
+  instanceFilter,
+  instanceOrder,
+  renderInstance,
+  SERVER_LABELS,
+} from "./instances.tsx"
 import { ItemSelect } from "./item-select.tsx"
 import type {
   CreateEditRaidRequest,
@@ -212,7 +217,9 @@ export const CreateRaid = (
             withAsterisk={instance == undefined}
             label="Instance"
             searchable
-            placeholder={selectedServer ? "Select instance" : "Select a server first"}
+            placeholder={selectedServer
+              ? "Select instance"
+              : "Select a server first"}
             disabled={!selectedServer}
             maxDropdownHeight={1000}
             data={filteredInstances?.filter((e) => e.raid != worldBoss).map(
