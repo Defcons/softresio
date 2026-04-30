@@ -50,39 +50,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": 25,
-    "name": "Lord Kazzak",
-    "shortname": "kaze",
-    "raid": false,
-    "bosses": [
-      {
-        "name": "Lord Kazzak",
-        "npcs": [
-          {
-            "name": "Lord Kazzak",
-            "link": "https://epochhead.com/?npc=12397"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 26,
-    "name": "Volchan",
-    "shortname": "volc",
-    "raid": false,
-    "bosses": [
-      {
-        "name": "Volchan",
-        "npcs": [
-          {
-            "name": "Volchan",
-            "link": "https://epochhead.com/?npc=46602"
-          }
-        ]
-      }
-    ]
   }
 ]

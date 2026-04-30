@@ -111,7 +111,7 @@ export const ItemNameAndIcon = (
                 radius="sm"
                 h={24}
                 w={24}
-                src={`https://database.turtlecraft.gg/images/icons/medium/${item.icon}`}
+                src={`https://wow.zamimg.com/images/wow/icons/medium/${item.icon}`}
               />
             )}
         </Box>

@@ -3,7 +3,6 @@ import { Title } from "@mantine/core"
 import type { GameServer, Instance } from "../shared/types.ts"
 
 export const SERVER_LABELS: Record<GameServer, string> = {
-  turtlewow: "Turtle WoW",
   epoch: "Project Epoch",
 }
 
