@@ -6,14 +6,12 @@ import {
   Divider,
   Drawer,
   Group,
-  Image,
   ScrollArea,
   Stack,
   Tooltip,
 } from "@mantine/core"
 import type { SignOutResponse, User } from "../shared/types.ts"
 import { useDisclosure } from "@mantine/hooks"
-import logo from "./assets/logo-orange.png"
 import classes from "../css/menu.module.css"
 import { NavLink, useNavigate } from "react-router"
 import { IconBrandDiscordFilled } from "@tabler/icons-react"
@@ -55,7 +53,7 @@ const MenuButtons = (
   return (
     <>
       <Tooltip label="If you experience any issues please let us know">
-        <Badge color="orange" radius="xs">Beta</Badge>
+        <Badge color="epogGold" radius="xs">Beta</Badge>
       </Tooltip>
       <Button
         variant="default"
@@ -129,9 +127,15 @@ export const Menu = (
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <Group>
-            <NavLink to="/">
-              <Image src={logo} h={40} w="auto" />
+            <NavLink to="/" className="epog-brand">
+              Epog Logs<span className="sub">· SR</span>
             </NavLink>
+            <a
+              href="https://epoglogs.com"
+              className="epog-back-link"
+            >
+              ← epoglogs.com
+            </a>
             <Group visibleFrom="sm">
               <MenuButtons />
             </Group>
