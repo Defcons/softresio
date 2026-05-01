@@ -1,4 +1,20 @@
-.env
 # Local session-handoff doc with internal infra details (IPs, tunnel ID, firewall rule).
 # Must not be pushed to the public fork.
 SESSION_CONTEXT.md
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+secrets/
+credentials.json
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+.claude/
