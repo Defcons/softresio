@@ -47,11 +47,13 @@ export const SrListElement = (
     admins,
     user,
     owner,
+    isAdmin,
     editAdmin,
     deleteSr,
     locked,
     srPluses,
     guildId,
+    onSrPlusChange,
   }: {
     srPluses: SrPlus[]
     visible: boolean
@@ -62,8 +64,10 @@ export const SrListElement = (
     admins: User[]
     owner: User
     user: User
+    isAdmin: boolean
     editAdmin: (user: User, remove: boolean) => void
     deleteSr: () => void
+    onSrPlusChange: () => void
     guildId?: string
   },
 ) => {
@@ -221,16 +225,18 @@ export const SrListElement = (
                 >
                   {sumSrPlus(srPluses)}
                 </Button>
-                {guildId && srPluses.length > 0
+                {guildId
                   ? (
                     <SrPlusLog
                       items={items}
                       open={logOpen}
                       onClose={() => setLogOpen(false)}
+                      onSuccess={onSrPlusChange}
                       characterName={attendee.character.name}
                       guildId={guildId}
                       itemId={item.id}
                       srPluses={srPluses}
+                      isAdmin={isAdmin}
                     />
                   )
                   : null}
@@ -258,11 +264,13 @@ export const SrListElement = (
 }
 
 export const SrList = (
-  { raid, items, user, editAdmin, deleteSr, srPluses }: {
+  { raid, items, user, editAdmin, deleteSr, srPluses, isAdmin, onSrPlusChange }: {
     srPluses: SrPlus[]
     raid: Raid
     items: Item[]
     user: User
+    isAdmin: boolean
+    onSrPlusChange: () => void
     editAdmin: (user: User, remove: boolean) => void
     deleteSr: (user: User, itemId: number) => void
   },
@@ -432,12 +440,14 @@ export const SrList = (
             user={user}
             admins={raid.admins}
             owner={raid.owner}
+            isAdmin={isAdmin}
             editAdmin={editAdmin}
             srPluses={srPluses?.filter((sr) =>
               sr.characterName == e.attendee.character.name &&
               sr.itemId == e.softReserve.itemId
             )}
             deleteSr={() => deleteSr(e.attendee.user, e.softReserve.itemId)}
+            onSrPlusChange={onSrPlusChange}
           />
         ))}
       </Table.Tbody>
