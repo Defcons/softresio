@@ -2084,19 +2084,19 @@
       "tooltip": "<table><tr><td><b class=\"q3\">Formula: Enchant Weapon - Dragon's Wisdom</b><br />Binds when picked up<br />Requires Enchanting (300)<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: <a href=\"?spell=86794\" class=\"q2\">Teaches you how to permanently enchant a melee weapon to cause your spell casts to occasionally grant the wisdom of dragons, increasing intellect by 60 and restoring 80 mana every 5 seconds for 15 seconds.</a></span><br /></td></tr></table>",
       "icon": "inv_misc_note_01.png",
       "dropsFrom": [
-    {
-      "chance": 4.0,
-      "bossId": 3,
-      "npcId": 3
-    }
-    ],
+        {
+          "chance": 4.0,
+          "bossId": 3,
+          "npcId": 3
+        }
+      ],
       "slots": [
-      "Non-equippable"
-  ],
-  "types": [
-    "Enchanting"
-  ]
-    }
+        "Non-equippable"
+      ],
+      "types": [
+        "Enchanting"
+      ]
+    },
     {
       "id": 13060,
       "name": "The Needler",
