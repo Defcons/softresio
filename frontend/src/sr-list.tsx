@@ -264,16 +264,17 @@ export const SrListElement = (
 }
 
 export const SrList = (
-  { raid, items, user, editAdmin, deleteSr, srPluses, isAdmin, onSrPlusChange }: {
-    srPluses: SrPlus[]
-    raid: Raid
-    items: Item[]
-    user: User
-    isAdmin: boolean
-    onSrPlusChange: () => void
-    editAdmin: (user: User, remove: boolean) => void
-    deleteSr: (user: User, itemId: number) => void
-  },
+  { raid, items, user, editAdmin, deleteSr, srPluses, isAdmin, onSrPlusChange }:
+    {
+      srPluses: SrPlus[]
+      raid: Raid
+      items: Item[]
+      user: User
+      isAdmin: boolean
+      onSrPlusChange: () => void
+      editAdmin: (user: User, remove: boolean) => void
+      deleteSr: (user: User, itemId: number) => void
+    },
 ) => {
   const [classFilter, setClassFilter] = useState<string>()
   const [nameFilter, setNameFilter] = useState<string>()
