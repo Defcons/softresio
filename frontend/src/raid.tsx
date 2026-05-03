@@ -425,6 +425,14 @@ export const RaidElement = (
                 deleteSr={deleteSr}
                 editAdmin={editAdmin}
                 srPluses={srPluses || []}
+                isAdmin={isAdmin}
+                onSrPlusChange={() => {
+                  fetch(`/api/srplus/${raid.id}`)
+                    .then((r) => r.json())
+                    .then((j: GetSrPlusResponse) => {
+                      if (j.data) setSrPluses(j.data)
+                    })
+                }}
               />
             )
             : null}
