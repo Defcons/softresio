@@ -55,7 +55,7 @@
         "Druid"
       ],
       "quality": 4,
-      "tooltip": "<table><tr><td><b class=\"q0\">Helm of the Glorious Defender</b><br />Binds when picked up<br />Classes: Warrior, Hunter, Druid<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>",
+      "tooltip": "<table><tr><td><b class=\"q4\">Helm of the Glorious Defender</b><br />Binds when picked up<br />Classes: Warrior, Hunter, Druid<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>",
       "icon": "inv_helmet_24.jpg",
       "dropsFrom": [
         {
@@ -120,7 +120,7 @@
         "Mage"
       ],
       "quality": 4,
-      "tooltip": "<table><tr><td><b class=\"q0\">Helm of the Glorious Hero</b><br />Binds when picked up<br />Classes: Priest, Shaman, Mage<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>",
+      "tooltip": "<table><tr><td><b class=\"q4\">Helm of the Glorious Hero</b><br />Binds when picked up<br />Classes: Priest, Shaman, Mage<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>",
       "icon": "inv_helmet_24.jpg",
       "dropsFrom": [
         {
@@ -143,7 +143,7 @@
         "Warlock"
       ],
       "quality": 4,
-      "tooltip": "<table><tr><td><b class=\"q0\">Helm of the Glorious Champion</b><br />Binds when picked up<br />Classes: Paladin, Rogue, Warlock<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>",
+      "tooltip": "<table><tr><td><b class=\"q4\">Helm of the Glorious Champion</b><br />Binds when picked up<br />Classes: Paladin, Rogue, Warlock<br />Requires Level 60<br /></td></tr></table><table><tr><td><span class=\"q\">Tier Set Token - Inspect to see what this may be reforged to.</span><br /></td></tr></table>",
       "icon": "inv_helmet_24.jpg",
       "dropsFrom": [
         {
@@ -1656,7 +1656,9 @@
       "slots": [
         "Non-equippable"
       ],
-      "types": []
+      "types": [
+        "Leatherworking"
+      ]
     },
     {
       "id": 61825,
@@ -1675,7 +1677,9 @@
       "slots": [
         "Non-equippable"
       ],
-      "types": []
+      "types": [
+        "Leatherworking"
+      ]
     },
     {
       "id": 12716,
@@ -2049,7 +2053,9 @@
       "slots": [
         "Non-equippable"
       ],
-      "types": []
+      "types": [
+        "Leatherworking"
+      ]
     },
     {
       "id": 61821,
@@ -2070,6 +2076,27 @@
       ],
       "types": []
     },
+    {
+      "id": 62148,
+      "name": "Formula: Enchant Weapon - Dragon's Wisdom",
+      "classes": [],
+      "quality": 4,
+      "tooltip": "<table><tr><td><b class=\"q3\">Formula: Enchant Weapon - Dragon's Wisdom</b><br />Binds when picked up<br />Requires Enchanting (300)<br /></td></tr></table><table><tr><td><span class=\"q2\">Use: <a href=\"?spell=86794\" class=\"q2\">Teaches you how to permanently enchant a melee weapon to cause your spell casts to occasionally grant the wisdom of dragons, increasing intellect by 60 and restoring 80 mana every 5 seconds for 15 seconds.</a></span><br /></td></tr></table>",
+      "icon": "inv_misc_note_01.png",
+      "dropsFrom": [
+    {
+      "chance": 4.0,
+      "bossId": 3,
+      "npcId": 3
+    }
+    ],
+      "slots": [
+      "Non-equippable"
+  ],
+  "types": [
+    "Enchanting"
+  ]
+    }
     {
       "id": 13060,
       "name": "The Needler",
@@ -2095,8 +2122,8 @@
       "id": 90104,
       "name": "Obsidian Scales",
       "classes": [],
-      "quality": 0,
-      "tooltip": "<table><tr><td><b class=\"q0\">Obsidian Scales</b><br /></td></tr></table>",
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Obsidian Scales</b><br /></td></tr></table>",
       "icon": "inv_misc_monsterscales_05.jpg",
       "dropsFrom": [
         {
@@ -2215,8 +2242,8 @@
       "id": 90105,
       "name": "Drakonid Horn",
       "classes": [],
-      "quality": 0,
-      "tooltip": "<table><tr><td><b class=\"q0\">Drakonid Horn</b><br /></td></tr></table>",
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Drakonid Horn</b><br /></td></tr></table>",
       "icon": "inv_misc_monsterhorn_08.jpg",
       "dropsFrom": [
         {
@@ -2274,8 +2301,8 @@
       "id": 15407,
       "name": "Scale of Onyxia",
       "classes": [],
-      "quality": 1,
-      "tooltip": "<table><tr><td><b class=\"q1\">Scale of Onyxia</b><br /></td></tr></table>",
+      "quality": 3,
+      "tooltip": "<table><tr><td><b class=\"q3\">Scale of Onyxia</b><br /></td></tr></table>",
       "icon": "inv_misc_monsterscales_09.jpg",
       "dropsFrom": [
         {
