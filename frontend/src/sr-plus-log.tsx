@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import type {
   Item,
   SrPlus,
@@ -21,19 +21,30 @@ import { formatTime, raidIdToUrl, sumSrPlus } from "../shared/utils.ts"
 import { nothingItem } from "./mock-item.ts"
 
 export const SrPlusLog = (
-  { srPluses, open, onClose, characterName, itemId, guildId, items }: {
+  { srPluses, open, onClose, onSuccess, characterName, itemId, guildId, items, isAdmin }: {
     srPluses: SrPlus[]
     characterName: string
     items: Item[]
     itemId: number
     guildId: string
     open: boolean
+    isAdmin: boolean
     onClose: () => void
+    onSuccess: () => void
   },
 ) => {
   const [changeSrPlus, setChangeSrPlus] = useState(sumSrPlus(srPluses))
+  const [submitting, setSubmitting] = useState(false)
+
+  useEffect(() => {
+    if (open) {
+      setChangeSrPlus(sumSrPlus(srPluses))
+    }
+  }, [open, srPluses])
 
   const submit = () => {
+    if (submitting) return
+    setSubmitting(true)
     const request: SrPlusManualChangeRequest = {
       guildId,
       characterName,
@@ -49,17 +60,20 @@ export const SrPlusLog = (
           if (j.error) {
             alert(j.error.message)
           } else if (j.data) {
-            alert("SR+ set")
+            onSuccess()
+            onClose()
           }
         },
-      )
+      ).finally(() => {
+        setSubmitting(false)
+      })
   }
 
   return (
     <Modal
       title={
         <Text size="sm">
-          <b>{srPluses[0]?.characterName}</b>
+          <b>{characterName}</b>
           {"'s soft-reserves of "}
           <b
             className={`q${
@@ -77,26 +91,29 @@ export const SrPlusLog = (
       withCloseButton
       padding="sm"
     >
-      <Stack mb="md" display="none">
-        <Group justify="right">
-          <NumberInput
-            w={100}
-            value={changeSrPlus}
-            onChange={(e) => setChangeSrPlus(Number(e))}
-            step={10}
-            max={1000}
-          />
-        </Group>
-        <Group justify="right">
-          <Button
-            w={100}
-            onClick={submit}
-            disabled={changeSrPlus === (sumSrPlus(srPluses))}
-          >
-            Set SR+
-          </Button>
-        </Group>
-      </Stack>
+      {isAdmin && (
+        <Stack mb="md">
+          <Group justify="right">
+            <NumberInput
+              w={100}
+              value={changeSrPlus}
+              onChange={(e) => setChangeSrPlus(Number(e))}
+              step={10}
+              max={1000}
+            />
+          </Group>
+          <Group justify="right">
+            <Button
+              w={100}
+              onClick={submit}
+              disabled={submitting || changeSrPlus === (sumSrPlus(srPluses))}
+              loading={submitting}
+            >
+              Set SR+
+            </Button>
+          </Group>
+        </Stack>
+      )}
       <Table>
         <Table.Thead>
           <Table.Tr>
