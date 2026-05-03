@@ -21,7 +21,17 @@ import { formatTime, raidIdToUrl, sumSrPlus } from "../shared/utils.ts"
 import { nothingItem } from "./mock-item.ts"
 
 export const SrPlusLog = (
-  { srPluses, open, onClose, onSuccess, characterName, itemId, guildId, items, isAdmin }: {
+  {
+    srPluses,
+    open,
+    onClose,
+    onSuccess,
+    characterName,
+    itemId,
+    guildId,
+    items,
+    isAdmin,
+  }: {
     srPluses: SrPlus[]
     characterName: string
     items: Item[]
