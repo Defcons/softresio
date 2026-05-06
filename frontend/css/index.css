@@ -6,133 +6,154 @@
   --border: #2d3748;
   --accent: #c89b3c;
   --accent-hover: #e0b557;
+  --text: #e2e8f0;
   --text-muted: #718096;
 }
 
 body {
   background-color: var(--bg) !important;
+  color: var(--text);
 }
 
-/* Header brand: ⚔ Epog Logs · 📋 Soft Reserves — mirrors the epoglogs.com h1. */
-.epog-brand {
-  font-family: "Segoe UI", system-ui, sans-serif;
-  font-weight: 700;
+/* ============================================================================
+   Header — lifted verbatim from epoglogs.com/styles.css to keep the two sites
+   pixel-identical. Any change here should be made to epoglogs first, then
+   copied across (and vice versa) — they are intentionally a single design.
+   ============================================================================ */
+
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 56px;
+}
+.header-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+header h1 {
   font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
   letter-spacing: 0.5px;
+  margin: 0;
+  margin-right: auto;
+}
+header .subtitle {
+  color: var(--text-muted);
+  font-size: 12px;
+  flex: 1;
+}
+
+.header-rankings-btn {
   color: var(--accent);
   text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
   white-space: nowrap;
-}
-.epog-brand:hover {
-  color: var(--accent-hover);
-}
-.epog-brand .sub {
-  color: var(--text-muted);
-  font-weight: 500;
-  margin-left: 8px;
-  font-size: 13px;
-}
-
-/* Pill nav buttons — same shape, weight, and hover behaviour as
-   .header-rankings-btn on epoglogs.com. Used for top-level nav and the
-   "back to epoglogs" tool menu links. */
-.epog-pill {
+  padding: 4px 10px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 5px;
+  background: rgba(212, 175, 55, 0.08);
+  transition: all 0.12s;
+  margin-right: 4px;
+  cursor: pointer;
+  font-family: inherit;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--accent);
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 6px 12px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background 0.12s, border-color 0.12s, color 0.12s;
-  white-space: nowrap;
+  gap: 4px;
 }
-.epog-pill:hover {
+.header-rankings-btn:hover {
   background: rgba(212, 175, 55, 0.18);
   border-color: var(--accent);
-  color: var(--accent);
 }
-.epog-pill.is-primary {
+.header-rankings-btn.active {
   background: var(--accent);
-  border-color: var(--accent);
   color: #0e1117;
+  border-color: var(--accent);
+  box-shadow: 0 1px 4px rgba(212, 175, 55, 0.35);
 }
-.epog-pill.is-primary:hover {
-  background: var(--accent-hover);
-  border-color: var(--accent-hover);
+.header-rankings-btn.active:hover {
+  background: var(--accent);
   color: #0e1117;
 }
 
-/* Tools dropdown — opens on hover/focus of the wrapper. Matches the
-   .header-tools-menu pattern on epoglogs.com. */
-.epog-tools-wrap {
+.header-tools-wrap {
   position: relative;
   display: inline-block;
+  margin-right: 4px;
 }
-.epog-tools-menu {
-  display: none;
+.header-tools-wrap .header-tools-btn {
+  cursor: pointer;
+  margin-right: 0;
+  font-family: inherit;
+}
+.header-tools-arrow {
+  margin-left: 4px;
+  font-size: 9px;
+  opacity: 0.85;
+  display: inline-block;
+  transition: transform 0.12s;
+}
+.header-tools-wrap.open .header-tools-arrow {
+  transform: rotate(180deg);
+}
+.header-tools-menu {
   position: absolute;
-  top: 100%;
-  right: 0;
-  margin-top: 6px;
+  top: calc(100% + 4px);
+  left: 0;
+  width: max-content;
+  min-width: 120px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 6px;
-  min-width: 180px;
-  z-index: 20;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
   padding: 4px;
+  z-index: 200;
+  display: none;
 }
-.epog-tools-wrap:hover .epog-tools-menu,
-.epog-tools-wrap:focus-within .epog-tools-menu {
+.header-tools-wrap.open .header-tools-menu {
   display: block;
 }
-.epog-tools-menu a {
+.header-tools-menu a {
   display: block;
-  padding: 8px 12px;
-  font-size: 13px;
-  color: var(--text-muted);
+  color: var(--accent);
   text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 12px;
   border-radius: 4px;
+  white-space: nowrap;
 }
-.epog-tools-menu a:hover {
+.header-tools-menu a:hover {
   background: rgba(212, 175, 55, 0.18);
   color: var(--accent);
 }
 
-/* Auth widget — avatar + username + logout icon, mirrors the .auth-user
-   layout on epoglogs.com (see js/auth.js renderLoggedIn). */
-.epog-auth-user {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0 6px;
-  color: var(--text-muted);
-  font-size: 12px;
-}
-.epog-auth-avatar {
-  border-radius: 50%;
-  border: 1px solid var(--border);
-}
-.epog-auth-name {
-  color: #e2e8f0;
-  font-weight: 600;
-}
-.epog-auth-logout {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  cursor: pointer;
-  font-size: 14px;
-  padding: 2px 4px;
-  line-height: 1;
-}
-.epog-auth-logout:hover {
-  color: var(--accent);
+/* Mobile header compression — matches epoglogs.com @media (max-width: 480px) */
+@media (max-width: 480px) {
+  .header-rankings-btn {
+    padding: 3px 6px;
+    font-size: 11px;
+    margin-right: 0;
+  }
+  header h1 {
+    font-size: 14px;
+  }
+  header .subtitle {
+    display: none;
+  }
+  .header-inner {
+    padding: 0 12px;
+    gap: 6px;
+  }
 }
 
 /* Footer — compact inline strip matching epoglogs.com. */
