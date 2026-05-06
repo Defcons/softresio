@@ -10,17 +10,12 @@ import { LootBrowser } from "./loot-browser.tsx"
 import "@mantine/core/styles.css"
 import "@mantine/dates/styles.css"
 import { ModalsProvider } from "@mantine/modals"
-import { IconBrandGithubFilled } from "@tabler/icons-react"
 import {
-  Anchor,
   createTheme,
-  Divider,
   Grid,
-  Group,
   MantineProvider,
   Stack,
 } from "@mantine/core"
-import { useHover } from "@mantine/hooks"
 import { Menu } from "./menu.tsx"
 import { BrowserRouter, Link, Route, Routes } from "react-router"
 import { About, Privacy, Terms } from "./legal.tsx"
@@ -48,7 +43,6 @@ const theme = createTheme({
 })
 
 function App() {
-  const { hovered: githubHovered, ref: githubRef } = useHover()
   const [user, setUser] = useState<User>()
   const [discordClientId, setDiscordClientId] = useState<string>()
   const [discordLoginEnabled, setDiscordLoginEnabled] = useState<boolean>()
@@ -131,66 +125,25 @@ function App() {
                 </Stack>
               )
               : null}
-            <Stack>
-              <Divider />
-              <Group gap="sm" mb="md" justify="center">
-                <Group gap="xs" mx="lg" ref={githubRef}>
-                  <IconBrandGithubFilled
-                    size={18}
-                    color={githubHovered
-                      ? "var(--mantine-primary-color-filled)"
-                      : "grey"}
-                  />
-                  <Anchor
-                    size="sm"
-                    href="https://github.com/Defcons/softresio"
-                    underline="never"
-                    c={githubHovered ? "lightgray" : "grey"}
-                  >
-                    Source (AGPL-3.0) — fork of softres.io
-                  </Anchor>
-                </Group>
-                <Group gap="xs" mx="lg">
-                  <Anchor
-                    size="sm"
-                    component={Link}
-                    to="/about"
-                    underline="never"
-                    c="grey"
-                  >
-                    About
-                  </Anchor>
-                  <Anchor
-                    size="sm"
-                    component={Link}
-                    to="/privacy"
-                    underline="never"
-                    c="grey"
-                  >
-                    Privacy
-                  </Anchor>
-                  <Anchor
-                    size="sm"
-                    component={Link}
-                    to="/terms"
-                    underline="never"
-                    c="grey"
-                  >
-                    Terms
-                  </Anchor>
-                </Group>
-                <Group gap="xs" mx="lg">
-                  <Anchor
-                    size="sm"
-                    href="https://epoglogs.com"
-                    underline="never"
-                    c="grey"
-                  >
-                    ← Back to Epog Logs
-                  </Anchor>
-                </Group>
-              </Group>
-            </Stack>
+            <footer className="epog-footer">
+              <span>© 2026 Epog Logs</span>
+              <span className="sep">·</span>
+              <span>Made by Defcon</span>
+              <span className="sep">·</span>
+              <Link to="/about">About</Link>
+              <Link to="/privacy">Privacy</Link>
+              <Link to="/terms">Terms</Link>
+              <span className="sep">·</span>
+              <a
+                href="https://github.com/Defcons/softresio"
+                target="_blank"
+                rel="noopener"
+              >
+                Source (AGPL-3.0)
+              </a>
+              <span className="sep">·</span>
+              <a href="https://epoglogs.com">← Back to Epog Logs</a>
+            </footer>
           </Stack>
         </BrowserRouter>
       </ModalsProvider>
