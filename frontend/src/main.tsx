@@ -22,7 +22,9 @@ import {
 } from "@mantine/core"
 import { useHover } from "@mantine/hooks"
 import { Menu } from "./menu.tsx"
-import { BrowserRouter, Route, Routes } from "react-router"
+import { BrowserRouter, Link, Route, Routes } from "react-router"
+import { About, Privacy, Terms } from "./legal.tsx"
+import { AdSlot } from "./ad-slot.tsx"
 
 // Epog Logs gold palette — anchored on #c89b3c (epoglogs --accent), 10 shades
 // generated from light → dark to match Mantine's color contract.
@@ -119,7 +121,11 @@ function App() {
                           path="/loot/items"
                           element={<LootBrowser itemPickerOpen />}
                         />
+                        <Route path="/privacy" element={<Privacy />} />
+                        <Route path="/terms" element={<Terms />} />
+                        <Route path="/about" element={<About />} />
                       </Routes>
+                      <AdSlot placement="inContent" />
                     </Grid.Col>
                   </Grid>
                 </Stack>
@@ -142,6 +148,35 @@ function App() {
                     c={githubHovered ? "lightgray" : "grey"}
                   >
                     Source (AGPL-3.0) — fork of softres.io
+                  </Anchor>
+                </Group>
+                <Group gap="xs" mx="lg">
+                  <Anchor
+                    size="sm"
+                    component={Link}
+                    to="/about"
+                    underline="never"
+                    c="grey"
+                  >
+                    About
+                  </Anchor>
+                  <Anchor
+                    size="sm"
+                    component={Link}
+                    to="/privacy"
+                    underline="never"
+                    c="grey"
+                  >
+                    Privacy
+                  </Anchor>
+                  <Anchor
+                    size="sm"
+                    component={Link}
+                    to="/terms"
+                    underline="never"
+                    c="grey"
+                  >
+                    Terms
                   </Anchor>
                 </Group>
                 <Group gap="xs" mx="lg">
