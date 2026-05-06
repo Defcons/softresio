@@ -159,6 +159,9 @@ app.get("/api/discord", async (c) => {
       userId: userData.id,
       issuer: "discord",
       username: userData.username,
+      // Discord may return null for users without a custom avatar — store it
+      // only when truthy so the frontend can fall back to the default avatar.
+      ...(userData.avatar ? { avatar: userData.avatar } : {}),
     }
     const token = await jwt.sign(newUser as never, JWT_SECRET, "HS256")
     setAuthCookie(c, token)

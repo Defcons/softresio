@@ -10,9 +10,12 @@ export interface Character {
 }
 
 export interface User {
-  userId: string // uuidv4
+  userId: string // uuidv4 for anonymous, Discord user ID for Discord login
   issuer: string
   username?: string
+  // Discord avatar hash, only set for Discord-issued users that have an avatar.
+  // Used to render <img src="cdn.discordapp.com/avatars/{userId}/{avatar}.png">.
+  avatar?: string
 }
 
 export interface SoftReserve {
