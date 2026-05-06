@@ -36,7 +36,11 @@ const fmtTime = (iso: string | null): string => {
 //   2. Most-frequently-used character name (from raid attendances)
 //   3. Anonymous fallback with truncated UUID
 const userDisplay = (
-  row: { username: string | null; topCharacter?: string | null; userId: string },
+  row: {
+    username: string | null
+    topCharacter?: string | null
+    userId: string
+  },
 ): { label: string; isAnon: boolean } => {
   if (row.username) return { label: row.username, isAnon: false }
   if (row.topCharacter) return { label: row.topCharacter, isAnon: false }
@@ -87,7 +91,9 @@ const Panel = (
   </Stack>
 )
 
-const ItemCell = ({ item, itemId }: { item: Item | undefined; itemId: number }) => {
+const ItemCell = (
+  { item, itemId }: { item: Item | undefined; itemId: number },
+) => {
   const iconUrl = item?.icon
     ? `https://wow.zamimg.com/images/wow/icons/medium/${item.icon}`
     : null
@@ -305,8 +311,12 @@ export const AdminPanel = ({ isAdmin }: { isAdmin: boolean }) => {
         <Group justify="space-between" align="center">
           <Text size="xs" c="dimmed">
             {hiddenCount > 0 && !showLowAttendance
-              ? `${hiddenCount} test raid${hiddenCount === 1 ? "" : "s"} hidden (< 3 attendees)`
-              : `${visibleRaids.length} raid${visibleRaids.length === 1 ? "" : "s"} shown`}
+              ? `${hiddenCount} test raid${
+                hiddenCount === 1 ? "" : "s"
+              } hidden (< 3 attendees)`
+              : `${visibleRaids.length} raid${
+                visibleRaids.length === 1 ? "" : "s"
+              } shown`}
           </Text>
           <Switch
             size="xs"

@@ -74,10 +74,9 @@ function App() {
                     discordLoginEnabled={discordLoginEnabled}
                     isAdmin={isAdmin}
                   />
-                  {/* Admin panel rendered at full viewport width — its
-                       multi-table layout doesn't fit the narrow column the
-                       rest of the app uses. Only the matching route renders,
-                       so this Routes block is empty on every other path. */}
+                  {/* Admin panel renders full-width (its multi-table layout
+                       doesn't fit the narrow column the rest of the app uses).
+                       Only the matching route renders — empty on other paths. */}
                   <Routes>
                     <Route
                       path="/admin"
