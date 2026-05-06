@@ -14,9 +14,13 @@ import type { SignOutResponse, User } from "../shared/types.ts"
 import { useDisclosure } from "@mantine/hooks"
 import classes from "../css/menu.module.css"
 import { Link, useNavigate } from "react-router"
-import { IconBrandDiscordFilled } from "@tabler/icons-react"
 
-const LoginSignOutButton = (
+// Mirrors the .auth-user widget on epoglogs.com: avatar + username + ⏻ logout
+// button when logged in via Discord, or a single 💬 Login link when anonymous.
+// Falls back to Discord's default grey avatar when the user has no custom one.
+const DEFAULT_AVATAR = "https://cdn.discordapp.com/embed/avatars/0.png"
+
+const AuthWidget = (
   {
     enabled,
     user,
@@ -28,22 +32,48 @@ const LoginSignOutButton = (
     signOut: () => void
     login: () => void
   },
-) => (
-  enabled
-    ? (
-      <Button
-        onClick={user?.issuer == "discord" ? signOut : login}
-        color={user?.issuer != "discord" ? "#5865F2" : ""}
-        variant={user?.issuer == "discord" ? "default" : ""}
-        leftSection={user?.issuer != "discord"
-          ? <IconBrandDiscordFilled size={16} />
-          : undefined}
+) => {
+  if (!enabled) return null
+
+  if (user?.issuer != "discord") {
+    return (
+      <button
+        type="button"
+        className="epog-pill"
+        onClick={login}
+        title="Login with Discord"
+        style={{ color: "#7289da" }}
       >
-        {user?.issuer == "discord" ? "Sign out" : "Login"}
-      </Button>
+        💬 Login
+      </button>
     )
-    : null
-)
+  }
+
+  const avatarUrl = user.avatar
+    ? `https://cdn.discordapp.com/avatars/${user.userId}/${user.avatar}.png?size=64`
+    : DEFAULT_AVATAR
+
+  return (
+    <div className="epog-auth-user">
+      <img
+        src={avatarUrl}
+        alt=""
+        width={22}
+        height={22}
+        className="epog-auth-avatar"
+      />
+      <span className="epog-auth-name">{user.username}</span>
+      <button
+        type="button"
+        onClick={signOut}
+        title="Log out"
+        className="epog-auth-logout"
+      >
+        ⏻
+      </button>
+    </div>
+  )
+}
 
 const PrimaryNav = (
   { mobile, closeDrawer, isAdmin }: {
@@ -93,11 +123,7 @@ const PrimaryNav = (
       <button type="button" className="epog-pill" onClick={go("loot")}>
         🎁 Loot Browser
       </button>
-      <button
-        type="button"
-        className="epog-pill is-primary"
-        onClick={go("create")}
-      >
+      <button type="button" className="epog-pill" onClick={go("create")}>
         ✚ Create Raid
       </button>
       {isAdmin
@@ -197,26 +223,14 @@ export const Menu = (
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <Group gap="md">
-            <Link to="/" className="epog-brand">
-              ⚔ Epog Logs<span className="sub">📋 Soft Reserves</span>
-            </Link>
+            <Link to="/" className="epog-brand">⚔ Epog Logs</Link>
             <Group visibleFrom="md">
               <PrimaryNav isAdmin={isAdmin} />
             </Group>
           </Group>
           <Group>
-            <Tooltip label={user?.userId}>
-              <Badge
-                size="sm"
-                color={user?.issuer == "discord"
-                  ? "#5865F2"
-                  : "var(--mantine-color-dark-5)"}
-              >
-                {user?.issuer == "discord" ? user.username : "Anonymous"}
-              </Badge>
-            </Tooltip>
             <Box visibleFrom="sm">
-              <LoginSignOutButton
+              <AuthWidget
                 enabled={discordLoginEnabled}
                 user={user}
                 signOut={signOut}
@@ -249,7 +263,7 @@ export const Menu = (
               isAdmin={isAdmin}
             />
             <Divider />
-            <LoginSignOutButton
+            <AuthWidget
               enabled={discordLoginEnabled}
               user={user}
               login={login}
