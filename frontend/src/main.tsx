@@ -132,6 +132,7 @@ function App() {
                         />
                         <Route path="/privacy" element={<Privacy />} />
                         <Route path="/terms" element={<Terms />} />
+                        <Route path="/admin" element={null} />
                         <Route path="/about" element={<About />} />
                       </Routes>
                       <AdSlot placement="inContent" />
