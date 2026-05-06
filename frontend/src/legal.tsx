@@ -183,8 +183,8 @@ export const About = () => (
     <Title order={4} mt="md">Legal</Title>
     <Text size="sm">
       See <Anchor href="/privacy">Privacy</Anchor> and{" "}
-      <Anchor href="/terms">Terms</Anchor> for how the service handles your
-      data and the conditions of use.
+      <Anchor href="/terms">Terms</Anchor>{" "}
+      for how the service handles your data and the conditions of use.
     </Text>
   </Stack>
 )

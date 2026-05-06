@@ -14,7 +14,10 @@ const SKIP_PATHS = /^\/(privacy|terms|about)\/?$/i
 
 declare global {
   interface Window {
-    adsbygoogle?: { push: (config: object) => void } & object[]
+    // AdSense's loader monkey-patches .push on this array to actually request an
+    // ad. Until the script loads, it's a plain array we can push pending configs
+    // onto.
+    adsbygoogle?: Record<string, unknown>[]
   }
 }
 
