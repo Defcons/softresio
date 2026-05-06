@@ -2,6 +2,11 @@
 # Must not be pushed to the public fork.
 SESSION_CONTEXT.md
 
+# Homelab-specific deploy notes (LXC IDs, internal IPs, paths). The shipped
+# deploy/compose.yaml is generic; the matching DEPLOY.md is operational and
+# stays local / in homelab-config (private).
+deploy/DEPLOY.md
+
 # Secrets and credentials
 .env
 .env.*
