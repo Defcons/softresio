@@ -1,0 +1,37 @@
+services:
+  softresio:
+    image: ghcr.io/defcons/softresio:latest
+    container_name: softresio
+    restart: unless-stopped
+    ports:
+      - "3015:8000"
+    environment:
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      DATABASE_USER: softres
+      DOMAIN: softres.epoglogs.com
+      SCHEME: https
+      JWT_SECRET: ${JWT_SECRET}
+      DISCORD_LOGIN_ENABLED: ${DISCORD_LOGIN_ENABLED:-false}
+      DISCORD_CLIENT_ID: ${DISCORD_CLIENT_ID:-}
+      DISCORD_CLIENT_SECRET: ${DISCORD_CLIENT_SECRET:-}
+      # Comma-separated Discord user IDs that get the site-wide admin panel.
+      # Read by backend/src/config.ts; mirrors epoglogs's ADMIN_DISCORD_IDS.
+      ADMIN_DISCORD_IDS: ${ADMIN_DISCORD_IDS:-}
+    depends_on:
+      database:
+        condition: service_healthy
+
+  database:
+    image: postgres:18
+    container_name: softresio-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_USER: softres
+    volumes:
+      - ./data:/var/lib/postgresql/18/docker
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready --username softres"]
+      interval: 1s
+      timeout: 5s
+      retries: 5
