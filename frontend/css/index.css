@@ -104,6 +104,37 @@ body {
   color: var(--accent);
 }
 
+/* Auth widget — avatar + username + logout icon, mirrors the .auth-user
+   layout on epoglogs.com (see js/auth.js renderLoggedIn). */
+.epog-auth-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 6px;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.epog-auth-avatar {
+  border-radius: 50%;
+  border: 1px solid var(--border);
+}
+.epog-auth-name {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+.epog-auth-logout {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 4px;
+  line-height: 1;
+}
+.epog-auth-logout:hover {
+  color: var(--accent);
+}
+
 /* Footer — compact inline strip matching epoglogs.com. */
 .epog-footer {
   display: flex;
