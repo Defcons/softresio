@@ -10,12 +10,7 @@ import { LootBrowser } from "./loot-browser.tsx"
 import "@mantine/core/styles.css"
 import "@mantine/dates/styles.css"
 import { ModalsProvider } from "@mantine/modals"
-import {
-  createTheme,
-  Grid,
-  MantineProvider,
-  Stack,
-} from "@mantine/core"
+import { createTheme, Grid, MantineProvider, Stack } from "@mantine/core"
 import { Menu } from "./menu.tsx"
 import { BrowserRouter, Link, Route, Routes } from "react-router"
 import { About, Privacy, Terms } from "./legal.tsx"
