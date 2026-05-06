@@ -171,6 +171,14 @@ app.get("/api/discord", async (c) => {
   return c.redirect(c.req.query("state") || "/")
 })
 
+// AdSense site authorization. Site-level approval flows from epoglogs.com to
+// softres.epoglogs.com under the same publisher; ads.txt makes the relationship
+// explicit at the subdomain level.
+app.get("/ads.txt", (c) => {
+  c.header("Content-Type", "text/plain; charset=utf-8")
+  return c.body("google.com, pub-6185202164526736, DIRECT, f08c47fec0942fa0\n")
+})
+
 // Serve the frontend
 app.use("/assets/*", serveStatic({ root: "./static" }))
 app.use("/favicon.ico", serveStatic({ path: "./static/favicon.ico" }))
