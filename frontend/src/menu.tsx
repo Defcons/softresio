@@ -13,7 +13,7 @@ import {
 import type { SignOutResponse, User } from "../shared/types.ts"
 import { useDisclosure } from "@mantine/hooks"
 import classes from "../css/menu.module.css"
-import { NavLink, useNavigate } from "react-router"
+import { Link, useNavigate } from "react-router"
 import { IconBrandDiscordFilled } from "@tabler/icons-react"
 
 const LoginSignOutButton = (
@@ -45,48 +45,94 @@ const LoginSignOutButton = (
     : null
 )
 
-const MenuButtons = (
+const PrimaryNav = (
   { mobile, closeDrawer }: { mobile?: boolean; closeDrawer?: () => void },
 ) => {
   const navigate = useNavigate()
+  const go = (path: string) => () => {
+    navigate(path)
+    closeDrawer?.()
+  }
+
+  if (mobile) {
+    return (
+      <>
+        <Tooltip label="If you experience any issues please let us know">
+          <Badge color="epogGold" radius="xs">Beta</Badge>
+        </Tooltip>
+        <Button variant="default" fullWidth onClick={go("raids")}>
+          My Raids
+        </Button>
+        <Button variant="default" fullWidth onClick={go("loot")}>
+          Loot Browser
+        </Button>
+        <Button fullWidth onClick={go("create")}>Create Raid</Button>
+      </>
+    )
+  }
 
   return (
-    <>
+    <Group gap="xs">
       <Tooltip label="If you experience any issues please let us know">
         <Badge color="epogGold" radius="xs">Beta</Badge>
       </Tooltip>
-      <Button
-        variant="default"
-        fullWidth={mobile}
-        onClick={() => {
-          navigate("raids")
-          closeDrawer?.()
-        }}
+      <button type="button" className="epog-pill" onClick={go("raids")}>
+        📋 My Raids
+      </button>
+      <button type="button" className="epog-pill" onClick={go("loot")}>
+        🎁 Loot Browser
+      </button>
+      <button
+        type="button"
+        className="epog-pill is-primary"
+        onClick={go("create")}
       >
-        My Raids
-      </Button>
-      <Button
-        variant="default"
-        fullWidth={mobile}
-        onClick={() => {
-          navigate("loot")
-          closeDrawer?.()
-        }}
-      >
-        Loot Browser
-      </Button>
-      <Button
-        fullWidth={mobile}
-        onClick={() => {
-          navigate("create")
-          closeDrawer?.()
-        }}
-      >
-        Create Raid
-      </Button>
-    </>
+        ✚ Create Raid
+      </button>
+      <ToolsMenu />
+    </Group>
   )
 }
+
+// Tools menu mirrors the epoglogs.com header — but flipped: from softres,
+// these links send users *back* into the epoglogs ecosystem.
+const ToolsMenu = () => (
+  <div className="epog-tools-wrap">
+    <button type="button" className="epog-pill">🛠 Tools ▾</button>
+    <div className="epog-tools-menu">
+      <a href="https://epoglogs.com" target="_blank" rel="noopener">
+        ⚔ Epog Logs
+      </a>
+      <a
+        href="https://epoglogs.com/rankings.html"
+        target="_blank"
+        rel="noopener"
+      >
+        🏆 Rankings
+      </a>
+      <a href="https://epoglogs.com/meta.html" target="_blank" rel="noopener">
+        📊 Meta
+      </a>
+      <a
+        href="https://epoglogs.com/progression.html"
+        target="_blank"
+        rel="noopener"
+      >
+        🏁 Progression
+      </a>
+      <a
+        href="https://epoglogs.com/talents.html"
+        target="_blank"
+        rel="noopener"
+      >
+        🎯 Talents
+      </a>
+      <a href="https://epoglogs.com/armory" target="_blank" rel="noopener">
+        🛡 Armory
+      </a>
+    </div>
+  </div>
+)
 
 export const Menu = (
   { user, setUser, discordClientId, discordLoginEnabled }: {
@@ -126,18 +172,12 @@ export const Menu = (
     <Box pb={20}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <Group>
-            <NavLink to="/" className="epog-brand">
-              Epog Logs<span className="sub">· SR</span>
-            </NavLink>
-            <a
-              href="https://epoglogs.com"
-              className="epog-back-link"
-            >
-              ← epoglogs.com
-            </a>
-            <Group visibleFrom="sm">
-              <MenuButtons />
+          <Group gap="md">
+            <Link to="/" className="epog-brand">
+              ⚔ Epog Logs<span className="sub">📋 Soft Reserves</span>
+            </Link>
+            <Group visibleFrom="md">
+              <PrimaryNav />
             </Group>
           </Group>
           <Group>
@@ -163,7 +203,7 @@ export const Menu = (
               size="sm"
               opened={drawerOpened}
               onClick={toggleDrawer}
-              hiddenFrom="sm"
+              hiddenFrom="md"
             />
           </Group>
         </Group>
@@ -174,12 +214,12 @@ export const Menu = (
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        hiddenFrom="sm"
+        hiddenFrom="md"
         zIndex={1000000}
       >
         <ScrollArea h="calc(100vh - 80px" mx="-md">
           <Stack justify="center" pb="xl" px="md">
-            <MenuButtons mobile closeDrawer={closeDrawer} />
+            <PrimaryNav mobile closeDrawer={closeDrawer} />
             <Divider />
             <LoginSignOutButton
               enabled={discordLoginEnabled}
@@ -193,4 +233,3 @@ export const Menu = (
     </Box>
   )
 }
-/* <IconChevronDown size={16} color={theme.colors.blue[6]} /> */
