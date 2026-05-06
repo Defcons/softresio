@@ -15,6 +15,7 @@ import { Menu } from "./menu.tsx"
 import { BrowserRouter, Link, Route, Routes } from "react-router"
 import { About, Privacy, Terms } from "./legal.tsx"
 import { AdSlot } from "./ad-slot.tsx"
+import { AdminPanel } from "./admin.tsx"
 
 // Epog Logs gold palette — anchored on #c89b3c (epoglogs --accent), 10 shades
 // generated from light → dark to match Mantine's color contract.
@@ -41,6 +42,7 @@ function App() {
   const [user, setUser] = useState<User>()
   const [discordClientId, setDiscordClientId] = useState<string>()
   const [discordLoginEnabled, setDiscordLoginEnabled] = useState<boolean>()
+  const [isAdmin, setIsAdmin] = useState<boolean>(false)
 
   useEffect(() => {
     fetch("/api/info").then((r) => r.json()).then(
@@ -50,6 +52,7 @@ function App() {
         } else if (j.data) {
           setDiscordLoginEnabled(j.data.discordLoginEnabled)
           setDiscordClientId(j.data.discordClientId)
+          setIsAdmin(j.data.isAdmin)
           setUser(j.user)
         }
       },
@@ -69,6 +72,7 @@ function App() {
                     setUser={setUser}
                     discordClientId={discordClientId || ""}
                     discordLoginEnabled={discordLoginEnabled}
+                    isAdmin={isAdmin}
                   />
                   <Grid gutter={0} justify="center">
                     <Grid.Col span={{ base: 11, md: 4, xl: 4 }}>
@@ -113,6 +117,10 @@ function App() {
                         <Route path="/privacy" element={<Privacy />} />
                         <Route path="/terms" element={<Terms />} />
                         <Route path="/about" element={<About />} />
+                        <Route
+                          path="/admin"
+                          element={<AdminPanel isAdmin={isAdmin} />}
+                        />
                       </Routes>
                       <AdSlot placement="inContent" />
                     </Grid.Col>

@@ -46,7 +46,11 @@ const LoginSignOutButton = (
 )
 
 const PrimaryNav = (
-  { mobile, closeDrawer }: { mobile?: boolean; closeDrawer?: () => void },
+  { mobile, closeDrawer, isAdmin }: {
+    mobile?: boolean
+    closeDrawer?: () => void
+    isAdmin?: boolean
+  },
 ) => {
   const navigate = useNavigate()
   const go = (path: string) => () => {
@@ -67,6 +71,13 @@ const PrimaryNav = (
           Loot Browser
         </Button>
         <Button fullWidth onClick={go("create")}>Create Raid</Button>
+        {isAdmin
+          ? (
+            <Button variant="default" fullWidth onClick={go("admin")}>
+              🛠 Admin
+            </Button>
+          )
+          : null}
       </>
     )
   }
@@ -89,6 +100,18 @@ const PrimaryNav = (
       >
         ✚ Create Raid
       </button>
+      {isAdmin
+        ? (
+          <button
+            type="button"
+            className="epog-pill"
+            onClick={go("admin")}
+            title="Site stats — admin only"
+          >
+            🛠 Admin
+          </button>
+        )
+        : null}
       <ToolsMenu />
     </Group>
   )
@@ -135,11 +158,12 @@ const ToolsMenu = () => (
 )
 
 export const Menu = (
-  { user, setUser, discordClientId, discordLoginEnabled }: {
+  { user, setUser, discordClientId, discordLoginEnabled, isAdmin }: {
     user: User
     setUser: (user: User) => void
     discordClientId: string
     discordLoginEnabled: boolean
+    isAdmin?: boolean
   },
 ) => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
@@ -177,7 +201,7 @@ export const Menu = (
               ⚔ Epog Logs<span className="sub">📋 Soft Reserves</span>
             </Link>
             <Group visibleFrom="md">
-              <PrimaryNav />
+              <PrimaryNav isAdmin={isAdmin} />
             </Group>
           </Group>
           <Group>
@@ -219,7 +243,11 @@ export const Menu = (
       >
         <ScrollArea h="calc(100vh - 80px" mx="-md">
           <Stack justify="center" pb="xl" px="md">
-            <PrimaryNav mobile closeDrawer={closeDrawer} />
+            <PrimaryNav
+              mobile
+              closeDrawer={closeDrawer}
+              isAdmin={isAdmin}
+            />
             <Divider />
             <LoginSignOutButton
               enabled={discordLoginEnabled}

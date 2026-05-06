@@ -1,10 +1,18 @@
 import process from "node:process"
 import { getCookie, setCookie } from "hono/cookie"
 import type { Context } from "hono"
-import { DOMAIN, JWT_SECRET } from "./config.ts"
+import { ADMIN_DISCORD_IDS, DOMAIN, JWT_SECRET } from "./config.ts"
 import { User } from "../shared/types.ts"
 import * as jwt from "hono/jwt"
 import { randomUUID } from "node:crypto"
+
+// A user is a site-wide admin only when they're logged in via Discord and
+// their Discord user ID is on the ADMIN_DISCORD_IDS allowlist. Anonymous and
+// non-Discord identities can never be admins, regardless of env config.
+export const isAdmin = (user: User | undefined): boolean => {
+  if (!user || user.issuer !== "discord") return false
+  return ADMIN_DISCORD_IDS.has(user.userId)
+}
 
 export const getEnv = (name: string): string => {
   const value = process.env[name]

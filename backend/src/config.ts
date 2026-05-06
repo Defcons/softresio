@@ -18,3 +18,13 @@ export const DISCORD_API_ENDPOINT = "https://discord.com/api/v10"
 export const DISCORD_REDIRECT_URI = `${SCHEME}://${DOMAIN}${
   PORT ? `:${PORT}` : ""
 }/api/discord`
+
+// Comma-separated Discord user IDs that grant site-wide admin (stats panel,
+// future admin tools). Mirrors the ADMIN_DISCORD_IDS pattern on epoglogs.com.
+// Unset = no admins (admin endpoints return 403 to everyone).
+export const ADMIN_DISCORD_IDS: Set<string> = new Set(
+  (process.env["ADMIN_DISCORD_IDS"] || "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter((s) => s.length > 0),
+)

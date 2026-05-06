@@ -24,7 +24,8 @@ import guildRoutes from "./guild.ts"
 import srRoutes, { getSrPluses } from "./sr.ts"
 import { instances } from "./instances.ts"
 import raidRoutes, { getRecentRaids } from "./raid.ts"
-import { getOrCreateUser, setAuthCookie } from "./utils.ts"
+import adminRoutes from "./admin.ts"
+import { getOrCreateUser, isAdmin, setAuthCookie } from "./utils.ts"
 
 await sql.listen("raid_updated", async (raidId) => {
   if (raidId in clients) {
@@ -51,6 +52,7 @@ const app = new Hono()
 app.route("/", guildRoutes)
 app.route("/", raidRoutes)
 app.route("/", srRoutes)
+app.route("/", adminRoutes)
 
 app.get("/api/instances", async (c) => {
   const user = await getOrCreateUser(c)
@@ -113,6 +115,7 @@ app.get("/api/info", async (c) => {
     data: {
       discordClientId: DISCORD_CLIENT_ID,
       discordLoginEnabled: !!DISCORD_LOGIN_ENABLED,
+      isAdmin: isAdmin(user),
     },
   }
   return c.json(response)
