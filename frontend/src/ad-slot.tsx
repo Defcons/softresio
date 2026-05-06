@@ -10,7 +10,7 @@ const ADS_SLOTS: Record<string, string> = {
   footer: "",
 }
 
-const SKIP_PATHS = /^\/(privacy|terms|about)\/?$/i
+const SKIP_PATHS = /^\/(privacy|terms|about|admin)\/?$/i
 
 declare global {
   interface Window {

@@ -145,6 +145,9 @@ export interface AdminStatsRecentRaid {
   id: string
   instanceId: number
   ownerName: string | null
+  // Character name the owner used as an attendee in their own raid, when
+  // they have one. Used as a friendlier display label for anonymous owners.
+  ownerCharacter: string | null
   ownerUserId: string
   time: string // raid scheduled time (rfc3339)
   attendeeCount: number
@@ -157,6 +160,9 @@ export interface AdminStatsRecentRaid {
 export interface AdminStatsTopUser {
   userId: string
   username: string | null
+  // Most-frequently-used character name for this user across raids — fallback
+  // display label when username is null (anonymous users).
+  topCharacter: string | null
   raidCount: number
 }
 
