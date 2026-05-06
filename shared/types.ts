@@ -110,7 +110,11 @@ export type CreateSrResponse = GenericResponse<Raid>
 export type GetRaidResponse = GenericResponse<Raid>
 
 export type InfoResponse = GenericResponse<
-  { discordClientId: string | undefined; discordLoginEnabled: boolean }
+  {
+    discordClientId: string | undefined
+    discordLoginEnabled: boolean
+    isAdmin: boolean
+  }
 >
 
 export type SignOutResponse = GenericResponse<void>
@@ -131,6 +135,39 @@ export type EditAdminRequest = {
 export type LockRaidResponse = GenericResponse<Raid>
 
 export type DeleteRaidResponse = GenericResponse<void>
+
+// Admin stats panel — site-wide aggregations available only to users on the
+// ADMIN_DISCORD_IDS allowlist. All counts ignore deleted raids.
+export interface AdminStatsRecentRaid {
+  id: string
+  instanceId: number
+  ownerName: string | null
+  ownerUserId: string
+  time: string // raid scheduled time (rfc3339)
+  attendeeCount: number
+  srCount: number
+  locked: boolean
+  guildId: string | null
+  latestActivity: string | null // rfc3339, or null if activityLog is empty
+}
+
+export interface AdminStatsTopUser {
+  userId: string
+  username: string | null
+  raidCount: number
+}
+
+export type AdminStatsResponse = GenericResponse<{
+  totalRaids: number
+  totalGuilds: number
+  totalUsers: number
+  recentRaids7d: number
+  recentRaids30d: number
+  topInstances: { instanceId: number; raidCount: number }[]
+  topItems: { itemId: number; reserveCount: number }[]
+  topUsers: AdminStatsTopUser[]
+  recentRaids: AdminStatsRecentRaid[]
+}>
 
 export type DeleteRaidRequest = {
   raidId: string
