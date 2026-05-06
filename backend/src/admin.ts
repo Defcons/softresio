@@ -102,12 +102,15 @@ app.get("/api/admin/stats", async (c) => {
   `
 
   // Latest 50 raids, scored by the most recent activity entry (or scheduled
-  // time if the activity log is empty).
+  // time if the activity log is empty). For anonymous owners (no Discord
+  // username), pull the character name they used in their own raid as a
+  // friendlier display label.
   const recentRaids = await sql<
     {
       id: string
       instanceId: number
       ownerName: string | null
+      ownerCharacter: string | null
       ownerUserId: string
       time: string
       attendeeCount: number
@@ -121,6 +124,12 @@ app.get("/api/admin/stats", async (c) => {
       raid->>'id' as id,
       (raid->>'instanceId')::int as "instanceId",
       raid->'owner'->>'username' as "ownerName",
+      (
+        select a->'character'->>'name'
+        from jsonb_array_elements(raid->'attendees') a
+        where a->'user'->>'userId' = raid->'owner'->>'userId'
+        limit 1
+      ) as "ownerCharacter",
       raid->'owner'->>'userId' as "ownerUserId",
       raid->>'time' as time,
       coalesce(jsonb_array_length(raid->'attendees'), 0)::int as "attendeeCount",
@@ -143,20 +152,28 @@ app.get("/api/admin/stats", async (c) => {
     limit 50;
   `
 
-  // Top users by raids attended (Discord display name when available).
+  // Top users by raids attended. We surface their most-frequent character
+  // name as a fallback display label for anonymous users (no Discord
+  // username). mode() WITHIN GROUP returns the most-occurring value.
   const topUsers = await sql<
-    { userId: string; username: string | null; raidCount: number }[]
+    {
+      userId: string
+      username: string | null
+      topCharacter: string | null
+      raidCount: number
+    }[]
   >`
     select
       a->'user'->>'userId' as "userId",
       max(a->'user'->>'username') as username,
+      mode() within group (order by a->'character'->>'name') as "topCharacter",
       count(distinct raid->>'id')::int as "raidCount"
     from raids,
          jsonb_array_elements(raid->'attendees') a
     where (raid->>'deleted')::bool is not true
       and a->'user'->>'userId' is not null
     group by 1
-    order by 3 desc
+    order by 4 desc
     limit 20;
   `
 

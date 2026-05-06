@@ -74,6 +74,26 @@ function App() {
                     discordLoginEnabled={discordLoginEnabled}
                     isAdmin={isAdmin}
                   />
+                  {/* Admin panel rendered at full viewport width — its
+                       multi-table layout doesn't fit the narrow column the
+                       rest of the app uses. Only the matching route renders,
+                       so this Routes block is empty on every other path. */}
+                  <Routes>
+                    <Route
+                      path="/admin"
+                      element={
+                        <div
+                          style={{
+                            maxWidth: 1300,
+                            margin: "0 auto",
+                            width: "100%",
+                          }}
+                        >
+                          <AdminPanel isAdmin={isAdmin} />
+                        </div>
+                      }
+                    />
+                  </Routes>
                   <Grid gutter={0} justify="center">
                     <Grid.Col span={{ base: 11, md: 4, xl: 4 }}>
                       <Routes>
@@ -117,10 +137,6 @@ function App() {
                         <Route path="/privacy" element={<Privacy />} />
                         <Route path="/terms" element={<Terms />} />
                         <Route path="/about" element={<About />} />
-                        <Route
-                          path="/admin"
-                          element={<AdminPanel isAdmin={isAdmin} />}
-                        />
                       </Routes>
                       <AdSlot placement="inContent" />
                     </Grid.Col>
