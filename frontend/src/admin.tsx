@@ -72,8 +72,9 @@ export const AdminPanel = ({ isAdmin }: { isAdmin: boolean }) => {
       <Stack p="md" gap="sm">
         <Title order={2}>Admin</Title>
         <Alert color="yellow">
-          You are not on the admin allowlist. Site admins are configured via
-          the <code>ADMIN_DISCORD_IDS</code> environment variable.
+          You are not on the admin allowlist. Site admins are configured via the
+          {" "}
+          <code>ADMIN_DISCORD_IDS</code> environment variable.
         </Alert>
       </Stack>
     )
@@ -101,7 +102,10 @@ export const AdminPanel = ({ isAdmin }: { isAdmin: boolean }) => {
       <Title order={2}>Admin · Site stats</Title>
 
       <Group gap="sm" wrap="wrap">
-        <StatCard label="Total raids" value={stats.totalRaids.toLocaleString()} />
+        <StatCard
+          label="Total raids"
+          value={stats.totalRaids.toLocaleString()}
+        />
         <StatCard
           label="Created last 7 days"
           value={stats.recentRaids7d.toLocaleString()}
@@ -110,7 +114,10 @@ export const AdminPanel = ({ isAdmin }: { isAdmin: boolean }) => {
           label="Created last 30 days"
           value={stats.recentRaids30d.toLocaleString()}
         />
-        <StatCard label="Total guilds" value={stats.totalGuilds.toLocaleString()} />
+        <StatCard
+          label="Total guilds"
+          value={stats.totalGuilds.toLocaleString()}
+        />
         <StatCard
           label="Distinct users"
           value={stats.totalUsers.toLocaleString()}
