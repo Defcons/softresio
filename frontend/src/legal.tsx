@@ -1,11 +1,12 @@
 import { Anchor, Stack, Text, Title } from "@mantine/core"
 
 const LAST_UPDATED = "May 6, 2026"
+const PRIVACY_UPDATED = "October 18, 2026"
 
 export const Privacy = () => (
   <Stack p="md" gap="sm">
     <Title order={2}>Privacy Policy</Title>
-    <Text size="sm" c="dimmed">Last updated: {LAST_UPDATED}</Text>
+    <Text size="sm" c="dimmed">Last updated: {PRIVACY_UPDATED}</Text>
 
     <Title order={4} mt="md">Who we are</Title>
     <Text size="sm">
@@ -68,6 +69,14 @@ export const Privacy = () => (
       Raid and soft-reserve data is kept indefinitely so that historical raids
       remain viewable. If you would like your account and associated data
       removed, contact us via the GitHub repository above.
+    </Text>
+    <Text size="sm">
+      The proxy in front of the site keeps an access log of each request: the
+      time, the address asked for, the status code, the size, the browser type
+      and the referring page, but not your IP address. We use it only for
+      security and to look into incidents, and delete it after six months.
+      Backups of the server can hold it for a while longer, until they are
+      replaced in the normal rotation.
     </Text>
 
     <Title order={4} mt="md">Your rights</Title>
