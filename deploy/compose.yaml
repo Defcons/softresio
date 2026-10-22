@@ -3,6 +3,16 @@ services:
     image: ghcr.io/defcons/softresio:latest
     container_name: softresio
     restart: unless-stopped
+    # Not root: the image's own `deno` user (uid 1993). The app only reads the image (code, static files, and the
+    # module cache in DENO_DIR, filled when the image is built) and keeps its data in the database container, so the
+    # filesystem is read-only and /tmp, a small RAM-backed tmpfs, is the only writable place.
+    user: "1993:1993"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:size=64m
     ports:
       - "3015:8000"
     environment:
