@@ -83,10 +83,21 @@ jobs:
       - name: Formatting
         run: "deno fmt --check src"
 
+  container:
+    name: Container
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+      # The image built from this commit, started with deploy/compose.yaml in its non-root, read-only shape.
+      - name: Start the stack as the server runs it
+        run: bash tests/container-smoke.sh
+
   build:
     name: Build
     if: github.ref == 'refs/heads/main'
-    needs: [frontend-types, frontend-formatting, backend-types, backend-formatting, json-validator]
+    needs: [frontend-types, frontend-formatting, backend-types, backend-formatting, json-validator, container]
     runs-on: ubuntu-latest
     env:
       REGISTRY: ghcr.io
