@@ -22,7 +22,7 @@ docker build -t ghcr.io/defcons/softresio:latest .
 $C up -d --wait --wait-timeout 180
 
 url=http://127.0.0.1:3015
-page=$(curl -fsS --retry 30 --retry-delay 2 --retry-connrefused "$url/") || fail "the page is not served"
+page=$(curl -fsS --retry 30 --retry-delay 2 --retry-all-errors "$url/") || fail "the page is not served"
 grep -qi '<html' <<< "$page" || fail "the page is not the app's index.html"
 api=$(curl -fsS "$url/api/instances") || fail "a request that needs the database does not answer"
 grep -q '"data"' <<< "$api" || fail "the instances request answered without data"
