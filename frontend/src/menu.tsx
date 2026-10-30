@@ -150,10 +150,9 @@ const navClass = ({ isActive }: { isActive: boolean }) =>
   isActive ? "header-rankings-btn active" : "header-rankings-btn"
 
 export const Menu = (
-  { user, setUser, discordClientId, discordLoginEnabled, isAdmin }: {
+  { user, setUser, discordLoginEnabled, isAdmin }: {
     user: User
     setUser: (user: User) => void
-    discordClientId: string
     discordLoginEnabled: boolean
     isAdmin?: boolean
   },
@@ -161,14 +160,9 @@ export const Menu = (
   const navigate = useNavigate()
 
   const login = () => {
-    const { protocol, hostname, port, pathname } = globalThis.location
-    const redirectUrl = `${protocol}//${hostname}${
-      hostname == "localhost" ? `:${port}` : ""
-    }/api/discord`
-    globalThis.open(
-      `https://discord.com/oauth2/authorize?client_id=${discordClientId}&response_type=code&redirect_uri=${redirectUrl}&scope=identify&state=${pathname}`,
-      "_self",
-    )
+    // The backend sets the OAuth state cookie and sends the browser to Discord.
+    const back = encodeURIComponent(globalThis.location.pathname)
+    globalThis.open(`/api/discord/login?return=${back}`, "_self")
   }
 
   const signOut = () => {

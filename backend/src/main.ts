@@ -1,4 +1,5 @@
 import { Hono } from "hono"
+import { deleteCookie, getCookie, setCookie } from "hono/cookie"
 import { serveStatic, upgradeWebSocket } from "hono/deno"
 import * as jwt from "hono/jwt"
 import { randomUUID } from "node:crypto"
@@ -25,6 +26,14 @@ import srRoutes, { getSrPluses } from "./sr.ts"
 import { instances } from "./instances.ts"
 import raidRoutes, { getRecentRaids } from "./raid.ts"
 import adminRoutes from "./admin.ts"
+import {
+  canMoveRaids,
+  checkOAuthState,
+  newOAuthState,
+  OAUTH_STATE_COOKIE,
+  OAUTH_STATE_MAX_AGE,
+} from "./login.ts"
+import { raidIdSchema } from "./schemas.ts"
 import { getOrCreateUser, isAdmin, setAuthCookie } from "./utils.ts"
 
 await sql.listen("raid_updated", async (raidId) => {
@@ -65,10 +74,17 @@ type WebSocketSession = {
   id: string
 }
 
-const clients: { [raidId: string]: WebSocketSession[] } = {}
+// No prototype, so a raidId such as "constructor" finds nothing inherited.
+const clients: { [raidId: string]: WebSocketSession[] } = Object.create(null)
 
 app.get(
   "/api/ws/:raidId",
+  async (c, next) => {
+    if (!raidIdSchema.safeParse(c.req.param("raidId")).success) {
+      return c.text("Bad raid id", 400)
+    }
+    await next()
+  },
   upgradeWebSocket((c) => {
     const id = randomUUID()
     return {
@@ -78,7 +94,9 @@ app.get(
       },
       onClose(event, ws) {
         const raidId = c.req.param("raidId")
-        clients[raidId] = clients[raidId].filter((e) => e.id != id)
+        const rest = (clients[raidId] || []).filter((e) => e.id != id)
+        if (rest.length) clients[raidId] = rest
+        else delete clients[raidId]
       },
     }
   }),
@@ -129,14 +147,49 @@ app.get("/api/signout", async (c) => {
   return c.json(response)
 })
 
+app.get("/api/discord/login", (c) => {
+  if (!DISCORD_LOGIN_ENABLED) {
+    return c.json({ error: { message: "Discord login is not enabled" } })
+  }
+  const { state, cookie } = newOAuthState(c.req.query("return"))
+  setCookie(c, OAUTH_STATE_COOKIE, cookie, {
+    path: "/api/discord",
+    secure: true,
+    httpOnly: true,
+    sameSite: "Lax",
+    maxAge: OAUTH_STATE_MAX_AGE,
+  })
+  const authorize = new URLSearchParams({
+    client_id: DISCORD_CLIENT_ID,
+    response_type: "code",
+    redirect_uri: DISCORD_REDIRECT_URI,
+    scope: "identify",
+    state,
+  })
+  return c.redirect(`https://discord.com/oauth2/authorize?${authorize}`)
+})
+
 app.get("/api/discord", async (c) => {
   const oldUser = await getOrCreateUser(c)
   if (!DISCORD_LOGIN_ENABLED) {
     return c.json({ error: { message: "Discord login is not enabled" } })
   }
+  const returnPath = checkOAuthState(
+    getCookie(c, OAUTH_STATE_COOKIE),
+    c.req.query("state"),
+  )
+  deleteCookie(c, OAUTH_STATE_COOKIE, { path: "/api/discord", secure: true })
+  if (returnPath === null) {
+    return c.redirect("/")
+  }
+  const code = c.req.query("code")
+  if (!code) {
+    // Discord sends no code when the user cancels the login.
+    return c.redirect(returnPath)
+  }
   const accessRequest = new URLSearchParams({
     grant_type: "authorization_code",
-    code: c.req.query("code") || "",
+    code,
     redirect_uri: DISCORD_REDIRECT_URI,
   })
   const accessData = await (
@@ -167,14 +220,14 @@ app.get("/api/discord", async (c) => {
     setAuthCookie(c, token)
     const [{ count: newUserRaids }] =
       await sql`select count(*) from raids where raid::text like ${`%${newUser.userId}%`}`
-    if (newUserRaids == 0) {
+    if (canMoveRaids(oldUser, newUser.userId, newUserRaids)) {
       await sql`
         update raids set raid = replace(raid::text, ${oldUser.userId}, ${newUser.userId})::jsonb
         where raid::text like ${`%${oldUser.userId}%`};
       `
     }
   }
-  return c.redirect(c.req.query("state") || "/")
+  return c.redirect(returnPath)
 })
 
 // AdSense site authorization. Site-level approval flows from epoglogs.com to

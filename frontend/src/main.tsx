@@ -40,7 +40,6 @@ const theme = createTheme({
 
 function App() {
   const [user, setUser] = useState<User>()
-  const [discordClientId, setDiscordClientId] = useState<string>()
   const [discordLoginEnabled, setDiscordLoginEnabled] = useState<boolean>()
   const [isAdmin, setIsAdmin] = useState<boolean>(false)
 
@@ -51,7 +50,6 @@ function App() {
           alert(j.error.message)
         } else if (j.data) {
           setDiscordLoginEnabled(j.data.discordLoginEnabled)
-          setDiscordClientId(j.data.discordClientId)
           setIsAdmin(j.data.isAdmin)
           setUser(j.user)
         }
@@ -70,7 +68,6 @@ function App() {
                   <Menu
                     user={user}
                     setUser={setUser}
-                    discordClientId={discordClientId || ""}
                     discordLoginEnabled={discordLoginEnabled}
                     isAdmin={isAdmin}
                   />

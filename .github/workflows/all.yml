@@ -67,6 +67,8 @@ jobs:
         run: "deno install"
       - name: Types
         run: "deno check src"
+      - name: Tests
+        run: "deno test ../tests/"
   backend-formatting:
     name: Backend Formatting
     runs-on: ubuntu-latest
