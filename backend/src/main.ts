@@ -33,6 +33,7 @@ import {
   OAUTH_STATE_COOKIE,
   OAUTH_STATE_MAX_AGE,
 } from "./login.ts"
+import { limitPosts, securityHeaders } from "./guards.ts"
 import { raidIdSchema } from "./schemas.ts"
 import { getOrCreateUser, isAdmin, setAuthCookie } from "./utils.ts"
 
@@ -57,6 +58,9 @@ await sql.listen("raid_updated", async (raidId) => {
 })
 
 const app = new Hono()
+
+app.use("*", securityHeaders)
+app.post("/api/*", limitPosts)
 
 app.route("/", guildRoutes)
 app.route("/", raidRoutes)
@@ -139,7 +143,7 @@ app.get("/api/info", async (c) => {
   return c.json(response)
 })
 
-app.get("/api/signout", async (c) => {
+app.post("/api/signout", async (c) => {
   const user = await getOrCreateUser(c, true)
   const response: SignOutResponse = {
     user,

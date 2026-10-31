@@ -1,4 +1,4 @@
-FROM denoland/deno:latest as frontend
+FROM denoland/deno:2.9.8@sha256:a0d88a7fcbd44f062cba2748e19df67d30290ad12aa203c7c1e0b12462c483f0 as frontend
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ COPY frontend/css/ ./css/
 
 RUN deno run build
 
-FROM denoland/deno:latest as backend
+FROM denoland/deno:2.9.8@sha256:a0d88a7fcbd44f062cba2748e19df67d30290ad12aa203c7c1e0b12462c483f0 as backend
 
 WORKDIR /app
 
@@ -29,4 +29,5 @@ COPY --from=frontend /app/dist ./static/
 COPY frontend/src/assets/favicon.ico ./static/
 
 
+USER deno
 CMD ["deno", "serve", "--allow-all", "--parallel", "src/main.ts"]

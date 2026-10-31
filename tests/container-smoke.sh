@@ -55,4 +55,32 @@ loc() { curl -sS -o /dev/null -D - "$@" | grep -i '^location:' | sed 's/^[^:]*: 
 [ "$(loc -H "Cookie: $cookie" "$url/api/discord?error=access_denied&state=$state")" = /SR/ABCDE ] ||
   fail "the callback refused the state it set"
 
-echo "container smoke: PASS (app as 1993 alone, read-only, page and database request answered, bad raid id and foreign login state refused)"
+# Hardening: response headers, sign-out only by POST, a damaged login cookie, a request body over the size limit.
+hdrs=$(curl -sS -o /dev/null -D - "$url/") || fail "the page does not answer"
+grep -qi '^x-content-type-options: nosniff' <<< "$hdrs" || fail "the page has no nosniff header"
+grep -qi '^content-security-policy: .*frame-ancestors' <<< "$hdrs" || fail "the page has no frame-ancestors policy"
+if curl -fsS "$url/api/signout" | grep -q '"user"'; then fail "GET /api/signout still signs out"; fi
+curl -fsS -X POST "$url/api/signout" | grep -q '"user"' || fail "POST /api/signout does not answer"
+code=$(curl -s -o /dev/null -w '%{http_code}' -H 'Cookie: auth=garbage' "$url/api/instances")
+[ "$code" = 200 ] || fail "a damaged auth cookie answered $code, not 200"
+code=$(head -c 40000 /dev/zero | tr '\0' 'x' | curl -s -o /dev/null -w '%{http_code}' -X POST --data-binary @- "$url/api/raid/create")
+[ "$code" = 413 ] || fail "a 40 KB body answered $code, not 413"
+
+# One attendee cannot overwrite another's reserves: a character name belongs to whoever reserved with it first.
+# (The cookie names this site's domain, so curl's own jar would not keep it on 127.0.0.1: send it by hand.)
+anon() { curl -sS -o /dev/null -D - "$url/api/instances" | grep -i '^set-cookie: auth=' | sed 's/^[^:]*: //; s/;.*//' | tr -d '\r'; }
+authA=$(anon); authB=$(anon)
+[ -n "$authA" ] && [ -n "$authB" ] && [ "$authA" != "$authB" ] || fail "no two different anonymous users"
+post() { curl -sS -w '\n%{http_code}' -X POST -H 'Content-Type: application/json' -H "Cookie: $2" --data "$1" "$url$3"; }
+raid=$(post '{"hardReserves":[],"allowDuplicateSr":false,"useSrPlus":false,"description":"","time":"2030-01-01T00:00:00.000Z","instanceId":24,"srCount":2}' "$authA" /api/raid/create)
+raidId=$(grep -o '"raidId":"[A-Z0-9]*"' <<< "$raid" | cut -d'"' -f4 || true)
+[ -n "$raidId" ] || fail "could not create a raid: $raid"
+sr="{\"raidId\":\"$raidId\",\"character\":{\"name\":\"Bob\",\"class\":\"Warrior\",\"spec\":\"Arms\"},\"selectedItemIds\":[17966]}"
+mine=$(post "$sr" "$authA" /api/sr/create | tail -1)
+[ "$mine" = 200 ] || fail "the first reservation answered $mine, not 200"
+other=$(post "$sr" "$authB" /api/sr/create | tail -1)
+[ "$other" = 403 ] || fail "another user's reservation with the same character name answered $other, not 403"
+again=$(post "$sr" "$authA" /api/sr/create | tail -1)
+[ "$again" = 200 ] || fail "the owner's second reservation answered $again, not 200"
+
+echo "container smoke: PASS (app as 1993 alone, read-only, page and database request answered, bad raid id and foreign login state refused, headers, size limit and character ownership checked)"

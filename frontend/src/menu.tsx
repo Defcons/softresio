@@ -166,7 +166,7 @@ export const Menu = (
   }
 
   const signOut = () => {
-    fetch("/api/signout").then((r) => r.json()).then(
+    fetch("/api/signout", { method: "POST" }).then((r) => r.json()).then(
       (j: SignOutResponse) => {
         if (j.error) {
           alert(j.error.message)

@@ -23,6 +23,8 @@ import {
   userSchema,
   uuidSchema,
 } from "./schemas.ts"
+import { TtlCache } from "./limits.ts"
+import { srRefusal } from "./sr-rules.ts"
 import { getOrCreateUser } from "./utils.ts"
 import { ContentfulStatusCode } from "hono/utils/http-status"
 
@@ -34,7 +36,7 @@ app.post("/api/sr/create", async (c) => {
     .object({
       raidId: raidIdSchema,
       character: characterSchema,
-      selectedItemIds: z.array(z.number()),
+      selectedItemIds: z.array(z.number().int().min(0)).max(4),
     })
     .safeParse(await c.req.json())
 
@@ -73,6 +75,16 @@ app.post("/api/sr/create", async (c) => {
       if (!raid) return [{ user, error: { message: "Raid not found" } }, 404]
       if (raid.locked) {
         return [{ user, error: { message: "Raid is locked" } }, 400]
+      }
+
+      const refusal = srRefusal(
+        raid,
+        user.userId,
+        character.name,
+        selectedItemIds.length,
+      )
+      if (refusal) {
+        return [{ user, error: { message: refusal.message } }, refusal.status]
       }
 
       // need to delete all and add all new
@@ -290,13 +302,35 @@ app.post("/api/srplus", async (c) => {
             guild,
           } as never)
         } on conflict ((guild->>'id')) do update set guild = EXCLUDED.guild;`
+        srPlusCache.clear()
         return [{ user, data: guild }, 200]
       },
     )
   return c.json(...response)
 })
 
+// SR+ is a query per attendee and item, and every viewer's page asks for it, so
+// the answer for an unchanged attendee list is kept for a few seconds.
+const srPlusCache = new TtlCache<SrPlus[]>(10_000, 200)
+
 export const getSrPluses = async (raid: Raid): Promise<SrPlus[]> => {
+  const key = JSON.stringify([
+    raid.id,
+    raid.guildId,
+    raid.time,
+    raid.attendees.map((a) => [
+      a.character.name,
+      a.softReserves.map((sr) => sr.itemId),
+    ]),
+  ])
+  const cached = srPlusCache.get(key)
+  if (cached) return cached
+  const srPluses = await findSrPluses(raid)
+  srPlusCache.set(key, srPluses)
+  return srPluses
+}
+
+const findSrPluses = async (raid: Raid): Promise<SrPlus[]> => {
   const [guildResult] = await sql<{ guild: Guild }[]>`select guild
       from guilds
       where

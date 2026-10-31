@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       - name: Validate JSON files
         run: |
           # Instance JSONs live in per-server subdirs (currently just epoch/) — recurse.
@@ -30,9 +30,9 @@ jobs:
         working-directory: "frontend"
     steps:
       - name: Clone repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       - name: Install Deno
-        uses: denoland/setup-deno@v2
+        uses: denoland/setup-deno@22d081ff2d3a40755e97629de92e3bcbfa7cf2ed # v2.0.5
       - name: Install dependencies
         run: "deno install"
       - name: Types
@@ -45,9 +45,9 @@ jobs:
         working-directory: "frontend"
     steps:
       - name: Clone repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       - name: Install Deno
-        uses: denoland/setup-deno@v2
+        uses: denoland/setup-deno@22d081ff2d3a40755e97629de92e3bcbfa7cf2ed # v2.0.5
       - name: Install dependencies
         run: "deno install"
       - name: Formatting
@@ -60,15 +60,15 @@ jobs:
         working-directory: "backend"
     steps:
       - name: Clone repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       - name: Install Deno
-        uses: denoland/setup-deno@v2
+        uses: denoland/setup-deno@22d081ff2d3a40755e97629de92e3bcbfa7cf2ed # v2.0.5
       - name: Install dependencies
         run: "deno install"
       - name: Types
         run: "deno check src"
       - name: Tests
-        run: "deno test ../tests/"
+        run: "deno test --allow-env ../tests/"
   backend-formatting:
     name: Backend Formatting
     runs-on: ubuntu-latest
@@ -77,9 +77,9 @@ jobs:
         working-directory: "backend"
     steps:
       - name: Clone repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       - name: Install Deno
-        uses: denoland/setup-deno@v2
+        uses: denoland/setup-deno@22d081ff2d3a40755e97629de92e3bcbfa7cf2ed # v2.0.5
       - name: Install dependencies
         run: "deno install"
       - name: Formatting
@@ -91,7 +91,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: Clone repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       # The image built from this commit, started with deploy/compose.yaml in its non-root, read-only shape.
       - name: Start the stack as the server runs it
         run: bash tests/container-smoke.sh
@@ -110,16 +110,16 @@ jobs:
       id-token: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       - name: Log in to the Container registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push Docker image
         id: push
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6.19.2
         with:
           tags: "${{env.REGISTRY}}/defcons/softresio:latest"
           context: .

@@ -17,6 +17,7 @@ import {
 } from "../shared/types.ts"
 import { beginWithTimeout, sql } from "./database.ts"
 import { raidIdSchema, userSchema, uuidSchema } from "./schemas.ts"
+import { allowCreation } from "./guards.ts"
 import { generateRaidId, getOrCreateUser } from "./utils.ts"
 
 const app = new Hono()
@@ -95,7 +96,7 @@ app.post("/api/raid/create", async (c) => {
   const request = z
     .object({
       raidId: raidIdSchema.optional(),
-      hardReserves: z.array(z.number()),
+      hardReserves: z.array(z.number().int().min(0)).max(300),
       allowDuplicateSr: z.boolean(),
       useSrPlus: z.boolean(),
       description: z.string().max(280),
@@ -128,6 +129,14 @@ app.post("/api/raid/create", async (c) => {
     allowDuplicateSr,
     guildId,
   }: CreateEditRaidRequest = request.data
+
+  if (!editRaidId && !allowCreation(c)) {
+    const response: CreateEditRaidResponse = {
+      error: { message: "Too many raids created, try again later" },
+      user,
+    }
+    return c.json(response, 429)
+  }
 
   const raidId = editRaidId || generateRaidId()
   const response: [CreateEditRaidResponse, ContentfulStatusCode] =

@@ -45,13 +45,25 @@ export const getOrCreateUser = async (
   c: Context,
   reset = false,
 ): Promise<User> => {
-  // Try to get user from cookie
+  // Try to get user from cookie. A cookie that does not verify (stale, from
+  // another secret, damaged) is treated as no cookie; the new one replaces it.
   const token = getCookie(c, "auth")
-  const decoded = token && await jwt.verify(
-    token,
-    JWT_SECRET,
-    "HS256",
-  ) as unknown as User
+  let decoded: User | undefined
+  if (token) {
+    try {
+      const payload = await jwt.verify(
+        token,
+        JWT_SECRET,
+        "HS256",
+      ) as unknown as User
+      if (
+        typeof payload?.userId === "string" &&
+        typeof payload?.issuer === "string"
+      ) decoded = payload
+    } catch {
+      decoded = undefined
+    }
+  }
   // Create new user cookie or refresh exisiting cookie
   const user = !reset && decoded ||
     { userId: randomUUID(), issuer: DOMAIN }

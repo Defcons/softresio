@@ -9,6 +9,7 @@ import {
 } from "../shared/types.ts"
 import { randomUUID } from "node:crypto"
 import { sql } from "./database.ts"
+import { allowCreation } from "./guards.ts"
 
 const app = new Hono()
 
@@ -32,6 +33,14 @@ app.post("/api/guild/create", async (c) => {
     return c.json(response, 400)
   }
   const { name }: CreateGuildRequest = request.data
+
+  if (!allowCreation(c)) {
+    const response: CreateGuildResponse = {
+      error: { message: "Too many guilds created, try again later" },
+      user,
+    }
+    return c.json(response, 429)
+  }
 
   const guild: Guild = {
     name,
