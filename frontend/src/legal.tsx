@@ -1,7 +1,7 @@
 import { Anchor, Stack, Text, Title } from "@mantine/core"
 
 const LAST_UPDATED = "May 6, 2026"
-const PRIVACY_UPDATED = "October 18, 2026"
+const PRIVACY_UPDATED = "October 31, 2026"
 
 export const Privacy = () => (
   <Stack p="md" gap="sm">
@@ -32,10 +32,14 @@ export const Privacy = () => (
       data the service exists to manage.
     </Text>
     <Text size="sm">
-      <b>Cookies:</b>{" "}
-      a session cookie holding a JWT for your login state, and a short-lived
-      OAuth state cookie during Discord login. We do not set marketing or
-      tracking cookies of our own.
+      <b>Cookies:</b> every visitor gets an <code>auth</code>{" "}
+      cookie the first time the page talks to our server, logged in or not. It
+      holds a signed token with a random ID, so the raids and soft-reserves you
+      make stay yours, and later your Discord login. It lasts 400 days and is
+      renewed on each visit. During a Discord login a second cookie,{" "}
+      <code>oauth_state</code>, holds a random value for at most 10 minutes, to
+      check that the login comes back to the browser that started it. We do not
+      set marketing or tracking cookies of our own.
     </Text>
 
     <Title order={4} mt="md">Third-party services</Title>
@@ -46,9 +50,10 @@ export const Privacy = () => (
     </Text>
     <Text size="sm">
       <b>Google AdSense:</b>{" "}
-      we display ads served by Google. Google and its partners may use cookies
-      to serve ads based on your prior visits to this site or other sites. You
-      can opt out of personalized ads at{" "}
+      we display ads served by Google. The ad script loads from Google's
+      servers, which see your IP address. Google and its partners may use
+      cookies to serve ads based on your prior visits to this site or other
+      sites. You can opt out of personalized ads at{" "}
       <Anchor href="https://www.google.com/settings/ads">
         google.com/settings/ads
       </Anchor>{" "}
@@ -62,6 +67,13 @@ export const Privacy = () => (
       our site is fronted by Cloudflare for TLS and DDoS protection. Cloudflare
       sees connection metadata (IP, request headers) as part of normal proxy
       operation.
+    </Text>
+    <Text size="sm">
+      <b>Icons and avatars:</b>{" "}
+      item and class icons load from wow.zamimg.com (Wowhead's image server),
+      and Discord avatars from cdn.discordapp.com. Your browser fetches them
+      directly, so those servers see your IP address and browser type, as for
+      any image on the web.
     </Text>
 
     <Title order={4} mt="md">Retention</Title>
